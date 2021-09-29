@@ -4,6 +4,8 @@ const one = 'beep boop',
     
 let span = null;
 
+console.log(Diff)
+
 const diff = Diff.diffChars(one, other),
     display = document.getElementById('display'),
     fragment = document.createDocumentFragment();
