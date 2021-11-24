@@ -9,14 +9,19 @@
     color: black;
   }
   
-  .word {
-    cursor: pointer;
-    
-    &.isSpeaking {
-      cursor: not-allowed;
-    }
+  
+}
+
+.word {
+  cursor: pointer;
+
+  &.isSpeaking {
+    cursor: not-allowed;
+    background-color: yellow;
+    color: black;
   }
 }
+
 .practice,
 .diff {
   width: 100%;
@@ -34,5 +39,19 @@
   
   .added {
     color: red;
+  }
+}
+
+.sentence-control-panel {
+  white-space: nowrap;
+}
+
+.menu {
+  input[type="range"] {
+    margin-left: 1rem;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 1rem;
   }
 }

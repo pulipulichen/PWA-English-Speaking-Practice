@@ -8,13 +8,13 @@
   </div>
   
   <div v-for="(sentence, i) in sentenceList" class="ui grid">
-    <div class="two wide column center aligned">
-      <div>No. {{ i }}</div>
+    <div class="two wide column center aligned sentence-control-panel">
+      <div>No. {{ (i+1) }}</div>
       
       <button type="button" 
             v-on:click="speak(sentence, i)" 
             class="ui button tiny icon"
-            v-bind:class="{positive: (i === speakingIndex && !speakingWordIndex)}">
+            v-bind:class="{positive: (i === speakingIndex && speakingWordIndex === null && speakingDiffWordIndex === null)}">
         <i class="icon assistive listening systems" />
       </button>
       <button type="button" 
@@ -26,11 +26,12 @@
     </div>
     <div class="fourteen wide column">
       <div class="target"
-           v-bind:class="{isSpeaking: (i === speakingIndex && !speakingWordIndex)}">
+           v-bind:class="{isSpeaking: (i === speakingIndex && speakingWordIndex === null && speakingDiffWordIndex === null)}">
         <span v-for="(word, j) in sentence.split(' ')"
               class="word"
               v-bind:class="{isSpeaking: (i === speakingIndex && j === speakingWordIndex)}"
-              v-on:click="speakWord(word, i, j)">
+              v-on:click="speakWord(word, i, j)"
+              v-on:dblclick="openDict(word)">
           {{ word }}
         </span>
       </div>
@@ -40,10 +41,48 @@
            v-if="diffList[i] && diffList[i].length > 0">
         <span v-for="(diff, j) in diffList[i]"
           v-bind:class="{removed: diff.removed, added: diff.added}">
-          {{ diff.value }}
+          <span v-for="(word, k) in diff.value.split(' ')"
+              class="word"
+              v-bind:class="{isSpeaking: (i === speakingIndex && (j + '-' + k) === speakingDiffWordIndex)}"
+              v-on:click="speakDiffWord(word, i, (j + '-' + k))"
+              v-on:dblclick="openDict(word)">
+            {{ word }}
+          </span>
         </span>
       </div>
     </div>
   </div>
   
+  
+  <div class="ui bottom fixed menu">
+    <a class="item">
+      <input type="checkbox" v-model="autoPractice" />
+      Auto practice
+    </a>
+    <a class="item">
+      Rate {{ rate }}
+      
+      <input type="range" min="0.5" max="1.5" 
+             v-model="rate" 
+             class="slider"
+             step="0.1">
+    </a>
+    <a class="item">
+      Pitch {{ pitch }}
+      
+      <input type="range" min="0.5" max="1.5" 
+             v-model="pitch" 
+             class="slider"
+             step="0.1">
+    </a>
+    <a class="item"
+       v-if="voice">
+      <select v-model="voiceName">
+        <option v-for="name in voiceNameList"
+                v-bind:value="name">
+          {{ name }}
+        </option>
+      </select>
+    </a>
+  </div>
 </div>

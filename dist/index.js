@@ -2086,7 +2086,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-82b7485c],\n.target .isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.target .word[data-v-82b7485c] {\n  cursor: pointer;\n}\n.target .word.isSpeaking[data-v-82b7485c] {\n  cursor: not-allowed;\n}\n.practice[data-v-82b7485c],\n.diff[data-v-82b7485c] {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACCF;ADCE;;EAEE,wBAAA;EACA,YAAA;ACCJ;ADTA;EAYI,eAAA;ACAJ;ADEI;EACE,mBAAA;ACAN;ADIA;;EAEE,WAAA;EACA,kBAAA;EACA,mBAAA;EACA,0BAAA;ACFF;ADKA;EAGI,6BAAA;EACA,WAAA;ACLJ;ADCA;EAQI,UAAA;ACNJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  .word {\n    cursor: pointer;\n    \n    &.isSpeaking {\n      cursor: not-allowed;\n    }\n  }\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n\n.diff {\n  \n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.target .word {\n  cursor: pointer;\n}\n.target .word.isSpeaking {\n  cursor: not-allowed;\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n"]}]);
+exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-82b7485c],\n.target .isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.word[data-v-82b7485c] {\n  cursor: pointer;\n}\n.word.isSpeaking[data-v-82b7485c] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.practice[data-v-82b7485c],\n.diff[data-v-82b7485c] {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n.sentence-control-panel[data-v-82b7485c] {\n  white-space: nowrap;\n}\n.menu input[type=\"range\"][data-v-82b7485c] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-82b7485c] {\n  margin-right: 1rem;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACCF;ADCE;;EAEE,wBAAA;EACA,YAAA;ACCJ;ADKA;EACE,eAAA;ACHF;ADKE;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACHJ;ADOA;;EAEE,WAAA;EACA,kBAAA;EACA,mBAAA;EACA,0BAAA;ACLF;ADQA;EAGI,6BAAA;EACA,WAAA;ACRJ;ADIA;EAQI,UAAA;ACTJ;ADaA;EACE,mBAAA;ACXF;ADcA;EAEI,iBAAA;ACbJ;ADWA;EAMI,kBAAA;ACdJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  \n}\n\n.word {\n  cursor: pointer;\n\n  &.isSpeaking {\n    cursor: not-allowed;\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n\n.diff {\n  \n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}\n\n.sentence-control-panel {\n  white-space: nowrap;\n}\n\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.word {\n  cursor: pointer;\n}\n.word.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n.sentence-control-panel {\n  white-space: nowrap;\n}\n.menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -18241,41 +18241,51 @@ var render = function() {
       _vm._v(" "),
       _vm._l(_vm.sentenceList, function(sentence, i) {
         return _c("div", { staticClass: "ui grid" }, [
-          _c("div", { staticClass: "two wide column center aligned" }, [
-            _c("div", [_vm._v("No. " + _vm._s(i))]),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "ui button tiny icon",
-                class: {
-                  positive: i === _vm.speakingIndex && !_vm.speakingWordIndex
+          _c(
+            "div",
+            {
+              staticClass:
+                "two wide column center aligned sentence-control-panel"
+            },
+            [
+              _c("div", [_vm._v("No. " + _vm._s(i + 1))]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "ui button tiny icon",
+                  class: {
+                    positive:
+                      i === _vm.speakingIndex &&
+                      _vm.speakingWordIndex === null &&
+                      _vm.speakingDiffWordIndex === null
+                  },
+                  attrs: { type: "button" },
+                  on: {
+                    click: function($event) {
+                      return _vm.speak(sentence, i)
+                    }
+                  }
                 },
-                attrs: { type: "button" },
-                on: {
-                  click: function($event) {
-                    return _vm.speak(sentence, i)
+                [_c("i", { staticClass: "icon assistive listening systems" })]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "ui button tiny icon",
+                  class: { orange: i === _vm.practiceIndex },
+                  attrs: { type: "button" },
+                  on: {
+                    click: function($event) {
+                      return _vm.practice(i)
+                    }
                   }
-                }
-              },
-              [_c("i", { staticClass: "icon assistive listening systems" })]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "ui button tiny icon",
-                class: { orange: i === _vm.practiceIndex },
-                attrs: { type: "button" },
-                on: {
-                  click: function($event) {
-                    return _vm.practice(i)
-                  }
-                }
-              },
-              [_c("i", { staticClass: "icon microphone" })]
-            )
-          ]),
+                },
+                [_c("i", { staticClass: "icon microphone" })]
+              )
+            ]
+          ),
           _vm._v(" "),
           _c("div", { staticClass: "fourteen wide column" }, [
             _c(
@@ -18283,7 +18293,10 @@ var render = function() {
               {
                 staticClass: "target",
                 class: {
-                  isSpeaking: i === _vm.speakingIndex && !_vm.speakingWordIndex
+                  isSpeaking:
+                    i === _vm.speakingIndex &&
+                    _vm.speakingWordIndex === null &&
+                    _vm.speakingDiffWordIndex === null
                 }
               },
               _vm._l(sentence.split(" "), function(word, j) {
@@ -18298,6 +18311,9 @@ var render = function() {
                     on: {
                       click: function($event) {
                         return _vm.speakWord(word, i, j)
+                      },
+                      dblclick: function($event) {
+                        return _vm.openDict(word)
                       }
                     }
                   },
@@ -18321,11 +18337,35 @@ var render = function() {
                     return _c(
                       "span",
                       { class: { removed: diff.removed, added: diff.added } },
-                      [
-                        _vm._v(
-                          "\r\n          " + _vm._s(diff.value) + "\r\n        "
+                      _vm._l(diff.value.split(" "), function(word, k) {
+                        return _c(
+                          "span",
+                          {
+                            staticClass: "word",
+                            class: {
+                              isSpeaking:
+                                i === _vm.speakingIndex &&
+                                j + "-" + k === _vm.speakingDiffWordIndex
+                            },
+                            on: {
+                              click: function($event) {
+                                _vm.speakDiffWord(word, i, j + "-" + k)
+                              },
+                              dblclick: function($event) {
+                                return _vm.openDict(word)
+                              }
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\r\n            " +
+                                _vm._s(word) +
+                                "\r\n          "
+                            )
+                          ]
                         )
-                      ]
+                      }),
+                      0
                     )
                   }),
                   0
@@ -18333,7 +18373,135 @@ var render = function() {
               : _vm._e()
           ])
         ])
-      })
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "ui bottom fixed menu" }, [
+        _c("a", { staticClass: "item" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.autoPractice,
+                expression: "autoPractice"
+              }
+            ],
+            attrs: { type: "checkbox" },
+            domProps: {
+              checked: Array.isArray(_vm.autoPractice)
+                ? _vm._i(_vm.autoPractice, null) > -1
+                : _vm.autoPractice
+            },
+            on: {
+              change: function($event) {
+                var $$a = _vm.autoPractice,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? true : false
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 && (_vm.autoPractice = $$a.concat([$$v]))
+                  } else {
+                    $$i > -1 &&
+                      (_vm.autoPractice = $$a
+                        .slice(0, $$i)
+                        .concat($$a.slice($$i + 1)))
+                  }
+                } else {
+                  _vm.autoPractice = $$c
+                }
+              }
+            }
+          }),
+          _vm._v("\r\n      Auto practice\r\n    ")
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "item" }, [
+          _vm._v("\r\n      Rate " + _vm._s(_vm.rate) + "\r\n      \r\n      "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.rate,
+                expression: "rate"
+              }
+            ],
+            staticClass: "slider",
+            attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
+            domProps: { value: _vm.rate },
+            on: {
+              __r: function($event) {
+                _vm.rate = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "item" }, [
+          _vm._v(
+            "\r\n      Pitch " + _vm._s(_vm.pitch) + "\r\n      \r\n      "
+          ),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.pitch,
+                expression: "pitch"
+              }
+            ],
+            staticClass: "slider",
+            attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
+            domProps: { value: _vm.pitch },
+            on: {
+              __r: function($event) {
+                _vm.pitch = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _vm.voice
+          ? _c("a", { staticClass: "item" }, [
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.voiceName,
+                      expression: "voiceName"
+                    }
+                  ],
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.voiceName = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    }
+                  }
+                },
+                _vm._l(_vm.voiceNameList, function(name) {
+                  return _c("option", { domProps: { value: name } }, [
+                    _vm._v("\r\n          " + _vm._s(name) + "\r\n        ")
+                  ])
+                }),
+                0
+              )
+            ])
+          : _vm._e()
+      ])
     ],
     2
   )
@@ -30882,41 +31050,60 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 var Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
 
-/* global Node */
+/* global Node, webkitSpeechRecognition, webkitSpeechGrammarList, webkitSpeechRecognitionEvent */
 let Index = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.config.localConfig
     return {
       fieldArticle: ``,
-      fieldArticleTimer: null,
+      
+      autoPractice: true,
       sentenceList: [],
       practiceList: [],
       diffList: [],
       
       synth: null,
       voice: null,
+      voices: null,
+      voiceName: null,
+      voiceNameList: [],
+      
       pitch: 1,
       rate: 1,
       speakingIndex: null,
       speakingWordIndex: null,
+      speakingDiffWordIndex: null,
       
-      practiceIndex: null
+      practiceIndex: null,
+      
+      recognition: null,
+      recognitionResult: null,
+      recognitionAbort: false,
     }
   },
   mounted () {
     this.loadDemo()
     this.initSynth()
+    this.initRecognition()
   },
 //  components: {
 //  },
-  computed: {
-    
-  },
+//  computed: {
+//  },
   watch: {
     fieldArticle: async function () {
       await this.utils.AsyncUtils.sleep()
       this.buildSentenceList()
+    },
+    recognitionAbort() {
+      if (this.recognitionAbort === true) {
+        this.recognition.abort()
+      }
+    },
+    voiceName () {
+      let pos = this.voiceNameList.indexOf(this.voiceName)
+      this.voice = this.voices[pos]
     }
   },
   methods: {
@@ -30930,26 +31117,76 @@ let Index = {
         voices = this.synth.getVoices()
       }
       
-      let voicesNames = voices.map(v => v.name)
+      this.voices = voices
+      this.voiceNameList = voices.map(v => v.name)
+      
       let preferName = [
         'Google US English',
         'Google US English Male',
         'Google UK English Female',
         'Google UK English Male',
+        'Chrome OS US English 1'
       ]
       
-      let voiceIndex
+      let voiceIndex = 0
+      //console.log(voicesNames)
       for (let i = 0; i < preferName.length; i++) {
-        if (voicesNames.indexOf(preferName[i])) {
-          voiceIndex = i
+        //console.log(preferName[i])
+        let pos = this.voiceNameList.indexOf(preferName[i])
+        if (pos > -1) {
+          voiceIndex = pos
           break
         }
       }
       this.voice = voices[voiceIndex]
-      //console.log(voices)
+      this.voiceName = this.voice.name
+    },
+    initRecognition () {
+      //console.log(1)
+      var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+      var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
+      var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+      
+      this.recognition = new SpeechRecognition();
+      
+      //var speechRecognitionList = new SpeechGrammarList();
+      //var grammar = '#JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;'
+      //speechRecognitionList.addFromString(grammar, 1);
+      //this.recognition.grammars = speechRecognitionList;
+      //console.log(speechRecognitionList[0].src); // should return the same as the contents of the grammar variable
+      //console.log(speechRecognitionList[0].weight); // should return 1 - the same as the weight set in line 4.
+      
+      this.recognition.continuous = false;
+      this.recognition.lang = 'en-US';
+      this.recognition.interimResults = false;
+      this.recognition.maxAlternatives = 1;
+      
+      this.recognition.onresult = (event) => {
+        this.recognitionResult = event.results[0][0].transcript;
+        //console.log(color)
+        //console.log('Confidence: ' + event.results[0][0].confidence);
+        
+      }
+      
+      this.recognition.onspeechend = () => {
+        this.recognition.stop();
+      }
+      
+      //this.recognition.start()
     },
     loadDemo: async function () {
       let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
+      
+      //console.log(article)
+      
+      article = article.split(`“`).join('"')
+      article = article.split(`”`).join('"')
+      article = article.split(`\n`).join(' ')
+      article = article.split(`\t`).join(' ')
+      while (article.indexOf('  ') > -1) {
+        article = article.split(`  `).join(' ')
+      } 
+      
       this.fieldArticle = article
     },
     buildSentenceList () {
@@ -30957,7 +31194,39 @@ let Index = {
       
       var tokenizer = new Tokenizer('Chuck')
       tokenizer.setEntry(this.fieldArticle)
-      this.sentenceList = tokenizer.getSentences()
+      
+      let sentences = tokenizer.getSentences()
+      let sentenceList = []
+      sentences.forEach(sentence => {
+//        while (sentence.indexOf(', ') > -1) {
+//          let pos = sentence.indexOf(', ')
+//          let part = sentence.slice(0, pos + 2).trim()
+//          sentenceList.push(part)
+//          sentence = sentence.slice(pos + 2).trim()
+//        }
+        while (sentence.indexOf('. ') > -1) {
+          let pos = sentence.indexOf('. ')
+          let part = sentence.slice(0, pos + 2).trim()
+          sentenceList.push(part)
+          sentence = sentence.slice(pos + 2).trim()
+        }
+        
+        if (sentence.length > 0) {
+          sentenceList.push(sentence.trim())
+        }
+      })
+      
+      this.sentenceList = sentenceList
+    },
+    buildUtter (sentence, onend) {
+      var utterThis = new SpeechSynthesisUtterance(sentence);
+      
+      utterThis.onend = onend
+      utterThis.voice = this.voice;
+      utterThis.pitch = this.pitch;
+      utterThis.rate = this.rate;
+      
+      return utterThis
     },
     speak (sentence, i) {
       this.synth.cancel()
@@ -30969,22 +31238,16 @@ let Index = {
       
       //console.log(sentence)
       this.speakingIndex = i
+      this.recognitionAbort = true
       
-      var utterThis = new SpeechSynthesisUtterance(sentence);
-      
-      utterThis.onend = (event) => {
+      var utterThis = this.buildUtter(sentence, (event) => {
         console.log('SpeechSynthesisUtterance.onend');
         this.speakingIndex = null
-        this.practice(i)
-      }
-      utterThis.onerror = (event) => {
-        console.error('SpeechSynthesisUtterance.onerror');
-        this.speakingIndex = null
-      }
+        if (this.practiceIndex === null && this.autoPractice) {
+          this.practice(i)
+        }
+      });
       
-      utterThis.voice = this.voice;
-      utterThis.pitch = this.pitch;
-      utterThis.rate = this.rate;
       this.synth.speak(utterThis);
     },
     speakWord: async function (word, i, j) {
@@ -31000,37 +31263,100 @@ let Index = {
       //console.log(sentence)
       this.speakingIndex = i
       this.speakingWordIndex = j
+      this.recognitionAbort = true
       
-      var utterThis = new SpeechSynthesisUtterance(word);
-      
-      utterThis.onend = (event) => {
-        console.log('SpeechSynthesisUtterance.onend');
+      var utterThis = this.buildUtter(word, (event) => {
         this.speakingIndex = null
         this.speakingWordIndex = null
-      }
-      utterThis.onerror = (event) => {
-        console.error('SpeechSynthesisUtterance.onerror');
-        this.speakingIndex = null
-        this.speakingWordIndex = null
-      }
+      });
       
-      utterThis.voice = this.voice;
-      utterThis.pitch = this.pitch;
-      utterThis.rate = this.rate;
+      this.synth.speak(utterThis);
+    },
+    speakDiffWord: async function (word, i, j) {
+      this.synth.cancel()
+      
+      if (i === this.speakingIndex 
+              && j === this.speakingDiffWordIndex) {
+        this.speakingIndex = null
+        this.speakingDiffWordIndex = null
+        return false
+      }
+      //this.recognition.abort()
+      
+      //console.log(sentence)
+      this.speakingIndex = i
+      this.speakingDiffWordIndex = j
+      this.recognitionAbort = true
+      
+      
+      var utterThis = this.buildUtter(word, (event) => {
+        this.speakingIndex = null
+        this.speakingDiffWordIndex = null
+      });
+      
       this.synth.speak(utterThis);
     },
     practice: async function (i) {
+      this.synth.cancel()
       this.practiceIndex = i
       this.diffList[i] = []
       
-      await this.utils.AsyncUtils.sleep()
+      this.recognitionResult = null
+      this.recognitionAbort = false
+      this.recognition.start()
+      while (this.recognitionResult === null) {
+        if (this.recognitionAbort === true) {
+          this.practiceIndex = null
+          return false
+        }
+        await this.utils.AsyncUtils.sleep()
+      }
       
-      this.practiceList[i] = 'test'
+      this.practiceList[i] = this.recognitionResult
       this.practiceIndex = null
       
-      let diff = this.utils.DiffUtils.diffWords(this.practiceList[i], this.sentenceList[i])
+      let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
       //console.log(diff)
       this.diffList[i] = diff
+    },
+    filterWord (word) {
+      return word.replace(/[^\w\s]|_/g, "")
+         .replace(/\s+/g, " ")
+         .trim()
+    },
+    openDict (word) {
+      word = this.filterWord(word)
+      if (word === '') {
+        return false
+      }
+ 
+      let url = `https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/` + word
+      //window.open(url, word)
+      
+      this.popupCenter({url, title: word})
+    },
+    popupCenter ({url, title, w = 800, h = 480}) {
+      // Fixes dual-screen position                             Most browsers      Firefox
+      const dualScreenLeft = window.screenLeft !==  undefined ? window.screenLeft : window.screenX;
+      const dualScreenTop = window.screenTop !==  undefined   ? window.screenTop  : window.screenY;
+
+      const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+      const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+      const systemZoom = width / window.screen.availWidth;
+      const left = (width - w) / 2 / systemZoom + dualScreenLeft
+      const top = (height - h) / 2 / systemZoom + dualScreenTop
+      const newWindow = window.open(url, title, 
+        `
+        scrollbars=yes,
+        width=${w / systemZoom}, 
+        height=${h / systemZoom}, 
+        top=${top}, 
+        left=${left}
+        `
+      )
+
+      if (window.focus) newWindow.focus();
     }
   }
 }
