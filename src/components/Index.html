@@ -7,8 +7,34 @@
               id="fieldArticle"></textarea>
   </div>
   
-  <div>
-    {{ fieldArticle }}
+  <div v-for="(sentence, i) in sentenceList" class="ui grid">
+    <div class="two wide column center aligned">
+      <div>No. {{ i }}</div>
+      
+      <button type="button" 
+            v-on:click="speak(sentence, i)" 
+            class="ui button tiny icon"
+            v-bind:class="{positive: (i === speakingIndex)}">
+        <i class="icon assistive listening systems" />
+      </button>
+      <button type="button" 
+            v-on:click="practice(i)" 
+            class="ui button tiny icon"
+            v-bind:class="{orange: (i === practiceIndex)}">
+        <i class="icon microphone" />
+      </button>
+    </div>
+    <div class="fourteen wide column">
+      <div class="target"
+           v-bind:class="{isSpeaking: (i === speakingIndex)}">{{ sentence }}</div>
+      <div class="practice">{{ practiceList[i] }}</div>
+      <div class="diff">
+        <span v-for="(diff, j) in diffList[i]"
+          v-bind:class="{removed: diff.removed, added: diff.added}">
+          {{ diff.value }}
+        </span>
+      </div>
+    </div>
   </div>
   
 </div>

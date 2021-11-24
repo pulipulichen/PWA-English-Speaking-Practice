@@ -2086,7 +2086,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".input a[data-v-82b7485c] {\n  display: block;\n  text-align: center;\n  font-size: 3rem;\n  line-height: 3rem;\n}\n.input textarea[data-v-82b7485c] {\n  height: calc(100vh - 3rem) !important;\n  max-height: calc(100vh - 3rem) !important;\n}\n.output textarea[data-v-82b7485c] {\n  font-size: 3rem !important;\n  height: 100vh !important;\n  max-height: 100vh !important;\n}\n.iframes iframe[data-v-82b7485c] {\n  width: 100%;\n  height: 50rem;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EAEQ,cAAA;EACA,kBAAA;EACA,eAAA;EACA,iBAAA;ACAR;ADLA;EASQ,qCAAA;EACA,yCAAA;ACDR;ADKA;EACI,0BAAA;EACA,wBAAA;EACA,4BAAA;ACHJ;ADMA;EACE,WAAA;EACA,aAAA;ACJF","file":"Index.less","sourcesContent":[".input {\n    a {\n        display: block;\n        text-align: center;\n        font-size: 3rem;\n        line-height: 3rem;\n    }\n    \n    textarea {\n        height: calc(100vh - 3rem) !important;\n        max-height: calc(100vh - 3rem) !important;\n    }\n}\n\n.output textarea {\n    font-size: 3rem !important;\n    height: 100vh !important;\n    max-height: 100vh !important;\n}\n\n.iframes iframe {\n  width: 100%;\n  height: 50rem;\n}",".input a {\n  display: block;\n  text-align: center;\n  font-size: 3rem;\n  line-height: 3rem;\n}\n.input textarea {\n  height: calc(100vh - 3rem) !important;\n  max-height: calc(100vh - 3rem) !important;\n}\n.output textarea {\n  font-size: 3rem !important;\n  height: 100vh !important;\n  max-height: 100vh !important;\n}\n.iframes iframe {\n  width: 100%;\n  height: 50rem;\n}\n"]}]);
+exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #CCC;\n}\n.target.isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,qBAAA;EACA,6BAAA;ACCF;ADCE;EACE,wBAAA;EACA,YAAA;ACCJ;ADMA;EAEI,6BAAA;EACA,WAAA;ACLJ;ADEA;EAOI,UAAA;ACNJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #CCC;\n  \n  &.isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n}\n.practice {\n  \n}\n\n.diff {\n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #CCC;\n}\n.target.isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -2104,7 +2104,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, "body {\n  overflow: hidden;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/IndexGlobal.less?vue&type=style&index=1&lang=less&","IndexGlobal.less"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF","file":"IndexGlobal.less","sourcesContent":["body {\n  overflow: hidden;\n}","body {\n  overflow: hidden;\n}\n"]}]);
+exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"IndexGlobal.less"}]);
 // Exports
 module.exports = exports;
 
@@ -2213,6 +2213,1598 @@ function toComment(sourceMap) {
   var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
   return "/*# ".concat(data, " */");
 }
+
+/***/ }),
+
+/***/ "./node_modules/diff/dist/diff.js":
+/*!****************************************!*\
+  !*** ./node_modules/diff/dist/diff.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+   true ? factory(exports) :
+  undefined;
+}(this, (function (exports) { 'use strict';
+
+  function Diff() {}
+  Diff.prototype = {
+    diff: function diff(oldString, newString) {
+      var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+      var callback = options.callback;
+
+      if (typeof options === 'function') {
+        callback = options;
+        options = {};
+      }
+
+      this.options = options;
+      var self = this;
+
+      function done(value) {
+        if (callback) {
+          setTimeout(function () {
+            callback(undefined, value);
+          }, 0);
+          return true;
+        } else {
+          return value;
+        }
+      } // Allow subclasses to massage the input prior to running
+
+
+      oldString = this.castInput(oldString);
+      newString = this.castInput(newString);
+      oldString = this.removeEmpty(this.tokenize(oldString));
+      newString = this.removeEmpty(this.tokenize(newString));
+      var newLen = newString.length,
+          oldLen = oldString.length;
+      var editLength = 1;
+      var maxEditLength = newLen + oldLen;
+      var bestPath = [{
+        newPos: -1,
+        components: []
+      }]; // Seed editLength = 0, i.e. the content starts with the same values
+
+      var oldPos = this.extractCommon(bestPath[0], newString, oldString, 0);
+
+      if (bestPath[0].newPos + 1 >= newLen && oldPos + 1 >= oldLen) {
+        // Identity per the equality and tokenizer
+        return done([{
+          value: this.join(newString),
+          count: newString.length
+        }]);
+      } // Main worker method. checks all permutations of a given edit length for acceptance.
+
+
+      function execEditLength() {
+        for (var diagonalPath = -1 * editLength; diagonalPath <= editLength; diagonalPath += 2) {
+          var basePath = void 0;
+
+          var addPath = bestPath[diagonalPath - 1],
+              removePath = bestPath[diagonalPath + 1],
+              _oldPos = (removePath ? removePath.newPos : 0) - diagonalPath;
+
+          if (addPath) {
+            // No one else is going to attempt to use this value, clear it
+            bestPath[diagonalPath - 1] = undefined;
+          }
+
+          var canAdd = addPath && addPath.newPos + 1 < newLen,
+              canRemove = removePath && 0 <= _oldPos && _oldPos < oldLen;
+
+          if (!canAdd && !canRemove) {
+            // If this path is a terminal then prune
+            bestPath[diagonalPath] = undefined;
+            continue;
+          } // Select the diagonal that we want to branch from. We select the prior
+          // path whose position in the new string is the farthest from the origin
+          // and does not pass the bounds of the diff graph
+
+
+          if (!canAdd || canRemove && addPath.newPos < removePath.newPos) {
+            basePath = clonePath(removePath);
+            self.pushComponent(basePath.components, undefined, true);
+          } else {
+            basePath = addPath; // No need to clone, we've pulled it from the list
+
+            basePath.newPos++;
+            self.pushComponent(basePath.components, true, undefined);
+          }
+
+          _oldPos = self.extractCommon(basePath, newString, oldString, diagonalPath); // If we have hit the end of both strings, then we are done
+
+          if (basePath.newPos + 1 >= newLen && _oldPos + 1 >= oldLen) {
+            return done(buildValues(self, basePath.components, newString, oldString, self.useLongestToken));
+          } else {
+            // Otherwise track this path as a potential candidate and continue.
+            bestPath[diagonalPath] = basePath;
+          }
+        }
+
+        editLength++;
+      } // Performs the length of edit iteration. Is a bit fugly as this has to support the
+      // sync and async mode which is never fun. Loops over execEditLength until a value
+      // is produced.
+
+
+      if (callback) {
+        (function exec() {
+          setTimeout(function () {
+            // This should not happen, but we want to be safe.
+
+            /* istanbul ignore next */
+            if (editLength > maxEditLength) {
+              return callback();
+            }
+
+            if (!execEditLength()) {
+              exec();
+            }
+          }, 0);
+        })();
+      } else {
+        while (editLength <= maxEditLength) {
+          var ret = execEditLength();
+
+          if (ret) {
+            return ret;
+          }
+        }
+      }
+    },
+    pushComponent: function pushComponent(components, added, removed) {
+      var last = components[components.length - 1];
+
+      if (last && last.added === added && last.removed === removed) {
+        // We need to clone here as the component clone operation is just
+        // as shallow array clone
+        components[components.length - 1] = {
+          count: last.count + 1,
+          added: added,
+          removed: removed
+        };
+      } else {
+        components.push({
+          count: 1,
+          added: added,
+          removed: removed
+        });
+      }
+    },
+    extractCommon: function extractCommon(basePath, newString, oldString, diagonalPath) {
+      var newLen = newString.length,
+          oldLen = oldString.length,
+          newPos = basePath.newPos,
+          oldPos = newPos - diagonalPath,
+          commonCount = 0;
+
+      while (newPos + 1 < newLen && oldPos + 1 < oldLen && this.equals(newString[newPos + 1], oldString[oldPos + 1])) {
+        newPos++;
+        oldPos++;
+        commonCount++;
+      }
+
+      if (commonCount) {
+        basePath.components.push({
+          count: commonCount
+        });
+      }
+
+      basePath.newPos = newPos;
+      return oldPos;
+    },
+    equals: function equals(left, right) {
+      if (this.options.comparator) {
+        return this.options.comparator(left, right);
+      } else {
+        return left === right || this.options.ignoreCase && left.toLowerCase() === right.toLowerCase();
+      }
+    },
+    removeEmpty: function removeEmpty(array) {
+      var ret = [];
+
+      for (var i = 0; i < array.length; i++) {
+        if (array[i]) {
+          ret.push(array[i]);
+        }
+      }
+
+      return ret;
+    },
+    castInput: function castInput(value) {
+      return value;
+    },
+    tokenize: function tokenize(value) {
+      return value.split('');
+    },
+    join: function join(chars) {
+      return chars.join('');
+    }
+  };
+
+  function buildValues(diff, components, newString, oldString, useLongestToken) {
+    var componentPos = 0,
+        componentLen = components.length,
+        newPos = 0,
+        oldPos = 0;
+
+    for (; componentPos < componentLen; componentPos++) {
+      var component = components[componentPos];
+
+      if (!component.removed) {
+        if (!component.added && useLongestToken) {
+          var value = newString.slice(newPos, newPos + component.count);
+          value = value.map(function (value, i) {
+            var oldValue = oldString[oldPos + i];
+            return oldValue.length > value.length ? oldValue : value;
+          });
+          component.value = diff.join(value);
+        } else {
+          component.value = diff.join(newString.slice(newPos, newPos + component.count));
+        }
+
+        newPos += component.count; // Common case
+
+        if (!component.added) {
+          oldPos += component.count;
+        }
+      } else {
+        component.value = diff.join(oldString.slice(oldPos, oldPos + component.count));
+        oldPos += component.count; // Reverse add and remove so removes are output first to match common convention
+        // The diffing algorithm is tied to add then remove output and this is the simplest
+        // route to get the desired output with minimal overhead.
+
+        if (componentPos && components[componentPos - 1].added) {
+          var tmp = components[componentPos - 1];
+          components[componentPos - 1] = components[componentPos];
+          components[componentPos] = tmp;
+        }
+      }
+    } // Special case handle for when one terminal is ignored (i.e. whitespace).
+    // For this case we merge the terminal into the prior string and drop the change.
+    // This is only available for string mode.
+
+
+    var lastComponent = components[componentLen - 1];
+
+    if (componentLen > 1 && typeof lastComponent.value === 'string' && (lastComponent.added || lastComponent.removed) && diff.equals('', lastComponent.value)) {
+      components[componentLen - 2].value += lastComponent.value;
+      components.pop();
+    }
+
+    return components;
+  }
+
+  function clonePath(path) {
+    return {
+      newPos: path.newPos,
+      components: path.components.slice(0)
+    };
+  }
+
+  var characterDiff = new Diff();
+  function diffChars(oldStr, newStr, options) {
+    return characterDiff.diff(oldStr, newStr, options);
+  }
+
+  function generateOptions(options, defaults) {
+    if (typeof options === 'function') {
+      defaults.callback = options;
+    } else if (options) {
+      for (var name in options) {
+        /* istanbul ignore else */
+        if (options.hasOwnProperty(name)) {
+          defaults[name] = options[name];
+        }
+      }
+    }
+
+    return defaults;
+  }
+
+  //
+  // Ranges and exceptions:
+  // Latin-1 Supplement, 0080–00FF
+  //  - U+00D7  × Multiplication sign
+  //  - U+00F7  ÷ Division sign
+  // Latin Extended-A, 0100–017F
+  // Latin Extended-B, 0180–024F
+  // IPA Extensions, 0250–02AF
+  // Spacing Modifier Letters, 02B0–02FF
+  //  - U+02C7  ˇ &#711;  Caron
+  //  - U+02D8  ˘ &#728;  Breve
+  //  - U+02D9  ˙ &#729;  Dot Above
+  //  - U+02DA  ˚ &#730;  Ring Above
+  //  - U+02DB  ˛ &#731;  Ogonek
+  //  - U+02DC  ˜ &#732;  Small Tilde
+  //  - U+02DD  ˝ &#733;  Double Acute Accent
+  // Latin Extended Additional, 1E00–1EFF
+
+  var extendedWordChars = /^[A-Za-z\xC0-\u02C6\u02C8-\u02D7\u02DE-\u02FF\u1E00-\u1EFF]+$/;
+  var reWhitespace = /\S/;
+  var wordDiff = new Diff();
+
+  wordDiff.equals = function (left, right) {
+    if (this.options.ignoreCase) {
+      left = left.toLowerCase();
+      right = right.toLowerCase();
+    }
+
+    return left === right || this.options.ignoreWhitespace && !reWhitespace.test(left) && !reWhitespace.test(right);
+  };
+
+  wordDiff.tokenize = function (value) {
+    // All whitespace symbols except newline group into one token, each newline - in separate token
+    var tokens = value.split(/([^\S\r\n]+|[()[\]{}'"\r\n]|\b)/); // Join the boundary splits that we do not consider to be boundaries. This is primarily the extended Latin character set.
+
+    for (var i = 0; i < tokens.length - 1; i++) {
+      // If we have an empty string in the next field and we have only word chars before and after, merge
+      if (!tokens[i + 1] && tokens[i + 2] && extendedWordChars.test(tokens[i]) && extendedWordChars.test(tokens[i + 2])) {
+        tokens[i] += tokens[i + 2];
+        tokens.splice(i + 1, 2);
+        i--;
+      }
+    }
+
+    return tokens;
+  };
+
+  function diffWords(oldStr, newStr, options) {
+    options = generateOptions(options, {
+      ignoreWhitespace: true
+    });
+    return wordDiff.diff(oldStr, newStr, options);
+  }
+  function diffWordsWithSpace(oldStr, newStr, options) {
+    return wordDiff.diff(oldStr, newStr, options);
+  }
+
+  var lineDiff = new Diff();
+
+  lineDiff.tokenize = function (value) {
+    var retLines = [],
+        linesAndNewlines = value.split(/(\n|\r\n)/); // Ignore the final empty token that occurs if the string ends with a new line
+
+    if (!linesAndNewlines[linesAndNewlines.length - 1]) {
+      linesAndNewlines.pop();
+    } // Merge the content and line separators into single tokens
+
+
+    for (var i = 0; i < linesAndNewlines.length; i++) {
+      var line = linesAndNewlines[i];
+
+      if (i % 2 && !this.options.newlineIsToken) {
+        retLines[retLines.length - 1] += line;
+      } else {
+        if (this.options.ignoreWhitespace) {
+          line = line.trim();
+        }
+
+        retLines.push(line);
+      }
+    }
+
+    return retLines;
+  };
+
+  function diffLines(oldStr, newStr, callback) {
+    return lineDiff.diff(oldStr, newStr, callback);
+  }
+  function diffTrimmedLines(oldStr, newStr, callback) {
+    var options = generateOptions(callback, {
+      ignoreWhitespace: true
+    });
+    return lineDiff.diff(oldStr, newStr, options);
+  }
+
+  var sentenceDiff = new Diff();
+
+  sentenceDiff.tokenize = function (value) {
+    return value.split(/(\S.+?[.!?])(?=\s+|$)/);
+  };
+
+  function diffSentences(oldStr, newStr, callback) {
+    return sentenceDiff.diff(oldStr, newStr, callback);
+  }
+
+  var cssDiff = new Diff();
+
+  cssDiff.tokenize = function (value) {
+    return value.split(/([{}:;,]|\s+)/);
+  };
+
+  function diffCss(oldStr, newStr, callback) {
+    return cssDiff.diff(oldStr, newStr, callback);
+  }
+
+  function _typeof(obj) {
+    "@babel/helpers - typeof";
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      _typeof = function (obj) {
+        return typeof obj;
+      };
+    } else {
+      _typeof = function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return _typeof(obj);
+  }
+
+  function _toConsumableArray(arr) {
+    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+  }
+
+  function _arrayWithoutHoles(arr) {
+    if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+  }
+
+  function _iterableToArray(iter) {
+    if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  }
+
+  function _unsupportedIterableToArray(o, minLen) {
+    if (!o) return;
+    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    var n = Object.prototype.toString.call(o).slice(8, -1);
+    if (n === "Object" && o.constructor) n = o.constructor.name;
+    if (n === "Map" || n === "Set") return Array.from(o);
+    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+  }
+
+  function _arrayLikeToArray(arr, len) {
+    if (len == null || len > arr.length) len = arr.length;
+
+    for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+
+  function _nonIterableSpread() {
+    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  }
+
+  var objectPrototypeToString = Object.prototype.toString;
+  var jsonDiff = new Diff(); // Discriminate between two lines of pretty-printed, serialized JSON where one of them has a
+  // dangling comma and the other doesn't. Turns out including the dangling comma yields the nicest output:
+
+  jsonDiff.useLongestToken = true;
+  jsonDiff.tokenize = lineDiff.tokenize;
+
+  jsonDiff.castInput = function (value) {
+    var _this$options = this.options,
+        undefinedReplacement = _this$options.undefinedReplacement,
+        _this$options$stringi = _this$options.stringifyReplacer,
+        stringifyReplacer = _this$options$stringi === void 0 ? function (k, v) {
+      return typeof v === 'undefined' ? undefinedReplacement : v;
+    } : _this$options$stringi;
+    return typeof value === 'string' ? value : JSON.stringify(canonicalize(value, null, null, stringifyReplacer), stringifyReplacer, '  ');
+  };
+
+  jsonDiff.equals = function (left, right) {
+    return Diff.prototype.equals.call(jsonDiff, left.replace(/,([\r\n])/g, '$1'), right.replace(/,([\r\n])/g, '$1'));
+  };
+
+  function diffJson(oldObj, newObj, options) {
+    return jsonDiff.diff(oldObj, newObj, options);
+  } // This function handles the presence of circular references by bailing out when encountering an
+  // object that is already on the "stack" of items being processed. Accepts an optional replacer
+
+  function canonicalize(obj, stack, replacementStack, replacer, key) {
+    stack = stack || [];
+    replacementStack = replacementStack || [];
+
+    if (replacer) {
+      obj = replacer(key, obj);
+    }
+
+    var i;
+
+    for (i = 0; i < stack.length; i += 1) {
+      if (stack[i] === obj) {
+        return replacementStack[i];
+      }
+    }
+
+    var canonicalizedObj;
+
+    if ('[object Array]' === objectPrototypeToString.call(obj)) {
+      stack.push(obj);
+      canonicalizedObj = new Array(obj.length);
+      replacementStack.push(canonicalizedObj);
+
+      for (i = 0; i < obj.length; i += 1) {
+        canonicalizedObj[i] = canonicalize(obj[i], stack, replacementStack, replacer, key);
+      }
+
+      stack.pop();
+      replacementStack.pop();
+      return canonicalizedObj;
+    }
+
+    if (obj && obj.toJSON) {
+      obj = obj.toJSON();
+    }
+
+    if (_typeof(obj) === 'object' && obj !== null) {
+      stack.push(obj);
+      canonicalizedObj = {};
+      replacementStack.push(canonicalizedObj);
+
+      var sortedKeys = [],
+          _key;
+
+      for (_key in obj) {
+        /* istanbul ignore else */
+        if (obj.hasOwnProperty(_key)) {
+          sortedKeys.push(_key);
+        }
+      }
+
+      sortedKeys.sort();
+
+      for (i = 0; i < sortedKeys.length; i += 1) {
+        _key = sortedKeys[i];
+        canonicalizedObj[_key] = canonicalize(obj[_key], stack, replacementStack, replacer, _key);
+      }
+
+      stack.pop();
+      replacementStack.pop();
+    } else {
+      canonicalizedObj = obj;
+    }
+
+    return canonicalizedObj;
+  }
+
+  var arrayDiff = new Diff();
+
+  arrayDiff.tokenize = function (value) {
+    return value.slice();
+  };
+
+  arrayDiff.join = arrayDiff.removeEmpty = function (value) {
+    return value;
+  };
+
+  function diffArrays(oldArr, newArr, callback) {
+    return arrayDiff.diff(oldArr, newArr, callback);
+  }
+
+  function parsePatch(uniDiff) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var diffstr = uniDiff.split(/\r\n|[\n\v\f\r\x85]/),
+        delimiters = uniDiff.match(/\r\n|[\n\v\f\r\x85]/g) || [],
+        list = [],
+        i = 0;
+
+    function parseIndex() {
+      var index = {};
+      list.push(index); // Parse diff metadata
+
+      while (i < diffstr.length) {
+        var line = diffstr[i]; // File header found, end parsing diff metadata
+
+        if (/^(\-\-\-|\+\+\+|@@)\s/.test(line)) {
+          break;
+        } // Diff index
+
+
+        var header = /^(?:Index:|diff(?: -r \w+)+)\s+(.+?)\s*$/.exec(line);
+
+        if (header) {
+          index.index = header[1];
+        }
+
+        i++;
+      } // Parse file headers if they are defined. Unified diff requires them, but
+      // there's no technical issues to have an isolated hunk without file header
+
+
+      parseFileHeader(index);
+      parseFileHeader(index); // Parse hunks
+
+      index.hunks = [];
+
+      while (i < diffstr.length) {
+        var _line = diffstr[i];
+
+        if (/^(Index:|diff|\-\-\-|\+\+\+)\s/.test(_line)) {
+          break;
+        } else if (/^@@/.test(_line)) {
+          index.hunks.push(parseHunk());
+        } else if (_line && options.strict) {
+          // Ignore unexpected content unless in strict mode
+          throw new Error('Unknown line ' + (i + 1) + ' ' + JSON.stringify(_line));
+        } else {
+          i++;
+        }
+      }
+    } // Parses the --- and +++ headers, if none are found, no lines
+    // are consumed.
+
+
+    function parseFileHeader(index) {
+      var fileHeader = /^(---|\+\+\+)\s+(.*)$/.exec(diffstr[i]);
+
+      if (fileHeader) {
+        var keyPrefix = fileHeader[1] === '---' ? 'old' : 'new';
+        var data = fileHeader[2].split('\t', 2);
+        var fileName = data[0].replace(/\\\\/g, '\\');
+
+        if (/^".*"$/.test(fileName)) {
+          fileName = fileName.substr(1, fileName.length - 2);
+        }
+
+        index[keyPrefix + 'FileName'] = fileName;
+        index[keyPrefix + 'Header'] = (data[1] || '').trim();
+        i++;
+      }
+    } // Parses a hunk
+    // This assumes that we are at the start of a hunk.
+
+
+    function parseHunk() {
+      var chunkHeaderIndex = i,
+          chunkHeaderLine = diffstr[i++],
+          chunkHeader = chunkHeaderLine.split(/@@ -(\d+)(?:,(\d+))? \+(\d+)(?:,(\d+))? @@/);
+      var hunk = {
+        oldStart: +chunkHeader[1],
+        oldLines: typeof chunkHeader[2] === 'undefined' ? 1 : +chunkHeader[2],
+        newStart: +chunkHeader[3],
+        newLines: typeof chunkHeader[4] === 'undefined' ? 1 : +chunkHeader[4],
+        lines: [],
+        linedelimiters: []
+      }; // Unified Diff Format quirk: If the chunk size is 0,
+      // the first number is one lower than one would expect.
+      // https://www.artima.com/weblogs/viewpost.jsp?thread=164293
+
+      if (hunk.oldLines === 0) {
+        hunk.oldStart += 1;
+      }
+
+      if (hunk.newLines === 0) {
+        hunk.newStart += 1;
+      }
+
+      var addCount = 0,
+          removeCount = 0;
+
+      for (; i < diffstr.length; i++) {
+        // Lines starting with '---' could be mistaken for the "remove line" operation
+        // But they could be the header for the next file. Therefore prune such cases out.
+        if (diffstr[i].indexOf('--- ') === 0 && i + 2 < diffstr.length && diffstr[i + 1].indexOf('+++ ') === 0 && diffstr[i + 2].indexOf('@@') === 0) {
+          break;
+        }
+
+        var operation = diffstr[i].length == 0 && i != diffstr.length - 1 ? ' ' : diffstr[i][0];
+
+        if (operation === '+' || operation === '-' || operation === ' ' || operation === '\\') {
+          hunk.lines.push(diffstr[i]);
+          hunk.linedelimiters.push(delimiters[i] || '\n');
+
+          if (operation === '+') {
+            addCount++;
+          } else if (operation === '-') {
+            removeCount++;
+          } else if (operation === ' ') {
+            addCount++;
+            removeCount++;
+          }
+        } else {
+          break;
+        }
+      } // Handle the empty block count case
+
+
+      if (!addCount && hunk.newLines === 1) {
+        hunk.newLines = 0;
+      }
+
+      if (!removeCount && hunk.oldLines === 1) {
+        hunk.oldLines = 0;
+      } // Perform optional sanity checking
+
+
+      if (options.strict) {
+        if (addCount !== hunk.newLines) {
+          throw new Error('Added line count did not match for hunk at line ' + (chunkHeaderIndex + 1));
+        }
+
+        if (removeCount !== hunk.oldLines) {
+          throw new Error('Removed line count did not match for hunk at line ' + (chunkHeaderIndex + 1));
+        }
+      }
+
+      return hunk;
+    }
+
+    while (i < diffstr.length) {
+      parseIndex();
+    }
+
+    return list;
+  }
+
+  // Iterator that traverses in the range of [min, max], stepping
+  // by distance from a given start position. I.e. for [0, 4], with
+  // start of 2, this will iterate 2, 3, 1, 4, 0.
+  function distanceIterator (start, minLine, maxLine) {
+    var wantForward = true,
+        backwardExhausted = false,
+        forwardExhausted = false,
+        localOffset = 1;
+    return function iterator() {
+      if (wantForward && !forwardExhausted) {
+        if (backwardExhausted) {
+          localOffset++;
+        } else {
+          wantForward = false;
+        } // Check if trying to fit beyond text length, and if not, check it fits
+        // after offset location (or desired location on first iteration)
+
+
+        if (start + localOffset <= maxLine) {
+          return localOffset;
+        }
+
+        forwardExhausted = true;
+      }
+
+      if (!backwardExhausted) {
+        if (!forwardExhausted) {
+          wantForward = true;
+        } // Check if trying to fit before text beginning, and if not, check it fits
+        // before offset location
+
+
+        if (minLine <= start - localOffset) {
+          return -localOffset++;
+        }
+
+        backwardExhausted = true;
+        return iterator();
+      } // We tried to fit hunk before text beginning and beyond text length, then
+      // hunk can't fit on the text. Return undefined
+
+    };
+  }
+
+  function applyPatch(source, uniDiff) {
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    if (typeof uniDiff === 'string') {
+      uniDiff = parsePatch(uniDiff);
+    }
+
+    if (Array.isArray(uniDiff)) {
+      if (uniDiff.length > 1) {
+        throw new Error('applyPatch only works with a single input.');
+      }
+
+      uniDiff = uniDiff[0];
+    } // Apply the diff to the input
+
+
+    var lines = source.split(/\r\n|[\n\v\f\r\x85]/),
+        delimiters = source.match(/\r\n|[\n\v\f\r\x85]/g) || [],
+        hunks = uniDiff.hunks,
+        compareLine = options.compareLine || function (lineNumber, line, operation, patchContent) {
+      return line === patchContent;
+    },
+        errorCount = 0,
+        fuzzFactor = options.fuzzFactor || 0,
+        minLine = 0,
+        offset = 0,
+        removeEOFNL,
+        addEOFNL;
+    /**
+     * Checks if the hunk exactly fits on the provided location
+     */
+
+
+    function hunkFits(hunk, toPos) {
+      for (var j = 0; j < hunk.lines.length; j++) {
+        var line = hunk.lines[j],
+            operation = line.length > 0 ? line[0] : ' ',
+            content = line.length > 0 ? line.substr(1) : line;
+
+        if (operation === ' ' || operation === '-') {
+          // Context sanity check
+          if (!compareLine(toPos + 1, lines[toPos], operation, content)) {
+            errorCount++;
+
+            if (errorCount > fuzzFactor) {
+              return false;
+            }
+          }
+
+          toPos++;
+        }
+      }
+
+      return true;
+    } // Search best fit offsets for each hunk based on the previous ones
+
+
+    for (var i = 0; i < hunks.length; i++) {
+      var hunk = hunks[i],
+          maxLine = lines.length - hunk.oldLines,
+          localOffset = 0,
+          toPos = offset + hunk.oldStart - 1;
+      var iterator = distanceIterator(toPos, minLine, maxLine);
+
+      for (; localOffset !== undefined; localOffset = iterator()) {
+        if (hunkFits(hunk, toPos + localOffset)) {
+          hunk.offset = offset += localOffset;
+          break;
+        }
+      }
+
+      if (localOffset === undefined) {
+        return false;
+      } // Set lower text limit to end of the current hunk, so next ones don't try
+      // to fit over already patched text
+
+
+      minLine = hunk.offset + hunk.oldStart + hunk.oldLines;
+    } // Apply patch hunks
+
+
+    var diffOffset = 0;
+
+    for (var _i = 0; _i < hunks.length; _i++) {
+      var _hunk = hunks[_i],
+          _toPos = _hunk.oldStart + _hunk.offset + diffOffset - 1;
+
+      diffOffset += _hunk.newLines - _hunk.oldLines;
+
+      for (var j = 0; j < _hunk.lines.length; j++) {
+        var line = _hunk.lines[j],
+            operation = line.length > 0 ? line[0] : ' ',
+            content = line.length > 0 ? line.substr(1) : line,
+            delimiter = _hunk.linedelimiters[j];
+
+        if (operation === ' ') {
+          _toPos++;
+        } else if (operation === '-') {
+          lines.splice(_toPos, 1);
+          delimiters.splice(_toPos, 1);
+          /* istanbul ignore else */
+        } else if (operation === '+') {
+          lines.splice(_toPos, 0, content);
+          delimiters.splice(_toPos, 0, delimiter);
+          _toPos++;
+        } else if (operation === '\\') {
+          var previousOperation = _hunk.lines[j - 1] ? _hunk.lines[j - 1][0] : null;
+
+          if (previousOperation === '+') {
+            removeEOFNL = true;
+          } else if (previousOperation === '-') {
+            addEOFNL = true;
+          }
+        }
+      }
+    } // Handle EOFNL insertion/removal
+
+
+    if (removeEOFNL) {
+      while (!lines[lines.length - 1]) {
+        lines.pop();
+        delimiters.pop();
+      }
+    } else if (addEOFNL) {
+      lines.push('');
+      delimiters.push('\n');
+    }
+
+    for (var _k = 0; _k < lines.length - 1; _k++) {
+      lines[_k] = lines[_k] + delimiters[_k];
+    }
+
+    return lines.join('');
+  } // Wrapper that supports multiple file patches via callbacks.
+
+  function applyPatches(uniDiff, options) {
+    if (typeof uniDiff === 'string') {
+      uniDiff = parsePatch(uniDiff);
+    }
+
+    var currentIndex = 0;
+
+    function processIndex() {
+      var index = uniDiff[currentIndex++];
+
+      if (!index) {
+        return options.complete();
+      }
+
+      options.loadFile(index, function (err, data) {
+        if (err) {
+          return options.complete(err);
+        }
+
+        var updatedContent = applyPatch(data, index, options);
+        options.patched(index, updatedContent, function (err) {
+          if (err) {
+            return options.complete(err);
+          }
+
+          processIndex();
+        });
+      });
+    }
+
+    processIndex();
+  }
+
+  function structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {
+    if (!options) {
+      options = {};
+    }
+
+    if (typeof options.context === 'undefined') {
+      options.context = 4;
+    }
+
+    var diff = diffLines(oldStr, newStr, options);
+    diff.push({
+      value: '',
+      lines: []
+    }); // Append an empty value to make cleanup easier
+
+    function contextLines(lines) {
+      return lines.map(function (entry) {
+        return ' ' + entry;
+      });
+    }
+
+    var hunks = [];
+    var oldRangeStart = 0,
+        newRangeStart = 0,
+        curRange = [],
+        oldLine = 1,
+        newLine = 1;
+
+    var _loop = function _loop(i) {
+      var current = diff[i],
+          lines = current.lines || current.value.replace(/\n$/, '').split('\n');
+      current.lines = lines;
+
+      if (current.added || current.removed) {
+        var _curRange;
+
+        // If we have previous context, start with that
+        if (!oldRangeStart) {
+          var prev = diff[i - 1];
+          oldRangeStart = oldLine;
+          newRangeStart = newLine;
+
+          if (prev) {
+            curRange = options.context > 0 ? contextLines(prev.lines.slice(-options.context)) : [];
+            oldRangeStart -= curRange.length;
+            newRangeStart -= curRange.length;
+          }
+        } // Output our changes
+
+
+        (_curRange = curRange).push.apply(_curRange, _toConsumableArray(lines.map(function (entry) {
+          return (current.added ? '+' : '-') + entry;
+        }))); // Track the updated file position
+
+
+        if (current.added) {
+          newLine += lines.length;
+        } else {
+          oldLine += lines.length;
+        }
+      } else {
+        // Identical context lines. Track line changes
+        if (oldRangeStart) {
+          // Close out any changes that have been output (or join overlapping)
+          if (lines.length <= options.context * 2 && i < diff.length - 2) {
+            var _curRange2;
+
+            // Overlapping
+            (_curRange2 = curRange).push.apply(_curRange2, _toConsumableArray(contextLines(lines)));
+          } else {
+            var _curRange3;
+
+            // end the range and output
+            var contextSize = Math.min(lines.length, options.context);
+
+            (_curRange3 = curRange).push.apply(_curRange3, _toConsumableArray(contextLines(lines.slice(0, contextSize))));
+
+            var hunk = {
+              oldStart: oldRangeStart,
+              oldLines: oldLine - oldRangeStart + contextSize,
+              newStart: newRangeStart,
+              newLines: newLine - newRangeStart + contextSize,
+              lines: curRange
+            };
+
+            if (i >= diff.length - 2 && lines.length <= options.context) {
+              // EOF is inside this hunk
+              var oldEOFNewline = /\n$/.test(oldStr);
+              var newEOFNewline = /\n$/.test(newStr);
+              var noNlBeforeAdds = lines.length == 0 && curRange.length > hunk.oldLines;
+
+              if (!oldEOFNewline && noNlBeforeAdds && oldStr.length > 0) {
+                // special case: old has no eol and no trailing context; no-nl can end up before adds
+                // however, if the old file is empty, do not output the no-nl line
+                curRange.splice(hunk.oldLines, 0, '\\ No newline at end of file');
+              }
+
+              if (!oldEOFNewline && !noNlBeforeAdds || !newEOFNewline) {
+                curRange.push('\\ No newline at end of file');
+              }
+            }
+
+            hunks.push(hunk);
+            oldRangeStart = 0;
+            newRangeStart = 0;
+            curRange = [];
+          }
+        }
+
+        oldLine += lines.length;
+        newLine += lines.length;
+      }
+    };
+
+    for (var i = 0; i < diff.length; i++) {
+      _loop(i);
+    }
+
+    return {
+      oldFileName: oldFileName,
+      newFileName: newFileName,
+      oldHeader: oldHeader,
+      newHeader: newHeader,
+      hunks: hunks
+    };
+  }
+  function formatPatch(diff) {
+    var ret = [];
+
+    if (diff.oldFileName == diff.newFileName) {
+      ret.push('Index: ' + diff.oldFileName);
+    }
+
+    ret.push('===================================================================');
+    ret.push('--- ' + diff.oldFileName + (typeof diff.oldHeader === 'undefined' ? '' : '\t' + diff.oldHeader));
+    ret.push('+++ ' + diff.newFileName + (typeof diff.newHeader === 'undefined' ? '' : '\t' + diff.newHeader));
+
+    for (var i = 0; i < diff.hunks.length; i++) {
+      var hunk = diff.hunks[i]; // Unified Diff Format quirk: If the chunk size is 0,
+      // the first number is one lower than one would expect.
+      // https://www.artima.com/weblogs/viewpost.jsp?thread=164293
+
+      if (hunk.oldLines === 0) {
+        hunk.oldStart -= 1;
+      }
+
+      if (hunk.newLines === 0) {
+        hunk.newStart -= 1;
+      }
+
+      ret.push('@@ -' + hunk.oldStart + ',' + hunk.oldLines + ' +' + hunk.newStart + ',' + hunk.newLines + ' @@');
+      ret.push.apply(ret, hunk.lines);
+    }
+
+    return ret.join('\n') + '\n';
+  }
+  function createTwoFilesPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options) {
+    return formatPatch(structuredPatch(oldFileName, newFileName, oldStr, newStr, oldHeader, newHeader, options));
+  }
+  function createPatch(fileName, oldStr, newStr, oldHeader, newHeader, options) {
+    return createTwoFilesPatch(fileName, fileName, oldStr, newStr, oldHeader, newHeader, options);
+  }
+
+  function arrayEqual(a, b) {
+    if (a.length !== b.length) {
+      return false;
+    }
+
+    return arrayStartsWith(a, b);
+  }
+  function arrayStartsWith(array, start) {
+    if (start.length > array.length) {
+      return false;
+    }
+
+    for (var i = 0; i < start.length; i++) {
+      if (start[i] !== array[i]) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  function calcLineCount(hunk) {
+    var _calcOldNewLineCount = calcOldNewLineCount(hunk.lines),
+        oldLines = _calcOldNewLineCount.oldLines,
+        newLines = _calcOldNewLineCount.newLines;
+
+    if (oldLines !== undefined) {
+      hunk.oldLines = oldLines;
+    } else {
+      delete hunk.oldLines;
+    }
+
+    if (newLines !== undefined) {
+      hunk.newLines = newLines;
+    } else {
+      delete hunk.newLines;
+    }
+  }
+  function merge(mine, theirs, base) {
+    mine = loadPatch(mine, base);
+    theirs = loadPatch(theirs, base);
+    var ret = {}; // For index we just let it pass through as it doesn't have any necessary meaning.
+    // Leaving sanity checks on this to the API consumer that may know more about the
+    // meaning in their own context.
+
+    if (mine.index || theirs.index) {
+      ret.index = mine.index || theirs.index;
+    }
+
+    if (mine.newFileName || theirs.newFileName) {
+      if (!fileNameChanged(mine)) {
+        // No header or no change in ours, use theirs (and ours if theirs does not exist)
+        ret.oldFileName = theirs.oldFileName || mine.oldFileName;
+        ret.newFileName = theirs.newFileName || mine.newFileName;
+        ret.oldHeader = theirs.oldHeader || mine.oldHeader;
+        ret.newHeader = theirs.newHeader || mine.newHeader;
+      } else if (!fileNameChanged(theirs)) {
+        // No header or no change in theirs, use ours
+        ret.oldFileName = mine.oldFileName;
+        ret.newFileName = mine.newFileName;
+        ret.oldHeader = mine.oldHeader;
+        ret.newHeader = mine.newHeader;
+      } else {
+        // Both changed... figure it out
+        ret.oldFileName = selectField(ret, mine.oldFileName, theirs.oldFileName);
+        ret.newFileName = selectField(ret, mine.newFileName, theirs.newFileName);
+        ret.oldHeader = selectField(ret, mine.oldHeader, theirs.oldHeader);
+        ret.newHeader = selectField(ret, mine.newHeader, theirs.newHeader);
+      }
+    }
+
+    ret.hunks = [];
+    var mineIndex = 0,
+        theirsIndex = 0,
+        mineOffset = 0,
+        theirsOffset = 0;
+
+    while (mineIndex < mine.hunks.length || theirsIndex < theirs.hunks.length) {
+      var mineCurrent = mine.hunks[mineIndex] || {
+        oldStart: Infinity
+      },
+          theirsCurrent = theirs.hunks[theirsIndex] || {
+        oldStart: Infinity
+      };
+
+      if (hunkBefore(mineCurrent, theirsCurrent)) {
+        // This patch does not overlap with any of the others, yay.
+        ret.hunks.push(cloneHunk(mineCurrent, mineOffset));
+        mineIndex++;
+        theirsOffset += mineCurrent.newLines - mineCurrent.oldLines;
+      } else if (hunkBefore(theirsCurrent, mineCurrent)) {
+        // This patch does not overlap with any of the others, yay.
+        ret.hunks.push(cloneHunk(theirsCurrent, theirsOffset));
+        theirsIndex++;
+        mineOffset += theirsCurrent.newLines - theirsCurrent.oldLines;
+      } else {
+        // Overlap, merge as best we can
+        var mergedHunk = {
+          oldStart: Math.min(mineCurrent.oldStart, theirsCurrent.oldStart),
+          oldLines: 0,
+          newStart: Math.min(mineCurrent.newStart + mineOffset, theirsCurrent.oldStart + theirsOffset),
+          newLines: 0,
+          lines: []
+        };
+        mergeLines(mergedHunk, mineCurrent.oldStart, mineCurrent.lines, theirsCurrent.oldStart, theirsCurrent.lines);
+        theirsIndex++;
+        mineIndex++;
+        ret.hunks.push(mergedHunk);
+      }
+    }
+
+    return ret;
+  }
+
+  function loadPatch(param, base) {
+    if (typeof param === 'string') {
+      if (/^@@/m.test(param) || /^Index:/m.test(param)) {
+        return parsePatch(param)[0];
+      }
+
+      if (!base) {
+        throw new Error('Must provide a base reference or pass in a patch');
+      }
+
+      return structuredPatch(undefined, undefined, base, param);
+    }
+
+    return param;
+  }
+
+  function fileNameChanged(patch) {
+    return patch.newFileName && patch.newFileName !== patch.oldFileName;
+  }
+
+  function selectField(index, mine, theirs) {
+    if (mine === theirs) {
+      return mine;
+    } else {
+      index.conflict = true;
+      return {
+        mine: mine,
+        theirs: theirs
+      };
+    }
+  }
+
+  function hunkBefore(test, check) {
+    return test.oldStart < check.oldStart && test.oldStart + test.oldLines < check.oldStart;
+  }
+
+  function cloneHunk(hunk, offset) {
+    return {
+      oldStart: hunk.oldStart,
+      oldLines: hunk.oldLines,
+      newStart: hunk.newStart + offset,
+      newLines: hunk.newLines,
+      lines: hunk.lines
+    };
+  }
+
+  function mergeLines(hunk, mineOffset, mineLines, theirOffset, theirLines) {
+    // This will generally result in a conflicted hunk, but there are cases where the context
+    // is the only overlap where we can successfully merge the content here.
+    var mine = {
+      offset: mineOffset,
+      lines: mineLines,
+      index: 0
+    },
+        their = {
+      offset: theirOffset,
+      lines: theirLines,
+      index: 0
+    }; // Handle any leading content
+
+    insertLeading(hunk, mine, their);
+    insertLeading(hunk, their, mine); // Now in the overlap content. Scan through and select the best changes from each.
+
+    while (mine.index < mine.lines.length && their.index < their.lines.length) {
+      var mineCurrent = mine.lines[mine.index],
+          theirCurrent = their.lines[their.index];
+
+      if ((mineCurrent[0] === '-' || mineCurrent[0] === '+') && (theirCurrent[0] === '-' || theirCurrent[0] === '+')) {
+        // Both modified ...
+        mutualChange(hunk, mine, their);
+      } else if (mineCurrent[0] === '+' && theirCurrent[0] === ' ') {
+        var _hunk$lines;
+
+        // Mine inserted
+        (_hunk$lines = hunk.lines).push.apply(_hunk$lines, _toConsumableArray(collectChange(mine)));
+      } else if (theirCurrent[0] === '+' && mineCurrent[0] === ' ') {
+        var _hunk$lines2;
+
+        // Theirs inserted
+        (_hunk$lines2 = hunk.lines).push.apply(_hunk$lines2, _toConsumableArray(collectChange(their)));
+      } else if (mineCurrent[0] === '-' && theirCurrent[0] === ' ') {
+        // Mine removed or edited
+        removal(hunk, mine, their);
+      } else if (theirCurrent[0] === '-' && mineCurrent[0] === ' ') {
+        // Their removed or edited
+        removal(hunk, their, mine, true);
+      } else if (mineCurrent === theirCurrent) {
+        // Context identity
+        hunk.lines.push(mineCurrent);
+        mine.index++;
+        their.index++;
+      } else {
+        // Context mismatch
+        conflict(hunk, collectChange(mine), collectChange(their));
+      }
+    } // Now push anything that may be remaining
+
+
+    insertTrailing(hunk, mine);
+    insertTrailing(hunk, their);
+    calcLineCount(hunk);
+  }
+
+  function mutualChange(hunk, mine, their) {
+    var myChanges = collectChange(mine),
+        theirChanges = collectChange(their);
+
+    if (allRemoves(myChanges) && allRemoves(theirChanges)) {
+      // Special case for remove changes that are supersets of one another
+      if (arrayStartsWith(myChanges, theirChanges) && skipRemoveSuperset(their, myChanges, myChanges.length - theirChanges.length)) {
+        var _hunk$lines3;
+
+        (_hunk$lines3 = hunk.lines).push.apply(_hunk$lines3, _toConsumableArray(myChanges));
+
+        return;
+      } else if (arrayStartsWith(theirChanges, myChanges) && skipRemoveSuperset(mine, theirChanges, theirChanges.length - myChanges.length)) {
+        var _hunk$lines4;
+
+        (_hunk$lines4 = hunk.lines).push.apply(_hunk$lines4, _toConsumableArray(theirChanges));
+
+        return;
+      }
+    } else if (arrayEqual(myChanges, theirChanges)) {
+      var _hunk$lines5;
+
+      (_hunk$lines5 = hunk.lines).push.apply(_hunk$lines5, _toConsumableArray(myChanges));
+
+      return;
+    }
+
+    conflict(hunk, myChanges, theirChanges);
+  }
+
+  function removal(hunk, mine, their, swap) {
+    var myChanges = collectChange(mine),
+        theirChanges = collectContext(their, myChanges);
+
+    if (theirChanges.merged) {
+      var _hunk$lines6;
+
+      (_hunk$lines6 = hunk.lines).push.apply(_hunk$lines6, _toConsumableArray(theirChanges.merged));
+    } else {
+      conflict(hunk, swap ? theirChanges : myChanges, swap ? myChanges : theirChanges);
+    }
+  }
+
+  function conflict(hunk, mine, their) {
+    hunk.conflict = true;
+    hunk.lines.push({
+      conflict: true,
+      mine: mine,
+      theirs: their
+    });
+  }
+
+  function insertLeading(hunk, insert, their) {
+    while (insert.offset < their.offset && insert.index < insert.lines.length) {
+      var line = insert.lines[insert.index++];
+      hunk.lines.push(line);
+      insert.offset++;
+    }
+  }
+
+  function insertTrailing(hunk, insert) {
+    while (insert.index < insert.lines.length) {
+      var line = insert.lines[insert.index++];
+      hunk.lines.push(line);
+    }
+  }
+
+  function collectChange(state) {
+    var ret = [],
+        operation = state.lines[state.index][0];
+
+    while (state.index < state.lines.length) {
+      var line = state.lines[state.index]; // Group additions that are immediately after subtractions and treat them as one "atomic" modify change.
+
+      if (operation === '-' && line[0] === '+') {
+        operation = '+';
+      }
+
+      if (operation === line[0]) {
+        ret.push(line);
+        state.index++;
+      } else {
+        break;
+      }
+    }
+
+    return ret;
+  }
+
+  function collectContext(state, matchChanges) {
+    var changes = [],
+        merged = [],
+        matchIndex = 0,
+        contextChanges = false,
+        conflicted = false;
+
+    while (matchIndex < matchChanges.length && state.index < state.lines.length) {
+      var change = state.lines[state.index],
+          match = matchChanges[matchIndex]; // Once we've hit our add, then we are done
+
+      if (match[0] === '+') {
+        break;
+      }
+
+      contextChanges = contextChanges || change[0] !== ' ';
+      merged.push(match);
+      matchIndex++; // Consume any additions in the other block as a conflict to attempt
+      // to pull in the remaining context after this
+
+      if (change[0] === '+') {
+        conflicted = true;
+
+        while (change[0] === '+') {
+          changes.push(change);
+          change = state.lines[++state.index];
+        }
+      }
+
+      if (match.substr(1) === change.substr(1)) {
+        changes.push(change);
+        state.index++;
+      } else {
+        conflicted = true;
+      }
+    }
+
+    if ((matchChanges[matchIndex] || '')[0] === '+' && contextChanges) {
+      conflicted = true;
+    }
+
+    if (conflicted) {
+      return changes;
+    }
+
+    while (matchIndex < matchChanges.length) {
+      merged.push(matchChanges[matchIndex++]);
+    }
+
+    return {
+      merged: merged,
+      changes: changes
+    };
+  }
+
+  function allRemoves(changes) {
+    return changes.reduce(function (prev, change) {
+      return prev && change[0] === '-';
+    }, true);
+  }
+
+  function skipRemoveSuperset(state, removeChanges, delta) {
+    for (var i = 0; i < delta; i++) {
+      var changeContent = removeChanges[removeChanges.length - delta + i].substr(1);
+
+      if (state.lines[state.index + i] !== ' ' + changeContent) {
+        return false;
+      }
+    }
+
+    state.index += delta;
+    return true;
+  }
+
+  function calcOldNewLineCount(lines) {
+    var oldLines = 0;
+    var newLines = 0;
+    lines.forEach(function (line) {
+      if (typeof line !== 'string') {
+        var myCount = calcOldNewLineCount(line.mine);
+        var theirCount = calcOldNewLineCount(line.theirs);
+
+        if (oldLines !== undefined) {
+          if (myCount.oldLines === theirCount.oldLines) {
+            oldLines += myCount.oldLines;
+          } else {
+            oldLines = undefined;
+          }
+        }
+
+        if (newLines !== undefined) {
+          if (myCount.newLines === theirCount.newLines) {
+            newLines += myCount.newLines;
+          } else {
+            newLines = undefined;
+          }
+        }
+      } else {
+        if (newLines !== undefined && (line[0] === '+' || line[0] === ' ')) {
+          newLines++;
+        }
+
+        if (oldLines !== undefined && (line[0] === '-' || line[0] === ' ')) {
+          oldLines++;
+        }
+      }
+    });
+    return {
+      oldLines: oldLines,
+      newLines: newLines
+    };
+  }
+
+  // See: http://code.google.com/p/google-diff-match-patch/wiki/API
+  function convertChangesToDMP(changes) {
+    var ret = [],
+        change,
+        operation;
+
+    for (var i = 0; i < changes.length; i++) {
+      change = changes[i];
+
+      if (change.added) {
+        operation = 1;
+      } else if (change.removed) {
+        operation = -1;
+      } else {
+        operation = 0;
+      }
+
+      ret.push([operation, change.value]);
+    }
+
+    return ret;
+  }
+
+  function convertChangesToXML(changes) {
+    var ret = [];
+
+    for (var i = 0; i < changes.length; i++) {
+      var change = changes[i];
+
+      if (change.added) {
+        ret.push('<ins>');
+      } else if (change.removed) {
+        ret.push('<del>');
+      }
+
+      ret.push(escapeHTML(change.value));
+
+      if (change.added) {
+        ret.push('</ins>');
+      } else if (change.removed) {
+        ret.push('</del>');
+      }
+    }
+
+    return ret.join('');
+  }
+
+  function escapeHTML(s) {
+    var n = s;
+    n = n.replace(/&/g, '&amp;');
+    n = n.replace(/</g, '&lt;');
+    n = n.replace(/>/g, '&gt;');
+    n = n.replace(/"/g, '&quot;');
+    return n;
+  }
+
+  exports.Diff = Diff;
+  exports.applyPatch = applyPatch;
+  exports.applyPatches = applyPatches;
+  exports.canonicalize = canonicalize;
+  exports.convertChangesToDMP = convertChangesToDMP;
+  exports.convertChangesToXML = convertChangesToXML;
+  exports.createPatch = createPatch;
+  exports.createTwoFilesPatch = createTwoFilesPatch;
+  exports.diffArrays = diffArrays;
+  exports.diffChars = diffChars;
+  exports.diffCss = diffCss;
+  exports.diffJson = diffJson;
+  exports.diffLines = diffLines;
+  exports.diffSentences = diffSentences;
+  exports.diffTrimmedLines = diffTrimmedLines;
+  exports.diffWords = diffWords;
+  exports.diffWordsWithSpace = diffWordsWithSpace;
+  exports.merge = merge;
+  exports.parsePatch = parsePatch;
+  exports.structuredPatch = structuredPatch;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+
 
 /***/ }),
 
@@ -13304,6 +14896,819 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/sentence-tokenizer/lib/tokenizer.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/sentence-tokenizer/lib/tokenizer.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// eslint-disable-next-line no-unused-vars
+var debug = __webpack_require__(/*! debug */ "./node_modules/sentence-tokenizer/node_modules/debug/src/browser.js")('tokenizer');
+
+function compact(str) {
+  var res = str.trim();
+  res = res.replace('  ', ' ');
+  return res;
+}
+
+function Tokenizer(username, botname) {
+
+  // // Maybe it is not useful
+  // if (!(this instanceof Tokenizer)) {
+  //   return new Tokenizer();
+  // }
+
+  this.username = username || 'Guy';
+  this.entry = null;
+  this.sentences = null;
+
+  if (typeof botname == 'string') {
+    this.botname = botname;
+  }
+  else {
+    this.botname = 'ECTOR';
+  }
+}
+
+Tokenizer.prototype = {
+  setEntry : function (entry) {
+    this.entry = compact(entry);
+    this.sentences = null;
+  },
+  // Split the entry into sentences.
+  getSentences : function () {
+    // this.sentences = this.entry.split(/[\.!]\s/);
+    if (!this.entry) return [];
+    var words = this.entry.split(' ');
+    var endingWords = words.filter(function(w) {
+      return w.endsWith('.') || w.endsWith('!') || w.endsWith('?');
+    });
+
+    var self = this;
+    var botnameRegExp = new RegExp("\\W?" + self.botname.normalize() + "\\W?");
+    var usernameRegExp = new RegExp("\\W?" + self.username.normalize() + "\\W?");
+    var lastSentence = words[0];
+    self.sentences = [];
+    words.reduce(function (prev, cur) {
+      var curNormalized = cur.normalize();
+      var curReplaced = cur;
+      if (curNormalized.search(botnameRegExp) !== -1) {
+        curReplaced = cur.replace(self.botname,"{yourname}");
+      }
+      else if (curNormalized.search(usernameRegExp) !== -1) {
+        curReplaced = cur.replace(self.username,"{myname}");
+      }
+
+      if (endingWords.indexOf(prev) != -1) {
+        self.sentences.push(compact(lastSentence));
+        lastSentence = "";
+      }
+      lastSentence = lastSentence + " " + curReplaced;
+      return cur;
+    });
+    self.sentences.push(compact(lastSentence));
+    return this.sentences;
+  },
+  // Get the tokens of one sentence
+  getTokens : function (sentenceIndex) {
+    var s = 0;
+    if(typeof sentenceIndex === 'number') s = sentenceIndex;
+    return this.sentences[s].split(' ');
+  }
+};
+
+module.exports = Tokenizer;
+
+/***/ }),
+
+/***/ "./node_modules/sentence-tokenizer/node_modules/debug/src/browser.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/sentence-tokenizer/node_modules/debug/src/browser.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/* eslint-env browser */
+
+/**
+ * This is the web browser implementation of `debug()`.
+ */
+
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+	'#0000CC',
+	'#0000FF',
+	'#0033CC',
+	'#0033FF',
+	'#0066CC',
+	'#0066FF',
+	'#0099CC',
+	'#0099FF',
+	'#00CC00',
+	'#00CC33',
+	'#00CC66',
+	'#00CC99',
+	'#00CCCC',
+	'#00CCFF',
+	'#3300CC',
+	'#3300FF',
+	'#3333CC',
+	'#3333FF',
+	'#3366CC',
+	'#3366FF',
+	'#3399CC',
+	'#3399FF',
+	'#33CC00',
+	'#33CC33',
+	'#33CC66',
+	'#33CC99',
+	'#33CCCC',
+	'#33CCFF',
+	'#6600CC',
+	'#6600FF',
+	'#6633CC',
+	'#6633FF',
+	'#66CC00',
+	'#66CC33',
+	'#9900CC',
+	'#9900FF',
+	'#9933CC',
+	'#9933FF',
+	'#99CC00',
+	'#99CC33',
+	'#CC0000',
+	'#CC0033',
+	'#CC0066',
+	'#CC0099',
+	'#CC00CC',
+	'#CC00FF',
+	'#CC3300',
+	'#CC3333',
+	'#CC3366',
+	'#CC3399',
+	'#CC33CC',
+	'#CC33FF',
+	'#CC6600',
+	'#CC6633',
+	'#CC9900',
+	'#CC9933',
+	'#CCCC00',
+	'#CCCC33',
+	'#FF0000',
+	'#FF0033',
+	'#FF0066',
+	'#FF0099',
+	'#FF00CC',
+	'#FF00FF',
+	'#FF3300',
+	'#FF3333',
+	'#FF3366',
+	'#FF3399',
+	'#FF33CC',
+	'#FF33FF',
+	'#FF6600',
+	'#FF6633',
+	'#FF9900',
+	'#FF9933',
+	'#FFCC00',
+	'#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+// eslint-disable-next-line complexity
+function useColors() {
+	// NB: In an Electron preload script, document will be defined but not fully
+	// initialized. Since we know we're in Chrome, we'll just detect this case
+	// explicitly
+	if (typeof window !== 'undefined' && window.process && (window.process.type === 'renderer' || window.process.__nwjs)) {
+		return true;
+	}
+
+	// Internet Explorer and Edge do not support colors.
+	if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+		return false;
+	}
+
+	// Is webkit? http://stackoverflow.com/a/16459606/376773
+	// document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+	return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+		// Is firebug? http://stackoverflow.com/a/398120/376773
+		(typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+		// Is firefox >= v31?
+		// https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+		(typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+		// Double check webkit in userAgent just in case we are in a worker
+		(typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+	args[0] = (this.useColors ? '%c' : '') +
+		this.namespace +
+		(this.useColors ? ' %c' : ' ') +
+		args[0] +
+		(this.useColors ? '%c ' : ' ') +
+		'+' + module.exports.humanize(this.diff);
+
+	if (!this.useColors) {
+		return;
+	}
+
+	const c = 'color: ' + this.color;
+	args.splice(1, 0, c, 'color: inherit');
+
+	// The final "%c" is somewhat tricky, because there could be other
+	// arguments passed either before or after the %c, so we need to
+	// figure out the correct index to insert the CSS into
+	let index = 0;
+	let lastC = 0;
+	args[0].replace(/%[a-zA-Z%]/g, match => {
+		if (match === '%%') {
+			return;
+		}
+		index++;
+		if (match === '%c') {
+			// We only are interested in the *last* %c
+			// (the user may have provided their own)
+			lastC = index;
+		}
+	});
+
+	args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+function log(...args) {
+	// This hackery is required for IE8/9, where
+	// the `console.log` function doesn't have 'apply'
+	return typeof console === 'object' &&
+		console.log &&
+		console.log(...args);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+function save(namespaces) {
+	try {
+		if (namespaces) {
+			exports.storage.setItem('debug', namespaces);
+		} else {
+			exports.storage.removeItem('debug');
+		}
+	} catch (error) {
+		// Swallow
+		// XXX (@Qix-) should we be logging these?
+	}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+function load() {
+	let r;
+	try {
+		r = exports.storage.getItem('debug');
+	} catch (error) {
+		// Swallow
+		// XXX (@Qix-) should we be logging these?
+	}
+
+	// If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+	if (!r && typeof process !== 'undefined' && 'env' in process) {
+		r = process.env.DEBUG;
+	}
+
+	return r;
+}
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+	try {
+		// TVMLKit (Apple TV JS Runtime) does not have a window object, just localStorage in the global context
+		// The Browser also has localStorage in the global context.
+		return localStorage;
+	} catch (error) {
+		// Swallow
+		// XXX (@Qix-) should we be logging these?
+	}
+}
+
+module.exports = __webpack_require__(/*! ./common */ "./node_modules/sentence-tokenizer/node_modules/debug/src/common.js")(exports);
+
+const {formatters} = module.exports;
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+formatters.j = function (v) {
+	try {
+		return JSON.stringify(v);
+	} catch (error) {
+		return '[UnexpectedJSONParseError]: ' + error.message;
+	}
+};
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/sentence-tokenizer/node_modules/debug/src/common.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/sentence-tokenizer/node_modules/debug/src/common.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ */
+
+function setup(env) {
+	createDebug.debug = createDebug;
+	createDebug.default = createDebug;
+	createDebug.coerce = coerce;
+	createDebug.disable = disable;
+	createDebug.enable = enable;
+	createDebug.enabled = enabled;
+	createDebug.humanize = __webpack_require__(/*! ms */ "./node_modules/sentence-tokenizer/node_modules/ms/index.js");
+
+	Object.keys(env).forEach(key => {
+		createDebug[key] = env[key];
+	});
+
+	/**
+	* Active `debug` instances.
+	*/
+	createDebug.instances = [];
+
+	/**
+	* The currently active debug mode names, and names to skip.
+	*/
+
+	createDebug.names = [];
+	createDebug.skips = [];
+
+	/**
+	* Map of special "%n" handling functions, for the debug "format" argument.
+	*
+	* Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+	*/
+	createDebug.formatters = {};
+
+	/**
+	* Selects a color for a debug namespace
+	* @param {String} namespace The namespace string for the for the debug instance to be colored
+	* @return {Number|String} An ANSI color code for the given namespace
+	* @api private
+	*/
+	function selectColor(namespace) {
+		let hash = 0;
+
+		for (let i = 0; i < namespace.length; i++) {
+			hash = ((hash << 5) - hash) + namespace.charCodeAt(i);
+			hash |= 0; // Convert to 32bit integer
+		}
+
+		return createDebug.colors[Math.abs(hash) % createDebug.colors.length];
+	}
+	createDebug.selectColor = selectColor;
+
+	/**
+	* Create a debugger with the given `namespace`.
+	*
+	* @param {String} namespace
+	* @return {Function}
+	* @api public
+	*/
+	function createDebug(namespace) {
+		let prevTime;
+
+		function debug(...args) {
+			// Disabled?
+			if (!debug.enabled) {
+				return;
+			}
+
+			const self = debug;
+
+			// Set `diff` timestamp
+			const curr = Number(new Date());
+			const ms = curr - (prevTime || curr);
+			self.diff = ms;
+			self.prev = prevTime;
+			self.curr = curr;
+			prevTime = curr;
+
+			args[0] = createDebug.coerce(args[0]);
+
+			if (typeof args[0] !== 'string') {
+				// Anything else let's inspect with %O
+				args.unshift('%O');
+			}
+
+			// Apply any `formatters` transformations
+			let index = 0;
+			args[0] = args[0].replace(/%([a-zA-Z%])/g, (match, format) => {
+				// If we encounter an escaped % then don't increase the array index
+				if (match === '%%') {
+					return match;
+				}
+				index++;
+				const formatter = createDebug.formatters[format];
+				if (typeof formatter === 'function') {
+					const val = args[index];
+					match = formatter.call(self, val);
+
+					// Now we need to remove `args[index]` since it's inlined in the `format`
+					args.splice(index, 1);
+					index--;
+				}
+				return match;
+			});
+
+			// Apply env-specific formatting (colors, etc.)
+			createDebug.formatArgs.call(self, args);
+
+			const logFn = self.log || createDebug.log;
+			logFn.apply(self, args);
+		}
+
+		debug.namespace = namespace;
+		debug.enabled = createDebug.enabled(namespace);
+		debug.useColors = createDebug.useColors();
+		debug.color = selectColor(namespace);
+		debug.destroy = destroy;
+		debug.extend = extend;
+		// Debug.formatArgs = formatArgs;
+		// debug.rawLog = rawLog;
+
+		// env-specific initialization logic for debug instances
+		if (typeof createDebug.init === 'function') {
+			createDebug.init(debug);
+		}
+
+		createDebug.instances.push(debug);
+
+		return debug;
+	}
+
+	function destroy() {
+		const index = createDebug.instances.indexOf(this);
+		if (index !== -1) {
+			createDebug.instances.splice(index, 1);
+			return true;
+		}
+		return false;
+	}
+
+	function extend(namespace, delimiter) {
+		return createDebug(this.namespace + (typeof delimiter === 'undefined' ? ':' : delimiter) + namespace);
+	}
+
+	/**
+	* Enables a debug mode by namespaces. This can include modes
+	* separated by a colon and wildcards.
+	*
+	* @param {String} namespaces
+	* @api public
+	*/
+	function enable(namespaces) {
+		createDebug.save(namespaces);
+
+		createDebug.names = [];
+		createDebug.skips = [];
+
+		let i;
+		const split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+		const len = split.length;
+
+		for (i = 0; i < len; i++) {
+			if (!split[i]) {
+				// ignore empty strings
+				continue;
+			}
+
+			namespaces = split[i].replace(/\*/g, '.*?');
+
+			if (namespaces[0] === '-') {
+				createDebug.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+			} else {
+				createDebug.names.push(new RegExp('^' + namespaces + '$'));
+			}
+		}
+
+		for (i = 0; i < createDebug.instances.length; i++) {
+			const instance = createDebug.instances[i];
+			instance.enabled = createDebug.enabled(instance.namespace);
+		}
+	}
+
+	/**
+	* Disable debug output.
+	*
+	* @return {String} namespaces
+	* @api public
+	*/
+	function disable() {
+		const namespaces = [
+			...createDebug.names.map(toNamespace),
+			...createDebug.skips.map(toNamespace).map(namespace => '-' + namespace)
+		].join(',');
+		createDebug.enable('');
+		return namespaces;
+	}
+
+	/**
+	* Returns true if the given mode name is enabled, false otherwise.
+	*
+	* @param {String} name
+	* @return {Boolean}
+	* @api public
+	*/
+	function enabled(name) {
+		if (name[name.length - 1] === '*') {
+			return true;
+		}
+
+		let i;
+		let len;
+
+		for (i = 0, len = createDebug.skips.length; i < len; i++) {
+			if (createDebug.skips[i].test(name)) {
+				return false;
+			}
+		}
+
+		for (i = 0, len = createDebug.names.length; i < len; i++) {
+			if (createDebug.names[i].test(name)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	* Convert regexp to namespace
+	*
+	* @param {RegExp} regxep
+	* @return {String} namespace
+	* @api private
+	*/
+	function toNamespace(regexp) {
+		return regexp.toString()
+			.substring(2, regexp.toString().length - 2)
+			.replace(/\.\*\?$/, '*');
+	}
+
+	/**
+	* Coerce `val`.
+	*
+	* @param {Mixed} val
+	* @return {Mixed}
+	* @api private
+	*/
+	function coerce(val) {
+		if (val instanceof Error) {
+			return val.stack || val.message;
+		}
+		return val;
+	}
+
+	createDebug.enable(createDebug.load());
+
+	return createDebug;
+}
+
+module.exports = setup;
+
+
+/***/ }),
+
+/***/ "./node_modules/sentence-tokenizer/node_modules/ms/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/sentence-tokenizer/node_modules/ms/index.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var w = d * 7;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function (val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isFinite(val)) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^(-?(?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'weeks':
+    case 'week':
+    case 'w':
+      return n * w;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  var msAbs = Math.abs(ms);
+  if (msAbs >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (msAbs >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (msAbs >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (msAbs >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  var msAbs = Math.abs(ms);
+  if (msAbs >= d) {
+    return plural(ms, msAbs, d, 'day');
+  }
+  if (msAbs >= h) {
+    return plural(ms, msAbs, h, 'hour');
+  }
+  if (msAbs >= m) {
+    return plural(ms, msAbs, m, 'minute');
+  }
+  if (msAbs >= s) {
+    return plural(ms, msAbs, s, 'second');
+  }
+  return ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, msAbs, n, name) {
+  var isPlural = msAbs >= n * 1.5;
+  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/setimmediate/setImmediate.js":
 /*!***************************************************!*\
   !*** ./node_modules/setimmediate/setImmediate.js ***!
@@ -15803,36 +18208,109 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "Index ui form" }, [
-    _c("div", { staticClass: "field" }, [
-      _c("label", { attrs: { for: "fieldArticle" } }, [
-        _vm._v("\r\n      Article\r\n    ")
+  return _c(
+    "div",
+    { staticClass: "Index ui form" },
+    [
+      _c("div", { staticClass: "field" }, [
+        _c("label", { attrs: { for: "fieldArticle" } }, [
+          _vm._v("\r\n      Article\r\n    ")
+        ]),
+        _vm._v(" "),
+        _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.fieldArticle,
+              expression: "fieldArticle"
+            }
+          ],
+          attrs: { id: "fieldArticle" },
+          domProps: { value: _vm.fieldArticle },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.fieldArticle = $event.target.value
+            }
+          }
+        })
       ]),
       _vm._v(" "),
-      _c("textarea", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.fieldArticle,
-            expression: "fieldArticle"
-          }
-        ],
-        attrs: { id: "fieldArticle" },
-        domProps: { value: _vm.fieldArticle },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.fieldArticle = $event.target.value
-          }
-        }
+      _vm._l(_vm.sentenceList, function(sentence, i) {
+        return _c("div", { staticClass: "ui grid" }, [
+          _c("div", { staticClass: "two wide column center aligned" }, [
+            _c("div", [_vm._v("No. " + _vm._s(i))]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "ui button tiny icon",
+                class: { positive: i === _vm.speakingIndex },
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    return _vm.speak(sentence, i)
+                  }
+                }
+              },
+              [_c("i", { staticClass: "icon assistive listening systems" })]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "ui button tiny icon",
+                class: { orange: i === _vm.practiceIndex },
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    return _vm.practice(i)
+                  }
+                }
+              },
+              [_c("i", { staticClass: "icon microphone" })]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "fourteen wide column" }, [
+            _c(
+              "div",
+              {
+                staticClass: "target",
+                class: { isSpeaking: i === _vm.speakingIndex }
+              },
+              [_vm._v(_vm._s(sentence))]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "practice" }, [
+              _vm._v(_vm._s(_vm.practiceList[i]))
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "diff" },
+              _vm._l(_vm.diffList[i], function(diff, j) {
+                return _c(
+                  "span",
+                  { class: { removed: diff.removed, added: diff.added } },
+                  [
+                    _vm._v(
+                      "\r\n          " + _vm._s(diff.value) + "\r\n        "
+                    )
+                  ]
+                )
+              }),
+              0
+            )
+          ])
+        ])
       })
-    ]),
-    _vm._v(" "),
-    _c("div", [_vm._v("\r\n    " + _vm._s(_vm.fieldArticle) + "\r\n  ")])
-  ])
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -28376,24 +30854,118 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+var Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
+
 /* global Node */
 let Index = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.config.localConfig
     return {
-      fieldArticle: `布丁布丁吃什麼？`,
+      fieldArticle: ``,
+      fieldArticleTimer: null,
+      sentenceList: [],
+      practiceList: [],
+      diffList: [],
+      
+      synth: null,
+      voice: null,
+      pitch: 1,
+      rate: 1,
+      speakingIndex: null,
+      
+      practiceIndex: null
     }
+  },
+  mounted () {
+    this.loadDemo()
+    this.initSynth()
   },
 //  components: {
 //  },
   computed: {
     
   },
-//  watch: {
-//  },
+  watch: {
+    fieldArticle: async function () {
+      await this.utils.AsyncUtils.sleep()
+      this.buildSentenceList()
+    }
+  },
   methods: {
-    
+    initSynth: async function () {
+      this.synth = window.speechSynthesis
+      //console.log(this.synth)
+      
+      let voices = []
+      while (voices.length === 0) {
+        await this.utils.AsyncUtils.sleep(500)
+        voices = this.synth.getVoices()
+      }
+      
+      let voicesNames = voices.map(v => v.name)
+      let preferName = [
+        'Google US English',
+        'Google US English Male',
+        'Google UK English Female',
+        'Google UK English Male',
+      ]
+      
+      let voiceIndex
+      for (let i = 0; i < preferName.length; i++) {
+        if (voicesNames.indexOf(preferName[i])) {
+          voiceIndex = i
+          break
+        }
+      }
+      this.voice = voices[voiceIndex]
+      //console.log(voices)
+    },
+    loadDemo: async function () {
+      let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
+      this.fieldArticle = article
+    },
+    buildSentenceList () {
+      //console.log(this.fieldArticle)
+      
+      var tokenizer = new Tokenizer('Chuck')
+      tokenizer.setEntry(this.fieldArticle)
+      this.sentenceList = tokenizer.getSentences()
+    },
+    speak (sentence, i) {
+      //console.log(sentence)
+      this.speakingIndex = i
+      
+      var utterThis = new SpeechSynthesisUtterance(sentence);
+      
+      utterThis.onend = (event) => {
+        console.log('SpeechSynthesisUtterance.onend');
+        this.speakingIndex = null
+        this.practice(i)
+      }
+      utterThis.onerror = (event) => {
+        console.error('SpeechSynthesisUtterance.onerror');
+        this.speakingIndex = null
+      }
+      
+      utterThis.voice = this.voice;
+      utterThis.pitch = this.pitch;
+      utterThis.rate = this.rate;
+      this.synth.speak(utterThis);
+    },
+    practice: async function (i) {
+      this.practiceIndex = i
+      this.diffList[i] = []
+      
+      await this.utils.AsyncUtils.sleep()
+      
+      this.practiceList[i] = 'test'
+      this.practiceIndex = null
+      
+      let diff = this.utils.DiffUtils.diffWords(this.practiceList[i], this.sentenceList[i])
+      //console.log(diff)
+      this.diffList[i] = diff
+    }
   }
 }
 
@@ -29218,6 +31790,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/utils/DiffUtils.js":
+/*!********************************!*\
+  !*** ./src/utils/DiffUtils.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const Diff = __webpack_require__(/*! diff */ "./node_modules/diff/dist/diff.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  diffChars: function (one, other) {
+    return Diff.diffChars(one, other)
+  },
+  diffWords: function (oldStr, newStr) {
+    return Diff.diffWords(oldStr, newStr)
+  }
+});
+
+/***/ }),
+
 /***/ "./src/utils/FileUtils.js":
 /*!********************************!*\
   !*** ./src/utils/FileUtils.js ***!
@@ -29323,12 +31917,14 @@ Date.prototype.mmdd = function() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncUtils.js */ "./src/utils/AsyncUtils.js");
-/* harmony import */ var _ClipboardUtils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ClipboardUtils.js */ "./src/utils/ClipboardUtils.js");
-/* harmony import */ var _AxiosUtils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AxiosUtils.js */ "./src/utils/AxiosUtils.js");
-/* harmony import */ var _FileUtils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FileUtils.js */ "./src/utils/FileUtils.js");
-/* harmony import */ var _URLUtils_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./URLUtils.js */ "./src/utils/URLUtils.js");
-/* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./date-helper.js */ "./src/utils/date-helper.js");
-/* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_date_helper_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _DiffUtils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DiffUtils.js */ "./src/utils/DiffUtils.js");
+/* harmony import */ var _ClipboardUtils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ClipboardUtils.js */ "./src/utils/ClipboardUtils.js");
+/* harmony import */ var _AxiosUtils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AxiosUtils.js */ "./src/utils/AxiosUtils.js");
+/* harmony import */ var _FileUtils_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FileUtils.js */ "./src/utils/FileUtils.js");
+/* harmony import */ var _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./URLUtils.js */ "./src/utils/URLUtils.js");
+/* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./date-helper.js */ "./src/utils/date-helper.js");
+/* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_date_helper_js__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -29338,10 +31934,11 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   AsyncUtils: _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__["default"],
-  ClipboardUtils: _ClipboardUtils_js__WEBPACK_IMPORTED_MODULE_1__["default"],
-  AxiosUtils: _AxiosUtils_js__WEBPACK_IMPORTED_MODULE_2__["default"],
-  FileUtils: _FileUtils_js__WEBPACK_IMPORTED_MODULE_3__["default"],
-  URLUtils: _URLUtils_js__WEBPACK_IMPORTED_MODULE_4__["default"],
+  DiffUtils: _DiffUtils_js__WEBPACK_IMPORTED_MODULE_1__["default"],
+  ClipboardUtils: _ClipboardUtils_js__WEBPACK_IMPORTED_MODULE_2__["default"],
+  AxiosUtils: _AxiosUtils_js__WEBPACK_IMPORTED_MODULE_3__["default"],
+  FileUtils: _FileUtils_js__WEBPACK_IMPORTED_MODULE_4__["default"],
+  URLUtils: _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__["default"],
 });
 
 /***/ })

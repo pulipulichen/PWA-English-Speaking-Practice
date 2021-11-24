@@ -1,6 +1,6 @@
 {
-  "name": "Shortcut Head Modifier",
-  "short_name": "Shortcut Modi",
+  "name": "PWA-English-Speaking-Practice",
+  "short_name": "PWA-English-Speaking-Practice",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#FFF8DB",
