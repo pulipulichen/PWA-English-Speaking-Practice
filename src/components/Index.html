@@ -14,7 +14,7 @@
       <button type="button" 
             v-on:click="speak(sentence, i)" 
             class="ui button tiny icon"
-            v-bind:class="{positive: (i === speakingIndex)}">
+            v-bind:class="{positive: (i === speakingIndex && !speakingWordIndex)}">
         <i class="icon assistive listening systems" />
       </button>
       <button type="button" 
@@ -26,9 +26,18 @@
     </div>
     <div class="fourteen wide column">
       <div class="target"
-           v-bind:class="{isSpeaking: (i === speakingIndex)}">{{ sentence }}</div>
-      <div class="practice">{{ practiceList[i] }}</div>
-      <div class="diff">
+           v-bind:class="{isSpeaking: (i === speakingIndex && !speakingWordIndex)}">
+        <span v-for="(word, j) in sentence.split(' ')"
+              class="word"
+              v-bind:class="{isSpeaking: (i === speakingIndex && j === speakingWordIndex)}"
+              v-on:click="speakWord(word, i, j)">
+          {{ word }}
+        </span>
+      </div>
+      <div class="practice"
+           v-if="practiceList[i] && practiceList[i].length > 0">{{ practiceList[i] }}</div>
+      <div class="diff"
+           v-if="diffList[i] && diffList[i].length > 0">
         <span v-for="(diff, j) in diffList[i]"
           v-bind:class="{removed: diff.removed, added: diff.added}">
           {{ diff.value }}

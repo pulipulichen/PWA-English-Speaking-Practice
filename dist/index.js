@@ -2086,7 +2086,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #CCC;\n}\n.target.isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,qBAAA;EACA,6BAAA;ACCF;ADCE;EACE,wBAAA;EACA,YAAA;ACCJ;ADMA;EAEI,6BAAA;EACA,WAAA;ACLJ;ADEA;EAOI,UAAA;ACNJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #CCC;\n  \n  &.isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n}\n.practice {\n  \n}\n\n.diff {\n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  margin-bottom: 0.5rem;\n  border-bottom: 1px solid #CCC;\n}\n.target.isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n"]}]);
+exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-82b7485c],\n.target .isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.target .word[data-v-82b7485c] {\n  cursor: pointer;\n}\n.target .word.isSpeaking[data-v-82b7485c] {\n  cursor: not-allowed;\n}\n.practice[data-v-82b7485c],\n.diff[data-v-82b7485c] {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACCF;ADCE;;EAEE,wBAAA;EACA,YAAA;ACCJ;ADTA;EAYI,eAAA;ACAJ;ADEI;EACE,mBAAA;ACAN;ADIA;;EAEE,WAAA;EACA,kBAAA;EACA,mBAAA;EACA,0BAAA;ACFF;ADKA;EAGI,6BAAA;EACA,WAAA;ACLJ;ADCA;EAQI,UAAA;ACNJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  .word {\n    cursor: pointer;\n    \n    &.isSpeaking {\n      cursor: not-allowed;\n    }\n  }\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n\n.diff {\n  \n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.target .word {\n  cursor: pointer;\n}\n.target .word.isSpeaking {\n  cursor: not-allowed;\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -18248,7 +18248,9 @@ var render = function() {
               "button",
               {
                 staticClass: "ui button tiny icon",
-                class: { positive: i === _vm.speakingIndex },
+                class: {
+                  positive: i === _vm.speakingIndex && !_vm.speakingWordIndex
+                },
                 attrs: { type: "button" },
                 on: {
                   click: function($event) {
@@ -18280,31 +18282,55 @@ var render = function() {
               "div",
               {
                 staticClass: "target",
-                class: { isSpeaking: i === _vm.speakingIndex }
+                class: {
+                  isSpeaking: i === _vm.speakingIndex && !_vm.speakingWordIndex
+                }
               },
-              [_vm._v(_vm._s(sentence))]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "practice" }, [
-              _vm._v(_vm._s(_vm.practiceList[i]))
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "diff" },
-              _vm._l(_vm.diffList[i], function(diff, j) {
+              _vm._l(sentence.split(" "), function(word, j) {
                 return _c(
                   "span",
-                  { class: { removed: diff.removed, added: diff.added } },
-                  [
-                    _vm._v(
-                      "\r\n          " + _vm._s(diff.value) + "\r\n        "
-                    )
-                  ]
+                  {
+                    staticClass: "word",
+                    class: {
+                      isSpeaking:
+                        i === _vm.speakingIndex && j === _vm.speakingWordIndex
+                    },
+                    on: {
+                      click: function($event) {
+                        return _vm.speakWord(word, i, j)
+                      }
+                    }
+                  },
+                  [_vm._v("\r\n          " + _vm._s(word) + "\r\n        ")]
                 )
               }),
               0
-            )
+            ),
+            _vm._v(" "),
+            _vm.practiceList[i] && _vm.practiceList[i].length > 0
+              ? _c("div", { staticClass: "practice" }, [
+                  _vm._v(_vm._s(_vm.practiceList[i]))
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.diffList[i] && _vm.diffList[i].length > 0
+              ? _c(
+                  "div",
+                  { staticClass: "diff" },
+                  _vm._l(_vm.diffList[i], function(diff, j) {
+                    return _c(
+                      "span",
+                      { class: { removed: diff.removed, added: diff.added } },
+                      [
+                        _vm._v(
+                          "\r\n          " + _vm._s(diff.value) + "\r\n        "
+                        )
+                      ]
+                    )
+                  }),
+                  0
+                )
+              : _vm._e()
           ])
         ])
       })
@@ -30873,6 +30899,7 @@ let Index = {
       pitch: 1,
       rate: 1,
       speakingIndex: null,
+      speakingWordIndex: null,
       
       practiceIndex: null
     }
@@ -30933,6 +30960,13 @@ let Index = {
       this.sentenceList = tokenizer.getSentences()
     },
     speak (sentence, i) {
+      this.synth.cancel()
+      if (i === this.speakingIndex 
+              && !this.speakingWordIndex) {
+        this.speakingIndex = null
+        return false
+      }
+      
       //console.log(sentence)
       this.speakingIndex = i
       
@@ -30946,6 +30980,38 @@ let Index = {
       utterThis.onerror = (event) => {
         console.error('SpeechSynthesisUtterance.onerror');
         this.speakingIndex = null
+      }
+      
+      utterThis.voice = this.voice;
+      utterThis.pitch = this.pitch;
+      utterThis.rate = this.rate;
+      this.synth.speak(utterThis);
+    },
+    speakWord: async function (word, i, j) {
+      this.synth.cancel()
+      
+      if (i === this.speakingIndex 
+              && j === this.speakingWordIndex) {
+        this.speakingIndex = null
+        this.speakingWordIndex = null
+        return false
+      }
+      
+      //console.log(sentence)
+      this.speakingIndex = i
+      this.speakingWordIndex = j
+      
+      var utterThis = new SpeechSynthesisUtterance(word);
+      
+      utterThis.onend = (event) => {
+        console.log('SpeechSynthesisUtterance.onend');
+        this.speakingIndex = null
+        this.speakingWordIndex = null
+      }
+      utterThis.onerror = (event) => {
+        console.error('SpeechSynthesisUtterance.onerror');
+        this.speakingIndex = null
+        this.speakingWordIndex = null
       }
       
       utterThis.voice = this.voice;

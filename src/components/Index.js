@@ -17,6 +17,7 @@ let Index = {
       pitch: 1,
       rate: 1,
       speakingIndex: null,
+      speakingWordIndex: null,
       
       practiceIndex: null
     }
@@ -77,6 +78,13 @@ let Index = {
       this.sentenceList = tokenizer.getSentences()
     },
     speak (sentence, i) {
+      this.synth.cancel()
+      if (i === this.speakingIndex 
+              && !this.speakingWordIndex) {
+        this.speakingIndex = null
+        return false
+      }
+      
       //console.log(sentence)
       this.speakingIndex = i
       
@@ -90,6 +98,38 @@ let Index = {
       utterThis.onerror = (event) => {
         console.error('SpeechSynthesisUtterance.onerror');
         this.speakingIndex = null
+      }
+      
+      utterThis.voice = this.voice;
+      utterThis.pitch = this.pitch;
+      utterThis.rate = this.rate;
+      this.synth.speak(utterThis);
+    },
+    speakWord: async function (word, i, j) {
+      this.synth.cancel()
+      
+      if (i === this.speakingIndex 
+              && j === this.speakingWordIndex) {
+        this.speakingIndex = null
+        this.speakingWordIndex = null
+        return false
+      }
+      
+      //console.log(sentence)
+      this.speakingIndex = i
+      this.speakingWordIndex = j
+      
+      var utterThis = new SpeechSynthesisUtterance(word);
+      
+      utterThis.onend = (event) => {
+        console.log('SpeechSynthesisUtterance.onend');
+        this.speakingIndex = null
+        this.speakingWordIndex = null
+      }
+      utterThis.onerror = (event) => {
+        console.error('SpeechSynthesisUtterance.onerror');
+        this.speakingIndex = null
+        this.speakingWordIndex = null
       }
       
       utterThis.voice = this.voice;
