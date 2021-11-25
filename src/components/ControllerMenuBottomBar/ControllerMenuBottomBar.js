@@ -1,4 +1,4 @@
-let ControllerMenuBar = {
+let ControllerMenuBottomBar = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
@@ -21,4 +21,4 @@ let ControllerMenuBar = {
   }
 }
 
-export default ControllerMenuBar
+export default ControllerMenuBottomBar

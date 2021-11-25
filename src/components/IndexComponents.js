@@ -1,7 +1,9 @@
-import ControllerMenuBar from './ControllerMenuBar/ControllerMenuBar.vue'
+import ControllerMenuBottomBar from './ControllerMenuBottomBar/ControllerMenuBottomBar.vue'
+import ControllerMenuTopBar from './ControllerMenuTopBar/ControllerMenuTopBar.vue'
 
 export default function (Index) {
   Index.components = {
-    ControllerMenuBar
+    ControllerMenuTopBar,
+    ControllerMenuBottomBar
   }
 }

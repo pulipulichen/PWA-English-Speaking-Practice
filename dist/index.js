@@ -201,10 +201,26 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -2091,10 +2107,10 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2102,7 +2118,25 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".menu input[type=\"range\"][data-v-3fcdadfe] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-3fcdadfe] {\n  margin-right: 1rem;\n}\n.ui.icon.item[data-v-3fcdadfe] {\n  cursor: pointer;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&","ControllerMenuBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ;ADMA;EACE,eAAA;ACJF","file":"ControllerMenuBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}\n\n.ui.icon.item {\n  cursor: pointer;\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n.ui.icon.item {\n  cursor: pointer;\n}\n"]}]);
+exports.push([module.i, ".menu input[type=\"range\"][data-v-4a04fb2a] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-4a04fb2a] {\n  margin-right: 1rem;\n}\n.ui.icon.item[data-v-4a04fb2a] {\n  cursor: pointer;\n}\n.center.menu[data-v-4a04fb2a] {\n  margin-left: auto !important;\n}\n.center.menu .item[data-v-4a04fb2a]:before {\n  background: transparent !important;\n}\n.ui.toggle.item[data-v-4a04fb2a] {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&","ControllerMenuBottomBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ;ADMA;EACE,eAAA;ACJF;ADOA;EACE,4BAAA;ACLF;ADIA;EAMI,kCAAA;ACPJ;ADWA;EAEE,2BAAA;EACA,6BAAA;ACVF","file":"ControllerMenuBottomBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}\n\n.ui.icon.item {\n  cursor: pointer;\n}\n\n.center.menu {\n  margin-left: auto !important;\n  //border-left: 1px solid gray;\n  \n  .item:before {\n    //border-color: transparent !important;\n    background: transparent !important;\n  }\n}\n\n.ui.toggle.item {\n  //display: none !important;\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n.ui.icon.item {\n  cursor: pointer;\n}\n.center.menu {\n  margin-left: auto !important;\n}\n.center.menu .item:before {\n  background: transparent !important;\n}\n.ui.toggle.item {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".menu input[type=\"range\"][data-v-43fcb622] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-43fcb622] {\n  margin-right: 1rem;\n}\n.ui.icon.item[data-v-43fcb622] {\n  cursor: pointer;\n}\n.center.menu[data-v-43fcb622] {\n  margin-left: auto !important;\n}\n.center.menu .item[data-v-43fcb622]:before {\n  background: transparent !important;\n}\n.ui.toggle.item[data-v-43fcb622] {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&","ControllerMenuTopBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ;ADMA;EACE,eAAA;ACJF;ADOA;EACE,4BAAA;ACLF;ADIA;EAMI,kCAAA;ACPJ;ADWA;EAEE,2BAAA;EACA,6BAAA;ACVF","file":"ControllerMenuTopBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}\n\n.ui.icon.item {\n  cursor: pointer;\n}\n\n.center.menu {\n  margin-left: auto !important;\n  //border-left: 1px solid gray;\n  \n  .item:before {\n    //border-color: transparent !important;\n    background: transparent !important;\n  }\n}\n\n.ui.toggle.item {\n  //display: none !important;\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n.ui.icon.item {\n  cursor: pointer;\n}\n.center.menu {\n  margin-left: auto !important;\n}\n.center.menu .item:before {\n  background: transparent !important;\n}\n.ui.toggle.item {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -18227,10 +18261,10 @@ VueI18n.version = '8.24.4';
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&":
-/*!****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& ***!
-  \****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -18243,54 +18277,63 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "ui bottom fixed menu" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "ui item" }, [
-      _c("div", { staticClass: "ui tiny buttons" }, [
-        _vm._m(1),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "ui disabled button", attrs: { type: "button" } },
-          [_vm._v("\n        " + _vm._s(_vm.localConfig.rate) + "x\n      ")]
-        ),
-        _vm._v(" "),
-        _vm._m(2)
+    _c("div", { staticClass: "ui toggle item" }, [
+      _c("div", { staticClass: "ui compact" }, [
+        _c("div", { staticClass: "ui toggle checkbox" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.localConfig.repeatPractice,
+                expression: "localConfig.repeatPractice"
+              }
+            ],
+            attrs: { type: "checkbox" },
+            domProps: {
+              checked: Array.isArray(_vm.localConfig.repeatPractice)
+                ? _vm._i(_vm.localConfig.repeatPractice, null) > -1
+                : _vm.localConfig.repeatPractice
+            },
+            on: {
+              change: function($event) {
+                var $$a = _vm.localConfig.repeatPractice,
+                  $$el = $event.target,
+                  $$c = $$el.checked ? true : false
+                if (Array.isArray($$a)) {
+                  var $$v = null,
+                    $$i = _vm._i($$a, $$v)
+                  if ($$el.checked) {
+                    $$i < 0 &&
+                      _vm.$set(
+                        _vm.localConfig,
+                        "repeatPractice",
+                        $$a.concat([$$v])
+                      )
+                  } else {
+                    $$i > -1 &&
+                      _vm.$set(
+                        _vm.localConfig,
+                        "repeatPractice",
+                        $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                      )
+                  }
+                } else {
+                  _vm.$set(_vm.localConfig, "repeatPractice", $$c)
+                }
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("label", [_vm._v(_vm._s(_vm.$t("Practice")))])
+        ])
       ])
     ]),
     _vm._v(" "),
-    _vm._m(3)
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ui icon item" }, [
-      _c("i", { staticClass: "file alternate outline icon" })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      { staticClass: "ui icon button", attrs: { type: "button" } },
-      [_c("i", { staticClass: "minus icon" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      { staticClass: "ui icon button", attrs: { type: "button" } },
-      [_c("i", { staticClass: "plus icon" })]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -18304,8 +18347,73 @@ var staticRenderFns = [
         _c("i", { staticClass: "step forward icon" })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "ui icon item play-icon" }, [
+      _c("div", { staticClass: "ui icon item" }, [
+        _c("i", { staticClass: "comment outline icon" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "ui icon item" }, [
         _c("i", { staticClass: "play icon" })
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "ui top fixed menu" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "ui icon item" }, [
+      _vm._v("\n    " + _vm._s(_vm.localConfig.rate) + "x\n  ")
+    ]),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ui icon item" }, [
+      _c("i", { staticClass: "minus icon" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ui icon item" }, [
+      _c("i", { staticClass: "plus icon" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "right menu" }, [
+      _c("div", { staticClass: "ui icon item" }, [
+        _c("i", { staticClass: "file alternate outline icon" })
       ])
     ])
   }
@@ -18335,179 +18443,17 @@ var render = function() {
     "div",
     { staticClass: "Index ui form" },
     [
-      _c("div", { staticClass: "field" }, [
-        _c("label", { attrs: { for: "fieldArticle" } }, [
-          _vm._v("\r\n      Article\r\n    ")
-        ]),
-        _vm._v(" "),
-        _c("textarea", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.localConfig.fieldArticle,
-              expression: "localConfig.fieldArticle"
-            }
-          ],
-          attrs: { id: "fieldArticle" },
-          domProps: { value: _vm.localConfig.fieldArticle },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.$set(_vm.localConfig, "fieldArticle", $event.target.value)
-            }
-          }
-        })
-      ]),
-      _vm._v(" "),
-      _vm._l(_vm.config.sentenceList, function(sentence, i) {
-        return _c(
-          "div",
-          { staticClass: "ui grid", attrs: { id: "sentence" + i } },
-          [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "two wide column center aligned sentence-control-panel"
-              },
-              [
-                _c("div", [_vm._v("No. " + _vm._s(i + 1))]),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "ui button tiny icon",
-                    class: {
-                      positive:
-                        i === _vm.config.speakingIndex &&
-                        _vm.config.speakingWordIndex === null &&
-                        _vm.config.speakingDiffWordIndex === null
-                    },
-                    attrs: { type: "button" },
-                    on: {
-                      click: function($event) {
-                        return _vm.speak(sentence, i)
-                      }
-                    }
-                  },
-                  [_c("i", { staticClass: "icon assistive listening systems" })]
-                ),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "ui button tiny icon",
-                    class: { orange: i === _vm.config.practiceIndex },
-                    attrs: { type: "button" },
-                    on: {
-                      click: function($event) {
-                        return _vm.practice(i)
-                      }
-                    }
-                  },
-                  [_c("i", { staticClass: "icon microphone" })]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "fourteen wide column" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "target",
-                  class: {
-                    isSpeaking:
-                      i === _vm.config.speakingIndex &&
-                      _vm.config.speakingWordIndex === null &&
-                      _vm.config.speakingDiffWordIndex === null,
-                    isPracticing: _vm.config.practiceIndex === i
-                  }
-                },
-                _vm._l(sentence.split(" "), function(word, j) {
-                  return _c(
-                    "span",
-                    {
-                      staticClass: "word",
-                      class: {
-                        isSpeaking:
-                          i === _vm.config.speakingIndex &&
-                          j === _vm.config.speakingWordIndex
-                      },
-                      on: {
-                        click: function($event) {
-                          return _vm.speakWord(word, i, j)
-                        },
-                        dblclick: function($event) {
-                          return _vm.openDict(word)
-                        }
-                      }
-                    },
-                    [_vm._v("\r\n          " + _vm._s(word) + "\r\n        ")]
-                  )
-                }),
-                0
-              ),
-              _vm._v(" "),
-              _vm.config.practiceList[i] &&
-              _vm.config.practiceList[i].length > 0
-                ? _c("div", { staticClass: "practice" }, [
-                    _vm._v(_vm._s(_vm.config.practiceList[i]))
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.config.diffList[i] && _vm.config.diffList[i].length > 0
-                ? _c(
-                    "div",
-                    { staticClass: "diff" },
-                    _vm._l(_vm.config.diffList[i], function(diff, j) {
-                      return _c(
-                        "span",
-                        { class: { removed: diff.removed, added: diff.added } },
-                        _vm._l(diff.value.split(" "), function(word, k) {
-                          return _c(
-                            "span",
-                            {
-                              staticClass: "word",
-                              class: {
-                                isSpeaking:
-                                  i === _vm.config.speakingIndex &&
-                                  j + "-" + k ===
-                                    _vm.config.speakingDiffWordIndex
-                              },
-                              on: {
-                                click: function($event) {
-                                  _vm.speakDiffWord(word, i, j + "-" + k)
-                                },
-                                dblclick: function($event) {
-                                  return _vm.openDict(word)
-                                }
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\r\n            " +
-                                  _vm._s(word) +
-                                  "\r\n          "
-                              )
-                            ]
-                          )
-                        }),
-                        0
-                      )
-                    }),
-                    0
-                  )
-                : _vm._e()
-            ])
-          ]
-        )
+      _c("ControllerMenuTopBar", {
+        ref: "ControllerMenuTopBar",
+        attrs: {
+          config: _vm.config,
+          localConfig: _vm.localConfig,
+          utils: _vm.utils
+        }
       }),
       _vm._v(" "),
-      _c("ControllerMenuBar", {
-        ref: "ControllerMenuBar",
+      _c("ControllerMenuBottomBar", {
+        ref: "ControllerMenuBottomBar",
         attrs: {
           config: _vm.config,
           localConfig: _vm.localConfig,
@@ -18515,7 +18461,7 @@ var render = function() {
         }
       })
     ],
-    2
+    1
   )
 }
 var staticRenderFns = []
@@ -18637,23 +18583,45 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&");
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
-var update = add("8acd0168", content, false, {});
+var update = add("79b647b2", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("2e5e0d8f", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -31055,48 +31023,34 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&":
-/*!************************************************************************************************************!*\
-  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& ***!
-  \************************************************************************************************************/
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true&":
+/*!************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true& ***!
+  \************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBottomBar_html_vue_type_template_id_4a04fb2a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBottomBar_html_vue_type_template_id_4a04fb2a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBottomBar_html_vue_type_template_id_4a04fb2a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?1e06":
-/*!****************************************************************************************!*\
-  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js&?1df3":
+/*!****************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./ControllerMenuBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?9f64");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?9f64":
-/*!****************************************************************************************!*\
-  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-let ControllerMenuBar = {
+let ControllerMenuBottomBar = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
@@ -31119,40 +31073,54 @@ let ControllerMenuBar = {
   }
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (ControllerMenuBar);
+/* harmony default export */ __webpack_exports__["default"] = (ControllerMenuBottomBar);
 
 /***/ }),
 
-/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&":
-/*!***************************************************************************************************************************!*\
-  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& ***!
-  \***************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
-
-/***/ }),
-
-/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.vue":
-/*!****************************************************************!*\
-  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.vue ***!
-  \****************************************************************/
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js&?dac5":
+/*!****************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js& ***!
+  \****************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& */ "./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&");
-/* harmony import */ var _ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ControllerMenuBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?1e06");
-/* empty/unused harmony star reexport *//* harmony import */ var _ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& */ "./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&");
+/* harmony import */ var _ControllerMenuBottomBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./ControllerMenuBottomBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js&?1df3");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_ControllerMenuBottomBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&":
+/*!***************************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.vue":
+/*!****************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.vue ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ControllerMenuBottomBar_html_vue_type_template_id_4a04fb2a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true& */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.html?vue&type=template&id=4a04fb2a&scoped=true&");
+/* harmony import */ var _ControllerMenuBottomBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ControllerMenuBottomBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js&?dac5");
+/* empty/unused harmony star reexport *//* harmony import */ var _ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml */ "./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml");
+/* harmony import */ var _ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml");
 
 
 
@@ -31162,40 +31130,184 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _ControllerMenuBottomBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ControllerMenuBottomBar_html_vue_type_template_id_4a04fb2a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ControllerMenuBottomBar_html_vue_type_template_id_4a04fb2a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "3fcdadfe",
+  "4a04fb2a",
   null
   
 )
 
 /* custom blocks */
 
-if (typeof _ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+if (typeof _ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "src/components/ControllerMenuBar/ControllerMenuBar.vue"
+component.options.__file = "src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml");
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true&":
+/*!******************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuTopBar/ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true& ***!
+  \******************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuTopBar_html_vue_type_template_id_43fcb622_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuTopBar_html_vue_type_template_id_43fcb622_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuTopBar_html_vue_type_template_id_43fcb622_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.js?vue&type=script&lang=js&?0f98":
+/*!**********************************************************************************************!*\
+  !*** ./src/components/ControllerMenuTopBar/ControllerMenuTopBar.js?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ControllerMenuTopBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./ControllerMenuTopBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.js?vue&type=script&lang=js&?503c");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_ControllerMenuTopBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.js?vue&type=script&lang=js&?503c":
+/*!**********************************************************************************************!*\
+  !*** ./src/components/ControllerMenuTopBar/ControllerMenuTopBar.js?vue&type=script&lang=js& ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let ControllerMenuTopBar = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+  },
+  computed: {
+    
+  },
+  mounted() {
+    
+  },
+  methods: {
+    
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ControllerMenuTopBar);
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&":
+/*!*********************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true& ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuTopBar_less_vue_type_style_index_0_id_43fcb622_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuTopBar_less_vue_type_style_index_0_id_43fcb622_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuTopBar_less_vue_type_style_index_0_id_43fcb622_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuTopBar_less_vue_type_style_index_0_id_43fcb622_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuTopBar_less_vue_type_style_index_0_id_43fcb622_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.vue":
+/*!**********************************************************************!*\
+  !*** ./src/components/ControllerMenuTopBar/ControllerMenuTopBar.vue ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ControllerMenuTopBar_html_vue_type_template_id_43fcb622_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true& */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.html?vue&type=template&id=43fcb622&scoped=true&");
+/* harmony import */ var _ControllerMenuTopBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ControllerMenuTopBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.js?vue&type=script&lang=js&?0f98");
+/* empty/unused harmony star reexport *//* harmony import */ var _ControllerMenuTopBar_less_vue_type_style_index_0_id_43fcb622_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true& */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.less?vue&type=style&index=0&id=43fcb622&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _ControllerMenuTopBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ControllerMenuTopBar_html_vue_type_template_id_43fcb622_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ControllerMenuTopBar_html_vue_type_template_id_43fcb622_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "43fcb622",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/ControllerMenuTopBar/ControllerMenuTopBar.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuTopBar/ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuTopBar/ControllerMenuTopBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuTopBar%2FControllerMenuTopBar.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuTopBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuTopBar_2FControllerMenuTopBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -31395,12 +31507,15 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ControllerMenuBar_ControllerMenuBar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuBar/ControllerMenuBar.vue */ "./src/components/ControllerMenuBar/ControllerMenuBar.vue");
+/* harmony import */ var _ControllerMenuBottomBar_ControllerMenuBottomBar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuBottomBar/ControllerMenuBottomBar.vue */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.vue");
+/* harmony import */ var _ControllerMenuTopBar_ControllerMenuTopBar_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ControllerMenuTopBar/ControllerMenuTopBar.vue */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.vue");
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (Index) {
   Index.components = {
-    ControllerMenuBar: _ControllerMenuBar_ControllerMenuBar_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    ControllerMenuTopBar: _ControllerMenuTopBar_ControllerMenuTopBar_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    ControllerMenuBottomBar: _ControllerMenuBottomBar_ControllerMenuBottomBar_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 

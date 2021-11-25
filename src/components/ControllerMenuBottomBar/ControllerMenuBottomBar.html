@@ -1,0 +1,28 @@
+<div class="ui bottom fixed menu">
+  <div class="ui toggle item">
+    <div class="ui compact">
+      <div class="ui toggle checkbox">
+        <input type="checkbox" v-model="localConfig.repeatPractice">
+        <label>{{ $t('Practice') }}</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="right menu">
+    <div class="ui icon item">
+      <i class="step backward icon" />
+    </div>
+
+    <div class="ui icon item">
+      <i class="step forward icon" />
+    </div>
+
+
+    <div class="ui icon item">
+      <i class="comment outline icon" />
+    </div>
+    <div class="ui icon item">
+      <i class="play icon" />
+    </div>
+  </div>
+</div>
