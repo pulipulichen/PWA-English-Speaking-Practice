@@ -18575,7 +18575,9 @@ var render = function() {
         attrs: {
           config: _vm.config,
           localConfig: _vm.localConfig,
-          utils: _vm.utils
+          utils: _vm.utils,
+          voice: _vm.voice,
+          voiceNameList: _vm.voiceNameList
         }
       })
     ],
@@ -31511,15 +31513,17 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
   Index.methods.initSynth = async function () {
     this.synth = window.speechSynthesis
     //console.log(this.synth)
-
+    
     let voices = []
     while (voices.length === 0) {
+      
       await this.utils.AsyncUtils.sleep(500)
       voices = this.synth.getVoices()
     }
 
     this.voices = voices
     this.voiceNameList = voices.map(v => v.name)
+    //console.log(this.voiceNameList)
 
     let preferName = [
       'Google US English',
@@ -31564,7 +31568,7 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
 
     this.recognition.onresult = (event) => {
       this.recognitionResult = event.results[0][0].transcript;
-      console.log(event.results)
+      //console.log(event.results)
       //let result = event.results[ event.results.length - 1 ]
       //let transcript = result[ result.length - 1 ].transcript.trim()
       //let caption = this.recognition.getCaption()
@@ -31650,7 +31654,7 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     this.recognitionAbort = true
 
     var utterThis = this.buildUtter(sentence, (event) => {
-      console.log('SpeechSynthesisUtterance.onend');
+      //console.log('SpeechSynthesisUtterance.onend');
       this.speakingIndex = null
       if (this.practiceIndex === null && this.localConfig.repeatPractice) {
         this.practice(i)
@@ -31883,6 +31887,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function (Index) {
   Index.mounted = function () {
     this.restoreFromLocalStorage()
+    
+    console.log('aaa')
 
     this.loadDemo()
     this.initSynth()
