@@ -16,10 +16,11 @@
                 v-on:click="pitchReduce">
           <i class="minus icon"></i>
         </button>
-        <div type="button"
-                class="ui disabled button pitch-item">
+        <a type="button"
+           class="ui disabled button pitch-item"
+           v-on:click="localConfig.pitch = 1">
             {{ localConfig.pitch }}
-        </div>
+        </a>
         <button type="button"
                 class="ui icon button"
                 v-bind:class="{disabled: (localConfig.pitch === 1.5)}"

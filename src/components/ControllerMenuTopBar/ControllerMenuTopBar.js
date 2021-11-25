@@ -10,9 +10,16 @@ let ControllerMenuTopBar = {
       this.$i18n.locale = this.localConfig.locale;
     },
   },
-//  computed: {
-//    
-//  },
+  computed: {
+    currentIndex () {
+      if (!this.localConfig.speakingIndex) {
+        return '0'
+      }
+      else {
+        return this.localConfig.speakingIndex
+      }
+    }    
+  },
 //  mounted() {
 //    
 //  },

@@ -1,5 +1,7 @@
 import $ from 'jquery'
 
+const Tokenizer = require('sentence-tokenizer');
+
 let AritcleModal = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
@@ -19,7 +21,6 @@ let AritcleModal = {
     },
   },
 //  computed: {
-//    
 //  },
 //  mounted() {
 //    this.init()

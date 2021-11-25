@@ -40,11 +40,12 @@
      v-on:click="rateSlow">
     <i class="minus icon"></i>
   </a>
-  <div class="ui item">
+  <a class="ui item"
+     v-on:click="localConfig.rate = 1">
     <div class="rate-item">
       {{ localConfig.rate }}x
     </div>
-  </div>
+  </a>
   <a class="ui icon item"
      v-bind:class="{disabled: (localConfig.rate === 1.5)}"
      v-on:click="rateFast">
@@ -55,9 +56,14 @@
     <i class="cog icon"></i>
   </a>
   
-  <div class="right menu">
-    <a class="ui icon item"
+  <div class="right borderless menu">
+    <a class="ui item article-item"
        v-on:click="openArticleModal">
+      <template v-if="config.sentenceList.length > 0">
+        {{ currentIndex }}
+        / 
+        {{ config.sentenceList.length }}
+      </template>
       <i class="file alternate outline icon" />
     </a>
   </div>
