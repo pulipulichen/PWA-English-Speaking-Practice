@@ -14,12 +14,14 @@ let SentencePanel = {
   },
   computed: {
     previousSentence () {
+      //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === 0) {
         return ''
       }
       return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
     },
     nextSentence () {
+      //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
         return ''
       }

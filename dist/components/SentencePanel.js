@@ -153,7 +153,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "SentencePanel" }, [
     _c("div", { staticClass: "ui segment sentence-segment" }, [
-      _vm.config.playingIndex > 0
+      _vm.localConfig.playingIndex > 0
         ? _c(
             "div",
             {
@@ -167,7 +167,7 @@ var render = function() {
           )
         : _vm._e(),
       _vm._v(" "),
-      _vm.config.playingIndex === 0
+      _vm.localConfig.playingIndex === 0
         ? _c("div", { staticClass: "previous-sentence start" }, [
             _c("i", { staticClass: "hand point right outline icon" }),
             _vm._v("\n      " + _vm._s(_vm.$t("Start")) + "\n    ")
@@ -200,7 +200,7 @@ var render = function() {
       "div",
       { staticClass: "ui segment sentence-segment" },
       [
-        _vm.config.playingIndex < _vm.config.sentenceList.length - 1
+        _vm.localConfig.playingIndex < _vm.config.sentenceList.length - 1
           ? [
               _c("i", {
                 staticClass: "step forward icon",
@@ -218,7 +218,7 @@ var render = function() {
             ]
           : _vm._e(),
         _vm._v(" "),
-        _vm.config.playingIndex === _vm.config.sentenceList.length - 1
+        _vm.localConfig.playingIndex === _vm.config.sentenceList.length - 1
           ? _c("div", { staticClass: "next-sentence finish" }, [
               _vm._v(
                 "\n      \n      " + _vm._s(_vm.$t("Finish")) + "\n      "
@@ -339,13 +339,13 @@ let CurrentSentence = {
   },
   computed: {
     currentSentence () {
-      if (this.config.playingIndex === null 
-              || this.config.playingIndex === undefined
+      if (this.localConfig.playingIndex === null 
+              || this.localConfig.playingIndex === undefined
               || !this.config.sentenceList
               || !this.config.sentenceList[this.config.playingIndex]) {
         return ''
       }
-      return this.config.sentenceList[this.config.playingIndex]
+      return this.config.sentenceList[this.localConfig.playingIndex]
     },
     words () {
       let parts = this.currentSentence.split(' ')
@@ -555,12 +555,14 @@ let SentencePanel = {
   },
   computed: {
     previousSentence () {
+      //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === 0) {
         return ''
       }
       return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
     },
     nextSentence () {
+      //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
         return ''
       }

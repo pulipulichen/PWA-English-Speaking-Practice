@@ -14,13 +14,13 @@ let CurrentSentence = {
   },
   computed: {
     currentSentence () {
-      if (this.config.playingIndex === null 
-              || this.config.playingIndex === undefined
+      if (this.localConfig.playingIndex === null 
+              || this.localConfig.playingIndex === undefined
               || !this.config.sentenceList
               || !this.config.sentenceList[this.config.playingIndex]) {
         return ''
       }
-      return this.config.sentenceList[this.config.playingIndex]
+      return this.config.sentenceList[this.localConfig.playingIndex]
     },
     words () {
       let parts = this.currentSentence.split(' ')

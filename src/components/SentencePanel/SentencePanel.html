@@ -1,13 +1,13 @@
 <div class="SentencePanel">
   <div class="ui segment sentence-segment">
     <div class="previous-sentence"
-       v-if="config.playingIndex > 0"
+       v-if="localConfig.playingIndex > 0"
        v-on:click="goToPreviousSentence">
       <i class="step backward icon"></i>
       {{ previousSentence }}
     </div>
     <div class="previous-sentence start"
-         v-if="config.playingIndex === 0">
+         v-if="localConfig.playingIndex === 0">
       <i class="hand point right outline icon"></i>
       {{ $t('Start') }}
     </div>
@@ -28,7 +28,7 @@
   </div>
   
   <div class="ui segment sentence-segment">
-    <template v-if="config.playingIndex < config.sentenceList.length - 1">
+    <template v-if="localConfig.playingIndex < config.sentenceList.length - 1">
       <i class="step forward icon"
          v-on:click="goToNextSentence"></i>
       <div class="next-sentence"
@@ -37,7 +37,7 @@
       </div>
     </template>
     <div class="next-sentence finish"
-         v-if="config.playingIndex === config.sentenceList.length - 1">
+         v-if="localConfig.playingIndex === config.sentenceList.length - 1">
       
       {{ $t('Finish') }}
       <i class="flag checkered icon"></i>

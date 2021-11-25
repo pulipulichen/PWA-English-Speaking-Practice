@@ -268,6 +268,9 @@ let ConfigurationModal = {
     if (!this.localConfig.voiceName) {
       this.localConfig.voiceName = await this.utils.TextToSpeechUtil.setPreferVoice()
     }
+    else {
+      await this.utils.TextToSpeechUtil.setPreferVoice(this.localConfig.voiceName)
+    }
     //console.log(this.voiceNames)
   },
   methods: {
