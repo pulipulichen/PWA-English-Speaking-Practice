@@ -30950,7 +30950,7 @@ let VueController = {
 // ----------------------------
 
 for (let key in _local_config_js__WEBPACK_IMPORTED_MODULE_5__["default"]) {
-  console.log(key)
+  //console.log(key)
   VueController.watch['localConfig.' + key] = function () {
     this.saveToLocalStorage()
   }
@@ -31466,7 +31466,7 @@ let isSpeaking = false
       voices = synth.getVoices()
     }
 
-    //voiceNameList = voices.map(v => v.name)
+    voiceNameList = voices.map(v => v.name)
     voices.forEach(v => {
       voiceNameMap[v.name] = v
     })
@@ -31485,18 +31485,19 @@ let isSpeaking = false
         //console.log(preferName[i])
         if (voiceNameMap[preferName]) {
           preferVoice = voiceNameMap[preferName]
-          return true
+          return preferVoice
         }
       }
     }
     else {
       if (voiceNameMap[voiceName]) {
         preferVoice = voiceNameMap[voiceName]
-        return true
+        return preferVoice
       }
     }
    
     preferVoice = voices[0]
+    return preferVoice
   },
   startSpeak: async function (text, pitch = 1, rate = 1) {
     await this.init()
@@ -31520,7 +31521,7 @@ let isSpeaking = false
 
       utterThis.onend = () => {
         isSpeaking = false
-        console.log('ok')
+        //console.log('ok')
         resolve(true)
       }
       

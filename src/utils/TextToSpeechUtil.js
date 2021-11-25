@@ -26,7 +26,7 @@ export default {
       voices = synth.getVoices()
     }
 
-    //voiceNameList = voices.map(v => v.name)
+    voiceNameList = voices.map(v => v.name)
     voices.forEach(v => {
       voiceNameMap[v.name] = v
     })
@@ -45,18 +45,19 @@ export default {
         //console.log(preferName[i])
         if (voiceNameMap[preferName]) {
           preferVoice = voiceNameMap[preferName]
-          return true
+          return preferVoice
         }
       }
     }
     else {
       if (voiceNameMap[voiceName]) {
         preferVoice = voiceNameMap[voiceName]
-        return true
+        return preferVoice
       }
     }
    
     preferVoice = voices[0]
+    return preferVoice
   },
   startSpeak: async function (text, pitch = 1, rate = 1) {
     await this.init()
@@ -80,7 +81,7 @@ export default {
 
       utterThis.onend = () => {
         isSpeaking = false
-        console.log('ok')
+        //console.log('ok')
         resolve(true)
       }
       

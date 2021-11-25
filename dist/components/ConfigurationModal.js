@@ -108,6 +108,49 @@ var render = function() {
               [_c("i", { staticClass: "plus icon" })]
             )
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c("label", [
+            _vm._v("\n        " + _vm._s(_vm.$t("Voice")) + "\n      ")
+          ]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.localConfig.voiceName,
+                  expression: "localConfig.voiceName"
+                }
+              ],
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.localConfig,
+                    "voiceName",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                }
+              }
+            },
+            _vm._l(_vm.voiceNames, function(name) {
+              return _c("option", { domProps: { value: name } }, [
+                _vm._v(_vm._s(name))
+              ])
+            }),
+            0
+          )
         ])
       ]),
       _vm._v(" "),
@@ -201,7 +244,8 @@ let ConfigurationModal = {
     this.$i18n.locale = this.localConfig.locale
     return {
       modal: null,
-      isOpened: false
+      isOpened: false,
+      voiceNames: [],
     }
   },
   components: {
@@ -211,13 +255,21 @@ let ConfigurationModal = {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.voiceName': async function () {
+      await this.utils.TextToSpeechUtil.setPreferVoice(this.localConfig.voiceName)
+    },
   },
 //  computed: {
 //    
 //  },
-//  mounted() {
-//    this.init()
-//  },
+  mounted: async function () {
+    //this.init()
+    this.voiceNames = await this.utils.TextToSpeechUtil.getVoiceNameList()
+    if (!this.localConfig.voiceName) {
+      this.localConfig.voiceName = await this.utils.TextToSpeechUtil.setPreferVoice()
+    }
+    //console.log(this.voiceNames)
+  },
   methods: {
     init: function () {
       this.modal = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.$refs.Modal)
@@ -233,7 +285,7 @@ let ConfigurationModal = {
       })
     },
     open: async function () {
-      console.log('aaa')
+      //console.log('aaa')
       if (!this.modal) {
         this.init()
       }

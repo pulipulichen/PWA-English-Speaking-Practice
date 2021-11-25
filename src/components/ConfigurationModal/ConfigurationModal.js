@@ -8,7 +8,8 @@ let ConfigurationModal = {
     this.$i18n.locale = this.localConfig.locale
     return {
       modal: null,
-      isOpened: false
+      isOpened: false,
+      voiceNames: [],
     }
   },
   components: {
@@ -18,13 +19,21 @@ let ConfigurationModal = {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.voiceName': async function () {
+      await this.utils.TextToSpeechUtil.setPreferVoice(this.localConfig.voiceName)
+    },
   },
 //  computed: {
 //    
 //  },
-//  mounted() {
-//    this.init()
-//  },
+  mounted: async function () {
+    //this.init()
+    this.voiceNames = await this.utils.TextToSpeechUtil.getVoiceNameList()
+    if (!this.localConfig.voiceName) {
+      this.localConfig.voiceName = await this.utils.TextToSpeechUtil.setPreferVoice()
+    }
+    //console.log(this.voiceNames)
+  },
   methods: {
     init: function () {
       this.modal = $(this.$refs.Modal)
@@ -40,7 +49,7 @@ let ConfigurationModal = {
       })
     },
     open: async function () {
-      console.log('aaa')
+      //console.log('aaa')
       if (!this.modal) {
         this.init()
       }
