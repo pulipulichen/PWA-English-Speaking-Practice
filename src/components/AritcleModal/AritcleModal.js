@@ -22,9 +22,16 @@ let AritcleModal = {
   },
 //  computed: {
 //  },
-//  mounted() {
-//    this.init()
-//  },
+  mounted() {
+    //console.log(this.localConfig.fieldArticle)
+    if (!this.localConfig.fieldArticle
+            || this.localConfig.fieldArticle === '') {
+      this.loadDemo()
+    }
+    else {
+      this.buildSentenceList()
+    }
+  },
   methods: {
     init: function () {
       this.modal = $(this.$refs.Modal)
@@ -51,12 +58,17 @@ let AritcleModal = {
     },
     buildSentenceList: function () {
       //console.log(this.fieldArticle)
-
+      
+      if (!this.localConfig.fieldArticle || this.localConfig.fieldArticle.trim() === '') {
+        return false
+      }
+      
       var tokenizer = new Tokenizer('Chuck')
-      tokenizer.setEntry(this.localConfig.fieldArticle)
-
+      tokenizer.setEntry(this.localConfig.fieldArticle.trim())
+      
       let sentences = tokenizer.getSentences()
       let sentenceList = []
+      //console.log(sentences)
       sentences.forEach(sentence => {
 //        while (sentence.indexOf(', ') > -1) {
 //          let pos = sentence.indexOf(', ')
@@ -64,6 +76,7 @@ let AritcleModal = {
 //          sentenceList.push(part)
 //          sentence = sentence.slice(pos + 2).trim()
 //        }
+        //console.log(sentence)
         while (sentence.split(' ').length > 7 
                 && sentence.indexOf(', ') > -1) {
           let pos = sentence.indexOf(', ')
@@ -89,7 +102,7 @@ let AritcleModal = {
           sentenceList.push(sentence.trim())
         }
       })
-
+      //console.log(sentenceList)
       this.config.sentenceList = sentenceList
     },
 

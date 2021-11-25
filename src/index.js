@@ -60,13 +60,13 @@ window.onerror = function(message, source, lineno, colno, error) {
   if (error === null) {
     error = message
   }
-  //console.error(error)
+  console.error(error)
   VueController.data.errors.push(error)
 }
 
 Vue.config.errorHandler  = function(err, vm, info) {
   //console.log(`errorHandler Error: ${err.stack}\nInfo: ${info}`);
-  //console.error(err)
+  console.error(err)
   VueController.data.errors.push(err)
 }
 
@@ -89,9 +89,9 @@ let VueController = {
   mounted: async function () {
     //console.log('index.js mounted', 1)
     
-    this.restoreFromLocalStorage()
-    
     //console.log('index.js mounted', 2)
+    
+    this.restoreFromLocalStorage()
     
     await this.waitForSemanticUIReady()
     
@@ -132,6 +132,7 @@ let VueController = {
       }
     },
     saveToLocalStorage () {
+      //console.log(this.config.inited)
       if (this.config.inited === false) {
         return false
       }
@@ -172,7 +173,7 @@ let VueController = {
 // ----------------------------
 
 for (let key in localConfig) {
-  //console.log(key)
+  console.log(key)
   VueController.watch['localConfig.' + key] = function () {
     this.saveToLocalStorage()
   }

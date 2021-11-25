@@ -3,13 +3,11 @@
   <div class="ui segment current-sentence"
        v-bind:class="{isSpeaking: isSpeaking}">
     <h2>
-      <span v-for="(word, j) in currentSentence.split(' ')"
+      <span v-for="(word, i) in words"
             class="word"
-            v-bind:class="{isSpeaking: (i === config.speakingIndex && j === config.speakingWordIndex)}"
-            v-on:click="utils.SpeakUtil.speakWord(word, i, j)"
-            v-on:dblclick="utils.DictUtil.openDict(word)">
-        {{ word }}
-      </span>
+            v-bind:class="{isSpeaking: (i === speakingWordIndex), speakable: isSpeakable(word)}"
+            v-on:click.stop="startSpeakWord(word, i)"
+            v-on:dblclick.stop="openDict(word, $event)">{{ word }}</span>
     </h2>
   </div>
 </div>

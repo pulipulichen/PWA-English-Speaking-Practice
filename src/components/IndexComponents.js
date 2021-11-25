@@ -1,20 +1,11 @@
-import ControllerMenuBottomBar from './ControllerMenuBottomBar/ControllerMenuBottomBar.vue'
-import ControllerMenuTopBar from './ControllerMenuTopBar/ControllerMenuTopBar.vue'
-
-import AritcleModal from './AritcleModal/AritcleModal.vue'
-import ConfigurationModal from './ConfigurationModal/ConfigurationModal.vue'
-
-import SentencePanel from './SentencePanel/SentencePanel.vue'
-
-
 export default function (Index) {
   Index.components = {
-    ControllerMenuTopBar,
-    ControllerMenuBottomBar,
+    ControllerMenuTopBar: () => {return import(/* webpackChunkName: "components/ControllerMenuTopBar" */ './ControllerMenuTopBar/ControllerMenuTopBar.vue')},
+    ControllerMenuBottomBar: () => {return import(/* webpackChunkName: "components/ControllerMenuBottomBar" */ './ControllerMenuBottomBar/ControllerMenuBottomBar.vue')},
     
-    AritcleModal,
-    ConfigurationModal,
+    AritcleModal: () => {return import(/* webpackChunkName: "components/AritcleModal" */ './AritcleModal/AritcleModal.vue')},
+    ConfigurationModal: () => {return import(/* webpackChunkName: "components/ConfigurationModal" */ './ConfigurationModal/ConfigurationModal.vue')},
     
-    SentencePanel
+    SentencePanel: () => {return import(/* webpackChunkName: "components/SentencePanel" */ './SentencePanel/SentencePanel.vue')},
   }
 }

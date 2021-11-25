@@ -6,10 +6,13 @@
   <div class="content ui form">
     
     <div class="field">
+      <a class="ui fluid button"
+         v-on:click="loadDemo">
+        {{ $t('Load Demo') }}
+      </a>
       <textarea v-model="localConfig.fieldArticle"
                 id="fieldArticle"></textarea>
     </div>
-    
   </div>
   <div class="actions">
     <div class="ui button"

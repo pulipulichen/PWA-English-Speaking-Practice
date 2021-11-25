@@ -27,7 +27,7 @@ export default {
     }
 
     //voiceNameList = voices.map(v => v.name)
-    voiceNameMap.forEach(v => {
+    voices.forEach(v => {
       voiceNameMap[v.name] = v
     })
     //console.log(this.voiceNameList)
@@ -70,21 +70,23 @@ export default {
       synth.cancel()
     }
     
-    return new Promise(({resolve}) => {
+    return new Promise((resolve) => {
+      //console.log(resolve)
       let utterThis = new SpeechSynthesisUtterance(text);
 
-      utterThis.onend = () => {
-        isSpeaking = false
-        resolve(true)
-      }
       utterThis.voice = preferVoice
       utterThis.pitch = Number(pitch)
       utterThis.rate = Number(rate)
 
+      utterThis.onend = () => {
+        isSpeaking = false
+        console.log('ok')
+        resolve(true)
+      }
+      
       isSpeaking = true
       synth.speak(utterThis)
     })
-    
   },
   stopSpeak () {
 

@@ -3,6 +3,8 @@ let config = {
   debug: {
     enableRestore: true
   },
+  viewportSize: {
+  },
   
   // --------------------
   

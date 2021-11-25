@@ -1,6 +1,6 @@
 export default function (Index) {
   Index.mounted = function () {
-    this.restoreFromLocalStorage()
+//    this.restoreFromLocalStorage()
     
     //console.log('aaa')
 

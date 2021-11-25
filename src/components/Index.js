@@ -55,7 +55,7 @@ IndexWatch(Index)
 import IndexMethods from './IndexMethods.js'
 IndexMethods(Index)
 
-import IndexWatchLocalConfig from './IndexWatchLocalConfig.js'
-IndexWatchLocalConfig(Index)
+//import IndexWatchLocalConfig from './IndexWatchLocalConfig.js'
+//IndexWatchLocalConfig(Index)
 
 export default Index
