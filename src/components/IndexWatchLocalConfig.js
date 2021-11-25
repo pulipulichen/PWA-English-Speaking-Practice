@@ -6,5 +6,4 @@ export default function (Index) {
       this.saveToLocalStorage()
     }
   }
-
 }

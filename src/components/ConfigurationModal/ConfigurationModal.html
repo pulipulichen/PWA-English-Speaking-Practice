@@ -1,0 +1,22 @@
+<div class="ui modal ConfigurationModal" ref="Modal">
+  <i class="close icon"></i>
+  <div class="header">
+    {{ $t('Configuration') }}
+  </div>
+  <div class="content ui form">
+    
+    <FieldArticle 
+      ref="FieldArticle"
+      v-bind:config="config"
+      v-bind:localConfig="localConfig"
+      v-bind:utils="utils">
+    </FieldArticle>
+    
+  </div>
+  <div class="actions">
+    <div class="ui button"
+         v-on:click="close">
+      {{ $t('OK') }}
+    </div>
+  </div>
+</div>

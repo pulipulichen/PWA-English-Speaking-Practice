@@ -2,9 +2,9 @@ export default function (Index) {
   Index.mounted = function () {
     this.restoreFromLocalStorage()
     
-    console.log('aaa')
+    //console.log('aaa')
 
-    this.loadDemo()
+    //this.loadDemo()
     this.initSynth()
     this.initRecognition()
     this.scrollToLastPlay()

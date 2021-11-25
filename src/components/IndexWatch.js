@@ -1,9 +1,6 @@
 export default function (Index) {
   Index.watch = {
-    "localConfig.fieldArticle": async function () {
-      await this.utils.AsyncUtils.sleep()
-      this.buildSentenceList()
-    },
+
     recognitionAbort() {
       if (this.recognitionAbort === true) {
         this.recognition.abort()

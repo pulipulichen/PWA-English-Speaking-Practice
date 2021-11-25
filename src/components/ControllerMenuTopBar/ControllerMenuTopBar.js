@@ -17,7 +17,9 @@ let ControllerMenuTopBar = {
     
   },
   methods: {
-    
+    openConfigModal () {
+      this.$parent.openConfigurationModal()
+    }
   }
 }
 

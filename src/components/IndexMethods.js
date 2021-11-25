@@ -1,4 +1,3 @@
-const Tokenizer = require('sentence-tokenizer');
 
 import IndexMethodsLocalStorage from './IndexMethodsLocalStorage.js'
 import IndexMethodsDictionary from './IndexMethodsDictionary.js'
@@ -8,6 +7,11 @@ export default function (Index) {
   IndexMethodsDictionary(Index)
   
   // --------------------
+
+  Index.methods.openConfigurationModal = function () {
+    
+    this.$refs.ConfigurationModal.open()
+  }
 
   Index.methods.initSynth = async function () {
     this.config.synth = window.speechSynthesis
@@ -86,50 +90,7 @@ export default function (Index) {
 
     //this.recognition.start()
   }
-  Index.methods.loadDemo = async function () {
-    let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
-
-    //console.log(article)
-
-    article = article.split(`“`).join('"')
-    article = article.split(`”`).join('"')
-    article = article.split(`\n`).join(' ')
-    article = article.split(`\t`).join(' ')
-    while (article.indexOf('  ') > -1) {
-      article = article.split(`  `).join(' ')
-    }
-
-    this.localConfig.fieldArticle = article
-  }
-  Index.methods.buildSentenceList = function () {
-    //console.log(this.fieldArticle)
-
-    var tokenizer = new Tokenizer('Chuck')
-    tokenizer.setEntry(this.localConfig.fieldArticle)
-
-    let sentences = tokenizer.getSentences()
-    let sentenceList = []
-    sentences.forEach(sentence => {
-//        while (sentence.indexOf(', ') > -1) {
-//          let pos = sentence.indexOf(', ')
-//          let part = sentence.slice(0, pos + 2).trim()
-//          sentenceList.push(part)
-//          sentence = sentence.slice(pos + 2).trim()
-//        }
-      while (sentence.indexOf('. ') > -1) {
-        let pos = sentence.indexOf('. ')
-        let part = sentence.slice(0, pos + 2).trim()
-        sentenceList.push(part)
-        sentence = sentence.slice(pos + 2).trim()
-      }
-
-      if (sentence.length > 0) {
-        sentenceList.push(sentence.trim())
-      }
-    })
-
-    this.config.sentenceList = sentenceList
-  }
+  
   Index.methods.buildUtter = function (sentence, onend) {
     let utterThis = new SpeechSynthesisUtterance(sentence);
 
