@@ -1,25 +1,37 @@
 <div class="SentencePanel">
-  <div class="ui segment">
-    <a class="previous-sentence"
+  <div class="ui segment sentence-segment">
+    <div class="previous-sentence"
        v-if="config.playingIndex > 0"
        v-on:click="goToPreviousSentence">
+      <i class="step backward icon"></i>
       {{ previousSentence }}
-    </a>
+    </div>
     <div class="previous-sentence start"
          v-if="config.playingIndex === 0">
       <i class="hand point right outline icon"></i>
       {{ $t('Start') }}
     </div>
   </div>
-    
-  Main Sentence
   
-  <div class="ui segment">
-    <a class="next-sentence"
-       v-if="config.playingIndex < config.sentenceList.length - 1"
-       v-on:click="goToNextSentence">
-      {{ nextSentence }}
-    </a>
+  <div class="main-sentence-panel">
+    <CurrentSentence 
+      ref="CurrentSentence"
+      v-bind:config="config"
+      v-bind:localConfig="localConfig"
+      v-bind:utils="utils">
+    </CurrentSentence>
+    
+  </div>
+  
+  <div class="ui segment sentence-segment">
+    <template v-if="config.playingIndex < config.sentenceList.length - 1">
+      <i class="step forward icon"
+         v-on:click="goToNextSentence"></i>
+      <div class="next-sentence"
+         v-on:click="goToNextSentence">
+        {{ nextSentence }}
+      </div>
+    </template>
     <div class="next-sentence finish"
          v-if="config.playingIndex === config.sentenceList.length - 1">
       

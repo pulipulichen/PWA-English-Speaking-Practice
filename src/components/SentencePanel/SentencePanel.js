@@ -1,3 +1,5 @@
+import CurrentSentence from './CurrentSentence/CurrentSentence.vue'
+
 let SentencePanel = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
@@ -24,9 +26,12 @@ let SentencePanel = {
       return this.config.sentenceList[(this.config.playingIndex + 1)]
     }
   },
-  mounted() {
-    
+  components: {
+    CurrentSentence
   },
+//  mounted() {
+//    
+//  },
   methods: {
     goToPreviousSentence () {
       if (this.config.playingIndex > 0) {

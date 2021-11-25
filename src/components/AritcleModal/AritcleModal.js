@@ -64,6 +64,20 @@ let AritcleModal = {
 //          sentenceList.push(part)
 //          sentence = sentence.slice(pos + 2).trim()
 //        }
+        while (sentence.split(' ').length > 7 
+                && sentence.indexOf(', ') > -1) {
+          let pos = sentence.indexOf(', ')
+          let part = sentence.slice(0, pos + 2).trim()
+          let otherPart = sentence.slice(pos + 2).trim()
+          if (part.split(' ').length > 5 
+                  && otherPart.split(' ').length > 5) {
+            sentenceList.push(part)
+            sentence = otherPart
+          }
+          else {
+            break
+          }
+        }
         while (sentence.indexOf('. ') > -1) {
           let pos = sentence.indexOf('. ')
           let part = sentence.slice(0, pos + 2).trim()
