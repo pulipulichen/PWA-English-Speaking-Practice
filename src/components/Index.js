@@ -248,6 +248,13 @@ let Index = {
     },
     practice: async function (i) {
       this.synth.cancel()
+      if (this.practiceIndex === i) {
+        this.recognitionResult = null
+        this.recognitionAbort = true
+        this.practiceIndex = null
+        return false
+      }
+      
       this.practiceIndex = i
       this.diffList[i] = []
       
@@ -264,6 +271,7 @@ let Index = {
       
       this.practiceList[i] = this.recognitionResult
       this.practiceIndex = null
+      console.log(this.practiceList[i])
       
       let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
       //console.log(diff)
