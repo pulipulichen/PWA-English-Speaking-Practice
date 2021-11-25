@@ -12,15 +12,17 @@ export default function (Index) {
   Index.methods.initSynth = async function () {
     this.synth = window.speechSynthesis
     //console.log(this.synth)
-
+    
     let voices = []
     while (voices.length === 0) {
+      
       await this.utils.AsyncUtils.sleep(500)
       voices = this.synth.getVoices()
     }
 
     this.voices = voices
     this.voiceNameList = voices.map(v => v.name)
+    //console.log(this.voiceNameList)
 
     let preferName = [
       'Google US English',
@@ -65,7 +67,7 @@ export default function (Index) {
 
     this.recognition.onresult = (event) => {
       this.recognitionResult = event.results[0][0].transcript;
-      console.log(event.results)
+      //console.log(event.results)
       //let result = event.results[ event.results.length - 1 ]
       //let transcript = result[ result.length - 1 ].transcript.trim()
       //let caption = this.recognition.getCaption()
@@ -151,7 +153,7 @@ export default function (Index) {
     this.recognitionAbort = true
 
     var utterThis = this.buildUtter(sentence, (event) => {
-      console.log('SpeechSynthesisUtterance.onend');
+      //console.log('SpeechSynthesisUtterance.onend');
       this.speakingIndex = null
       if (this.practiceIndex === null && this.localConfig.repeatPractice) {
         this.practice(i)
