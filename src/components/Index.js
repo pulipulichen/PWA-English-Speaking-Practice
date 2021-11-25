@@ -6,9 +6,9 @@ let Index = {
   data () {    
     this.$i18n.locale = this.config.localConfig
     return {
-      fieldArticle: ``,
+      //fieldArticle: ``,
       
-      autoPractice: true,
+      //autoPractice: true,
       sentenceList: [],
       practiceList: [],
       diffList: [],
@@ -16,11 +16,11 @@ let Index = {
       synth: null,
       voice: null,
       voices: null,
-      voiceName: null,
+      //voiceName: null,
       voiceNameList: [],
       
-      pitch: 1,
-      rate: 1,
+      //pitch: 1,
+      //rate: 1,
       speakingIndex: null,
       speakingWordIndex: null,
       speakingDiffWordIndex: null,
@@ -29,20 +29,28 @@ let Index = {
       
       recognition: null,
       recognitionResult: null,
+      recognitionResultEnd: false,
       recognitionAbort: false,
+      
+      //lastPlayIndex: 5
     }
   },
   mounted () {
+    this.restoreFromLocalStorage()
+    
     this.loadDemo()
     this.initSynth()
     this.initRecognition()
+    this.scrollToLastPlay()
+    
+    this.config.inited = true
   },
 //  components: {
 //  },
 //  computed: {
 //  },
   watch: {
-    fieldArticle: async function () {
+    "localConfig.fieldArticle": async function () {
       await this.utils.AsyncUtils.sleep()
       this.buildSentenceList()
     },
@@ -51,12 +59,51 @@ let Index = {
         this.recognition.abort()
       }
     },
-    voiceName () {
-      let pos = this.voiceNameList.indexOf(this.voiceName)
+    'localConfig.voiceName' () {
+      let pos = this.voiceNameList.indexOf(this.localConfig.voiceName)
+      if (pos === -1) {
+        pos = 0
+      }
       this.voice = this.voices[pos]
     }
   },
   methods: {
+    restoreFromLocalStorage () {
+      if (this.config.debug.enableRestore === false) {
+        return false
+      } 
+
+      let data = localStorage.getItem(this.config.appName)
+      //console.log(data)
+      if (data === null || data.startsWith('{') === false || data.endsWith('}') === false) {
+        return false
+      }
+
+      try {
+        data = JSON.parse(data)
+      } catch (e) {
+        console.error(e)
+      }
+
+      //console.log(data)
+      for (let key in data) {
+        this.localConfig[key] = data[key]
+      }
+    },
+    saveToLocalStorage () {
+      if (this.config.inited === false) {
+        return false
+      }
+
+      let data = this.localConfig
+      //console.log(data)
+      data = JSON.stringify(data)
+      //console.log(data)
+      localStorage.setItem(this.config.appName, data)
+    },
+    
+    // --------------------
+    
     initSynth: async function () {
       this.synth = window.speechSynthesis
       //console.log(this.synth)
@@ -89,7 +136,7 @@ let Index = {
         }
       }
       this.voice = voices[voiceIndex]
-      this.voiceName = this.voice.name
+      this.localConfig.voiceName = this.voice.name
     },
     initRecognition () {
       //console.log(1)
@@ -120,6 +167,7 @@ let Index = {
       
       this.recognition.onspeechend = () => {
         this.recognition.stop();
+        this.recognitionResultEnd = true
       }
       
       //this.recognition.start()
@@ -137,13 +185,13 @@ let Index = {
         article = article.split(`  `).join(' ')
       } 
       
-      this.fieldArticle = article
+      this.localConfig.fieldArticle = article
     },
     buildSentenceList () {
       //console.log(this.fieldArticle)
       
       var tokenizer = new Tokenizer('Chuck')
-      tokenizer.setEntry(this.fieldArticle)
+      tokenizer.setEntry(this.localConfig.fieldArticle)
       
       let sentences = tokenizer.getSentences()
       let sentenceList = []
@@ -173,8 +221,8 @@ let Index = {
       
       utterThis.onend = onend
       utterThis.voice = this.voice;
-      utterThis.pitch = this.pitch;
-      utterThis.rate = this.rate;
+      utterThis.pitch = Number(this.localConfig.pitch)
+      utterThis.rate = Number(this.localConfig.rate)
       
       return utterThis
     },
@@ -193,12 +241,13 @@ let Index = {
       var utterThis = this.buildUtter(sentence, (event) => {
         console.log('SpeechSynthesisUtterance.onend');
         this.speakingIndex = null
-        if (this.practiceIndex === null && this.autoPractice) {
+        if (this.practiceIndex === null && this.localConfig.repeatPractice) {
           this.practice(i)
         }
       });
       
       this.synth.speak(utterThis);
+      this.localConfig.lastPlayIndex = i
     },
     speakWord: async function (word, i, j) {
       this.synth.cancel()
@@ -221,6 +270,7 @@ let Index = {
       });
       
       this.synth.speak(utterThis);
+      this.localConfig.lastPlayIndex = i
     },
     speakDiffWord: async function (word, i, j) {
       this.synth.cancel()
@@ -245,41 +295,52 @@ let Index = {
       });
       
       this.synth.speak(utterThis);
+      this.localConfig.lastPlayIndex = i
     },
     practice: async function (i) {
       this.synth.cancel()
-      if (this.practiceIndex === i) {
-        this.recognitionResult = null
-        this.recognitionAbort = true
-        this.practiceIndex = null
-        return false
-      }
-      
       this.practiceIndex = i
       this.diffList[i] = []
+      this.practiceList[i] = null
       
+      
+      let words = this.filterWord(this.sentenceList[i]).split(' ')
+      words = words.filter(function(item, pos) {
+        return words.indexOf(item) === pos
+      })
+      let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';'; 
+      console.log(grammar)
+      let speechRecognitionList = new webkitSpeechGrammarList();
+      speechRecognitionList.addFromString(grammar, 1);
+      this.recognition.grammars = speechRecognitionList;
+
       this.recognitionResult = null
       this.recognitionAbort = false
+      this.recognitionResultEnd = false
       this.recognition.start()
-      while (this.recognitionResult === null) {
+      while (this.recognitionResultEnd === false) {
         if (this.recognitionAbort === true) {
           this.practiceIndex = null
+          this.recognitionResultEnd = true
           return false
         }
+        console.log(this.recognitionResult)
+        this.practiceList[i] = this.recognitionResult
         await this.utils.AsyncUtils.sleep()
       }
       
       this.practiceList[i] = this.recognitionResult
       this.practiceIndex = null
-      console.log(this.practiceList[i])
       
       let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
       //console.log(diff)
       this.diffList[i] = diff
+      this.localConfig.lastPlayIndex = i
     },
     filterWord (word) {
       return word.replace(/[^\w\s]|_/g, "")
          .replace(/\s+/g, " ")
+         .toLowerCase()
          .trim()
     },
     openDict (word) {
@@ -315,7 +376,28 @@ let Index = {
       )
 
       if (window.focus) newWindow.focus();
+    },
+    scrollToLastPlay: async function () {
+      if (this.localConfig.lastPlayIndex === null) {
+        return false
+      }
+      
+      let element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
+      while (!element) {
+        await this.utils.AsyncUtils.sleep()
+        //console.log('wait')
+        element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
+      }
+      
+      element.scrollIntoView({block: "start", inline: "start"})
     }
+  }
+}
+
+for (let key in Index.localConfig) {
+  //console.log(key)
+  Index.watch['localConfig.' + key] = function () {
+    this.saveToLocalStorage()
   }
 }
 
