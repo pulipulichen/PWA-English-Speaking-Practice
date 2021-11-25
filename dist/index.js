@@ -201,6 +201,22 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/Index.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FIndex.vue&lang=yaml":
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/Index.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FIndex.vue&lang=yaml ***!
@@ -2075,6 +2091,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"ControllerMenuBar.less"}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&":
 /*!*******************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true& ***!
@@ -2086,7 +2120,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-82b7485c],\n.target .isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.word[data-v-82b7485c] {\n  cursor: pointer;\n}\n.word.isSpeaking[data-v-82b7485c] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.practice[data-v-82b7485c],\n.diff[data-v-82b7485c] {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n.sentence-control-panel[data-v-82b7485c] {\n  white-space: nowrap;\n}\n.menu input[type=\"range\"][data-v-82b7485c] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-82b7485c] {\n  margin-right: 1rem;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACCF;ADCE;;EAEE,wBAAA;EACA,YAAA;ACCJ;ADKA;EACE,eAAA;ACHF;ADKE;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACHJ;ADOA;;EAEE,WAAA;EACA,kBAAA;EACA,mBAAA;EACA,0BAAA;ACLF;ADQA;EAGI,6BAAA;EACA,WAAA;ACRJ;ADIA;EAQI,UAAA;ACTJ;ADaA;EACE,mBAAA;ACXF;ADcA;EAEI,iBAAA;ACbJ;ADWA;EAMI,kBAAA;ACdJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  \n}\n\n.word {\n  cursor: pointer;\n\n  &.isSpeaking {\n    cursor: not-allowed;\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n\n.diff {\n  \n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}\n\n.sentence-control-panel {\n  white-space: nowrap;\n}\n\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.word {\n  cursor: pointer;\n}\n.word.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n.sentence-control-panel {\n  white-space: nowrap;\n}\n.menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n"]}]);
+exports.push([module.i, ".target[data-v-82b7485c] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-82b7485c],\n.target .isSpeaking[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing[data-v-82b7485c] {\n  background-color: yellow;\n  color: black;\n}\n.word[data-v-82b7485c] {\n  cursor: pointer;\n}\n.word.isSpeaking[data-v-82b7485c] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.practice[data-v-82b7485c],\n.diff[data-v-82b7485c] {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed[data-v-82b7485c] {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added[data-v-82b7485c] {\n  color: red;\n}\n.sentence-control-panel[data-v-82b7485c] {\n  white-space: nowrap;\n}\n.menu input[type=\"range\"][data-v-82b7485c] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-82b7485c] {\n  margin-right: 1rem;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/Index.less?vue&type=style&index=0&id=82b7485c&lang=less&scoped=true&","Index.less"],"names":[],"mappings":"AAAA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACCF;ADCE;;EAEE,wBAAA;EACA,YAAA;ACCJ;ADEE;EACE,wBAAA;EACA,YAAA;ACAJ;ADIA;EACE,eAAA;ACFF;ADIE;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACFJ;ADMA;;EAEE,WAAA;EACA,kBAAA;EACA,mBAAA;EACA,0BAAA;ACJF;ADOA;EAGI,6BAAA;EACA,WAAA;ACPJ;ADGA;EAQI,UAAA;ACRJ;ADYA;EACE,mBAAA;ACVF;ADaA;EAEI,iBAAA;ACZJ;ADUA;EAMI,kBAAA;ACbJ","file":"Index.less","sourcesContent":[".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  &.isPracticing {\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.word {\n  cursor: pointer;\n\n  &.isSpeaking {\n    cursor: not-allowed;\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n\n.diff {\n  \n  .removed {\n    text-decoration: line-through;\n    color: gray;\n  }\n  \n  .added {\n    color: red;\n  }\n}\n\n.sentence-control-panel {\n  white-space: nowrap;\n}\n\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}",".target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing {\n  background-color: yellow;\n  color: black;\n}\n.word {\n  cursor: pointer;\n}\n.word.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.practice,\n.diff {\n  width: 100%;\n  margin-top: 0.5rem;\n  padding-top: 0.5rem;\n  border-top: 1px solid #CCC;\n}\n.diff .removed {\n  text-decoration: line-through;\n  color: gray;\n}\n.diff .added {\n  color: red;\n}\n.sentence-control-panel {\n  white-space: nowrap;\n}\n.menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -18193,6 +18227,162 @@ VueI18n.version = '8.24.4';
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&":
+/*!****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "ui bottom fixed menu" }, [
+    _c("a", { staticClass: "item" }, [
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.localConfig.repeatPractice,
+            expression: "localConfig.repeatPractice"
+          }
+        ],
+        attrs: { type: "checkbox", id: "repeatPractice" },
+        domProps: {
+          checked: Array.isArray(_vm.localConfig.repeatPractice)
+            ? _vm._i(_vm.localConfig.repeatPractice, null) > -1
+            : _vm.localConfig.repeatPractice
+        },
+        on: {
+          change: function($event) {
+            var $$a = _vm.localConfig.repeatPractice,
+              $$el = $event.target,
+              $$c = $$el.checked ? true : false
+            if (Array.isArray($$a)) {
+              var $$v = null,
+                $$i = _vm._i($$a, $$v)
+              if ($$el.checked) {
+                $$i < 0 &&
+                  _vm.$set(_vm.localConfig, "repeatPractice", $$a.concat([$$v]))
+              } else {
+                $$i > -1 &&
+                  _vm.$set(
+                    _vm.localConfig,
+                    "repeatPractice",
+                    $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                  )
+              }
+            } else {
+              _vm.$set(_vm.localConfig, "repeatPractice", $$c)
+            }
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("label", { attrs: { for: "repeatPractice" } }, [
+        _vm._v("\n      Repeat Practice\n    ")
+      ])
+    ]),
+    _vm._v(" "),
+    _c("a", { staticClass: "item" }, [
+      _vm._v("\n    Rate " + _vm._s(_vm.localConfig.rate) + "\n\n    "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.localConfig.rate,
+            expression: "localConfig.rate"
+          }
+        ],
+        staticClass: "slider",
+        attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
+        domProps: { value: _vm.localConfig.rate },
+        on: {
+          __r: function($event) {
+            return _vm.$set(_vm.localConfig, "rate", $event.target.value)
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _c("a", { staticClass: "item" }, [
+      _vm._v("\n    Pitch " + _vm._s(_vm.localConfig.pitch) + "\n\n    "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.localConfig.pitch,
+            expression: "localConfig.pitch"
+          }
+        ],
+        staticClass: "slider",
+        attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
+        domProps: { value: _vm.localConfig.pitch },
+        on: {
+          __r: function($event) {
+            return _vm.$set(_vm.localConfig, "pitch", $event.target.value)
+          }
+        }
+      })
+    ]),
+    _vm._v(" "),
+    _vm.voice
+      ? _c("a", { staticClass: "item" }, [
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.localConfig.voiceName,
+                  expression: "localConfig.voiceName"
+                }
+              ],
+              on: {
+                change: function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.localConfig,
+                    "voiceName",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                }
+              }
+            },
+            _vm._l(_vm.voiceNameList, function(name) {
+              return _c("option", { domProps: { value: name } }, [
+                _vm._v("\n        " + _vm._s(name) + "\n      ")
+              ])
+            }),
+            0
+          )
+        ])
+      : _vm._e()
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/Index.html?vue&type=template&id=82b7485c&scoped=true&":
 /*!**********************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/Index.html?vue&type=template&id=82b7485c&scoped=true& ***!
@@ -18222,286 +18412,172 @@ var render = function() {
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.fieldArticle,
-              expression: "fieldArticle"
+              value: _vm.localConfig.fieldArticle,
+              expression: "localConfig.fieldArticle"
             }
           ],
           attrs: { id: "fieldArticle" },
-          domProps: { value: _vm.fieldArticle },
+          domProps: { value: _vm.localConfig.fieldArticle },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.fieldArticle = $event.target.value
+              _vm.$set(_vm.localConfig, "fieldArticle", $event.target.value)
             }
           }
         })
       ]),
       _vm._v(" "),
       _vm._l(_vm.sentenceList, function(sentence, i) {
-        return _c("div", { staticClass: "ui grid" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "two wide column center aligned sentence-control-panel"
-            },
-            [
-              _c("div", [_vm._v("No. " + _vm._s(i + 1))]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "ui button tiny icon",
-                  class: {
-                    positive:
-                      i === _vm.speakingIndex &&
-                      _vm.speakingWordIndex === null &&
-                      _vm.speakingDiffWordIndex === null
-                  },
-                  attrs: { type: "button" },
-                  on: {
-                    click: function($event) {
-                      return _vm.speak(sentence, i)
-                    }
-                  }
-                },
-                [_c("i", { staticClass: "icon assistive listening systems" })]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "ui button tiny icon",
-                  class: { orange: i === _vm.practiceIndex },
-                  attrs: { type: "button" },
-                  on: {
-                    click: function($event) {
-                      return _vm.practice(i)
-                    }
-                  }
-                },
-                [_c("i", { staticClass: "icon microphone" })]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "fourteen wide column" }, [
+        return _c(
+          "div",
+          { staticClass: "ui grid", attrs: { id: "sentence" + i } },
+          [
             _c(
               "div",
               {
-                staticClass: "target",
-                class: {
-                  isSpeaking:
-                    i === _vm.speakingIndex &&
-                    _vm.speakingWordIndex === null &&
-                    _vm.speakingDiffWordIndex === null
-                }
+                staticClass:
+                  "two wide column center aligned sentence-control-panel"
               },
-              _vm._l(sentence.split(" "), function(word, j) {
-                return _c(
-                  "span",
+              [
+                _c("div", [_vm._v("No. " + _vm._s(i + 1))]),
+                _vm._v(" "),
+                _c(
+                  "button",
                   {
-                    staticClass: "word",
+                    staticClass: "ui button tiny icon",
                     class: {
-                      isSpeaking:
-                        i === _vm.speakingIndex && j === _vm.speakingWordIndex
+                      positive:
+                        i === _vm.speakingIndex &&
+                        _vm.speakingWordIndex === null &&
+                        _vm.speakingDiffWordIndex === null
                     },
+                    attrs: { type: "button" },
                     on: {
                       click: function($event) {
-                        return _vm.speakWord(word, i, j)
-                      },
-                      dblclick: function($event) {
-                        return _vm.openDict(word)
+                        return _vm.speak(sentence, i)
                       }
                     }
                   },
-                  [_vm._v("\r\n          " + _vm._s(word) + "\r\n        ")]
+                  [_c("i", { staticClass: "icon assistive listening systems" })]
+                ),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "ui button tiny icon",
+                    class: { orange: i === _vm.practiceIndex },
+                    attrs: { type: "button" },
+                    on: {
+                      click: function($event) {
+                        return _vm.practice(i)
+                      }
+                    }
+                  },
+                  [_c("i", { staticClass: "icon microphone" })]
                 )
-              }),
-              0
+              ]
             ),
             _vm._v(" "),
-            _vm.practiceList[i] && _vm.practiceList[i].length > 0
-              ? _c("div", { staticClass: "practice" }, [
-                  _vm._v(_vm._s(_vm.practiceList[i]))
-                ])
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.diffList[i] && _vm.diffList[i].length > 0
-              ? _c(
-                  "div",
-                  { staticClass: "diff" },
-                  _vm._l(_vm.diffList[i], function(diff, j) {
-                    return _c(
-                      "span",
-                      { class: { removed: diff.removed, added: diff.added } },
-                      _vm._l(diff.value.split(" "), function(word, k) {
-                        return _c(
-                          "span",
-                          {
-                            staticClass: "word",
-                            class: {
-                              isSpeaking:
-                                i === _vm.speakingIndex &&
-                                j + "-" + k === _vm.speakingDiffWordIndex
-                            },
-                            on: {
-                              click: function($event) {
-                                _vm.speakDiffWord(word, i, j + "-" + k)
-                              },
-                              dblclick: function($event) {
-                                return _vm.openDict(word)
-                              }
-                            }
-                          },
-                          [
-                            _vm._v(
-                              "\r\n            " +
-                                _vm._s(word) +
-                                "\r\n          "
-                            )
-                          ]
-                        )
-                      }),
-                      0
-                    )
-                  }),
-                  0
-                )
-              : _vm._e()
-          ])
-        ])
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "ui bottom fixed menu" }, [
-        _c("a", { staticClass: "item" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.autoPractice,
-                expression: "autoPractice"
-              }
-            ],
-            attrs: { type: "checkbox" },
-            domProps: {
-              checked: Array.isArray(_vm.autoPractice)
-                ? _vm._i(_vm.autoPractice, null) > -1
-                : _vm.autoPractice
-            },
-            on: {
-              change: function($event) {
-                var $$a = _vm.autoPractice,
-                  $$el = $event.target,
-                  $$c = $$el.checked ? true : false
-                if (Array.isArray($$a)) {
-                  var $$v = null,
-                    $$i = _vm._i($$a, $$v)
-                  if ($$el.checked) {
-                    $$i < 0 && (_vm.autoPractice = $$a.concat([$$v]))
-                  } else {
-                    $$i > -1 &&
-                      (_vm.autoPractice = $$a
-                        .slice(0, $$i)
-                        .concat($$a.slice($$i + 1)))
-                  }
-                } else {
-                  _vm.autoPractice = $$c
-                }
-              }
-            }
-          }),
-          _vm._v("\r\n      Auto practice\r\n    ")
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "item" }, [
-          _vm._v("\r\n      Rate " + _vm._s(_vm.rate) + "\r\n      \r\n      "),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.rate,
-                expression: "rate"
-              }
-            ],
-            staticClass: "slider",
-            attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
-            domProps: { value: _vm.rate },
-            on: {
-              __r: function($event) {
-                _vm.rate = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "item" }, [
-          _vm._v(
-            "\r\n      Pitch " + _vm._s(_vm.pitch) + "\r\n      \r\n      "
-          ),
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.pitch,
-                expression: "pitch"
-              }
-            ],
-            staticClass: "slider",
-            attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
-            domProps: { value: _vm.pitch },
-            on: {
-              __r: function($event) {
-                _vm.pitch = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _vm.voice
-          ? _c("a", { staticClass: "item" }, [
+            _c("div", { staticClass: "fourteen wide column" }, [
               _c(
-                "select",
+                "div",
                 {
-                  directives: [
-                    {
-                      name: "model",
-                      rawName: "v-model",
-                      value: _vm.voiceName,
-                      expression: "voiceName"
-                    }
-                  ],
-                  on: {
-                    change: function($event) {
-                      var $$selectedVal = Array.prototype.filter
-                        .call($event.target.options, function(o) {
-                          return o.selected
-                        })
-                        .map(function(o) {
-                          var val = "_value" in o ? o._value : o.value
-                          return val
-                        })
-                      _vm.voiceName = $event.target.multiple
-                        ? $$selectedVal
-                        : $$selectedVal[0]
-                    }
+                  staticClass: "target",
+                  class: {
+                    isSpeaking:
+                      i === _vm.speakingIndex &&
+                      _vm.speakingWordIndex === null &&
+                      _vm.speakingDiffWordIndex === null,
+                    isPracticing: _vm.practiceIndex === i
                   }
                 },
-                _vm._l(_vm.voiceNameList, function(name) {
-                  return _c("option", { domProps: { value: name } }, [
-                    _vm._v("\r\n          " + _vm._s(name) + "\r\n        ")
-                  ])
+                _vm._l(sentence.split(" "), function(word, j) {
+                  return _c(
+                    "span",
+                    {
+                      staticClass: "word",
+                      class: {
+                        isSpeaking:
+                          i === _vm.speakingIndex && j === _vm.speakingWordIndex
+                      },
+                      on: {
+                        click: function($event) {
+                          return _vm.speakWord(word, i, j)
+                        },
+                        dblclick: function($event) {
+                          return _vm.openDict(word)
+                        }
+                      }
+                    },
+                    [_vm._v("\r\n          " + _vm._s(word) + "\r\n        ")]
+                  )
                 }),
                 0
-              )
+              ),
+              _vm._v(" "),
+              _vm.practiceList[i] && _vm.practiceList[i].length > 0
+                ? _c("div", { staticClass: "practice" }, [
+                    _vm._v(_vm._s(_vm.practiceList[i]))
+                  ])
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.diffList[i] && _vm.diffList[i].length > 0
+                ? _c(
+                    "div",
+                    { staticClass: "diff" },
+                    _vm._l(_vm.diffList[i], function(diff, j) {
+                      return _c(
+                        "span",
+                        { class: { removed: diff.removed, added: diff.added } },
+                        _vm._l(diff.value.split(" "), function(word, k) {
+                          return _c(
+                            "span",
+                            {
+                              staticClass: "word",
+                              class: {
+                                isSpeaking:
+                                  i === _vm.speakingIndex &&
+                                  j + "-" + k === _vm.speakingDiffWordIndex
+                              },
+                              on: {
+                                click: function($event) {
+                                  _vm.speakDiffWord(word, i, j + "-" + k)
+                                },
+                                dblclick: function($event) {
+                                  return _vm.openDict(word)
+                                }
+                              }
+                            },
+                            [
+                              _vm._v(
+                                "\r\n            " +
+                                  _vm._s(word) +
+                                  "\r\n          "
+                              )
+                            ]
+                          )
+                        }),
+                        0
+                      )
+                    }),
+                    0
+                  )
+                : _vm._e()
             ])
-          : _vm._e()
-      ])
+          ]
+        )
+      }),
+      _vm._v(" "),
+      _c("ControllerMenuBar", {
+        ref: "ControllerMenuBar",
+        attrs: {
+          config: _vm.config,
+          localConfig: _vm.localConfig,
+          utils: _vm.utils
+        }
+      })
     ],
     2
   )
@@ -18622,6 +18698,28 @@ function normalizeComponent (
   }
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("8acd0168", content, false, {});
+// Hot Module Replacement
+if(false) {}
 
 /***/ }),
 
@@ -31021,6 +31119,150 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&":
+/*!************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& ***!
+  \************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?1e06":
+/*!****************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./ControllerMenuBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?9f64");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?9f64":
+/*!****************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let ControllerMenuBar = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+  },
+  computed: {
+    
+  },
+  mounted() {
+    
+  },
+  methods: {
+    
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ControllerMenuBar);
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&":
+/*!***************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.vue":
+/*!****************************************************************!*\
+  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.vue ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true& */ "./src/components/ControllerMenuBar/ControllerMenuBar.html?vue&type=template&id=3fcdadfe&scoped=true&");
+/* harmony import */ var _ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ControllerMenuBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBar/ControllerMenuBar.js?vue&type=script&lang=js&?1e06");
+/* empty/unused harmony star reexport *//* harmony import */ var _ControllerMenuBar_less_vue_type_style_index_0_id_3fcdadfe_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true& */ "./src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml */ "./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _ControllerMenuBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ControllerMenuBar_html_vue_type_template_id_3fcdadfe_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "3fcdadfe",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/ControllerMenuBar/ControllerMenuBar.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBar/ControllerMenuBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBar%2FControllerMenuBar.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBar_2FControllerMenuBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "./src/components/Index.html?vue&type=template&id=82b7485c&scoped=true&":
 /*!******************************************************************************!*\
   !*** ./src/components/Index.html?vue&type=template&id=82b7485c&scoped=true& ***!
@@ -31048,7 +31290,11 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
+/* harmony import */ var _IndexMounted_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IndexMounted.js */ "./src/components/IndexMounted.js");
+/* harmony import */ var _IndexComponents_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IndexComponents.js */ "./src/components/IndexComponents.js");
+/* harmony import */ var _IndexWatch_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./IndexWatch.js */ "./src/components/IndexWatch.js");
+/* harmony import */ var _IndexMethods_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./IndexMethods.js */ "./src/components/IndexMethods.js");
+/* harmony import */ var _IndexWatchLocalConfig_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./IndexWatchLocalConfig.js */ "./src/components/IndexWatchLocalConfig.js");
 
 /* global Node, webkitSpeechRecognition, webkitSpeechGrammarList, webkitSpeechRecognitionEvent */
 let Index = {
@@ -31056,9 +31302,9 @@ let Index = {
   data () {    
     this.$i18n.locale = this.config.localConfig
     return {
-      fieldArticle: ``,
+      //fieldArticle: ``,
       
-      autoPractice: true,
+      //autoPractice: true,
       sentenceList: [],
       practiceList: [],
       diffList: [],
@@ -31066,11 +31312,11 @@ let Index = {
       synth: null,
       voice: null,
       voices: null,
-      voiceName: null,
+      //voiceName: null,
       voiceNameList: [],
       
-      pitch: 1,
-      rate: 1,
+      //pitch: 1,
+      //rate: 1,
       speakingIndex: null,
       speakingWordIndex: null,
       speakingDiffWordIndex: null,
@@ -31079,295 +31325,34 @@ let Index = {
       
       recognition: null,
       recognitionResult: null,
+      recognitionResultEnd: false,
       recognitionAbort: false,
+      
+      //lastPlayIndex: 5
     }
   },
-  mounted () {
-    this.loadDemo()
-    this.initSynth()
-    this.initRecognition()
-  },
-//  components: {
-//  },
+  //  mounted () {},  // IndexMounted
+  //  components: {}, // IndexComponents
 //  computed: {
 //  },
-  watch: {
-    fieldArticle: async function () {
-      await this.utils.AsyncUtils.sleep()
-      this.buildSentenceList()
-    },
-    recognitionAbort() {
-      if (this.recognitionAbort === true) {
-        this.recognition.abort()
-      }
-    },
-    voiceName () {
-      let pos = this.voiceNameList.indexOf(this.voiceName)
-      this.voice = this.voices[pos]
-    }
-  },
-  methods: {
-    initSynth: async function () {
-      this.synth = window.speechSynthesis
-      //console.log(this.synth)
-      
-      let voices = []
-      while (voices.length === 0) {
-        await this.utils.AsyncUtils.sleep(500)
-        voices = this.synth.getVoices()
-      }
-      
-      this.voices = voices
-      this.voiceNameList = voices.map(v => v.name)
-      
-      let preferName = [
-        'Google US English',
-        'Google US English Male',
-        'Google UK English Female',
-        'Google UK English Male',
-        'Chrome OS US English 1'
-      ]
-      
-      let voiceIndex = 0
-      //console.log(voicesNames)
-      for (let i = 0; i < preferName.length; i++) {
-        //console.log(preferName[i])
-        let pos = this.voiceNameList.indexOf(preferName[i])
-        if (pos > -1) {
-          voiceIndex = pos
-          break
-        }
-      }
-      this.voice = voices[voiceIndex]
-      this.voiceName = this.voice.name
-    },
-    initRecognition () {
-      //console.log(1)
-      var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
-      var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
-      var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
-      
-      this.recognition = new SpeechRecognition();
-      
-      //var speechRecognitionList = new SpeechGrammarList();
-      //var grammar = '#JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;'
-      //speechRecognitionList.addFromString(grammar, 1);
-      //this.recognition.grammars = speechRecognitionList;
-      //console.log(speechRecognitionList[0].src); // should return the same as the contents of the grammar variable
-      //console.log(speechRecognitionList[0].weight); // should return 1 - the same as the weight set in line 4.
-      
-      this.recognition.continuous = false;
-      this.recognition.lang = 'en-US';
-      this.recognition.interimResults = false;
-      this.recognition.maxAlternatives = 1;
-      
-      this.recognition.onresult = (event) => {
-        this.recognitionResult = event.results[0][0].transcript;
-        //console.log(color)
-        //console.log('Confidence: ' + event.results[0][0].confidence);
-        
-      }
-      
-      this.recognition.onspeechend = () => {
-        this.recognition.stop();
-      }
-      
-      //this.recognition.start()
-    },
-    loadDemo: async function () {
-      let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
-      
-      //console.log(article)
-      
-      article = article.split(`“`).join('"')
-      article = article.split(`”`).join('"')
-      article = article.split(`\n`).join(' ')
-      article = article.split(`\t`).join(' ')
-      while (article.indexOf('  ') > -1) {
-        article = article.split(`  `).join(' ')
-      } 
-      
-      this.fieldArticle = article
-    },
-    buildSentenceList () {
-      //console.log(this.fieldArticle)
-      
-      var tokenizer = new Tokenizer('Chuck')
-      tokenizer.setEntry(this.fieldArticle)
-      
-      let sentences = tokenizer.getSentences()
-      let sentenceList = []
-      sentences.forEach(sentence => {
-//        while (sentence.indexOf(', ') > -1) {
-//          let pos = sentence.indexOf(', ')
-//          let part = sentence.slice(0, pos + 2).trim()
-//          sentenceList.push(part)
-//          sentence = sentence.slice(pos + 2).trim()
-//        }
-        while (sentence.indexOf('. ') > -1) {
-          let pos = sentence.indexOf('. ')
-          let part = sentence.slice(0, pos + 2).trim()
-          sentenceList.push(part)
-          sentence = sentence.slice(pos + 2).trim()
-        }
-        
-        if (sentence.length > 0) {
-          sentenceList.push(sentence.trim())
-        }
-      })
-      
-      this.sentenceList = sentenceList
-    },
-    buildUtter (sentence, onend) {
-      var utterThis = new SpeechSynthesisUtterance(sentence);
-      
-      utterThis.onend = onend
-      utterThis.voice = this.voice;
-      utterThis.pitch = this.pitch;
-      utterThis.rate = this.rate;
-      
-      return utterThis
-    },
-    speak (sentence, i) {
-      this.synth.cancel()
-      if (i === this.speakingIndex 
-              && !this.speakingWordIndex) {
-        this.speakingIndex = null
-        return false
-      }
-      
-      //console.log(sentence)
-      this.speakingIndex = i
-      this.recognitionAbort = true
-      
-      var utterThis = this.buildUtter(sentence, (event) => {
-        console.log('SpeechSynthesisUtterance.onend');
-        this.speakingIndex = null
-        if (this.practiceIndex === null && this.autoPractice) {
-          this.practice(i)
-        }
-      });
-      
-      this.synth.speak(utterThis);
-    },
-    speakWord: async function (word, i, j) {
-      this.synth.cancel()
-      
-      if (i === this.speakingIndex 
-              && j === this.speakingWordIndex) {
-        this.speakingIndex = null
-        this.speakingWordIndex = null
-        return false
-      }
-      
-      //console.log(sentence)
-      this.speakingIndex = i
-      this.speakingWordIndex = j
-      this.recognitionAbort = true
-      
-      var utterThis = this.buildUtter(word, (event) => {
-        this.speakingIndex = null
-        this.speakingWordIndex = null
-      });
-      
-      this.synth.speak(utterThis);
-    },
-    speakDiffWord: async function (word, i, j) {
-      this.synth.cancel()
-      
-      if (i === this.speakingIndex 
-              && j === this.speakingDiffWordIndex) {
-        this.speakingIndex = null
-        this.speakingDiffWordIndex = null
-        return false
-      }
-      //this.recognition.abort()
-      
-      //console.log(sentence)
-      this.speakingIndex = i
-      this.speakingDiffWordIndex = j
-      this.recognitionAbort = true
-      
-      
-      var utterThis = this.buildUtter(word, (event) => {
-        this.speakingIndex = null
-        this.speakingDiffWordIndex = null
-      });
-      
-      this.synth.speak(utterThis);
-    },
-    practice: async function (i) {
-      this.synth.cancel()
-      if (this.practiceIndex === i) {
-        this.recognitionResult = null
-        this.recognitionAbort = true
-        this.practiceIndex = null
-        return false
-      }
-      
-      this.practiceIndex = i
-      this.diffList[i] = []
-      
-      this.recognitionResult = null
-      this.recognitionAbort = false
-      this.recognition.start()
-      while (this.recognitionResult === null) {
-        if (this.recognitionAbort === true) {
-          this.practiceIndex = null
-          return false
-        }
-        await this.utils.AsyncUtils.sleep()
-      }
-      
-      this.practiceList[i] = this.recognitionResult
-      this.practiceIndex = null
-      console.log(this.practiceList[i])
-      
-      let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
-      //console.log(diff)
-      this.diffList[i] = diff
-    },
-    filterWord (word) {
-      return word.replace(/[^\w\s]|_/g, "")
-         .replace(/\s+/g, " ")
-         .trim()
-    },
-    openDict (word) {
-      word = this.filterWord(word)
-      if (word === '') {
-        return false
-      }
- 
-      let url = `https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/` + word
-      //window.open(url, word)
-      
-      this.popupCenter({url, title: word})
-    },
-    popupCenter ({url, title, w = 800, h = 480}) {
-      // Fixes dual-screen position                             Most browsers      Firefox
-      const dualScreenLeft = window.screenLeft !==  undefined ? window.screenLeft : window.screenX;
-      const dualScreenTop = window.screenTop !==  undefined   ? window.screenTop  : window.screenY;
-
-      const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
-      const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
-
-      const systemZoom = width / window.screen.availWidth;
-      const left = (width - w) / 2 / systemZoom + dualScreenLeft
-      const top = (height - h) / 2 / systemZoom + dualScreenTop
-      const newWindow = window.open(url, title, 
-        `
-        scrollbars=yes,
-        width=${w / systemZoom}, 
-        height=${h / systemZoom}, 
-        top=${top}, 
-        left=${left}
-        `
-      )
-
-      if (window.focus) newWindow.focus();
-    }
-  }
+  // watch: {},  // IndexWatch
+  methods: {} // IndexMethods
 }
+
+
+Object(_IndexMounted_js__WEBPACK_IMPORTED_MODULE_0__["default"])(Index)
+
+
+Object(_IndexComponents_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Index)
+
+
+Object(_IndexWatch_js__WEBPACK_IMPORTED_MODULE_2__["default"])(Index)
+
+
+Object(_IndexMethods_js__WEBPACK_IMPORTED_MODULE_3__["default"])(Index)
+
+
+Object(_IndexWatchLocalConfig_js__WEBPACK_IMPORTED_MODULE_4__["default"])(Index)
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
@@ -31465,6 +31450,26 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/IndexComponents.js":
+/*!*******************************************!*\
+  !*** ./src/components/IndexComponents.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ControllerMenuBar_ControllerMenuBar_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControllerMenuBar/ControllerMenuBar.vue */ "./src/components/ControllerMenuBar/ControllerMenuBar.vue");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+  Index.components = {
+    ControllerMenuBar: _ControllerMenuBar_ControllerMenuBar_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./src/components/IndexGlobal.less?vue&type=style&index=1&lang=less&":
 /*!***************************************************************************!*\
   !*** ./src/components/IndexGlobal.less?vue&type=style&index=1&lang=less& ***!
@@ -31478,6 +31483,469 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_IndexGlobal_less_vue_type_style_index_1_lang_less___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_IndexGlobal_less_vue_type_style_index_1_lang_less___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_IndexGlobal_less_vue_type_style_index_1_lang_less___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_IndexGlobal_less_vue_type_style_index_1_lang_less___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
+
+/***/ }),
+
+/***/ "./src/components/IndexMethods.js":
+/*!****************************************!*\
+  !*** ./src/components/IndexMethods.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _IndexMethodsLocalStorage_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IndexMethodsLocalStorage.js */ "./src/components/IndexMethodsLocalStorage.js");
+/* harmony import */ var _IndexMethodsDictionary_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IndexMethodsDictionary.js */ "./src/components/IndexMethodsDictionary.js");
+const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+  Object(_IndexMethodsLocalStorage_js__WEBPACK_IMPORTED_MODULE_0__["default"])(Index)
+  Object(_IndexMethodsDictionary_js__WEBPACK_IMPORTED_MODULE_1__["default"])(Index)
+  
+  // --------------------
+
+  Index.methods.initSynth = async function () {
+    this.synth = window.speechSynthesis
+    //console.log(this.synth)
+
+    let voices = []
+    while (voices.length === 0) {
+      await this.utils.AsyncUtils.sleep(500)
+      voices = this.synth.getVoices()
+    }
+
+    this.voices = voices
+    this.voiceNameList = voices.map(v => v.name)
+
+    let preferName = [
+      'Google US English',
+      'Google US English Male',
+      'Google UK English Female',
+      'Google UK English Male',
+      'Chrome OS US English 1'
+    ]
+
+    let voiceIndex = 0
+    //console.log(voicesNames)
+    for (let i = 0; i < preferName.length; i++) {
+      //console.log(preferName[i])
+      let pos = this.voiceNameList.indexOf(preferName[i])
+      if (pos > -1) {
+        voiceIndex = pos
+        break
+      }
+    }
+    this.voice = voices[voiceIndex]
+    this.localConfig.voiceName = this.voice.name
+  }
+  Index.methods.initRecognition = function () {
+    //console.log(1)
+    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+    var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
+    var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+
+    this.recognition = new SpeechRecognition();
+
+    //var speechRecognitionList = new SpeechGrammarList();
+    //var grammar = '#JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;'
+    //speechRecognitionList.addFromString(grammar, 1);
+    //this.recognition.grammars = speechRecognitionList;
+    //console.log(speechRecognitionList[0].src); // should return the same as the contents of the grammar variable
+    //console.log(speechRecognitionList[0].weight); // should return 1 - the same as the weight set in line 4.
+
+    this.recognition.continuous = false;
+    this.recognition.lang = 'en-US';
+    this.recognition.interimResults = true;
+    this.recognition.maxAlternatives = 10
+
+    this.recognition.onresult = (event) => {
+      this.recognitionResult = event.results[0][0].transcript;
+      console.log(event.results)
+      //let result = event.results[ event.results.length - 1 ]
+      //let transcript = result[ result.length - 1 ].transcript.trim()
+      //let caption = this.recognition.getCaption()
+      //console.log(transcript, event.results)
+
+      //
+      //console.log(color)
+      //console.log('Confidence: ' + event.results[0][0].confidence);
+
+    }
+
+    this.recognition.onspeechend = () => {
+      this.recognition.stop();
+      this.recognitionResultEnd = true
+    }
+
+    //this.recognition.start()
+  }
+  Index.methods.loadDemo = async function () {
+    let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
+
+    //console.log(article)
+
+    article = article.split(`“`).join('"')
+    article = article.split(`”`).join('"')
+    article = article.split(`\n`).join(' ')
+    article = article.split(`\t`).join(' ')
+    while (article.indexOf('  ') > -1) {
+      article = article.split(`  `).join(' ')
+    }
+
+    this.localConfig.fieldArticle = article
+  }
+  Index.methods.buildSentenceList = function () {
+    //console.log(this.fieldArticle)
+
+    var tokenizer = new Tokenizer('Chuck')
+    tokenizer.setEntry(this.localConfig.fieldArticle)
+
+    let sentences = tokenizer.getSentences()
+    let sentenceList = []
+    sentences.forEach(sentence => {
+//        while (sentence.indexOf(', ') > -1) {
+//          let pos = sentence.indexOf(', ')
+//          let part = sentence.slice(0, pos + 2).trim()
+//          sentenceList.push(part)
+//          sentence = sentence.slice(pos + 2).trim()
+//        }
+      while (sentence.indexOf('. ') > -1) {
+        let pos = sentence.indexOf('. ')
+        let part = sentence.slice(0, pos + 2).trim()
+        sentenceList.push(part)
+        sentence = sentence.slice(pos + 2).trim()
+      }
+
+      if (sentence.length > 0) {
+        sentenceList.push(sentence.trim())
+      }
+    })
+
+    this.sentenceList = sentenceList
+  }
+  Index.methods.buildUtter = function (sentence, onend) {
+    var utterThis = new SpeechSynthesisUtterance(sentence);
+
+    utterThis.onend = onend
+    utterThis.voice = this.voice;
+    utterThis.pitch = Number(this.localConfig.pitch)
+    utterThis.rate = Number(this.localConfig.rate)
+
+    return utterThis
+  }
+  Index.methods.speak = function (sentence, i) {
+    this.synth.cancel()
+    if (i === this.speakingIndex
+            && !this.speakingWordIndex) {
+      this.speakingIndex = null
+      return false
+    }
+
+    //console.log(sentence)
+    this.speakingIndex = i
+    this.recognitionAbort = true
+
+    var utterThis = this.buildUtter(sentence, (event) => {
+      console.log('SpeechSynthesisUtterance.onend');
+      this.speakingIndex = null
+      if (this.practiceIndex === null && this.localConfig.repeatPractice) {
+        this.practice(i)
+      }
+    });
+
+    this.synth.speak(utterThis);
+    this.localConfig.lastPlayIndex = i
+  }
+  Index.methods.speakWord = async function (word, i, j) {
+    this.synth.cancel()
+
+    if (i === this.speakingIndex
+            && j === this.speakingWordIndex) {
+      this.speakingIndex = null
+      this.speakingWordIndex = null
+      return false
+    }
+
+    //console.log(sentence)
+    this.speakingIndex = i
+    this.speakingWordIndex = j
+    this.recognitionAbort = true
+
+    var utterThis = this.buildUtter(word, (event) => {
+      this.speakingIndex = null
+      this.speakingWordIndex = null
+    });
+
+    this.synth.speak(utterThis);
+    this.localConfig.lastPlayIndex = i
+  }
+  Index.methods.speakDiffWord = async function (word, i, j) {
+    this.synth.cancel()
+
+    if (i === this.speakingIndex
+            && j === this.speakingDiffWordIndex) {
+      this.speakingIndex = null
+      this.speakingDiffWordIndex = null
+      return false
+    }
+    //this.recognition.abort()
+
+    //console.log(sentence)
+    this.speakingIndex = i
+    this.speakingDiffWordIndex = j
+    this.recognitionAbort = true
+
+
+    var utterThis = this.buildUtter(word, (event) => {
+      this.speakingIndex = null
+      this.speakingDiffWordIndex = null
+    });
+
+    this.synth.speak(utterThis);
+    this.localConfig.lastPlayIndex = i
+  }
+  Index.methods.practice = async function (i) {
+    this.synth.cancel()
+    this.practiceIndex = i
+    this.diffList[i] = []
+    this.practiceList[i] = null
+
+
+    let words = this.filterWord(this.sentenceList[i]).split(' ')
+    words = words.filter(function (item, pos) {
+      return words.indexOf(item) === pos
+    })
+    let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';';
+    //console.log(grammar)
+    let speechRecognitionList = new webkitSpeechGrammarList();
+    speechRecognitionList.addFromString(grammar, 1);
+    this.recognition.grammars = speechRecognitionList;
+
+    this.recognitionResult = null
+    this.recognitionAbort = false
+    this.recognitionResultEnd = false
+    this.recognition.start()
+    while (this.recognitionResultEnd === false) {
+      if (this.recognitionAbort === true) {
+        this.practiceIndex = null
+        this.recognitionResultEnd = true
+        return false
+      }
+      //console.log(this.recognitionResult)
+      this.practiceList[i] = this.recognitionResult
+      await this.utils.AsyncUtils.sleep()
+    }
+
+    this.practiceList[i] = this.recognitionResult
+    this.practiceIndex = null
+
+    let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
+    //console.log(diff)
+    this.diffList[i] = diff
+    this.localConfig.lastPlayIndex = i
+  }
+  Index.methods.filterWord = function (word) {
+    return word.replace(/[^\w\s]|_/g, "")
+            .replace(/\s+/g, " ")
+            .toLowerCase()
+            .trim()
+  }
+  
+  
+  Index.methods.scrollToLastPlay = async function () {
+    if (this.localConfig.lastPlayIndex === null) {
+      return false
+    }
+
+    let element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
+    while (!element) {
+      await this.utils.AsyncUtils.sleep()
+      //console.log('wait')
+      element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
+    }
+
+    element.scrollIntoView({block: "start", inline: "start"})
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/IndexMethodsDictionary.js":
+/*!**************************************************!*\
+  !*** ./src/components/IndexMethodsDictionary.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+  Index.methods.openDict = function (word) {
+    word = this.filterWord(word)
+    if (word === '') {
+      return false
+    }
+
+    let url = `https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/` + word
+    //window.open(url, word)
+
+    this.popupCenter({url, title: word})
+  }
+  Index.methods.popupCenter = function ( {url, title, w = 800, h = 480}) {
+    // Fixes dual-screen position                             Most browsers      Firefox
+    const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX;
+    const dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screenY;
+
+    const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    const systemZoom = width / window.screen.availWidth;
+    const left = (width - w) / 2 / systemZoom + dualScreenLeft
+    const top = (height - h) / 2 / systemZoom + dualScreenTop
+    const newWindow = window.open(url, title,
+            `
+        scrollbars=yes,
+        width=${w / systemZoom}, 
+        height=${h / systemZoom}, 
+        top=${top}, 
+        left=${left}
+        `
+            )
+
+    if (window.focus)
+      newWindow.focus();
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/IndexMethodsLocalStorage.js":
+/*!****************************************************!*\
+  !*** ./src/components/IndexMethodsLocalStorage.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+  Index.methods.restoreFromLocalStorage = function () {
+    if (this.config.debug.enableRestore === false) {
+      return false
+    }
+
+    let data = localStorage.getItem(this.config.appName)
+    //console.log(data)
+    if (data === null || data.startsWith('{') === false || data.endsWith('}') === false) {
+      return false
+    }
+
+    try {
+      data = JSON.parse(data)
+    } catch (e) {
+      console.error(e)
+    }
+
+    //console.log(data)
+    for (let key in data) {
+      this.localConfig[key] = data[key]
+    }
+  }
+  
+  Index.methods.saveToLocalStorage = function () {
+    if (this.config.inited === false) {
+      return false
+    }
+
+    let data = this.localConfig
+    //console.log(data)
+    data = JSON.stringify(data)
+    //console.log(data)
+    localStorage.setItem(this.config.appName, data)
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/IndexMounted.js":
+/*!****************************************!*\
+  !*** ./src/components/IndexMounted.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+  Index.mounted = function () {
+    this.restoreFromLocalStorage()
+
+    this.loadDemo()
+    this.initSynth()
+    this.initRecognition()
+    this.scrollToLastPlay()
+
+    this.config.inited = true
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/IndexWatch.js":
+/*!**************************************!*\
+  !*** ./src/components/IndexWatch.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+  Index.watch = {
+    "localConfig.fieldArticle": async function () {
+      await this.utils.AsyncUtils.sleep()
+      this.buildSentenceList()
+    },
+    recognitionAbort() {
+      if (this.recognitionAbort === true) {
+        this.recognition.abort()
+      }
+    },
+    'localConfig.voiceName' () {
+      let pos = this.voiceNameList.indexOf(this.localConfig.voiceName)
+      if (pos === -1) {
+        pos = 0
+      }
+      this.voice = this.voices[pos]
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/IndexWatchLocalConfig.js":
+/*!*************************************************!*\
+  !*** ./src/components/IndexWatchLocalConfig.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (Index) {
+
+  for (let key in Index.localConfig) {
+    //console.log(key)
+    Index.watch['localConfig.' + key] = function () {
+      this.saveToLocalStorage()
+    }
+  }
+
+});
 
 /***/ }),
 
@@ -31495,6 +31963,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _config_production_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./config.production.js */ "./src/config.production.js");
 let config = {
   appName: 'vue-app',
+  debug: {
+    enableRestore: true
+  }
 }
 
 
@@ -31933,35 +32404,12 @@ module.exports = "<div class=\"non-invasive-web-style-framework\">\r\n  <index\r
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 let localConfig = {
-  locale: 'zh-TW',
-  
-  textContent: '',
-  stringToSearch: '',
-  stringToReplaceWith: '',
-  replaceMode: 'line',
-  //replaceMode: 'raw',
-  displayPanel: 'replace',
-  //displayReplacePanel: true,
-  replaceLineOptions: {
-    mode: 'prefix',
-    lTrim: false,
-    rTrim: false
-  },
-  lineWrapping: true,
-  indent: {
-    mode: 'tab',
-    size: 2,
-  },
-  formatTool: 'lines-trim',
-  //syntax: 'text/javascript',
-  syntax: 'text/plain',
-  fontSize: 16,
-  filename: null,
-  enableTypewritterSound: true,
-  mainButtonAction: 'copy & clear',
-  speechSynthesisRate: 1.1,
-  ocrLanguage: 'eng',
-  editorSimpleMode: false, // textarea
+  fieldArticle: ``,
+  pitch: 1,
+  rate: 1,
+  voiceName: null,
+  lastPlayIndex: 5,
+  repeatPractice: true,
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);

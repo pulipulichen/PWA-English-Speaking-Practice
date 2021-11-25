@@ -55,38 +55,10 @@
   </div>
   
   
-  <div class="ui bottom fixed menu">
-    <a class="item">
-      <input type="checkbox" v-model="localConfig.repeatPractice"
-             id="repeatPractice" />
-      <label for="repeatPractice">
-        Repeat Practice
-      </label>
-    </a>
-    <a class="item">
-      Rate {{ localConfig.rate }}
-      
-      <input type="range" min="0.5" max="1.5" 
-             v-model="localConfig.rate" 
-             class="slider"
-             step="0.1">
-    </a>
-    <a class="item">
-      Pitch {{ localConfig.pitch }}
-      
-      <input type="range" min="0.5" max="1.5" 
-             v-model="localConfig.pitch" 
-             class="slider"
-             step="0.1">
-    </a>
-    <a class="item"
-       v-if="voice">
-      <select v-model="localConfig.voiceName">
-        <option v-for="name in voiceNameList"
-                v-bind:value="name">
-          {{ name }}
-        </option>
-      </select>
-    </a>
-  </div>
+  <ControllerMenuBar
+    ref="ControllerMenuBar"
+    v-bind:config="config"
+    v-bind:localConfig="localConfig"
+    v-bind:utils="utils">
+  </ControllerMenuBar>
 </div>
