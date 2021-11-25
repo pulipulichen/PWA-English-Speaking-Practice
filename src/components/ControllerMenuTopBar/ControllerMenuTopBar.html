@@ -35,22 +35,29 @@
   -->
   
   
-  <a class="ui icon item">
+  <a class="ui icon item"
+     v-bind:class="{disabled: (localConfig.rate === 0.5)}"
+     v-on:click="rateSlow">
     <i class="minus icon"></i>
   </a>
-  <div class="ui icon item">
-    {{ localConfig.rate }}x
+  <div class="ui item">
+    <div class="rate-item">
+      {{ localConfig.rate }}x
+    </div>
   </div>
-  <a class="ui icon item">
+  <a class="ui icon item"
+     v-bind:class="{disabled: (localConfig.rate === 1.5)}"
+     v-on:click="rateFast">
     <i class="plus icon"></i>
   </a>
   <a class="ui icon item"
-       v-on:click="openConfigModal">
+       v-on:click="openConfigurationModal">
     <i class="cog icon"></i>
   </a>
   
   <div class="right menu">
-    <a class="ui icon item">
+    <a class="ui icon item"
+       v-on:click="openArticleModal">
       <i class="file alternate outline icon" />
     </a>
   </div>

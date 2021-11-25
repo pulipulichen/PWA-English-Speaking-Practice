@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-import FieldArticle from './FieldArticle/FieldArticle.vue'
+//import FieldArticle from './FieldArticle/FieldArticle.vue'
 
 let ConfigurationModal = {
   props: ['config', 'localConfig', 'utils'],
@@ -12,7 +12,7 @@ let ConfigurationModal = {
     }
   },
   components: {
-    FieldArticle
+//    FieldArticle
   },
   watch: {
     'localConfig.locale'() {
@@ -49,6 +49,19 @@ let ConfigurationModal = {
     },
     close () {
       this.modal.modal('hide')
+    },
+    
+    pitchReduce () {
+      this.localConfig.pitch = this.localConfig.pitch - 0.25
+      if (this.localConfig.pitch < 0.5) {
+        this.localConfig.pitch = 0.5
+      }
+    },
+    pitchRise () {
+      this.localConfig.pitch = this.localConfig.pitch + 0.25
+      if (this.localConfig.pitch > 1.5) {
+        this.localConfig.pitch = 1.5
+      }
     }
   }
 }

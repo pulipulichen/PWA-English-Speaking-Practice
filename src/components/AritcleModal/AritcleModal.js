@@ -1,10 +1,12 @@
-const Tokenizer = require('sentence-tokenizer');
+import $ from 'jquery'
 
-let FieldArticle = {
+let AritcleModal = {
   props: ['config', 'localConfig', 'utils'],
-  data() {
+  data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
+      modal: null,
+      isOpened: false
     }
   },
   watch: {
@@ -17,12 +19,35 @@ let FieldArticle = {
     },
   },
 //  computed: {
-//
+//    
 //  },
 //  mounted() {
-//
+//    this.init()
 //  },
   methods: {
+    init: function () {
+      this.modal = $(this.$refs.Modal)
+      
+      this.modal.modal({
+        onShow: () => {
+          //console.log('open')
+          this.isOpened = true
+        },
+        onHidden: () => {
+          this.isOpened = false
+        }
+      })
+    },
+    open: async function () {
+      if (!this.modal) {
+        this.init()
+      }
+      
+      this.modal.modal('show')
+    },
+    close () {
+      this.modal.modal('hide')
+    },
     buildSentenceList: function () {
       //console.log(this.fieldArticle)
 
@@ -71,4 +96,4 @@ let FieldArticle = {
   }
 }
 
-export default FieldArticle
+export default AritcleModal

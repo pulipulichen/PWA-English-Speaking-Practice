@@ -5,12 +5,29 @@
   </div>
   <div class="content ui form">
     
-    <FieldArticle 
-      ref="FieldArticle"
-      v-bind:config="config"
-      v-bind:localConfig="localConfig"
-      v-bind:utils="utils">
-    </FieldArticle>
+    <div class="field">
+      <label>
+        {{ $t('Pitch') }}
+      </label>
+      <div class="ui fluid buttons">
+        <button type="button"
+                class="ui icon button"
+                v-bind:class="{disabled: (localConfig.pitch === 0.5)}"
+                v-on:click="pitchReduce">
+          <i class="minus icon"></i>
+        </button>
+        <div type="button"
+                class="ui disabled button pitch-item">
+            {{ localConfig.pitch }}
+        </div>
+        <button type="button"
+                class="ui icon button"
+                v-bind:class="{disabled: (localConfig.pitch === 1.5)}"
+                v-on:click="pitchRise">
+          <i class="plus icon"></i>
+        </button>
+      </div>
+    </div>
     
   </div>
   <div class="actions">

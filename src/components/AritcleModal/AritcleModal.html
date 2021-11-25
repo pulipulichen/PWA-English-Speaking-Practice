@@ -1,0 +1,20 @@
+<div class="ui modal ConfigurationModal" ref="Modal">
+  <i class="close icon"></i>
+  <div class="header">
+    {{ $t('Article') }}
+  </div>
+  <div class="content ui form">
+    
+    <div class="field">
+      <textarea v-model="localConfig.fieldArticle"
+                id="fieldArticle"></textarea>
+    </div>
+    
+  </div>
+  <div class="actions">
+    <div class="ui button"
+         v-on:click="close">
+      {{ $t('OK') }}
+    </div>
+  </div>
+</div>
