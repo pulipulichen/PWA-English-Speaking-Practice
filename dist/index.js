@@ -2102,7 +2102,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".menu input[type=\"range\"][data-v-3fcdadfe] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-3fcdadfe] {\n  margin-right: 1rem;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&","ControllerMenuBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ","file":"ControllerMenuBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n"]}]);
+exports.push([module.i, ".menu input[type=\"range\"][data-v-3fcdadfe] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-3fcdadfe] {\n  margin-right: 1rem;\n}\n.ui.icon.item[data-v-3fcdadfe] {\n  cursor: pointer;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/ControllerMenuBar/ControllerMenuBar.less?vue&type=style&index=0&id=3fcdadfe&lang=less&scoped=true&","ControllerMenuBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ;ADMA;EACE,eAAA;ACJF","file":"ControllerMenuBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}\n\n.ui.icon.item {\n  cursor: pointer;\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n.ui.icon.item {\n  cursor: pointer;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -18243,140 +18243,73 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "ui bottom fixed menu" }, [
-    _c("a", { staticClass: "item" }, [
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.localConfig.repeatPractice,
-            expression: "localConfig.repeatPractice"
-          }
-        ],
-        attrs: { type: "checkbox", id: "repeatPractice" },
-        domProps: {
-          checked: Array.isArray(_vm.localConfig.repeatPractice)
-            ? _vm._i(_vm.localConfig.repeatPractice, null) > -1
-            : _vm.localConfig.repeatPractice
-        },
-        on: {
-          change: function($event) {
-            var $$a = _vm.localConfig.repeatPractice,
-              $$el = $event.target,
-              $$c = $$el.checked ? true : false
-            if (Array.isArray($$a)) {
-              var $$v = null,
-                $$i = _vm._i($$a, $$v)
-              if ($$el.checked) {
-                $$i < 0 &&
-                  _vm.$set(_vm.localConfig, "repeatPractice", $$a.concat([$$v]))
-              } else {
-                $$i > -1 &&
-                  _vm.$set(
-                    _vm.localConfig,
-                    "repeatPractice",
-                    $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                  )
-              }
-            } else {
-              _vm.$set(_vm.localConfig, "repeatPractice", $$c)
-            }
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("label", { attrs: { for: "repeatPractice" } }, [
-        _vm._v("\n      Repeat Practice\n    ")
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "ui item" }, [
+      _c("div", { staticClass: "ui tiny buttons" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "ui disabled button", attrs: { type: "button" } },
+          [_vm._v("\n        " + _vm._s(_vm.localConfig.rate) + "x\n      ")]
+        ),
+        _vm._v(" "),
+        _vm._m(2)
       ])
     ]),
     _vm._v(" "),
-    _c("a", { staticClass: "item" }, [
-      _vm._v("\n    Rate " + _vm._s(_vm.localConfig.rate) + "\n\n    "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.localConfig.rate,
-            expression: "localConfig.rate"
-          }
-        ],
-        staticClass: "slider",
-        attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
-        domProps: { value: _vm.localConfig.rate },
-        on: {
-          __r: function($event) {
-            return _vm.$set(_vm.localConfig, "rate", $event.target.value)
-          }
-        }
-      })
-    ]),
-    _vm._v(" "),
-    _c("a", { staticClass: "item" }, [
-      _vm._v("\n    Pitch " + _vm._s(_vm.localConfig.pitch) + "\n\n    "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.localConfig.pitch,
-            expression: "localConfig.pitch"
-          }
-        ],
-        staticClass: "slider",
-        attrs: { type: "range", min: "0.5", max: "1.5", step: "0.1" },
-        domProps: { value: _vm.localConfig.pitch },
-        on: {
-          __r: function($event) {
-            return _vm.$set(_vm.localConfig, "pitch", $event.target.value)
-          }
-        }
-      })
-    ]),
-    _vm._v(" "),
-    _vm.voice
-      ? _c("a", { staticClass: "item" }, [
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.localConfig.voiceName,
-                  expression: "localConfig.voiceName"
-                }
-              ],
-              on: {
-                change: function($event) {
-                  var $$selectedVal = Array.prototype.filter
-                    .call($event.target.options, function(o) {
-                      return o.selected
-                    })
-                    .map(function(o) {
-                      var val = "_value" in o ? o._value : o.value
-                      return val
-                    })
-                  _vm.$set(
-                    _vm.localConfig,
-                    "voiceName",
-                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-                  )
-                }
-              }
-            },
-            _vm._l(_vm.voiceNameList, function(name) {
-              return _c("option", { domProps: { value: name } }, [
-                _vm._v("\n        " + _vm._s(name) + "\n      ")
-              ])
-            }),
-            0
-          )
-        ])
-      : _vm._e()
+    _vm._m(3)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ui icon item" }, [
+      _c("i", { staticClass: "file alternate outline icon" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      { staticClass: "ui icon button", attrs: { type: "button" } },
+      [_c("i", { staticClass: "minus icon" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      { staticClass: "ui icon button", attrs: { type: "button" } },
+      [_c("i", { staticClass: "plus icon" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "right menu" }, [
+      _c("div", { staticClass: "ui icon item" }, [
+        _c("i", { staticClass: "step backward icon" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "ui icon item" }, [
+        _c("i", { staticClass: "step forward icon" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "ui icon item play-icon" }, [
+        _c("i", { staticClass: "play icon" })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -18429,7 +18362,7 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _vm._l(_vm.sentenceList, function(sentence, i) {
+      _vm._l(_vm.config.sentenceList, function(sentence, i) {
         return _c(
           "div",
           { staticClass: "ui grid", attrs: { id: "sentence" + i } },
@@ -18449,9 +18382,9 @@ var render = function() {
                     staticClass: "ui button tiny icon",
                     class: {
                       positive:
-                        i === _vm.speakingIndex &&
-                        _vm.speakingWordIndex === null &&
-                        _vm.speakingDiffWordIndex === null
+                        i === _vm.config.speakingIndex &&
+                        _vm.config.speakingWordIndex === null &&
+                        _vm.config.speakingDiffWordIndex === null
                     },
                     attrs: { type: "button" },
                     on: {
@@ -18467,7 +18400,7 @@ var render = function() {
                   "button",
                   {
                     staticClass: "ui button tiny icon",
-                    class: { orange: i === _vm.practiceIndex },
+                    class: { orange: i === _vm.config.practiceIndex },
                     attrs: { type: "button" },
                     on: {
                       click: function($event) {
@@ -18487,10 +18420,10 @@ var render = function() {
                   staticClass: "target",
                   class: {
                     isSpeaking:
-                      i === _vm.speakingIndex &&
-                      _vm.speakingWordIndex === null &&
-                      _vm.speakingDiffWordIndex === null,
-                    isPracticing: _vm.practiceIndex === i
+                      i === _vm.config.speakingIndex &&
+                      _vm.config.speakingWordIndex === null &&
+                      _vm.config.speakingDiffWordIndex === null,
+                    isPracticing: _vm.config.practiceIndex === i
                   }
                 },
                 _vm._l(sentence.split(" "), function(word, j) {
@@ -18500,7 +18433,8 @@ var render = function() {
                       staticClass: "word",
                       class: {
                         isSpeaking:
-                          i === _vm.speakingIndex && j === _vm.speakingWordIndex
+                          i === _vm.config.speakingIndex &&
+                          j === _vm.config.speakingWordIndex
                       },
                       on: {
                         click: function($event) {
@@ -18517,17 +18451,18 @@ var render = function() {
                 0
               ),
               _vm._v(" "),
-              _vm.practiceList[i] && _vm.practiceList[i].length > 0
+              _vm.config.practiceList[i] &&
+              _vm.config.practiceList[i].length > 0
                 ? _c("div", { staticClass: "practice" }, [
-                    _vm._v(_vm._s(_vm.practiceList[i]))
+                    _vm._v(_vm._s(_vm.config.practiceList[i]))
                   ])
                 : _vm._e(),
               _vm._v(" "),
-              _vm.diffList[i] && _vm.diffList[i].length > 0
+              _vm.config.diffList[i] && _vm.config.diffList[i].length > 0
                 ? _c(
                     "div",
                     { staticClass: "diff" },
-                    _vm._l(_vm.diffList[i], function(diff, j) {
+                    _vm._l(_vm.config.diffList[i], function(diff, j) {
                       return _c(
                         "span",
                         { class: { removed: diff.removed, added: diff.added } },
@@ -18538,8 +18473,9 @@ var render = function() {
                               staticClass: "word",
                               class: {
                                 isSpeaking:
-                                  i === _vm.speakingIndex &&
-                                  j + "-" + k === _vm.speakingDiffWordIndex
+                                  i === _vm.config.speakingIndex &&
+                                  j + "-" + k ===
+                                    _vm.config.speakingDiffWordIndex
                               },
                               on: {
                                 click: function($event) {
@@ -18575,9 +18511,7 @@ var render = function() {
         attrs: {
           config: _vm.config,
           localConfig: _vm.localConfig,
-          utils: _vm.utils,
-          voice: _vm.voice,
-          voiceNameList: _vm.voiceNameList
+          utils: _vm.utils
         }
       })
     ],
@@ -31163,7 +31097,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 let ControllerMenuBar = {
-  props: ['config', 'localConfig', 'utils', 'voiceNameList', 'voice'],
+  props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
@@ -31307,28 +31241,28 @@ let Index = {
       //fieldArticle: ``,
       
       //autoPractice: true,
-      sentenceList: [],
-      practiceList: [],
-      diffList: [],
-      
-      synth: null,
-      voice: null,
-      voices: null,
-      //voiceName: null,
-      voiceNameList: [],
-      
-      //pitch: 1,
-      //rate: 1,
-      speakingIndex: null,
-      speakingWordIndex: null,
-      speakingDiffWordIndex: null,
-      
-      practiceIndex: null,
-      
-      recognition: null,
-      recognitionResult: null,
-      recognitionResultEnd: false,
-      recognitionAbort: false,
+//      sentenceList: [],
+//      practiceList: [],
+//      diffList: [],
+//      
+//      synth: null,
+//      voice: null,
+//      voices: null,
+//      //voiceName: null,
+//      voiceNameList: [],
+//      
+//      //pitch: 1,
+//      //rate: 1,
+//      speakingIndex: null,
+//      speakingWordIndex: null,
+//      speakingDiffWordIndex: null,
+//      
+//      practiceIndex: null,
+//      
+//      recognition: null,
+//      recognitionResult: null,
+//      recognitionResultEnd: false,
+//      recognitionAbort: false,
       
       //lastPlayIndex: 5
     }
@@ -31511,14 +31445,14 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
   // --------------------
 
   Index.methods.initSynth = async function () {
-    this.synth = window.speechSynthesis
+    this.config.synth = window.speechSynthesis
     //console.log(this.synth)
     
     let voices = []
     while (voices.length === 0) {
       
       await this.utils.AsyncUtils.sleep(500)
-      voices = this.synth.getVoices()
+      voices = this.config.synth.getVoices()
     }
 
     this.voices = voices
@@ -31537,14 +31471,14 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     //console.log(voicesNames)
     for (let i = 0; i < preferName.length; i++) {
       //console.log(preferName[i])
-      let pos = this.voiceNameList.indexOf(preferName[i])
+      let pos = this.config.voiceNameList.indexOf(preferName[i])
       if (pos > -1) {
         voiceIndex = pos
         break
       }
     }
-    this.voice = voices[voiceIndex]
-    this.localConfig.voiceName = this.voice.name
+    this.config.voice = voices[voiceIndex]
+    this.localConfig.voiceName = this.config.voice.name
   }
   Index.methods.initRecognition = function () {
     //console.log(1)
@@ -31552,7 +31486,7 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
     var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
-    this.recognition = new SpeechRecognition();
+    this.config.recognition = new SpeechRecognition();
 
     //var speechRecognitionList = new SpeechGrammarList();
     //var grammar = '#JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;'
@@ -31561,13 +31495,13 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     //console.log(speechRecognitionList[0].src); // should return the same as the contents of the grammar variable
     //console.log(speechRecognitionList[0].weight); // should return 1 - the same as the weight set in line 4.
 
-    this.recognition.continuous = false;
-    this.recognition.lang = 'en-US';
-    this.recognition.interimResults = true;
-    this.recognition.maxAlternatives = 10
+    this.config.recognition.continuous = false;
+    this.config.recognition.lang = 'en-US';
+    this.config.recognition.interimResults = true;
+    this.config.recognition.maxAlternatives = 10
 
-    this.recognition.onresult = (event) => {
-      this.recognitionResult = event.results[0][0].transcript;
+    this.config.recognition.onresult = (event) => {
+      this.config.recognitionResult = event.results[0][0].transcript;
       //console.log(event.results)
       //let result = event.results[ event.results.length - 1 ]
       //let transcript = result[ result.length - 1 ].transcript.trim()
@@ -31580,9 +31514,9 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
 
     }
 
-    this.recognition.onspeechend = () => {
-      this.recognition.stop();
-      this.recognitionResultEnd = true
+    this.config.recognition.onspeechend = () => {
+      this.config.recognition.stop();
+      this.config.recognitionResultEnd = true
     }
 
     //this.recognition.start()
@@ -31629,94 +31563,94 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
       }
     })
 
-    this.sentenceList = sentenceList
+    this.config.sentenceList = sentenceList
   }
   Index.methods.buildUtter = function (sentence, onend) {
-    var utterThis = new SpeechSynthesisUtterance(sentence);
+    let utterThis = new SpeechSynthesisUtterance(sentence);
 
     utterThis.onend = onend
-    utterThis.voice = this.voice;
+    utterThis.voice = this.config.voice;
     utterThis.pitch = Number(this.localConfig.pitch)
     utterThis.rate = Number(this.localConfig.rate)
 
     return utterThis
   }
   Index.methods.speak = function (sentence, i) {
-    this.synth.cancel()
-    if (i === this.speakingIndex
-            && !this.speakingWordIndex) {
-      this.speakingIndex = null
+    this.config.synth.cancel()
+    if (i === this.config.speakingIndex
+            && !this.config.speakingWordIndex) {
+      this.config.speakingIndex = null
       return false
     }
 
     //console.log(sentence)
-    this.speakingIndex = i
-    this.recognitionAbort = true
+    this.config.speakingIndex = i
+    this.config.recognitionAbort = true
 
     var utterThis = this.buildUtter(sentence, (event) => {
       //console.log('SpeechSynthesisUtterance.onend');
-      this.speakingIndex = null
-      if (this.practiceIndex === null && this.localConfig.repeatPractice) {
+      this.config.speakingIndex = null
+      if (this.config.practiceIndex === null && this.localConfig.repeatPractice) {
         this.practice(i)
       }
     });
 
-    this.synth.speak(utterThis);
+    this.config.synth.speak(utterThis);
     this.localConfig.lastPlayIndex = i
   }
   Index.methods.speakWord = async function (word, i, j) {
     this.synth.cancel()
 
-    if (i === this.speakingIndex
-            && j === this.speakingWordIndex) {
-      this.speakingIndex = null
-      this.speakingWordIndex = null
+    if (i === this.config.speakingIndex
+            && j === this.config.speakingWordIndex) {
+      this.config.speakingIndex = null
+      this.config.speakingWordIndex = null
       return false
     }
 
     //console.log(sentence)
-    this.speakingIndex = i
-    this.speakingWordIndex = j
-    this.recognitionAbort = true
+    this.config.speakingIndex = i
+    this.config.speakingWordIndex = j
+    this.config.recognitionAbort = true
 
     var utterThis = this.buildUtter(word, (event) => {
-      this.speakingIndex = null
-      this.speakingWordIndex = null
+      this.config.speakingIndex = null
+      this.config.speakingWordIndex = null
     });
 
     this.synth.speak(utterThis);
     this.localConfig.lastPlayIndex = i
   }
   Index.methods.speakDiffWord = async function (word, i, j) {
-    this.synth.cancel()
+    this.config.synth.cancel()
 
-    if (i === this.speakingIndex
-            && j === this.speakingDiffWordIndex) {
-      this.speakingIndex = null
-      this.speakingDiffWordIndex = null
+    if (i === this.config.speakingIndex
+            && j === this.config.speakingDiffWordIndex) {
+      this.config.speakingIndex = null
+      this.config.speakingDiffWordIndex = null
       return false
     }
     //this.recognition.abort()
 
     //console.log(sentence)
-    this.speakingIndex = i
-    this.speakingDiffWordIndex = j
-    this.recognitionAbort = true
+    this.config.speakingIndex = i
+    this.config.speakingDiffWordIndex = j
+    this.config.recognitionAbort = true
 
 
     var utterThis = this.buildUtter(word, (event) => {
-      this.speakingIndex = null
-      this.speakingDiffWordIndex = null
+      this.config.speakingIndex = null
+      this.config.speakingDiffWordIndex = null
     });
 
-    this.synth.speak(utterThis);
+    this.config.synth.speak(utterThis);
     this.localConfig.lastPlayIndex = i
   }
   Index.methods.practice = async function (i) {
-    this.synth.cancel()
-    this.practiceIndex = i
-    this.diffList[i] = []
-    this.practiceList[i] = null
+    this.config.synth.cancel()
+    this.config.practiceIndex = i
+    this.config.diffList[i] = []
+    this.config.practiceList[i] = null
 
 
     let words = this.filterWord(this.sentenceList[i]).split(' ')
@@ -31727,25 +31661,25 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     //console.log(grammar)
     let speechRecognitionList = new webkitSpeechGrammarList();
     speechRecognitionList.addFromString(grammar, 1);
-    this.recognition.grammars = speechRecognitionList;
+    this.config.recognition.grammars = speechRecognitionList;
 
-    this.recognitionResult = null
-    this.recognitionAbort = false
-    this.recognitionResultEnd = false
-    this.recognition.start()
-    while (this.recognitionResultEnd === false) {
+    this.config.recognitionResult = null
+    this.config.recognitionAbort = false
+    this.config.recognitionResultEnd = false
+    this.config.recognition.start()
+    while (this.config.recognitionResultEnd === false) {
       if (this.recognitionAbort === true) {
-        this.practiceIndex = null
-        this.recognitionResultEnd = true
+        this.config.practiceIndex = null
+        this.config.recognitionResultEnd = true
         return false
       }
       //console.log(this.recognitionResult)
-      this.practiceList[i] = this.recognitionResult
+      this.config.practiceList[i] = this.recognitionResult
       await this.utils.AsyncUtils.sleep()
     }
 
-    this.practiceList[i] = this.recognitionResult
-    this.practiceIndex = null
+    this.config.practiceList[i] = this.recognitionResult
+    this.config.practiceIndex = null
 
     let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
     //console.log(diff)
@@ -31971,7 +31905,32 @@ let config = {
   appName: 'vue-app',
   debug: {
     enableRestore: true
-  }
+  },
+  
+  // --------------------
+  
+  sentenceList: [],
+  practiceList: [],
+  diffList: [],
+
+  synth: null,
+  voice: null,
+  voices: null,
+  //voiceName: null,
+  voiceNameList: [],
+
+  //pitch: 1,
+  //rate: 1,
+  speakingIndex: null,
+  speakingWordIndex: null,
+  speakingDiffWordIndex: null,
+
+  practiceIndex: null,
+
+  recognition: null,
+  recognitionResult: null,
+  recognitionResultEnd: false,
+  recognitionAbort: false,
 }
 
 

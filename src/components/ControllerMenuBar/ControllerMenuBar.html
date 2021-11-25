@@ -1,4 +1,5 @@
 <div class="ui bottom fixed menu">
+  <!--
   <a class="item">
     <input type="checkbox" v-model="localConfig.repeatPractice"
            id="repeatPractice" />
@@ -31,4 +32,40 @@
       </option>
     </select>
   </a>
+  -->
+  
+  <div class="ui icon item">
+    <i class="file alternate outline icon" />
+  </div>
+  <div class="ui item">
+    <div class="ui tiny buttons">
+      <button type="button" 
+              class="ui icon button">
+        <i class="minus icon"></i>
+      </button>
+      <button type="button" 
+              class="ui disabled button">
+        {{ localConfig.rate }}x
+      </button>
+      <button type="button" 
+              class="ui icon button">
+        <i class="plus icon"></i>
+      </button>
+    </div>
+    
+  </div>
+  
+  <div class="right menu">
+    <div class="ui icon item">
+      <i class="step backward icon" />
+    </div>
+    
+    <div class="ui icon item">
+      <i class="step forward icon" />
+    </div>
+    
+    <div class="ui icon item play-icon">
+      <i class="play icon" />
+    </div>
+  </div>
 </div>

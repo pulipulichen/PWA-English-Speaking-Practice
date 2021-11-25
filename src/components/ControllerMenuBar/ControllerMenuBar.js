@@ -1,5 +1,5 @@
 let ControllerMenuBar = {
-  props: ['config', 'localConfig', 'utils', 'voiceNameList', 'voice'],
+  props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {

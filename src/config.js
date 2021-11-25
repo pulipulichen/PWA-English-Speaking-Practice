@@ -2,7 +2,32 @@ let config = {
   appName: 'vue-app',
   debug: {
     enableRestore: true
-  }
+  },
+  
+  // --------------------
+  
+  sentenceList: [],
+  practiceList: [],
+  diffList: [],
+
+  synth: null,
+  voice: null,
+  voices: null,
+  //voiceName: null,
+  voiceNameList: [],
+
+  //pitch: 1,
+  //rate: 1,
+  speakingIndex: null,
+  speakingWordIndex: null,
+  speakingDiffWordIndex: null,
+
+  practiceIndex: null,
+
+  recognition: null,
+  recognitionResult: null,
+  recognitionResultEnd: false,
+  recognitionAbort: false,
 }
 
 import styleConfig from './styles/style.config.js'
