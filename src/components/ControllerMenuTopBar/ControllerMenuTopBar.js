@@ -9,6 +9,9 @@ let ControllerMenuTopBar = {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.rate'() {
+      this.utils.TextToSpeechUtil.setRate(this.localConfig.rate)
+    },
   },
   computed: {
     currentIndex () {
@@ -42,7 +45,7 @@ let ControllerMenuTopBar = {
       if (this.localConfig.rate > 1.5) {
         this.localConfig.rate = 1.5
       }
-    }
+    },
   }
 }
 

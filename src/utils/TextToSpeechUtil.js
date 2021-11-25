@@ -16,6 +16,9 @@ let voiceNameMap = {}
 let preferVoice
 let isSpeaking = false
 
+let pitch = 1
+let rate = 1
+
 export default {
   init: async function () {
     if (inited === true) {
@@ -59,7 +62,13 @@ export default {
     preferVoice = voices[0]
     return preferVoice
   },
-  startSpeak: async function (text, pitch = 1, rate = 1) {
+  setPitch (value) {
+    pitch = value
+  },
+  setRate (value) {
+    rate = value
+  },
+  startSpeak: async function (text) {
     await this.init()
     
     text = text.trim()

@@ -1,0 +1,30 @@
+<div class="ui modal ConfigurationModal" ref="Modal">
+  <i class="close icon"></i>
+  <div class="header">
+    {{ $t('Word Practice') }}
+  </div>
+  <div class="content ui form">
+    
+    <div class="ui segment word-segment"
+         v-bind:class="{isSpeaking: isSpeaking}"
+         v-on:click="speakWord">
+      <h2 class="ui center aligned header">
+        {{ config.practiceWord }}
+      </h2>
+    </div>
+    <h2 class="ui center aligned icon header">
+      <i class="conversation icon"></i>
+      {{ $t(`Let's Practice!`) }}
+    </h2>
+  </div>
+  <div class="actions">
+    <div class="ui button"
+         v-on:click="openDictionary">
+      {{ $t('Dictionary') }}
+    </div>
+    <div class="ui button"
+         v-on:click="close">
+      {{ $t('OK') }}
+    </div>
+  </div>
+</div>

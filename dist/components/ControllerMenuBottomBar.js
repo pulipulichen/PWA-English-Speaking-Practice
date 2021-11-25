@@ -103,7 +103,35 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0)
+    _c("div", { staticClass: "right menu" }, [
+      _c(
+        "a",
+        {
+          staticClass: "ui icon item",
+          class: { disabled: _vm.localConfig.playingIndex === 0 },
+          on: { click: _vm.goToPreviousSentence }
+        },
+        [_c("i", { staticClass: "step backward icon" })]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "ui icon item",
+          class: {
+            disabled:
+              _vm.localConfig.playingIndex ===
+              _vm.config.sentenceList.length - 1
+          },
+          on: { click: _vm.goToNextSentence }
+        },
+        [_c("i", { staticClass: "step forward icon" })]
+      ),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1)
+    ])
   ])
 }
 var staticRenderFns = [
@@ -111,22 +139,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "right menu" }, [
-      _c("a", { staticClass: "ui icon item" }, [
-        _c("i", { staticClass: "step backward icon" })
-      ]),
-      _vm._v(" "),
-      _c("a", { staticClass: "ui icon item" }, [
-        _c("i", { staticClass: "step forward icon" })
-      ]),
-      _vm._v(" "),
-      _c("a", { staticClass: "ui icon item" }, [
-        _c("i", { staticClass: "comment outline icon" })
-      ]),
-      _vm._v(" "),
-      _c("a", { staticClass: "ui icon item" }, [
-        _c("i", { staticClass: "play icon" })
-      ])
+    return _c("a", { staticClass: "ui icon item" }, [
+      _c("i", { staticClass: "comment outline icon" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { staticClass: "ui icon item" }, [
+      _c("i", { staticClass: "play icon" })
     ])
   }
 ]
@@ -205,6 +227,16 @@ let ControllerMenuBottomBar = {
   },
   methods: {
     
+    goToPreviousSentence () {
+      if (this.localConfig.playingIndex > 0) {
+        this.localConfig.playingIndex--
+      }
+    },
+    goToNextSentence () {
+      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+        this.localConfig.playingIndex++
+      }
+    }
   }
 }
 

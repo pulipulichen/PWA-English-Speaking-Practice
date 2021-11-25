@@ -43,7 +43,7 @@
   <a class="ui item"
      v-on:click="localConfig.rate = 1">
     <div class="rate-item">
-      {{ localConfig.rate }}x
+      {{ localConfig.rate }}X
     </div>
   </a>
   <a class="ui icon item"
@@ -60,7 +60,7 @@
     <a class="ui item article-item"
        v-on:click="openArticleModal">
       <template v-if="config.sentenceList.length > 0">
-        {{ currentIndex }}
+        {{ (localConfig.playingIndex + 1) }}
         / 
         {{ config.sentenceList.length }}
       </template>

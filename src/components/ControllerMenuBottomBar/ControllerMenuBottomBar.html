@@ -9,11 +9,15 @@
   </div>
 
   <div class="right menu">
-    <a class="ui icon item">
+    <a class="ui icon item"
+       v-bind:class="{disabled: localConfig.playingIndex === 0}"
+       v-on:click="goToPreviousSentence">
       <i class="step backward icon" />
     </a>
 
-    <a class="ui icon item">
+    <a class="ui icon item"
+       v-bind:class="{disabled: localConfig.playingIndex === config.sentenceList.length - 1}"
+       v-on:click="goToNextSentence">
       <i class="step forward icon" />
     </a>
 

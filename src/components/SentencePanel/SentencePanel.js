@@ -1,4 +1,5 @@
 import CurrentSentence from './CurrentSentence/CurrentSentence.vue'
+import WordModal from './WordModal/WordModal.vue'
 
 let SentencePanel = {
   props: ['config', 'localConfig', 'utils'],
@@ -29,7 +30,8 @@ let SentencePanel = {
     }
   },
   components: {
-    CurrentSentence
+    CurrentSentence,
+    WordModal
   },
 //  mounted() {
 //    

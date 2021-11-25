@@ -59,8 +59,13 @@ let CurrentSentence = {
   },
   methods: {
     speakCurrentSentence: async function () {
+      if (this.isSpeaking === true) {
+        this.utils.TextToSpeechUtil.stopSpeak()
+        return false
+      }
+      
       this.isSpeaking = true
-      await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence, this.localConfig.pitch, this.localConfig.rate)
+      await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)
       this.isSpeaking = false
     },
     startSpeakWord: async function (word, i) {
@@ -68,13 +73,12 @@ let CurrentSentence = {
         return false
       }
       
-      this.speakingWordIndex = i
-      await this.utils.TextToSpeechUtil.startSpeak(word, this.localConfig.pitch, this.localConfig.rate)
-      this.speakingWordIndex = null
+//      this.speakingWordIndex = i
+//      await this.utils.TextToSpeechUtil.startSpeak(word)
+//      this.speakingWordIndex = null
+      this.config.practiceWord = word.toLowerCase()
     },
-    openDict (word) {
-      this.utils.DictUtil.openDict(word)
-    },
+    
     isSpeakable (word) {
       //console.log(word)
       if (!word || word.trim() === '') {

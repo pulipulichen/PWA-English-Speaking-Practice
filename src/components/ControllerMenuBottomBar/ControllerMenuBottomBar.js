@@ -18,6 +18,16 @@ let ControllerMenuBottomBar = {
   },
   methods: {
     
+    goToPreviousSentence () {
+      if (this.localConfig.playingIndex > 0) {
+        this.localConfig.playingIndex--
+      }
+    },
+    goToNextSentence () {
+      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+        this.localConfig.playingIndex++
+      }
+    }
   }
 }
 

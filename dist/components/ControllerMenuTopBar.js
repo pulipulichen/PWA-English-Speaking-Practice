@@ -72,7 +72,7 @@ var render = function() {
       },
       [
         _c("div", { staticClass: "rate-item" }, [
-          _vm._v("\n      " + _vm._s(_vm.localConfig.rate) + "x\n    ")
+          _vm._v("\n      " + _vm._s(_vm.localConfig.rate) + "X\n    ")
         ])
       ]
     ),
@@ -108,7 +108,7 @@ var render = function() {
             ? [
                 _vm._v(
                   "\n        " +
-                    _vm._s(_vm.currentIndex) +
+                    _vm._s(_vm.localConfig.playingIndex + 1) +
                     "\n        / \n        " +
                     _vm._s(_vm.config.sentenceList.length) +
                     "\n      "
@@ -204,6 +204,9 @@ let ControllerMenuTopBar = {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.rate'() {
+      this.utils.TextToSpeechUtil.setRate(this.localConfig.rate)
+    },
   },
   computed: {
     currentIndex () {
@@ -237,7 +240,7 @@ let ControllerMenuTopBar = {
       if (this.localConfig.rate > 1.5) {
         this.localConfig.rate = 1.5
       }
-    }
+    },
   }
 }
 

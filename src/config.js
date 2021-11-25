@@ -32,6 +32,8 @@ let config = {
   recognitionResult: null,
   recognitionResultEnd: false,
   recognitionAbort: false,
+  
+  practiceWord: null
 }
 
 import styleConfig from './styles/style.config.js'

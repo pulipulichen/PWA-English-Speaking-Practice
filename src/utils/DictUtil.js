@@ -1,3 +1,6 @@
+const MobileDetect = require('mobile-detect')
+const md = new MobileDetect(window.navigator.userAgent)
+
 export default {
   openDict: function (word) {
     word = this.filterWord(word)
@@ -8,7 +11,12 @@ export default {
     let url = `https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/` + word
     //window.open(url, word)
 
-    this.popupCenter({url, title: word})
+    if (md.mobile()) {
+      window.open(url, word)
+    }
+    else {
+      this.popupCenter({url, title: word})
+    }
   },
   popupCenter: function ( {url, title, w = 800, h = 480}) {
     // Fixes dual-screen position                             Most browsers      Firefox

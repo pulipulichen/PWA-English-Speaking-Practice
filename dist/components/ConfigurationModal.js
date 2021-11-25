@@ -258,6 +258,9 @@ let ConfigurationModal = {
     'localConfig.voiceName': async function () {
       await this.utils.TextToSpeechUtil.setPreferVoice(this.localConfig.voiceName)
     },
+    'localConfig.pitch'() {
+      this.utils.TextToSpeechUtil.setPitch(this.localConfig.pitch)
+    },
   },
 //  computed: {
 //    

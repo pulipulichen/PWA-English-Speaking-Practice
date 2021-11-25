@@ -76,6 +76,7 @@
     "jsonlint": "^1.6.3",
     "jsonlint-webpack": "^1.1.0",
     "minify-xml": "^2.4.0",
+    "mobile-detect": "^1.4.5",
     "responsivevoice": "^0.4.1",
     "sentence-tokenizer": "^1.0.1",
     "sortablejs": "^1.12.0",
