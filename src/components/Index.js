@@ -5,6 +5,7 @@ let Index = {
   data () {    
     this.$i18n.locale = this.config.localConfig
     return {
+      show: false,
       //fieldArticle: ``,
       
       //autoPractice: true,

@@ -4,12 +4,17 @@ import ControllerMenuTopBar from './ControllerMenuTopBar/ControllerMenuTopBar.vu
 import AritcleModal from './AritcleModal/AritcleModal.vue'
 import ConfigurationModal from './ConfigurationModal/ConfigurationModal.vue'
 
+import SentencePanel from './SentencePanel/SentencePanel.vue'
+
+
 export default function (Index) {
   Index.components = {
     ControllerMenuTopBar,
     ControllerMenuBottomBar,
     
     AritcleModal,
-    ConfigurationModal
+    ConfigurationModal,
+    
+    SentencePanel
   }
 }

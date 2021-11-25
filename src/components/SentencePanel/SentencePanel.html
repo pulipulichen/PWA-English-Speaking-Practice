@@ -1,0 +1,30 @@
+<div class="SentencePanel">
+  <div class="ui segment">
+    <a class="previous-sentence"
+       v-if="config.playingIndex > 0"
+       v-on:click="goToPreviousSentence">
+      {{ previousSentence }}
+    </a>
+    <div class="previous-sentence start"
+         v-if="config.playingIndex === 0">
+      <i class="hand point right outline icon"></i>
+      {{ $t('Start') }}
+    </div>
+  </div>
+    
+  Main Sentence
+  
+  <div class="ui segment">
+    <a class="next-sentence"
+       v-if="config.playingIndex < config.sentenceList.length - 1"
+       v-on:click="goToNextSentence">
+      {{ nextSentence }}
+    </a>
+    <div class="next-sentence finish"
+         v-if="config.playingIndex === config.sentenceList.length - 1">
+      
+      {{ $t('Finish') }}
+      <i class="flag checkered icon"></i>
+    </div>
+  </div>
+</div>

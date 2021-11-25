@@ -9,6 +9,8 @@ let config = {
   sentenceList: [],
   practiceList: [],
   diffList: [],
+  
+  playingIndex: 0,
 
   synth: null,
   voice: null,
