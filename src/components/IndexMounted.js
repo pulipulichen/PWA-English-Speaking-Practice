@@ -5,9 +5,9 @@ export default function (Index) {
     //console.log('aaa')
 
     //this.loadDemo()
-    this.initSynth()
-    this.initRecognition()
-    this.scrollToLastPlay()
+    //this.initSynth()
+//    this.initRecognition()
+    //this.scrollToLastPlay()
 
     this.config.inited = true
   }

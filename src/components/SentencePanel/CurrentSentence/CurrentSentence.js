@@ -25,7 +25,9 @@ let CurrentSentence = {
     
   },
   methods: {
-    
+    speakCurrentSentence () {
+      
+    }
   }
 }
 

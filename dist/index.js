@@ -18850,11 +18850,46 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "ui piled segments current-sentence-segments" },
+    {
+      staticClass: "ui piled segments current-sentence-segments",
+      on: { click: _vm.speakCurrentSentence }
+    },
     [
-      _c("div", { staticClass: "ui segment current-sentence" }, [
-        _c("h2", [_vm._v("\n      " + _vm._s(_vm.currentSentence) + "\n    ")])
-      ])
+      _c(
+        "div",
+        {
+          staticClass: "ui segment current-sentence",
+          class: { isSpeaking: _vm.isSpeaking }
+        },
+        [
+          _c(
+            "h2",
+            _vm._l(_vm.currentSentence.split(" "), function(word, j) {
+              return _c(
+                "span",
+                {
+                  staticClass: "word",
+                  class: {
+                    isSpeaking:
+                      _vm.i === _vm.config.speakingIndex &&
+                      j === _vm.config.speakingWordIndex
+                  },
+                  on: {
+                    click: function($event) {
+                      return _vm.utils.SpeakUtil.speakWord(word, _vm.i, j)
+                    },
+                    dblclick: function($event) {
+                      return _vm.utils.DictUtil.openDict(word)
+                    }
+                  }
+                },
+                [_vm._v("\n        " + _vm._s(word) + "\n      ")]
+              )
+            }),
+            0
+          )
+        ]
+      )
     ]
   )
 }
@@ -18915,7 +18950,12 @@ var render = function() {
             localConfig: _vm.localConfig,
             utils: _vm.utils
           }
-        })
+        }),
+        _vm._v(" "),
+        _c("h2", { staticClass: "ui center aligned icon header" }, [
+          _c("i", { staticClass: "conversation icon" }),
+          _vm._v("\n      " + _vm._s(_vm.$t("Let's Practice!")) + "\n    ")
+        ])
       ],
       1
     ),
@@ -32611,6 +32651,7 @@ __webpack_require__.r(__webpack_exports__);
     this.$refs.AritcleModal.open()
   }
 
+  /*
   Index.methods.initSynth = async function () {
     this.config.synth = window.speechSynthesis
     //console.log(this.synth)
@@ -32647,191 +32688,193 @@ __webpack_require__.r(__webpack_exports__);
     this.config.voice = voices[voiceIndex]
     this.localConfig.voiceName = this.config.voice.name
   }
-  Index.methods.initRecognition = function () {
-    //console.log(1)
-    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
-    var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
-    var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
-
-    this.config.recognition = new SpeechRecognition();
-
-    //var speechRecognitionList = new SpeechGrammarList();
-    //var grammar = '#JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;'
-    //speechRecognitionList.addFromString(grammar, 1);
-    //this.recognition.grammars = speechRecognitionList;
-    //console.log(speechRecognitionList[0].src); // should return the same as the contents of the grammar variable
-    //console.log(speechRecognitionList[0].weight); // should return 1 - the same as the weight set in line 4.
-
-    this.config.recognition.continuous = false;
-    this.config.recognition.lang = 'en-US';
-    this.config.recognition.interimResults = true;
-    this.config.recognition.maxAlternatives = 10
-
-    this.config.recognition.onresult = (event) => {
-      this.config.recognitionResult = event.results[0][0].transcript;
-      //console.log(event.results)
-      //let result = event.results[ event.results.length - 1 ]
-      //let transcript = result[ result.length - 1 ].transcript.trim()
-      //let caption = this.recognition.getCaption()
-      //console.log(transcript, event.results)
-
-      //
-      //console.log(color)
-      //console.log('Confidence: ' + event.results[0][0].confidence);
-
-    }
-
-    this.config.recognition.onspeechend = () => {
-      this.config.recognition.stop();
-      this.config.recognitionResultEnd = true
-    }
-
-    //this.recognition.start()
-  }
+  */
   
-  Index.methods.buildUtter = function (sentence, onend) {
-    let utterThis = new SpeechSynthesisUtterance(sentence);
-
-    utterThis.onend = onend
-    utterThis.voice = this.config.voice;
-    utterThis.pitch = Number(this.localConfig.pitch)
-    utterThis.rate = Number(this.localConfig.rate)
-
-    return utterThis
-  }
-  Index.methods.speak = function (sentence, i) {
-    this.config.synth.cancel()
-    if (i === this.config.speakingIndex
-            && !this.config.speakingWordIndex) {
-      this.config.speakingIndex = null
-      return false
-    }
-
-    //console.log(sentence)
-    this.config.speakingIndex = i
-    this.config.recognitionAbort = true
-
-    var utterThis = this.buildUtter(sentence, (event) => {
-      //console.log('SpeechSynthesisUtterance.onend');
-      this.config.speakingIndex = null
-      if (this.config.practiceIndex === null && this.localConfig.repeatPractice) {
-        this.practice(i)
-      }
-    });
-
-    this.config.synth.speak(utterThis);
-    this.localConfig.lastPlayIndex = i
-  }
-  Index.methods.speakWord = async function (word, i, j) {
-    this.synth.cancel()
-
-    if (i === this.config.speakingIndex
-            && j === this.config.speakingWordIndex) {
-      this.config.speakingIndex = null
-      this.config.speakingWordIndex = null
-      return false
-    }
-
-    //console.log(sentence)
-    this.config.speakingIndex = i
-    this.config.speakingWordIndex = j
-    this.config.recognitionAbort = true
-
-    var utterThis = this.buildUtter(word, (event) => {
-      this.config.speakingIndex = null
-      this.config.speakingWordIndex = null
-    });
-
-    this.synth.speak(utterThis);
-    this.localConfig.lastPlayIndex = i
-  }
-  Index.methods.speakDiffWord = async function (word, i, j) {
-    this.config.synth.cancel()
-
-    if (i === this.config.speakingIndex
-            && j === this.config.speakingDiffWordIndex) {
-      this.config.speakingIndex = null
-      this.config.speakingDiffWordIndex = null
-      return false
-    }
-    //this.recognition.abort()
-
-    //console.log(sentence)
-    this.config.speakingIndex = i
-    this.config.speakingDiffWordIndex = j
-    this.config.recognitionAbort = true
-
-
-    var utterThis = this.buildUtter(word, (event) => {
-      this.config.speakingIndex = null
-      this.config.speakingDiffWordIndex = null
-    });
-
-    this.config.synth.speak(utterThis);
-    this.localConfig.lastPlayIndex = i
-  }
-  Index.methods.practice = async function (i) {
-    this.config.synth.cancel()
-    this.config.practiceIndex = i
-    this.config.diffList[i] = []
-    this.config.practiceList[i] = null
-
-
-    let words = this.filterWord(this.sentenceList[i]).split(' ')
-    words = words.filter(function (item, pos) {
-      return words.indexOf(item) === pos
-    })
-    let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';';
-    //console.log(grammar)
-    let speechRecognitionList = new webkitSpeechGrammarList();
-    speechRecognitionList.addFromString(grammar, 1);
-    this.config.recognition.grammars = speechRecognitionList;
-
-    this.config.recognitionResult = null
-    this.config.recognitionAbort = false
-    this.config.recognitionResultEnd = false
-    this.config.recognition.start()
-    while (this.config.recognitionResultEnd === false) {
-      if (this.recognitionAbort === true) {
-        this.config.practiceIndex = null
-        this.config.recognitionResultEnd = true
-        return false
-      }
-      //console.log(this.recognitionResult)
-      this.config.practiceList[i] = this.recognitionResult
-      await this.utils.AsyncUtils.sleep()
-    }
-
-    this.config.practiceList[i] = this.recognitionResult
-    this.config.practiceIndex = null
-
-    let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
-    //console.log(diff)
-    this.diffList[i] = diff
-    this.localConfig.lastPlayIndex = i
-  }
-  Index.methods.filterWord = function (word) {
-    return word.replace(/[^\w\s]|_/g, "")
-            .replace(/\s+/g, " ")
-            .toLowerCase()
-            .trim()
-  }
+//  Index.methods.initRecognition = function () {
+//    //console.log(1)
+//    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+//    var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
+//    var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+//
+//    this.config.recognition = new SpeechRecognition();
+//
+//    //var speechRecognitionList = new SpeechGrammarList();
+//    //var grammar = '#JSGF V1.0; grammar colors; public <color> = aqua | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;'
+//    //speechRecognitionList.addFromString(grammar, 1);
+//    //this.recognition.grammars = speechRecognitionList;
+//    //console.log(speechRecognitionList[0].src); // should return the same as the contents of the grammar variable
+//    //console.log(speechRecognitionList[0].weight); // should return 1 - the same as the weight set in line 4.
+//
+//    this.config.recognition.continuous = false;
+//    this.config.recognition.lang = 'en-US';
+//    this.config.recognition.interimResults = true;
+//    this.config.recognition.maxAlternatives = 10
+//
+//    this.config.recognition.onresult = (event) => {
+//      this.config.recognitionResult = event.results[0][0].transcript;
+//      //console.log(event.results)
+//      //let result = event.results[ event.results.length - 1 ]
+//      //let transcript = result[ result.length - 1 ].transcript.trim()
+//      //let caption = this.recognition.getCaption()
+//      //console.log(transcript, event.results)
+//
+//      //
+//      //console.log(color)
+//      //console.log('Confidence: ' + event.results[0][0].confidence);
+//
+//    }
+//
+//    this.config.recognition.onspeechend = () => {
+//      this.config.recognition.stop();
+//      this.config.recognitionResultEnd = true
+//    }
+//
+//    //this.recognition.start()
+//  }
+  
+//  Index.methods.buildUtter = function (sentence, onend) {
+//    let utterThis = new SpeechSynthesisUtterance(sentence);
+//
+//    utterThis.onend = onend
+//    utterThis.voice = this.config.voice;
+//    utterThis.pitch = Number(this.localConfig.pitch)
+//    utterThis.rate = Number(this.localConfig.rate)
+//
+//    return utterThis
+//  }
+//  Index.methods.speak = function (sentence, i) {
+//    this.config.synth.cancel()
+//    if (i === this.config.speakingIndex
+//            && !this.config.speakingWordIndex) {
+//      this.config.speakingIndex = null
+//      return false
+//    }
+//
+//    //console.log(sentence)
+//    this.config.speakingIndex = i
+//    this.config.recognitionAbort = true
+//
+//    var utterThis = this.buildUtter(sentence, (event) => {
+//      //console.log('SpeechSynthesisUtterance.onend');
+//      this.config.speakingIndex = null
+//      if (this.config.practiceIndex === null && this.localConfig.repeatPractice) {
+//        this.practice(i)
+//      }
+//    });
+//
+//    this.config.synth.speak(utterThis);
+//    this.localConfig.lastPlayIndex = i
+//  }
+//  Index.methods.speakWord = async function (word, i, j) {
+//    this.synth.cancel()
+//
+//    if (i === this.config.speakingIndex
+//            && j === this.config.speakingWordIndex) {
+//      this.config.speakingIndex = null
+//      this.config.speakingWordIndex = null
+//      return false
+//    }
+//
+//    //console.log(sentence)
+//    this.config.speakingIndex = i
+//    this.config.speakingWordIndex = j
+//    this.config.recognitionAbort = true
+//
+//    var utterThis = this.buildUtter(word, (event) => {
+//      this.config.speakingIndex = null
+//      this.config.speakingWordIndex = null
+//    });
+//
+//    this.synth.speak(utterThis);
+//    this.localConfig.lastPlayIndex = i
+//  }
+//  Index.methods.speakDiffWord = async function (word, i, j) {
+//    this.config.synth.cancel()
+//
+//    if (i === this.config.speakingIndex
+//            && j === this.config.speakingDiffWordIndex) {
+//      this.config.speakingIndex = null
+//      this.config.speakingDiffWordIndex = null
+//      return false
+//    }
+//    //this.recognition.abort()
+//
+//    //console.log(sentence)
+//    this.config.speakingIndex = i
+//    this.config.speakingDiffWordIndex = j
+//    this.config.recognitionAbort = true
+//
+//
+//    var utterThis = this.buildUtter(word, (event) => {
+//      this.config.speakingIndex = null
+//      this.config.speakingDiffWordIndex = null
+//    });
+//
+//    this.config.synth.speak(utterThis);
+//    this.localConfig.lastPlayIndex = i
+//  }
+//  Index.methods.practice = async function (i) {
+//    this.config.synth.cancel()
+//    this.config.practiceIndex = i
+//    this.config.diffList[i] = []
+//    this.config.practiceList[i] = null
+//
+//
+//    let words = this.filterWord(this.sentenceList[i]).split(' ')
+//    words = words.filter(function (item, pos) {
+//      return words.indexOf(item) === pos
+//    })
+//    let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';';
+//    //console.log(grammar)
+//    let speechRecognitionList = new webkitSpeechGrammarList();
+//    speechRecognitionList.addFromString(grammar, 1);
+//    this.config.recognition.grammars = speechRecognitionList;
+//
+//    this.config.recognitionResult = null
+//    this.config.recognitionAbort = false
+//    this.config.recognitionResultEnd = false
+//    this.config.recognition.start()
+//    while (this.config.recognitionResultEnd === false) {
+//      if (this.recognitionAbort === true) {
+//        this.config.practiceIndex = null
+//        this.config.recognitionResultEnd = true
+//        return false
+//      }
+//      //console.log(this.recognitionResult)
+//      this.config.practiceList[i] = this.recognitionResult
+//      await this.utils.AsyncUtils.sleep()
+//    }
+//
+//    this.config.practiceList[i] = this.recognitionResult
+//    this.config.practiceIndex = null
+//
+//    let diff = this.utils.DiffUtils.diffWords(this.filterWord(this.practiceList[i]), this.filterWord(this.sentenceList[i]))
+//    //console.log(diff)
+//    this.diffList[i] = diff
+//    this.localConfig.lastPlayIndex = i
+//  }
+//  Index.methods.filterWord = function (word) {
+//    return word.replace(/[^\w\s]|_/g, "")
+//            .replace(/\s+/g, " ")
+//            .toLowerCase()
+//            .trim()
+//  }
   
   
-  Index.methods.scrollToLastPlay = async function () {
-    if (this.localConfig.lastPlayIndex === null) {
-      return false
-    }
-
-    let element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
-    while (!element) {
-      await this.utils.AsyncUtils.sleep()
-      //console.log('wait')
-      element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
-    }
-
-    element.scrollIntoView({block: "start", inline: "start"})
-  }
+//  Index.methods.scrollToLastPlay = async function () {
+//    if (this.localConfig.lastPlayIndex === null) {
+//      return false
+//    }
+//
+//    let element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
+//    while (!element) {
+//      await this.utils.AsyncUtils.sleep()
+//      //console.log('wait')
+//      element = document.querySelector('#sentence' + this.localConfig.lastPlayIndex)
+//    }
+//
+//    element.scrollIntoView({block: "start", inline: "start"})
+//  }
 });
 
 /***/ }),
@@ -32949,9 +32992,9 @@ __webpack_require__.r(__webpack_exports__);
     //console.log('aaa')
 
     //this.loadDemo()
-    this.initSynth()
-    this.initRecognition()
-    this.scrollToLastPlay()
+    //this.initSynth()
+//    this.initRecognition()
+    //this.scrollToLastPlay()
 
     this.config.inited = true
   }
@@ -33077,7 +33120,9 @@ let CurrentSentence = {
     
   },
   methods: {
-    
+    speakCurrentSentence () {
+      
+    }
   }
 }
 
@@ -33219,16 +33264,16 @@ let SentencePanel = {
   },
   computed: {
     previousSentence () {
-      if (this.config.playingIndex === 0) {
+      if (this.localConfig.playingIndex === 0) {
         return ''
       }
-      return this.config.sentenceList[(this.config.playingIndex - 1)]
+      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
     },
     nextSentence () {
-      if (this.config.playingIndex === this.config.sentenceList.length - 1) {
+      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
         return ''
       }
-      return this.config.sentenceList[(this.config.playingIndex + 1)]
+      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
     }
   },
   components: {
@@ -33239,13 +33284,13 @@ let SentencePanel = {
 //  },
   methods: {
     goToPreviousSentence () {
-      if (this.config.playingIndex > 0) {
-        this.config.playingIndex--
+      if (this.localConfig.playingIndex > 0) {
+        this.localConfig.playingIndex--
       }
     },
     goToNextSentence () {
-      if (this.config.playingIndex < this.config.sentenceList.length - 1) {
-        this.config.playingIndex++
+      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+        this.localConfig.playingIndex++
       }
     }
   }
@@ -33817,7 +33862,8 @@ let localConfig = {
   pitch: 1,
   rate: 1,
   voiceName: null,
-  lastPlayIndex: 5,
+  playingIndex: 0,
+  //lastPlayIndex: 5,
   repeatPractice: true,
 }
 
@@ -34047,6 +34093,61 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/utils/DictUtil.js":
+/*!*******************************!*\
+  !*** ./src/utils/DictUtil.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  openDict: function (word) {
+    word = this.filterWord(word)
+    if (word === '') {
+      return false
+    }
+
+    let url = `https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/` + word
+    //window.open(url, word)
+
+    this.popupCenter({url, title: word})
+  },
+  popupCenter: function ( {url, title, w = 800, h = 480}) {
+    // Fixes dual-screen position                             Most browsers      Firefox
+    const dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : window.screenX;
+    const dualScreenTop = window.screenTop !== undefined ? window.screenTop : window.screenY;
+
+    const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    const systemZoom = width / window.screen.availWidth;
+    const left = (width - w) / 2 / systemZoom + dualScreenLeft
+    const top = (height - h) / 2 / systemZoom + dualScreenTop
+    const newWindow = window.open(url, title,
+            `
+        scrollbars=yes,
+        width=${w / systemZoom}, 
+        height=${h / systemZoom}, 
+        top=${top}, 
+        left=${left}
+        `
+            )
+
+    if (window.focus)
+      newWindow.focus();
+  },
+  filterWord: function (word) {
+    return word.replace(/[^\w\s]|_/g, "")
+            .replace(/\s+/g, " ")
+            .toLowerCase()
+            .trim()
+  }
+});
+
+/***/ }),
+
 /***/ "./src/utils/DiffUtils.js":
 /*!********************************!*\
   !*** ./src/utils/DiffUtils.js ***!
@@ -34100,6 +34201,206 @@ __webpack_require__.r(__webpack_exports__);
     document.body.removeChild(element);
 
     return true
+  }
+});
+
+/***/ }),
+
+/***/ "./src/utils/SpeechToTextUtil.js":
+/*!***************************************!*\
+  !*** ./src/utils/SpeechToTextUtil.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _DictUtil_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DictUtil.js */ "./src/utils/DictUtil.js");
+/* global webkitSpeechRecognition, webkitSpeechGrammarList, webkitSpeechRecognitionEvent */
+
+let inited = false
+let recognition
+
+let recognitionResultEnd = true
+let isStarted = false
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init () {
+    if (inited === true) {
+      return true
+    }
+    
+    //console.log(1)
+    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+    var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
+    var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
+
+    recognition = new SpeechRecognition();
+
+    recognition.continuous = false;
+    recognition.lang = 'en-US';
+    recognition.interimResults = true;
+    recognition.maxAlternatives = 10
+
+    
+    inited = true
+  },
+  setupGrammers (grammarsString) {
+    if (!grammarsString) {
+      let speechRecognitionList = new webkitSpeechGrammarList();
+      recognition.grammars = speechRecognitionList
+      return false
+    }
+    
+    let words = _DictUtil_js__WEBPACK_IMPORTED_MODULE_0__["default"].filterWord(grammarsString).split(' ')
+    words = words.filter(function (item, pos) {
+      return words.indexOf(item) === pos
+    })
+    
+    let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';';
+    //console.log(grammar)
+    let speechRecognitionList = new webkitSpeechGrammarList();
+    speechRecognitionList.addFromString(grammar, 1);
+    recognition.grammars = speechRecognitionList;
+  },
+  startListen: async function (grammarsString) {
+    this.init()
+    
+    if (isStarted === true) {
+      recognition.stop()
+    }
+    
+    this.setupGrammers(grammarsString)
+    
+    return new Promise((resolve) => {
+      isStarted = true
+      let result
+      recognition.onresult = (event) => {
+        result = event.results[0][0].transcript
+      }
+      
+      recognition.onspeechend = () => {
+        recognition.stop()
+        isStarted = false
+        resolve(result)
+      }
+    })
+  },
+  stopListen () {
+    this.init()
+    isStarted = false
+    recognition.stop()
+  }
+});
+
+/***/ }),
+
+/***/ "./src/utils/TextToSpeechUtil.js":
+/*!***************************************!*\
+  !*** ./src/utils/TextToSpeechUtil.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncUtils.js */ "./src/utils/AsyncUtils.js");
+let preferName = [
+  'Google US English',
+  'Google US English Male',
+  'Google UK English Female',
+  'Google UK English Male',
+  'Chrome OS US English 1'
+]
+
+let synth = window.speechSynthesis
+
+
+let voices = []
+let voiceNameList
+let inited = false
+let voiceNameMap = {}
+let preferVoice
+let isSpeaking = false
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  init: async function () {
+    if (inited === true) {
+      return true
+    }
+    while (voices.length === 0) {
+      await _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__["default"].sleep(500)
+      voices = synth.getVoices()
+    }
+
+    //voiceNameList = voices.map(v => v.name)
+    voiceNameMap.forEach(v => {
+      voiceNameMap[v.name] = v
+    })
+    //console.log(this.voiceNameList)
+    inited = true
+  },
+  getVoiceNameList: async function () {
+    await this.init()
+    return voiceNameList
+  },
+  setPreferVoice: async function (voiceName) {
+    await this.init()
+    
+    if (!voiceName) {
+      for (let i = 0; i < preferName.length; i++) {
+        //console.log(preferName[i])
+        if (voiceNameMap[preferName]) {
+          preferVoice = voiceNameMap[preferName]
+          return true
+        }
+      }
+    }
+    else {
+      if (voiceNameMap[voiceName]) {
+        preferVoice = voiceNameMap[voiceName]
+        return true
+      }
+    }
+   
+    preferVoice = voices[0]
+  },
+  startSpeak: async function (text, pitch = 1, rate = 1) {
+    await this.init()
+    
+    text = text.trim()
+    if (text === '') {
+      return false
+    }
+    
+    if (isSpeaking === true) {
+      synth.cancel()
+    }
+    
+    return new Promise(({resolve}) => {
+      let utterThis = new SpeechSynthesisUtterance(text);
+
+      utterThis.onend = () => {
+        isSpeaking = false
+        resolve(true)
+      }
+      utterThis.voice = preferVoice
+      utterThis.pitch = Number(pitch)
+      utterThis.rate = Number(rate)
+
+      isSpeaking = true
+      synth.speak(utterThis)
+    })
+    
+  },
+  stopSpeak () {
+
+    if (isSpeaking === true) {
+      synth.cancel()
+    }
+    isSpeaking = false
   }
 });
 
@@ -34181,6 +34482,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./URLUtils.js */ "./src/utils/URLUtils.js");
 /* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./date-helper.js */ "./src/utils/date-helper.js");
 /* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_date_helper_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _DictUtil_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DictUtil.js */ "./src/utils/DictUtil.js");
+/* harmony import */ var _SpeechToTextUtil_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SpeechToTextUtil.js */ "./src/utils/SpeechToTextUtil.js");
+/* harmony import */ var _TextToSpeechUtil_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TextToSpeechUtil.js */ "./src/utils/TextToSpeechUtil.js");
+
+
+
+
 
 
 
@@ -34196,6 +34504,9 @@ __webpack_require__.r(__webpack_exports__);
   AxiosUtils: _AxiosUtils_js__WEBPACK_IMPORTED_MODULE_3__["default"],
   FileUtils: _FileUtils_js__WEBPACK_IMPORTED_MODULE_4__["default"],
   URLUtils: _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__["default"],
+  DictUtil: _DictUtil_js__WEBPACK_IMPORTED_MODULE_7__["default"],
+  SpeechToTextUtil: _SpeechToTextUtil_js__WEBPACK_IMPORTED_MODULE_8__["default"],
+  TextToSpeechUtil: _TextToSpeechUtil_js__WEBPACK_IMPORTED_MODULE_9__["default"]
 });
 
 /***/ })

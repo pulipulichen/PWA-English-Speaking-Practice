@@ -14,16 +14,16 @@ let SentencePanel = {
   },
   computed: {
     previousSentence () {
-      if (this.config.playingIndex === 0) {
+      if (this.localConfig.playingIndex === 0) {
         return ''
       }
-      return this.config.sentenceList[(this.config.playingIndex - 1)]
+      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
     },
     nextSentence () {
-      if (this.config.playingIndex === this.config.sentenceList.length - 1) {
+      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
         return ''
       }
-      return this.config.sentenceList[(this.config.playingIndex + 1)]
+      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
     }
   },
   components: {
@@ -34,13 +34,13 @@ let SentencePanel = {
 //  },
   methods: {
     goToPreviousSentence () {
-      if (this.config.playingIndex > 0) {
-        this.config.playingIndex--
+      if (this.localConfig.playingIndex > 0) {
+        this.localConfig.playingIndex--
       }
     },
     goToNextSentence () {
-      if (this.config.playingIndex < this.config.sentenceList.length - 1) {
-        this.config.playingIndex++
+      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+        this.localConfig.playingIndex++
       }
     }
   }

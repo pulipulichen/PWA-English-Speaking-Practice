@@ -1,7 +1,15 @@
-<div class="ui piled segments current-sentence-segments">
-  <div class="ui segment current-sentence">
+<div class="ui piled segments current-sentence-segments"
+     v-on:click="speakCurrentSentence">
+  <div class="ui segment current-sentence"
+       v-bind:class="{isSpeaking: isSpeaking}">
     <h2>
-      {{ currentSentence }}
+      <span v-for="(word, j) in currentSentence.split(' ')"
+            class="word"
+            v-bind:class="{isSpeaking: (i === config.speakingIndex && j === config.speakingWordIndex)}"
+            v-on:click="utils.SpeakUtil.speakWord(word, i, j)"
+            v-on:dblclick="utils.DictUtil.openDict(word)">
+        {{ word }}
+      </span>
     </h2>
   </div>
 </div>

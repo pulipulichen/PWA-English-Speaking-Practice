@@ -3,7 +3,8 @@ let localConfig = {
   pitch: 1,
   rate: 1,
   voiceName: null,
-  lastPlayIndex: 5,
+  playingIndex: 0,
+  //lastPlayIndex: 5,
   repeatPractice: true,
 }
 
