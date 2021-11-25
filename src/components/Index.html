@@ -3,11 +3,12 @@
     <label for="fieldArticle">
       Article
     </label>
-    <textarea v-model="fieldArticle"
+    <textarea v-model="localConfig.fieldArticle"
               id="fieldArticle"></textarea>
   </div>
   
-  <div v-for="(sentence, i) in sentenceList" class="ui grid">
+  <div v-for="(sentence, i) in sentenceList" class="ui grid"
+       v-bind:id=" 'sentence'+i ">
     <div class="two wide column center aligned sentence-control-panel">
       <div>No. {{ (i+1) }}</div>
       
@@ -26,7 +27,7 @@
     </div>
     <div class="fourteen wide column">
       <div class="target"
-           v-bind:class="{isSpeaking: (i === speakingIndex && speakingWordIndex === null && speakingDiffWordIndex === null)}">
+           v-bind:class="{isSpeaking: (i === speakingIndex && speakingWordIndex === null && speakingDiffWordIndex === null), isPracticing: (practiceIndex === i)}">
         <span v-for="(word, j) in sentence.split(' ')"
               class="word"
               v-bind:class="{isSpeaking: (i === speakingIndex && j === speakingWordIndex)}"
@@ -56,28 +57,31 @@
   
   <div class="ui bottom fixed menu">
     <a class="item">
-      <input type="checkbox" v-model="autoPractice" />
-      Auto practice
+      <input type="checkbox" v-model="localConfig.repeatPractice"
+             id="repeatPractice" />
+      <label for="repeatPractice">
+        Repeat Practice
+      </label>
     </a>
     <a class="item">
-      Rate {{ rate }}
+      Rate {{ localConfig.rate }}
       
       <input type="range" min="0.5" max="1.5" 
-             v-model="rate" 
+             v-model="localConfig.rate" 
              class="slider"
              step="0.1">
     </a>
     <a class="item">
-      Pitch {{ pitch }}
+      Pitch {{ localConfig.pitch }}
       
       <input type="range" min="0.5" max="1.5" 
-             v-model="pitch" 
+             v-model="localConfig.pitch" 
              class="slider"
              step="0.1">
     </a>
     <a class="item"
        v-if="voice">
-      <select v-model="voiceName">
+      <select v-model="localConfig.voiceName">
         <option v-for="name in voiceNameList"
                 v-bind:value="name">
           {{ name }}
