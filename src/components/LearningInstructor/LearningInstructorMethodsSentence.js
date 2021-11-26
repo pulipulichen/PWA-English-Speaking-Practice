@@ -1,3 +1,4 @@
+let debugPractice = true
 
 export default function (LearningInstructor) {
 
@@ -52,11 +53,17 @@ export default function (LearningInstructor) {
     //console.log(time)
     time = time + 1000
 
-    while (typeof(this.config.practiceSentence) !== 'string') {
-      this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
-        this.config.practiceSentence = processing
-      })
-      await this.utils.AsyncUtils.sleep()
+    if (debugPractice === false) {
+      while (typeof(this.config.practiceSentence) !== 'string') {
+        this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+          this.config.practiceSentence = processing
+        })
+        await this.utils.AsyncUtils.sleep()
+      }
+    }
+    else {
+      this.config.practiceSentence = 'ok ok not ok'
+      await this.utils.AsyncUtils.sleep(10000)
     }
     //this.config.practiceSentence = 'ok'
 

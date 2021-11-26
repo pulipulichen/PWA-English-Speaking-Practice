@@ -23,9 +23,14 @@ let MainSentencePanel = {
 //  mounted() {
 //    
 //  },
-//  methods: {
-//    
-//  }
+  methods: {
+    practice () {
+      if (!this.utils.LearningInstructor) {
+        return false
+      }
+      this.utils.LearningInstructor.practiceSentence()
+    }
+  }
 }
 
 export default MainSentencePanel

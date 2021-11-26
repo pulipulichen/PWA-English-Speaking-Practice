@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/LearningInstructor"],{
 
-/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -194,7 +194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LearningInstructor_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructor.js?vue&type=script&lang=js& */ "./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&?cdcd");
 /* empty/unused harmony star reexport *//* harmony import */ var _LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& */ "./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
+/* harmony import */ var _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
 
 
 
@@ -216,7 +216,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* custom blocks */
 
-if (typeof _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+if (typeof _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
 
 /* hot reload */
 if (false) { var api; }
@@ -225,19 +225,19 @@ component.options.__file = "src/components/LearningInstructor/LearningInstructor
 
 /***/ }),
 
-/***/ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -340,6 +340,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+let debugPractice = true
 
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
 
@@ -394,11 +395,17 @@ __webpack_require__.r(__webpack_exports__);
     //console.log(time)
     time = time + 1000
 
-    while (typeof(this.config.practiceSentence) !== 'string') {
-      this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
-        this.config.practiceSentence = processing
-      })
-      await this.utils.AsyncUtils.sleep()
+    if (debugPractice === false) {
+      while (typeof(this.config.practiceSentence) !== 'string') {
+        this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+          this.config.practiceSentence = processing
+        })
+        await this.utils.AsyncUtils.sleep()
+      }
+    }
+    else {
+      this.config.practiceSentence = 'ok ok not ok'
+      await this.utils.AsyncUtils.sleep(10000)
     }
     //this.config.practiceSentence = 'ok'
 

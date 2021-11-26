@@ -7,25 +7,38 @@
     v-bind:sentence="sentence">
   </CurrentSentence>
 
-  <h2 class="ui center aligned icon header"
-      v-if="localConfig.practiceMode === 'speaking'">
-    <template v-if="!config.practiceSentence">
+  <div v-if="localConfig.practiceMode === 'speaking'">
+    <h2 class="ui center aligned icon header practice-hint"
+       v-if="!config.practiceSentence"
+       v-on:click="practice">
       <i class="conversation icon"></i>
       {{ $t(`Let's Practice!`) }}
-    </template>
+    </h2>
     <template v-if="config.practiceSentence">
-      <template v-if="config.practiceSentenceEvaluationResult.length === 0">
-        {{ config.practiceSentence }}
-      </template>
-      <template v-else>
-        <SentenceDifference 
-          ref="SentenceDifference"
-          v-bind:config="config"
-          v-bind:localConfig="localConfig"
-          v-bind:utils="utils">
-        </SentenceDifference>
-      </template>
+      <div class="trigger">
+        <div class="practice-hint"
+          v-on:click="practice">
+          <i class="conversation icon"></i>
+          {{ $t(`Let's Practice!`) }}
+        </div>
+        <div class="popup">
+          <div class="inner">
+            <h2 class="ui center aligned header wait-practice"
+                v-if="config.practiceSentenceEvaluationResult.length === 0">
+                {{ config.practiceSentence }}
+            </h2>
+            <h2 v-else>
+                <SentenceDifference 
+                  ref="SentenceDifference"
+                  v-bind:config="config"
+                  v-bind:localConfig="localConfig"
+                  v-bind:utils="utils">
+                </SentenceDifference>
+            </h2>
+          </div>
+        </div>
+      </div>
     </template>
-  </h2>
+  </div>
 
 </div>
