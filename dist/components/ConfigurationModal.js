@@ -338,6 +338,8 @@ let ConfigurationModal = {
     else {
       await this.utils.TextToSpeechUtils.setPreferVoice(this.localConfig.voiceName)
     }
+    
+    this.initVoice()
     //console.log(this.voiceNames)
   },
   methods: {
@@ -377,6 +379,16 @@ let ConfigurationModal = {
       if (this.localConfig.pitch > 1.5) {
         this.localConfig.pitch = 1.5
       }
+    },
+    initVoice: async function () {
+      
+      if (typeof(this.localConfig.voiceName) === 'string') {
+        return true
+      }
+      
+      let voice = await this.utils.TextToSpeechUtils.setPreferVoice()
+      //console.log(voice)
+      this.localConfig.voiceName = voice.name
     }
   }
 }

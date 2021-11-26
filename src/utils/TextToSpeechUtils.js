@@ -43,11 +43,13 @@ export default {
   setPreferVoice: async function (voiceName) {
     await this.init()
     
+    //console.log(voiceName, voiceNameMap)
     if (!voiceName) {
+      
       for (let i = 0; i < preferName.length; i++) {
-        //console.log(preferName[i])
-        if (voiceNameMap[preferName]) {
-          preferVoice = voiceNameMap[preferName]
+        //console.log(preferName[i], )
+        if (voiceNameMap[preferName[i]]) {
+          preferVoice = voiceNameMap[preferName[i]]
           return preferVoice
         }
       }
