@@ -116,7 +116,8 @@ let LearningInstructor = {
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
-      beep: null
+      beep: null,
+      tryToStop: false
     }
   },
   watch: {
@@ -160,11 +161,18 @@ let LearningInstructor = {
     speakCurrentSentence: async function () {
       if (this.config.currentSentenceIsSpeaking === true) {
         this.utils.TextToSpeechUtils.stopSpeak()
+        this.tryToStop = true
+        await this.utils.AsyncUtils.sleep(100)
+        this.config.currentSentenceIsSpeaking = false
+        this.tryToStop = false
         return false
       }
       
       this.config.currentSentenceIsSpeaking = true
       let time = await this.utils.TextToSpeechUtils.startSpeak(this.currentSentence)
+      if (this.tryToStop === true) {
+        return false
+      }
       this.config.currentSentenceIsSpeaking = false
       
       await this.practice(time)

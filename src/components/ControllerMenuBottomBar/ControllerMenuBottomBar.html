@@ -28,7 +28,8 @@
     <a class="ui icon item"
        v-on:click="speakCurrentSentence()"
        v-bind:class="{isSpeaking: config.currentSentenceIsSpeaking}">
-      <i class="play icon" />
+      <i class="icon"
+         v-bind:class="{'play': !config.currentSentenceIsSpeaking, pause: config.currentSentenceIsSpeaking}" />
     </a>
   </div>
 </div>
