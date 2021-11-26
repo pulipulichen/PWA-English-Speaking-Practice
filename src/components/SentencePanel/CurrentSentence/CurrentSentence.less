@@ -43,3 +43,30 @@
     color: black;
   }
 }
+
+.word-block .word.speakable {
+  color: gray;
+  background-color: gray;
+  border-radius: 1rem;
+  -webkit-filter: blur(2px) grayscale(1) invert(0.1);
+}
+
+.sentence-block {
+  text-align: center;
+  
+  h2 {
+    color: gray;
+    background-color: gray;
+    border-radius: 1rem;
+    -webkit-filter: blur(2px) grayscale(1) invert(0.1);
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .word {
+      visibility: hidden;
+    }
+  }
+}

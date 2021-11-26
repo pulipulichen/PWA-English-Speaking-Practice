@@ -31602,7 +31602,7 @@ let config = {
   practiceWord: null,
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,
-  currentSentenceMask: false,
+  currentSentenceMask: 'sentence-block',
 }
 
 

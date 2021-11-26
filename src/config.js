@@ -36,7 +36,7 @@ let config = {
   practiceWord: null,
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,
-  currentSentenceMask: false,
+  currentSentenceMask: 'sentence-block',
 }
 
 import styleConfig from './styles/style.config.js'

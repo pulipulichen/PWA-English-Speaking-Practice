@@ -62,7 +62,8 @@ let CurrentSentence = {
         classes.push('isSpeaking')
       }
       
-      if (this.config.currentSentenceMask) {
+      if (this.config.currentSentenceMask 
+              && this.config.currentSentenceMask !== 'none') {
         classes.push(this.config.currentSentenceMask)
       }
       
