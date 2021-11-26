@@ -53,20 +53,37 @@ let CurrentSentence = {
       
       return words
     },
-  },
-  mounted() {
-    
-  },
-  methods: {
-    speakCurrentSentence: async function () {
-      if (this.isSpeaking === true) {
-        this.utils.TextToSpeechUtil.stopSpeak()
-        return false
+    computeCurrentSentenceClasses () {
+      // {isSpeaking: config.currentSentenceIsSpeaking}
+      
+      let classes = []
+      
+      if (this.config.currentSentenceIsSpeaking) {
+        classes.push('isSpeaking')
       }
       
-      this.isSpeaking = true
-      await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)
-      this.isSpeaking = false
+      if (this.config.currentSentenceMask) {
+        classes.push(this.config.currentSentenceMask)
+      }
+      
+      return classes
+    }
+  },
+//  mounted() {
+//    
+//  },
+  methods: {
+    speakCurrentSentence: async function () {
+//      if (this.isSpeaking === true) {
+//        this.utils.TextToSpeechUtil.stopSpeak()
+//        return false
+//      }
+//      
+//      this.isSpeaking = true
+//      await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)
+//      this.isSpeaking = false
+      this.utils.LearningInstructor.speakCurrentSentence()
+      
     },
     startSpeakWord: async function (word, i) {
       if (this.isSpeakable(word) === false) {
@@ -92,6 +109,20 @@ let CurrentSentence = {
       }
       
       return true
+    },
+    computedWordClasses (word, i) {
+      // {isSpeaking: (i === speakingWordIndex), speakable: isSpeakable(word)}
+      
+      let classes = []
+      
+      if (i === this.speakingWordIndex) {
+        classes.push('isSpeaking')
+      }
+      if (this.isSpeakable(word)) {
+        classes.push('speakable')
+      }
+      
+      return classes
     }
   }
 }

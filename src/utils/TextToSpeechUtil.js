@@ -91,15 +91,22 @@ export default {
       utterThis.onend = () => {
         isSpeaking = false
         //console.log('ok')
-        resolve(true)
+        let endTime = (new Date()).getTime()
+        resolve(endTime - startTime)
       }
       
+//      utterThis.onerror = (event) => {
+//        isSpeaking = false
+//        console.log('onerror')
+//        resolve(false)
+//      }
+      
       isSpeaking = true
+      let startTime = (new Date()).getTime()
       synth.speak(utterThis)
     })
   },
   stopSpeak () {
-
     if (isSpeaking === true) {
       synth.cancel()
     }

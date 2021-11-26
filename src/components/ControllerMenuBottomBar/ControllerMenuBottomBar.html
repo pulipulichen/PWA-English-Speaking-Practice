@@ -25,7 +25,9 @@
     <a class="ui icon item">
       <i class="comment outline icon" />
     </a>
-    <a class="ui icon item">
+    <a class="ui icon item"
+       v-on:click="speakCurrentSentence()"
+       v-bind:class="{isSpeaking: config.currentSentenceIsSpeaking}">
       <i class="play icon" />
     </a>
   </div>

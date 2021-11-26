@@ -7,5 +7,6 @@ export default function (Index) {
     ConfigurationModal: () => {return import(/* webpackChunkName: "components/ConfigurationModal" */ './ConfigurationModal/ConfigurationModal.vue')},
     
     SentencePanel: () => {return import(/* webpackChunkName: "components/SentencePanel" */ './SentencePanel/SentencePanel.vue')},
+    LearningInstructor: () => {return import(/* webpackChunkName: "components/LearningInstructor" */ './LearningInstructor/LearningInstructor.vue')},
   }
 }

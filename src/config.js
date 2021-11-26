@@ -33,7 +33,10 @@ let config = {
   recognitionResultEnd: false,
   recognitionAbort: false,
   
-  practiceWord: null
+  practiceWord: null,
+  currentSentenceIsSpeaking: false,
+  currentSentenceIsPractice: false,
+  currentSentenceMask: false,
 }
 
 import styleConfig from './styles/style.config.js'

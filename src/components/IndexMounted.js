@@ -1,5 +1,5 @@
 export default function (Index) {
-  Index.mounted = function () {
+  Index.mounted = async function () {
 //    this.restoreFromLocalStorage()
     
     //console.log('aaa')
@@ -8,7 +8,10 @@ export default function (Index) {
     //this.initSynth()
 //    this.initRecognition()
     //this.scrollToLastPlay()
-
+    while (!this.$refs.LearningInstructor) {
+      await this.utils.AsyncUtils.sleep(100)
+    }
+    this.utils.LearningInstructor = this.$refs.LearningInstructor
     this.config.inited = true
   }
 }

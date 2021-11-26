@@ -40,6 +40,26 @@
       </select>
     </div>
     
+    <div class="field">
+      <label>
+        {{ $t('Practice Mask') }}
+      </label>
+      <select v-model="localConfig.practiceMask">
+        <option value="none">
+          {{ $t('Do nothing') }}
+        </option>
+        <option value="translation">
+          {{ $t('Translation') }}
+        </option>
+        <option value="word-block">
+          {{ $t('Word Block') }}
+        </option>
+        <option value="sentence-block">
+          {{ $t('Sentence Block') }}
+        </option>
+      </select>
+    </div>
+    
   </div>
   <div class="actions">
     <div class="ui button"

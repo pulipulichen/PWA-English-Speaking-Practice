@@ -46,6 +46,9 @@ let SentencePanel = {
       if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
         this.localConfig.playingIndex++
       }
+    },
+    speakCurrentSentence: async function () {
+      await this.$refs.CurrentSentence.speakCurrentSentence()
     }
   }
 }

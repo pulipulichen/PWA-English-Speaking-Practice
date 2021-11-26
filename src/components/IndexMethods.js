@@ -11,8 +11,13 @@ export default function (Index) {
   Index.methods.openConfigurationModal = function () {
     this.$refs.ConfigurationModal.open()
   }
+  
   Index.methods.openArticleModal = function () {
     this.$refs.AritcleModal.open()
+  }
+  
+  Index.methods.speakCurrentSentence = async function () {
+    await this.$refs.SentencePanel.speakCurrentSentence()
   }
 
   /*
