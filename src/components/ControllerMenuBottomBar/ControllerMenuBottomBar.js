@@ -42,7 +42,7 @@ let ControllerMenuBottomBar = {
         return false
       }
       //console.log('go')
-      this.utils.LearningInstructor.practice()
+      this.utils.LearningInstructor.practiceSentence()
     }
   }
 }

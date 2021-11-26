@@ -107,9 +107,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sound/censor-beep-01.mp3 */ "./src/components/LearningInstructor/sound/censor-beep-01.mp3");
-/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__);
-
+/* harmony import */ var _LearningInstructorComputed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LearningInstructorComputed.js */ "./src/components/LearningInstructor/LearningInstructorComputed.js");
+/* harmony import */ var _LearningInstructorMethods_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructorMethods.js */ "./src/components/LearningInstructor/LearningInstructorMethods.js");
+/* harmony import */ var _LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructorMethodsNavigation.js */ "./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js");
+/* harmony import */ var _LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LearningInstructorMethodsSentence.js */ "./src/components/LearningInstructor/LearningInstructorMethodsSentence.js");
+/* harmony import */ var _LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructorMounted.js */ "./src/components/LearningInstructor/LearningInstructorMounted.js");
+/* harmony import */ var _LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LearningInstructorWatch.js */ "./src/components/LearningInstructor/LearningInstructorWatch.js");
 
 let LearningInstructor = {
   props: ['config', 'localConfig', 'utils'],
@@ -120,112 +123,29 @@ let LearningInstructor = {
       tryToStop: false
     }
   },
-  watch: {
-    'localConfig.locale'() {
-      this.$i18n.locale = this.localConfig.locale;
-    },
-  },
-  computed: {
-    currentSentence () {
-      if (this.localConfig.playingIndex === null 
-              || this.localConfig.playingIndex === undefined
-              || !this.config.sentenceList
-              || !this.config.sentenceList[this.config.playingIndex]) {
-        return ''
-      }
-      return this.config.sentenceList[this.localConfig.playingIndex]
-    },
-    
-    previousSentence () {
-      //console.log(this.localConfig.playingIndex)
-      if (this.localConfig.playingIndex === 0) {
-        return ''
-      }
-      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
-    },
-    nextSentence () {
-      //console.log(this.localConfig.playingIndex)
-      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
-        return ''
-      }
-      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
-    }
-  },
-  mounted() {
-    this.initBeep()
-  },
-  methods: {
-    initBeep () {
-      this.beep = this.utils.SoundUtils.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
-    },
-    speakCurrentSentence: async function () {
-      if (this.config.currentSentenceIsSpeaking === true) {
-        this.utils.TextToSpeechUtils.stopSpeak()
-        this.tryToStop = true
-        await this.utils.AsyncUtils.sleep(100)
-        this.config.currentSentenceIsSpeaking = false
-        this.tryToStop = false
-        return false
-      }
-      
-      this.config.currentSentenceIsSpeaking = true
-      let time = await this.utils.TextToSpeechUtils.startSpeak(this.currentSentence)
-      if (this.tryToStop === true) {
-        return false
-      }
-      this.config.currentSentenceIsSpeaking = false
-      
-      if (this.localConfig.speakingInstructionStrategy !== 'none') {
-        
-        await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
-        this.beep.play()
-        
-        await this.practice(time)
-      }
-      
-      
-      if (this.localConfig.autoPlay === true) {
-        if (this.goToNextSentence()) {
-          await this.utils.AsyncUtils.sleep()
-          this.speakCurrentSentence()
-        }
-      }
-    },
-    practice: async function (time) {
-      if (!time) {
-        time = this.currentSentence.length * 100
-        console.log(time)
-      }
-      
-      this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
-      //console.log(time)
-      time = time + 1000
-      
-      let result = await this.utils.SpeechToTextUtils.startListen(this.currentSentence)
-      console.log(result)
-      //await this.utils.AsyncUtils.sleep(time)
-      
-      this.config.currentSentenceMask = false
-      await this.utils.AsyncUtils.sleep(1000)
-    },
-    
-    goToPreviousSentence () {
-      if (this.localConfig.playingIndex > 0) {
-        this.localConfig.playingIndex--
-        return true
-      }
-      return false
-    },
-    goToNextSentence () {
-      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
-        this.localConfig.playingIndex++
-        return true
-      }
-      return false
-    },
-  }
+  //watch: {},  // LearningInstructorWatch.js
+  //computed: {}, // LearningInstructorComputed.js
+  //mounted() {}, // LearningInstructorMounted.js
+  methods: {} // LearningInstructorMethods.js
 }
+
+
+Object(_LearningInstructorComputed_js__WEBPACK_IMPORTED_MODULE_0__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethods_js__WEBPACK_IMPORTED_MODULE_1__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_4__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])(LearningInstructor)
 
 /* harmony default export */ __webpack_exports__["default"] = (LearningInstructor);
 
@@ -318,6 +238,211 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorComputed.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorComputed.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.computed = {
+    currentSentence () {
+      if (this.localConfig.playingIndex === null 
+              || this.localConfig.playingIndex === undefined
+              || !this.config.sentenceList
+              || !this.config.sentenceList[this.config.playingIndex]) {
+        return ''
+      }
+      return this.config.sentenceList[this.localConfig.playingIndex]
+    },
+    
+    previousSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === 0) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
+    },
+    nextSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethods.js":
+/*!************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethods.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sound/censor-beep-01.mp3 */ "./src/components/LearningInstructor/sound/censor-beep-01.mp3");
+/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.methods.initBeep = function () {
+    this.beep = this.utils.SoundUtils.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js":
+/*!**********************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+
+  LearningInstructor.methods.goToPreviousSentence = function () {
+    if (this.localConfig.playingIndex > 0) {
+      this.localConfig.playingIndex--
+      return true
+    }
+    return false
+  }
+  LearningInstructor.methods.goToNextSentence = function () {
+    if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+      this.localConfig.playingIndex++
+      return true
+    }
+    return false
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsSentence.js":
+/*!********************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsSentence.js ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+
+  LearningInstructor.methods.speakCurrentSentence = async function () {
+    if (this.config.currentSentenceIsSpeaking === true) {
+      this.utils.TextToSpeechUtils.stopSpeak()
+      this.tryToStop = true
+      await this.utils.AsyncUtils.sleep(100)
+      this.config.currentSentenceIsSpeaking = false
+      this.tryToStop = false
+      return false
+    }
+
+    this.config.currentSentenceIsSpeaking = true
+    let time = await this.utils.TextToSpeechUtils.startSpeak(this.currentSentence)
+    if (this.tryToStop === true) {
+      return false
+    }
+    this.config.currentSentenceIsSpeaking = false
+
+    if (this.localConfig.speakingInstructionStrategy !== 'none') {
+
+      await this.utils.AsyncUtils.sleep()
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+      this.beep.play()
+
+      await this.practiceSentence(time)
+    }
+
+
+    if (this.localConfig.autoPlay === true) {
+      if (this.goToNextSentence()) {
+        await this.utils.AsyncUtils.sleep()
+        this.speakCurrentSentence()
+      }
+    }
+  }
+  
+  LearningInstructor.methods.practiceSentence = async function (time) {
+    if (!time) {
+      time = this.currentSentence.length * 100
+      //console.log(time)
+    }
+
+    this.config.practiceSentence = null
+    this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
+    //console.log(time)
+    time = time + 1000
+
+    this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+      this.config.practiceSentence = processing
+    })
+
+    this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.currentSentence, this.config.practiceSentence)
+    //console.log(result)
+    //await this.utils.AsyncUtils.sleep(time)
+
+    this.config.currentSentenceMask = false
+    await this.utils.AsyncUtils.sleep(1000)
+  }
+
+  LearningInstructor.methods.evaluateSentencePractice = function () {
+
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMounted.js":
+/*!************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMounted.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.mounted = function () {
+    this.initBeep()
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorWatch.js":
+/*!**********************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorWatch.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.watch = {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+    'localConfig.playingIndex' () {
+      this.config.practiceSentence = null
+    }
+  }
+});
 
 /***/ }),
 

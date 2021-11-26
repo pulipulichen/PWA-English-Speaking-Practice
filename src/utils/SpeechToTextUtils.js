@@ -50,7 +50,7 @@ export default {
     speechRecognitionList.addFromString(grammar, 1);
     recognition.grammars = speechRecognitionList;
   },
-  startListen: async function (grammarsString) {
+  startListen: async function (grammarsString, processingCallback) {
     this.init()
     
     if (isStarted === true) {
@@ -64,7 +64,9 @@ export default {
       let result
       recognition.onresult = (event) => {
         result = event.results[0][0].transcript
-        console.log(result)
+        if (typeof(processingCallback) === 'function') {
+          processingCallback(result)
+        }
       }
       
       recognition.onspeechend = async function () {

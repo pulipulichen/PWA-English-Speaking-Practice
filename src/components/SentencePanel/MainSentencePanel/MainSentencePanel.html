@@ -9,8 +9,13 @@
 
   <h2 class="ui center aligned icon header"
       v-if="localConfig.practiceMode === 'speaking'">
-    <i class="conversation icon"></i>
-    {{ $t(`Let's Practice!`) }}
+    <template v-if="!config.practiceSentence">
+      <i class="conversation icon"></i>
+      {{ $t(`Let's Practice!`) }}
+    </template>
+    <template v-else>
+      {{ config.practiceSentence }}
+    </template>
   </h2>
 
 </div>

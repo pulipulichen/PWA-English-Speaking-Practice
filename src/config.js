@@ -34,12 +34,16 @@ let config = {
   recognitionResultEnd: false,
   recognitionAbort: false,
   
+  practiceSentence: null,
+  practiceSentenceEvaluationResult: null,
+  
   practiceWord: null,
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,
   //currentSentenceMask: 'translation',
   //currentSentenceMask: 'sentence-block',
   currentSentenceMask: false,
+  
 }
 
 import styleConfig from './styles/style.config.js'

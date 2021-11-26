@@ -258,10 +258,27 @@ var render = function() {
       }),
       _vm._v(" "),
       _vm.localConfig.practiceMode === "speaking"
-        ? _c("h2", { staticClass: "ui center aligned icon header" }, [
-            _c("i", { staticClass: "conversation icon" }),
-            _vm._v("\n    " + _vm._s(_vm.$t("Let's Practice!")) + "\n  ")
-          ])
+        ? _c(
+            "h2",
+            { staticClass: "ui center aligned icon header" },
+            [
+              !_vm.config.practiceSentence
+                ? [
+                    _c("i", { staticClass: "conversation icon" }),
+                    _vm._v(
+                      "\n      " + _vm._s(_vm.$t("Let's Practice!")) + "\n    "
+                    )
+                  ]
+                : [
+                    _vm._v(
+                      "\n      " +
+                        _vm._s(_vm.config.practiceSentence) +
+                        "\n    "
+                    )
+                  ]
+            ],
+            2
+          )
         : _vm._e()
     ],
     1

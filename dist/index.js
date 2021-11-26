@@ -31801,12 +31801,16 @@ let config = {
   recognitionResultEnd: false,
   recognitionAbort: false,
   
+  practiceSentence: null,
+  practiceSentenceEvaluationResult: null,
+  
   practiceWord: null,
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,
   //currentSentenceMask: 'translation',
   //currentSentenceMask: 'sentence-block',
   currentSentenceMask: false,
+  
 }
 
 
@@ -32704,7 +32708,7 @@ let isStarted = false
     speechRecognitionList.addFromString(grammar, 1);
     recognition.grammars = speechRecognitionList;
   },
-  startListen: async function (grammarsString) {
+  startListen: async function (grammarsString, processingCallback) {
     this.init()
     
     if (isStarted === true) {
@@ -32718,7 +32722,9 @@ let isStarted = false
       let result
       recognition.onresult = (event) => {
         result = event.results[0][0].transcript
-        console.log(result)
+        if (typeof(processingCallback) === 'function') {
+          processingCallback(result)
+        }
       }
       
       recognition.onspeechend = async function () {
