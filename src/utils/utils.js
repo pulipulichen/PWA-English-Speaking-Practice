@@ -10,7 +10,7 @@ import DictUtils from './DictUtils.js'
 import SpeechToTextUtils from './SpeechToTextUtils.js'
 import TextToSpeechUtils from './TextToSpeechUtils.js'
 import SoundUtils from './SoundUtils.js'
-import PuliPostMessageAPI from './puli-post-message-api/puli-post-message-api.js'
+import TransUtils from './TransUtils.js'
 
 export default {
   AsyncUtils,
@@ -23,5 +23,5 @@ export default {
   SpeechToTextUtils,
   TextToSpeechUtils,
   SoundUtils,
-  PuliPostMessageAPI
+  TransUtils
 }

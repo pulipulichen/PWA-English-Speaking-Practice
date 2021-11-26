@@ -31705,17 +31705,10 @@ __webpack_require__.r(__webpack_exports__);
   Index.mounted = async function () {
 //    this.restoreFromLocalStorage()
     
-    let api = this.utils.PuliPostMessageAPI()
-    let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
-    let data = {
-      text: '待翻譯的文字',
-      lang: 'en'
-    }
-    console.log(data)
-    let result = await api.send(url, data)
-    console.log(result)
     
-    //console.log('aaa')
+    //console.log(await this.utils.TransUtils.trans('待翻譯文字', 'en'))
+    //console.log(await this.utils.TransUtils.trans(['喵醬愛汪醬', '汪醬愛喵醬'], 'en'))
+    //console.log(await this.utils.TransUtils.trans('哈囉，你好嗎？', 'en'))
 
     //this.loadDemo()
     //this.initSynth()
@@ -32865,6 +32858,53 @@ let rate = 1
 
 /***/ }),
 
+/***/ "./src/utils/TransUtils.js":
+/*!*********************************!*\
+  !*** ./src/utils/TransUtils.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _puli_post_message_api_puli_post_message_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./puli-post-message-api/puli-post-message-api.js */ "./src/utils/puli-post-message-api/puli-post-message-api.js");
+
+let inited = false
+let api
+let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
+//let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  /**
+   * 
+   * @param {type} text
+   * @param {type} lang zh-TW
+   * @returns {result}
+   */
+  trans: async function (text, lang = 'en') {
+    this.initTrans()
+    
+    //console.log(data)
+    let data = {
+      text,
+      lang
+    }
+    let result = await api.send(url, data, {debug: false})
+    //console.log(result)
+    return result
+  },
+  initTrans () {
+    if (inited === true) {
+      return true
+    }
+    
+    api = Object(_puli_post_message_api_puli_post_message_api_js__WEBPACK_IMPORTED_MODULE_0__["default"])()
+    inited = true
+  }
+});
+
+/***/ }),
+
 /***/ "./src/utils/URLUtils.js":
 /*!*******************************!*\
   !*** ./src/utils/URLUtils.js ***!
@@ -33112,6 +33152,11 @@ function PuliPostMessageAPI(options) {
       mode = options.mode
     }
     
+    let debug = false
+    if (options && options.debug) {
+      debug = true
+    }
+    
     
     let autoClose = false
     if (options) {
@@ -33159,7 +33204,23 @@ function PuliPostMessageAPI(options) {
       receiverElement = document.querySelector(`iframe[data-url="${url}"]`)
       if (receiverElement === null) {
         receiverElement = document.createElement("iframe"); 
-        receiverElement.style.display = 'none'
+        //receiverElement.style.display = 'none'
+        receiverElement.style.position = 'fixed'
+        receiverElement.style.width = '100px'
+        receiverElement.style.height = '100px'
+        receiverElement.style.zIndex = -1
+        receiverElement.style.opacity = 0
+        receiverElement.style.right = 0
+        receiverElement.style.bottom = 0
+        
+        if (debug === true) {
+          receiverElement.style.zIndex = 999
+          receiverElement.style.opacity = 1
+          receiverElement.style.width = '500px'
+        receiverElement.style.height = '500px'
+          //console.log(receiverElement)
+        }
+        
         receiverElement.src = url
         //console.log(url)
         receiverElement.setAttribute('data-url', url)
@@ -33508,11 +33569,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./URLUtils.js */ "./src/utils/URLUtils.js");
 /* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./date-helper.js */ "./src/utils/date-helper.js");
 /* harmony import */ var _date_helper_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_date_helper_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _DictUtils_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./DictUtils.js */ "./src/utils/DictUtils.js");
-/* harmony import */ var _SpeechToTextUtils_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./SpeechToTextUtils.js */ "./src/utils/SpeechToTextUtils.js");
-/* harmony import */ var _TextToSpeechUtils_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./TextToSpeechUtils.js */ "./src/utils/TextToSpeechUtils.js");
+/* harmony import */ var _DictUtils_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DictUtils.js */ "./src/utils/DictUtils.js");
+/* harmony import */ var _SpeechToTextUtils_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SpeechToTextUtils.js */ "./src/utils/SpeechToTextUtils.js");
+/* harmony import */ var _TextToSpeechUtils_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TextToSpeechUtils.js */ "./src/utils/TextToSpeechUtils.js");
 /* harmony import */ var _SoundUtils_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SoundUtils.js */ "./src/utils/SoundUtils.js");
-/* harmony import */ var _puli_post_message_api_puli_post_message_api_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./puli-post-message-api/puli-post-message-api.js */ "./src/utils/puli-post-message-api/puli-post-message-api.js");
+/* harmony import */ var _TransUtils_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TransUtils.js */ "./src/utils/TransUtils.js");
 
 
 
@@ -33534,11 +33595,11 @@ __webpack_require__.r(__webpack_exports__);
   AxiosUtils: _AxiosUtils_js__WEBPACK_IMPORTED_MODULE_3__["default"],
   FileUtils: _FileUtils_js__WEBPACK_IMPORTED_MODULE_4__["default"],
   URLUtils: _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__["default"],
-  DictUtils: _DictUtils_js__WEBPACK_IMPORTED_MODULE_9__["default"],
-  SpeechToTextUtils: _SpeechToTextUtils_js__WEBPACK_IMPORTED_MODULE_11__["default"],
-  TextToSpeechUtils: _TextToSpeechUtils_js__WEBPACK_IMPORTED_MODULE_12__["default"],
+  DictUtils: _DictUtils_js__WEBPACK_IMPORTED_MODULE_7__["default"],
+  SpeechToTextUtils: _SpeechToTextUtils_js__WEBPACK_IMPORTED_MODULE_8__["default"],
+  TextToSpeechUtils: _TextToSpeechUtils_js__WEBPACK_IMPORTED_MODULE_9__["default"],
   SoundUtils: _SoundUtils_js__WEBPACK_IMPORTED_MODULE_10__["default"],
-  PuliPostMessageAPI: _puli_post_message_api_puli_post_message_api_js__WEBPACK_IMPORTED_MODULE_8__["default"]
+  TransUtils: _TransUtils_js__WEBPACK_IMPORTED_MODULE_11__["default"]
 });
 
 /***/ })

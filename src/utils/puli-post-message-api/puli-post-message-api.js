@@ -177,6 +177,11 @@ function PuliPostMessageAPI(options) {
       mode = options.mode
     }
     
+    let debug = false
+    if (options && options.debug) {
+      debug = true
+    }
+    
     
     let autoClose = false
     if (options) {
@@ -224,7 +229,23 @@ function PuliPostMessageAPI(options) {
       receiverElement = document.querySelector(`iframe[data-url="${url}"]`)
       if (receiverElement === null) {
         receiverElement = document.createElement("iframe"); 
-        receiverElement.style.display = 'none'
+        //receiverElement.style.display = 'none'
+        receiverElement.style.position = 'fixed'
+        receiverElement.style.width = '100px'
+        receiverElement.style.height = '100px'
+        receiverElement.style.zIndex = -1
+        receiverElement.style.opacity = 0
+        receiverElement.style.right = 0
+        receiverElement.style.bottom = 0
+        
+        if (debug === true) {
+          receiverElement.style.zIndex = 999
+          receiverElement.style.opacity = 1
+          receiverElement.style.width = '500px'
+        receiverElement.style.height = '500px'
+          //console.log(receiverElement)
+        }
+        
         receiverElement.src = url
         //console.log(url)
         receiverElement.setAttribute('data-url', url)

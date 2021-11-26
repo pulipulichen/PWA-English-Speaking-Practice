@@ -4,13 +4,20 @@ let CurrentSentence = {
     this.$i18n.locale = this.localConfig.locale
     return {
       isSpeaking: false,
-      speakingWordIndex: null
+      speakingWordIndex: null,
+      translationMask: null
     }
   },
   watch: {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.practiceSentenceMask' () {
+      this.initTranslationMask()
+    },
+    sentence () {
+      this.initTranslationMask()
+    }
   },
   computed: {
     currentSentence () {
@@ -64,10 +71,23 @@ let CurrentSentence = {
       return classes
     }
   },
-//  mounted() {
-//    
-//  },
+  mounted: async function () {
+    this.initTranslationMask()
+    
+//    setTimeout(() => {
+//      this.initTranslationMask()
+//    }, 500)
+  },
   methods: {
+    initTranslationMask: async function () {
+      if (this.localConfig.practiceSentenceMask !== 'translation'
+              || this.translationMask
+              || !this.sentence) {
+        return false
+      }
+      this.translationMask = await this.utils.TransUtils.trans(this.sentence, 'zh-TW')
+      //console.log(this.translationMask)
+    },
     speakCurrentSentence: async function () {
 //      if (this.isSpeaking === true) {
 //        this.utils.TextToSpeechUtil.stopSpeak()

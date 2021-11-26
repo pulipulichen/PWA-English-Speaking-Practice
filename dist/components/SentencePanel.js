@@ -186,23 +186,35 @@ var render = function() {
           _c(
             "h2",
             { staticClass: "ui center aligned header" },
-            _vm._l(_vm.words, function(word, i) {
-              return _c(
-                "span",
-                {
-                  staticClass: "word",
-                  class: _vm.computedWordClasses(word, i),
-                  on: {
-                    click: function($event) {
-                      $event.stopPropagation()
-                      return _vm.startSpeakWord(word, i)
-                    }
-                  }
-                },
-                [_vm._v(_vm._s(word))]
-              )
-            }),
-            0
+            [
+              _vm.config.currentSentenceMask !== "translation"
+                ? _vm._l(_vm.words, function(word, i) {
+                    return _c(
+                      "span",
+                      {
+                        staticClass: "word",
+                        class: _vm.computedWordClasses(word, i),
+                        on: {
+                          click: function($event) {
+                            $event.stopPropagation()
+                            return _vm.startSpeakWord(word, i)
+                          }
+                        }
+                      },
+                      [_vm._v(_vm._s(word))]
+                    )
+                  })
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.config.currentSentenceMask === "translation"
+                ? [
+                    _vm._v(
+                      "\n        " + _vm._s(_vm.translationMask) + "\n      "
+                    )
+                  ]
+                : _vm._e()
+            ],
+            2
           )
         ]
       )
@@ -635,13 +647,20 @@ let CurrentSentence = {
     this.$i18n.locale = this.localConfig.locale
     return {
       isSpeaking: false,
-      speakingWordIndex: null
+      speakingWordIndex: null,
+      translationMask: null
     }
   },
   watch: {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.practiceSentenceMask' () {
+      this.initTranslationMask()
+    },
+    sentence () {
+      this.initTranslationMask()
+    }
   },
   computed: {
     currentSentence () {
@@ -695,10 +714,23 @@ let CurrentSentence = {
       return classes
     }
   },
-//  mounted() {
-//    
-//  },
+  mounted: async function () {
+    this.initTranslationMask()
+    
+//    setTimeout(() => {
+//      this.initTranslationMask()
+//    }, 500)
+  },
   methods: {
+    initTranslationMask: async function () {
+      if (this.localConfig.practiceSentenceMask !== 'translation'
+              || this.translationMask
+              || !this.sentence) {
+        return false
+      }
+      this.translationMask = await this.utils.TransUtils.trans(this.sentence, 'zh-TW')
+      //console.log(this.translationMask)
+    },
     speakCurrentSentence: async function () {
 //      if (this.isSpeaking === true) {
 //        this.utils.TextToSpeechUtil.stopSpeak()

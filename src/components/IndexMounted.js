@@ -2,17 +2,10 @@ export default function (Index) {
   Index.mounted = async function () {
 //    this.restoreFromLocalStorage()
     
-    let api = this.utils.PuliPostMessageAPI()
-    let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
-    let data = {
-      text: '待翻譯的文字',
-      lang: 'en'
-    }
-    console.log(data)
-    let result = await api.send(url, data)
-    console.log(result)
     
-    //console.log('aaa')
+    //console.log(await this.utils.TransUtils.trans('待翻譯文字', 'en'))
+    //console.log(await this.utils.TransUtils.trans(['喵醬愛汪醬', '汪醬愛喵醬'], 'en'))
+    //console.log(await this.utils.TransUtils.trans('哈囉，你好嗎？', 'en'))
 
     //this.loadDemo()
     //this.initSynth()
