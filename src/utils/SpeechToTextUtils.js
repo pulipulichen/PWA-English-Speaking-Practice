@@ -6,7 +6,7 @@ let recognition
 let recognitionResultEnd = true
 let isStarted = false
 
-import DictUtil from './DictUtil.js'
+import DictUtils from './DictUtils.js'
 
 export default {
   init () {
@@ -36,7 +36,7 @@ export default {
       return false
     }
     
-    let words = DictUtil.filterWord(grammarsString).split(' ')
+    let words = DictUtils.filterWord(grammarsString).split(' ')
     words = words.filter(function (item, pos) {
       return words.indexOf(item) === pos
     })

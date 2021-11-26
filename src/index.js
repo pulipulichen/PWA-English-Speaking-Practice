@@ -102,7 +102,7 @@ let VueController = {
     
     //console.log('index.js mounted', 3)
     
-    this.config.inited = true
+    //this.config.inited = true
   },
   methods: {
     waitForSemanticUIReady: async function () {

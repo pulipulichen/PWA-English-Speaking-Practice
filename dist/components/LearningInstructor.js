@@ -155,16 +155,16 @@ let LearningInstructor = {
   },
   methods: {
     initBeep () {
-      this.beep = this.utils.SoundUtil.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
+      this.beep = this.utils.SoundUtils.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
     },
     speakCurrentSentence: async function () {
       if (this.config.currentSentenceIsSpeaking === true) {
-        this.utils.TextToSpeechUtil.stopSpeak()
+        this.utils.TextToSpeechUtils.stopSpeak()
         return false
       }
       
       this.config.currentSentenceIsSpeaking = true
-      let time = await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)
+      let time = await this.utils.TextToSpeechUtils.startSpeak(this.currentSentence)
       this.config.currentSentenceIsSpeaking = false
       
       await this.practice(time)
@@ -183,7 +183,7 @@ let LearningInstructor = {
         //console.log(time)
         time = time + 1000
         await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtil.startSpeak(this.$t(`Please speak again.`))
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
         this.beep.play()
         await this.utils.AsyncUtils.sleep(time)
         this.config.currentSentenceMask = false

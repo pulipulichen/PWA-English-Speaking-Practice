@@ -1299,17 +1299,17 @@ let WordModal = {
     
     speakWord: async function () {
       if (this.isSpeaking === true) {
-        this.utils.TextToSpeechUtil.stopSpeak()
+        this.utils.TextToSpeechUtils.stopSpeak()
         return false
       }
       
       this.isSpeaking = true
-      await this.utils.TextToSpeechUtil.startSpeak(this.config.practiceWord)
+      await this.utils.TextToSpeechUtils.startSpeak(this.config.practiceWord)
       this.isSpeaking = false
     },
     
     openDictionary () {
-      this.utils.DictUtil.openDict(this.config.practiceWord)
+      this.utils.DictUtils.openDict(this.config.practiceWord)
     }
   }
 }

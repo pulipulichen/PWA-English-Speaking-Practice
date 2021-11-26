@@ -10,7 +10,7 @@ let ControllerMenuTopBar = {
       this.$i18n.locale = this.localConfig.locale;
     },
     'localConfig.rate'() {
-      this.utils.TextToSpeechUtil.setRate(this.localConfig.rate)
+      this.utils.TextToSpeechUtils.setRate(this.localConfig.rate)
     },
   },
   computed: {

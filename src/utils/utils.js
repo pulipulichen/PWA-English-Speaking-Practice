@@ -6,10 +6,11 @@ import FileUtils from './FileUtils.js'
 import URLUtils from './URLUtils.js'
 import './date-helper.js'
 
-import DictUtil from './DictUtil.js'
-import SpeechToTextUtil from './SpeechToTextUtil.js'
-import TextToSpeechUtil from './TextToSpeechUtil.js'
-import SoundUtil from './SoundUtil.js'
+import DictUtils from './DictUtils.js'
+import SpeechToTextUtils from './SpeechToTextUtils.js'
+import TextToSpeechUtils from './TextToSpeechUtils.js'
+import SoundUtils from './SoundUtils.js'
+import PuliPostMessageAPI from './puli-post-message-api/puli-post-message-api.js'
 
 export default {
   AsyncUtils,
@@ -18,8 +19,9 @@ export default {
   AxiosUtils,
   FileUtils,
   URLUtils,
-  DictUtil,
-  SpeechToTextUtil,
-  TextToSpeechUtil,
-  SoundUtil
+  DictUtils,
+  SpeechToTextUtils,
+  TextToSpeechUtils,
+  SoundUtils,
+  PuliPostMessageAPI
 }

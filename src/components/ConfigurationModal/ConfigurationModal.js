@@ -20,10 +20,10 @@ let ConfigurationModal = {
       this.$i18n.locale = this.localConfig.locale;
     },
     'localConfig.voiceName': async function () {
-      await this.utils.TextToSpeechUtil.setPreferVoice(this.localConfig.voiceName)
+      await this.utils.TextToSpeechUtils.setPreferVoice(this.localConfig.voiceName)
     },
     'localConfig.pitch'() {
-      this.utils.TextToSpeechUtil.setPitch(this.localConfig.pitch)
+      this.utils.TextToSpeechUtils.setPitch(this.localConfig.pitch)
     },
   },
 //  computed: {
@@ -31,12 +31,12 @@ let ConfigurationModal = {
 //  },
   mounted: async function () {
     //this.init()
-    this.voiceNames = await this.utils.TextToSpeechUtil.getVoiceNameList()
+    this.voiceNames = await this.utils.TextToSpeechUtils.getVoiceNameList()
     if (!this.localConfig.voiceName) {
-      this.localConfig.voiceName = await this.utils.TextToSpeechUtil.setPreferVoice()
+      this.localConfig.voiceName = await this.utils.TextToSpeechUtils.setPreferVoice()
     }
     else {
-      await this.utils.TextToSpeechUtil.setPreferVoice(this.localConfig.voiceName)
+      await this.utils.TextToSpeechUtils.setPreferVoice(this.localConfig.voiceName)
     }
     //console.log(this.voiceNames)
   },
