@@ -23,6 +23,21 @@ let LearningInstructor = {
       }
       return this.config.sentenceList[this.localConfig.playingIndex]
     },
+    
+    previousSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === 0) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
+    },
+    nextSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
+    }
   },
   mounted() {
     this.initBeep()
@@ -57,7 +72,7 @@ let LearningInstructor = {
         //console.log(time)
         time = time + 1000
         await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtil.startSpeak(this.$t(`Please speak.`))
+        await this.utils.TextToSpeechUtil.startSpeak(this.$t(`Please speak again.`))
         this.beep.play()
         await this.utils.AsyncUtils.sleep(time)
         this.config.currentSentenceMask = false

@@ -93,7 +93,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"MainSentencePanel.less"}]);
+exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -111,7 +111,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".previous-sentence[data-v-3486f593],\n.next-sentence[data-v-3486f593] {\n  height: 1.5rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n.next-sentence[data-v-3486f593] {\n  width: calc(100% - 2rem);\n}\n.sentence-segment .step.forward.icon[data-v-3486f593] {\n  float: right;\n}\n.sentence-segment[data-v-3486f593] {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n.next-sentence[data-v-3486f593] {\n  text-align: right;\n}\n.main-sentence-panel[data-v-3486f593] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&","SentencePanel.less"],"names":[],"mappings":"AACA;;EAEE,cAAA;EACA,gBAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,WAAA;EACA,iBAAA;ACAF;ADGA;EACE,wBAAA;ACDF;ADIA;EACE,YAAA;ACFF;ADKA;EACE,yBAAA;EACA,eAAA;EACA,WAAA;ACHF;ADOA;EACE,iBAAA;ACLF;ADQA;EACE,mCAAA;ACNF","file":"SentencePanel.less","sourcesContent":["\n.previous-sentence,\n.next-sentence {\n  height: 1.5rem;\n  overflow:hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n\n.next-sentence {\n  width: calc(100% - 2rem);\n}\n\n.sentence-segment .step.forward.icon {\n  float: right;\n}\n\n.sentence-segment {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n\n\n.next-sentence {\n  text-align: right;\n}\n\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}",".previous-sentence,\n.next-sentence {\n  height: 1.5rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n.next-sentence {\n  width: calc(100% - 2rem);\n}\n.sentence-segment .step.forward.icon {\n  float: right;\n}\n.sentence-segment {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n.next-sentence {\n  text-align: right;\n}\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n"]}]);
+exports.push([module.i, ".previous-sentence[data-v-3486f593],\n.next-sentence[data-v-3486f593] {\n  height: 1.5rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n.next-sentence[data-v-3486f593] {\n  width: calc(100% - 2rem);\n}\n.sentence-segment .step.forward.icon[data-v-3486f593] {\n  float: right;\n}\n.sentence-segment[data-v-3486f593] {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n.sentence-segment.next[data-v-3486f593] {\n  position: fixed;\n  bottom: 45px;\n  width: calc(100vw - 1rem);\n}\n.next-sentence[data-v-3486f593] {\n  text-align: right;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&","SentencePanel.less"],"names":[],"mappings":"AACA;;EAEE,cAAA;EACA,gBAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,WAAA;EACA,iBAAA;ACAF;ADGA;EACE,wBAAA;ACDF;ADIA;EACE,YAAA;ACFF;ADKA;EACE,yBAAA;EACA,eAAA;EACA,WAAA;ACHF;ADMA;EACE,eAAA;EACA,YAAA;EACA,yBAAA;ACJF;ADQA;EACE,iBAAA;ACNF","file":"SentencePanel.less","sourcesContent":["\n.previous-sentence,\n.next-sentence {\n  height: 1.5rem;\n  overflow:hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n\n.next-sentence {\n  width: calc(100% - 2rem);\n}\n\n.sentence-segment .step.forward.icon {\n  float: right;\n}\n\n.sentence-segment {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n\n.sentence-segment.next {\n  position: fixed;\n  bottom: 45px;\n  width: calc(100vw - 1rem);\n}\n\n\n.next-sentence {\n  text-align: right;\n}\n",".previous-sentence,\n.next-sentence {\n  height: 1.5rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n.next-sentence {\n  width: calc(100% - 2rem);\n}\n.sentence-segment .step.forward.icon {\n  float: right;\n}\n.sentence-segment {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n.sentence-segment.next {\n  position: fixed;\n  bottom: 45px;\n  width: calc(100vw - 1rem);\n}\n.next-sentence {\n  text-align: right;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -129,7 +129,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, "/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-fade-enter-active[data-v-3486f593] {\n  transition: all 1s ease;\n}\n.slide-fade-leave-active[data-v-3486f593] {\n  transition: all 1s ease;\n}\n.slide-fade-enter[data-v-3486f593],\n.slide-fade-leave-to[data-v-3486f593] {\n  transform: translateX(-10px);\n  opacity: 0;\n}\n#demo p[data-v-3486f593] {\n  position: fixed;\n}\n", "",{"version":3,"sources":["SentencePanelTransition.less","/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&"],"names":[],"mappings":"AAAA,mBAAmB;AACnB,gBAAgB;ACGhB;EACE,uBAAA;ADDF;ACGA;EAEE,uBAAA;ADFF;ACIA;;EAEE,4BAAA;EACA,UAAA;ADFF;ACKA;EACE,eAAA;ADHF","file":"SentencePanelTransition.less","sourcesContent":["/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-fade-enter-active {\n  transition: all 1s ease;\n}\n.slide-fade-leave-active {\n  transition: all 1s ease;\n}\n.slide-fade-enter,\n.slide-fade-leave-to {\n  transform: translateX(-10px);\n  opacity: 0;\n}\n#demo p {\n  position: fixed;\n}\n","// https://cn.vuejs.org/v2/guide/transitions.html\n\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-fade-enter-active {\n  transition: all 1s ease;\n}\n.slide-fade-leave-active {\n  //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n  transition: all 1s ease;\n}\n.slide-fade-enter, .slide-fade-leave-to\n/* .slide-fade-leave-active for below version 2.1.8 */ {\n  transform: translateX(-10px);\n  opacity: 0;\n}\n\n#demo p {\n  position: fixed;\n}"]}]);
+exports.push([module.i, ".page-transition-container[data-v-3486f593] {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container[data-v-3486f593] {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-leave-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-enter[data-v-3486f593],\n.slide-leave-to[data-v-3486f593] {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter[data-v-3486f593],\n.toRight .slide-leave-to[data-v-3486f593] {\n  transform: translateX(10vw);\n}\n#demo p[data-v-3486f593] {\n  position: fixed;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&","SentencePanelTransition.less"],"names":[],"mappings":"AAEA;EAEE,kBAAA;EACA,eAAA;EACA,WAAA;EACA,YAAA;EACA,iBAAA;EACA,oBAAA;ACFF;ADKA;EACE,eAAA;EACA,WAAA;ACHF;AACA,mBAAmB;AACnB,gBAAgB;ADOhB;EACE,yBAAA;ACLF;ADOA;EAEE,yBAAA;ACNF;ADSA;;EAEE,4BAAA;ACPF;ADWA;;EAEI,2BAAA;ACTJ;ADcA;EACE,eAAA;ACZF","file":"SentencePanelTransition.less","sourcesContent":["// https://cn.vuejs.org/v2/guide/transitions.html\n\n.page-transition-container {\n  //background-color: red !important;\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n  //top: 150px;\n}\n\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n  transition: all 0.3s ease;\n}\n\n.slide-enter, .slide-leave-to\n/* .slide-fade-leave-active for below version 2.1.8 */ {\n  transform: translateX(-10vw);\n  //opacity: 0;\n}\n\n.toRight {\n  .slide-enter, .slide-leave-to {\n    transform: translateX(10vw);\n  }\n}\n\n\n#demo p {\n  position: fixed;\n}",".page-transition-container {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  transition: all 0.3s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter,\n.toRight .slide-leave-to {\n  transform: translateX(10vw);\n}\n#demo p {\n  position: fixed;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -248,22 +248,7 @@ var render = function() {
       _c("h2", { staticClass: "ui center aligned icon header" }, [
         _c("i", { staticClass: "conversation icon" }),
         _vm._v("\n    " + _vm._s(_vm.$t("Let's Practice!")) + "\n  ")
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { attrs: { id: "demo" } },
-        [
-          _c("transition", { attrs: { name: "slide-fade" } }, [
-            !_vm.show ? _c("p", [_vm._v("hello1")]) : _vm._e()
-          ]),
-          _vm._v(" "),
-          _c("transition", { attrs: { name: "slide-fade" } }, [
-            _vm.show ? _c("p", [_vm._v("hello2")]) : _vm._e()
-          ])
-        ],
-        1
-      )
+      ])
     ],
     1
   )
@@ -318,30 +303,68 @@ var render = function() {
       ),
       _vm._v(" "),
       _c(
-        "button",
-        {
-          on: {
-            click: function($event) {
-              _vm.show = !_vm.show
-            }
-          }
-        },
-        [_vm._v("\n    Toggle\n  ")]
+        "div",
+        { staticClass: "page-transition-container" },
+        [
+          !_vm.pageTransition
+            ? _c("MainSentencePanel", {
+                attrs: {
+                  config: _vm.config,
+                  localConfig: _vm.localConfig,
+                  utils: _vm.utils,
+                  sentence: _vm.currentSentence
+                }
+              })
+            : _vm._e()
+        ],
+        1
       ),
-      _vm._v(" "),
-      _c("MainSentencePanel", {
-        attrs: {
-          config: _vm.config,
-          localConfig: _vm.localConfig,
-          utils: _vm.utils,
-          sentence: _vm.currentSentence
-        }
-      }),
       _vm._v(" "),
       _c(
         "div",
         {
-          staticClass: "ui segment sentence-segment",
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.pageTransition,
+              expression: "pageTransition"
+            }
+          ],
+          staticClass: "page-transition-container",
+          class: {
+            toRight: _vm.pageTransitionToNext,
+            toLeft: !_vm.pageTransitionToNext
+          }
+        },
+        [
+          _c("transition", { attrs: { name: "slide" } }, [
+            _vm.pageTransitionShow
+              ? _c(
+                  "div",
+                  { staticClass: "main-sentence-panel-container" },
+                  [
+                    _c("MainSentencePanel", {
+                      attrs: {
+                        config: _vm.config,
+                        localConfig: _vm.localConfig,
+                        utils: _vm.utils,
+                        sentence: _vm.pageTransitionAfterSentence
+                      }
+                    })
+                  ],
+                  1
+                )
+              : _vm._e()
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "ui segment sentence-segment next",
           on: { click: _vm.goToNextSentence }
         },
         [
@@ -1012,17 +1035,41 @@ let SentencePanel = {
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
-      show: false
+      //show: false,
+      pageTransition: false,
+      pageTransitionShow: false,
+      pageTransitionToNext: true,
+      pageTransitionBeforeSentence: '',
+      pageTransitionAfterSentence: '',
     }
   },
   watch: {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.playingIndex': async function (newIndex, oldIndex) {
+      //console.log(newIndex, oldIndex)
+      this.pageTransitionToNext = (newIndex > oldIndex)
+      
+      this.pageTransitionAfterSentence = this.currentSentence + ''
+      this.pageTransitionBeforeSentence = this.config.sentenceList[oldIndex] + ''
+      
+      this.pageTransition = true
+      this.pageTransitionShow = true
+      //console.log('before', this.pageTransitionBeforeSentence)
+      //console.log('after', this.pageTransitionAfterSentence)
+      //this.pageTransitionNextSentence
+      await this.utils.AsyncUtils.sleep(500)
+      this.pageTransition = false
+      this.pageTransitionShow = false
+      //console.log(this.pageTransition)
+    }
   },
   computed: {
     currentSentence () {
-      if (this.utils.LearningInstructor) {
+      //console.log(this.utils.LearningInstructor)
+      if (this.config.inited === true) {
+        //console.log(this.utils.LearningInstructor.currentSentence)
         return this.utils.LearningInstructor.currentSentence
       }
       else {

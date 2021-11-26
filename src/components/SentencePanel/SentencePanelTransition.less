@@ -1,19 +1,43 @@
 // https://cn.vuejs.org/v2/guide/transitions.html
 
+.page-transition-container {
+  //background-color: red !important;
+  margin-top: 1.5rem;
+  position: fixed;
+  width: 100%;
+  cursor: wait;
+  user-select: none;
+  pointer-events: none;
+}
+
+.main-sentence-panel-container {
+  position: fixed;
+  width: 100%;
+  //top: 150px;
+}
+
 /* 可以设置不同的进入和离开动画 */
 /* 设置持续时间和动画函数 */
-.slide-fade-enter-active {
-  transition: all 1s ease;
+.slide-enter-active {
+  transition: all 0.3s ease;
 }
-.slide-fade-leave-active {
+.slide-leave-active {
   //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  transition: all 1s ease;
+  transition: all 0.3s ease;
 }
-.slide-fade-enter, .slide-fade-leave-to
+
+.slide-enter, .slide-leave-to
 /* .slide-fade-leave-active for below version 2.1.8 */ {
-  transform: translateX(-10px);
-  opacity: 0;
+  transform: translateX(-10vw);
+  //opacity: 0;
 }
+
+.toRight {
+  .slide-enter, .slide-leave-to {
+    transform: translateX(10vw);
+  }
+}
+
 
 #demo p {
   position: fixed;

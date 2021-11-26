@@ -13,20 +13,51 @@
     </div>
   </div>
   
-  
-  <button v-on:click="show = !show">
-    Toggle
-  </button>
-  
-  <MainSentencePanel 
-    v-bind:config="config"
-    v-bind:localConfig="localConfig"
-    v-bind:utils="utils"
-    v-bind:sentence="currentSentence">
-  </MainSentencePanel>
+  <div class="page-transition-container">
+    <MainSentencePanel 
+      v-if="!pageTransition"
+      v-bind:config="config"
+      v-bind:localConfig="localConfig"
+      v-bind:utils="utils"
+      v-bind:sentence="currentSentence">
+    </MainSentencePanel>
+  </div>
   
   
-  <div class="ui segment sentence-segment"
+  <div v-show="pageTransition"
+       class="page-transition-container"
+       v-bind:class="{toRight: pageTransitionToNext, toLeft: !pageTransitionToNext}">
+    
+    <transition name="slide">
+      <div v-if="pageTransitionShow"
+           class="main-sentence-panel-container">
+        <MainSentencePanel 
+          v-bind:config="config"
+          v-bind:localConfig="localConfig"
+          v-bind:utils="utils"
+          v-bind:sentence="pageTransitionAfterSentence">
+        </MainSentencePanel>
+      </div>
+    </transition>
+    
+    <!--
+    <transition name="slide-fade">
+      <div v-if="!pageTransitionShow" 
+           class="main-sentence-panel-container">
+        <MainSentencePanel 
+          v-bind:config="config"
+          v-bind:localConfig="localConfig"
+          v-bind:utils="utils"
+          v-bind:sentence="pageTransitionBeforeSentence">
+        </MainSentencePanel>
+      </div>
+    </transition>
+    -->
+  </div>
+  
+  
+  
+  <div class="ui segment sentence-segment next"
        v-on:click="goToNextSentence">
     <template v-if="localConfig.playingIndex < config.sentenceList.length - 1">
       <i class="step forward icon"></i>

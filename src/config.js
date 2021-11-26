@@ -5,6 +5,7 @@ let config = {
   },
   viewportSize: {
   },
+  inited: false,
   
   // --------------------
   

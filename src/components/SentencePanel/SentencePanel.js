@@ -7,17 +7,41 @@ let SentencePanel = {
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
-      show: false
+      //show: false,
+      pageTransition: false,
+      pageTransitionShow: false,
+      pageTransitionToNext: true,
+      pageTransitionBeforeSentence: '',
+      pageTransitionAfterSentence: '',
     }
   },
   watch: {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
+    'localConfig.playingIndex': async function (newIndex, oldIndex) {
+      //console.log(newIndex, oldIndex)
+      this.pageTransitionToNext = (newIndex > oldIndex)
+      
+      this.pageTransitionAfterSentence = this.currentSentence + ''
+      this.pageTransitionBeforeSentence = this.config.sentenceList[oldIndex] + ''
+      
+      this.pageTransition = true
+      this.pageTransitionShow = true
+      //console.log('before', this.pageTransitionBeforeSentence)
+      //console.log('after', this.pageTransitionAfterSentence)
+      //this.pageTransitionNextSentence
+      await this.utils.AsyncUtils.sleep(500)
+      this.pageTransition = false
+      this.pageTransitionShow = false
+      //console.log(this.pageTransition)
+    }
   },
   computed: {
     currentSentence () {
-      if (this.utils.LearningInstructor) {
+      //console.log(this.utils.LearningInstructor)
+      if (this.config.inited === true) {
+        //console.log(this.utils.LearningInstructor.currentSentence)
         return this.utils.LearningInstructor.currentSentence
       }
       else {
