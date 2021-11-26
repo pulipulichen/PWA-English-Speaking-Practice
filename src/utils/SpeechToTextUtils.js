@@ -6,6 +6,7 @@ let recognition
 let recognitionResultEnd = true
 let isStarted = false
 
+import AsyncUtils from './AsyncUtils.js'
 import DictUtils from './DictUtils.js'
 
 export default {
@@ -41,6 +42,8 @@ export default {
       return words.indexOf(item) === pos
     })
     
+    //console.log(words)
+    
     let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';';
     //console.log(grammar)
     let speechRecognitionList = new webkitSpeechGrammarList();
@@ -61,13 +64,17 @@ export default {
       let result
       recognition.onresult = (event) => {
         result = event.results[0][0].transcript
+        console.log(result)
       }
       
-      recognition.onspeechend = () => {
+      recognition.onspeechend = async function () {
+        await AsyncUtils.sleep(300)
         recognition.stop()
         isStarted = false
         resolve(result)
       }
+      
+      recognition.start()
     })
   },
   stopListen () {

@@ -32260,7 +32260,7 @@ let localConfig = {
   autoPlay: true,
   practiceSentenceMask: 'word-block', // none translation word-block sentence-block
   practiceMode: 'speaking',  // speaking writing
-  speakingInstructionStrategy: 'none', // none free sentence words-by-words word-by-word
+  speakingInstructionStrategy: 'none', // none sentence words-by-words word-by-word
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);
@@ -32650,7 +32650,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DictUtils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DictUtils.js */ "./src/utils/DictUtils.js");
+/* harmony import */ var _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncUtils.js */ "./src/utils/AsyncUtils.js");
+/* harmony import */ var _DictUtils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DictUtils.js */ "./src/utils/DictUtils.js");
 /* global webkitSpeechRecognition, webkitSpeechGrammarList, webkitSpeechRecognitionEvent */
 
 let inited = false
@@ -32658,6 +32659,7 @@ let recognition
 
 let recognitionResultEnd = true
 let isStarted = false
+
 
 
 
@@ -32689,10 +32691,12 @@ let isStarted = false
       return false
     }
     
-    let words = _DictUtils_js__WEBPACK_IMPORTED_MODULE_0__["default"].filterWord(grammarsString).split(' ')
+    let words = _DictUtils_js__WEBPACK_IMPORTED_MODULE_1__["default"].filterWord(grammarsString).split(' ')
     words = words.filter(function (item, pos) {
       return words.indexOf(item) === pos
     })
+    
+    //console.log(words)
     
     let grammar = '#JSGF V1.0; grammar actions; public <actions> = ' + words.join(' | ') + ';';
     //console.log(grammar)
@@ -32714,13 +32718,17 @@ let isStarted = false
       let result
       recognition.onresult = (event) => {
         result = event.results[0][0].transcript
+        console.log(result)
       }
       
-      recognition.onspeechend = () => {
+      recognition.onspeechend = async function () {
+        await _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__["default"].sleep(300)
         recognition.stop()
         isStarted = false
         resolve(result)
       }
+      
+      recognition.start()
     })
   },
   stopListen () {

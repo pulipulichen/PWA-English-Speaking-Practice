@@ -319,12 +319,6 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _c("option", { attrs: { value: "free" } }, [
-                    _vm._v(
-                      "\n          " + _vm._s(_vm.$t("Free")) + "\n        "
-                    )
-                  ]),
-                  _vm._v(" "),
                   _c("option", { attrs: { value: "sentence" } }, [
                     _vm._v(
                       "\n          " +

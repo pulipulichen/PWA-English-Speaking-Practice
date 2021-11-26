@@ -8,7 +8,7 @@
   </CurrentSentence>
 
   <h2 class="ui center aligned icon header"
-      v-if="localConfig.speakingInstructionStrategy !== 'none'">
+      v-if="localConfig.practiceMode === 'speaking'">
     <i class="conversation icon"></i>
     {{ $t(`Let's Practice!`) }}
   </h2>

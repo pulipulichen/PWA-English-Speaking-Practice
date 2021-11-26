@@ -36,6 +36,13 @@ let ControllerMenuBottomBar = {
 //      await this.$parent.speakCurrentSentence()
 //      this.isSpeaking = false
       this.utils.LearningInstructor.speakCurrentSentence()
+    },
+    practice () {
+      if (!this.utils.LearningInstructor) {
+        return false
+      }
+      //console.log('go')
+      this.utils.LearningInstructor.practice()
     }
   }
 }

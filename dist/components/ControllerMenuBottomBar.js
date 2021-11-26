@@ -125,9 +125,11 @@ var render = function() {
       ),
       _vm._v(" "),
       _vm.localConfig.practiceMode === "speaking"
-        ? _c("a", { staticClass: "ui icon item" }, [
-            _c("i", { staticClass: "comment outline icon" })
-          ])
+        ? _c(
+            "a",
+            { staticClass: "ui icon item", on: { click: _vm.practice } },
+            [_c("i", { staticClass: "comment outline icon" })]
+          )
         : _vm._e(),
       _vm._v(" "),
       _c(
@@ -248,6 +250,13 @@ let ControllerMenuBottomBar = {
 //      await this.$parent.speakCurrentSentence()
 //      this.isSpeaking = false
       this.utils.LearningInstructor.speakCurrentSentence()
+    },
+    practice () {
+      if (!this.utils.LearningInstructor) {
+        return false
+      }
+      //console.log('go')
+      this.utils.LearningInstructor.practice()
     }
   }
 }

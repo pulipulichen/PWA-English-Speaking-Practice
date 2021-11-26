@@ -129,7 +129,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".page-transition-container[data-v-3486f593] {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container[data-v-3486f593] {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-leave-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-enter[data-v-3486f593],\n.slide-leave-to[data-v-3486f593] {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter[data-v-3486f593],\n.toRight .slide-leave-to[data-v-3486f593] {\n  transform: translateX(10vw);\n}\n#demo p[data-v-3486f593] {\n  position: fixed;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&","SentencePanelTransition.less"],"names":[],"mappings":"AAEA;EAEE,kBAAA;EACA,eAAA;EACA,WAAA;EACA,YAAA;EACA,iBAAA;EACA,oBAAA;ACFF;ADKA;EACE,eAAA;EACA,WAAA;ACHF;AACA,mBAAmB;AACnB,gBAAgB;ADOhB;EACE,yBAAA;ACLF;ADOA;EAEE,yBAAA;ACNF;ADSA;;EAEE,4BAAA;ACPF;ADWA;;EAEI,2BAAA;ACTJ;ADcA;EACE,eAAA;ACZF","file":"SentencePanelTransition.less","sourcesContent":["// https://cn.vuejs.org/v2/guide/transitions.html\n\n.page-transition-container {\n  //background-color: red !important;\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n  //top: 150px;\n}\n\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n  transition: all 0.3s ease;\n}\n\n.slide-enter, .slide-leave-to\n/* .slide-fade-leave-active for below version 2.1.8 */ {\n  transform: translateX(-10vw);\n  //opacity: 0;\n}\n\n.toRight {\n  .slide-enter, .slide-leave-to {\n    transform: translateX(10vw);\n  }\n}\n\n\n#demo p {\n  position: fixed;\n}",".page-transition-container {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  transition: all 0.3s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter,\n.toRight .slide-leave-to {\n  transform: translateX(10vw);\n}\n#demo p {\n  position: fixed;\n}\n"]}]);
+exports.push([module.i, ".page-container-transition[data-v-3486f593],\n.page-container[data-v-3486f593] {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n}\n.page-container-transition[data-v-3486f593] {\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container[data-v-3486f593] {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-leave-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-enter[data-v-3486f593],\n.slide-leave-to[data-v-3486f593] {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter[data-v-3486f593],\n.toRight .slide-leave-to[data-v-3486f593] {\n  transform: translateX(10vw);\n}\n#demo p[data-v-3486f593] {\n  position: fixed;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&","SentencePanelTransition.less"],"names":[],"mappings":"AAEA;;EAGE,kBAAA;EACA,eAAA;EACA,WAAA;ACFF;ADKA;EACE,YAAA;EACA,iBAAA;EACA,oBAAA;ACHF;ADQA;EACE,eAAA;EACA,WAAA;ACNF;AACA,mBAAmB;AACnB,gBAAgB;ADUhB;EACE,yBAAA;ACRF;ADUA;EAEE,yBAAA;ACTF;ADYA;;EAEE,4BAAA;ACVF;ADcA;;EAEI,2BAAA;ACZJ;ADiBA;EACE,eAAA;ACfF","file":"SentencePanelTransition.less","sourcesContent":["// https://cn.vuejs.org/v2/guide/transitions.html\n\n.page-container-transition,\n.page-container {\n  //background-color: red !important;\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n}\n\n.page-container-transition {\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n\n\n\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n  //top: 150px;\n}\n\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n  transition: all 0.3s ease;\n}\n\n.slide-enter, .slide-leave-to\n/* .slide-fade-leave-active for below version 2.1.8 */ {\n  transform: translateX(-10vw);\n  //opacity: 0;\n}\n\n.toRight {\n  .slide-enter, .slide-leave-to {\n    transform: translateX(10vw);\n  }\n}\n\n\n#demo p {\n  position: fixed;\n}",".page-container-transition,\n.page-container {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n}\n.page-container-transition {\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  transition: all 0.3s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter,\n.toRight .slide-leave-to {\n  transform: translateX(10vw);\n}\n#demo p {\n  position: fixed;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -257,7 +257,7 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _vm.localConfig.speakingInstructionStrategy !== "none"
+      _vm.localConfig.practiceMode === "speaking"
         ? _c("h2", { staticClass: "ui center aligned icon header" }, [
             _c("i", { staticClass: "conversation icon" }),
             _vm._v("\n    " + _vm._s(_vm.$t("Let's Practice!")) + "\n  ")
@@ -318,7 +318,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "page-transition-container" },
+        { staticClass: "page-container" },
         [
           !_vm.pageTransition
             ? _c("MainSentencePanel", {
@@ -345,7 +345,7 @@ var render = function() {
               expression: "pageTransition"
             }
           ],
-          staticClass: "page-transition-container",
+          staticClass: "page-container-transition",
           class: {
             toRight: _vm.pageTransitionToNext,
             toLeft: !_vm.pageTransitionToNext
