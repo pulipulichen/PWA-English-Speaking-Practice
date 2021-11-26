@@ -124,7 +124,11 @@ var render = function() {
         [_c("i", { staticClass: "step forward icon" })]
       ),
       _vm._v(" "),
-      _vm._m(0),
+      _vm.localConfig.practiceMode === "speaking"
+        ? _c("a", { staticClass: "ui icon item" }, [
+            _c("i", { staticClass: "comment outline icon" })
+          ])
+        : _vm._e(),
       _vm._v(" "),
       _c(
         "a",
@@ -150,16 +154,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "ui icon item" }, [
-      _c("i", { staticClass: "comment outline icon" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

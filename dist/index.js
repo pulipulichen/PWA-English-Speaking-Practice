@@ -32258,7 +32258,9 @@ let localConfig = {
   //lastPlayIndex: 5,
   repeatPractice: true,
   autoPlay: true,
-  practiceSentenceMask: 'word-block' // none translation word-block sentence-block
+  practiceSentenceMask: 'word-block', // none translation word-block sentence-block
+  practiceMode: 'speaking',  // speaking writing
+  speakingInstructionStrategy: 'free', // free sentence words-by-words word-by-word
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);

@@ -31,20 +31,24 @@
     </div>
     
     <div class="field">
-      <label>
+      <label for="voiceName">
         {{ $t('Voice') }}
       </label>
-      <select v-model="localConfig.voiceName">
+      <select 
+        id="voiceName"
+        v-model="localConfig.voiceName">
         <option v-for="name in voiceNames"
                 v-bind:value="name">{{ name }}</option>
       </select>
     </div>
     
     <div class="field">
-      <label>
+      <label for="practiceSentenceMask">
         {{ $t('Practice Mask') }}
       </label>
-      <select v-model="localConfig.practiceSentenceMask">
+      <select 
+        id="practiceSentenceMask"
+        v-model="localConfig.practiceSentenceMask">
         <option value="none">
           {{ $t('Do nothing') }}
         </option>
@@ -56,6 +60,47 @@
         </option>
         <option value="sentence-block">
           {{ $t('Sentence Block') }}
+        </option>
+      </select>
+    </div>
+    
+    <div class="field">
+      <label>
+        {{ $t('Practice Mode') }}
+      </label>
+      <div class="ui fluid buttons">
+        <button type="button"
+                class="ui button"
+                v-on:click="localConfig.practiceMode = 'speaking'"
+                v-bind:class="{'positive disabled': (localConfig.practiceMode === 'speaking')}">
+          {{ $t('Speaking') }}
+        </button>
+        <button type="button"
+                class="ui button"
+                v-on:click="localConfig.practiceMode = 'writing'"
+                v-bind:class="{'positive disabled': (localConfig.practiceMode === 'writing')}">
+          {{ $t('Writing') }}
+        </button>
+      </div>
+    </div>
+    
+    <div class="field"
+         v-if="localConfig.practiceMode === 'speaking'">
+      <label>
+        {{ $t('Speaking Instruction Strategy') }}
+      </label>
+      <select v-model="localConfig.speakingInstructionStrategy">
+        <option value="free">
+          {{ $t('Free') }}
+        </option>
+        <option value="sentence">
+          {{ $t('Full sentence') }}
+        </option>
+        <option value="words-by-words">
+          {{ $t('Words by words') }}
+        </option>
+        <option value="word-by-word">
+          {{ $t('Word by word') }}
         </option>
       </select>
     </div>

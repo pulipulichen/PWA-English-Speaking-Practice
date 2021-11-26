@@ -111,7 +111,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
-          _c("label", [
+          _c("label", { attrs: { for: "voiceName" } }, [
             _vm._v("\n        " + _vm._s(_vm.$t("Voice")) + "\n      ")
           ]),
           _vm._v(" "),
@@ -126,6 +126,7 @@ var render = function() {
                   expression: "localConfig.voiceName"
                 }
               ],
+              attrs: { id: "voiceName" },
               on: {
                 change: function($event) {
                   var $$selectedVal = Array.prototype.filter
@@ -154,7 +155,7 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
-          _c("label", [
+          _c("label", { attrs: { for: "practiceSentenceMask" } }, [
             _vm._v("\n        " + _vm._s(_vm.$t("Practice Mask")) + "\n      ")
           ]),
           _vm._v(" "),
@@ -169,6 +170,7 @@ var render = function() {
                   expression: "localConfig.practiceSentenceMask"
                 }
               ],
+              attrs: { id: "practiceSentenceMask" },
               on: {
                 change: function($event) {
                   var $$selectedVal = Array.prototype.filter
@@ -215,7 +217,135 @@ var render = function() {
               ])
             ]
           )
-        ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c("label", [
+            _vm._v("\n        " + _vm._s(_vm.$t("Practice Mode")) + "\n      ")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "ui fluid buttons" }, [
+            _c(
+              "button",
+              {
+                staticClass: "ui button",
+                class: {
+                  "positive disabled":
+                    _vm.localConfig.practiceMode === "speaking"
+                },
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.localConfig.practiceMode = "speaking"
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  "\n          " + _vm._s(_vm.$t("Speaking")) + "\n        "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "ui button",
+                class: {
+                  "positive disabled":
+                    _vm.localConfig.practiceMode === "writing"
+                },
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    _vm.localConfig.practiceMode = "writing"
+                  }
+                }
+              },
+              [
+                _vm._v(
+                  "\n          " + _vm._s(_vm.$t("Writing")) + "\n        "
+                )
+              ]
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _vm.localConfig.practiceMode === "speaking"
+          ? _c("div", { staticClass: "field" }, [
+              _c("label", [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.$t("Speaking Instruction Strategy")) +
+                    "\n      "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.localConfig.speakingInstructionStrategy,
+                      expression: "localConfig.speakingInstructionStrategy"
+                    }
+                  ],
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.$set(
+                        _vm.localConfig,
+                        "speakingInstructionStrategy",
+                        $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      )
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "free" } }, [
+                    _vm._v(
+                      "\n          " + _vm._s(_vm.$t("Free")) + "\n        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "sentence" } }, [
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.$t("Full sentence")) +
+                        "\n        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "words-by-words" } }, [
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.$t("Words by words")) +
+                        "\n        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "word-by-word" } }, [
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.$t("Word by word")) +
+                        "\n        "
+                    )
+                  ])
+                ]
+              )
+            ])
+          : _vm._e()
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "actions" }, [
