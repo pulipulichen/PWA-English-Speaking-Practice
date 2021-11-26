@@ -1,0 +1,4 @@
+<div class="SentenceDifference">
+  <span v-for="(word, i) in results"
+        v-bind:class="{added: word.added, removed: word.removed}">{{ word.value }}</span>
+</div>

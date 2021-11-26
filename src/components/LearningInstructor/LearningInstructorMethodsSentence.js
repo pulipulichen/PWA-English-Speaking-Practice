@@ -42,15 +42,20 @@ export default function (LearningInstructor) {
     }
 
     this.config.practiceSentence = null
+    this.config.practiceSentenceEvaluationResult = []
     this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
     //console.log(time)
     time = time + 1000
 
+    /*
     this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
       this.config.practiceSentence = processing
     })
+    */
+    this.config.practiceSentence = 'ok'
 
-    this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.currentSentence, this.config.practiceSentence)
+    await this.utils.AsyncUtils.sleep()
+    this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
     //console.log(result)
     //await this.utils.AsyncUtils.sleep(time)
 
@@ -58,7 +63,10 @@ export default function (LearningInstructor) {
     await this.utils.AsyncUtils.sleep(1000)
   }
 
-  LearningInstructor.methods.evaluateSentencePractice = function () {
-
+  LearningInstructor.methods.evaluateSentencePractice = function (source, target) {
+    source = this.utils.DictUtils.filterWord(source)
+    target = this.utils.DictUtils.filterWord(target)
+    
+    return this.utils.DiffUtils.diffWords(source, target)
   }
 }

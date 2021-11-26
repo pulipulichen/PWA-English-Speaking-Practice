@@ -1,4 +1,5 @@
 import CurrentSentence from './../CurrentSentence/CurrentSentence.vue'
+import SentenceDifference from './../SentenceDifference/SentenceDifference.vue'
 
 let MainSentencePanel = {
   props: ['config', 'localConfig', 'utils', 'sentence'],
@@ -13,7 +14,8 @@ let MainSentencePanel = {
     },
   },
   components: {
-    CurrentSentence
+    CurrentSentence,
+    SentenceDifference
   },
 //  computed: {
 //    

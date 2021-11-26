@@ -13,8 +13,18 @@
       <i class="conversation icon"></i>
       {{ $t(`Let's Practice!`) }}
     </template>
-    <template v-else>
-      {{ config.practiceSentence }}
+    <template v-if="config.practiceSentence">
+      <template v-if="config.practiceSentenceEvaluationResult.length === 0">
+        {{ config.practiceSentence }}
+      </template>
+      <template v-else>
+        <SentenceDifference 
+          ref="SentenceDifference"
+          v-bind:config="config"
+          v-bind:localConfig="localConfig"
+          v-bind:utils="utils">
+        </SentenceDifference>
+      </template>
     </template>
   </h2>
 

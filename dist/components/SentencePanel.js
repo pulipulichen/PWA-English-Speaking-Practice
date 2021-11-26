@@ -32,6 +32,22 @@ module.exports = function (Component) {
 
 /***/ }),
 
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml":
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml ***!
@@ -94,6 +110,24 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modul
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
 exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;ACCF;ADEA;EACE,WAAA;EACA,6BAAA;ACAF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n",".added {\n  color: red;\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -269,19 +303,71 @@ var render = function() {
                       "\n      " + _vm._s(_vm.$t("Let's Practice!")) + "\n    "
                     )
                   ]
-                : [
-                    _vm._v(
-                      "\n      " +
-                        _vm._s(_vm.config.practiceSentence) +
-                        "\n    "
-                    )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.config.practiceSentence
+                ? [
+                    _vm.config.practiceSentenceEvaluationResult.length === 0
+                      ? [
+                          _vm._v(
+                            "\n        " +
+                              _vm._s(_vm.config.practiceSentence) +
+                              "\n      "
+                          )
+                        ]
+                      : [
+                          _c("SentenceDifference", {
+                            ref: "SentenceDifference",
+                            attrs: {
+                              config: _vm.config,
+                              localConfig: _vm.localConfig,
+                              utils: _vm.utils
+                            }
+                          })
+                        ]
                   ]
+                : _vm._e()
             ],
             2
           )
         : _vm._e()
     ],
     1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "SentenceDifference" },
+    _vm._l(_vm.results, function(word, i) {
+      return _c(
+        "span",
+        { class: { added: word.added, removed: word.removed } },
+        [_vm._v(_vm._s(word.value))]
+      )
+    }),
+    0
   )
 }
 var staticRenderFns = []
@@ -548,6 +634,28 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
 var update = add("d816eaf2", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("06b7c8ab", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -926,6 +1034,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../CurrentSentence/CurrentSentence.vue */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.vue");
+/* harmony import */ var _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../SentenceDifference/SentenceDifference.vue */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue");
+
 
 
 let MainSentencePanel = {
@@ -941,7 +1051,8 @@ let MainSentencePanel = {
     },
   },
   components: {
-    CurrentSentence: _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    CurrentSentence: _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    SentenceDifference: _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
 //  computed: {
 //    
@@ -1031,6 +1142,167 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&":
+/*!****************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& ***!
+  \****************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?3df7":
+/*!********************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js& ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./SentenceDifference.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?9564");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?9564":
+/*!********************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js& ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let SentenceDifference = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+  },
+  computed: {
+    results () {
+      let results = []
+      
+      for (let i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {
+        if (i > 0) {
+          results.push({
+            //value: '&nbsp;'
+            value: ' '
+          })
+        }
+        
+        let r = this.config.practiceSentenceEvaluationResult[i]
+        r.value = r.value.trim()
+        results.push(this.config.practiceSentenceEvaluationResult[i])
+      }
+      
+      return results
+    } 
+  },
+  mounted() {
+    
+  },
+  methods: {
+    
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SentenceDifference);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue":
+/*!********************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&");
+/* harmony import */ var _SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SentenceDifference.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?3df7");
+/* empty/unused harmony star reexport *//* harmony import */ var _SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "e323347e",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/SentenceDifference/SentenceDifference.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

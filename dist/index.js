@@ -31802,7 +31802,7 @@ let config = {
   recognitionAbort: false,
   
   practiceSentence: null,
-  practiceSentenceEvaluationResult: null,
+  practiceSentenceEvaluationResult: [],
   
   practiceWord: null,
   currentSentenceIsSpeaking: false,
