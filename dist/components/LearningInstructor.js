@@ -394,12 +394,14 @@ __webpack_require__.r(__webpack_exports__);
     //console.log(time)
     time = time + 1000
 
-    this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
-      this.config.practiceSentence = processing
-    })
+    while (typeof(this.config.practiceSentence) !== 'string') {
+      this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+        this.config.practiceSentence = processing
+      })
+      await this.utils.AsyncUtils.sleep()
+    }
     //this.config.practiceSentence = 'ok'
 
-    await this.utils.AsyncUtils.sleep()
     this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
     let score = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
     //console.log(result)
@@ -433,7 +435,7 @@ __webpack_require__.r(__webpack_exports__);
     let error = 0
     results.forEach(r => {
       if (r.added) {
-        error++
+        error = error + r.value.split(' ').length
       } 
     })
     

@@ -43,6 +43,9 @@ export default {
       newWindow.focus();
   },
   filterWord: function (word) {
+    if (typeof(word) !== 'string') {
+      return word
+    }
     return word.replace(/[^\w\s]|_/g, "")
             .replace(/\s+/g, " ")
             .toLowerCase()
