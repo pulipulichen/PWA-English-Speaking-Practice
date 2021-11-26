@@ -257,10 +257,12 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c("h2", { staticClass: "ui center aligned icon header" }, [
-        _c("i", { staticClass: "conversation icon" }),
-        _vm._v("\n    " + _vm._s(_vm.$t("Let's Practice!")) + "\n  ")
-      ])
+      _vm.localConfig.speakingInstructionStrategy !== "none"
+        ? _c("h2", { staticClass: "ui center aligned icon header" }, [
+            _c("i", { staticClass: "conversation icon" }),
+            _vm._v("\n    " + _vm._s(_vm.$t("Let's Practice!")) + "\n  ")
+          ])
+        : _vm._e()
     ],
     1
   )

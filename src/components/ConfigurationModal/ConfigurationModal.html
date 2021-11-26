@@ -90,6 +90,9 @@
         {{ $t('Speaking Instruction Strategy') }}
       </label>
       <select v-model="localConfig.speakingInstructionStrategy">
+        <option value="none">
+          {{ $t('None') }}
+        </option>
         <option value="free">
           {{ $t('Free') }}
         </option>

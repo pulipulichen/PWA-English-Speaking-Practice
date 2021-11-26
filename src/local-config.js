@@ -9,7 +9,7 @@ let localConfig = {
   autoPlay: true,
   practiceSentenceMask: 'word-block', // none translation word-block sentence-block
   practiceMode: 'speaking',  // speaking writing
-  speakingInstructionStrategy: 'free', // free sentence words-by-words word-by-word
+  speakingInstructionStrategy: 'none', // none free sentence words-by-words word-by-word
 }
 
 export default localConfig

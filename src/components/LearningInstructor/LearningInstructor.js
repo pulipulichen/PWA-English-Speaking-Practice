@@ -75,17 +75,19 @@ let LearningInstructor = {
     },
     practice: async function (time) {
       
-      if (this.localConfig.practiceSentenceMask !== 'none') {
-        this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
-        //console.log(time)
-        time = time + 1000
-        await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
-        this.beep.play()
-        await this.utils.AsyncUtils.sleep(time)
-        this.config.currentSentenceMask = false
-        await this.utils.AsyncUtils.sleep(1000)
+      if (this.localConfig.speakingInstructionStrategy === 'none') {
+        return false
       }
+      
+      this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
+      //console.log(time)
+      time = time + 1000
+      await this.utils.AsyncUtils.sleep()
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+      this.beep.play()
+      await this.utils.AsyncUtils.sleep(time)
+      this.config.currentSentenceMask = false
+      await this.utils.AsyncUtils.sleep(1000)
     },
     
     goToPreviousSentence () {

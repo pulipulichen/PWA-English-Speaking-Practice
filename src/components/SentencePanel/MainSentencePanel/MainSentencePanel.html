@@ -7,7 +7,8 @@
     v-bind:sentence="sentence">
   </CurrentSentence>
 
-  <h2 class="ui center aligned icon header">
+  <h2 class="ui center aligned icon header"
+      v-if="localConfig.speakingInstructionStrategy !== 'none'">
     <i class="conversation icon"></i>
     {{ $t(`Let's Practice!`) }}
   </h2>
