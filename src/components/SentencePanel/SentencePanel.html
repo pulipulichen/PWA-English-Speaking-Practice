@@ -13,19 +13,18 @@
     </div>
   </div>
   
-  <div class="main-sentence-panel">
-    <CurrentSentence 
-      ref="CurrentSentence"
-      v-bind:config="config"
-      v-bind:localConfig="localConfig"
-      v-bind:utils="utils">
-    </CurrentSentence>
-    
-    <h2 class="ui center aligned icon header">
-      <i class="conversation icon"></i>
-      {{ $t(`Let's Practice!`) }}
-    </h2>
-  </div>
+  
+  <button v-on:click="show = !show">
+    Toggle
+  </button>
+  
+  <MainSentencePanel 
+    v-bind:config="config"
+    v-bind:localConfig="localConfig"
+    v-bind:utils="utils"
+    v-bind:sentence="currentSentence">
+  </MainSentencePanel>
+  
   
   <div class="ui segment sentence-segment"
        v-on:click="goToNextSentence">

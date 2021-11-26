@@ -70,6 +70,9 @@ Vue.config.errorHandler  = function(err, vm, info) {
   VueController.data.errors.push(err)
 }
 
+import VuePageTransition from 'vue-page-transition'
+Vue.use(VuePageTransition)
+
 // -----------------------
 
 let VueController = {

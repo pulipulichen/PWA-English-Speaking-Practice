@@ -1,5 +1,5 @@
 let CurrentSentence = {
-  props: ['config', 'localConfig', 'utils'],
+  props: ['config', 'localConfig', 'utils', 'sentence'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
@@ -14,13 +14,7 @@ let CurrentSentence = {
   },
   computed: {
     currentSentence () {
-      if (this.localConfig.playingIndex === null 
-              || this.localConfig.playingIndex === undefined
-              || !this.config.sentenceList
-              || !this.config.sentenceList[this.config.playingIndex]) {
-        return ''
-      }
-      return this.config.sentenceList[this.localConfig.playingIndex]
+      return this.sentence
     },
     words () {
       let parts = this.currentSentence.split(' ')

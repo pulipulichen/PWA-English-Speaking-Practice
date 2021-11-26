@@ -1,11 +1,13 @@
-import CurrentSentence from './CurrentSentence/CurrentSentence.vue'
+
 import WordModal from './WordModal/WordModal.vue'
+import MainSentencePanel from './MainSentencePanel/MainSentencePanel.vue'
 
 let SentencePanel = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
+      show: false
     }
   },
   watch: {
@@ -14,6 +16,14 @@ let SentencePanel = {
     },
   },
   computed: {
+    currentSentence () {
+      if (this.utils.LearningInstructor) {
+        return this.utils.LearningInstructor.currentSentence
+      }
+      else {
+        return ''
+      }
+    },
     previousSentence () {
       //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === 0) {
@@ -30,7 +40,8 @@ let SentencePanel = {
     }
   },
   components: {
-    CurrentSentence,
+//    CurrentSentence,
+    MainSentencePanel,
     WordModal
   },
 //  mounted() {
