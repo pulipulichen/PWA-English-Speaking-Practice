@@ -9,6 +9,7 @@ import './date-helper.js'
 import DictUtil from './DictUtil.js'
 import SpeechToTextUtil from './SpeechToTextUtil.js'
 import TextToSpeechUtil from './TextToSpeechUtil.js'
+import SoundUtil from './SoundUtil.js'
 
 export default {
   AsyncUtils,
@@ -19,5 +20,6 @@ export default {
   URLUtils,
   DictUtil,
   SpeechToTextUtil,
-  TextToSpeechUtil
+  TextToSpeechUtil,
+  SoundUtil
 }

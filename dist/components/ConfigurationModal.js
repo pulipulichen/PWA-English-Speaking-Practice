@@ -165,8 +165,8 @@ var render = function() {
                 {
                   name: "model",
                   rawName: "v-model",
-                  value: _vm.localConfig.practiceMask,
-                  expression: "localConfig.practiceMask"
+                  value: _vm.localConfig.practiceSentenceMask,
+                  expression: "localConfig.practiceSentenceMask"
                 }
               ],
               on: {
@@ -181,7 +181,7 @@ var render = function() {
                     })
                   _vm.$set(
                     _vm.localConfig,
-                    "practiceMask",
+                    "practiceSentenceMask",
                     $event.target.multiple ? $$selectedVal : $$selectedVal[0]
                   )
                 }

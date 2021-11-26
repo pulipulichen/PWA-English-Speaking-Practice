@@ -16,9 +16,9 @@ export default function (Index) {
     this.$refs.AritcleModal.open()
   }
   
-  Index.methods.speakCurrentSentence = async function () {
-    await this.$refs.SentencePanel.speakCurrentSentence()
-  }
+//  Index.methods.speakCurrentSentence = async function () {
+//    await this.$refs.SentencePanel.speakCurrentSentence()
+//  }
 
   /*
   Index.methods.initSynth = async function () {

@@ -107,11 +107,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sound/censor-beep-01.mp3 */ "./src/components/LearningInstructor/sound/censor-beep-01.mp3");
+/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__);
+
+
 let LearningInstructor = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
     return {
+      beep: null
     }
   },
   watch: {
@@ -130,10 +135,13 @@ let LearningInstructor = {
       return this.config.sentenceList[this.localConfig.playingIndex]
     },
   },
-//  mounted() {
-//    
-//  },
+  mounted() {
+    this.initBeep()
+  },
   methods: {
+    initBeep () {
+      this.beep = this.utils.SoundUtil.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
+    },
     speakCurrentSentence: async function () {
       if (this.config.currentSentenceIsSpeaking === true) {
         this.utils.TextToSpeechUtil.stopSpeak()
@@ -144,8 +152,44 @@ let LearningInstructor = {
       let time = await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)
       this.config.currentSentenceIsSpeaking = false
       
-      console.log(time)
-    }
+      await this.practice(time)
+      
+      if (this.localConfig.autoPlay === true) {
+        if (this.goToNextSentence()) {
+          await this.utils.AsyncUtils.sleep()
+          this.speakCurrentSentence()
+        }
+      }
+    },
+    practice: async function (time) {
+      
+      if (this.localConfig.practiceSentenceMask !== 'none') {
+        this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
+        //console.log(time)
+        time = time + 1000
+        await this.utils.AsyncUtils.sleep()
+        await this.utils.TextToSpeechUtil.startSpeak(this.$t(`Please speak.`))
+        this.beep.play()
+        await this.utils.AsyncUtils.sleep(time)
+        this.config.currentSentenceMask = false
+        await this.utils.AsyncUtils.sleep(1000)
+      }
+    },
+    
+    goToPreviousSentence () {
+      if (this.localConfig.playingIndex > 0) {
+        this.localConfig.playingIndex--
+        return true
+      }
+      return false
+    },
+    goToNextSentence () {
+      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+        this.localConfig.playingIndex++
+        return true
+      }
+      return false
+    },
   }
 }
 
@@ -240,6 +284,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/sound/censor-beep-01.mp3":
+/*!********************************************************************!*\
+  !*** ./src/components/LearningInstructor/sound/censor-beep-01.mp3 ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/asset/censor-beep-01.mp3";
 
 /***/ })
 

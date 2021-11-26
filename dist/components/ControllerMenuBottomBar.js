@@ -58,19 +58,19 @@ var render = function() {
               {
                 name: "model",
                 rawName: "v-model",
-                value: _vm.localConfig.repeatPractice,
-                expression: "localConfig.repeatPractice"
+                value: _vm.localConfig.autoPlay,
+                expression: "localConfig.autoPlay"
               }
             ],
             attrs: { type: "checkbox" },
             domProps: {
-              checked: Array.isArray(_vm.localConfig.repeatPractice)
-                ? _vm._i(_vm.localConfig.repeatPractice, null) > -1
-                : _vm.localConfig.repeatPractice
+              checked: Array.isArray(_vm.localConfig.autoPlay)
+                ? _vm._i(_vm.localConfig.autoPlay, null) > -1
+                : _vm.localConfig.autoPlay
             },
             on: {
               change: function($event) {
-                var $$a = _vm.localConfig.repeatPractice,
+                var $$a = _vm.localConfig.autoPlay,
                   $$el = $event.target,
                   $$c = $$el.checked ? true : false
                 if (Array.isArray($$a)) {
@@ -78,27 +78,23 @@ var render = function() {
                     $$i = _vm._i($$a, $$v)
                   if ($$el.checked) {
                     $$i < 0 &&
-                      _vm.$set(
-                        _vm.localConfig,
-                        "repeatPractice",
-                        $$a.concat([$$v])
-                      )
+                      _vm.$set(_vm.localConfig, "autoPlay", $$a.concat([$$v]))
                   } else {
                     $$i > -1 &&
                       _vm.$set(
                         _vm.localConfig,
-                        "repeatPractice",
+                        "autoPlay",
                         $$a.slice(0, $$i).concat($$a.slice($$i + 1))
                       )
                   }
                 } else {
-                  _vm.$set(_vm.localConfig, "repeatPractice", $$c)
+                  _vm.$set(_vm.localConfig, "autoPlay", $$c)
                 }
               }
             }
           }),
           _vm._v(" "),
-          _c("label", [_vm._v(_vm._s(_vm.$t("Practice")))])
+          _c("label", [_vm._v(_vm._s(_vm.$t("Auto")))])
         ])
       ])
     ]),
@@ -233,14 +229,10 @@ let ControllerMenuBottomBar = {
   methods: {
     
     goToPreviousSentence () {
-      if (this.localConfig.playingIndex > 0) {
-        this.localConfig.playingIndex--
-      }
+      this.utils.LearningInstructor.goToPreviousSentence()
     },
     goToNextSentence () {
-      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
-        this.localConfig.playingIndex++
-      }
+      this.utils.LearningInstructor.goToNextSentence()
     },
     speakCurrentSentence: async function () {
 //      if (this.isSpeaking === true) {

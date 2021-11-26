@@ -31262,9 +31262,9 @@ __webpack_require__.r(__webpack_exports__);
     this.$refs.AritcleModal.open()
   }
   
-  Index.methods.speakCurrentSentence = async function () {
-    await this.$refs.SentencePanel.speakCurrentSentence()
-  }
+//  Index.methods.speakCurrentSentence = async function () {
+//    await this.$refs.SentencePanel.speakCurrentSentence()
+//  }
 
   /*
   Index.methods.initSynth = async function () {
@@ -31602,7 +31602,9 @@ let config = {
   practiceWord: null,
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,
-  currentSentenceMask: 'sentence-block',
+  //currentSentenceMask: 'translation',
+  //currentSentenceMask: 'sentence-block',
+  currentSentenceMask: false,
 }
 
 
@@ -32049,7 +32051,8 @@ let localConfig = {
   playingIndex: 0,
   //lastPlayIndex: 5,
   repeatPractice: true,
-  practiceMask: 'none' // none translation word-block sentence-block
+  autoPlay: true,
+  practiceSentenceMask: 'word-block' // none translation word-block sentence-block
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);
@@ -32399,6 +32402,37 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/utils/SoundUtil.js":
+/*!********************************!*\
+  !*** ./src/utils/SoundUtil.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  create: function (soundURL) {
+    //console.log(soundURL)
+    
+    var audio = new Audio(soundURL);
+    //audio.play()
+    
+    return {
+      play () {
+        audio.currentTime = 0
+        audio.play()
+      },
+      stop () {
+        audio.pause()
+        audio.currentTime = 0
+      }
+    }
+  },
+});
+
+/***/ }),
+
 /***/ "./src/utils/SpeechToTextUtil.js":
 /*!***************************************!*\
   !*** ./src/utils/SpeechToTextUtil.js ***!
@@ -32697,6 +32731,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _DictUtil_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DictUtil.js */ "./src/utils/DictUtil.js");
 /* harmony import */ var _SpeechToTextUtil_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SpeechToTextUtil.js */ "./src/utils/SpeechToTextUtil.js");
 /* harmony import */ var _TextToSpeechUtil_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TextToSpeechUtil.js */ "./src/utils/TextToSpeechUtil.js");
+/* harmony import */ var _SoundUtil_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SoundUtil.js */ "./src/utils/SoundUtil.js");
+
 
 
 
@@ -32718,7 +32754,8 @@ __webpack_require__.r(__webpack_exports__);
   URLUtils: _URLUtils_js__WEBPACK_IMPORTED_MODULE_5__["default"],
   DictUtil: _DictUtil_js__WEBPACK_IMPORTED_MODULE_7__["default"],
   SpeechToTextUtil: _SpeechToTextUtil_js__WEBPACK_IMPORTED_MODULE_8__["default"],
-  TextToSpeechUtil: _TextToSpeechUtil_js__WEBPACK_IMPORTED_MODULE_9__["default"]
+  TextToSpeechUtil: _TextToSpeechUtil_js__WEBPACK_IMPORTED_MODULE_9__["default"],
+  SoundUtil: _SoundUtil_js__WEBPACK_IMPORTED_MODULE_10__["default"]
 });
 
 /***/ })

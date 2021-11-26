@@ -6,7 +6,8 @@ let localConfig = {
   playingIndex: 0,
   //lastPlayIndex: 5,
   repeatPractice: true,
-  practiceMask: 'none' // none translation word-block sentence-block
+  autoPlay: true,
+  practiceSentenceMask: 'word-block' // none translation word-block sentence-block
 }
 
 export default localConfig

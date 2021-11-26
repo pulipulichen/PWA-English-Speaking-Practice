@@ -38,18 +38,14 @@ let SentencePanel = {
 //  },
   methods: {
     goToPreviousSentence () {
-      if (this.localConfig.playingIndex > 0) {
-        this.localConfig.playingIndex--
-      }
+      this.utils.LearningInstructor.goToPreviousSentence()
     },
     goToNextSentence () {
-      if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
-        this.localConfig.playingIndex++
-      }
+      this.utils.LearningInstructor.goToNextSentence()
     },
-    speakCurrentSentence: async function () {
-      await this.$refs.CurrentSentence.speakCurrentSentence()
-    }
+//    speakCurrentSentence: async function () {
+//      await this.$refs.CurrentSentence.speakCurrentSentence()
+//    }
   }
 }
 
