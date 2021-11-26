@@ -340,6 +340,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
 
   LearningInstructor.methods.speakCurrentSentence = async function () {
@@ -349,6 +350,7 @@ __webpack_require__.r(__webpack_exports__);
       await this.utils.AsyncUtils.sleep(100)
       this.config.currentSentenceIsSpeaking = false
       this.tryToStop = false
+      this.config.firstSpeakHint = true
       return false
     }
 
@@ -361,8 +363,11 @@ __webpack_require__.r(__webpack_exports__);
 
     if (this.localConfig.speakingInstructionStrategy !== 'none') {
 
-      await this.utils.AsyncUtils.sleep()
-      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+      if (this.config.firstSpeakHint) {
+        await this.utils.AsyncUtils.sleep()
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+        this.config.firstSpeakHint = false
+      }
       this.beep.play()
 
       await this.practiceSentence(time)
@@ -389,20 +394,32 @@ __webpack_require__.r(__webpack_exports__);
     //console.log(time)
     time = time + 1000
 
-    /*
     this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
       this.config.practiceSentence = processing
     })
-    */
-    this.config.practiceSentence = 'ok'
+    //this.config.practiceSentence = 'ok'
 
     await this.utils.AsyncUtils.sleep()
     this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
+    let score = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
     //console.log(result)
     //await this.utils.AsyncUtils.sleep(time)
+    await this.utils.AsyncUtils.sleep()
+    if (score === 1) {
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Wonderful!`))
+    }
+    else if (score >= 0.7) {
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Great.`))
+    }
+    else if (score >= 0.5) {
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Good.`))
+    }
+    else {
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(`OK.`))
+    }
 
     this.config.currentSentenceMask = false
-    await this.utils.AsyncUtils.sleep(1000)
+    await this.utils.AsyncUtils.sleep(2000)
   }
 
   LearningInstructor.methods.evaluateSentencePractice = function (source, target) {
@@ -410,6 +427,28 @@ __webpack_require__.r(__webpack_exports__);
     target = this.utils.DictUtils.filterWord(target)
     
     return this.utils.DiffUtils.diffWords(source, target)
+  }
+  
+  LearningInstructor.methods.scoreEvaluate = function (results) {
+    let error = 0
+    results.forEach(r => {
+      if (r.added) {
+        error++
+      } 
+    })
+    
+    if (error > 5) {
+      return 0
+    }
+    else if (error <= 5 && error > 2) {
+      return 0.5
+    }
+    else if (error >= 1 && error <= 2) {
+      return 0.7
+    }
+    else {
+      return 1
+    }
   }
 });
 
@@ -448,6 +487,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     'localConfig.playingIndex' () {
       this.config.practiceSentence = null
+    },
+    'autoPlay.autoPlay' () {
+      this.config.firstSpeakHint = true
     }
   }
 });

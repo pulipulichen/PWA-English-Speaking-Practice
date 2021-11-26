@@ -5,6 +5,9 @@ export default function (LearningInstructor) {
     },
     'localConfig.playingIndex' () {
       this.config.practiceSentence = null
+    },
+    'autoPlay.autoPlay' () {
+      this.config.firstSpeakHint = true
     }
   }
 }

@@ -20,6 +20,7 @@ let config = {
   voices: null,
   //voiceName: null,
   voiceNameList: [],
+  firstSpeakHint: true,
 
   //pitch: 1,
   //rate: 1,
