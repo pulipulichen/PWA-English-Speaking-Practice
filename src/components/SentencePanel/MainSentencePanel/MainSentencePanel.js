@@ -1,5 +1,5 @@
 import CurrentSentence from './../CurrentSentence/CurrentSentence.vue'
-import SentenceDifference from './../SentenceDifference/SentenceDifference.vue'
+import PracticeSentencePanel from './../PracticeSentencePanel/PracticeSentencePanel.vue'
 
 let MainSentencePanel = {
   props: ['config', 'localConfig', 'utils', 'sentence'],
@@ -15,26 +15,16 @@ let MainSentencePanel = {
   },
   components: {
     CurrentSentence,
-    SentenceDifference
+    PracticeSentencePanel
   },
   computed: {
-    isPracticing () {
-      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0)
-    },
-    readEvaluationResult () {
-      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
-    }
+
   },
 //  mounted() {
 //    
 //  },
   methods: {
-    practice () {
-      if (!this.utils.LearningInstructor) {
-        return false
-      }
-      this.utils.LearningInstructor.practiceSentence()
-    }
+
   }
 }
 

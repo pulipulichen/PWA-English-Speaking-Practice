@@ -1,0 +1,50 @@
+
+.trigger {
+  //margin: 0px auto 20px;
+  //width: 150px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: -1rem;
+  position: relative;
+  text-align: center;
+}
+
+.popup {
+  position: relative;
+  left: 0;
+  top: 6rem;
+  transform: translate3d(0, -50%, 0);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+  background: none;
+  border-radius: 0.285714rem;
+  width: 100%;
+}
+
+.popup:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+  background: #fff;
+  position: absolute;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  top: -10px;
+  left: calc(50% - 10px);
+}
+
+.inner {
+  padding: 30px 1rem;
+  background: #fff;
+  border-radius: 0.285714rem;
+  
+  max-height: calc(30vh - 2rem);
+  height: calc(30vh - 2rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.wait-practice {
+  cursor: wait;
+  user-select: none;
+}

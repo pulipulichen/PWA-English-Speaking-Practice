@@ -348,7 +348,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-let debugPractice = false
+let debugPractice = true
 
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
 
@@ -443,8 +443,11 @@ let debugPractice = false
       }
     }
     else {
-      this.config.practiceSentence = 'ok ok not ok'
-      await this.utils.AsyncUtils.sleep(10000)
+      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
+      for (let i = 0; i < 3; i++) {
+        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
+      }
+      await this.utils.AsyncUtils.sleep(100)
     }
     //this.config.practiceSentence = 'ok'
 

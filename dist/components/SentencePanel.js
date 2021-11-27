@@ -32,6 +32,22 @@ module.exports = function (Component) {
 
 /***/ }),
 
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml ***!
@@ -91,7 +107,7 @@ module.exports = function (Component) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".current-sentence-segments[data-v-0a8eff7b] {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n.current-sentence-segments .current-sentence[data-v-0a8eff7b] {\n  max-height: 30vh;\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.current-sentence-segments .current-sentence.isSpeaking[data-v-0a8eff7b] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.word.speakable[data-v-0a8eff7b] {\n  cursor: pointer;\n}\n.word.speakable.isSpeaking[data-v-0a8eff7b] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.target[data-v-0a8eff7b] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-0a8eff7b],\n.target .isSpeaking[data-v-0a8eff7b] {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing[data-v-0a8eff7b] {\n  background-color: yellow;\n  color: black;\n}\n.word-block .word.speakable[data-v-0a8eff7b] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.sentence-block[data-v-0a8eff7b] {\n  text-align: center;\n}\n.sentence-block h2[data-v-0a8eff7b] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n}\n.sentence-block h2 .word[data-v-0a8eff7b] {\n  visibility: hidden;\n}\n.sentence-block > h2[data-v-0a8eff7b] {\n  transition: 0.5s;\n}\n.sentence-block > h2 .word[data-v-0a8eff7b] {\n  transition: 0.5s;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&","CurrentSentence.less"],"names":[],"mappings":"AACA;EACE,8BAAA;EACA,+BAAA;ACAF;ADFA;EAKI,gBAAA;EACA,kBAAA;EACA,gBAAA;ACAJ;ADEI;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACAN;ADMA;EACE,eAAA;ACJF;ADME;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACJJ;ADQA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACNF;ADQE;;EAEE,wBAAA;EACA,YAAA;ACNJ;ADSE;EACE,wBAAA;EACA,YAAA;ACPJ;ADWA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACTF;ADYA;EACE,kBAAA;ACVF;ADSA;EAII,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;EAEA,qBAAA;EACA,iBAAA;EACA,kBAAA;ACXJ;ADAA;EAeM,kBAAA;ACZN;ADiBA;EACE,gBAAA;ACfF;ADcA;EAII,gBAAA;ACfJ","file":"CurrentSentence.less","sourcesContent":["\n.current-sentence-segments {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n  \n  .current-sentence {\n    max-height: 30vh;\n    overflow-x: hidden;\n    overflow-y: auto;\n    \n    &.isSpeaking {\n      cursor: not-allowed;\n      background-color: yellow;\n      color: black;\n    }\n  }\n}\n\n\n.word.speakable {\n  cursor: pointer;\n\n  &.isSpeaking {\n    cursor: not-allowed;\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  &.isPracticing {\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.word-block .word.speakable {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.sentence-block {\n  text-align: center;\n  \n  h2 {\n    color: gray;\n    background-color: gray;\n    border-radius: 1rem;\n    -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n\n    display: inline-block;\n    margin-left: auto;\n    margin-right: auto;\n\n\n    .word {\n      visibility: hidden;\n    }\n  }\n}\n\n.sentence-block > h2 {\n  transition: .5s;\n  \n  .word {\n    transition: .5s;\n  }\n}",".current-sentence-segments {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n.current-sentence-segments .current-sentence {\n  max-height: 30vh;\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.current-sentence-segments .current-sentence.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.word.speakable {\n  cursor: pointer;\n}\n.word.speakable.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing {\n  background-color: yellow;\n  color: black;\n}\n.word-block .word.speakable {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.sentence-block {\n  text-align: center;\n}\n.sentence-block h2 {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n}\n.sentence-block h2 .word {\n  visibility: hidden;\n}\n.sentence-block > h2 {\n  transition: 0.5s;\n}\n.sentence-block > h2 .word {\n  transition: 0.5s;\n}\n"]}]);
+exports.push([module.i, ".current-sentence-segments[data-v-0a8eff7b] {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n.current-sentence-segments .current-sentence[data-v-0a8eff7b] {\n  max-height: calc(25vh - 2rem);\n  height: calc(25vh - 2rem);\n  /*    background-color: green;*/\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.current-sentence-segments .current-sentence.isSpeaking[data-v-0a8eff7b] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.word.speakable[data-v-0a8eff7b] {\n  cursor: pointer;\n}\n.word.speakable.isSpeaking[data-v-0a8eff7b] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.target[data-v-0a8eff7b] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-0a8eff7b],\n.target .isSpeaking[data-v-0a8eff7b] {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing[data-v-0a8eff7b] {\n  background-color: yellow;\n  color: black;\n}\n.word-block .word.speakable[data-v-0a8eff7b] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.sentence-block[data-v-0a8eff7b] {\n  text-align: center;\n}\n.sentence-block h2[data-v-0a8eff7b] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n}\n.sentence-block h2 .word[data-v-0a8eff7b] {\n  visibility: hidden;\n}\n.sentence-block > h2[data-v-0a8eff7b] {\n  transition: 0.5s;\n}\n.sentence-block > h2 .word[data-v-0a8eff7b] {\n  transition: 0.5s;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&","CurrentSentence.less"],"names":[],"mappings":"AACA;EACE,8BAAA;EACA,+BAAA;ACAF;ADFA;EAKI,6BAAA;EACA,yBAAA;ECAF,+BAA+B;EDG7B,kBAAA;EACA,gBAAA;ACDJ;ADGI;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACDN;ADOA;EACE,eAAA;ACLF;ADOE;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACLJ;ADSA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACPF;ADSE;;EAEE,wBAAA;EACA,YAAA;ACPJ;ADUE;EACE,wBAAA;EACA,YAAA;ACRJ;ADYA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACVF;ADaA;EACE,kBAAA;ACXF;ADUA;EAII,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;EAEA,qBAAA;EACA,iBAAA;EACA,kBAAA;ACZJ;ADCA;EAeM,kBAAA;ACbN;ADkBA;EACE,gBAAA;AChBF;ADeA;EAII,gBAAA;AChBJ","file":"CurrentSentence.less","sourcesContent":["\n.current-sentence-segments {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n  \n  .current-sentence {\n    max-height: calc(25vh - 2rem);\n    height: calc(25vh - 2rem);\n/*    background-color: green;*/\n    \n    overflow-x: hidden;\n    overflow-y: auto;\n    \n    &.isSpeaking {\n      cursor: not-allowed;\n      background-color: yellow;\n      color: black;\n    }\n  }\n}\n\n\n.word.speakable {\n  cursor: pointer;\n\n  &.isSpeaking {\n    cursor: not-allowed;\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  &.isPracticing {\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.word-block .word.speakable {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.sentence-block {\n  text-align: center;\n  \n  h2 {\n    color: gray;\n    background-color: gray;\n    border-radius: 1rem;\n    -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n\n    display: inline-block;\n    margin-left: auto;\n    margin-right: auto;\n\n\n    .word {\n      visibility: hidden;\n    }\n  }\n}\n\n.sentence-block > h2 {\n  transition: .5s;\n  \n  .word {\n    transition: .5s;\n  }\n}",".current-sentence-segments {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n.current-sentence-segments .current-sentence {\n  max-height: calc(25vh - 2rem);\n  height: calc(25vh - 2rem);\n  /*    background-color: green;*/\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.current-sentence-segments .current-sentence.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.word.speakable {\n  cursor: pointer;\n}\n.word.speakable.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing {\n  background-color: yellow;\n  color: black;\n}\n.word-block .word.speakable {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.sentence-block {\n  text-align: center;\n}\n.sentence-block h2 {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n}\n.sentence-block h2 .word {\n  visibility: hidden;\n}\n.sentence-block > h2 {\n  transition: 0.5s;\n}\n.sentence-block > h2 .word {\n  transition: 0.5s;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -109,7 +125,43 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint[data-v-0ac19693] {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing[data-v-0ac19693] {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger[data-v-0ac19693] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-0ac19693] {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n.popup[data-v-0ac19693]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-0ac19693] {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n.wait-practice[data-v-0ac19693] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF;ADGA;EACE,eAAA;EAEA,qBAAA;EACA,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,eAAA;ACFF;ADIE;EACE,YAAA;EACA,wBAAA;EACA,YAAA;EAEA,iBAAA;ACHJ;ADOA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACPF;ADUA;EACE,kBAAA;EACA,OAAA;EACA,SAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,mBAAA;EACA,WAAA;ACRF;ADWA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACTF;ADYA;EACE,eAAA;EACA,gBAAA;EACA,oBAAA;ACVF;ADaA;EACE,YAAA;EACA,iBAAA;ACXF","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n\n.practice-hint {\n  cursor: pointer;\n  \n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n  \n  &.practicing {\n    cursor: wait;\n    background-color: yellow;\n    color: black;\n    //pointer-events: none;\n    user-select: none;\n  }\n}\n\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
+exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint[data-v-0ac19693] {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing[data-v-0ac19693] {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF;ADGA;EACE,eAAA;EAEA,qBAAA;EACA,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,eAAA;ACFF;ADIE;EACE,YAAA;EACA,wBAAA;EACA,YAAA;EAEA,iBAAA;ACHJ","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n\n.practice-hint {\n  cursor: pointer;\n  \n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n  \n  &.practicing {\n    cursor: wait;\n    background-color: yellow;\n    color: black;\n    //pointer-events: none;\n    user-select: none;\n  }\n}",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".trigger[data-v-0ac19693] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-0ac19693] {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n.popup[data-v-0ac19693]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-0ac19693] {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.wait-practice[data-v-0ac19693] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&","MainSentencePanelPractice.less"],"names":[],"mappings":"AACA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACFF;ADKA;EACE,kBAAA;EACA,OAAA;EACA,SAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,0BAAA;EACA,WAAA;ACHF;ADMA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACJF;ADOA;EACE,kBAAA;EACA,gBAAA;EACA,0BAAA;EAEA,6BAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;ACNF;ADSA;EACE,YAAA;EACA,iBAAA;ACPF","file":"MainSentencePanelPractice.less","sourcesContent":["\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  \n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n",".trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".trigger[data-v-f30771e2] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-f30771e2] {\n  position: fixed;\n  left: 0;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n.popup[data-v-f30771e2]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-f30771e2] {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n}\n.inner .row .column[data-v-f30771e2] {\n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice[data-v-f30771e2] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&","PracticeSentencePanel.less"],"names":[],"mappings":"AACA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACFF;ADKA;EACE,eAAA;EACA,OAAA;EACA,sBAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,0BAAA;EACA,WAAA;ACHF;ADMA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACJF;ADOA;EACE,kBAAA;EACA,gBAAA;EACA,0BAAA;EAEA,oBAAA;ACNF;ADCA;EAUM,6BAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,iBAAA;EACA,kBAAA;ACRN;ADeA;EACE,YAAA;EACA,iBAAA;ACbF","file":"PracticeSentencePanel.less","sourcesContent":["\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: fixed;\n  left: 0;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  //margin: 1rem !important;\n  margin: 0 !important;\n  \n  .row {\n    \n    .column {\n      max-height: calc(30vh - 2rem);\n      height: calc(30vh - 2rem);\n      overflow-y: auto;\n      overflow-x: hidden;\n      margin-left: 1rem;\n      margin-right: 1rem;\n    }\n  }\n  \n    \n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n",".trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: fixed;\n  left: 0;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n}\n.inner .row .column {\n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -212,43 +264,52 @@ var render = function() {
     [
       _c(
         "div",
-        {
-          staticClass: "ui segment current-sentence",
-          class: _vm.computeCurrentSentenceClasses
-        },
+        { staticClass: "ui segment", class: _vm.computeCurrentSentenceClasses },
         [
           _c(
-            "h2",
-            { staticClass: "ui center aligned header" },
+            "div",
+            { staticClass: "ui grid middle aligned current-sentence" },
             [
-              _vm.config.currentSentenceMask !== "translation"
-                ? _vm._l(_vm.words, function(word, i) {
-                    return _c(
-                      "span",
-                      {
-                        staticClass: "word",
-                        class: _vm.computedWordClasses(word, i),
-                        on: {
-                          click: function($event) {
-                            $event.stopPropagation()
-                            return _vm.startSpeakWord(word, i)
-                          }
-                        }
-                      },
-                      [_vm._v(_vm._s(word))]
-                    )
-                  })
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.config.currentSentenceMask === "translation"
-                ? [
-                    _vm._v(
-                      "\n        " + _vm._s(_vm.translationMask) + "\n      "
-                    )
-                  ]
-                : _vm._e()
-            ],
-            2
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "column" }, [
+                  _c(
+                    "h2",
+                    { staticClass: "ui center aligned header" },
+                    [
+                      _vm.config.currentSentenceMask !== "translation"
+                        ? _vm._l(_vm.words, function(word, i) {
+                            return _c(
+                              "span",
+                              {
+                                staticClass: "word",
+                                class: _vm.computedWordClasses(word, i),
+                                on: {
+                                  click: function($event) {
+                                    $event.stopPropagation()
+                                    return _vm.startSpeakWord(word, i)
+                                  }
+                                }
+                              },
+                              [_vm._v(_vm._s(word))]
+                            )
+                          })
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.config.currentSentenceMask === "translation"
+                        ? [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(_vm.translationMask) +
+                                "\n            "
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  )
+                ])
+              ])
+            ]
           )
         ]
       )
@@ -291,111 +352,149 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _vm.localConfig.practiceMode === "speaking"
-        ? _c(
-            "div",
-            [
-              !_vm.config.practiceSentence
-                ? _c(
-                    "h2",
+      _c("PracticeSentencePanel", {
+        ref: "PracticeSentencePanel",
+        attrs: {
+          config: _vm.config,
+          localConfig: _vm.localConfig,
+          utils: _vm.utils
+        }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.localConfig.practiceMode === "speaking"
+    ? _c(
+        "div",
+        { staticClass: "PracticeSentencePanel" },
+        [
+          !_vm.config.practiceSentence
+            ? _c(
+                "h2",
+                {
+                  staticClass: "ui center aligned icon header practice-hint",
+                  on: { click: _vm.practice }
+                },
+                [
+                  _c("i", { staticClass: "conversation icon" }),
+                  _vm._v(
+                    "\n      " + _vm._s(_vm.$t("Let's Practice!")) + "\n    "
+                  )
+                ]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.config.practiceSentence
+            ? [
+                _c("div", { staticClass: "trigger" }, [
+                  _c(
+                    "div",
                     {
-                      staticClass:
-                        "ui center aligned icon header practice-hint",
+                      staticClass: "practice-hint",
+                      class: { practicing: _vm.isPracticing },
                       on: { click: _vm.practice }
                     },
                     [
                       _c("i", { staticClass: "conversation icon" }),
-                      _vm._v(
-                        "\n      " +
-                          _vm._s(_vm.$t("Let's Practice!")) +
-                          "\n    "
-                      )
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _vm.config.practiceSentence
-                ? [
-                    _c("div", { staticClass: "trigger" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "practice-hint",
-                          class: { practicing: _vm.isPracticing },
-                          on: { click: _vm.practice }
-                        },
-                        [
-                          _c("i", { staticClass: "conversation icon" }),
-                          _vm._v(" "),
-                          _vm.isPracticing
-                            ? [
-                                _vm._v(
-                                  "\n            " +
-                                    _vm._s(
-                                      _vm.$t("Keep going... Keep going... ")
-                                    ) +
-                                    "\n          "
-                                )
-                              ]
-                            : _vm._e(),
-                          _vm._v(" "),
-                          _vm.readEvaluationResult
-                            ? [
-                                _vm._v(
-                                  "\n            " +
-                                    _vm._s(_vm.$t("Practice again?")) +
-                                    "\n          "
-                                )
-                              ]
-                            : _vm._e()
-                        ],
-                        2
-                      ),
                       _vm._v(" "),
-                      _c("div", { staticClass: "popup" }, [
-                        _c("div", { staticClass: "inner" }, [
-                          _vm.config.practiceSentenceEvaluationResult.length ===
-                          0
-                            ? _c(
-                                "h2",
-                                {
-                                  staticClass:
-                                    "ui center aligned header wait-practice"
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                " +
-                                      _vm._s(_vm.config.practiceSentence) +
-                                      "\n            "
-                                  )
-                                ]
-                              )
-                            : _c(
-                                "h2",
-                                [
-                                  _c("SentenceDifference", {
-                                    ref: "SentenceDifference",
-                                    attrs: {
-                                      config: _vm.config,
-                                      localConfig: _vm.localConfig,
-                                      utils: _vm.utils
-                                    }
-                                  })
-                                ],
-                                1
-                              )
+                      _vm.isPracticing
+                        ? [
+                            _vm._v(
+                              "\n            " +
+                                _vm._s(_vm.$t("Keep going... Keep going... ")) +
+                                "\n          "
+                            )
+                          ]
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.readEvaluationResult
+                        ? [
+                            _vm._v(
+                              "\n            " +
+                                _vm._s(_vm.$t("Practice again?")) +
+                                "\n          "
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "popup" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "inner ui grid middle aligned current-sentence"
+                      },
+                      [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "column" }, [
+                            _vm.config.practiceSentenceEvaluationResult
+                              .length === 0
+                              ? _c(
+                                  "h2",
+                                  {
+                                    staticClass:
+                                      "ui center aligned header wait-practice"
+                                  },
+                                  [
+                                    _vm._v(
+                                      "\n                  " +
+                                        _vm._s(_vm.config.practiceSentence) +
+                                        "\n                "
+                                    )
+                                  ]
+                                )
+                              : _c(
+                                  "h2",
+                                  [
+                                    _c("SentenceDifference", {
+                                      ref: "SentenceDifference",
+                                      attrs: {
+                                        config: _vm.config,
+                                        localConfig: _vm.localConfig,
+                                        utils: _vm.utils
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                          ])
                         ])
-                      ])
-                    ])
-                  ]
-                : _vm._e()
-            ],
-            2
-          )
-        : _vm._e()
-    ],
-    1
-  )
+                      ]
+                    )
+                  ])
+                ])
+              ]
+            : _vm._e()
+        ],
+        2
+      )
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -749,6 +848,50 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
 var update = add("d816eaf2", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("ac85fea0", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("22467630", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -1149,7 +1292,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../CurrentSentence/CurrentSentence.vue */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.vue");
-/* harmony import */ var _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../SentenceDifference/SentenceDifference.vue */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue");
+/* harmony import */ var _PracticeSentencePanel_PracticeSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../PracticeSentencePanel/PracticeSentencePanel.vue */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue");
 
 
 
@@ -1167,26 +1310,16 @@ let MainSentencePanel = {
   },
   components: {
     CurrentSentence: _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
-    SentenceDifference: _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+    PracticeSentencePanel: _PracticeSentencePanel_PracticeSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   computed: {
-    isPracticing () {
-      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0)
-    },
-    readEvaluationResult () {
-      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
-    }
+
   },
 //  mounted() {
 //    
 //  },
   methods: {
-    practice () {
-      if (!this.utils.LearningInstructor) {
-        return false
-      }
-      this.utils.LearningInstructor.practiceSentence()
-    }
+
   }
 }
 
@@ -1222,8 +1355,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&");
 /* harmony import */ var _MainSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&?20c6");
 /* empty/unused harmony star reexport *//* harmony import */ var _MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml");
+/* harmony import */ var _MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml");
+
 
 
 
@@ -1232,7 +1367,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
   _MainSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -1245,7 +1380,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* custom blocks */
 
-if (typeof _MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+if (typeof _MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__["default"] === 'function') Object(_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__["default"])(component)
 
 /* hot reload */
 if (false) { var api; }
@@ -1267,6 +1402,184 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&":
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& ***!
+  \**********************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?4da5":
+/*!**************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../SentenceDifference/SentenceDifference.vue */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue");
+
+
+let PracticeSentencePanel = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+  },
+  components: {
+    SentenceDifference: _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  computed: {
+    isPracticing () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0)
+    },
+    readEvaluationResult () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
+    }    
+  },
+  mounted() {
+    setTimeout(() => {
+      this.practice()
+    }, 3000)
+  },
+  methods: {
+    practice () {
+      if (!this.utils.LearningInstructor) {
+        return false
+      }
+      this.utils.LearningInstructor.practiceSentence()
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (PracticeSentencePanel);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?7b99":
+/*!**************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./PracticeSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?4da5");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue":
+/*!**************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&");
+/* harmony import */ var _PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PracticeSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?7b99");
+/* empty/unused harmony star reexport *//* harmony import */ var _PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "f30771e2",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

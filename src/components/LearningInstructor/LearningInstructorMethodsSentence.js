@@ -1,4 +1,4 @@
-let debugPractice = false
+let debugPractice = true
 
 export default function (LearningInstructor) {
 
@@ -93,8 +93,11 @@ export default function (LearningInstructor) {
       }
     }
     else {
-      this.config.practiceSentence = 'ok ok not ok'
-      await this.utils.AsyncUtils.sleep(10000)
+      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
+      for (let i = 0; i < 3; i++) {
+        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
+      }
+      await this.utils.AsyncUtils.sleep(100)
     }
     //this.config.practiceSentence = 'ok'
 

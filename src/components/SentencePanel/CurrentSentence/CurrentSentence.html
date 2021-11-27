@@ -1,17 +1,23 @@
 <div class="ui piled segments current-sentence-segments"
      v-on:click="speakCurrentSentence">
-  <div class="ui segment current-sentence"
+  <div class="ui segment"
        v-bind:class="computeCurrentSentenceClasses">
-    <h2 class="ui center aligned header">
-      <template v-if="config.currentSentenceMask !== 'translation'">
-      <span v-for="(word, i) in words"
-            class="word"
-            v-bind:class="computedWordClasses(word, i)"
-            v-on:click.stop="startSpeakWord(word, i)">{{ word }}</span>
-      </template>
-      <template v-if="config.currentSentenceMask === 'translation'">
-        {{ translationMask }}
-      </template>
-    </h2>
+    <div class="ui grid middle aligned current-sentence">
+      <div class="row">
+        <div class="column">
+          <h2 class="ui center aligned header">
+            <template v-if="config.currentSentenceMask !== 'translation'">
+            <span v-for="(word, i) in words"
+                  class="word"
+                  v-bind:class="computedWordClasses(word, i)"
+                  v-on:click.stop="startSpeakWord(word, i)">{{ word }}</span>
+            </template>
+            <template v-if="config.currentSentenceMask === 'translation'">
+              {{ translationMask }}
+            </template>
+          </h2>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
