@@ -331,7 +331,9 @@ var render = function() {
                             ? [
                                 _vm._v(
                                   "\n            " +
-                                    _vm._s(_vm.$t("Let's Practice!")) +
+                                    _vm._s(
+                                      _vm.$t("Keep going... Keep going... ")
+                                    ) +
                                     "\n          "
                                 )
                               ]
@@ -341,7 +343,7 @@ var render = function() {
                             ? [
                                 _vm._v(
                                   "\n            " +
-                                    _vm._s(_vm.$t("Practice again!")) +
+                                    _vm._s(_vm.$t("Practice again?")) +
                                     "\n          "
                                 )
                               ]

@@ -21,10 +21,10 @@
           v-bind:class="{practicing: isPracticing}">
           <i class="conversation icon"></i>
           <template v-if="isPracticing">
-            {{ $t(`Let's Practice!`) }}
+            {{ $t(`Keep going... Keep going... `) }}
           </template>
           <template v-if="readEvaluationResult">
-            {{ $t(`Practice again!`) }}
+            {{ $t(`Practice again?`) }}
           </template>
         </div>
         <div class="popup">

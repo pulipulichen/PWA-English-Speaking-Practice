@@ -10,6 +10,10 @@ export default function (LearningInstructor) {
       return this.config.sentenceList[this.localConfig.playingIndex]
     },
     
+    currentSentenceWords () {
+      return this.tokenizeSentenceToWords(this.currentSentence)
+    },
+    
     previousSentence () {
       //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === 0) {

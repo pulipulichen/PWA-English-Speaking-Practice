@@ -24,10 +24,9 @@ export default function (LearningInstructor) {
 
       if (this.config.firstSpeakHint) {
         await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please repeat.`))
         this.config.firstSpeakHint = false
       }
-      
       await this.practiceSentence(time)
     }
 
@@ -62,11 +61,31 @@ export default function (LearningInstructor) {
       await this.utils.AsyncUtils.sleep()
       this.beep.play()
       
-      while (typeof(this.config.practiceSentence) !== 'string') {
+      let hasReceivcePracticeSentence = false
+      let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
+      
+      while (!hasReceivcePracticeSentence) {
         this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
           this.config.practiceSentence = processing
         })
-        await this.utils.AsyncUtils.sleep()
+        
+        if (muteCancel === true) {
+          return false
+        }
+        
+        // 如果字數太短，那也要重新聽取
+        //if (this.config.practiceSentence.split(' ').length < )
+        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
+        if (practiceWords.length >= thresholdWordsCount) {
+          hasReceivcePracticeSentence = true
+          await this.utils.AsyncUtils.sleep()
+        }
+        else {
+          await this.utils.AsyncUtils.sleep()
+          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+          await this.utils.AsyncUtils.sleep()
+          this.beep.play()
+        }
         
         if (muteCancel === true) {
           return false

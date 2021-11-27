@@ -262,6 +262,10 @@ __webpack_require__.r(__webpack_exports__);
       return this.config.sentenceList[this.localConfig.playingIndex]
     },
     
+    currentSentenceWords () {
+      return this.tokenizeSentenceToWords(this.currentSentence)
+    },
+    
     previousSentence () {
       //console.log(this.localConfig.playingIndex)
       if (this.localConfig.playingIndex === 0) {
@@ -297,6 +301,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
   LearningInstructor.methods.initBeep = function () {
     this.beep = this.utils.SoundUtils.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
+  }
+  
+  LearningInstructor.methods.tokenizeSentenceToWords = function (sentence) {
+    return sentence.split(' ')
   }
 });
 
@@ -366,10 +374,9 @@ let debugPractice = false
 
       if (this.config.firstSpeakHint) {
         await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please repeat.`))
         this.config.firstSpeakHint = false
       }
-      
       await this.practiceSentence(time)
     }
 
@@ -404,11 +411,31 @@ let debugPractice = false
       await this.utils.AsyncUtils.sleep()
       this.beep.play()
       
-      while (typeof(this.config.practiceSentence) !== 'string') {
+      let hasReceivcePracticeSentence = false
+      let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
+      
+      while (!hasReceivcePracticeSentence) {
         this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
           this.config.practiceSentence = processing
         })
-        await this.utils.AsyncUtils.sleep()
+        
+        if (muteCancel === true) {
+          return false
+        }
+        
+        // 如果字數太短，那也要重新聽取
+        //if (this.config.practiceSentence.split(' ').length < )
+        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
+        if (practiceWords.length >= thresholdWordsCount) {
+          hasReceivcePracticeSentence = true
+          await this.utils.AsyncUtils.sleep()
+        }
+        else {
+          await this.utils.AsyncUtils.sleep()
+          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+          await this.utils.AsyncUtils.sleep()
+          this.beep.play()
+        }
         
         if (muteCancel === true) {
           return false
