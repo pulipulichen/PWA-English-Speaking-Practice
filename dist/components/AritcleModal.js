@@ -170,10 +170,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module 'AritcleModalMethodsSentence'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _AritcleModalMethodsSentence_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AritcleModalMethodsSentence.js */ "./src/components/AritcleModal/AritcleModalMethodsSentence.js");
 
-
-const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
 
 let AritcleModal = {
   props: ['config', 'localConfig', 'utils'],
@@ -249,7 +247,7 @@ let AritcleModal = {
 }
 
 
-!(function webpackMissingModule() { var e = new Error("Cannot find module 'AritcleModalMethodsSentence'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(AritcleModal)
+Object(_AritcleModalMethodsSentence_js__WEBPACK_IMPORTED_MODULE_1__["default"])(AritcleModal)
 
 /* harmony default export */ __webpack_exports__["default"] = (AritcleModal);
 
@@ -328,6 +326,243 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_AritcleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FAritcleModal_2FAritcleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_AritcleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FAritcleModal_2FAritcleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_AritcleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FAritcleModal_2FAritcleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_AritcleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FAritcleModal_2FAritcleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
  /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_AritcleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FAritcleModal_2FAritcleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/AritcleModal/AritcleModalMethodsSentence.js":
+/*!********************************************************************!*\
+  !*** ./src/components/AritcleModal/AritcleModalMethodsSentence.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (AritcleModal) {
+    let chunkSentenceOptions = [
+      {
+        needle: ', ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '. ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '." ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '," ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '," ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: ' from ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+      {
+        needle: ' for ',
+        minBefore: 7,
+        minAfter: 5,
+        chunkAfter: false
+      },
+      {
+        needle: ' and ',
+        minBefore: 7,
+        minAfter: 5,
+        chunkAfter: false
+      },
+      {
+        needle: ' following ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+      {
+        needle: ' while ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+      {
+        needle: ' to ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: false
+      },
+      {
+        needle: ' so ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+    ]
+    
+    AritcleModal.methods.chunkSentence = function (sentence) {
+      let output = []
+      
+      //output.push(sentence)
+      let checking = true
+      while (checking) {
+        if (sentence.length <= 7) {
+          break
+        }
+        
+        for (let i = 0; i < chunkSentenceOptions.length; i++) {
+          let {needle, minBefore = 5, minAfter = 3, chunkAfter = false} = chunkSentenceOptions[i]
+          
+          if (!needle || sentence.indexOf(needle) === -1) {
+            continue
+          }
+          
+          let pos = sentence.indexOf(needle)
+          
+          let part
+          let otherPart
+          if (chunkAfter === true) {
+            part = sentence.slice(0, pos + needle.length).trim()
+            otherPart = sentence.slice(pos + needle.length).trim()
+          }
+          else {
+            part = sentence.slice(0, pos).trim()
+            otherPart = sentence.slice(pos).trim()
+          }
+          
+          if (part.split(' ').length >= minBefore
+                  && otherPart.split(' ').length >= minAfter) {
+            
+            output = output.concat(this.chunkSentence(part))
+            sentence = otherPart
+            i = 0
+            continue
+          }
+          else {
+            continue
+          }
+        }
+        
+        checking = false
+      }
+      
+      if (sentence !== '') {
+        output.push(sentence)
+      }
+      
+      return output
+    }
+    
+    AritcleModal.methods.buildSentenceList = function () {
+      //console.log(this.fieldArticle)
+      
+      if (!this.localConfig.fieldArticle || this.localConfig.fieldArticle.trim() === '') {
+        return false
+      }
+      
+      var tokenizer = new Tokenizer('Chuck')
+      tokenizer.setEntry(this.localConfig.fieldArticle.trim())
+      
+      let sentences = tokenizer.getSentences()
+      let sentenceList = []
+      
+      // ----------------------------
+      /*
+      let splitSentenceByNeedle = function (sentence, needle, needleAppend = true) {
+        while (sentence.split(' ').length > 7 
+                && sentence.indexOf(needle) > -1) {
+          let pos = sentence.indexOf(needle)
+          let part
+          let otherPart
+          if (needleAppend === true) {
+            part = sentence.slice(0, pos + needle.length).trim()
+            otherPart = sentence.slice(pos + needle.length).trim()
+          }
+          else {
+            part = sentence.slice(0, pos).trim()
+            otherPart = sentence.slice(pos).trim()
+          }
+          if (part.split(' ').length > 5 
+                  && otherPart.split(' ').length > 3) {
+            sentenceList.push(part)
+            sentence = otherPart
+          }
+          else {
+            break
+          }
+        }
+        return sentence
+      }
+      */
+      //console.log(sentences)
+      sentences.forEach(sentence => {
+//        while (sentence.indexOf(', ') > -1) {
+//          let pos = sentence.indexOf(', ')
+//          let part = sentence.slice(0, pos + 2).trim()
+//          sentenceList.push(part)
+//          sentence = sentence.slice(pos + 2).trim()
+//        }
+        //console.log(sentence)
+        /*
+        sentence = splitSentenceByNeedle(sentence, ', ')
+        sentence = splitSentenceByNeedle(sentence, '. ')
+        sentence = splitSentenceByNeedle(sentence, '." ')
+        sentence = splitSentenceByNeedle(sentence, '," ')
+        
+        sentence = splitSentenceByNeedle(sentence, ' from ', false)
+        sentence = splitSentenceByNeedle(sentence, ' for ', false)
+        sentence = splitSentenceByNeedle(sentence, ' following ', false)
+        */
+        /*
+        while (sentence.indexOf('. ') > -1) {
+          let pos = sentence.indexOf('. ')
+          let part = sentence.slice(0, pos + 2).trim()
+          sentenceList.push(part)
+          sentence = sentence.slice(pos + 2).trim()
+        }
+        */
+       /*
+        if (sentence.length > 0) {
+          sentenceList.push(sentence.trim())
+        }
+        */
+        this.chunkSentence(sentence).forEach(s => {
+          sentenceList.push(s)
+        })
+      })
+      
+      // ----------------------------
+      
+//      let debugSentenceList = sentenceList
+//      debugSentenceList = debugSentenceList.filter(sentence => {
+//        return sentence.split(' ').length > 10
+//      })
+//      console.log(debugSentenceList.join('\n'))
+//      console.log(debugSentenceList.length)
+      
+      // ----------------------------
+      
+      this.config.sentenceList = sentenceList
+    }
+});
 
 /***/ })
 

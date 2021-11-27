@@ -1,4 +1,136 @@
+
+const Tokenizer = require('sentence-tokenizer');
+
+
 export default function (AritcleModal) {
+    let chunkSentenceOptions = [
+      {
+        needle: ', ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '. ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '." ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '," ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: '," ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
+        needle: ' from ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+      {
+        needle: ' for ',
+        minBefore: 7,
+        minAfter: 5,
+        chunkAfter: false
+      },
+      {
+        needle: ' and ',
+        minBefore: 7,
+        minAfter: 5,
+        chunkAfter: false
+      },
+      {
+        needle: ' following ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+      {
+        needle: ' while ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+      {
+        needle: ' to ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: false
+      },
+      {
+        needle: ' so ',
+        minBefore: 5,
+        minAfter: 3,
+        chunkAfter: false
+      },
+    ]
+    
+    AritcleModal.methods.chunkSentence = function (sentence) {
+      let output = []
+      
+      //output.push(sentence)
+      let checking = true
+      while (checking) {
+        if (sentence.length <= 7) {
+          break
+        }
+        
+        for (let i = 0; i < chunkSentenceOptions.length; i++) {
+          let {needle, minBefore = 5, minAfter = 3, chunkAfter = false} = chunkSentenceOptions[i]
+          
+          if (!needle || sentence.indexOf(needle) === -1) {
+            continue
+          }
+          
+          let pos = sentence.indexOf(needle)
+          
+          let part
+          let otherPart
+          if (chunkAfter === true) {
+            part = sentence.slice(0, pos + needle.length).trim()
+            otherPart = sentence.slice(pos + needle.length).trim()
+          }
+          else {
+            part = sentence.slice(0, pos).trim()
+            otherPart = sentence.slice(pos).trim()
+          }
+          
+          if (part.split(' ').length >= minBefore
+                  && otherPart.split(' ').length >= minAfter) {
+            
+            output = output.concat(this.chunkSentence(part))
+            sentence = otherPart
+            i = 0
+            continue
+          }
+          else {
+            continue
+          }
+        }
+        
+        checking = false
+      }
+      
+      if (sentence !== '') {
+        output.push(sentence)
+      }
+      
+      return output
+    }
+    
     AritcleModal.methods.buildSentenceList = function () {
       //console.log(this.fieldArticle)
       
@@ -12,6 +144,8 @@ export default function (AritcleModal) {
       let sentences = tokenizer.getSentences()
       let sentenceList = []
       
+      // ----------------------------
+      /*
       let splitSentenceByNeedle = function (sentence, needle, needleAppend = true) {
         while (sentence.split(' ').length > 7 
                 && sentence.indexOf(needle) > -1) {
@@ -37,6 +171,7 @@ export default function (AritcleModal) {
         }
         return sentence
       }
+      */
       //console.log(sentences)
       sentences.forEach(sentence => {
 //        while (sentence.indexOf(', ') > -1) {
@@ -46,6 +181,7 @@ export default function (AritcleModal) {
 //          sentence = sentence.slice(pos + 2).trim()
 //        }
         //console.log(sentence)
+        /*
         sentence = splitSentenceByNeedle(sentence, ', ')
         sentence = splitSentenceByNeedle(sentence, '. ')
         sentence = splitSentenceByNeedle(sentence, '." ')
@@ -54,6 +190,7 @@ export default function (AritcleModal) {
         sentence = splitSentenceByNeedle(sentence, ' from ', false)
         sentence = splitSentenceByNeedle(sentence, ' for ', false)
         sentence = splitSentenceByNeedle(sentence, ' following ', false)
+        */
         /*
         while (sentence.indexOf('. ') > -1) {
           let pos = sentence.indexOf('. ')
@@ -62,11 +199,27 @@ export default function (AritcleModal) {
           sentence = sentence.slice(pos + 2).trim()
         }
         */
+       /*
         if (sentence.length > 0) {
           sentenceList.push(sentence.trim())
         }
+        */
+        this.chunkSentence(sentence).forEach(s => {
+          sentenceList.push(s)
+        })
       })
-      //console.log(sentenceList)
+      
+      // ----------------------------
+      
+//      let debugSentenceList = sentenceList
+//      debugSentenceList = debugSentenceList.filter(sentence => {
+//        return sentence.split(' ').length > 10
+//      })
+//      console.log(debugSentenceList.join('\n'))
+//      console.log(debugSentenceList.length)
+      
+      // ----------------------------
+      
       this.config.sentenceList = sentenceList
     }
 }

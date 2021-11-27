@@ -1,7 +1,5 @@
 import $ from 'jquery'
 
-const Tokenizer = require('sentence-tokenizer');
-
 let AritcleModal = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
@@ -75,7 +73,7 @@ let AritcleModal = {
   }
 }
 
-import AritcleModalMethodsSentence from 'AritcleModalMethodsSentence'
+import AritcleModalMethodsSentence from './AritcleModalMethodsSentence.js'
 AritcleModalMethodsSentence(AritcleModal)
 
 export default AritcleModal
