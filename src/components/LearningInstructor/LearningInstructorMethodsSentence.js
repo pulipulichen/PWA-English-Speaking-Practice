@@ -1,4 +1,4 @@
-let debugPractice = true
+let debugPractice = false
 
 export default function (LearningInstructor) {
 
