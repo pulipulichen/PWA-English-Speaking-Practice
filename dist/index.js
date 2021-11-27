@@ -32579,7 +32579,7 @@ let isSpeaking = false
 let pitch = 1
 let rate = 1
 
-/* harmony default export */ __webpack_exports__["default"] = ({
+const TextToSpeechUtils = {
   init: async function () {
     if (inited === true) {
       return true
@@ -32674,7 +32674,11 @@ let rate = 1
     }
     isSpeaking = false
   }
-});
+}
+
+TextToSpeechUtils.init()
+
+/* harmony default export */ __webpack_exports__["default"] = (TextToSpeechUtils);
 
 /***/ }),
 

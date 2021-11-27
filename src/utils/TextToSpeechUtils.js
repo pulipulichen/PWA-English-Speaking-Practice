@@ -19,7 +19,7 @@ let isSpeaking = false
 let pitch = 1
 let rate = 1
 
-export default {
+const TextToSpeechUtils = {
   init: async function () {
     if (inited === true) {
       return true
@@ -115,3 +115,7 @@ export default {
     isSpeaking = false
   }
 }
+
+TextToSpeechUtils.init()
+
+export default TextToSpeechUtils

@@ -27,8 +27,7 @@ export default function (LearningInstructor) {
         await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
         this.config.firstSpeakHint = false
       }
-      this.beep.play()
-
+      
       await this.practiceSentence(time)
     }
 
@@ -54,11 +53,24 @@ export default function (LearningInstructor) {
     time = time + 1000
 
     if (debugPractice === false) {
+      let muteCancel = false
+      setTimeout(() => {
+        this.utils.SpeechToTextUtils.stopListen()
+        muteCancel = true
+      }, 3000)
+      
+      await this.utils.AsyncUtils.sleep()
+      this.beep.play()
+      
       while (typeof(this.config.practiceSentence) !== 'string') {
         this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
           this.config.practiceSentence = processing
         })
         await this.utils.AsyncUtils.sleep()
+        
+        if (muteCancel === true) {
+          return false
+        }
       }
     }
     else {
