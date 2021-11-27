@@ -17,9 +17,14 @@ let MainSentencePanel = {
     CurrentSentence,
     SentenceDifference
   },
-//  computed: {
-//    
-//  },
+  computed: {
+    isPracticing () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0)
+    },
+    readEvaluationResult () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
+    }
+  },
 //  mounted() {
 //    
 //  },

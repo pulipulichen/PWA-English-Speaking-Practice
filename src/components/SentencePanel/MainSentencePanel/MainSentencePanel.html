@@ -17,9 +17,15 @@
     <template v-if="config.practiceSentence">
       <div class="trigger">
         <div class="practice-hint"
-          v-on:click="practice">
+          v-on:click="practice"
+          v-bind:class="{practicing: isPracticing}">
           <i class="conversation icon"></i>
-          {{ $t(`Let's Practice!`) }}
+          <template v-if="isPracticing">
+            {{ $t(`Let's Practice!`) }}
+          </template>
+          <template v-if="readEvaluationResult">
+            {{ $t(`Practice again!`) }}
+          </template>
         </div>
         <div class="popup">
           <div class="inner">

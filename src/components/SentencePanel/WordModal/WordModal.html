@@ -8,10 +8,29 @@
     <div class="ui segment word-segment"
          v-bind:class="{isSpeaking: isSpeaking}"
          v-on:click="speakWord">
-      <h2 class="ui center aligned header">
+      <h2 class="ui center aligned header"
+          v-if="!wordTrans">
         {{ config.practiceWord }}
       </h2>
+      <div v-if="wordTrans"
+           class="ui two column center aligned grid">
+        <div class="ui vertical divider">
+          <i class="language icon"></i>
+        </div>
+        <div class="column">
+          <h2 class="ui center aligned header">
+            {{ config.practiceWord }}
+          </h2>
+        </div>
+        <div class="column"
+             v-on:click.stop="openDictionary">
+          <h2 class="ui center aligned header">
+            {{ wordTrans }}
+          </h2>
+        </div>
+      </div>
     </div>
+    
     <h2 class="ui center aligned icon header">
       <i class="conversation icon"></i>
       {{ $t(`Let's Practice!`) }}

@@ -1,8 +1,8 @@
 import PuliPostMessageAPI from './puli-post-message-api/puli-post-message-api.js'
 let inited = false
 let api
-let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
-//let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
+//let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
+let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
 
 export default {
   /**
@@ -22,6 +22,9 @@ export default {
     let result = await api.send(url, data, {debug: false})
     //console.log(result)
     return result
+  },
+  transZHTW: async function (text) {
+    return await this.trans(text, 'zh-TW')
   },
   initTrans () {
     if (inited === true) {

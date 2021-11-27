@@ -32691,8 +32691,8 @@ __webpack_require__.r(__webpack_exports__);
 
 let inited = false
 let api
-let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
-//let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
+//let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
+let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   /**
@@ -32712,6 +32712,9 @@ let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
     let result = await api.send(url, data, {debug: false})
     //console.log(result)
     return result
+  },
+  transZHTW: async function (text) {
+    return await this.trans(text, 'zh-TW')
   },
   initTrans () {
     if (inited === true) {

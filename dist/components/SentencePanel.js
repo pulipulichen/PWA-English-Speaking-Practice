@@ -109,7 +109,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint[data-v-0ac19693] {\n  cursor: pointer;\n}\n.trigger[data-v-0ac19693] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-0ac19693] {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n.popup[data-v-0ac19693]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-0ac19693] {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n.wait-practice[data-v-0ac19693] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF;ADGA;EACE,eAAA;ACDF;ADIA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACJF;ADOA;EACE,kBAAA;EACA,OAAA;EACA,SAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,mBAAA;EACA,WAAA;ACLF;ADQA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACNF;ADSA;EACE,eAAA;EACA,gBAAA;EACA,oBAAA;ACPF;ADUA;EACE,YAAA;EACA,iBAAA;ACRF","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n\n.practice-hint {\n  cursor: pointer;\n}\n\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint {\n  cursor: pointer;\n}\n.trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
+exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint[data-v-0ac19693] {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing[data-v-0ac19693] {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger[data-v-0ac19693] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-0ac19693] {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n.popup[data-v-0ac19693]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-0ac19693] {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n.wait-practice[data-v-0ac19693] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF;ADGA;EACE,eAAA;EAEA,qBAAA;EACA,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,eAAA;ACFF;ADIE;EACE,YAAA;EACA,wBAAA;EACA,YAAA;EAEA,iBAAA;ACHJ;ADOA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACPF;ADUA;EACE,kBAAA;EACA,OAAA;EACA,SAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,mBAAA;EACA,WAAA;ACRF;ADWA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACTF;ADYA;EACE,eAAA;EACA,gBAAA;EACA,oBAAA;ACVF;ADaA;EACE,YAAA;EACA,iBAAA;ACXF","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n\n.practice-hint {\n  cursor: pointer;\n  \n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n  \n  &.practicing {\n    cursor: wait;\n    background-color: yellow;\n    color: black;\n    //pointer-events: none;\n    user-select: none;\n  }\n}\n\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n.practice-hint {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);\n  background: none;\n  border-radius: 1rem;\n  width: 100%;\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 0;\n  background: #fff;\n  border-radius: 100px;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -181,7 +181,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n"]}]);
+exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment[data-v-3b4f4609] {\n  cursor: pointer;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF;ADGA;EACE,eAAA;ACDF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n\n.word-segment {\n  cursor: pointer;\n}",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment {\n  cursor: pointer;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -321,16 +321,33 @@ var render = function() {
                         "div",
                         {
                           staticClass: "practice-hint",
+                          class: { practicing: _vm.isPracticing },
                           on: { click: _vm.practice }
                         },
                         [
                           _c("i", { staticClass: "conversation icon" }),
-                          _vm._v(
-                            "\n          " +
-                              _vm._s(_vm.$t("Let's Practice!")) +
-                              "\n        "
-                          )
-                        ]
+                          _vm._v(" "),
+                          _vm.isPracticing
+                            ? [
+                                _vm._v(
+                                  "\n            " +
+                                    _vm._s(_vm.$t("Let's Practice!")) +
+                                    "\n          "
+                                )
+                              ]
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _vm.readEvaluationResult
+                            ? [
+                                _vm._v(
+                                  "\n            " +
+                                    _vm._s(_vm.$t("Practice again!")) +
+                                    "\n          "
+                                )
+                              ]
+                            : _vm._e()
+                        ],
+                        2
                       ),
                       _vm._v(" "),
                       _c("div", { staticClass: "popup" }, [
@@ -603,11 +620,55 @@ var render = function() {
             on: { click: _vm.speakWord }
           },
           [
-            _c("h2", { staticClass: "ui center aligned header" }, [
-              _vm._v(
-                "\n        " + _vm._s(_vm.config.practiceWord) + "\n      "
-              )
-            ])
+            !_vm.wordTrans
+              ? _c("h2", { staticClass: "ui center aligned header" }, [
+                  _vm._v(
+                    "\n        " + _vm._s(_vm.config.practiceWord) + "\n      "
+                  )
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.wordTrans
+              ? _c(
+                  "div",
+                  { staticClass: "ui two column center aligned grid" },
+                  [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "column" }, [
+                      _c("h2", { staticClass: "ui center aligned header" }, [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(_vm.config.practiceWord) +
+                            "\n          "
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "column",
+                        on: {
+                          click: function($event) {
+                            $event.stopPropagation()
+                            return _vm.openDictionary.apply(null, arguments)
+                          }
+                        }
+                      },
+                      [
+                        _c("h2", { staticClass: "ui center aligned header" }, [
+                          _vm._v(
+                            "\n            " +
+                              _vm._s(_vm.wordTrans) +
+                              "\n          "
+                          )
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              : _vm._e()
           ]
         ),
         _vm._v(" "),
@@ -631,7 +692,16 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ui vertical divider" }, [
+      _c("i", { staticClass: "language icon" })
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -1097,9 +1167,14 @@ let MainSentencePanel = {
     CurrentSentence: _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     SentenceDifference: _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-//  computed: {
-//    
-//  },
+  computed: {
+    isPracticing () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0)
+    },
+    readEvaluationResult () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
+    }
+  },
 //  mounted() {
 //    
 //  },
@@ -1619,18 +1694,22 @@ let WordModal = {
     return {
       modal: null,
       isOpened: false,
-      isSpeaking: false
+      isSpeaking: false,
+      wordTrans: null
     }
   },
   watch: {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
-    'config.practiceWord' () {
+    'config.practiceWord': async function () {
       //console.log(this.config.practiceWord)
+      
+      this.wordTrans = null
       if (this.config.practiceWord 
               && this.config.practiceWord !== '') {
         this.open()
+        this.wordTrans = await this.utils.TransUtils.transZHTW(this.config.practiceWord)
       }
     }
   },

@@ -7,18 +7,22 @@ let WordModal = {
     return {
       modal: null,
       isOpened: false,
-      isSpeaking: false
+      isSpeaking: false,
+      wordTrans: null
     }
   },
   watch: {
     'localConfig.locale'() {
       this.$i18n.locale = this.localConfig.locale;
     },
-    'config.practiceWord' () {
+    'config.practiceWord': async function () {
       //console.log(this.config.practiceWord)
+      
+      this.wordTrans = null
       if (this.config.practiceWord 
               && this.config.practiceWord !== '') {
         this.open()
+        this.wordTrans = await this.utils.TransUtils.transZHTW(this.config.practiceWord)
       }
     }
   },
