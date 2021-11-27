@@ -3,7 +3,8 @@ let preferName = [
   'Google US English Male',
   'Google UK English Female',
   'Google UK English Male',
-  'Chrome OS US English 1'
+  'Chrome OS US English 1',
+  '英文 美國'
 ]
 
 let synth = window.speechSynthesis

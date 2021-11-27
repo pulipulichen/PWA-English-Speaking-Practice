@@ -31568,7 +31568,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_config_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_config_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _config_production_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./config.production.js */ "./src/config.production.js");
 let config = {
-  appName: 'vue-app',
+  appName: 'PWA-English-Speaking-Practice',
   debug: {
     enableRestore: true,
     SpeechToTextUtils: {
@@ -32602,7 +32602,8 @@ let preferName = [
   'Google US English Male',
   'Google UK English Female',
   'Google UK English Male',
-  'Chrome OS US English 1'
+  'Chrome OS US English 1',
+  '英文 美國'
 ]
 
 let synth = window.speechSynthesis

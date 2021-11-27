@@ -1,5 +1,5 @@
 let config = {
-  appName: 'vue-app',
+  appName: 'PWA-English-Speaking-Practice',
   debug: {
     enableRestore: true,
     SpeechToTextUtils: {
