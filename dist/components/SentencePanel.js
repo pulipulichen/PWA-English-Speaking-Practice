@@ -1332,15 +1332,15 @@ let MainSentencePanel = {
     CurrentSentence: _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     PracticeSentencePanel: _PracticeSentencePanel_PracticeSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  computed: {
-
-  },
+//  computed: {
+//
+//  },
 //  mounted() {
 //    
 //  },
-  methods: {
-
-  }
+//  methods: {
+//
+//  }
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (MainSentencePanel);
@@ -1494,11 +1494,11 @@ let PracticeSentencePanel = {
       return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
     }    
   },
-  mounted() {
-    setTimeout(() => {
-      this.practice()
-    }, 3000)
-  },
+//  mounted() {
+//    setTimeout(() => {
+//      this.practice()
+//    }, 3000)
+//  },
   methods: {
     practice () {
       if (!this.utils.LearningInstructor) {

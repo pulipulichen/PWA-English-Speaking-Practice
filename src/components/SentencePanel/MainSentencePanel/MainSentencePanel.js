@@ -17,15 +17,15 @@ let MainSentencePanel = {
     CurrentSentence,
     PracticeSentencePanel
   },
-  computed: {
-
-  },
+//  computed: {
+//
+//  },
 //  mounted() {
 //    
 //  },
-  methods: {
-
-  }
+//  methods: {
+//
+//  }
 }
 
 export default MainSentencePanel

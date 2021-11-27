@@ -23,11 +23,11 @@ let PracticeSentencePanel = {
       return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
     }    
   },
-  mounted() {
-    setTimeout(() => {
-      this.practice()
-    }, 3000)
-  },
+//  mounted() {
+//    setTimeout(() => {
+//      this.practice()
+//    }, 3000)
+//  },
   methods: {
     practice () {
       if (!this.utils.LearningInstructor) {

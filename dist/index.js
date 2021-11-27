@@ -31572,7 +31572,7 @@ let config = {
   debug: {
     enableRestore: true,
     SpeechToTextUtils: {
-      mockup: true
+      mockup: false
     }
   },
   viewportSize: {
