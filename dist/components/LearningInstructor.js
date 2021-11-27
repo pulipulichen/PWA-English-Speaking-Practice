@@ -348,7 +348,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-let debugPractice = false
 
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
 
@@ -401,9 +400,12 @@ let debugPractice = false
     //console.log(time)
     time = time + 1000
 
-    if (debugPractice === false) {
+//    if (debugPractice === false) {
       let muteCancel = false
       setTimeout(() => {
+        if (this.config.practiceSentence && this.config.practiceSentence !== '') {
+          return true
+        }
         this.utils.SpeechToTextUtils.stopListen()
         muteCancel = true
       }, 3000)
@@ -441,17 +443,75 @@ let debugPractice = false
           return false
         }
       }
-    }
-    else {
-      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
-      for (let i = 0; i < 3; i++) {
-        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
-      }
-      await this.utils.AsyncUtils.sleep(100)
-    }
+//    }
+//    else {
+//      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
+//      for (let i = 0; i < 3; i++) {
+//        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
+//      }
+//      await this.utils.AsyncUtils.sleep(100)
+//    }
+    
+    this.config.currentSentenceMask = false
     //this.config.practiceSentence = 'ok'
 
     this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
+    
+    await this.sentencePracticeFeedback()
+    
+    await this.utils.AsyncUtils.sleep(2000)
+  }
+
+  LearningInstructor.methods.evaluateSentencePractice = function (source, target) {
+    source = this.utils.DictUtils.filterWord(source)
+    target = this.utils.DictUtils.filterWord(target)
+    
+    let resultRaw = this.utils.DiffUtils.diffWords(source, target)
+    let result = []
+    
+    resultRaw.forEach(r => {
+      if (!r.added) {
+        result.push(r)
+      }
+      else {
+        let words = this.tokenizeSentenceToWords(r.value)
+        
+        words.forEach(w => {
+          result.push({
+            added: true,
+            removed: false,
+            value: w
+          })
+        })
+      }
+    })
+    
+    return result
+  }
+  
+  LearningInstructor.methods.scoreEvaluate = function (results) {
+    let error = 0
+    results.forEach(r => {
+      if (r.added) {
+        error = error++
+      } 
+    })
+    
+    if (error > 5) {
+      return 0
+    }
+    else if (error <= 5 && error > 2) {
+      return 0.5
+    }
+    else if (error >= 1 && error <= 2) {
+      return 0.7
+    }
+    else {
+      return 1
+    }
+  }
+  
+  LearningInstructor.methods.sentencePracticeFeedback = async function (results) {
     let score = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
     //console.log(result)
     //await this.utils.AsyncUtils.sleep(time)
@@ -467,38 +527,6 @@ let debugPractice = false
     }
     else {
       await this.utils.TextToSpeechUtils.startSpeak(this.$t(`OK.`))
-    }
-
-    this.config.currentSentenceMask = false
-    await this.utils.AsyncUtils.sleep(2000)
-  }
-
-  LearningInstructor.methods.evaluateSentencePractice = function (source, target) {
-    source = this.utils.DictUtils.filterWord(source)
-    target = this.utils.DictUtils.filterWord(target)
-    
-    return this.utils.DiffUtils.diffWords(source, target)
-  }
-  
-  LearningInstructor.methods.scoreEvaluate = function (results) {
-    let error = 0
-    results.forEach(r => {
-      if (r.added) {
-        error = error + r.value.split(' ').length
-      } 
-    })
-    
-    if (error > 5) {
-      return 0
-    }
-    else if (error <= 5 && error > 2) {
-      return 0.5
-    }
-    else if (error >= 1 && error <= 2) {
-      return 0.7
-    }
-    else {
-      return 1
     }
   }
 });

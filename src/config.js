@@ -1,7 +1,10 @@
 let config = {
   appName: 'vue-app',
   debug: {
-    enableRestore: true
+    enableRestore: true,
+    SpeechToTextUtils: {
+      mockup: true
+    }
   },
   viewportSize: {
   },

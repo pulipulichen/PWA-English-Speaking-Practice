@@ -9,6 +9,9 @@ let isStarted = false
 import AsyncUtils from './AsyncUtils.js'
 import DictUtils from './DictUtils.js'
 
+import config from './../config.js'
+
+
 export default {
   init () {
     if (inited === true) {
@@ -51,6 +54,10 @@ export default {
     recognition.grammars = speechRecognitionList;
   },
   startListen: async function (grammarsString, processingCallback) {
+    if (config.debug.SpeechToTextUtils.mockup) {
+      return this.mockup(grammarsString)
+    }
+    
     this.init()
     
     if (isStarted === true) {
@@ -83,5 +90,30 @@ export default {
     this.init()
     isStarted = false
     recognition.stop()
+  },
+  getShuffledArr (arr) {
+      const newArr = arr.slice()
+      for (let i = newArr.length - 1; i > 0; i--) {
+          const rand = Math.floor(Math.random() * (i + 1));
+          [newArr[i], newArr[rand]] = [newArr[rand], newArr[i]];
+      }
+      return newArr
+  },
+  mockup (grammarsString) {
+    // 前面兩字一樣，後面兩字不一樣
+    let words = grammarsString.split(' ')
+    
+    let maskedCount = Math.ceil(words.length / 3)
+    let indexList = []
+    for (let i = 0; i < words.length; i++) {
+      indexList.push(i)
+    }
+    indexList = this.getShuffledArr(indexList)
+    
+    for (let i = 0; i < maskedCount; i++) {
+      words[indexList[i]] = 'ERROR'
+    }
+    
+    return words.join(' ')
   }
 }

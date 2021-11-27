@@ -31570,7 +31570,10 @@ __webpack_require__.r(__webpack_exports__);
 let config = {
   appName: 'vue-app',
   debug: {
-    enableRestore: true
+    enableRestore: true,
+    SpeechToTextUtils: {
+      mockup: true
+    }
   },
   viewportSize: {
   },
@@ -32061,9 +32064,9 @@ let localConfig = {
   //lastPlayIndex: 5,
   repeatPractice: true,
   autoPlay: true,
-  practiceSentenceMask: 'word-block', // none translation word-block sentence-block
+  practiceSentenceMask: 'none', // none translation word-block sentence-block
   practiceMode: 'speaking',  // speaking writing
-  speakingInstructionStrategy: 'none', // none sentence words-by-words word-by-word
+  speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);
@@ -32458,6 +32461,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncUtils.js */ "./src/utils/AsyncUtils.js");
 /* harmony import */ var _DictUtils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DictUtils.js */ "./src/utils/DictUtils.js");
+/* harmony import */ var _config_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../config.js */ "./src/config.js");
 /* global webkitSpeechRecognition, webkitSpeechGrammarList, webkitSpeechRecognitionEvent */
 
 let inited = false
@@ -32465,6 +32469,9 @@ let recognition
 
 let recognitionResultEnd = true
 let isStarted = false
+
+
+
 
 
 
@@ -32511,6 +32518,10 @@ let isStarted = false
     recognition.grammars = speechRecognitionList;
   },
   startListen: async function (grammarsString, processingCallback) {
+    if (_config_js__WEBPACK_IMPORTED_MODULE_2__["default"].debug.SpeechToTextUtils.mockup) {
+      return this.mockup(grammarsString)
+    }
+    
     this.init()
     
     if (isStarted === true) {
@@ -32543,6 +32554,31 @@ let isStarted = false
     this.init()
     isStarted = false
     recognition.stop()
+  },
+  getShuffledArr (arr) {
+      const newArr = arr.slice()
+      for (let i = newArr.length - 1; i > 0; i--) {
+          const rand = Math.floor(Math.random() * (i + 1));
+          [newArr[i], newArr[rand]] = [newArr[rand], newArr[i]];
+      }
+      return newArr
+  },
+  mockup (grammarsString) {
+    // 前面兩字一樣，後面兩字不一樣
+    let words = grammarsString.split(' ')
+    
+    let maskedCount = Math.ceil(words.length / 3)
+    let indexList = []
+    for (let i = 0; i < words.length; i++) {
+      indexList.push(i)
+    }
+    indexList = this.getShuffledArr(indexList)
+    
+    for (let i = 0; i < maskedCount; i++) {
+      words[indexList[i]] = 'ERROR'
+    }
+    
+    return words.join(' ')
   }
 });
 

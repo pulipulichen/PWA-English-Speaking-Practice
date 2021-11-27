@@ -7,9 +7,9 @@ let localConfig = {
   //lastPlayIndex: 5,
   repeatPractice: true,
   autoPlay: true,
-  practiceSentenceMask: 'word-block', // none translation word-block sentence-block
+  practiceSentenceMask: 'none', // none translation word-block sentence-block
   practiceMode: 'speaking',  // speaking writing
-  speakingInstructionStrategy: 'none', // none sentence words-by-words word-by-word
+  speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
 }
 
 export default localConfig
