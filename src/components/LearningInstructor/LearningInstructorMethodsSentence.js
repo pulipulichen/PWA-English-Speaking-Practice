@@ -127,6 +127,8 @@ export default function (LearningInstructor) {
         let words = this.tokenizeSentenceToWords(r.value)
         
         words.forEach(w => {
+          this.recordWordsToLearn(w)
+          
           result.push({
             added: true,
             removed: false,

@@ -1,3 +1,5 @@
+import Snowball from 'snowball'
+
 export default function (LearningInstructor) {
   LearningInstructor.computed = {
     currentSentence () {
@@ -27,6 +29,11 @@ export default function (LearningInstructor) {
         return ''
       }
       return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
+    },
+    
+    stemmer () {
+      let stemmer = new Snowball('English');
+      return stemmer
     }
   }
 }

@@ -1,3 +1,20 @@
+.practice-hint {
+  cursor: pointer;
+  
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  
+  &.practicing {
+    cursor: wait;
+    background-color: yellow;
+    color: black;
+    //pointer-events: none;
+    user-select: none;
+  }
+}
 
 .trigger {
   //margin: 0px auto 20px;
@@ -11,13 +28,16 @@
 
 .popup {
   position: fixed;
-  left: 0;
+  //left: 0;
   top: calc(50vh + 7rem);
   transform: translate3d(0, -50%, 0);
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
   background: none;
   border-radius: 0.285714rem;
-  width: 100%;
+  width: calc(100% - 1rem);
+  //margin-left: auto;
+  //margin-right: auto;
+  
 }
 
 .popup:after {
@@ -40,13 +60,14 @@
   //margin: 1rem !important;
   margin: 0 !important;
   
+  max-height: calc(30vh);
+  height: calc(30vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+  
   .row {
     
     .column {
-      max-height: calc(30vh - 2rem);
-      height: calc(30vh - 2rem);
-      overflow-y: auto;
-      overflow-x: hidden;
       margin-left: 1rem;
       margin-right: 1rem;
     }

@@ -6,9 +6,12 @@ export default {
     //audio.play()
     
     return {
-      play () {
+      play: async function () {
         audio.currentTime = 0
-        audio.play()
+        try {
+          await audio.play()
+        }
+        catch (e) {}
       },
       stop () {
         audio.pause()

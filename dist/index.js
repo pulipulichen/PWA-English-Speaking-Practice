@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"components/ConfigurationModal":"components/ConfigurationModal","components/ControllerMenuBottomBar":"components/ControllerMenuBottomBar","components/ControllerMenuTopBar":"components/ControllerMenuTopBar","components/LearningInstructor":"components/LearningInstructor","components/SentencePanel":"components/SentencePanel","vendors/semantic-ui-niwsf":"vendors/semantic-ui-niwsf","vendors~components/AritcleModal":"vendors~components/AritcleModal","components/AritcleModal":"components/AritcleModal"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"components/ConfigurationModal":"components/ConfigurationModal","components/ControllerMenuBottomBar":"components/ControllerMenuBottomBar","components/ControllerMenuTopBar":"components/ControllerMenuTopBar","components/SentencePanel":"components/SentencePanel","vendors/semantic-ui-niwsf":"vendors/semantic-ui-niwsf","vendors~components/AritcleModal":"vendors~components/AritcleModal","components/AritcleModal":"components/AritcleModal","vendors~components/LearningInstructor":"vendors~components/LearningInstructor","components/LearningInstructor":"components/LearningInstructor"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -31213,7 +31213,7 @@ __webpack_require__.r(__webpack_exports__);
     ConfigurationModal: () => {return __webpack_require__.e(/*! import() | components/ConfigurationModal */ "components/ConfigurationModal").then(__webpack_require__.bind(null, /*! ./ConfigurationModal/ConfigurationModal.vue */ "./src/components/ConfigurationModal/ConfigurationModal.vue"))},
     
     SentencePanel: () => {return __webpack_require__.e(/*! import() | components/SentencePanel */ "components/SentencePanel").then(__webpack_require__.bind(null, /*! ./SentencePanel/SentencePanel.vue */ "./src/components/SentencePanel/SentencePanel.vue"))},
-    LearningInstructor: () => {return __webpack_require__.e(/*! import() | components/LearningInstructor */ "components/LearningInstructor").then(__webpack_require__.bind(null, /*! ./LearningInstructor/LearningInstructor.vue */ "./src/components/LearningInstructor/LearningInstructor.vue"))},
+    LearningInstructor: () => {return Promise.all(/*! import() | components/LearningInstructor */[__webpack_require__.e("vendors~components/LearningInstructor"), __webpack_require__.e("components/LearningInstructor")]).then(__webpack_require__.bind(null, /*! ./LearningInstructor/LearningInstructor.vue */ "./src/components/LearningInstructor/LearningInstructor.vue"))},
   }
 });
 
@@ -32436,9 +32436,12 @@ __webpack_require__.r(__webpack_exports__);
     //audio.play()
     
     return {
-      play () {
+      play: async function () {
         audio.currentTime = 0
-        audio.play()
+        try {
+          await audio.play()
+        }
+        catch (e) {}
       },
       stop () {
         audio.pause()

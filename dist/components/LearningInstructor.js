@@ -111,8 +111,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LearningInstructorMethods_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructorMethods.js */ "./src/components/LearningInstructor/LearningInstructorMethods.js");
 /* harmony import */ var _LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructorMethodsNavigation.js */ "./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js");
 /* harmony import */ var _LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LearningInstructorMethodsSentence.js */ "./src/components/LearningInstructor/LearningInstructorMethodsSentence.js");
-/* harmony import */ var _LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructorMounted.js */ "./src/components/LearningInstructor/LearningInstructorMounted.js");
-/* harmony import */ var _LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LearningInstructorWatch.js */ "./src/components/LearningInstructor/LearningInstructorWatch.js");
+/* harmony import */ var _LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructorMethodsToLearn.js */ "./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js");
+/* harmony import */ var _LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LearningInstructorMounted.js */ "./src/components/LearningInstructor/LearningInstructorMounted.js");
+/* harmony import */ var _LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LearningInstructorWatch.js */ "./src/components/LearningInstructor/LearningInstructorWatch.js");
 
 let LearningInstructor = {
   props: ['config', 'localConfig', 'utils'],
@@ -142,10 +143,13 @@ Object(_LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__["def
 Object(_LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__["default"])(LearningInstructor)
 
 
-Object(_LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_4__["default"])(LearningInstructor)
+Object(_LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_4__["default"])(LearningInstructor)
 
 
-Object(_LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_5__["default"])(LearningInstructor)
+Object(_LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_5__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_6__["default"])(LearningInstructor)
 
 /* harmony default export */ __webpack_exports__["default"] = (LearningInstructor);
 
@@ -250,6 +254,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var snowball__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! snowball */ "./node_modules/snowball/stemmer/lib/Snowball.js");
+/* harmony import */ var snowball__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(snowball__WEBPACK_IMPORTED_MODULE_0__);
+
+
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
   LearningInstructor.computed = {
     currentSentence () {
@@ -279,6 +287,11 @@ __webpack_require__.r(__webpack_exports__);
         return ''
       }
       return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
+    },
+    
+    stemmer () {
+      let stemmer = new snowball__WEBPACK_IMPORTED_MODULE_0___default.a('English');
+      return stemmer
     }
   }
 });
@@ -477,6 +490,8 @@ __webpack_require__.r(__webpack_exports__);
         let words = this.tokenizeSentenceToWords(r.value)
         
         words.forEach(w => {
+          this.recordWordsToLearn(w)
+          
           result.push({
             added: true,
             removed: false,
@@ -528,6 +543,64 @@ __webpack_require__.r(__webpack_exports__);
     else {
       await this.utils.TextToSpeechUtils.startSpeak(this.$t(`OK.`))
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js":
+/*!*******************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  
+  LearningInstructor.methods.stem = function (word) {
+    this.stemmer.setCurrent(word)
+    this.stemmer.stem()
+    return this.stemmer.getCurrent()
+  }
+  
+  LearningInstructor.methods.generateKeyName = function (word) {
+    word = this.utils.DictUtils.filterWord(word)
+    return 'WordToLearn:' + this.stem(word)
+  }
+  
+  LearningInstructor.methods.recordWordsToLearn = function (word) {
+    let value = this.getWordToLearnScore(word)
+    
+    value++
+    
+    if (word.length > 10) {
+      value++
+    }
+    
+    let key = this.generateKeyName(word)
+    localStorage.setItem(key, value)
+  }
+  
+  LearningInstructor.methods.getWordToLearnScore = function (word) {
+    let key = this.generateKeyName(word)
+    
+    let value = localStorage.getItem(key)
+    if (!value) {
+      value = 0
+    }
+    else {
+      value = Number(value)
+    }
+    
+    return value
+  }
+  
+  LearningInstructor.methods.clearWordToLearn = function (word) {
+    let key = this.generateKeyName(word)
+    localStorage.removeItem(key)
   }
 });
 
