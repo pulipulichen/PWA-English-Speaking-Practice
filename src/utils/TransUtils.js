@@ -19,6 +19,8 @@ export default {
       text,
       lang
     }
+    
+    console.log(data)
     let result = await api.send(url, data, {debug: false})
     //console.log(result)
     return result

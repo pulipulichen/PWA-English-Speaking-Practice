@@ -479,7 +479,9 @@ __webpack_require__.r(__webpack_exports__);
     source = this.utils.DictUtils.filterWord(source)
     target = this.utils.DictUtils.filterWord(target)
     
+    
     let resultRaw = this.utils.DiffUtils.diffWords(source, target)
+    //console.log(resultRaw)
     let result = []
     
     resultRaw.forEach(r => {

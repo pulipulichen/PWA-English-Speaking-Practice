@@ -32752,6 +32752,8 @@ let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
       text,
       lang
     }
+    
+    console.log(data)
     let result = await api.send(url, data, {debug: false})
     //console.log(result)
     return result

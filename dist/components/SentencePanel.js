@@ -179,7 +179,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;ACCF;ADEA;EACE,WAAA;EACA,6BAAA;ACAF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n",".added {\n  color: red;\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n"]}]);
+exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -521,14 +521,34 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "SentenceDifference" },
-    _vm._l(_vm.results, function(word, i) {
-      return _c(
-        "span",
-        { class: { added: word.added, removed: word.removed } },
-        [_vm._v(_vm._s(word.value))]
-      )
-    }),
-    0
+    [
+      _vm._l(_vm.results, function(word, i) {
+        return [
+          !word.added
+            ? _c("span", { class: { removed: word.removed } }, [
+                _vm._v(_vm._s(word.value))
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          word.added
+            ? _c(
+                "span",
+                {
+                  staticClass: "added",
+                  class: _vm.computedAddedWord(word.value),
+                  on: {
+                    click: function($event) {
+                      return _vm.practiceWord(word.value)
+                    }
+                  }
+                },
+                [_vm._v(_vm._s(word.value))]
+              )
+            : _vm._e()
+        ]
+      })
+    ],
+    2
   )
 }
 var staticRenderFns = []
@@ -1639,7 +1659,7 @@ let SentenceDifference = {
   computed: {
     results () {
       let results = []
-      
+      //console.log(this.config.practiceSentenceEvaluationResult)
       for (let i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {
         if (i > 0) {
           results.push({
@@ -1656,11 +1676,24 @@ let SentenceDifference = {
       return results
     } 
   },
-  mounted() {
-    
-  },
+//  mounted() {
+//    
+//  },
   methods: {
-    
+    practiceWord: function (word) {
+      this.config.practiceWord = word
+    },
+    computedAddedWord: function (word) {
+      let score = 0
+      if (this.utils.LearningInstructor) {
+        score = this.utils.LearningInstructor.getWordToLearnScore(word)
+      }
+      
+      if (score > 5) {
+        return 'word-to-learn'
+      }
+      //let score = this.
+    }
   }
 }
 

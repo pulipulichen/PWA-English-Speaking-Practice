@@ -13,7 +13,7 @@ let SentenceDifference = {
   computed: {
     results () {
       let results = []
-      
+      //console.log(this.config.practiceSentenceEvaluationResult)
       for (let i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {
         if (i > 0) {
           results.push({
@@ -30,11 +30,24 @@ let SentenceDifference = {
       return results
     } 
   },
-  mounted() {
-    
-  },
+//  mounted() {
+//    
+//  },
   methods: {
-    
+    practiceWord: function (word) {
+      this.config.practiceWord = word
+    },
+    computedAddedWord: function (word) {
+      let score = 0
+      if (this.utils.LearningInstructor) {
+        score = this.utils.LearningInstructor.getWordToLearnScore(word)
+      }
+      
+      if (score > 5) {
+        return 'word-to-learn'
+      }
+      //let score = this.
+    }
   }
 }
 

@@ -1,4 +1,11 @@
 <div class="SentenceDifference">
-  <span v-for="(word, i) in results"
-        v-bind:class="{added: word.added, removed: word.removed}">{{ word.value }}</span>
+  <template v-for="(word, i) in results">
+    <span v-if="!word.added"
+          v-bind:class="{removed: word.removed}">{{ word.value }}</span>
+    <span v-if="word.added"
+          class="added"
+          v-bind:class="computedAddedWord(word.value)"
+          v-on:click="practiceWord(word.value)">{{ word.value }}</span>
+  </template>
+  
 </div>
