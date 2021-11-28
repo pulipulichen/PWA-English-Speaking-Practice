@@ -12,7 +12,8 @@ let localConfig = {
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
   setenceTokenizerStrategy: 'english-default', // english-default english-basic english-clause chinese-default chinese-comma
   
-  debugSpeechToTextUtilsMockup: 'perfect'  // perfect false auto
+  debugSpeechToTextUtilsMockup: 'perfect',  // perfect false auto
+  articleResource: 'english-bbc-world-news',  // english-bbc-world-news english-cnn-world-news englis-taiwan-today chinese-pts-news
 }
 
 export default localConfig

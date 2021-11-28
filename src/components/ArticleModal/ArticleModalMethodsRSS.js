@@ -1,8 +1,12 @@
 const Tokenizer = require('sentence-tokenizer');
 
-export default function (AritcleModal) {
+export default function (ArticleModal) {
     
-    AritcleModal.methods.loadRSS = async function () {
+    ArticleModal.methods.downloadResource = async function () {
+      
+    }
+    
+    ArticleModal.methods.loadRSS = async function () {
       let url = 'https://script.google.com/macros/s/AKfycby5WrzykN_CycYjN0x9sQlEnXO4MYrHMxK3npPA9x0ICT9KzJ_vjHhifvi7cCTaFQc_/exec'
       let {output} = await this.utils.AxiosUtils.get(url)
       //console.log(result)

@@ -1,0 +1,71 @@
+<div class="ui modal ConfigurationModal" ref="Modal">
+  <i class="close icon"></i>
+  <div class="header">
+    {{ $t('Article') }}
+  </div>
+  <div class="content ui form">
+    
+    <div class="two fields">
+      <div class="fourteen wide field">
+        <select v-model="localConfig.articleResource">
+          <optgroup v-bind:label="$t('English')">
+            <option value="english-bbc-world-news">{{ $t('BBC World News') }}</option>
+            <option value="english-cnn-world-news">{{ $t('CNN World News') }}</option>
+            <option value="english-cnn-world-news">{{ $t('CNN World News') }}</option>
+          </optgroup>
+          <optgroup v-bind:label="$t('Chinese')">
+            <option value="chinese-pts-news">{{ $t('PTS News') }}</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="four wide field">
+        <a v-on:click="downloadResource">
+          Download
+        </a>
+      </div>
+    </div>
+    
+    <div class="two fields">
+      <div class="fourteen wide field">
+        <label for="setenceTokenizerStrategy">
+          {{ $t('Sentence Tokenizer Strategy') }}
+        </label>
+        <select id="setenceTokenizerStrategy" v-model="localConfig.setenceTokenizerStrategy">
+          <optgroup v-bind:label="$t('English')">
+            <option value="english-default">{{ $t('English: Default') }}</option>
+            <option value="english-basic">{{ $t('English: Basic') }}</option>
+            <option value="english-clause">{{ $t('English: Clause') }}</option>
+          </optgroup>
+          <optgroup v-bind:label="$t('Chinese')">
+            <option value="chinese-default">{{ $t('Chinese: Default') }}</option>
+            <option value="chinese-comma">{{ $t('Chinese: Comma') }}</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="four wide field">
+        <label>
+          {{ $t('Setence Count') }}
+        </label>
+        <div class="input">
+          <input type="number" 
+                 v-bind:value="config.sentenceList.length" 
+                 class="ui input disabled"
+                 disabled="disabled" />
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="field">
+      
+      <textarea v-model="localConfig.fieldArticle"
+                id="fieldArticle"></textarea>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui button"
+         v-on:click="close">
+      {{ $t('OK') }}
+    </div>
+  </div>
+</div>

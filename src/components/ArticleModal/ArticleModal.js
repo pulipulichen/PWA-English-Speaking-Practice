@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-let AritcleModal = {
+let ArticleModal = {
   props: ['config', 'localConfig', 'utils'],
   data () {    
     this.$i18n.locale = this.localConfig.locale
@@ -22,7 +22,7 @@ let AritcleModal = {
       this.buildSentenceList()
     },
   },
-  //computed: {}, // AritcleModalComputed.js
+  //computed: {}, // ArticleModalComputed.js
   mounted() {
     //this.loadRSS()
     //console.log(this.localConfig.fieldArticle)
@@ -95,13 +95,13 @@ let AritcleModal = {
   }
 }
 
-import AritcleModalMethodsSentence from './AritcleModalMethodsSentence.js'
-AritcleModalMethodsSentence(AritcleModal)
+import ArticleModalMethodsSentence from './ArticleModalMethodsSentence.js'
+ArticleModalMethodsSentence(ArticleModal)
 
-import AritcleModalMethodsRSS from './AritcleModalMethodsRSS.js'
-AritcleModalMethodsRSS(AritcleModal)
+import ArticleModalMethodsRSS from './ArticleModalMethodsRSS.js'
+ArticleModalMethodsRSS(ArticleModal)
 
-import AritcleModalComputed from './AritcleModalComputed.js'
-AritcleModalComputed(AritcleModal)
+import ArticleModalComputed from './ArticleModalComputed.js'
+ArticleModalComputed(ArticleModal)
 
-export default AritcleModal
+export default ArticleModal

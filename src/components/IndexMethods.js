@@ -13,7 +13,7 @@ export default function (Index) {
   }
   
   Index.methods.openArticleModal = function () {
-    this.$refs.AritcleModal.open()
+    this.$refs.ArticleModal.open()
   }
   
 //  Index.methods.speakCurrentSentence = async function () {

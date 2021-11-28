@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"components/ConfigurationModal":"components/ConfigurationModal","components/ControllerMenuBottomBar":"components/ControllerMenuBottomBar","components/ControllerMenuTopBar":"components/ControllerMenuTopBar","components/SentencePanel":"components/SentencePanel","vendors/semantic-ui-niwsf":"vendors/semantic-ui-niwsf","vendors~components/AritcleModal":"vendors~components/AritcleModal","components/AritcleModal":"components/AritcleModal","vendors~components/LearningInstructor":"vendors~components/LearningInstructor","components/LearningInstructor":"components/LearningInstructor"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"components/ConfigurationModal":"components/ConfigurationModal","components/ControllerMenuBottomBar":"components/ControllerMenuBottomBar","components/ControllerMenuTopBar":"components/ControllerMenuTopBar","components/SentencePanel":"components/SentencePanel","vendors/semantic-ui-niwsf":"vendors/semantic-ui-niwsf","vendors~components/ArticleModal":"vendors~components/ArticleModal","components/ArticleModal":"components/ArticleModal","vendors~components/LearningInstructor":"vendors~components/LearningInstructor","components/LearningInstructor":"components/LearningInstructor"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -18433,8 +18433,8 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c("AritcleModal", {
-        ref: "AritcleModal",
+      _c("ArticleModal", {
+        ref: "ArticleModal",
         attrs: {
           config: _vm.config,
           localConfig: _vm.localConfig,
@@ -31209,7 +31209,7 @@ __webpack_require__.r(__webpack_exports__);
     ControllerMenuTopBar: () => {return __webpack_require__.e(/*! import() | components/ControllerMenuTopBar */ "components/ControllerMenuTopBar").then(__webpack_require__.bind(null, /*! ./ControllerMenuTopBar/ControllerMenuTopBar.vue */ "./src/components/ControllerMenuTopBar/ControllerMenuTopBar.vue"))},
     ControllerMenuBottomBar: () => {return __webpack_require__.e(/*! import() | components/ControllerMenuBottomBar */ "components/ControllerMenuBottomBar").then(__webpack_require__.bind(null, /*! ./ControllerMenuBottomBar/ControllerMenuBottomBar.vue */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.vue"))},
     
-    AritcleModal: () => {return Promise.all(/*! import() | components/AritcleModal */[__webpack_require__.e("vendors~components/AritcleModal"), __webpack_require__.e("components/AritcleModal")]).then(__webpack_require__.bind(null, /*! ./AritcleModal/AritcleModal.vue */ "./src/components/AritcleModal/AritcleModal.vue"))},
+    ArticleModal: () => {return Promise.all(/*! import() | components/ArticleModal */[__webpack_require__.e("vendors~components/ArticleModal"), __webpack_require__.e("components/ArticleModal")]).then(__webpack_require__.bind(null, /*! ./ArticleModal/ArticleModal.vue */ "./src/components/ArticleModal/ArticleModal.vue"))},
     ConfigurationModal: () => {return __webpack_require__.e(/*! import() | components/ConfigurationModal */ "components/ConfigurationModal").then(__webpack_require__.bind(null, /*! ./ConfigurationModal/ConfigurationModal.vue */ "./src/components/ConfigurationModal/ConfigurationModal.vue"))},
     
     SentencePanel: () => {return __webpack_require__.e(/*! import() | components/SentencePanel */ "components/SentencePanel").then(__webpack_require__.bind(null, /*! ./SentencePanel/SentencePanel.vue */ "./src/components/SentencePanel/SentencePanel.vue"))},
@@ -31259,7 +31259,7 @@ __webpack_require__.r(__webpack_exports__);
   }
   
   Index.methods.openArticleModal = function () {
-    this.$refs.AritcleModal.open()
+    this.$refs.ArticleModal.open()
   }
   
 //  Index.methods.speakCurrentSentence = async function () {
@@ -32074,7 +32074,8 @@ let localConfig = {
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
   setenceTokenizerStrategy: 'english-default', // english-default english-basic english-clause chinese-default chinese-comma
   
-  debugSpeechToTextUtilsMockup: 'perfect'  // perfect false auto
+  debugSpeechToTextUtilsMockup: 'perfect',  // perfect false auto
+  articleResource: 'english-bbc-world-news',  // english-bbc-world-news english-cnn-world-news englis-taiwan-today chinese-pts-news
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);

@@ -1,4 +1,4 @@
-export default function (AritcleModal) {
+export default function (ArticleModal) {
     let chunkSentenceOptionsBasic = [
       {
         needle: ', ',
@@ -76,11 +76,11 @@ export default function (AritcleModal) {
       },
     ]
     
-    if (!AritcleModal.computed) {
-      AritcleModal.computed = {}
+    if (!ArticleModal.computed) {
+      ArticleModal.computed = {}
     }
     
-    AritcleModal.computed.chunkSentenceOptions = function () {
+    ArticleModal.computed.chunkSentenceOptions = function () {
       if (this.localConfig.setenceTokenizerStrategy === 'english-default') {
         return []
       }

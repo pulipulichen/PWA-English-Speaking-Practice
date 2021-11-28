@@ -1,8 +1,8 @@
 const Tokenizer = require('sentence-tokenizer');
 
-export default function (AritcleModal) {
+export default function (ArticleModal) {
     
-    AritcleModal.methods.chunkSentence = function (sentence) {
+    ArticleModal.methods.chunkSentence = function (sentence) {
       let output = []
       
       //output.push(sentence)
@@ -55,7 +55,7 @@ export default function (AritcleModal) {
       return output
     }
     
-    AritcleModal.methods.buildSentenceList = function () {
+    ArticleModal.methods.buildSentenceList = function () {
       //console.log(this.fieldArticle)
       
       if (!this.localConfig.fieldArticle || this.localConfig.fieldArticle.trim() === '') {
