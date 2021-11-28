@@ -70,6 +70,15 @@
          v-on:click="openDictionary">
       {{ $t('Dictionary') }}
     </div>
+    <div class="ui icon button"
+         v-on:click="practiceWord">
+      <i class="comment outline icon" />
+    </div>
+    <div class="ui icon button"
+         v-on:click="speakWord">
+      <i class="icon"
+         v-bind:class="{'play': !isSpeaking, pause: isSpeaking}" />
+    </div>
     <div class="ui button"
          v-on:click="close">
       {{ $t('OK') }}

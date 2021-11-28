@@ -5,18 +5,6 @@ export default function (ArticleModal) {
     ArticleModal.methods.chunkSentence = function (sentence) {
       let output = []
       
-      if (this.localConfig.setenceTokenizerStrategy === 'lines') {
-        let lines = sentence.split('\n')
-        let output = []
-        lines.forEach(line => {
-          line = line.trim()
-          if (line !== '') {
-            output.push(line)
-          }
-        })
-        return output
-      }
-      
       //output.push(sentence)
       let checking = true
       while (checking) {
@@ -64,7 +52,7 @@ export default function (ArticleModal) {
         output.push(sentence)
       }
       
-      console.log(sentence)
+      //console.log(sentence)
       
       return output
     }
@@ -74,6 +62,25 @@ export default function (ArticleModal) {
       
       if (!this.localConfig.fieldArticle || this.localConfig.fieldArticle.trim() === '') {
         return false
+      }
+      
+      //console.log(this.localConfig.setenceTokenizerStrategy)
+      if (this.localConfig.setenceTokenizerStrategy === 'lines') {
+        let lines = this.localConfig.fieldArticle.trim().split('\n')
+        let output = []
+        lines.forEach(line => {
+          line = line.trim()
+          if (line === '') {
+            return false
+            
+          }
+          this.chunkSentence(line).forEach(s => {
+            output.push(s)
+          })
+        })
+        //console.log(output);
+        this.config.sentenceList = output
+        return output
       }
       
       var tokenizer = new Tokenizer('Chuck')

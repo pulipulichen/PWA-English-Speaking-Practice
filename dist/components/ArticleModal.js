@@ -542,6 +542,12 @@ __webpack_require__.r(__webpack_exports__);
         chunkAfter: true
       },
       {
+        needle: '; ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
         needle: '," ',
         minBefore: 5,
         minAfter: 5,
@@ -607,7 +613,8 @@ __webpack_require__.r(__webpack_exports__);
       if (this.localConfig.setenceTokenizerStrategy === 'english-default') {
         return []
       }
-      if (this.localConfig.setenceTokenizerStrategy === 'english-basic') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-basic'
+              || this.localConfig.setenceTokenizerStrategy === 'lines') {
         return chunkSentenceOptionsBasic
       }
       if (this.localConfig.setenceTokenizerStrategy === 'english-clause') {
@@ -617,7 +624,7 @@ __webpack_require__.r(__webpack_exports__);
     }
     
     ArticleModal.computed.rssSourceURL = function () {
-      let url = 'https://script.google.com/macros/s/AKfycbwsTFG28loQDTZiA-_hGfgAMW8UFCE9tH_ajXvCzuiLQAYVfeI7IltI5NNHZ42nJFR_/exec'
+      let url = 'https://script.google.com/macros/s/AKfycbxR-XE9EXDekhvIWUAmAZkxgXkxR4Zmw45ZvsFYhtwAaLc8s97M-7dqE2UWHw9klz9F/exec'
       if (this.localConfig.articleResource === 'english-bbc-world-news') {
         // donothing
         this.setenceTokenizerStrategy = 'english-default'
@@ -729,18 +736,6 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     ArticleModal.methods.chunkSentence = function (sentence) {
       let output = []
       
-      if (this.localConfig.setenceTokenizerStrategy === 'lines') {
-        let lines = sentence.split('\n')
-        let output = []
-        lines.forEach(line => {
-          line = line.trim()
-          if (line !== '') {
-            output.push(line)
-          }
-        })
-        return output
-      }
-      
       //output.push(sentence)
       let checking = true
       while (checking) {
@@ -788,7 +783,7 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
         output.push(sentence)
       }
       
-      console.log(sentence)
+      //console.log(sentence)
       
       return output
     }
@@ -798,6 +793,25 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
       
       if (!this.localConfig.fieldArticle || this.localConfig.fieldArticle.trim() === '') {
         return false
+      }
+      
+      //console.log(this.localConfig.setenceTokenizerStrategy)
+      if (this.localConfig.setenceTokenizerStrategy === 'lines') {
+        let lines = this.localConfig.fieldArticle.trim().split('\n')
+        let output = []
+        lines.forEach(line => {
+          line = line.trim()
+          if (line === '') {
+            return false
+            
+          }
+          this.chunkSentence(line).forEach(s => {
+            output.push(s)
+          })
+        })
+        //console.log(output);
+        this.config.sentenceList = output
+        return output
       }
       
       var tokenizer = new Tokenizer('Chuck')

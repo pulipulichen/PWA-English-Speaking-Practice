@@ -179,7 +179,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF;ADIA;EAEI,yBAAA;ACHJ","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n\n.SentenceDifference.positive {\n  .word:not(.removed):not(.added) {\n    color: #2c662d !important\n  }\n}",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n"]}]);
+exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n.word[data-v-e323347e] {\n  cursor: pointer;\n}\n.space[data-v-e323347e] {\n  pointer-events: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF;ADIA;EAEI,yBAAA;ACHJ;ADOA;EACE,eAAA;ACLF;ADQA;EACE,oBAAA;ACNF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n\n.SentenceDifference.positive {\n  .word:not(.removed):not(.added) {\n    color: #2c662d !important\n  }\n}\n\n.word {\n  cursor: pointer;\n}\n\n.space {\n  pointer-events: none;\n}",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n.word {\n  cursor: pointer;\n}\n.space {\n  pointer-events: none;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -540,8 +540,23 @@ var render = function() {
           !word.added
             ? _c(
                 "span",
-                { staticClass: "word", class: { removed: word.removed } },
-                [_vm._v(_vm._s(word.value))]
+                { class: { removed: word.removed } },
+                _vm._l(_vm.splitWord(word.value), function(w, j) {
+                  return _c(
+                    "span",
+                    {
+                      staticClass: "word",
+                      class: { space: w === " " },
+                      on: {
+                        click: function($event) {
+                          return _vm.practiceWord(w)
+                        }
+                      }
+                    },
+                    [_vm._v("\n        " + _vm._s(w) + "\n      ")]
+                  )
+                }),
+                0
               )
             : _vm._e(),
           _vm._v(" "),
@@ -904,6 +919,23 @@ var render = function() {
           "div",
           { staticClass: "ui button", on: { click: _vm.openDictionary } },
           [_vm._v("\n      " + _vm._s(_vm.$t("Dictionary")) + "\n    ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "ui icon button", on: { click: _vm.practiceWord } },
+          [_c("i", { staticClass: "comment outline icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "ui icon button", on: { click: _vm.speakWord } },
+          [
+            _c("i", {
+              staticClass: "icon",
+              class: { play: !_vm.isSpeaking, pause: _vm.isSpeaking }
+            })
+          ]
         ),
         _vm._v(" "),
         _c("div", { staticClass: "ui button", on: { click: _vm.close } }, [
@@ -1820,6 +1852,19 @@ let SentenceDifference = {
         return 'word-to-learn'
       }
       //let score = this.
+    },
+    splitWord (text) {
+      let parts = text.split(' ')
+      let output = []
+      
+      parts.forEach((p, i) => {
+        if (i > 0) {
+          output.push(' ')
+        }
+        output.push(p)
+      })
+      
+      return output
     }
   }
 }

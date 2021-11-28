@@ -19,6 +19,12 @@ export default function (ArticleModal) {
         chunkAfter: true
       },
       {
+        needle: '; ',
+        minBefore: 5,
+        minAfter: 5,
+        chunkAfter: true
+      },
+      {
         needle: '," ',
         minBefore: 5,
         minAfter: 5,
@@ -84,7 +90,8 @@ export default function (ArticleModal) {
       if (this.localConfig.setenceTokenizerStrategy === 'english-default') {
         return []
       }
-      if (this.localConfig.setenceTokenizerStrategy === 'english-basic') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-basic'
+              || this.localConfig.setenceTokenizerStrategy === 'lines') {
         return chunkSentenceOptionsBasic
       }
       if (this.localConfig.setenceTokenizerStrategy === 'english-clause') {
@@ -94,7 +101,7 @@ export default function (ArticleModal) {
     }
     
     ArticleModal.computed.rssSourceURL = function () {
-      let url = 'https://script.google.com/macros/s/AKfycbwsTFG28loQDTZiA-_hGfgAMW8UFCE9tH_ajXvCzuiLQAYVfeI7IltI5NNHZ42nJFR_/exec'
+      let url = 'https://script.google.com/macros/s/AKfycbxR-XE9EXDekhvIWUAmAZkxgXkxR4Zmw45ZvsFYhtwAaLc8s97M-7dqE2UWHw9klz9F/exec'
       if (this.localConfig.articleResource === 'english-bbc-world-news') {
         // donothing
         this.setenceTokenizerStrategy = 'english-default'

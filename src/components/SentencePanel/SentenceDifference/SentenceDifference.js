@@ -74,6 +74,19 @@ let SentenceDifference = {
         return 'word-to-learn'
       }
       //let score = this.
+    },
+    splitWord (text) {
+      let parts = text.split(' ')
+      let output = []
+      
+      parts.forEach((p, i) => {
+        if (i > 0) {
+          output.push(' ')
+        }
+        output.push(p)
+      })
+      
+      return output
     }
   }
 }

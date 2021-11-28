@@ -2,8 +2,14 @@
      v-bind:class="{positive: (config.practiceSentenceEvaluationScore >= 0.7)}">
   <template v-for="(word, i) in results">
     <span v-if="!word.added"
-          class="word"
-          v-bind:class="{removed: word.removed}">{{ word.value }}</span>
+          v-bind:class="{removed: word.removed}">
+      <span v-for="(w, j) in splitWord(word.value)"
+            class="word"
+            v-bind:class="{space: (w === ' ')}"
+            v-on:click="practiceWord(w)">
+        {{ w }}
+      </span>
+    </span>
     <span v-if="word.added"
           class="added word"
           v-bind:class="computedAddedWord(word.value)"
