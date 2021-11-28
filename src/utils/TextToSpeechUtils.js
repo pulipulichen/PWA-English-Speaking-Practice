@@ -71,7 +71,7 @@ const TextToSpeechUtils = {
   setRate (value) {
     rate = value
   },
-  startSpeak: async function (text) {
+  startSpeak: async function (text, option = {}) {
     await this.init()
     
     text = text.trim()
@@ -87,9 +87,27 @@ const TextToSpeechUtils = {
       //console.log(resolve)
       let utterThis = new SpeechSynthesisUtterance(text);
 
-      utterThis.voice = preferVoice
-      utterThis.pitch = Number(pitch)
-      utterThis.rate = Number(rate)
+      if (option.preferVoice) {
+        utterThis.pitch = option.preferVoice
+      }
+      else {
+        utterThis.voice = preferVoice
+      }
+      
+      if (option.pitch) {
+        utterThis.pitch = Number(option.pitch)
+      }
+      else {
+        utterThis.pitch = Number(pitch)
+      }
+      
+      if (option.rate) {
+        utterThis.rate = Number(option.rate)
+      }
+      else {
+        utterThis.rate = Number(rate)
+      }
+      
 
       utterThis.onend = () => {
         isSpeaking = false

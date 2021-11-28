@@ -113,7 +113,8 @@ export default function (LearningInstructor) {
     //this.config.practiceSentence = 'ok'
 
     this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
-    this.config.practiceSentenceEvaluationScore = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
+    this.config.practiceSentenceEvaluationScore = LearningInstructor.methods.scoreSentenceEvaluate(this.config.practiceSentenceEvaluationResult)
+    //console.log(this.config.practiceSentenceEvaluationScore)
     await this.speakPracticeFeedback(this.config.practiceSentenceEvaluationScore)
     
     await this.utils.AsyncUtils.sleep(2000)
@@ -150,13 +151,16 @@ export default function (LearningInstructor) {
     return result
   }
   
-  LearningInstructor.methods.scoreEvaluate = function (results) {
+  LearningInstructor.methods.scoreSentenceEvaluate = function (results) {
     let error = 0
     results.forEach(r => {
-      if (r.added) {
-        error = error++
+      //console.log(r.added)
+      if (r.added === true) {
+        error++
       } 
     })
+    
+    //console.log(error)
     
     if (error > 5) {
       return 0

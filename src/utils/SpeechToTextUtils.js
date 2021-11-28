@@ -115,7 +115,7 @@ export default {
     indexList = this.getShuffledArr(indexList)
     
     for (let i = 0; i < maskedCount; i++) {
-      words[indexList[i]] = 'ERROR'
+      words[indexList[i]] = '[MASKED]'
     }
     
     return words.join(' ')

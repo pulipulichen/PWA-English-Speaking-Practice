@@ -71,32 +71,6 @@ let AritcleModal = {
       return text.trim()
     },
     
-    loadRSS: async function () {
-      let url = 'https://script.google.com/macros/s/AKfycbxHI0GSxoQHeZDD9SgO0A_oystwMss4A79Pi3SWZy8HdLF0beIT0iDWQrUCuov6s7Qu/exec'
-      let {output} = await this.utils.AxiosUtils.get(url)
-      //console.log(result)
-      /*
-      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
-      //console.log(result)
-      
-      let items = result.split('<item>').splice(1)
-      items.forEach(item => {
-        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
-        title = this.cleanValue(title)
-        if (!title.endsWith('.')) {
-          title = title + '.'
-        }
-        
-        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
-        description = this.cleanValue(description)
-        console.log(title)
-        console.log(description)
-      })
-      */
-      this.localConfig.fieldArticle = output.join(' ')
-      this.localConfig.playingIndex = 0
-      this.localConfig.setenceTokenizerStrategy = 'default'
-    },
 
     loadDemo: async function () {
       //let rss = await this.utils.AxiosUtils.get('http://rss.cnn.com/rss/edition.rss')
@@ -123,6 +97,9 @@ let AritcleModal = {
 
 import AritcleModalMethodsSentence from './AritcleModalMethodsSentence.js'
 AritcleModalMethodsSentence(AritcleModal)
+
+import AritcleModalMethodsRSS from './AritcleModalMethodsRSS.js'
+AritcleModalMethodsRSS(AritcleModal)
 
 import AritcleModalComputed from './AritcleModalComputed.js'
 AritcleModalComputed(AritcleModal)

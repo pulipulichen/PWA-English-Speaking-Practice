@@ -262,7 +262,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AritcleModalMethodsSentence_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AritcleModalMethodsSentence.js */ "./src/components/AritcleModal/AritcleModalMethodsSentence.js");
-/* harmony import */ var _AritcleModalComputed_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AritcleModalComputed.js */ "./src/components/AritcleModal/AritcleModalComputed.js");
+/* harmony import */ var _AritcleModalMethodsRSS_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AritcleModalMethodsRSS.js */ "./src/components/AritcleModal/AritcleModalMethodsRSS.js");
+/* harmony import */ var _AritcleModalComputed_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AritcleModalComputed.js */ "./src/components/AritcleModal/AritcleModalComputed.js");
 
 
 let AritcleModal = {
@@ -336,32 +337,6 @@ let AritcleModal = {
       return text.trim()
     },
     
-    loadRSS: async function () {
-      let url = 'https://script.google.com/macros/s/AKfycbxHI0GSxoQHeZDD9SgO0A_oystwMss4A79Pi3SWZy8HdLF0beIT0iDWQrUCuov6s7Qu/exec'
-      let {output} = await this.utils.AxiosUtils.get(url)
-      //console.log(result)
-      /*
-      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
-      //console.log(result)
-      
-      let items = result.split('<item>').splice(1)
-      items.forEach(item => {
-        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
-        title = this.cleanValue(title)
-        if (!title.endsWith('.')) {
-          title = title + '.'
-        }
-        
-        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
-        description = this.cleanValue(description)
-        console.log(title)
-        console.log(description)
-      })
-      */
-      this.localConfig.fieldArticle = output.join(' ')
-      this.localConfig.playingIndex = 0
-      this.localConfig.setenceTokenizerStrategy = 'default'
-    },
 
     loadDemo: async function () {
       //let rss = await this.utils.AxiosUtils.get('http://rss.cnn.com/rss/edition.rss')
@@ -390,7 +365,10 @@ let AritcleModal = {
 Object(_AritcleModalMethodsSentence_js__WEBPACK_IMPORTED_MODULE_1__["default"])(AritcleModal)
 
 
-Object(_AritcleModalComputed_js__WEBPACK_IMPORTED_MODULE_2__["default"])(AritcleModal)
+Object(_AritcleModalMethodsRSS_js__WEBPACK_IMPORTED_MODULE_2__["default"])(AritcleModal)
+
+
+Object(_AritcleModalComputed_js__WEBPACK_IMPORTED_MODULE_3__["default"])(AritcleModal)
 
 /* harmony default export */ __webpack_exports__["default"] = (AritcleModal);
 
@@ -573,6 +551,49 @@ __webpack_require__.r(__webpack_exports__);
       if (this.localConfig.setenceTokenizerStrategy === 'clause') {
         return chunkSentenceOptionsBasic.concat(chunkSentenceOptionsClause)
       }
+    }
+});
+
+/***/ }),
+
+/***/ "./src/components/AritcleModal/AritcleModalMethodsRSS.js":
+/*!***************************************************************!*\
+  !*** ./src/components/AritcleModal/AritcleModalMethodsRSS.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function (AritcleModal) {
+    
+    AritcleModal.methods.loadRSS = async function () {
+      let url = 'https://script.google.com/macros/s/AKfycby5WrzykN_CycYjN0x9sQlEnXO4MYrHMxK3npPA9x0ICT9KzJ_vjHhifvi7cCTaFQc_/exec'
+      let {output} = await this.utils.AxiosUtils.get(url)
+      //console.log(result)
+      /*
+      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
+      //console.log(result)
+      
+      let items = result.split('<item>').splice(1)
+      items.forEach(item => {
+        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
+        title = this.cleanValue(title)
+        if (!title.endsWith('.')) {
+          title = title + '.'
+        }
+        
+        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
+        description = this.cleanValue(description)
+        console.log(title)
+        console.log(description)
+      })
+      */
+      this.localConfig.fieldArticle = output.join(' ')
+      this.localConfig.playingIndex = 0
+      this.localConfig.setenceTokenizerStrategy = 'default'
     }
 });
 

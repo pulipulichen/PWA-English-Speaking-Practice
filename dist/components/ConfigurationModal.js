@@ -352,7 +352,7 @@ var render = function() {
               _c("label", [
                 _vm._v(
                   "\n        " +
-                    _vm._s(_vm.$t("Speech to Text mockup")) +
+                    _vm._s(_vm.$t("Speech to Text Mockup")) +
                     "\n      "
                 )
               ]),

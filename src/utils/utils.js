@@ -11,6 +11,7 @@ import SpeechToTextUtils from './SpeechToTextUtils.js'
 import TextToSpeechUtils from './TextToSpeechUtils.js'
 import SoundUtils from './SoundUtils.js'
 import TransUtils from './TransUtils.js'
+import RandomUtils from './RandomUtils.js'
 
 export default {
   AsyncUtils,
@@ -23,5 +24,6 @@ export default {
   SpeechToTextUtils,
   TextToSpeechUtils,
   SoundUtils,
-  TransUtils
+  TransUtils,
+  RandomUtils
 }

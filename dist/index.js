@@ -32427,6 +32427,57 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/utils/RandomUtils.js":
+/*!**********************************!*\
+  !*** ./src/utils/RandomUtils.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (list) {
+  
+  let previousResult = null
+  list = [].concat(list)
+  
+  return {
+    shuffleList () {
+      if (list.length < 2) {
+        return false
+      }
+      
+      let currentIndex = list.length,  randomIndex;
+
+      // While there remain elements to shuffle...
+      while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [list[currentIndex], list[randomIndex]] = [
+          list[randomIndex], list[currentIndex]];
+      }
+    },
+    sampleUnduplicated () {
+      this.shuffleList()
+      
+      let item = list[0]
+      if (item === previousResult && list.length > 1) {
+        item = list[1]
+      }
+      
+      previousResult = item
+      return item
+    }
+  }
+  
+});
+
+/***/ }),
+
 /***/ "./src/utils/SoundUtils.js":
 /*!*********************************!*\
   !*** ./src/utils/SoundUtils.js ***!
@@ -32589,7 +32640,7 @@ let isStarted = false
     indexList = this.getShuffledArr(indexList)
     
     for (let i = 0; i < maskedCount; i++) {
-      words[indexList[i]] = 'ERROR'
+      words[indexList[i]] = '[MASKED]'
     }
     
     return words.join(' ')
@@ -32681,7 +32732,7 @@ const TextToSpeechUtils = {
   setRate (value) {
     rate = value
   },
-  startSpeak: async function (text) {
+  startSpeak: async function (text, option = {}) {
     await this.init()
     
     text = text.trim()
@@ -32697,9 +32748,27 @@ const TextToSpeechUtils = {
       //console.log(resolve)
       let utterThis = new SpeechSynthesisUtterance(text);
 
-      utterThis.voice = preferVoice
-      utterThis.pitch = Number(pitch)
-      utterThis.rate = Number(rate)
+      if (option.preferVoice) {
+        utterThis.pitch = option.preferVoice
+      }
+      else {
+        utterThis.voice = preferVoice
+      }
+      
+      if (option.pitch) {
+        utterThis.pitch = Number(option.pitch)
+      }
+      else {
+        utterThis.pitch = Number(pitch)
+      }
+      
+      if (option.rate) {
+        utterThis.rate = Number(option.rate)
+      }
+      else {
+        utterThis.rate = Number(rate)
+      }
+      
 
       utterThis.onend = () => {
         isSpeaking = false
@@ -33473,6 +33542,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _TextToSpeechUtils_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./TextToSpeechUtils.js */ "./src/utils/TextToSpeechUtils.js");
 /* harmony import */ var _SoundUtils_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SoundUtils.js */ "./src/utils/SoundUtils.js");
 /* harmony import */ var _TransUtils_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./TransUtils.js */ "./src/utils/TransUtils.js");
+/* harmony import */ var _RandomUtils_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./RandomUtils.js */ "./src/utils/RandomUtils.js");
+
 
 
 
@@ -33498,7 +33569,8 @@ __webpack_require__.r(__webpack_exports__);
   SpeechToTextUtils: _SpeechToTextUtils_js__WEBPACK_IMPORTED_MODULE_8__["default"],
   TextToSpeechUtils: _TextToSpeechUtils_js__WEBPACK_IMPORTED_MODULE_9__["default"],
   SoundUtils: _SoundUtils_js__WEBPACK_IMPORTED_MODULE_10__["default"],
-  TransUtils: _TransUtils_js__WEBPACK_IMPORTED_MODULE_11__["default"]
+  TransUtils: _TransUtils_js__WEBPACK_IMPORTED_MODULE_11__["default"],
+  RandomUtils: _RandomUtils_js__WEBPACK_IMPORTED_MODULE_12__["default"]
 });
 
 /***/ })
