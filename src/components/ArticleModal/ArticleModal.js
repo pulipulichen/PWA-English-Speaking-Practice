@@ -6,7 +6,8 @@ let ArticleModal = {
     this.$i18n.locale = this.localConfig.locale
     return {
       modal: null,
-      isOpened: false
+      isOpened: false,
+      setenceTokenizerStrategy: 'english-default'
     }
   },
   watch: {

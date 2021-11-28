@@ -11,7 +11,7 @@
           <optgroup v-bind:label="$t('English')">
             <option value="english-bbc-world-news">{{ $t('BBC World News') }}</option>
             <option value="english-cnn-world-news">{{ $t('CNN World News') }}</option>
-            <option value="english-cnn-world-news">{{ $t('CNN World News') }}</option>
+            <option value="english-taiwan-today">{{ $t('Taiwan Today') }}</option>
           </optgroup>
           <optgroup v-bind:label="$t('Chinese')">
             <option value="chinese-pts-news">{{ $t('PTS News') }}</option>
@@ -19,7 +19,8 @@
         </select>
       </div>
       <div class="four wide field">
-        <a v-on:click="downloadResource">
+        <a v-on:click="downloadResource"
+           class="ui fluid button">
           Download
         </a>
       </div>

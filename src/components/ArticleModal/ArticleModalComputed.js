@@ -90,5 +90,31 @@ export default function (ArticleModal) {
       if (this.localConfig.setenceTokenizerStrategy === 'english-clause') {
         return chunkSentenceOptionsBasic.concat(chunkSentenceOptionsClause)
       }
+      return []
     }
+    
+    ArticleModal.computed.rssSourceURL = function () {
+      let url = 'https://script.google.com/macros/s/AKfycbz_JO169VpYt_BQImAWLf2WCnenfy5BNCT7jOKSGTnaB1CSpE__vwo-o-LFb0n9yhj8/exec'
+      if (this.localConfig.articleResource === 'english-bbc-world-news') {
+        // donothing
+        this.setenceTokenizerStrategy = 'english-default'
+      }
+      
+      if (this.localConfig.articleResource === 'english-cnn-world-news') {
+        url = url + '?feed=' + encodeURIComponent('http://rss.cnn.com/rss/edition_world.rss')
+        this.setenceTokenizerStrategy = 'english-default'
+      }
+      if (this.localConfig.articleResource === 'english-taiwan-today') {
+        url = url + '?feed=' + encodeURIComponent('http://api.taiwantoday.tw/en/rss.php?unit=2,6,10,15,18')
+        this.setenceTokenizerStrategy = 'english-default'
+      }
+      
+      if (this.localConfig.articleResource === 'chinese-pts-news') {
+        url = url + '?feed=' + encodeURIComponent('https://news.pts.org.tw/xml/newsfeed.xml')
+        this.setenceTokenizerStrategy = 'chinese-comma'
+      }
+      
+      return url
+    }
+    
 }

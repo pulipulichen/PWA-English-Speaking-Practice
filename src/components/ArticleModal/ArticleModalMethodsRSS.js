@@ -3,12 +3,24 @@ const Tokenizer = require('sentence-tokenizer');
 export default function (ArticleModal) {
     
     ArticleModal.methods.downloadResource = async function () {
+      console.log(this.rssSourceURL)
+      let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
+      console.log(output)
       
+      if (this.localConfig.articleResource === 'englis-taiwan-today') {
+        output = output.splice(0, 2)
+      }
+      
+      this.localConfig.fieldArticle = output.join(' ')
+      this.localConfig.playingIndex = 0
+      
+      this.localConfig.setenceTokenizerStrategy = this.setenceTokenizerStrategy
     }
     
     ArticleModal.methods.loadRSS = async function () {
-      let url = 'https://script.google.com/macros/s/AKfycby5WrzykN_CycYjN0x9sQlEnXO4MYrHMxK3npPA9x0ICT9KzJ_vjHhifvi7cCTaFQc_/exec'
-      let {output} = await this.utils.AxiosUtils.get(url)
+      
+      let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
+      console.log(output)
       //console.log(result)
       /*
       let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')

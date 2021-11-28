@@ -101,8 +101,8 @@ var render = function() {
                     _vm._v(_vm._s(_vm.$t("CNN World News")))
                   ]),
                   _vm._v(" "),
-                  _c("option", { attrs: { value: "english-cnn-world-news" } }, [
-                    _vm._v(_vm._s(_vm.$t("CNN World News")))
+                  _c("option", { attrs: { value: "english-taiwan-today" } }, [
+                    _vm._v(_vm._s(_vm.$t("Taiwan Today")))
                   ])
                 ]),
                 _vm._v(" "),
@@ -116,9 +116,14 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "four wide field" }, [
-            _c("a", { on: { click: _vm.downloadResource } }, [
-              _vm._v("\n          Download\n        ")
-            ])
+            _c(
+              "a",
+              {
+                staticClass: "ui fluid button",
+                on: { click: _vm.downloadResource }
+              },
+              [_vm._v("\n          Download\n        ")]
+            )
           ])
         ]),
         _vm._v(" "),
@@ -308,7 +313,8 @@ let ArticleModal = {
     this.$i18n.locale = this.localConfig.locale
     return {
       modal: null,
-      isOpened: false
+      isOpened: false,
+      setenceTokenizerStrategy: 'english-default'
     }
   },
   watch: {
@@ -601,7 +607,33 @@ __webpack_require__.r(__webpack_exports__);
       if (this.localConfig.setenceTokenizerStrategy === 'english-clause') {
         return chunkSentenceOptionsBasic.concat(chunkSentenceOptionsClause)
       }
+      return []
     }
+    
+    ArticleModal.computed.rssSourceURL = function () {
+      let url = 'https://script.google.com/macros/s/AKfycbz_JO169VpYt_BQImAWLf2WCnenfy5BNCT7jOKSGTnaB1CSpE__vwo-o-LFb0n9yhj8/exec'
+      if (this.localConfig.articleResource === 'english-bbc-world-news') {
+        // donothing
+        this.setenceTokenizerStrategy = 'english-default'
+      }
+      
+      if (this.localConfig.articleResource === 'english-cnn-world-news') {
+        url = url + '?feed=' + encodeURIComponent('http://rss.cnn.com/rss/edition_world.rss')
+        this.setenceTokenizerStrategy = 'english-default'
+      }
+      if (this.localConfig.articleResource === 'english-taiwan-today') {
+        url = url + '?feed=' + encodeURIComponent('http://api.taiwantoday.tw/en/rss.php?unit=2,6,10,15,18')
+        this.setenceTokenizerStrategy = 'english-default'
+      }
+      
+      if (this.localConfig.articleResource === 'chinese-pts-news') {
+        url = url + '?feed=' + encodeURIComponent('https://news.pts.org.tw/xml/newsfeed.xml')
+        this.setenceTokenizerStrategy = 'chinese-comma'
+      }
+      
+      return url
+    }
+    
 });
 
 /***/ }),
@@ -620,12 +652,24 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
 /* harmony default export */ __webpack_exports__["default"] = (function (ArticleModal) {
     
     ArticleModal.methods.downloadResource = async function () {
+      console.log(this.rssSourceURL)
+      let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
+      console.log(output)
       
+      if (this.localConfig.articleResource === 'englis-taiwan-today') {
+        output = output.splice(0, 2)
+      }
+      
+      this.localConfig.fieldArticle = output.join(' ')
+      this.localConfig.playingIndex = 0
+      
+      this.localConfig.setenceTokenizerStrategy = this.setenceTokenizerStrategy
     }
     
     ArticleModal.methods.loadRSS = async function () {
-      let url = 'https://script.google.com/macros/s/AKfycby5WrzykN_CycYjN0x9sQlEnXO4MYrHMxK3npPA9x0ICT9KzJ_vjHhifvi7cCTaFQc_/exec'
-      let {output} = await this.utils.AxiosUtils.get(url)
+      
+      let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
+      console.log(output)
       //console.log(result)
       /*
       let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
