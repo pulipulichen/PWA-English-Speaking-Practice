@@ -60,8 +60,12 @@ export default function (LearningInstructor) {
         muteCancel = true
       }, 3000)
       
+      // --------------------------
+      
       await this.utils.AsyncUtils.sleep()
       this.beep.play()
+      
+      // --------------------------
       
       let hasReceivcePracticeSentence = false
       let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
@@ -92,7 +96,8 @@ export default function (LearningInstructor) {
         if (muteCancel === true) {
           return false
         }
-      }
+      } // while (!hasReceivcePracticeSentence) {
+      
 //    }
 //    else {
 //      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
@@ -106,8 +111,8 @@ export default function (LearningInstructor) {
     //this.config.practiceSentence = 'ok'
 
     this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
-    
-    await this.sentencePracticeFeedback()
+    let score = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
+    await this.speakPracticeFeedback(score)
     
     await this.utils.AsyncUtils.sleep(2000)
   }
@@ -165,8 +170,8 @@ export default function (LearningInstructor) {
     }
   }
   
-  LearningInstructor.methods.sentencePracticeFeedback = async function (results) {
-    let score = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
+  LearningInstructor.methods.speakPracticeFeedback = async function (score) {
+    
     //console.log(result)
     //await this.utils.AsyncUtils.sleep(time)
     await this.utils.AsyncUtils.sleep()
