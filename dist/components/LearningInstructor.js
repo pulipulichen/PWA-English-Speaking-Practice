@@ -1,1 +1,871 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{141:function(module,exports){eval('module.exports = "./dist/asset/censor-beep-01.mp3";//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL3NvdW5kL2NlbnNvci1iZWVwLTAxLm1wMz9iYmU4Il0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gXCIuL2Rpc3QvYXNzZXQvY2Vuc29yLWJlZXAtMDEubXAzXCI7Il0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///141\n')},142:function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(82);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQyLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvci5sZXNzPzdlNzUiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3N0eWxlLWxvYWRlci9kaXN0L2Nqcy5qcyEuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cmVmLS0xLTEhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL2xvYWRlcnMvc3R5bGVQb3N0TG9hZGVyLmpzIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9wb3N0Y3NzLWxvYWRlci9zcmMvaW5kZXguanM/P3JlZi0tMS0yIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9sZXNzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cmVmLS0xLTMhLi9MZWFybmluZ0luc3RydWN0b3IubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPTExNzYwMWEyJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///142\n")},143:function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"LearningInstructor.less"}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvci5sZXNzP2I3MTkiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gSW1wb3J0c1xudmFyIF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyA9IHJlcXVpcmUoXCIuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L3J1bnRpbWUvYXBpLmpzXCIpO1xuZXhwb3J0cyA9IF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyh0cnVlKTtcbi8vIE1vZHVsZVxuZXhwb3J0cy5wdXNoKFttb2R1bGUuaWQsIFwiXCIsIFwiXCIse1widmVyc2lvblwiOjMsXCJzb3VyY2VzXCI6W10sXCJuYW1lc1wiOltdLFwibWFwcGluZ3NcIjpcIlwiLFwiZmlsZVwiOlwiTGVhcm5pbmdJbnN0cnVjdG9yLmxlc3NcIn1dKTtcbi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0gZXhwb3J0cztcbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///143\n')},144:function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(68);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQ0LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvci55YW1sPzlkMWYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vZCBmcm9tIFwiLSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL0xlYXJuaW5nSW5zdHJ1Y3Rvci55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGTGVhcm5pbmdJbnN0cnVjdG9yJTJGTGVhcm5pbmdJbnN0cnVjdG9yLnZ1ZSZsYW5nPXlhbWxcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL0xlYXJuaW5nSW5zdHJ1Y3Rvci55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGTGVhcm5pbmdJbnN0cnVjdG9yJTJGTGVhcm5pbmdJbnN0cnVjdG9yLnZ1ZSZsYW5nPXlhbWxcIiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///144\n')},148:function(module,__webpack_exports__,__webpack_require__){"use strict";eval("// ESM COMPAT FLAG\n__webpack_require__.r(__webpack_exports__);\n\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true&\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"span\")\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true&\n\n// EXTERNAL MODULE: ./node_modules/snowball/stemmer/lib/Snowball.js\nvar Snowball = __webpack_require__(140);\nvar Snowball_default = /*#__PURE__*/__webpack_require__.n(Snowball);\n\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorComputed.js\n\n/* harmony default export */ var LearningInstructorComputed = (function (LearningInstructor) {\n  LearningInstructor.computed = {\n    currentSentence: function currentSentence() {\n      if (this.localConfig.playingIndex === null || this.localConfig.playingIndex === undefined || !this.config.sentenceList || !this.config.sentenceList[this.config.playingIndex]) {\n        return '';\n      }\n\n      return this.config.sentenceList[this.localConfig.playingIndex];\n    },\n    currentSentenceWords: function currentSentenceWords() {\n      return this.tokenizeSentenceToWords(this.currentSentence);\n    },\n    previousSentence: function previousSentence() {\n      //console.log(this.localConfig.playingIndex)\n      if (this.localConfig.playingIndex === 0) {\n        return '';\n      }\n\n      return this.config.sentenceList[this.localConfig.playingIndex - 1];\n    },\n    nextSentence: function nextSentence() {\n      //console.log(this.localConfig.playingIndex)\n      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {\n        return '';\n      }\n\n      return this.config.sentenceList[this.localConfig.playingIndex + 1];\n    },\n    stemmer: function stemmer() {\n      var stemmer = new Snowball_default.a('English');\n      return stemmer;\n    }\n  };\n});\n// EXTERNAL MODULE: ./src/components/LearningInstructor/sound/censor-beep-01.mp3\nvar censor_beep_01 = __webpack_require__(141);\nvar censor_beep_01_default = /*#__PURE__*/__webpack_require__.n(censor_beep_01);\n\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMethods.js\n\n/* harmony default export */ var LearningInstructorMethods = (function (LearningInstructor) {\n  LearningInstructor.methods.initBeep = function () {\n    this.beep = this.utils.SoundUtils.create(censor_beep_01_default.a);\n  };\n\n  LearningInstructor.methods.tokenizeSentenceToWords = function (sentence) {\n    return sentence.split(' ');\n  };\n});\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js\n/* harmony default export */ var LearningInstructorMethodsNavigation = (function (LearningInstructor) {\n  LearningInstructor.methods.goToPreviousSentence = function () {\n    if (this.localConfig.playingIndex > 0) {\n      this.localConfig.playingIndex--;\n      return true;\n    }\n\n    return false;\n  };\n\n  LearningInstructor.methods.goToNextSentence = function () {\n    if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {\n      this.localConfig.playingIndex++;\n      return true;\n    }\n\n    return false;\n  };\n});\n// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/asyncToGenerator.js\nvar asyncToGenerator = __webpack_require__(1);\nvar asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator);\n\n// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js\nvar regenerator = __webpack_require__(0);\nvar regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);\n\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMethodsSentence.js\n\n\n/* harmony default export */ var LearningInstructorMethodsSentence = (function (LearningInstructor) {\n  LearningInstructor.methods.speakCurrentSentence = /*#__PURE__*/asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {\n    var time;\n    return regenerator_default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            if (!(this.config.currentSentenceIsSpeaking === true)) {\n              _context.next = 9;\n              break;\n            }\n\n            this.utils.TextToSpeechUtils.stopSpeak();\n            this.tryToStop = true;\n            _context.next = 5;\n            return this.utils.AsyncUtils.sleep(100);\n\n          case 5:\n            this.config.currentSentenceIsSpeaking = false;\n            this.tryToStop = false;\n            this.config.firstSpeakHint = true;\n            return _context.abrupt(\"return\", false);\n\n          case 9:\n            this.config.currentSentenceIsSpeaking = true;\n            _context.next = 12;\n            return this.utils.TextToSpeechUtils.startSpeak(this.currentSentence);\n\n          case 12:\n            time = _context.sent;\n\n            if (!(this.tryToStop === true)) {\n              _context.next = 15;\n              break;\n            }\n\n            return _context.abrupt(\"return\", false);\n\n          case 15:\n            this.config.currentSentenceIsSpeaking = false;\n\n            if (!(this.localConfig.speakingInstructionStrategy !== 'none')) {\n              _context.next = 25;\n              break;\n            }\n\n            if (!this.config.firstSpeakHint) {\n              _context.next = 23;\n              break;\n            }\n\n            _context.next = 20;\n            return this.utils.AsyncUtils.sleep();\n\n          case 20:\n            _context.next = 22;\n            return this.utils.TextToSpeechUtils.startSpeak(this.$t(\"Please repeat.\"));\n\n          case 22:\n            this.config.firstSpeakHint = false;\n\n          case 23:\n            _context.next = 25;\n            return this.practiceSentence(time);\n\n          case 25:\n            if (!(this.localConfig.autoPlay === true)) {\n              _context.next = 30;\n              break;\n            }\n\n            if (!this.goToNextSentence()) {\n              _context.next = 30;\n              break;\n            }\n\n            _context.next = 29;\n            return this.utils.AsyncUtils.sleep();\n\n          case 29:\n            this.speakCurrentSentence();\n\n          case 30:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  LearningInstructor.methods.practiceSentence = /*#__PURE__*/function () {\n    var _ref2 = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2(time) {\n      var _this = this;\n\n      var muteCancel, hasReceivcePracticeSentence, thresholdWordsCount, practiceWords;\n      return regenerator_default.a.wrap(function _callee2$(_context2) {\n        while (1) {\n          switch (_context2.prev = _context2.next) {\n            case 0:\n              if (!time) {\n                time = this.currentSentence.length * 100; //console.log(time)\n              }\n\n              this.config.practiceSentence = null;\n              this.config.practiceSentenceEvaluationResult = [];\n              this.config.practiceSentenceEvaluationScore = null;\n              this.config.currentSentenceMask = this.localConfig.practiceSentenceMask; //console.log(time)\n\n              time = time + 1000; //    if (debugPractice === false) {\n\n              muteCancel = false;\n              setTimeout(function () {\n                if (_this.config.practiceSentence && _this.config.practiceSentence !== '') {\n                  return true;\n                }\n\n                _this.utils.SpeechToTextUtils.stopListen();\n\n                muteCancel = true;\n              }, 3000); // --------------------------\n\n              _context2.next = 10;\n              return this.utils.AsyncUtils.sleep();\n\n            case 10:\n              _context2.next = 12;\n              return this.beep.play();\n\n            case 12:\n              _context2.next = 14;\n              return this.utils.AsyncUtils.sleep();\n\n            case 14:\n              // --------------------------\n              hasReceivcePracticeSentence = false;\n              thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2);\n\n            case 16:\n              if (hasReceivcePracticeSentence) {\n                _context2.next = 40;\n                break;\n              }\n\n              _context2.next = 19;\n              return this.utils.SpeechToTextUtils.startListen(this.currentSentence, function (processing) {\n                _this.config.practiceSentence = processing;\n              }, this.localConfig.debugSpeechToTextUtilsMockup);\n\n            case 19:\n              this.config.practiceSentence = _context2.sent;\n\n              if (!(muteCancel === true)) {\n                _context2.next = 22;\n                break;\n              }\n\n              return _context2.abrupt(\"return\", false);\n\n            case 22:\n              // 如果字數太短，那也要重新聽取\n              //if (this.config.practiceSentence.split(' ').length < )\n              practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence);\n\n              if (!(practiceWords.length >= thresholdWordsCount)) {\n                _context2.next = 29;\n                break;\n              }\n\n              hasReceivcePracticeSentence = true;\n              _context2.next = 27;\n              return this.utils.AsyncUtils.sleep();\n\n            case 27:\n              _context2.next = 36;\n              break;\n\n            case 29:\n              _context2.next = 31;\n              return this.utils.AsyncUtils.sleep();\n\n            case 31:\n              _context2.next = 33;\n              return this.utils.TextToSpeechUtils.startSpeak(this.$t(\"Please speak again.\"));\n\n            case 33:\n              _context2.next = 35;\n              return this.utils.AsyncUtils.sleep();\n\n            case 35:\n              this.beep.play();\n\n            case 36:\n              if (!(muteCancel === true)) {\n                _context2.next = 38;\n                break;\n              }\n\n              return _context2.abrupt(\"return\", false);\n\n            case 38:\n              _context2.next = 16;\n              break;\n\n            case 40:\n              // while (!hasReceivcePracticeSentence) {\n              //    }\n              //    else {\n              //      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'\n              //      for (let i = 0; i < 3; i++) {\n              //        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence\n              //      }\n              //      await this.utils.AsyncUtils.sleep(100)\n              //    }\n              this.config.currentSentenceMask = false; //this.config.practiceSentence = 'ok'\n\n              this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence);\n              this.config.practiceSentenceEvaluationScore = LearningInstructor.methods.scoreSentenceEvaluate(this.config.practiceSentenceEvaluationResult); //console.log(this.config.practiceSentenceEvaluationScore)\n\n              _context2.next = 45;\n              return this.speakPracticeFeedback(this.config.practiceSentenceEvaluationScore);\n\n            case 45:\n              _context2.next = 47;\n              return this.utils.AsyncUtils.sleep(2000);\n\n            case 47:\n            case \"end\":\n              return _context2.stop();\n          }\n        }\n      }, _callee2, this);\n    }));\n\n    return function (_x) {\n      return _ref2.apply(this, arguments);\n    };\n  }();\n\n  LearningInstructor.methods.evaluateSentencePractice = function (source, target) {\n    var _this2 = this;\n\n    source = this.utils.DictUtils.filterWord(source);\n    target = this.utils.DictUtils.filterWord(target);\n    var resultRaw = this.utils.DiffUtils.diffWords(source, target); //console.log(resultRaw)\n\n    var result = [];\n    resultRaw.forEach(function (r) {\n      if (!r.added) {\n        result.push(r);\n      } else {\n        var words = _this2.tokenizeSentenceToWords(r.value);\n\n        words.forEach(function (w) {\n          _this2.recordWordsToLearn(w);\n\n          result.push({\n            added: true,\n            removed: false,\n            value: w\n          });\n        });\n      }\n    });\n    return result;\n  };\n\n  LearningInstructor.methods.scoreSentenceEvaluate = function (results) {\n    var error = 0;\n    results.forEach(function (r) {\n      //console.log(r.added)\n      if (r.added === true) {\n        error++;\n      }\n    }); //console.log(error)\n\n    if (error > 5) {\n      return 0;\n    } else if (error <= 5 && error > 2) {\n      return 0.5;\n    } else if (error >= 1 && error <= 2) {\n      return 0.7;\n    } else {\n      return 1;\n    }\n  };\n});\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMethodsWord.js\n\n\n\n/* global LearningInstructor */\n/* harmony default export */ var LearningInstructorMethodsWord = (function (LearningInstructor) {\n  LearningInstructor.methods.speakWord = /*#__PURE__*/function () {\n    var _ref = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee(word) {\n      return regenerator_default.a.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              _context.next = 2;\n              return this.utils.TextToSpeechUtils.startSpeak(word);\n\n            case 2:\n            case \"end\":\n              return _context.stop();\n          }\n        }\n      }, _callee, this);\n    }));\n\n    return function (_x) {\n      return _ref.apply(this, arguments);\n    };\n  }();\n\n  LearningInstructor.methods.practiceWord = /*#__PURE__*/function () {\n    var _ref2 = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2(word) {\n      var _this = this;\n\n      var muteCancel, hasReceivcePracticeSentence, thresholdWordsCount, practiceWords;\n      return regenerator_default.a.wrap(function _callee2$(_context2) {\n        while (1) {\n          switch (_context2.prev = _context2.next) {\n            case 0:\n              this.config.practiceWord = null;\n              this.config.practiceWordScore = null;\n              this.config.currentWordMask = this.localConfig.practiceSentenceMask;\n              muteCancel = false;\n              setTimeout(function () {\n                if (_this.config.practiceWord && _this.config.practiceWord !== '') {\n                  return true;\n                }\n\n                _this.utils.SpeechToTextUtils.stopListen();\n\n                muteCancel = true;\n              }, 3000); // --------------------------\n\n              _context2.next = 7;\n              return this.utils.AsyncUtils.sleep();\n\n            case 7:\n              _context2.next = 9;\n              return this.beep.play();\n\n            case 9:\n              _context2.next = 11;\n              return this.utils.AsyncUtils.sleep();\n\n            case 11:\n              // --------------------------\n              hasReceivcePracticeSentence = false;\n              thresholdWordsCount = 1;\n\n            case 13:\n              if (hasReceivcePracticeSentence) {\n                _context2.next = 37;\n                break;\n              }\n\n              _context2.next = 16;\n              return this.utils.SpeechToTextUtils.startListen(word, function (processing) {\n                _this.config.practiceWord = processing;\n              }, this.localConfig.debugSpeechToTextUtilsMockup);\n\n            case 16:\n              this.config.practiceWord = _context2.sent;\n\n              if (this.config.practiceWord) {\n                _context2.next = 21;\n                break;\n              }\n\n              _context2.next = 20;\n              return this.utils.AsyncUtils.sleep();\n\n            case 20:\n              return _context2.abrupt(\"continue\", 13);\n\n            case 21:\n              practiceWords = this.tokenizeSentenceToWords(this.config.practiceWord);\n\n              if (!(practiceWords.length >= thresholdWordsCount)) {\n                _context2.next = 26;\n                break;\n              }\n\n              hasReceivcePracticeSentence = true; //await this.utils.AsyncUtils.sleep()\n\n              _context2.next = 33;\n              break;\n\n            case 26:\n              _context2.next = 28;\n              return this.utils.AsyncUtils.sleep();\n\n            case 28:\n              _context2.next = 30;\n              return this.utils.TextToSpeechUtils.startSpeak(this.$t(\"Please speak again.\"));\n\n            case 30:\n              _context2.next = 32;\n              return this.utils.AsyncUtils.sleep();\n\n            case 32:\n              this.beep.play();\n\n            case 33:\n              if (!(muteCancel === true)) {\n                _context2.next = 35;\n                break;\n              }\n\n              return _context2.abrupt(\"return\", false);\n\n            case 35:\n              _context2.next = 13;\n              break;\n\n            case 37:\n              // while (!hasReceivcePracticeSentence) {\n              this.config.currentWordMask = false; //console.log(word)\n\n              this.config.practiceWordScore = this.evaluateWordPractice(this.config.practiceWord, word);\n              _context2.next = 41;\n              return this.speakPracticeFeedback(this.config.practiceWordScore);\n\n            case 41:\n              //return false\n              if (this.config.practiceWordScore >= 0.7) {\n                //await this.utils.AsyncUtils.sleep()\n                this.clearWordToLearn(word);\n                this.config.currentWord = null;\n              } else {\n                this.reduceWordsToLearn(word);\n              }\n\n            case 42:\n            case \"end\":\n              return _context2.stop();\n          }\n        }\n      }, _callee2, this);\n    }));\n\n    return function (_x2) {\n      return _ref2.apply(this, arguments);\n    };\n  }();\n\n  LearningInstructor.methods.evaluateWordPractice = function (source, target) {\n    var score = 1;\n    source = this.utils.DictUtils.filterWord(source);\n    target = this.utils.DictUtils.filterWord(target);\n    var result = this.utils.DiffUtils.diffChars(source, target); //console.log(result)\n\n    var addedCharCount = 0;\n    result.forEach(function (r) {\n      if (r.added === true) {\n        addedCharCount = addedCharCount + r.count;\n      }\n    }); //console.log(addedCharCount, target.length)\n\n    var percent = (target.length - addedCharCount) / target.length;\n\n    if (percent >= 0.8) {\n      score = 1;\n    } else if (percent >= 0.7) {\n      score = 0.7;\n    } else if (percent >= 0.3) {\n      score = 0.5;\n    } else {\n      score = 0;\n    }\n\n    return score;\n  };\n});\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js\n/* harmony default export */ var LearningInstructorMethodsToLearn = (function (LearningInstructor) {\n  LearningInstructor.methods.stem = function (word) {\n    this.stemmer.setCurrent(word);\n    this.stemmer.stem();\n    return this.stemmer.getCurrent();\n  };\n\n  LearningInstructor.methods.generateKeyName = function (word) {\n    word = this.utils.DictUtils.filterWord(word);\n    return 'WordToLearn:' + this.stem(word);\n  };\n\n  LearningInstructor.methods.recordWordsToLearn = function (word) {\n    var value = this.getWordToLearnScore(word);\n    value++;\n\n    if (word.length > 10) {\n      value++;\n    }\n\n    var key = this.generateKeyName(word);\n    localStorage.setItem(key, value);\n  };\n\n  LearningInstructor.methods.reduceWordsToLearn = function (word) {\n    var value = this.getWordToLearnScore(word);\n    value--;\n    var key = this.generateKeyName(word);\n    localStorage.setItem(key, value);\n  };\n\n  LearningInstructor.methods.getWordToLearnScore = function (word) {\n    var key = this.generateKeyName(word);\n    var value = localStorage.getItem(key);\n\n    if (!value) {\n      value = 0;\n    } else {\n      value = Number(value);\n    }\n\n    return value;\n  };\n\n  LearningInstructor.methods.clearWordToLearn = function (word) {\n    var key = this.generateKeyName(word);\n    localStorage.removeItem(key); //console.log('clear', this.getWordToLearnScore(word))\n  };\n});\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMethodsFeedback.js\n\n\n/* harmony default export */ var LearningInstructorMethodsFeedback = (function (LearningInstructor) {\n  var feedbackWonderful = null;\n  var feedbackGreat = null;\n  var feedbackGood = null;\n  var feedbackOK = null;\n\n  LearningInstructor.methods.speakPracticeFeedback = /*#__PURE__*/function () {\n    var _ref = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee(score) {\n      var option, _option, _option2, _option3;\n\n      return regenerator_default.a.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              if (!feedbackWonderful) {\n                // https://www.soeasyedu.com.tw/blog/online-learning/2018/09/to-encourage-somebody\n                feedbackWonderful = this.utils.RandomUtils(['Wonderful!', 'Perfect!', 'Awesome!']);\n                feedbackGreat = this.utils.RandomUtils(['Great.', 'Good Job.', 'Well done.']);\n                feedbackGood = this.utils.RandomUtils(['Good.', 'Not bad.', 'Keep it up!']);\n                feedbackOK = this.utils.RandomUtils(['OK.', 'Try again?', 'Stay strong!']);\n              } //console.log(result)\n              //await this.utils.AsyncUtils.sleep(time)\n\n\n              _context.next = 3;\n              return this.utils.AsyncUtils.sleep();\n\n            case 3:\n              if (!(score === 1)) {\n                _context.next = 9;\n                break;\n              }\n\n              option = {\n                pitch: Math.ceil(Math.random() * 3) / 10 + 1\n              };\n              _context.next = 7;\n              return this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackWonderful.sampleUnduplicated()), option);\n\n            case 7:\n              _context.next = 24;\n              break;\n\n            case 9:\n              if (!(score >= 0.7)) {\n                _context.next = 15;\n                break;\n              }\n\n              _option = {\n                pitch: Math.ceil(Math.random() * 5) / 10 + 0.8\n              };\n              _context.next = 13;\n              return this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackGreat.sampleUnduplicated()), _option);\n\n            case 13:\n              _context.next = 24;\n              break;\n\n            case 15:\n              if (!(score >= 0.5)) {\n                _context.next = 21;\n                break;\n              }\n\n              _option2 = {\n                pitch: Math.ceil(Math.random() * 4) / 10 + 0.7\n              };\n              _context.next = 19;\n              return this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackGood.sampleUnduplicated()), _option2);\n\n            case 19:\n              _context.next = 24;\n              break;\n\n            case 21:\n              _option3 = {\n                pitch: Math.ceil(Math.random() * 5) / 10 + 0.5\n              };\n              _context.next = 24;\n              return this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackOK.sampleUnduplicated()), _option3);\n\n            case 24:\n            case \"end\":\n              return _context.stop();\n          }\n        }\n      }, _callee, this);\n    }));\n\n    return function (_x) {\n      return _ref.apply(this, arguments);\n    };\n  }();\n});\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorMounted.js\n/* harmony default export */ var LearningInstructorMounted = (function (LearningInstructor) {\n  LearningInstructor.mounted = function () {\n    this.initBeep();\n  };\n});\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructorWatch.js\n/* harmony default export */ var LearningInstructorWatch = (function (LearningInstructor) {\n  LearningInstructor.watch = {\n    'localConfig.locale': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    },\n    'localConfig.playingIndex': function localConfigPlayingIndex() {\n      this.config.practiceSentence = null;\n    },\n    'autoPlay.autoPlay': function autoPlayAutoPlay() {\n      this.config.firstSpeakHint = true;\n    }\n  };\n});\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&\nvar LearningInstructorvue_type_script_lang_js_LearningInstructor = {\n  props: ['config', 'localConfig', 'utils'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {\n      beep: null,\n      tryToStop: false\n    };\n  },\n  //watch: {},  // LearningInstructorWatch.js\n  //computed: {}, // LearningInstructorComputed.js\n  //mounted() {}, // LearningInstructorMounted.js\n  methods: {} // LearningInstructorMethods.js\n\n};\n\nLearningInstructorComputed(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMethods(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMethodsNavigation(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMethodsSentence(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMethodsWord(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMethodsToLearn(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMethodsFeedback(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorMounted(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n\nLearningInstructorWatch(LearningInstructorvue_type_script_lang_js_LearningInstructor);\n/* harmony default export */ var LearningInstructorvue_type_script_lang_js_ = (LearningInstructorvue_type_script_lang_js_LearningInstructor);\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&\n /* harmony default export */ var LearningInstructor_LearningInstructorvue_type_script_lang_js_ = (LearningInstructorvue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&\nvar LearningInstructorvue_type_style_index_0_id_117601a2_lang_less_scoped_true_ = __webpack_require__(142);\n\n// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js\nvar componentNormalizer = __webpack_require__(10);\n\n// EXTERNAL MODULE: ./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml\nvar LearningInstructorvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml = __webpack_require__(144);\n\n// CONCATENATED MODULE: ./src/components/LearningInstructor/LearningInstructor.vue\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(componentNormalizer[\"a\" /* default */])(\n  LearningInstructor_LearningInstructorvue_type_script_lang_js_,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  \"117601a2\",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof LearningInstructorvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml[\"default\"] === 'function') Object(LearningInstructorvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml[\"default\"])(component)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = \"src/components/LearningInstructor/LearningInstructor.vue\"\n/* harmony default export */ var LearningInstructor_LearningInstructor = __webpack_exports__[\"default\"] = (component.exports);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQ4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvci5odG1sP2Q4NTMiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3RvckNvbXB1dGVkLmpzPzYyNTkiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHMuanM/NzEwZCIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MZWFybmluZ0luc3RydWN0b3IvTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc05hdmlnYXRpb24uanM/OWY5YyIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MZWFybmluZ0luc3RydWN0b3IvTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc1NlbnRlbmNlLmpzP2Y1ZDIiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNXb3JkLmpzP2EwOTgiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNUb0xlYXJuLmpzP2ZiZDEiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNGZWVkYmFjay5qcz8xOTU0Iiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL0xlYXJuaW5nSW5zdHJ1Y3Rvci9MZWFybmluZ0luc3RydWN0b3JNb3VudGVkLmpzP2JkYjciLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3RvcldhdGNoLmpzPzYyYWMiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvTGVhcm5pbmdJbnN0cnVjdG9yL0xlYXJuaW5nSW5zdHJ1Y3Rvci5qcz80MzY5Iiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL0xlYXJuaW5nSW5zdHJ1Y3Rvci9MZWFybmluZ0luc3RydWN0b3IuanM/ZmJhMCIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MZWFybmluZ0luc3RydWN0b3IvTGVhcm5pbmdJbnN0cnVjdG9yLnZ1ZT9mMzc4Il0sInNvdXJjZXNDb250ZW50IjpbInZhciByZW5kZXIgPSBmdW5jdGlvbigpIHtcbiAgdmFyIF92bSA9IHRoaXNcbiAgdmFyIF9oID0gX3ZtLiRjcmVhdGVFbGVtZW50XG4gIHZhciBfYyA9IF92bS5fc2VsZi5fYyB8fCBfaFxuICByZXR1cm4gX2MoXCJzcGFuXCIpXG59XG52YXIgc3RhdGljUmVuZGVyRm5zID0gW11cbnJlbmRlci5fd2l0aFN0cmlwcGVkID0gdHJ1ZVxuXG5leHBvcnQgeyByZW5kZXIsIHN0YXRpY1JlbmRlckZucyB9IiwiaW1wb3J0IFNub3diYWxsIGZyb20gJ3Nub3diYWxsJ1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiAoTGVhcm5pbmdJbnN0cnVjdG9yKSB7XG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5jb21wdXRlZCA9IHtcbiAgICBjdXJyZW50U2VudGVuY2UgKCkge1xuICAgICAgaWYgKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4ID09PSBudWxsIFxuICAgICAgICAgICAgICB8fCB0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCA9PT0gdW5kZWZpbmVkXG4gICAgICAgICAgICAgIHx8ICF0aGlzLmNvbmZpZy5zZW50ZW5jZUxpc3RcbiAgICAgICAgICAgICAgfHwgIXRoaXMuY29uZmlnLnNlbnRlbmNlTGlzdFt0aGlzLmNvbmZpZy5wbGF5aW5nSW5kZXhdKSB7XG4gICAgICAgIHJldHVybiAnJ1xuICAgICAgfVxuICAgICAgcmV0dXJuIHRoaXMuY29uZmlnLnNlbnRlbmNlTGlzdFt0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleF1cbiAgICB9LFxuICAgIFxuICAgIGN1cnJlbnRTZW50ZW5jZVdvcmRzICgpIHtcbiAgICAgIHJldHVybiB0aGlzLnRva2VuaXplU2VudGVuY2VUb1dvcmRzKHRoaXMuY3VycmVudFNlbnRlbmNlKVxuICAgIH0sXG4gICAgXG4gICAgcHJldmlvdXNTZW50ZW5jZSAoKSB7XG4gICAgICAvL2NvbnNvbGUubG9nKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4KVxuICAgICAgaWYgKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4ID09PSAwKSB7XG4gICAgICAgIHJldHVybiAnJ1xuICAgICAgfVxuICAgICAgcmV0dXJuIHRoaXMuY29uZmlnLnNlbnRlbmNlTGlzdFsodGhpcy5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXggLSAxKV1cbiAgICB9LFxuICAgIG5leHRTZW50ZW5jZSAoKSB7XG4gICAgICAvL2NvbnNvbGUubG9nKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4KVxuICAgICAgaWYgKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4ID09PSB0aGlzLmNvbmZpZy5zZW50ZW5jZUxpc3QubGVuZ3RoIC0gMSkge1xuICAgICAgICByZXR1cm4gJydcbiAgICAgIH1cbiAgICAgIHJldHVybiB0aGlzLmNvbmZpZy5zZW50ZW5jZUxpc3RbKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4ICsgMSldXG4gICAgfSxcbiAgICBcbiAgICBzdGVtbWVyICgpIHtcbiAgICAgIGxldCBzdGVtbWVyID0gbmV3IFNub3diYWxsKCdFbmdsaXNoJyk7XG4gICAgICByZXR1cm4gc3RlbW1lclxuICAgIH1cbiAgfVxufSIsImltcG9ydCBiZWVwU291bmQgZnJvbSAnLi9zb3VuZC9jZW5zb3ItYmVlcC0wMS5tcDMnXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIChMZWFybmluZ0luc3RydWN0b3IpIHtcbiAgTGVhcm5pbmdJbnN0cnVjdG9yLm1ldGhvZHMuaW5pdEJlZXAgPSBmdW5jdGlvbiAoKSB7XG4gICAgdGhpcy5iZWVwID0gdGhpcy51dGlscy5Tb3VuZFV0aWxzLmNyZWF0ZShiZWVwU291bmQpXG4gIH1cbiAgXG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5tZXRob2RzLnRva2VuaXplU2VudGVuY2VUb1dvcmRzID0gZnVuY3Rpb24gKHNlbnRlbmNlKSB7XG4gICAgcmV0dXJuIHNlbnRlbmNlLnNwbGl0KCcgJylcbiAgfVxufSIsImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIChMZWFybmluZ0luc3RydWN0b3IpIHtcblxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5nb1RvUHJldmlvdXNTZW50ZW5jZSA9IGZ1bmN0aW9uICgpIHtcbiAgICBpZiAodGhpcy5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXggPiAwKSB7XG4gICAgICB0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleC0tXG4gICAgICByZXR1cm4gdHJ1ZVxuICAgIH1cbiAgICByZXR1cm4gZmFsc2VcbiAgfVxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5nb1RvTmV4dFNlbnRlbmNlID0gZnVuY3Rpb24gKCkge1xuICAgIGlmICh0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCA8IHRoaXMuY29uZmlnLnNlbnRlbmNlTGlzdC5sZW5ndGggLSAxKSB7XG4gICAgICB0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCsrXG4gICAgICByZXR1cm4gdHJ1ZVxuICAgIH1cbiAgICByZXR1cm4gZmFsc2VcbiAgfVxufSIsIlxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gKExlYXJuaW5nSW5zdHJ1Y3Rvcikge1xuXG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5tZXRob2RzLnNwZWFrQ3VycmVudFNlbnRlbmNlID0gYXN5bmMgZnVuY3Rpb24gKCkge1xuICAgIGlmICh0aGlzLmNvbmZpZy5jdXJyZW50U2VudGVuY2VJc1NwZWFraW5nID09PSB0cnVlKSB7XG4gICAgICB0aGlzLnV0aWxzLlRleHRUb1NwZWVjaFV0aWxzLnN0b3BTcGVhaygpXG4gICAgICB0aGlzLnRyeVRvU3RvcCA9IHRydWVcbiAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgxMDApXG4gICAgICB0aGlzLmNvbmZpZy5jdXJyZW50U2VudGVuY2VJc1NwZWFraW5nID0gZmFsc2VcbiAgICAgIHRoaXMudHJ5VG9TdG9wID0gZmFsc2VcbiAgICAgIHRoaXMuY29uZmlnLmZpcnN0U3BlYWtIaW50ID0gdHJ1ZVxuICAgICAgcmV0dXJuIGZhbHNlXG4gICAgfVxuXG4gICAgdGhpcy5jb25maWcuY3VycmVudFNlbnRlbmNlSXNTcGVha2luZyA9IHRydWVcbiAgICBsZXQgdGltZSA9IGF3YWl0IHRoaXMudXRpbHMuVGV4dFRvU3BlZWNoVXRpbHMuc3RhcnRTcGVhayh0aGlzLmN1cnJlbnRTZW50ZW5jZSlcbiAgICBpZiAodGhpcy50cnlUb1N0b3AgPT09IHRydWUpIHtcbiAgICAgIHJldHVybiBmYWxzZVxuICAgIH1cbiAgICB0aGlzLmNvbmZpZy5jdXJyZW50U2VudGVuY2VJc1NwZWFraW5nID0gZmFsc2VcblxuICAgIGlmICh0aGlzLmxvY2FsQ29uZmlnLnNwZWFraW5nSW5zdHJ1Y3Rpb25TdHJhdGVneSAhPT0gJ25vbmUnKSB7XG5cbiAgICAgIGlmICh0aGlzLmNvbmZpZy5maXJzdFNwZWFrSGludCkge1xuICAgICAgICBhd2FpdCB0aGlzLnV0aWxzLkFzeW5jVXRpbHMuc2xlZXAoKVxuICAgICAgICBhd2FpdCB0aGlzLnV0aWxzLlRleHRUb1NwZWVjaFV0aWxzLnN0YXJ0U3BlYWsodGhpcy4kdChgUGxlYXNlIHJlcGVhdC5gKSlcbiAgICAgICAgdGhpcy5jb25maWcuZmlyc3RTcGVha0hpbnQgPSBmYWxzZVxuICAgICAgfVxuICAgICAgYXdhaXQgdGhpcy5wcmFjdGljZVNlbnRlbmNlKHRpbWUpXG4gICAgfVxuXG5cbiAgICBpZiAodGhpcy5sb2NhbENvbmZpZy5hdXRvUGxheSA9PT0gdHJ1ZSkge1xuICAgICAgaWYgKHRoaXMuZ29Ub05leHRTZW50ZW5jZSgpKSB7XG4gICAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICAgIHRoaXMuc3BlYWtDdXJyZW50U2VudGVuY2UoKVxuICAgICAgfVxuICAgIH1cbiAgfVxuICBcbiAgTGVhcm5pbmdJbnN0cnVjdG9yLm1ldGhvZHMucHJhY3RpY2VTZW50ZW5jZSA9IGFzeW5jIGZ1bmN0aW9uICh0aW1lKSB7XG4gICAgaWYgKCF0aW1lKSB7XG4gICAgICB0aW1lID0gdGhpcy5jdXJyZW50U2VudGVuY2UubGVuZ3RoICogMTAwXG4gICAgICAvL2NvbnNvbGUubG9nKHRpbWUpXG4gICAgfVxuXG4gICAgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZSA9IG51bGxcbiAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdCA9IFtdXG4gICAgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZUV2YWx1YXRpb25TY29yZSA9IG51bGxcbiAgICB0aGlzLmNvbmZpZy5jdXJyZW50U2VudGVuY2VNYXNrID0gdGhpcy5sb2NhbENvbmZpZy5wcmFjdGljZVNlbnRlbmNlTWFza1xuICAgIC8vY29uc29sZS5sb2codGltZSlcbiAgICB0aW1lID0gdGltZSArIDEwMDBcblxuLy8gICAgaWYgKGRlYnVnUHJhY3RpY2UgPT09IGZhbHNlKSB7XG4gICAgICBsZXQgbXV0ZUNhbmNlbCA9IGZhbHNlXG4gICAgICBzZXRUaW1lb3V0KCgpID0+IHtcbiAgICAgICAgaWYgKHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2UgJiYgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZSAhPT0gJycpIHtcbiAgICAgICAgICByZXR1cm4gdHJ1ZVxuICAgICAgICB9XG4gICAgICAgIHRoaXMudXRpbHMuU3BlZWNoVG9UZXh0VXRpbHMuc3RvcExpc3RlbigpXG4gICAgICAgIG11dGVDYW5jZWwgPSB0cnVlXG4gICAgICB9LCAzMDAwKVxuICAgICAgXG4gICAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICAgICAgXG4gICAgICBhd2FpdCB0aGlzLnV0aWxzLkFzeW5jVXRpbHMuc2xlZXAoKVxuICAgICAgYXdhaXQgdGhpcy5iZWVwLnBsYXkoKVxuICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKClcbiAgICAgIFxuICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgICAgIFxuICAgICAgbGV0IGhhc1JlY2VpdmNlUHJhY3RpY2VTZW50ZW5jZSA9IGZhbHNlXG4gICAgICBsZXQgdGhyZXNob2xkV29yZHNDb3VudCA9IE1hdGgucm91bmQodGhpcy5jdXJyZW50U2VudGVuY2VXb3Jkcy5sZW5ndGggLyAyKVxuICAgICAgXG4gICAgICB3aGlsZSAoIWhhc1JlY2VpdmNlUHJhY3RpY2VTZW50ZW5jZSkge1xuICAgICAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlID0gYXdhaXQgdGhpcy51dGlscy5TcGVlY2hUb1RleHRVdGlscy5zdGFydExpc3Rlbih0aGlzLmN1cnJlbnRTZW50ZW5jZSwgKHByb2Nlc3NpbmcpID0+IHtcbiAgICAgICAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlID0gcHJvY2Vzc2luZ1xuICAgICAgICB9LCB0aGlzLmxvY2FsQ29uZmlnLmRlYnVnU3BlZWNoVG9UZXh0VXRpbHNNb2NrdXApXG4gICAgICAgIFxuICAgICAgICBpZiAobXV0ZUNhbmNlbCA9PT0gdHJ1ZSkge1xuICAgICAgICAgIHJldHVybiBmYWxzZVxuICAgICAgICB9XG4gICAgICAgIFxuICAgICAgICAvLyDlpoLmnpzlrZfmlbjlpKrnn63vvIzpgqPkuZ/opoHph43mlrDogb3lj5ZcbiAgICAgICAgLy9pZiAodGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZS5zcGxpdCgnICcpLmxlbmd0aCA8IClcbiAgICAgICAgbGV0IHByYWN0aWNlV29yZHMgPSB0aGlzLnRva2VuaXplU2VudGVuY2VUb1dvcmRzKHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2UpXG4gICAgICAgIGlmIChwcmFjdGljZVdvcmRzLmxlbmd0aCA+PSB0aHJlc2hvbGRXb3Jkc0NvdW50KSB7XG4gICAgICAgICAgaGFzUmVjZWl2Y2VQcmFjdGljZVNlbnRlbmNlID0gdHJ1ZVxuICAgICAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICAgIH1cbiAgICAgICAgZWxzZSB7XG4gICAgICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKClcbiAgICAgICAgICBhd2FpdCB0aGlzLnV0aWxzLlRleHRUb1NwZWVjaFV0aWxzLnN0YXJ0U3BlYWsodGhpcy4kdChgUGxlYXNlIHNwZWFrIGFnYWluLmApKVxuICAgICAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICAgICAgdGhpcy5iZWVwLnBsYXkoKVxuICAgICAgICB9XG4gICAgICAgIFxuICAgICAgICBpZiAobXV0ZUNhbmNlbCA9PT0gdHJ1ZSkge1xuICAgICAgICAgIHJldHVybiBmYWxzZVxuICAgICAgICB9XG4gICAgICB9IC8vIHdoaWxlICghaGFzUmVjZWl2Y2VQcmFjdGljZVNlbnRlbmNlKSB7XG4gICAgICBcbi8vICAgIH1cbi8vICAgIGVsc2Uge1xuLy8gICAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlID0gJ29rIG9rIG5vdCBvayBvayBvayBub3Qgb2tvayBvayBub3Qgb2tvayBvayBub3Qgb2tvayBvayBub3Qgb2tvayBvayBub3Qgb2tvayBvayBub3Qgb2tvayBvayBub3Qgb2snXG4vLyAgICAgIGZvciAobGV0IGkgPSAwOyBpIDwgMzsgaSsrKSB7XG4vLyAgICAgICAgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZSA9IHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2UgKyB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlXG4vLyAgICAgIH1cbi8vICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKDEwMClcbi8vICAgIH1cbiAgICBcbiAgICB0aGlzLmNvbmZpZy5jdXJyZW50U2VudGVuY2VNYXNrID0gZmFsc2VcbiAgICAvL3RoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2UgPSAnb2snXG5cbiAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdCA9IHRoaXMuZXZhbHVhdGVTZW50ZW5jZVByYWN0aWNlKHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2UsIHRoaXMuY3VycmVudFNlbnRlbmNlKVxuICAgIHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2VFdmFsdWF0aW9uU2NvcmUgPSBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5zY29yZVNlbnRlbmNlRXZhbHVhdGUodGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZUV2YWx1YXRpb25SZXN1bHQpXG4gICAgLy9jb25zb2xlLmxvZyh0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblNjb3JlKVxuICAgIGF3YWl0IHRoaXMuc3BlYWtQcmFjdGljZUZlZWRiYWNrKHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2VFdmFsdWF0aW9uU2NvcmUpXG4gICAgXG4gICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKDIwMDApXG4gIH1cblxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5ldmFsdWF0ZVNlbnRlbmNlUHJhY3RpY2UgPSBmdW5jdGlvbiAoc291cmNlLCB0YXJnZXQpIHtcbiAgICBzb3VyY2UgPSB0aGlzLnV0aWxzLkRpY3RVdGlscy5maWx0ZXJXb3JkKHNvdXJjZSlcbiAgICB0YXJnZXQgPSB0aGlzLnV0aWxzLkRpY3RVdGlscy5maWx0ZXJXb3JkKHRhcmdldClcbiAgICBcbiAgICBcbiAgICBsZXQgcmVzdWx0UmF3ID0gdGhpcy51dGlscy5EaWZmVXRpbHMuZGlmZldvcmRzKHNvdXJjZSwgdGFyZ2V0KVxuICAgIC8vY29uc29sZS5sb2cocmVzdWx0UmF3KVxuICAgIGxldCByZXN1bHQgPSBbXVxuICAgIFxuICAgIHJlc3VsdFJhdy5mb3JFYWNoKHIgPT4ge1xuICAgICAgaWYgKCFyLmFkZGVkKSB7XG4gICAgICAgIHJlc3VsdC5wdXNoKHIpXG4gICAgICB9XG4gICAgICBlbHNlIHtcbiAgICAgICAgbGV0IHdvcmRzID0gdGhpcy50b2tlbml6ZVNlbnRlbmNlVG9Xb3JkcyhyLnZhbHVlKVxuICAgICAgICBcbiAgICAgICAgd29yZHMuZm9yRWFjaCh3ID0+IHtcbiAgICAgICAgICB0aGlzLnJlY29yZFdvcmRzVG9MZWFybih3KVxuICAgICAgICAgIFxuICAgICAgICAgIHJlc3VsdC5wdXNoKHtcbiAgICAgICAgICAgIGFkZGVkOiB0cnVlLFxuICAgICAgICAgICAgcmVtb3ZlZDogZmFsc2UsXG4gICAgICAgICAgICB2YWx1ZTogd1xuICAgICAgICAgIH0pXG4gICAgICAgIH0pXG4gICAgICB9XG4gICAgfSlcbiAgICBcbiAgICByZXR1cm4gcmVzdWx0XG4gIH1cbiAgXG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5tZXRob2RzLnNjb3JlU2VudGVuY2VFdmFsdWF0ZSA9IGZ1bmN0aW9uIChyZXN1bHRzKSB7XG4gICAgbGV0IGVycm9yID0gMFxuICAgIHJlc3VsdHMuZm9yRWFjaChyID0+IHtcbiAgICAgIC8vY29uc29sZS5sb2coci5hZGRlZClcbiAgICAgIGlmIChyLmFkZGVkID09PSB0cnVlKSB7XG4gICAgICAgIGVycm9yKytcbiAgICAgIH0gXG4gICAgfSlcbiAgICBcbiAgICAvL2NvbnNvbGUubG9nKGVycm9yKVxuICAgIFxuICAgIGlmIChlcnJvciA+IDUpIHtcbiAgICAgIHJldHVybiAwXG4gICAgfVxuICAgIGVsc2UgaWYgKGVycm9yIDw9IDUgJiYgZXJyb3IgPiAyKSB7XG4gICAgICByZXR1cm4gMC41XG4gICAgfVxuICAgIGVsc2UgaWYgKGVycm9yID49IDEgJiYgZXJyb3IgPD0gMikge1xuICAgICAgcmV0dXJuIDAuN1xuICAgIH1cbiAgICBlbHNlIHtcbiAgICAgIHJldHVybiAxXG4gICAgfVxuICB9XG4gIFxufSIsIi8qIGdsb2JhbCBMZWFybmluZ0luc3RydWN0b3IgKi9cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gKExlYXJuaW5nSW5zdHJ1Y3Rvcikge1xuICAgIExlYXJuaW5nSW5zdHJ1Y3Rvci5tZXRob2RzLnNwZWFrV29yZCA9IGFzeW5jIGZ1bmN0aW9uICh3b3JkKSB7XG4gICAgICBhd2FpdCB0aGlzLnV0aWxzLlRleHRUb1NwZWVjaFV0aWxzLnN0YXJ0U3BlYWsod29yZClcbiAgICAgIFxuICAgIH1cbiAgICBcbiAgICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5wcmFjdGljZVdvcmQgPSBhc3luYyBmdW5jdGlvbiAod29yZCkge1xuICAgICAgXG4gICAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmQgPSBudWxsXG4gICAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmRTY29yZSA9IG51bGxcbiAgICAgIFxuICAgICAgdGhpcy5jb25maWcuY3VycmVudFdvcmRNYXNrID0gdGhpcy5sb2NhbENvbmZpZy5wcmFjdGljZVNlbnRlbmNlTWFza1xuICAgICAgXG4gICAgICBsZXQgbXV0ZUNhbmNlbCA9IGZhbHNlXG4gICAgICBzZXRUaW1lb3V0KCgpID0+IHtcbiAgICAgICAgaWYgKHRoaXMuY29uZmlnLnByYWN0aWNlV29yZCAmJiB0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmQgIT09ICcnKSB7XG4gICAgICAgICAgcmV0dXJuIHRydWVcbiAgICAgICAgfVxuICAgICAgICB0aGlzLnV0aWxzLlNwZWVjaFRvVGV4dFV0aWxzLnN0b3BMaXN0ZW4oKVxuICAgICAgICBtdXRlQ2FuY2VsID0gdHJ1ZVxuICAgICAgfSwgMzAwMClcbiAgICAgIFxuICAgICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgICAgIFxuICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKClcbiAgICAgIGF3YWl0IHRoaXMuYmVlcC5wbGF5KClcbiAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICBcbiAgICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gICAgICBcbiAgICAgIGxldCBoYXNSZWNlaXZjZVByYWN0aWNlU2VudGVuY2UgPSBmYWxzZVxuICAgICAgbGV0IHRocmVzaG9sZFdvcmRzQ291bnQgPSAxXG4gICAgICBcbiAgICAgIHdoaWxlICghaGFzUmVjZWl2Y2VQcmFjdGljZVNlbnRlbmNlKSB7XG4gICAgICBcbiAgICAgICAgdGhpcy5jb25maWcucHJhY3RpY2VXb3JkID0gYXdhaXQgdGhpcy51dGlscy5TcGVlY2hUb1RleHRVdGlscy5zdGFydExpc3Rlbih3b3JkLCAocHJvY2Vzc2luZykgPT4ge1xuICAgICAgICAgIHRoaXMuY29uZmlnLnByYWN0aWNlV29yZCA9IHByb2Nlc3NpbmdcbiAgICAgICAgfSwgdGhpcy5sb2NhbENvbmZpZy5kZWJ1Z1NwZWVjaFRvVGV4dFV0aWxzTW9ja3VwKVxuICAgICAgXG4gICAgICAgIGlmICghdGhpcy5jb25maWcucHJhY3RpY2VXb3JkKSB7XG4gICAgICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKClcbiAgICAgICAgICBjb250aW51ZVxuICAgICAgICB9XG4gICAgICAgIFxuICAgICAgICBsZXQgcHJhY3RpY2VXb3JkcyA9IHRoaXMudG9rZW5pemVTZW50ZW5jZVRvV29yZHModGhpcy5jb25maWcucHJhY3RpY2VXb3JkKVxuICAgICAgICBpZiAocHJhY3RpY2VXb3Jkcy5sZW5ndGggPj0gdGhyZXNob2xkV29yZHNDb3VudCkge1xuICAgICAgICAgIGhhc1JlY2VpdmNlUHJhY3RpY2VTZW50ZW5jZSA9IHRydWVcbiAgICAgICAgICAvL2F3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICAgIH1cbiAgICAgICAgZWxzZSB7XG4gICAgICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKClcbiAgICAgICAgICBhd2FpdCB0aGlzLnV0aWxzLlRleHRUb1NwZWVjaFV0aWxzLnN0YXJ0U3BlYWsodGhpcy4kdChgUGxlYXNlIHNwZWFrIGFnYWluLmApKVxuICAgICAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICAgICAgdGhpcy5iZWVwLnBsYXkoKVxuICAgICAgICB9XG4gICAgICAgIFxuICAgICAgICBpZiAobXV0ZUNhbmNlbCA9PT0gdHJ1ZSkge1xuICAgICAgICAgIHJldHVybiBmYWxzZVxuICAgICAgICB9XG4gICAgICB9IC8vIHdoaWxlICghaGFzUmVjZWl2Y2VQcmFjdGljZVNlbnRlbmNlKSB7XG4gICAgICBcbiAgICAgIHRoaXMuY29uZmlnLmN1cnJlbnRXb3JkTWFzayA9IGZhbHNlXG4gICAgICBcbiAgICAgIC8vY29uc29sZS5sb2cod29yZClcbiAgICAgIFxuICAgICAgdGhpcy5jb25maWcucHJhY3RpY2VXb3JkU2NvcmUgPSB0aGlzLmV2YWx1YXRlV29yZFByYWN0aWNlKHRoaXMuY29uZmlnLnByYWN0aWNlV29yZCwgd29yZClcbiAgICAgIGF3YWl0IHRoaXMuc3BlYWtQcmFjdGljZUZlZWRiYWNrKHRoaXMuY29uZmlnLnByYWN0aWNlV29yZFNjb3JlKVxuICAgICAgXG4gICAgICAvL3JldHVybiBmYWxzZVxuICAgICAgaWYgKHRoaXMuY29uZmlnLnByYWN0aWNlV29yZFNjb3JlID49IDAuNykge1xuICAgICAgICAvL2F3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXG4gICAgICAgIHRoaXMuY2xlYXJXb3JkVG9MZWFybih3b3JkKVxuICAgICAgICB0aGlzLmNvbmZpZy5jdXJyZW50V29yZCA9IG51bGxcbiAgICAgIH1cbiAgICAgIGVsc2Uge1xuICAgICAgICB0aGlzLnJlZHVjZVdvcmRzVG9MZWFybih3b3JkKVxuICAgICAgfVxuICAgIH1cbiAgICBcbiAgICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5ldmFsdWF0ZVdvcmRQcmFjdGljZSA9IGZ1bmN0aW9uIChzb3VyY2UsIHRhcmdldCkge1xuICAgICAgbGV0IHNjb3JlID0gMVxuICAgICAgXG4gICAgICBzb3VyY2UgPSB0aGlzLnV0aWxzLkRpY3RVdGlscy5maWx0ZXJXb3JkKHNvdXJjZSlcbiAgICAgIHRhcmdldCA9IHRoaXMudXRpbHMuRGljdFV0aWxzLmZpbHRlcldvcmQodGFyZ2V0KVxuICAgIFxuICAgICAgbGV0IHJlc3VsdCA9IHRoaXMudXRpbHMuRGlmZlV0aWxzLmRpZmZDaGFycyhzb3VyY2UsIHRhcmdldClcbiAgICAgIC8vY29uc29sZS5sb2cocmVzdWx0KVxuICAgICAgbGV0IGFkZGVkQ2hhckNvdW50ID0gMFxuICAgICAgcmVzdWx0LmZvckVhY2gociA9PiB7XG4gICAgICAgIGlmIChyLmFkZGVkID09PSB0cnVlKSB7XG4gICAgICAgICAgYWRkZWRDaGFyQ291bnQgPSBhZGRlZENoYXJDb3VudCArIHIuY291bnRcbiAgICAgICAgfVxuICAgICAgfSlcbiAgICAgIFxuICAgICAgLy9jb25zb2xlLmxvZyhhZGRlZENoYXJDb3VudCwgdGFyZ2V0Lmxlbmd0aClcbiAgICAgIFxuICAgICAgbGV0IHBlcmNlbnQgPSAodGFyZ2V0Lmxlbmd0aCAtIGFkZGVkQ2hhckNvdW50KSAvIHRhcmdldC5sZW5ndGhcbiAgICAgIFxuICAgICAgaWYgKHBlcmNlbnQgPj0gMC44KSB7XG4gICAgICAgIHNjb3JlID0gMVxuICAgICAgfVxuICAgICAgZWxzZSBpZiAocGVyY2VudCA+PSAwLjcpIHtcbiAgICAgICAgc2NvcmUgPSAwLjdcbiAgICAgIH1cbiAgICAgIGVsc2UgaWYgKHBlcmNlbnQgPj0gMC4zKSB7XG4gICAgICAgIHNjb3JlID0gMC41XG4gICAgICB9XG4gICAgICBlbHNlIHtcbiAgICAgICAgc2NvcmUgPSAwXG4gICAgICB9XG4gICAgICBcbiAgICAgIHJldHVybiBzY29yZVxuICAgIH1cbiAgICAgICAgXG59IiwiXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiAoTGVhcm5pbmdJbnN0cnVjdG9yKSB7XG4gIFxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5zdGVtID0gZnVuY3Rpb24gKHdvcmQpIHtcbiAgICB0aGlzLnN0ZW1tZXIuc2V0Q3VycmVudCh3b3JkKVxuICAgIHRoaXMuc3RlbW1lci5zdGVtKClcbiAgICByZXR1cm4gdGhpcy5zdGVtbWVyLmdldEN1cnJlbnQoKVxuICB9XG4gIFxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5nZW5lcmF0ZUtleU5hbWUgPSBmdW5jdGlvbiAod29yZCkge1xuICAgIHdvcmQgPSB0aGlzLnV0aWxzLkRpY3RVdGlscy5maWx0ZXJXb3JkKHdvcmQpXG4gICAgcmV0dXJuICdXb3JkVG9MZWFybjonICsgdGhpcy5zdGVtKHdvcmQpXG4gIH1cbiAgXG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5tZXRob2RzLnJlY29yZFdvcmRzVG9MZWFybiA9IGZ1bmN0aW9uICh3b3JkKSB7XG4gICAgbGV0IHZhbHVlID0gdGhpcy5nZXRXb3JkVG9MZWFyblNjb3JlKHdvcmQpXG4gICAgXG4gICAgdmFsdWUrK1xuICAgIFxuICAgIGlmICh3b3JkLmxlbmd0aCA+IDEwKSB7XG4gICAgICB2YWx1ZSsrXG4gICAgfVxuICAgIFxuICAgIGxldCBrZXkgPSB0aGlzLmdlbmVyYXRlS2V5TmFtZSh3b3JkKVxuICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKGtleSwgdmFsdWUpXG4gIH1cbiAgXG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5tZXRob2RzLnJlZHVjZVdvcmRzVG9MZWFybiA9IGZ1bmN0aW9uICh3b3JkKSB7XG4gICAgbGV0IHZhbHVlID0gdGhpcy5nZXRXb3JkVG9MZWFyblNjb3JlKHdvcmQpXG4gICAgXG4gICAgdmFsdWUtLVxuICAgICAgICBcbiAgICBsZXQga2V5ID0gdGhpcy5nZW5lcmF0ZUtleU5hbWUod29yZClcbiAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbShrZXksIHZhbHVlKVxuICB9XG4gIFxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5nZXRXb3JkVG9MZWFyblNjb3JlID0gZnVuY3Rpb24gKHdvcmQpIHtcbiAgICBsZXQga2V5ID0gdGhpcy5nZW5lcmF0ZUtleU5hbWUod29yZClcbiAgICBcbiAgICBsZXQgdmFsdWUgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbShrZXkpXG4gICAgaWYgKCF2YWx1ZSkge1xuICAgICAgdmFsdWUgPSAwXG4gICAgfVxuICAgIGVsc2Uge1xuICAgICAgdmFsdWUgPSBOdW1iZXIodmFsdWUpXG4gICAgfVxuICAgIFxuICAgIHJldHVybiB2YWx1ZVxuICB9XG4gIFxuICBMZWFybmluZ0luc3RydWN0b3IubWV0aG9kcy5jbGVhcldvcmRUb0xlYXJuID0gZnVuY3Rpb24gKHdvcmQpIHtcbiAgICBsZXQga2V5ID0gdGhpcy5nZW5lcmF0ZUtleU5hbWUod29yZClcbiAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbShrZXkpXG4gICAgLy9jb25zb2xlLmxvZygnY2xlYXInLCB0aGlzLmdldFdvcmRUb0xlYXJuU2NvcmUod29yZCkpXG4gIH1cbn0iLCJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIChMZWFybmluZ0luc3RydWN0b3IpIHtcbiAgXG4gIGxldCBmZWVkYmFja1dvbmRlcmZ1bCA9IG51bGxcbiAgbGV0IGZlZWRiYWNrR3JlYXQgPSBudWxsXG4gIGxldCBmZWVkYmFja0dvb2QgPSBudWxsXG4gIGxldCBmZWVkYmFja09LID0gbnVsbFxuICBcbiAgTGVhcm5pbmdJbnN0cnVjdG9yLm1ldGhvZHMuc3BlYWtQcmFjdGljZUZlZWRiYWNrID0gYXN5bmMgZnVuY3Rpb24gKHNjb3JlKSB7XG4gICAgXG4gICAgaWYgKCFmZWVkYmFja1dvbmRlcmZ1bCkge1xuICAgICAgLy8gaHR0cHM6Ly93d3cuc29lYXN5ZWR1LmNvbS50dy9ibG9nL29ubGluZS1sZWFybmluZy8yMDE4LzA5L3RvLWVuY291cmFnZS1zb21lYm9keVxuICAgICAgZmVlZGJhY2tXb25kZXJmdWwgPSB0aGlzLnV0aWxzLlJhbmRvbVV0aWxzKFsnV29uZGVyZnVsIScsICdQZXJmZWN0IScsICdBd2Vzb21lISddKVxuICAgICAgZmVlZGJhY2tHcmVhdCA9IHRoaXMudXRpbHMuUmFuZG9tVXRpbHMoWydHcmVhdC4nLCAnR29vZCBKb2IuJywgJ1dlbGwgZG9uZS4nXSlcbiAgICAgIGZlZWRiYWNrR29vZCA9IHRoaXMudXRpbHMuUmFuZG9tVXRpbHMoWydHb29kLicsICdOb3QgYmFkLicsICdLZWVwIGl0IHVwISddKVxuICAgICAgZmVlZGJhY2tPSyA9IHRoaXMudXRpbHMuUmFuZG9tVXRpbHMoWydPSy4nLCAnVHJ5IGFnYWluPycsICdTdGF5IHN0cm9uZyEnXSlcbiAgICB9XG4gICAgXG4gICAgLy9jb25zb2xlLmxvZyhyZXN1bHQpXG4gICAgLy9hd2FpdCB0aGlzLnV0aWxzLkFzeW5jVXRpbHMuc2xlZXAodGltZSlcbiAgICBhd2FpdCB0aGlzLnV0aWxzLkFzeW5jVXRpbHMuc2xlZXAoKVxuICAgIGlmIChzY29yZSA9PT0gMSkge1xuICAgICAgbGV0IG9wdGlvbiA9IHtcbiAgICAgICAgcGl0Y2g6IE1hdGguY2VpbChNYXRoLnJhbmRvbSgpICogMykvMTAgKyAxXG4gICAgICB9IFxuICAgICAgYXdhaXQgdGhpcy51dGlscy5UZXh0VG9TcGVlY2hVdGlscy5zdGFydFNwZWFrKHRoaXMuJHQoZmVlZGJhY2tXb25kZXJmdWwuc2FtcGxlVW5kdXBsaWNhdGVkKCkpLCBvcHRpb24pXG4gICAgfVxuICAgIGVsc2UgaWYgKHNjb3JlID49IDAuNykge1xuICAgICAgbGV0IG9wdGlvbiA9IHtcbiAgICAgICAgcGl0Y2g6IE1hdGguY2VpbChNYXRoLnJhbmRvbSgpICogNSkvMTAgKyAwLjhcbiAgICAgIH1cbiAgICAgIGF3YWl0IHRoaXMudXRpbHMuVGV4dFRvU3BlZWNoVXRpbHMuc3RhcnRTcGVhayh0aGlzLiR0KGZlZWRiYWNrR3JlYXQuc2FtcGxlVW5kdXBsaWNhdGVkKCkpLCBvcHRpb24pXG4gICAgfVxuICAgIGVsc2UgaWYgKHNjb3JlID49IDAuNSkge1xuICAgICAgbGV0IG9wdGlvbiA9IHtcbiAgICAgICAgcGl0Y2g6IE1hdGguY2VpbChNYXRoLnJhbmRvbSgpICogNCkvMTAgKyAwLjdcbiAgICAgIH1cbiAgICAgIGF3YWl0IHRoaXMudXRpbHMuVGV4dFRvU3BlZWNoVXRpbHMuc3RhcnRTcGVhayh0aGlzLiR0KGZlZWRiYWNrR29vZC5zYW1wbGVVbmR1cGxpY2F0ZWQoKSksIG9wdGlvbilcbiAgICB9XG4gICAgZWxzZSB7XG4gICAgICBsZXQgb3B0aW9uID0ge1xuICAgICAgICBwaXRjaDogTWF0aC5jZWlsKE1hdGgucmFuZG9tKCkgKiA1KS8xMCArIDAuNVxuICAgICAgfVxuICAgICAgYXdhaXQgdGhpcy51dGlscy5UZXh0VG9TcGVlY2hVdGlscy5zdGFydFNwZWFrKHRoaXMuJHQoZmVlZGJhY2tPSy5zYW1wbGVVbmR1cGxpY2F0ZWQoKSksIG9wdGlvbilcbiAgICB9XG4gIH1cbn0iLCJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiAoTGVhcm5pbmdJbnN0cnVjdG9yKSB7XG4gIExlYXJuaW5nSW5zdHJ1Y3Rvci5tb3VudGVkID0gZnVuY3Rpb24gKCkge1xuICAgIHRoaXMuaW5pdEJlZXAoKVxuICB9XG59IiwiZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gKExlYXJuaW5nSW5zdHJ1Y3Rvcikge1xuICBMZWFybmluZ0luc3RydWN0b3Iud2F0Y2ggPSB7XG4gICAgJ2xvY2FsQ29uZmlnLmxvY2FsZScoKSB7XG4gICAgICB0aGlzLiRpMThuLmxvY2FsZSA9IHRoaXMubG9jYWxDb25maWcubG9jYWxlO1xuICAgIH0sXG4gICAgJ2xvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCcgKCkge1xuICAgICAgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZSA9IG51bGxcbiAgICB9LFxuICAgICdhdXRvUGxheS5hdXRvUGxheScgKCkge1xuICAgICAgdGhpcy5jb25maWcuZmlyc3RTcGVha0hpbnQgPSB0cnVlXG4gICAgfVxuICB9XG59IiwiXHJcbmxldCBMZWFybmluZ0luc3RydWN0b3IgPSB7XHJcbiAgcHJvcHM6IFsnY29uZmlnJywgJ2xvY2FsQ29uZmlnJywgJ3V0aWxzJ10sXHJcbiAgZGF0YSAoKSB7ICAgIFxyXG4gICAgdGhpcy4kaTE4bi5sb2NhbGUgPSB0aGlzLmxvY2FsQ29uZmlnLmxvY2FsZVxyXG4gICAgcmV0dXJuIHtcclxuICAgICAgYmVlcDogbnVsbCxcclxuICAgICAgdHJ5VG9TdG9wOiBmYWxzZVxyXG4gICAgfVxyXG4gIH0sXHJcbiAgLy93YXRjaDoge30sICAvLyBMZWFybmluZ0luc3RydWN0b3JXYXRjaC5qc1xyXG4gIC8vY29tcHV0ZWQ6IHt9LCAvLyBMZWFybmluZ0luc3RydWN0b3JDb21wdXRlZC5qc1xyXG4gIC8vbW91bnRlZCgpIHt9LCAvLyBMZWFybmluZ0luc3RydWN0b3JNb3VudGVkLmpzXHJcbiAgbWV0aG9kczoge30gLy8gTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kcy5qc1xyXG59XHJcblxyXG5pbXBvcnQgTGVhcm5pbmdJbnN0cnVjdG9yQ29tcHV0ZWQgZnJvbSAnLi9MZWFybmluZ0luc3RydWN0b3JDb21wdXRlZC5qcydcclxuTGVhcm5pbmdJbnN0cnVjdG9yQ29tcHV0ZWQoTGVhcm5pbmdJbnN0cnVjdG9yKVxyXG5cclxuaW1wb3J0IExlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHMgZnJvbSAnLi9MZWFybmluZ0luc3RydWN0b3JNZXRob2RzLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JNZXRob2RzKExlYXJuaW5nSW5zdHJ1Y3RvcilcclxuXHJcbmltcG9ydCBMZWFybmluZ0luc3RydWN0b3JNZXRob2RzTmF2aWdhdGlvbiBmcm9tICcuL0xlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNOYXZpZ2F0aW9uLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JNZXRob2RzTmF2aWdhdGlvbihMZWFybmluZ0luc3RydWN0b3IpXHJcblxyXG5pbXBvcnQgTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc1NlbnRlbmNlIGZyb20gJy4vTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc1NlbnRlbmNlLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JNZXRob2RzU2VudGVuY2UoTGVhcm5pbmdJbnN0cnVjdG9yKVxyXG5cclxuaW1wb3J0IExlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNXb3JkIGZyb20gJy4vTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc1dvcmQuanMnXHJcbkxlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNXb3JkKExlYXJuaW5nSW5zdHJ1Y3RvcilcclxuXHJcbmltcG9ydCBMZWFybmluZ0luc3RydWN0b3JNZXRob2RzVG9MZWFybiBmcm9tICcuL0xlYXJuaW5nSW5zdHJ1Y3Rvck1ldGhvZHNUb0xlYXJuLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JNZXRob2RzVG9MZWFybihMZWFybmluZ0luc3RydWN0b3IpXHJcblxyXG5pbXBvcnQgTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc0ZlZWRiYWNrIGZyb20gJy4vTGVhcm5pbmdJbnN0cnVjdG9yTWV0aG9kc0ZlZWRiYWNrLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JNZXRob2RzRmVlZGJhY2soTGVhcm5pbmdJbnN0cnVjdG9yKVxyXG5cclxuaW1wb3J0IExlYXJuaW5nSW5zdHJ1Y3Rvck1vdW50ZWQgZnJvbSAnLi9MZWFybmluZ0luc3RydWN0b3JNb3VudGVkLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JNb3VudGVkKExlYXJuaW5nSW5zdHJ1Y3RvcilcclxuXHJcbmltcG9ydCBMZWFybmluZ0luc3RydWN0b3JXYXRjaCBmcm9tICcuL0xlYXJuaW5nSW5zdHJ1Y3RvcldhdGNoLmpzJ1xyXG5MZWFybmluZ0luc3RydWN0b3JXYXRjaChMZWFybmluZ0luc3RydWN0b3IpXHJcblxyXG5leHBvcnQgZGVmYXVsdCBMZWFybmluZ0luc3RydWN0b3IiLCJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9iYWJlbC1sb2FkZXIvbGliL2luZGV4LmpzPz9yZWYtLTYhLi9MZWFybmluZ0luc3RydWN0b3IuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCI7IGV4cG9ydCBkZWZhdWx0IG1vZDsgZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNiEuL0xlYXJuaW5nSW5zdHJ1Y3Rvci5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIiIsImltcG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zIH0gZnJvbSBcIi4vTGVhcm5pbmdJbnN0cnVjdG9yLmh0bWw/dnVlJnR5cGU9dGVtcGxhdGUmaWQ9MTE3NjAxYTImc2NvcGVkPXRydWUmXCJcbmltcG9ydCBzY3JpcHQgZnJvbSBcIi4vTGVhcm5pbmdJbnN0cnVjdG9yLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiXG5leHBvcnQgKiBmcm9tIFwiLi9MZWFybmluZ0luc3RydWN0b3IuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCJcbmltcG9ydCBzdHlsZTAgZnJvbSBcIi4vTGVhcm5pbmdJbnN0cnVjdG9yLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0xMTc2MDFhMiZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCJcblxuXG4vKiBub3JtYWxpemUgY29tcG9uZW50ICovXG5pbXBvcnQgbm9ybWFsaXplciBmcm9tIFwiIS4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9ydW50aW1lL2NvbXBvbmVudE5vcm1hbGl6ZXIuanNcIlxudmFyIGNvbXBvbmVudCA9IG5vcm1hbGl6ZXIoXG4gIHNjcmlwdCxcbiAgcmVuZGVyLFxuICBzdGF0aWNSZW5kZXJGbnMsXG4gIGZhbHNlLFxuICBudWxsLFxuICBcIjExNzYwMWEyXCIsXG4gIG51bGxcbiAgXG4pXG5cbi8qIGN1c3RvbSBibG9ja3MgKi9cbmltcG9ydCBibG9jazAgZnJvbSBcIi4vTGVhcm5pbmdJbnN0cnVjdG9yLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZMZWFybmluZ0luc3RydWN0b3IlMkZMZWFybmluZ0luc3RydWN0b3IudnVlJmxhbmc9eWFtbFwiXG5pZiAodHlwZW9mIGJsb2NrMCA9PT0gJ2Z1bmN0aW9uJykgYmxvY2swKGNvbXBvbmVudClcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnMTE3NjAxYTInKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnMTE3NjAxYTInLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnMTE3NjAxYTInLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL0xlYXJuaW5nSW5zdHJ1Y3Rvci5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTExNzYwMWEyJnNjb3BlZD10cnVlJlwiLCBmdW5jdGlvbiAoKSB7XG4gICAgICBhcGkucmVyZW5kZXIoJzExNzYwMWEyJywge1xuICAgICAgICByZW5kZXI6IHJlbmRlcixcbiAgICAgICAgc3RhdGljUmVuZGVyRm5zOiBzdGF0aWNSZW5kZXJGbnNcbiAgICAgIH0pXG4gICAgfSlcbiAgfVxufVxuY29tcG9uZW50Lm9wdGlvbnMuX19maWxlID0gXCJzcmMvY29tcG9uZW50cy9MZWFybmluZ0luc3RydWN0b3IvTGVhcm5pbmdJbnN0cnVjdG9yLnZ1ZVwiXG5leHBvcnQgZGVmYXVsdCBjb21wb25lbnQuZXhwb3J0cyJdLCJtYXBwaW5ncyI6Ijs7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Ozs7Ozs7O0FDUkE7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUlBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBakNBO0FBbUNBOzs7Ozs7QUN0Q0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FDVkE7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7Ozs7Ozs7Ozs7OztBQ2ZBO0FBRUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFIQTtBQUFBO0FBQ0E7QUFEQTtBQUtBO0FBQ0E7QUFDQTtBQVBBO0FBQ0E7QUFEQTtBQVdBO0FBWEE7QUFBQTtBQUNBO0FBREE7QUFZQTtBQUNBO0FBYkE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQ0E7QUFEQTtBQWdCQTtBQUNBO0FBakJBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQXVCQTtBQUNBO0FBeEJBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFDQTtBQURBO0FBZ0NBO0FBQ0E7QUFqQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQW9DQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQXRCQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUE2QkE7QUFFQTtBQUNBO0FBQ0E7QUFqQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQW9DQTtBQUNBO0FBQ0E7QUF0Q0E7QUFtQ0E7QUFDQTtBQXBDQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQURBO0FBMkNBO0FBQ0E7QUFDQTtBQUNBO0FBOUNBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUE4Q0E7QUEvQ0E7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQXNEQTtBQUNBO0FBdkRBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBNERBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUE1RUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQWlGQTtBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBR0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFIQTtBQUtBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUdBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBRUE7Ozs7O0FDbExBO0FBRUE7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUlBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUVBO0FBQ0E7QUFFQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFmQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFzQkE7QUFFQTtBQUNBO0FBQ0E7QUExQkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQThCQTtBQUNBO0FBQ0E7QUFoQ0E7QUE2QkE7QUFDQTtBQTlCQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUNBO0FBREE7QUFzQ0E7QUFDQTtBQXZDQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBdUNBO0FBQ0E7QUF6Q0E7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUErQ0E7QUFDQTtBQWhEQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQXFEQTtBQUVBO0FBQ0E7QUFHQTtBQTNEQTtBQUFBO0FBQ0E7QUFEQTtBQThEQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUF2RUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUF3RUE7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFHQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7O0FDbkhBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBOzs7O0FDdERBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUdBO0FBQ0E7QUFDQTtBQWJBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQWFBO0FBQ0E7QUFEQTtBQWRBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBbUJBO0FBQ0E7QUFEQTtBQXBCQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQXlCQTtBQUNBO0FBREE7QUExQkE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQWdDQTtBQUNBO0FBREE7QUFoQ0E7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUFBO0FBc0NBOztBQzlDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQ0pBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFUQTtBQVdBOztBQ1hBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRkE7QUFJQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFiQTtBQWVBO0FBQ0E7QUFFQTtBQUNBO0FBRUE7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBRUE7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBRUE7QUFDQTtBQUVBOztBQzNDQTs7Ozs7Ozs7Ozs7QUNBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSx1QkFpQkE7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///148\n")},68:function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjguanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MZWFybmluZ0luc3RydWN0b3IvTGVhcm5pbmdJbnN0cnVjdG9yLnlhbWw/NDQyNyJdLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IGZ1bmN0aW9uIChDb21wb25lbnQpIHtcbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuID0gQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuIHx8IFtdXG4gIENvbXBvbmVudC5vcHRpb25zLl9faTE4bi5wdXNoKCd7XCJlblwiOntcIlRFU1RfTUVTU0FHRVwiOlwiVGVzdCBNZXNzYWdlXCJ9LFwiemgtVFdcIjp7XCJURVNUX01FU1NBR0VcIjpcIua4rOippuioiuaBr1wifX0nKVxuICBkZWxldGUgQ29tcG9uZW50Lm9wdGlvbnMuX0N0b3Jcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///68\n')},82:function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(143);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODIuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9MZWFybmluZ0luc3RydWN0b3IvTGVhcm5pbmdJbnN0cnVjdG9yLmxlc3M/ZDMxZCJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgYXBpID0gcmVxdWlyZShcIiEuLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvcnVudGltZS9pbmplY3RTdHlsZXNJbnRvU3R5bGVUYWcuanNcIik7XG4gICAgICAgICAgICB2YXIgY29udGVudCA9IHJlcXVpcmUoXCIhIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL0xlYXJuaW5nSW5zdHJ1Y3Rvci5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9MTE3NjAxYTImbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiKTtcblxuICAgICAgICAgICAgY29udGVudCA9IGNvbnRlbnQuX19lc01vZHVsZSA/IGNvbnRlbnQuZGVmYXVsdCA6IGNvbnRlbnQ7XG5cbiAgICAgICAgICAgIGlmICh0eXBlb2YgY29udGVudCA9PT0gJ3N0cmluZycpIHtcbiAgICAgICAgICAgICAgY29udGVudCA9IFtbbW9kdWxlLmlkLCBjb250ZW50LCAnJ11dO1xuICAgICAgICAgICAgfVxuXG52YXIgb3B0aW9ucyA9IHt9O1xuXG5vcHRpb25zLmluc2VydCA9IFwiaGVhZFwiO1xub3B0aW9ucy5zaW5nbGV0b24gPSBmYWxzZTtcblxudmFyIHVwZGF0ZSA9IGFwaShjb250ZW50LCBvcHRpb25zKTtcblxuXG5cbm1vZHVsZS5leHBvcnRzID0gY29udGVudC5sb2NhbHMgfHwge307Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///82\n")}}]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/LearningInstructor"],{
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, "", "",{"version":3,"sources":[],"names":[],"mappings":"","file":"LearningInstructor.less"}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true&":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("span")
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("54345dac", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true&":
+/*!**************************************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true& ***!
+  \**************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LearningInstructor_html_vue_type_template_id_117601a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./LearningInstructor.html?vue&type=template&id=117601a2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LearningInstructor_html_vue_type_template_id_117601a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_LearningInstructor_html_vue_type_template_id_117601a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&?6fe0":
+/*!******************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js& ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LearningInstructorComputed_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LearningInstructorComputed.js */ "./src/components/LearningInstructor/LearningInstructorComputed.js");
+/* harmony import */ var _LearningInstructorMethods_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructorMethods.js */ "./src/components/LearningInstructor/LearningInstructorMethods.js");
+/* harmony import */ var _LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructorMethodsNavigation.js */ "./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js");
+/* harmony import */ var _LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LearningInstructorMethodsSentence.js */ "./src/components/LearningInstructor/LearningInstructorMethodsSentence.js");
+/* harmony import */ var _LearningInstructorMethodsWord_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructorMethodsWord.js */ "./src/components/LearningInstructor/LearningInstructorMethodsWord.js");
+/* harmony import */ var _LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LearningInstructorMethodsToLearn.js */ "./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js");
+/* harmony import */ var _LearningInstructorMethodsFeedback_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LearningInstructorMethodsFeedback.js */ "./src/components/LearningInstructor/LearningInstructorMethodsFeedback.js");
+/* harmony import */ var _LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./LearningInstructorMounted.js */ "./src/components/LearningInstructor/LearningInstructorMounted.js");
+/* harmony import */ var _LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./LearningInstructorWatch.js */ "./src/components/LearningInstructor/LearningInstructorWatch.js");
+const MobileDetect = __webpack_require__(/*! mobile-detect */ "./node_modules/mobile-detect/mobile-detect.js")
+const md = new MobileDetect(window.navigator.userAgent)
+
+let LearningInstructor = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+      beep: null,
+      tryToStop: false,
+      md
+    }
+  },
+  //watch: {},  // LearningInstructorWatch.js
+  //computed: {}, // LearningInstructorComputed.js
+  //mounted() {}, // LearningInstructorMounted.js
+  methods: {} // LearningInstructorMethods.js
+}
+
+
+Object(_LearningInstructorComputed_js__WEBPACK_IMPORTED_MODULE_0__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethods_js__WEBPACK_IMPORTED_MODULE_1__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsWord_js__WEBPACK_IMPORTED_MODULE_4__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_5__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMethodsFeedback_js__WEBPACK_IMPORTED_MODULE_6__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_7__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_8__["default"])(LearningInstructor)
+
+/* harmony default export */ __webpack_exports__["default"] = (LearningInstructor);
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&?cdcd":
+/*!******************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js& ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LearningInstructor_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./LearningInstructor.js?vue&type=script&lang=js& */ "./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&?6fe0");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_LearningInstructor_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&":
+/*!*****************************************************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructor.vue":
+/*!******************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.vue ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LearningInstructor_html_vue_type_template_id_117601a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LearningInstructor.html?vue&type=template&id=117601a2&scoped=true& */ "./src/components/LearningInstructor/LearningInstructor.html?vue&type=template&id=117601a2&scoped=true&");
+/* harmony import */ var _LearningInstructor_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructor.js?vue&type=script&lang=js& */ "./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&?cdcd");
+/* empty/unused harmony star reexport *//* harmony import */ var _LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& */ "./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _LearningInstructor_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LearningInstructor_html_vue_type_template_id_117601a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LearningInstructor_html_vue_type_template_id_117601a2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "117601a2",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/LearningInstructor/LearningInstructor.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorComputed.js":
+/*!*************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorComputed.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var snowball__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! snowball */ "./node_modules/snowball/stemmer/lib/Snowball.js");
+/* harmony import */ var snowball__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(snowball__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.computed = {
+    currentSentence () {
+      if (this.localConfig.playingIndex === null 
+              || this.localConfig.playingIndex === undefined
+              || !this.config.sentenceList
+              || !this.config.sentenceList[this.config.playingIndex]) {
+        return ''
+      }
+      return this.config.sentenceList[this.localConfig.playingIndex]
+    },
+    
+    currentSentenceWords () {
+      return this.tokenizeSentenceToWords(this.currentSentence)
+    },
+    
+    previousSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === 0) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
+    },
+    nextSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
+    },
+    
+    stemmer () {
+      let stemmer = new snowball__WEBPACK_IMPORTED_MODULE_0___default.a('English');
+      return stemmer
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethods.js":
+/*!************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethods.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sound/censor-beep-01.mp3 */ "./src/components/LearningInstructor/sound/censor-beep-01.mp3");
+/* harmony import */ var _sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.methods.initBeep = function () {
+    this.beep = this.utils.SoundUtils.create(_sound_censor_beep_01_mp3__WEBPACK_IMPORTED_MODULE_0___default.a)
+  }
+  
+  LearningInstructor.methods.tokenizeSentenceToWords = function (sentence) {
+    return sentence.split(' ')
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsFeedback.js":
+/*!********************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsFeedback.js ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  
+  let feedbackWonderful = null
+  let feedbackGreat = null
+  let feedbackGood = null
+  let feedbackOK = null
+  
+  LearningInstructor.methods.speakPracticeFeedback = async function (score) {
+    
+    if (!feedbackWonderful) {
+      // https://www.soeasyedu.com.tw/blog/online-learning/2018/09/to-encourage-somebody
+      feedbackWonderful = this.utils.RandomUtils(['Wonderful!', 'Perfect!', 'Awesome!'])
+      feedbackGreat = this.utils.RandomUtils(['Great.', 'Good Job.', 'Well done.'])
+      feedbackGood = this.utils.RandomUtils(['Good.', 'Not bad.', 'Keep it up!'])
+      feedbackOK = this.utils.RandomUtils(['OK.', 'Try again?', 'Stay strong!'])
+    }
+    
+    //console.log(result)
+    //await this.utils.AsyncUtils.sleep(time)
+    await this.utils.AsyncUtils.sleep()
+    if (score === 1) {
+      let option = {
+        pitch: Math.ceil(Math.random() * 3)/10 + 1
+      } 
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackWonderful.sampleUnduplicated()), option)
+    }
+    else if (score >= 0.7) {
+      let option = {
+        pitch: Math.ceil(Math.random() * 5)/10 + 0.8
+      }
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackGreat.sampleUnduplicated()), option)
+    }
+    else if (score >= 0.5) {
+      let option = {
+        pitch: Math.ceil(Math.random() * 4)/10 + 0.7
+      }
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackGood.sampleUnduplicated()), option)
+    }
+    else {
+      let option = {
+        pitch: Math.ceil(Math.random() * 5)/10 + 0.5
+      }
+      await this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackOK.sampleUnduplicated()), option)
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js":
+/*!**********************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+
+  LearningInstructor.methods.goToPreviousSentence = function () {
+    if (this.localConfig.playingIndex > 0) {
+      this.localConfig.playingIndex--
+      return true
+    }
+    return false
+  }
+  LearningInstructor.methods.goToNextSentence = function () {
+    if (this.localConfig.playingIndex < this.config.sentenceList.length - 1) {
+      this.localConfig.playingIndex++
+      return true
+    }
+    return false
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsSentence.js":
+/*!********************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsSentence.js ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+
+  LearningInstructor.methods.speakCurrentSentence = async function () {
+    if (this.config.currentSentenceIsSpeaking === true) {
+      this.utils.TextToSpeechUtils.stopSpeak()
+      this.tryToStop = true
+      await this.utils.AsyncUtils.sleep(100)
+      this.config.currentSentenceIsSpeaking = false
+      this.tryToStop = false
+      this.config.firstSpeakHint = true
+      return false
+    }
+
+    this.config.currentSentenceIsSpeaking = true
+    let time = await this.utils.TextToSpeechUtils.startSpeak(this.currentSentence)
+    if (this.tryToStop === true) {
+      return false
+    }
+    this.config.currentSentenceIsSpeaking = false
+
+    if (this.localConfig.speakingInstructionStrategy !== 'none') {
+
+      if (this.config.firstSpeakHint) {
+        await this.utils.AsyncUtils.sleep()
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please repeat.`))
+        this.config.firstSpeakHint = false
+      }
+      await this.practiceSentence(time)
+    }
+
+
+    if (this.localConfig.autoPlay === true) {
+      if (this.goToNextSentence()) {
+        await this.utils.AsyncUtils.sleep()
+        this.speakCurrentSentence()
+      }
+    }
+  }
+  
+  LearningInstructor.methods.practiceSentence = async function (time) {
+    if (!time) {
+      time = this.currentSentence.length * 100
+      //console.log(time)
+    }
+
+    this.config.practiceSentence = null
+    this.config.practiceSentenceEvaluationResult = []
+    this.config.practiceSentenceEvaluationScore = null
+    this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
+    //console.log(time)
+    time = time + 1000
+
+//    if (debugPractice === false) {
+      let muteCancel = false
+      setTimeout(() => {
+        if (this.config.practiceSentence && this.config.practiceSentence !== '') {
+          return true
+        }
+        this.utils.SpeechToTextUtils.stopListen()
+        muteCancel = true
+      }, 5000)
+      
+      // --------------------------
+      
+      if (!this.md.mobile()) {
+        await this.utils.AsyncUtils.sleep()
+        await this.beep.play()
+        await this.utils.AsyncUtils.sleep()
+      }
+      
+      // --------------------------
+      
+      let hasReceivcePracticeSentence = false
+      let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
+      
+      while (!hasReceivcePracticeSentence) {
+        this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+          this.config.practiceSentence = processing
+        }, this.localConfig.debugSpeechToTextUtilsMockup)
+        
+        if (muteCancel === true) {
+          return false
+        }
+        
+        // 如果字數太短，那也要重新聽取
+        //if (this.config.practiceSentence.split(' ').length < )
+        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
+        if (practiceWords.length >= thresholdWordsCount) {
+          hasReceivcePracticeSentence = true
+          await this.utils.AsyncUtils.sleep()
+        }
+        else {
+          await this.utils.AsyncUtils.sleep()
+          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+          await this.utils.AsyncUtils.sleep()
+          this.beep.play()
+        }
+        
+        if (muteCancel === true) {
+          return false
+        }
+      } // while (!hasReceivcePracticeSentence) {
+      
+//    }
+//    else {
+//      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
+//      for (let i = 0; i < 3; i++) {
+//        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
+//      }
+//      await this.utils.AsyncUtils.sleep(100)
+//    }
+    
+    this.config.currentSentenceMask = false
+    //this.config.practiceSentence = 'ok'
+
+    this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
+    this.config.practiceSentenceEvaluationScore = LearningInstructor.methods.scoreSentenceEvaluate(this.config.practiceSentenceEvaluationResult)
+    //console.log(this.config.practiceSentenceEvaluationScore)
+    await this.speakPracticeFeedback(this.config.practiceSentenceEvaluationScore)
+    
+    await this.utils.AsyncUtils.sleep(2000)
+  }
+
+  LearningInstructor.methods.evaluateSentencePractice = function (source, target) {
+    source = this.utils.DictUtils.filterWord(source)
+    target = this.utils.DictUtils.filterWord(target)
+    
+    
+    let resultRaw = this.utils.DiffUtils.diffWords(source, target)
+    //console.log(resultRaw)
+    let result = []
+    
+    resultRaw.forEach(r => {
+      if (!r.added) {
+        result.push(r)
+      }
+      else {
+        let words = this.tokenizeSentenceToWords(r.value)
+        
+        words.forEach(w => {
+          this.recordWordsToLearn(w)
+          
+          result.push({
+            added: true,
+            removed: false,
+            value: w
+          })
+        })
+      }
+    })
+    
+    return result
+  }
+  
+  LearningInstructor.methods.scoreSentenceEvaluate = function (results) {
+    let error = 0
+    results.forEach(r => {
+      //console.log(r.added)
+      if (r.added === true) {
+        error++
+      } 
+    })
+    
+    //console.log(error)
+    
+    if (error > 5) {
+      return 0
+    }
+    else if (error <= 5 && error > 2) {
+      return 0.5
+    }
+    else if (error >= 1 && error <= 2) {
+      return 0.7
+    }
+    else {
+      return 1
+    }
+  }
+  
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js":
+/*!*******************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  
+  LearningInstructor.methods.stem = function (word) {
+    this.stemmer.setCurrent(word)
+    this.stemmer.stem()
+    return this.stemmer.getCurrent()
+  }
+  
+  LearningInstructor.methods.generateKeyName = function (word) {
+    word = this.utils.DictUtils.filterWord(word)
+    return 'WordToLearn:' + this.stem(word)
+  }
+  
+  LearningInstructor.methods.recordWordsToLearn = function (word) {
+    let value = this.getWordToLearnScore(word)
+    
+    value++
+    
+    if (word.length > 10) {
+      value++
+    }
+    
+    let key = this.generateKeyName(word)
+    localStorage.setItem(key, value)
+  }
+  
+  LearningInstructor.methods.reduceWordsToLearn = function (word) {
+    let value = this.getWordToLearnScore(word)
+    
+    value--
+        
+    let key = this.generateKeyName(word)
+    localStorage.setItem(key, value)
+  }
+  
+  LearningInstructor.methods.getWordToLearnScore = function (word) {
+    let key = this.generateKeyName(word)
+    
+    let value = localStorage.getItem(key)
+    if (!value) {
+      value = 0
+    }
+    else {
+      value = Number(value)
+    }
+    
+    return value
+  }
+  
+  LearningInstructor.methods.clearWordToLearn = function (word) {
+    let key = this.generateKeyName(word)
+    localStorage.removeItem(key)
+    //console.log('clear', this.getWordToLearnScore(word))
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsWord.js":
+/*!****************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsWord.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* global LearningInstructor */
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+    LearningInstructor.methods.speakWord = async function (word) {
+      await this.utils.TextToSpeechUtils.startSpeak(word)
+      
+    }
+    
+    LearningInstructor.methods.practiceWord = async function (word) {
+      
+      this.config.practiceWord = null
+      this.config.practiceWordScore = null
+      
+      this.config.currentWordMask = this.localConfig.practiceSentenceMask
+      
+      let muteCancel = false
+      setTimeout(() => {
+        if (this.config.practiceWord && this.config.practiceWord !== '') {
+          return true
+        }
+        this.utils.SpeechToTextUtils.stopListen()
+        muteCancel = true
+      }, 3000)
+      
+      // --------------------------
+      
+      if (!this.md.mobile()) {
+        await this.utils.AsyncUtils.sleep()
+        await this.beep.play()
+        await this.utils.AsyncUtils.sleep()
+      }
+      
+      // --------------------------
+      
+      let hasReceivcePracticeSentence = false
+      let thresholdWordsCount = 1
+      
+      while (!hasReceivcePracticeSentence) {
+      
+        this.config.practiceWord = await this.utils.SpeechToTextUtils.startListen(word, (processing) => {
+          this.config.practiceWord = processing
+        }, this.localConfig.debugSpeechToTextUtilsMockup)
+      
+        if (!this.config.practiceWord) {
+          await this.utils.AsyncUtils.sleep()
+          continue
+        }
+        
+        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceWord)
+        if (practiceWords.length >= thresholdWordsCount) {
+          hasReceivcePracticeSentence = true
+          //await this.utils.AsyncUtils.sleep()
+        }
+        else {
+          await this.utils.AsyncUtils.sleep()
+          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+          await this.utils.AsyncUtils.sleep()
+          this.beep.play()
+        }
+        
+        if (muteCancel === true) {
+          return false
+        }
+      } // while (!hasReceivcePracticeSentence) {
+      
+      this.config.currentWordMask = false
+      
+      //console.log(word)
+      
+      this.config.practiceWordScore = this.evaluateWordPractice(this.config.practiceWord, word)
+      await this.speakPracticeFeedback(this.config.practiceWordScore)
+      
+      //return false
+      if (this.config.practiceWordScore >= 0.7) {
+        //await this.utils.AsyncUtils.sleep()
+        this.clearWordToLearn(word)
+        this.config.currentWord = null
+      }
+      else {
+        this.reduceWordsToLearn(word)
+      }
+    }
+    
+    LearningInstructor.methods.evaluateWordPractice = function (source, target) {
+      let score = 1
+      
+      source = this.utils.DictUtils.filterWord(source)
+      target = this.utils.DictUtils.filterWord(target)
+    
+      let result = this.utils.DiffUtils.diffChars(source, target)
+      //console.log(result)
+      let addedCharCount = 0
+      result.forEach(r => {
+        if (r.added === true) {
+          addedCharCount = addedCharCount + r.count
+        }
+      })
+      
+      //console.log(addedCharCount, target.length)
+      
+      let percent = (target.length - addedCharCount) / target.length
+      
+      if (percent >= 0.8) {
+        score = 1
+      }
+      else if (percent >= 0.7) {
+        score = 0.7
+      }
+      else if (percent >= 0.3) {
+        score = 0.5
+      }
+      else {
+        score = 0
+      }
+      
+      return score
+    }
+        
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMounted.js":
+/*!************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMounted.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.mounted = function () {
+    this.initBeep()
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorWatch.js":
+/*!**********************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorWatch.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+  LearningInstructor.watch = {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+    'localConfig.playingIndex' () {
+      this.config.practiceSentence = null
+    },
+    'autoPlay.autoPlay' () {
+      this.config.firstSpeakHint = true
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/sound/censor-beep-01.mp3":
+/*!********************************************************************!*\
+  !*** ./src/components/LearningInstructor/sound/censor-beep-01.mp3 ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "./dist/asset/censor-beep-01.mp3";
+
+/***/ })
+
+}]);
+//# sourceMappingURL=LearningInstructor.js.map

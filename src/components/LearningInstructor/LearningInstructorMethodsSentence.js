@@ -59,13 +59,15 @@ export default function (LearningInstructor) {
         }
         this.utils.SpeechToTextUtils.stopListen()
         muteCancel = true
-      }, 3000)
+      }, 5000)
       
       // --------------------------
       
-      await this.utils.AsyncUtils.sleep()
-      await this.beep.play()
-      await this.utils.AsyncUtils.sleep()
+      if (!this.md.mobile()) {
+        await this.utils.AsyncUtils.sleep()
+        await this.beep.play()
+        await this.utils.AsyncUtils.sleep()
+      }
       
       // --------------------------
       

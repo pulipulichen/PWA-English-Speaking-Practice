@@ -10,7 +10,8 @@ import AsyncUtils from './AsyncUtils.js'
 import DictUtils from './DictUtils.js'
 
 //import config from './../config.js'
-
+const MobileDetect = require('mobile-detect')
+const md = new MobileDetect(window.navigator.userAgent)
 
 export default {
   init () {
@@ -69,11 +70,27 @@ export default {
     
     this.setupGrammers(grammarsString)
     
+    grammarsString = grammarsString.toLowerCase()
+    
     return new Promise((resolve) => {
       isStarted = true
       let result
+      let locked = false
+      
       recognition.onresult = (event) => {
+        if (locked === true) {
+          return false
+        }
         result = event.results[0][0].transcript
+        
+        if (result.toLowerCase() === grammarsString) {
+          if (typeof(processingCallback) === 'function') {
+            processingCallback(result)
+          }
+          recognition.stop()
+          locked = true
+        }
+        
         if (typeof(processingCallback) === 'function') {
           processingCallback(result)
         }

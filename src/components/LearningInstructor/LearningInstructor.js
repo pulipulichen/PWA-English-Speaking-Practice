@@ -1,3 +1,5 @@
+const MobileDetect = require('mobile-detect')
+const md = new MobileDetect(window.navigator.userAgent)
 
 let LearningInstructor = {
   props: ['config', 'localConfig', 'utils'],
@@ -5,7 +7,8 @@ let LearningInstructor = {
     this.$i18n.locale = this.localConfig.locale
     return {
       beep: null,
-      tryToStop: false
+      tryToStop: false,
+      md
     }
   },
   //watch: {},  // LearningInstructorWatch.js

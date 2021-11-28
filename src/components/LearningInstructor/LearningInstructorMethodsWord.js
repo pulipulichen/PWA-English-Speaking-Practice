@@ -24,9 +24,11 @@ export default function (LearningInstructor) {
       
       // --------------------------
       
-      await this.utils.AsyncUtils.sleep()
-      await this.beep.play()
-      await this.utils.AsyncUtils.sleep()
+      if (!this.md.mobile()) {
+        await this.utils.AsyncUtils.sleep()
+        await this.beep.play()
+        await this.utils.AsyncUtils.sleep()
+      }
       
       // --------------------------
       
