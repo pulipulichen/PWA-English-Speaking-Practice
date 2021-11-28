@@ -1,1 +1,2463 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],Array(62).concat([function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjIuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1dvcmRNb2RhbC9Xb3JkTW9kYWwueWFtbD8yZmIwIl0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKENvbXBvbmVudCkge1xuICBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gPSBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gfHwgW11cbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuLnB1c2goJ3tcImVuXCI6e1wiVEVTVF9NRVNTQUdFXCI6XCJUZXN0IE1lc3NhZ2VcIn0sXCJ6aC1UV1wiOntcIlRFU1RfTUVTU0FHRVwiOlwi5ris6Kmm6KiK5oGvXCJ9fScpXG4gIGRlbGV0ZSBDb21wb25lbnQub3B0aW9ucy5fQ3RvclxufVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///62\n')},function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL0N1cnJlbnRTZW50ZW5jZS9DdXJyZW50U2VudGVuY2UueWFtbD84NGM4Il0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKENvbXBvbmVudCkge1xuICBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gPSBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gfHwgW11cbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuLnB1c2goJ3tcImVuXCI6e1wiVEVTVF9NRVNTQUdFXCI6XCJUZXN0IE1lc3NhZ2VcIn0sXCJ6aC1UV1wiOntcIlRFU1RfTUVTU0FHRVwiOlwi5ris6Kmm6KiK5oGvXCJ9fScpXG4gIGRlbGV0ZSBDb21wb25lbnQub3B0aW9ucy5fQ3RvclxufVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///63\n')},function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjQuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlRGlmZmVyZW5jZS9TZW50ZW5jZURpZmZlcmVuY2UueWFtbD9lY2JkIl0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKENvbXBvbmVudCkge1xuICBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gPSBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gfHwgW11cbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuLnB1c2goJ3tcImVuXCI6e1wiVEVTVF9NRVNTQUdFXCI6XCJUZXN0IE1lc3NhZ2VcIn0sXCJ6aC1UV1wiOntcIlRFU1RfTUVTU0FHRVwiOlwi5ris6Kmm6KiK5oGvXCJ9fScpXG4gIGRlbGV0ZSBDb21wb25lbnQub3B0aW9ucy5fQ3RvclxufVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///64\n')},function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjUuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwueWFtbD82MTBiIl0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKENvbXBvbmVudCkge1xuICBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gPSBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gfHwgW11cbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuLnB1c2goJ3tcImVuXCI6e1wiVEVTVF9NRVNTQUdFXCI6XCJUZXN0IE1lc3NhZ2VcIn0sXCJ6aC1UV1wiOntcIlRFU1RfTUVTU0FHRVwiOlwi5ris6Kmm6KiK5oGvXCJ9fScpXG4gIGRlbGV0ZSBDb21wb25lbnQub3B0aW9ucy5fQ3RvclxufVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///65\n')},function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjYuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsLnlhbWw/ZDlmOSJdLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IGZ1bmN0aW9uIChDb21wb25lbnQpIHtcbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuID0gQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuIHx8IFtdXG4gIENvbXBvbmVudC5vcHRpb25zLl9faTE4bi5wdXNoKCd7XCJlblwiOntcIlRFU1RfTUVTU0FHRVwiOlwiVGVzdCBNZXNzYWdlXCJ9LFwiemgtVFdcIjp7XCJURVNUX01FU1NBR0VcIjpcIua4rOippuioiuaBr1wifX0nKVxuICBkZWxldGUgQ29tcG9uZW50Lm9wdGlvbnMuX0N0b3Jcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///66\n')},function(module,exports){eval('module.exports = function (Component) {\n  Component.options.__i18n = Component.options.__i18n || []\n  Component.options.__i18n.push(\'{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}\')\n  delete Component.options._Ctor\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNjcuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWwueWFtbD81NGFjIl0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKENvbXBvbmVudCkge1xuICBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gPSBDb21wb25lbnQub3B0aW9ucy5fX2kxOG4gfHwgW11cbiAgQ29tcG9uZW50Lm9wdGlvbnMuX19pMThuLnB1c2goJ3tcImVuXCI6e1wiVEVTVF9NRVNTQUdFXCI6XCJUZXN0IE1lc3NhZ2VcIn0sXCJ6aC1UV1wiOntcIlRFU1RfTUVTU0FHRVwiOlwi5ris6Kmm6KiK5oGvXCJ9fScpXG4gIGRlbGV0ZSBDb21wb25lbnQub3B0aW9ucy5fQ3RvclxufVxuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///67\n')},,,,,,,function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(119);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzQuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1dvcmRNb2RhbC9Xb3JkTW9kYWwubGVzcz9iZGM1Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBhcGkgPSByZXF1aXJlKFwiIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9zdHlsZS1sb2FkZXIvZGlzdC9ydW50aW1lL2luamVjdFN0eWxlc0ludG9TdHlsZVRhZy5qc1wiKTtcbiAgICAgICAgICAgIHZhciBjb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0xIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3N0eWxlUG9zdExvYWRlci5qcyEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvcG9zdGNzcy1sb2FkZXIvc3JjL2luZGV4LmpzPz9yZWYtLTEtMiEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvbGVzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0zIS4vV29yZE1vZGFsLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0zYjRmNDYwOSZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIpO1xuXG4gICAgICAgICAgICBjb250ZW50ID0gY29udGVudC5fX2VzTW9kdWxlID8gY29udGVudC5kZWZhdWx0IDogY29udGVudDtcblxuICAgICAgICAgICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG4gICAgICAgICAgICB9XG5cbnZhciBvcHRpb25zID0ge307XG5cbm9wdGlvbnMuaW5zZXJ0ID0gXCJoZWFkXCI7XG5vcHRpb25zLnNpbmdsZXRvbiA9IGZhbHNlO1xuXG52YXIgdXBkYXRlID0gYXBpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5cblxubW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscyB8fCB7fTsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///74\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(122);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzUuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL0N1cnJlbnRTZW50ZW5jZS9DdXJyZW50U2VudGVuY2UubGVzcz83YzM1Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBhcGkgPSByZXF1aXJlKFwiIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9zdHlsZS1sb2FkZXIvZGlzdC9ydW50aW1lL2luamVjdFN0eWxlc0ludG9TdHlsZVRhZy5qc1wiKTtcbiAgICAgICAgICAgIHZhciBjb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0xIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3N0eWxlUG9zdExvYWRlci5qcyEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvcG9zdGNzcy1sb2FkZXIvc3JjL2luZGV4LmpzPz9yZWYtLTEtMiEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvbGVzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0zIS4vQ3VycmVudFNlbnRlbmNlLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0wYThlZmY3YiZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIpO1xuXG4gICAgICAgICAgICBjb250ZW50ID0gY29udGVudC5fX2VzTW9kdWxlID8gY29udGVudC5kZWZhdWx0IDogY29udGVudDtcblxuICAgICAgICAgICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG4gICAgICAgICAgICB9XG5cbnZhciBvcHRpb25zID0ge307XG5cbm9wdGlvbnMuaW5zZXJ0ID0gXCJoZWFkXCI7XG5vcHRpb25zLnNpbmdsZXRvbiA9IGZhbHNlO1xuXG52YXIgdXBkYXRlID0gYXBpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5cblxubW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscyB8fCB7fTsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///75\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(125);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzYuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlRGlmZmVyZW5jZS9TZW50ZW5jZURpZmZlcmVuY2UubGVzcz84Y2M3Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBhcGkgPSByZXF1aXJlKFwiIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9zdHlsZS1sb2FkZXIvZGlzdC9ydW50aW1lL2luamVjdFN0eWxlc0ludG9TdHlsZVRhZy5qc1wiKTtcbiAgICAgICAgICAgIHZhciBjb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0xIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3N0eWxlUG9zdExvYWRlci5qcyEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvcG9zdGNzcy1sb2FkZXIvc3JjL2luZGV4LmpzPz9yZWYtLTEtMiEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvbGVzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0zIS4vU2VudGVuY2VEaWZmZXJlbmNlLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD1lMzIzMzQ3ZSZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIpO1xuXG4gICAgICAgICAgICBjb250ZW50ID0gY29udGVudC5fX2VzTW9kdWxlID8gY29udGVudC5kZWZhdWx0IDogY29udGVudDtcblxuICAgICAgICAgICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG4gICAgICAgICAgICB9XG5cbnZhciBvcHRpb25zID0ge307XG5cbm9wdGlvbnMuaW5zZXJ0ID0gXCJoZWFkXCI7XG5vcHRpb25zLnNpbmdsZXRvbiA9IGZhbHNlO1xuXG52YXIgdXBkYXRlID0gYXBpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5cblxubW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscyB8fCB7fTsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///76\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(128);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzcuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwubGVzcz8zYTU0Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBhcGkgPSByZXF1aXJlKFwiIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9zdHlsZS1sb2FkZXIvZGlzdC9ydW50aW1lL2luamVjdFN0eWxlc0ludG9TdHlsZVRhZy5qc1wiKTtcbiAgICAgICAgICAgIHZhciBjb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0xIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3N0eWxlUG9zdExvYWRlci5qcyEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvcG9zdGNzcy1sb2FkZXIvc3JjL2luZGV4LmpzPz9yZWYtLTEtMiEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvbGVzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0zIS4vUHJhY3RpY2VTZW50ZW5jZVBhbmVsLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD1mMzA3NzFlMiZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIpO1xuXG4gICAgICAgICAgICBjb250ZW50ID0gY29udGVudC5fX2VzTW9kdWxlID8gY29udGVudC5kZWZhdWx0IDogY29udGVudDtcblxuICAgICAgICAgICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG4gICAgICAgICAgICB9XG5cbnZhciBvcHRpb25zID0ge307XG5cbm9wdGlvbnMuaW5zZXJ0ID0gXCJoZWFkXCI7XG5vcHRpb25zLnNpbmdsZXRvbiA9IGZhbHNlO1xuXG52YXIgdXBkYXRlID0gYXBpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5cblxubW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscyB8fCB7fTsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///77\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(131);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzguanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsLmxlc3M/ODk4YSJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgYXBpID0gcmVxdWlyZShcIiEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvcnVudGltZS9pbmplY3RTdHlsZXNJbnRvU3R5bGVUYWcuanNcIik7XG4gICAgICAgICAgICB2YXIgY29udGVudCA9IHJlcXVpcmUoXCIhIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL01haW5TZW50ZW5jZVBhbmVsLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0wYWMxOTY5MyZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIpO1xuXG4gICAgICAgICAgICBjb250ZW50ID0gY29udGVudC5fX2VzTW9kdWxlID8gY29udGVudC5kZWZhdWx0IDogY29udGVudDtcblxuICAgICAgICAgICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG4gICAgICAgICAgICB9XG5cbnZhciBvcHRpb25zID0ge307XG5cbm9wdGlvbnMuaW5zZXJ0ID0gXCJoZWFkXCI7XG5vcHRpb25zLnNpbmdsZXRvbiA9IGZhbHNlO1xuXG52YXIgdXBkYXRlID0gYXBpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5cblxubW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscyB8fCB7fTsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///78\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(133);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiNzkuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsUHJhY3RpY2UubGVzcz8xNTM0Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBhcGkgPSByZXF1aXJlKFwiIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9zdHlsZS1sb2FkZXIvZGlzdC9ydW50aW1lL2luamVjdFN0eWxlc0ludG9TdHlsZVRhZy5qc1wiKTtcbiAgICAgICAgICAgIHZhciBjb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0xIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3N0eWxlUG9zdExvYWRlci5qcyEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvcG9zdGNzcy1sb2FkZXIvc3JjL2luZGV4LmpzPz9yZWYtLTEtMiEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvbGVzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0zIS4vTWFpblNlbnRlbmNlUGFuZWxQcmFjdGljZS5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTEmaWQ9MGFjMTk2OTMmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiKTtcblxuICAgICAgICAgICAgY29udGVudCA9IGNvbnRlbnQuX19lc01vZHVsZSA/IGNvbnRlbnQuZGVmYXVsdCA6IGNvbnRlbnQ7XG5cbiAgICAgICAgICAgIGlmICh0eXBlb2YgY29udGVudCA9PT0gJ3N0cmluZycpIHtcbiAgICAgICAgICAgICAgY29udGVudCA9IFtbbW9kdWxlLmlkLCBjb250ZW50LCAnJ11dO1xuICAgICAgICAgICAgfVxuXG52YXIgb3B0aW9ucyA9IHt9O1xuXG5vcHRpb25zLmluc2VydCA9IFwiaGVhZFwiO1xub3B0aW9ucy5zaW5nbGV0b24gPSBmYWxzZTtcblxudmFyIHVwZGF0ZSA9IGFwaShjb250ZW50LCBvcHRpb25zKTtcblxuXG5cbm1vZHVsZS5leHBvcnRzID0gY29udGVudC5sb2NhbHMgfHwge307Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///79\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(136);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODAuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWwubGVzcz8zZjI5Il0sInNvdXJjZXNDb250ZW50IjpbInZhciBhcGkgPSByZXF1aXJlKFwiIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9zdHlsZS1sb2FkZXIvZGlzdC9ydW50aW1lL2luamVjdFN0eWxlc0ludG9TdHlsZVRhZy5qc1wiKTtcbiAgICAgICAgICAgIHZhciBjb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0xIS4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9sb2FkZXJzL3N0eWxlUG9zdExvYWRlci5qcyEuLi8uLi8uLi9ub2RlX21vZHVsZXMvcG9zdGNzcy1sb2FkZXIvc3JjL2luZGV4LmpzPz9yZWYtLTEtMiEuLi8uLi8uLi9ub2RlX21vZHVsZXMvbGVzcy1sb2FkZXIvZGlzdC9janMuanM/P3JlZi0tMS0zIS4vU2VudGVuY2VQYW5lbC5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9MzQ4NmY1OTMmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiKTtcblxuICAgICAgICAgICAgY29udGVudCA9IGNvbnRlbnQuX19lc01vZHVsZSA/IGNvbnRlbnQuZGVmYXVsdCA6IGNvbnRlbnQ7XG5cbiAgICAgICAgICAgIGlmICh0eXBlb2YgY29udGVudCA9PT0gJ3N0cmluZycpIHtcbiAgICAgICAgICAgICAgY29udGVudCA9IFtbbW9kdWxlLmlkLCBjb250ZW50LCAnJ11dO1xuICAgICAgICAgICAgfVxuXG52YXIgb3B0aW9ucyA9IHt9O1xuXG5vcHRpb25zLmluc2VydCA9IFwiaGVhZFwiO1xub3B0aW9ucy5zaW5nbGV0b24gPSBmYWxzZTtcblxudmFyIHVwZGF0ZSA9IGFwaShjb250ZW50LCBvcHRpb25zKTtcblxuXG5cbm1vZHVsZS5leHBvcnRzID0gY29udGVudC5sb2NhbHMgfHwge307Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///80\n")},function(module,exports,__webpack_require__){eval("var api = __webpack_require__(7);\n            var content = __webpack_require__(138);\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiODEuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWxUcmFuc2l0aW9uLmxlc3M/MDRjMSJdLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgYXBpID0gcmVxdWlyZShcIiEuLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvcnVudGltZS9pbmplY3RTdHlsZXNJbnRvU3R5bGVUYWcuanNcIik7XG4gICAgICAgICAgICB2YXIgY29udGVudCA9IHJlcXVpcmUoXCIhIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL1NlbnRlbmNlUGFuZWxUcmFuc2l0aW9uLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MSZpZD0zNDg2ZjU5MyZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIpO1xuXG4gICAgICAgICAgICBjb250ZW50ID0gY29udGVudC5fX2VzTW9kdWxlID8gY29udGVudC5kZWZhdWx0IDogY29udGVudDtcblxuICAgICAgICAgICAgaWYgKHR5cGVvZiBjb250ZW50ID09PSAnc3RyaW5nJykge1xuICAgICAgICAgICAgICBjb250ZW50ID0gW1ttb2R1bGUuaWQsIGNvbnRlbnQsICcnXV07XG4gICAgICAgICAgICB9XG5cbnZhciBvcHRpb25zID0ge307XG5cbm9wdGlvbnMuaW5zZXJ0ID0gXCJoZWFkXCI7XG5vcHRpb25zLnNpbmdsZXRvbiA9IGZhbHNlO1xuXG52YXIgdXBkYXRlID0gYXBpKGNvbnRlbnQsIG9wdGlvbnMpO1xuXG5cblxubW9kdWxlLmV4cG9ydHMgPSBjb250ZW50LmxvY2FscyB8fCB7fTsiXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///81\n")},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(74);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTE4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9Xb3JkTW9kYWwvV29yZE1vZGFsLmxlc3M/YWU4NSJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvY2pzLmpzIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL1dvcmRNb2RhbC5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9M2I0ZjQ2MDkmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///118\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".ConfigurationModal[data-v-3b4f4609]{display:none}.isSpeaking[data-v-3b4f4609]{cursor:not-allowed;background-color:#ff0!important;color:#000}.word-segment[data-v-3b4f4609]{cursor:pointer}.masked span[data-v-3b4f4609]{color:grey;background-color:grey;border-radius:1rem;-webkit-filter:blur(2px) grayscale(1) invert(.1)}.isPracticing[data-v-3b4f4609]{cursor:wait!important;pointer-events:none}.positive[data-v-3b4f4609]{color:#21ba45!important}.practice-hint[data-v-3b4f4609]{cursor:pointer}.practice-again-hint[data-v-3b4f4609]{margin-top:1rem!important;margin-bottom:1rem!important;color:grey;visibility:hidden}.practice-again-hint.visible[data-v-3b4f4609]{visibility:visible}.keep-going[data-v-3b4f4609]{color:grey!important}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less"],"names":[],"mappings":"AAAA,qCACE,YCCF,CDEA,6BACE,kBAAA,CACA,+BAAA,CACA,UCAF,CDGA,+BACE,cCDF,CDIA,8BACE,UAAA,CACA,qBAAA,CACA,kBAAA,CACA,gDCFF,CDKA,+BACE,qBAAA,CACA,mBCHF,CDMA,2BACE,uBCJF,CDOA,gCACE,cCLF,CDQA,sCAEE,yBAAA,CACA,4BAAA,CACA,UAAA,CACA,iBCPF,CDSE,8CACE,kBCPJ,CDWA,6BACE,oBCTF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\\n  display: none;\\n}\\n\\n.isSpeaking {\\n  cursor: not-allowed;\\n  background-color: yellow !important;\\n  color: black;\\n}\\n\\n.word-segment {\\n  cursor: pointer;\\n}\\n\\n.masked span {\\n  color: gray;\\n  background-color: gray;\\n  border-radius: 1rem;\\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\\n}\\n\\n.isPracticing {\\n  cursor: wait !important;\\n  pointer-events: none;\\n}\\n\\n.positive {\\n  color: #21ba45 !important;\\n}\\n\\n.practice-hint {\\n  cursor: pointer;\\n}\\n\\n.practice-again-hint {\\n  \\n  margin-top: 1rem !important;\\n  margin-bottom: 1rem !important;\\n  color: gray;\\n  visibility: hidden;\\n  \\n  &.visible {\\n    visibility: visible;\\n  }\\n}\\n\\n.keep-going {\\n  color: gray !important;\\n}",".ConfigurationModal {\\n  display: none;\\n}\\n.isSpeaking {\\n  cursor: not-allowed;\\n  background-color: yellow !important;\\n  color: black;\\n}\\n.word-segment {\\n  cursor: pointer;\\n}\\n.masked span {\\n  color: gray;\\n  background-color: gray;\\n  border-radius: 1rem;\\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\\n}\\n.isPracticing {\\n  cursor: wait !important;\\n  pointer-events: none;\\n}\\n.positive {\\n  color: #21ba45 !important;\\n}\\n.practice-hint {\\n  cursor: pointer;\\n}\\n.practice-again-hint {\\n  margin-top: 1rem !important;\\n  margin-bottom: 1rem !important;\\n  color: gray;\\n  visibility: hidden;\\n}\\n.practice-again-hint.visible {\\n  visibility: visible;\\n}\\n.keep-going {\\n  color: gray !important;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTE5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9Xb3JkTW9kYWwvV29yZE1vZGFsLmxlc3M/NGI2OCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIuQ29uZmlndXJhdGlvbk1vZGFsW2RhdGEtdi0zYjRmNDYwOV17ZGlzcGxheTpub25lfS5pc1NwZWFraW5nW2RhdGEtdi0zYjRmNDYwOV17Y3Vyc29yOm5vdC1hbGxvd2VkO2JhY2tncm91bmQtY29sb3I6I2ZmMCFpbXBvcnRhbnQ7Y29sb3I6IzAwMH0ud29yZC1zZWdtZW50W2RhdGEtdi0zYjRmNDYwOV17Y3Vyc29yOnBvaW50ZXJ9Lm1hc2tlZCBzcGFuW2RhdGEtdi0zYjRmNDYwOV17Y29sb3I6Z3JleTtiYWNrZ3JvdW5kLWNvbG9yOmdyZXk7Ym9yZGVyLXJhZGl1czoxcmVtOy13ZWJraXQtZmlsdGVyOmJsdXIoMnB4KSBncmF5c2NhbGUoMSkgaW52ZXJ0KC4xKX0uaXNQcmFjdGljaW5nW2RhdGEtdi0zYjRmNDYwOV17Y3Vyc29yOndhaXQhaW1wb3J0YW50O3BvaW50ZXItZXZlbnRzOm5vbmV9LnBvc2l0aXZlW2RhdGEtdi0zYjRmNDYwOV17Y29sb3I6IzIxYmE0NSFpbXBvcnRhbnR9LnByYWN0aWNlLWhpbnRbZGF0YS12LTNiNGY0NjA5XXtjdXJzb3I6cG9pbnRlcn0ucHJhY3RpY2UtYWdhaW4taGludFtkYXRhLXYtM2I0ZjQ2MDlde21hcmdpbi10b3A6MXJlbSFpbXBvcnRhbnQ7bWFyZ2luLWJvdHRvbToxcmVtIWltcG9ydGFudDtjb2xvcjpncmV5O3Zpc2liaWxpdHk6aGlkZGVufS5wcmFjdGljZS1hZ2Fpbi1oaW50LnZpc2libGVbZGF0YS12LTNiNGY0NjA5XXt2aXNpYmlsaXR5OnZpc2libGV9LmtlZXAtZ29pbmdbZGF0YS12LTNiNGY0NjA5XXtjb2xvcjpncmV5IWltcG9ydGFudH1cIiwgXCJcIix7XCJ2ZXJzaW9uXCI6MyxcInNvdXJjZXNcIjpbXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9Xb3JkTW9kYWwvV29yZE1vZGFsLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0zYjRmNDYwOSZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIsXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9Xb3JkTW9kYWwvV29yZE1vZGFsLmxlc3NcIl0sXCJuYW1lc1wiOltdLFwibWFwcGluZ3NcIjpcIkFBQUEscUNBQ0UsWUNDRixDREVBLDZCQUNFLGtCQUFBLENBQ0EsK0JBQUEsQ0FDQSxVQ0FGLENER0EsK0JBQ0UsY0NERixDRElBLDhCQUNFLFVBQUEsQ0FDQSxxQkFBQSxDQUNBLGtCQUFBLENBQ0EsZ0RDRkYsQ0RLQSwrQkFDRSxxQkFBQSxDQUNBLG1CQ0hGLENETUEsMkJBQ0UsdUJDSkYsQ0RPQSxnQ0FDRSxjQ0xGLENEUUEsc0NBRUUseUJBQUEsQ0FDQSw0QkFBQSxDQUNBLFVBQUEsQ0FDQSxpQkNQRixDRFNFLDhDQUNFLGtCQ1BKLENEV0EsNkJBQ0Usb0JDVEZcIixcImZpbGVcIjpcIldvcmRNb2RhbC5sZXNzXCIsXCJzb3VyY2VzQ29udGVudFwiOltcIi5Db25maWd1cmF0aW9uTW9kYWwge1xcbiAgZGlzcGxheTogbm9uZTtcXG59XFxuXFxuLmlzU3BlYWtpbmcge1xcbiAgY3Vyc29yOiBub3QtYWxsb3dlZDtcXG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvdyAhaW1wb3J0YW50O1xcbiAgY29sb3I6IGJsYWNrO1xcbn1cXG5cXG4ud29yZC1zZWdtZW50IHtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG59XFxuXFxuLm1hc2tlZCBzcGFuIHtcXG4gIGNvbG9yOiBncmF5O1xcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcXG4gIGJvcmRlci1yYWRpdXM6IDFyZW07XFxuICAtd2Via2l0LWZpbHRlcjogYmx1cigycHgpIGdyYXlzY2FsZSgxKSBpbnZlcnQoMC4xKTtcXG59XFxuXFxuLmlzUHJhY3RpY2luZyB7XFxuICBjdXJzb3I6IHdhaXQgIWltcG9ydGFudDtcXG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xcbn1cXG5cXG4ucG9zaXRpdmUge1xcbiAgY29sb3I6ICMyMWJhNDUgIWltcG9ydGFudDtcXG59XFxuXFxuLnByYWN0aWNlLWhpbnQge1xcbiAgY3Vyc29yOiBwb2ludGVyO1xcbn1cXG5cXG4ucHJhY3RpY2UtYWdhaW4taGludCB7XFxuICBcXG4gIG1hcmdpbi10b3A6IDFyZW0gIWltcG9ydGFudDtcXG4gIG1hcmdpbi1ib3R0b206IDFyZW0gIWltcG9ydGFudDtcXG4gIGNvbG9yOiBncmF5O1xcbiAgdmlzaWJpbGl0eTogaGlkZGVuO1xcbiAgXFxuICAmLnZpc2libGUge1xcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xcbiAgfVxcbn1cXG5cXG4ua2VlcC1nb2luZyB7XFxuICBjb2xvcjogZ3JheSAhaW1wb3J0YW50O1xcbn1cIixcIi5Db25maWd1cmF0aW9uTW9kYWwge1xcbiAgZGlzcGxheTogbm9uZTtcXG59XFxuLmlzU3BlYWtpbmcge1xcbiAgY3Vyc29yOiBub3QtYWxsb3dlZDtcXG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvdyAhaW1wb3J0YW50O1xcbiAgY29sb3I6IGJsYWNrO1xcbn1cXG4ud29yZC1zZWdtZW50IHtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG59XFxuLm1hc2tlZCBzcGFuIHtcXG4gIGNvbG9yOiBncmF5O1xcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcXG4gIGJvcmRlci1yYWRpdXM6IDFyZW07XFxuICAtd2Via2l0LWZpbHRlcjogYmx1cigycHgpIGdyYXlzY2FsZSgxKSBpbnZlcnQoMC4xKTtcXG59XFxuLmlzUHJhY3RpY2luZyB7XFxuICBjdXJzb3I6IHdhaXQgIWltcG9ydGFudDtcXG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xcbn1cXG4ucG9zaXRpdmUge1xcbiAgY29sb3I6ICMyMWJhNDUgIWltcG9ydGFudDtcXG59XFxuLnByYWN0aWNlLWhpbnQge1xcbiAgY3Vyc29yOiBwb2ludGVyO1xcbn1cXG4ucHJhY3RpY2UtYWdhaW4taGludCB7XFxuICBtYXJnaW4tdG9wOiAxcmVtICFpbXBvcnRhbnQ7XFxuICBtYXJnaW4tYm90dG9tOiAxcmVtICFpbXBvcnRhbnQ7XFxuICBjb2xvcjogZ3JheTtcXG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcXG59XFxuLnByYWN0aWNlLWFnYWluLWhpbnQudmlzaWJsZSB7XFxuICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xcbn1cXG4ua2VlcC1nb2luZyB7XFxuICBjb2xvcjogZ3JheSAhaW1wb3J0YW50O1xcbn1cXG5cIl19XSk7XG4vLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IGV4cG9ydHM7XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///119\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(62);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIwLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9Xb3JkTW9kYWwvV29yZE1vZGFsLnlhbWw/Y2JlNyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9Aa2F6dXBvbi92dWUtaTE4bi1sb2FkZXIvbGliL2luZGV4LmpzIS4vV29yZE1vZGFsLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZTZW50ZW5jZVBhbmVsJTJGV29yZE1vZGFsJTJGV29yZE1vZGFsLnZ1ZSZsYW5nPXlhbWxcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL1dvcmRNb2RhbC55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRldvcmRNb2RhbCUyRldvcmRNb2RhbC52dWUmbGFuZz15YW1sXCIiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///120\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(75);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9DdXJyZW50U2VudGVuY2UvQ3VycmVudFNlbnRlbmNlLmxlc3M/NzRmNiJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvY2pzLmpzIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL0N1cnJlbnRTZW50ZW5jZS5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9MGE4ZWZmN2ImbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///121\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".current-sentence-segments[data-v-0a8eff7b]{margin-left:.5rem!important;margin-right:.5rem!important}.current-sentence-segments .current-sentence[data-v-0a8eff7b]{max-height:calc(25vh - 2rem);height:calc(25vh - 2rem);overflow-x:hidden;overflow-y:auto}.current-sentence-segments .current-sentence.isSpeaking[data-v-0a8eff7b]{cursor:not-allowed;background-color:#ff0;color:#000}.word.speakable[data-v-0a8eff7b]{cursor:pointer}.word.speakable.isSpeaking[data-v-0a8eff7b]{cursor:not-allowed;background-color:#ff0;color:#000}.target[data-v-0a8eff7b]{color:grey;padding-bottom:.5rem;width:100%}.target.isPracticing[data-v-0a8eff7b],.target.isSpeaking[data-v-0a8eff7b],.target .isSpeaking[data-v-0a8eff7b]{background-color:#ff0;color:#000}.word-block .word.speakable[data-v-0a8eff7b]{color:grey;background-color:grey;border-radius:1rem;-webkit-filter:blur(2px) grayscale(1) invert(.1)}.sentence-block[data-v-0a8eff7b]{text-align:center}.sentence-block h2[data-v-0a8eff7b]{color:grey;background-color:grey;border-radius:1rem;-webkit-filter:blur(2px) grayscale(1) invert(.1);display:inline-block;margin-left:auto;margin-right:auto}.sentence-block h2 .word[data-v-0a8eff7b]{visibility:hidden}.sentence-block>h2[data-v-0a8eff7b],.sentence-block>h2 .word[data-v-0a8eff7b]{transition:.5s}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/CurrentSentence/CurrentSentence.less"],"names":[],"mappings":"AACA,4CACE,2BAAA,CACA,4BCAF,CDFA,8DAKI,4BAAA,CACA,wBAAA,CAGA,iBAAA,CACA,eCDJ,CDGI,yEACE,kBAAA,CACA,qBAAA,CACA,UCDN,CDOA,iCACE,cCLF,CDOE,4CACE,kBAAA,CACA,qBAAA,CACA,UCLJ,CDSA,yBACE,UAAA,CACA,oBAAA,CACA,UCPF,CDeE,+GACE,qBAAA,CACA,UCRJ,CDYA,6CACE,UAAA,CACA,qBAAA,CACA,kBAAA,CACA,gDCVF,CDaA,iCACE,iBCXF,CDUA,oCAII,UAAA,CACA,qBAAA,CACA,kBAAA,CACA,gDAAA,CAEA,oBAAA,CACA,gBAAA,CACA,iBCZJ,CDCA,0CAeM,iBCbN,CDkBA,8EAII,cChBJ","file":"CurrentSentence.less","sourcesContent":["\\n.current-sentence-segments {\\n  margin-left: 0.5rem !important;\\n  margin-right: 0.5rem !important;\\n  \\n  .current-sentence {\\n    max-height: calc(25vh - 2rem);\\n    height: calc(25vh - 2rem);\\n/*    background-color: green;*/\\n    \\n    overflow-x: hidden;\\n    overflow-y: auto;\\n    \\n    &.isSpeaking {\\n      cursor: not-allowed;\\n      background-color: yellow;\\n      color: black;\\n    }\\n  }\\n}\\n\\n\\n.word.speakable {\\n  cursor: pointer;\\n\\n  &.isSpeaking {\\n    cursor: not-allowed;\\n    background-color: yellow;\\n    color: black;\\n  }\\n}\\n\\n.target {\\n  color: gray;\\n  padding-bottom: 0.5rem;\\n  width: 100%;\\n  \\n  &.isSpeaking,\\n  .isSpeaking {\\n    background-color: yellow;\\n    color: black;\\n  }\\n  \\n  &.isPracticing {\\n    background-color: yellow;\\n    color: black;\\n  }\\n}\\n\\n.word-block .word.speakable {\\n  color: gray;\\n  background-color: gray;\\n  border-radius: 1rem;\\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\\n}\\n\\n.sentence-block {\\n  text-align: center;\\n  \\n  h2 {\\n    color: gray;\\n    background-color: gray;\\n    border-radius: 1rem;\\n    -webkit-filter: blur(2px) grayscale(1) invert(0.1);\\n\\n    display: inline-block;\\n    margin-left: auto;\\n    margin-right: auto;\\n\\n\\n    .word {\\n      visibility: hidden;\\n    }\\n  }\\n}\\n\\n.sentence-block > h2 {\\n  transition: .5s;\\n  \\n  .word {\\n    transition: .5s;\\n  }\\n}",".current-sentence-segments {\\n  margin-left: 0.5rem !important;\\n  margin-right: 0.5rem !important;\\n}\\n.current-sentence-segments .current-sentence {\\n  max-height: calc(25vh - 2rem);\\n  height: calc(25vh - 2rem);\\n  /*    background-color: green;*/\\n  overflow-x: hidden;\\n  overflow-y: auto;\\n}\\n.current-sentence-segments .current-sentence.isSpeaking {\\n  cursor: not-allowed;\\n  background-color: yellow;\\n  color: black;\\n}\\n.word.speakable {\\n  cursor: pointer;\\n}\\n.word.speakable.isSpeaking {\\n  cursor: not-allowed;\\n  background-color: yellow;\\n  color: black;\\n}\\n.target {\\n  color: gray;\\n  padding-bottom: 0.5rem;\\n  width: 100%;\\n}\\n.target.isSpeaking,\\n.target .isSpeaking {\\n  background-color: yellow;\\n  color: black;\\n}\\n.target.isPracticing {\\n  background-color: yellow;\\n  color: black;\\n}\\n.word-block .word.speakable {\\n  color: gray;\\n  background-color: gray;\\n  border-radius: 1rem;\\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\\n}\\n.sentence-block {\\n  text-align: center;\\n}\\n.sentence-block h2 {\\n  color: gray;\\n  background-color: gray;\\n  border-radius: 1rem;\\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\\n  display: inline-block;\\n  margin-left: auto;\\n  margin-right: auto;\\n}\\n.sentence-block h2 .word {\\n  visibility: hidden;\\n}\\n.sentence-block > h2 {\\n  transition: 0.5s;\\n}\\n.sentence-block > h2 .word {\\n  transition: 0.5s;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIyLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9DdXJyZW50U2VudGVuY2UvQ3VycmVudFNlbnRlbmNlLmxlc3M/MWYxNSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIuY3VycmVudC1zZW50ZW5jZS1zZWdtZW50c1tkYXRhLXYtMGE4ZWZmN2Jde21hcmdpbi1sZWZ0Oi41cmVtIWltcG9ydGFudDttYXJnaW4tcmlnaHQ6LjVyZW0haW1wb3J0YW50fS5jdXJyZW50LXNlbnRlbmNlLXNlZ21lbnRzIC5jdXJyZW50LXNlbnRlbmNlW2RhdGEtdi0wYThlZmY3Yl17bWF4LWhlaWdodDpjYWxjKDI1dmggLSAycmVtKTtoZWlnaHQ6Y2FsYygyNXZoIC0gMnJlbSk7b3ZlcmZsb3cteDpoaWRkZW47b3ZlcmZsb3cteTphdXRvfS5jdXJyZW50LXNlbnRlbmNlLXNlZ21lbnRzIC5jdXJyZW50LXNlbnRlbmNlLmlzU3BlYWtpbmdbZGF0YS12LTBhOGVmZjdiXXtjdXJzb3I6bm90LWFsbG93ZWQ7YmFja2dyb3VuZC1jb2xvcjojZmYwO2NvbG9yOiMwMDB9LndvcmQuc3BlYWthYmxlW2RhdGEtdi0wYThlZmY3Yl17Y3Vyc29yOnBvaW50ZXJ9LndvcmQuc3BlYWthYmxlLmlzU3BlYWtpbmdbZGF0YS12LTBhOGVmZjdiXXtjdXJzb3I6bm90LWFsbG93ZWQ7YmFja2dyb3VuZC1jb2xvcjojZmYwO2NvbG9yOiMwMDB9LnRhcmdldFtkYXRhLXYtMGE4ZWZmN2Jde2NvbG9yOmdyZXk7cGFkZGluZy1ib3R0b206LjVyZW07d2lkdGg6MTAwJX0udGFyZ2V0LmlzUHJhY3RpY2luZ1tkYXRhLXYtMGE4ZWZmN2JdLC50YXJnZXQuaXNTcGVha2luZ1tkYXRhLXYtMGE4ZWZmN2JdLC50YXJnZXQgLmlzU3BlYWtpbmdbZGF0YS12LTBhOGVmZjdiXXtiYWNrZ3JvdW5kLWNvbG9yOiNmZjA7Y29sb3I6IzAwMH0ud29yZC1ibG9jayAud29yZC5zcGVha2FibGVbZGF0YS12LTBhOGVmZjdiXXtjb2xvcjpncmV5O2JhY2tncm91bmQtY29sb3I6Z3JleTtib3JkZXItcmFkaXVzOjFyZW07LXdlYmtpdC1maWx0ZXI6Ymx1cigycHgpIGdyYXlzY2FsZSgxKSBpbnZlcnQoLjEpfS5zZW50ZW5jZS1ibG9ja1tkYXRhLXYtMGE4ZWZmN2Jde3RleHQtYWxpZ246Y2VudGVyfS5zZW50ZW5jZS1ibG9jayBoMltkYXRhLXYtMGE4ZWZmN2Jde2NvbG9yOmdyZXk7YmFja2dyb3VuZC1jb2xvcjpncmV5O2JvcmRlci1yYWRpdXM6MXJlbTstd2Via2l0LWZpbHRlcjpibHVyKDJweCkgZ3JheXNjYWxlKDEpIGludmVydCguMSk7ZGlzcGxheTppbmxpbmUtYmxvY2s7bWFyZ2luLWxlZnQ6YXV0bzttYXJnaW4tcmlnaHQ6YXV0b30uc2VudGVuY2UtYmxvY2sgaDIgLndvcmRbZGF0YS12LTBhOGVmZjdiXXt2aXNpYmlsaXR5OmhpZGRlbn0uc2VudGVuY2UtYmxvY2s+aDJbZGF0YS12LTBhOGVmZjdiXSwuc2VudGVuY2UtYmxvY2s+aDIgLndvcmRbZGF0YS12LTBhOGVmZjdiXXt0cmFuc2l0aW9uOi41c31cIiwgXCJcIix7XCJ2ZXJzaW9uXCI6MyxcInNvdXJjZXNcIjpbXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9DdXJyZW50U2VudGVuY2UvQ3VycmVudFNlbnRlbmNlLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0wYThlZmY3YiZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIsXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9DdXJyZW50U2VudGVuY2UvQ3VycmVudFNlbnRlbmNlLmxlc3NcIl0sXCJuYW1lc1wiOltdLFwibWFwcGluZ3NcIjpcIkFBQ0EsNENBQ0UsMkJBQUEsQ0FDQSw0QkNBRixDREZBLDhEQUtJLDRCQUFBLENBQ0Esd0JBQUEsQ0FHQSxpQkFBQSxDQUNBLGVDREosQ0RHSSx5RUFDRSxrQkFBQSxDQUNBLHFCQUFBLENBQ0EsVUNETixDRE9BLGlDQUNFLGNDTEYsQ0RPRSw0Q0FDRSxrQkFBQSxDQUNBLHFCQUFBLENBQ0EsVUNMSixDRFNBLHlCQUNFLFVBQUEsQ0FDQSxvQkFBQSxDQUNBLFVDUEYsQ0RlRSwrR0FDRSxxQkFBQSxDQUNBLFVDUkosQ0RZQSw2Q0FDRSxVQUFBLENBQ0EscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLGdEQ1ZGLENEYUEsaUNBQ0UsaUJDWEYsQ0RVQSxvQ0FJSSxVQUFBLENBQ0EscUJBQUEsQ0FDQSxrQkFBQSxDQUNBLGdEQUFBLENBRUEsb0JBQUEsQ0FDQSxnQkFBQSxDQUNBLGlCQ1pKLENEQ0EsMENBZU0saUJDYk4sQ0RrQkEsOEVBSUksY0NoQkpcIixcImZpbGVcIjpcIkN1cnJlbnRTZW50ZW5jZS5sZXNzXCIsXCJzb3VyY2VzQ29udGVudFwiOltcIlxcbi5jdXJyZW50LXNlbnRlbmNlLXNlZ21lbnRzIHtcXG4gIG1hcmdpbi1sZWZ0OiAwLjVyZW0gIWltcG9ydGFudDtcXG4gIG1hcmdpbi1yaWdodDogMC41cmVtICFpbXBvcnRhbnQ7XFxuICBcXG4gIC5jdXJyZW50LXNlbnRlbmNlIHtcXG4gICAgbWF4LWhlaWdodDogY2FsYygyNXZoIC0gMnJlbSk7XFxuICAgIGhlaWdodDogY2FsYygyNXZoIC0gMnJlbSk7XFxuLyogICAgYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47Ki9cXG4gICAgXFxuICAgIG92ZXJmbG93LXg6IGhpZGRlbjtcXG4gICAgb3ZlcmZsb3cteTogYXV0bztcXG4gICAgXFxuICAgICYuaXNTcGVha2luZyB7XFxuICAgICAgY3Vyc29yOiBub3QtYWxsb3dlZDtcXG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XFxuICAgICAgY29sb3I6IGJsYWNrO1xcbiAgICB9XFxuICB9XFxufVxcblxcblxcbi53b3JkLnNwZWFrYWJsZSB7XFxuICBjdXJzb3I6IHBvaW50ZXI7XFxuXFxuICAmLmlzU3BlYWtpbmcge1xcbiAgICBjdXJzb3I6IG5vdC1hbGxvd2VkO1xcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XFxuICAgIGNvbG9yOiBibGFjaztcXG4gIH1cXG59XFxuXFxuLnRhcmdldCB7XFxuICBjb2xvcjogZ3JheTtcXG4gIHBhZGRpbmctYm90dG9tOiAwLjVyZW07XFxuICB3aWR0aDogMTAwJTtcXG4gIFxcbiAgJi5pc1NwZWFraW5nLFxcbiAgLmlzU3BlYWtpbmcge1xcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XFxuICAgIGNvbG9yOiBibGFjaztcXG4gIH1cXG4gIFxcbiAgJi5pc1ByYWN0aWNpbmcge1xcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XFxuICAgIGNvbG9yOiBibGFjaztcXG4gIH1cXG59XFxuXFxuLndvcmQtYmxvY2sgLndvcmQuc3BlYWthYmxlIHtcXG4gIGNvbG9yOiBncmF5O1xcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcXG4gIGJvcmRlci1yYWRpdXM6IDFyZW07XFxuICAtd2Via2l0LWZpbHRlcjogYmx1cigycHgpIGdyYXlzY2FsZSgxKSBpbnZlcnQoMC4xKTtcXG59XFxuXFxuLnNlbnRlbmNlLWJsb2NrIHtcXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcXG4gIFxcbiAgaDIge1xcbiAgICBjb2xvcjogZ3JheTtcXG4gICAgYmFja2dyb3VuZC1jb2xvcjogZ3JheTtcXG4gICAgYm9yZGVyLXJhZGl1czogMXJlbTtcXG4gICAgLXdlYmtpdC1maWx0ZXI6IGJsdXIoMnB4KSBncmF5c2NhbGUoMSkgaW52ZXJ0KDAuMSk7XFxuXFxuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcXG4gICAgbWFyZ2luLWxlZnQ6IGF1dG87XFxuICAgIG1hcmdpbi1yaWdodDogYXV0bztcXG5cXG5cXG4gICAgLndvcmQge1xcbiAgICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcXG4gICAgfVxcbiAgfVxcbn1cXG5cXG4uc2VudGVuY2UtYmxvY2sgPiBoMiB7XFxuICB0cmFuc2l0aW9uOiAuNXM7XFxuICBcXG4gIC53b3JkIHtcXG4gICAgdHJhbnNpdGlvbjogLjVzO1xcbiAgfVxcbn1cIixcIi5jdXJyZW50LXNlbnRlbmNlLXNlZ21lbnRzIHtcXG4gIG1hcmdpbi1sZWZ0OiAwLjVyZW0gIWltcG9ydGFudDtcXG4gIG1hcmdpbi1yaWdodDogMC41cmVtICFpbXBvcnRhbnQ7XFxufVxcbi5jdXJyZW50LXNlbnRlbmNlLXNlZ21lbnRzIC5jdXJyZW50LXNlbnRlbmNlIHtcXG4gIG1heC1oZWlnaHQ6IGNhbGMoMjV2aCAtIDJyZW0pO1xcbiAgaGVpZ2h0OiBjYWxjKDI1dmggLSAycmVtKTtcXG4gIC8qICAgIGJhY2tncm91bmQtY29sb3I6IGdyZWVuOyovXFxuICBvdmVyZmxvdy14OiBoaWRkZW47XFxuICBvdmVyZmxvdy15OiBhdXRvO1xcbn1cXG4uY3VycmVudC1zZW50ZW5jZS1zZWdtZW50cyAuY3VycmVudC1zZW50ZW5jZS5pc1NwZWFraW5nIHtcXG4gIGN1cnNvcjogbm90LWFsbG93ZWQ7XFxuICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XFxuICBjb2xvcjogYmxhY2s7XFxufVxcbi53b3JkLnNwZWFrYWJsZSB7XFxuICBjdXJzb3I6IHBvaW50ZXI7XFxufVxcbi53b3JkLnNwZWFrYWJsZS5pc1NwZWFraW5nIHtcXG4gIGN1cnNvcjogbm90LWFsbG93ZWQ7XFxuICBiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7XFxuICBjb2xvcjogYmxhY2s7XFxufVxcbi50YXJnZXQge1xcbiAgY29sb3I6IGdyYXk7XFxuICBwYWRkaW5nLWJvdHRvbTogMC41cmVtO1xcbiAgd2lkdGg6IDEwMCU7XFxufVxcbi50YXJnZXQuaXNTcGVha2luZyxcXG4udGFyZ2V0IC5pc1NwZWFraW5nIHtcXG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvdztcXG4gIGNvbG9yOiBibGFjaztcXG59XFxuLnRhcmdldC5pc1ByYWN0aWNpbmcge1xcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xcbiAgY29sb3I6IGJsYWNrO1xcbn1cXG4ud29yZC1ibG9jayAud29yZC5zcGVha2FibGUge1xcbiAgY29sb3I6IGdyYXk7XFxuICBiYWNrZ3JvdW5kLWNvbG9yOiBncmF5O1xcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcXG4gIC13ZWJraXQtZmlsdGVyOiBibHVyKDJweCkgZ3JheXNjYWxlKDEpIGludmVydCgwLjEpO1xcbn1cXG4uc2VudGVuY2UtYmxvY2sge1xcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xcbn1cXG4uc2VudGVuY2UtYmxvY2sgaDIge1xcbiAgY29sb3I6IGdyYXk7XFxuICBiYWNrZ3JvdW5kLWNvbG9yOiBncmF5O1xcbiAgYm9yZGVyLXJhZGl1czogMXJlbTtcXG4gIC13ZWJraXQtZmlsdGVyOiBibHVyKDJweCkgZ3JheXNjYWxlKDEpIGludmVydCgwLjEpO1xcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XFxuICBtYXJnaW4tcmlnaHQ6IGF1dG87XFxufVxcbi5zZW50ZW5jZS1ibG9jayBoMiAud29yZCB7XFxuICB2aXNpYmlsaXR5OiBoaWRkZW47XFxufVxcbi5zZW50ZW5jZS1ibG9jayA+IGgyIHtcXG4gIHRyYW5zaXRpb246IDAuNXM7XFxufVxcbi5zZW50ZW5jZS1ibG9jayA+IGgyIC53b3JkIHtcXG4gIHRyYW5zaXRpb246IDAuNXM7XFxufVxcblwiXX1dKTtcbi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0gZXhwb3J0cztcbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///122\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(63);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTIzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9DdXJyZW50U2VudGVuY2UvQ3VycmVudFNlbnRlbmNlLnlhbWw/NzJiYSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9Aa2F6dXBvbi92dWUtaTE4bi1sb2FkZXIvbGliL2luZGV4LmpzIS4vQ3VycmVudFNlbnRlbmNlLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZTZW50ZW5jZVBhbmVsJTJGQ3VycmVudFNlbnRlbmNlJTJGQ3VycmVudFNlbnRlbmNlLnZ1ZSZsYW5nPXlhbWxcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL0N1cnJlbnRTZW50ZW5jZS55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRkN1cnJlbnRTZW50ZW5jZSUyRkN1cnJlbnRTZW50ZW5jZS52dWUmbGFuZz15YW1sXCIiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///123\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(76);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTI0LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLmxlc3M/ZjFhZCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvY2pzLmpzIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL1NlbnRlbmNlRGlmZmVyZW5jZS5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9ZTMyMzM0N2UmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///124\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".added[data-v-e323347e]{color:red;cursor:pointer}.added.word-to-learn[data-v-e323347e]{text-shadow:2px 2px 5px rgba(255,0,0,.5)}.removed[data-v-e323347e]{color:grey;text-decoration:line-through}.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added){color:#2c662d!important}.word[data-v-e323347e]{cursor:pointer}.space[data-v-e323347e]{pointer-events:none}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less"],"names":[],"mappings":"AAAA,wBACE,SAAA,CACA,cCCF,CDCE,sCACE,wCCCJ,CDGA,0BACE,UAAA,CACA,4BCDF,CDIA,8EAEI,uBCHJ,CDOA,uBACE,cCLF,CDQA,wBACE,mBCNF","file":"SentenceDifference.less","sourcesContent":[".added {\\n  color: red;\\n  cursor: pointer;\\n  \\n  &.word-to-learn {\\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\\n  }\\n}\\n\\n.removed {\\n  color: gray;\\n  text-decoration: line-through;\\n}\\n\\n.SentenceDifference.positive {\\n  .word:not(.removed):not(.added) {\\n    color: #2c662d !important\\n  }\\n}\\n\\n.word {\\n  cursor: pointer;\\n}\\n\\n.space {\\n  pointer-events: none;\\n}",".added {\\n  color: red;\\n  cursor: pointer;\\n}\\n.added.word-to-learn {\\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\\n}\\n.removed {\\n  color: gray;\\n  text-decoration: line-through;\\n}\\n.SentenceDifference.positive .word:not(.removed):not(.added) {\\n  color: #2c662d !important;\\n}\\n.word {\\n  cursor: pointer;\\n}\\n.space {\\n  pointer-events: none;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTI1LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLmxlc3M/OTc3NiJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIuYWRkZWRbZGF0YS12LWUzMjMzNDdlXXtjb2xvcjpyZWQ7Y3Vyc29yOnBvaW50ZXJ9LmFkZGVkLndvcmQtdG8tbGVhcm5bZGF0YS12LWUzMjMzNDdlXXt0ZXh0LXNoYWRvdzoycHggMnB4IDVweCByZ2JhKDI1NSwwLDAsLjUpfS5yZW1vdmVkW2RhdGEtdi1lMzIzMzQ3ZV17Y29sb3I6Z3JleTt0ZXh0LWRlY29yYXRpb246bGluZS10aHJvdWdofS5TZW50ZW5jZURpZmZlcmVuY2UucG9zaXRpdmUgLndvcmRbZGF0YS12LWUzMjMzNDdlXTpub3QoLnJlbW92ZWQpOm5vdCguYWRkZWQpe2NvbG9yOiMyYzY2MmQhaW1wb3J0YW50fS53b3JkW2RhdGEtdi1lMzIzMzQ3ZV17Y3Vyc29yOnBvaW50ZXJ9LnNwYWNlW2RhdGEtdi1lMzIzMzQ3ZV17cG9pbnRlci1ldmVudHM6bm9uZX1cIiwgXCJcIix7XCJ2ZXJzaW9uXCI6MyxcInNvdXJjZXNcIjpbXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD1lMzIzMzQ3ZSZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIsXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLmxlc3NcIl0sXCJuYW1lc1wiOltdLFwibWFwcGluZ3NcIjpcIkFBQUEsd0JBQ0UsU0FBQSxDQUNBLGNDQ0YsQ0RDRSxzQ0FDRSx3Q0NDSixDREdBLDBCQUNFLFVBQUEsQ0FDQSw0QkNERixDRElBLDhFQUVJLHVCQ0hKLENET0EsdUJBQ0UsY0NMRixDRFFBLHdCQUNFLG1CQ05GXCIsXCJmaWxlXCI6XCJTZW50ZW5jZURpZmZlcmVuY2UubGVzc1wiLFwic291cmNlc0NvbnRlbnRcIjpbXCIuYWRkZWQge1xcbiAgY29sb3I6IHJlZDtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG4gIFxcbiAgJi53b3JkLXRvLWxlYXJuIHtcXG4gICAgdGV4dC1zaGFkb3c6IDJweCAycHggNXB4IHJnYmEoMjU1LCAwLCAwLCAwLjUpO1xcbiAgfVxcbn1cXG5cXG4ucmVtb3ZlZCB7XFxuICBjb2xvcjogZ3JheTtcXG4gIHRleHQtZGVjb3JhdGlvbjogbGluZS10aHJvdWdoO1xcbn1cXG5cXG4uU2VudGVuY2VEaWZmZXJlbmNlLnBvc2l0aXZlIHtcXG4gIC53b3JkOm5vdCgucmVtb3ZlZCk6bm90KC5hZGRlZCkge1xcbiAgICBjb2xvcjogIzJjNjYyZCAhaW1wb3J0YW50XFxuICB9XFxufVxcblxcbi53b3JkIHtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG59XFxuXFxuLnNwYWNlIHtcXG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xcbn1cIixcIi5hZGRlZCB7XFxuICBjb2xvcjogcmVkO1xcbiAgY3Vyc29yOiBwb2ludGVyO1xcbn1cXG4uYWRkZWQud29yZC10by1sZWFybiB7XFxuICB0ZXh0LXNoYWRvdzogMnB4IDJweCA1cHggcmdiYSgyNTUsIDAsIDAsIDAuNSk7XFxufVxcbi5yZW1vdmVkIHtcXG4gIGNvbG9yOiBncmF5O1xcbiAgdGV4dC1kZWNvcmF0aW9uOiBsaW5lLXRocm91Z2g7XFxufVxcbi5TZW50ZW5jZURpZmZlcmVuY2UucG9zaXRpdmUgLndvcmQ6bm90KC5yZW1vdmVkKTpub3QoLmFkZGVkKSB7XFxuICBjb2xvcjogIzJjNjYyZCAhaW1wb3J0YW50O1xcbn1cXG4ud29yZCB7XFxuICBjdXJzb3I6IHBvaW50ZXI7XFxufVxcbi5zcGFjZSB7XFxuICBwb2ludGVyLWV2ZW50czogbm9uZTtcXG59XFxuXCJdfV0pO1xuLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSBleHBvcnRzO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///125\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(64);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTI2LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLnlhbWw/OTk0NSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9Aa2F6dXBvbi92dWUtaTE4bi1sb2FkZXIvbGliL2luZGV4LmpzIS4vU2VudGVuY2VEaWZmZXJlbmNlLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZTZW50ZW5jZVBhbmVsJTJGU2VudGVuY2VEaWZmZXJlbmNlJTJGU2VudGVuY2VEaWZmZXJlbmNlLnZ1ZSZsYW5nPXlhbWxcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL1NlbnRlbmNlRGlmZmVyZW5jZS55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRlNlbnRlbmNlRGlmZmVyZW5jZSUyRlNlbnRlbmNlRGlmZmVyZW5jZS52dWUmbGFuZz15YW1sXCIiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///126\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTI3LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwvUHJhY3RpY2VTZW50ZW5jZVBhbmVsLmxlc3M/MjA2ZiJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvY2pzLmpzIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL1ByYWN0aWNlU2VudGVuY2VQYW5lbC5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9ZjMwNzcxZTImbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///127\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".practice-hint[data-v-f30771e2]{cursor:pointer;border-radius:.5rem;display:inline-block;margin-left:auto;margin-right:auto;padding:.5rem}.practice-hint.practicing[data-v-f30771e2]{cursor:wait;background-color:#ff0;color:#000;user-select:none}.trigger[data-v-f30771e2]{margin-right:.5rem;margin-left:.5rem;margin-top:-1rem;position:relative;text-align:center}.popup[data-v-f30771e2]{position:fixed;top:calc(50vh + 7rem);transform:translate3d(0,-50%,0);box-shadow:2px 2px 7px rgba(0,0,0,.3);background:none;border-radius:.285714rem;width:calc(100% - 1rem)}.popup[data-v-f30771e2]:after{content:\\"\\";width:20px;height:20px;transform:rotate(-45deg);background:#fff;position:absolute;box-shadow:1px 4px 8px rgba(0,0,0,.5);z-index:-1;top:-10px;left:calc(50% - 10px)}.inner[data-v-f30771e2]{padding:30px 1rem;background:#fff;border-radius:.285714rem;margin:0!important;max-height:30vh;height:30vh;overflow-y:auto;overflow-x:hidden}.inner .row .column[data-v-f30771e2]{margin-left:1rem;margin-right:1rem}.wait-practice[data-v-f30771e2]{cursor:wait;user-select:none}.popup.positive .inner[data-v-f30771e2],.popup.positive[data-v-f30771e2]:after{background-color:#fcfff5!important}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less"],"names":[],"mappings":"AAAA,gCACE,cAAA,CAEA,mBAAA,CACA,oBAAA,CACA,gBAAA,CACA,iBAAA,CACA,aCAF,CDEE,2CACE,WAAA,CACA,qBAAA,CACA,UAAA,CAEA,gBCDJ,CDKA,0BAGE,kBAAA,CACA,iBAAA,CACA,gBAAA,CACA,iBAAA,CACA,iBCLF,CDQA,wBACE,cAAA,CAEA,qBAAA,CACA,+BAAA,CACA,qCAAA,CACA,eAAA,CACA,wBAAA,CACA,uBCPF,CDaA,8BACE,UAAA,CACA,UAAA,CACA,WAAA,CACA,wBAAA,CACA,eAAA,CACA,iBAAA,CACA,qCAAA,CACA,UAAA,CACA,SAAA,CACA,qBCXF,CDcA,wBACE,iBAAA,CACA,eAAA,CACA,wBAAA,CAEA,kBAAA,CAEA,eAAA,CACA,WAAA,CACA,eAAA,CACA,iBCdF,CDIA,qCAeM,gBAAA,CACA,iBChBN,CDuBA,gCACE,WAAA,CACA,gBCrBF,CDyBE,+EAEE,kCCvBJ","file":"PracticeSentencePanel.less","sourcesContent":[".practice-hint {\\n  cursor: pointer;\\n  \\n  border-radius: 0.5rem;\\n  display: inline-block;\\n  margin-left: auto;\\n  margin-right: auto;\\n  padding: 0.5rem;\\n  \\n  &.practicing {\\n    cursor: wait;\\n    background-color: yellow;\\n    color: black;\\n    //pointer-events: none;\\n    user-select: none;\\n  }\\n}\\n\\n.trigger {\\n  //margin: 0px auto 20px;\\n  //width: 150px;\\n  margin-right: 0.5rem;\\n  margin-left: 0.5rem;\\n  margin-top: -1rem;\\n  position: relative;\\n  text-align: center;\\n}\\n\\n.popup {\\n  position: fixed;\\n  //left: 0;\\n  top: calc(50vh + 7rem);\\n  transform: translate3d(0, -50%, 0);\\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\\n  background: none;\\n  border-radius: 0.285714rem;\\n  width: calc(100% - 1rem);\\n  //margin-left: auto;\\n  //margin-right: auto;\\n  \\n}\\n\\n.popup:after {\\n  content: \\"\\";\\n  width: 20px;\\n  height: 20px;\\n  transform: rotate(-45deg);\\n  background: #fff;\\n  position: absolute;\\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\\n  z-index: -1;\\n  top: -10px;\\n  left: calc(50% - 10px);\\n}\\n\\n.inner {\\n  padding: 30px 1rem;\\n  background: #fff;\\n  border-radius: 0.285714rem;\\n  //margin: 1rem !important;\\n  margin: 0 !important;\\n  \\n  max-height: calc(30vh);\\n  height: calc(30vh);\\n  overflow-y: auto;\\n  overflow-x: hidden;\\n  \\n  .row {\\n    \\n    .column {\\n      margin-left: 1rem;\\n      margin-right: 1rem;\\n    }\\n  }\\n  \\n    \\n}\\n\\n.wait-practice {\\n  cursor: wait;\\n  user-select: none;\\n}\\n\\n.popup.positive {\\n  &:after,\\n    .inner {\\n    background-color: #fcfff5 !important;\\n  }\\n}",".practice-hint {\\n  cursor: pointer;\\n  border-radius: 0.5rem;\\n  display: inline-block;\\n  margin-left: auto;\\n  margin-right: auto;\\n  padding: 0.5rem;\\n}\\n.practice-hint.practicing {\\n  cursor: wait;\\n  background-color: yellow;\\n  color: black;\\n  user-select: none;\\n}\\n.trigger {\\n  margin-right: 0.5rem;\\n  margin-left: 0.5rem;\\n  margin-top: -1rem;\\n  position: relative;\\n  text-align: center;\\n}\\n.popup {\\n  position: fixed;\\n  top: calc(50vh + 7rem);\\n  transform: translate3d(0, -50%, 0);\\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\\n  background: none;\\n  border-radius: 0.285714rem;\\n  width: calc(100% - 1rem);\\n}\\n.popup:after {\\n  content: \\"\\";\\n  width: 20px;\\n  height: 20px;\\n  transform: rotate(-45deg);\\n  background: #fff;\\n  position: absolute;\\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\\n  z-index: -1;\\n  top: -10px;\\n  left: calc(50% - 10px);\\n}\\n.inner {\\n  padding: 30px 1rem;\\n  background: #fff;\\n  border-radius: 0.285714rem;\\n  margin: 0 !important;\\n  max-height: calc(30vh);\\n  height: calc(30vh);\\n  overflow-y: auto;\\n  overflow-x: hidden;\\n}\\n.inner .row .column {\\n  margin-left: 1rem;\\n  margin-right: 1rem;\\n}\\n.wait-practice {\\n  cursor: wait;\\n  user-select: none;\\n}\\n.popup.positive:after,\\n.popup.positive .inner {\\n  background-color: #fcfff5 !important;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTI4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwvUHJhY3RpY2VTZW50ZW5jZVBhbmVsLmxlc3M/NzVjNyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIucHJhY3RpY2UtaGludFtkYXRhLXYtZjMwNzcxZTJde2N1cnNvcjpwb2ludGVyO2JvcmRlci1yYWRpdXM6LjVyZW07ZGlzcGxheTppbmxpbmUtYmxvY2s7bWFyZ2luLWxlZnQ6YXV0bzttYXJnaW4tcmlnaHQ6YXV0bztwYWRkaW5nOi41cmVtfS5wcmFjdGljZS1oaW50LnByYWN0aWNpbmdbZGF0YS12LWYzMDc3MWUyXXtjdXJzb3I6d2FpdDtiYWNrZ3JvdW5kLWNvbG9yOiNmZjA7Y29sb3I6IzAwMDt1c2VyLXNlbGVjdDpub25lfS50cmlnZ2VyW2RhdGEtdi1mMzA3NzFlMl17bWFyZ2luLXJpZ2h0Oi41cmVtO21hcmdpbi1sZWZ0Oi41cmVtO21hcmdpbi10b3A6LTFyZW07cG9zaXRpb246cmVsYXRpdmU7dGV4dC1hbGlnbjpjZW50ZXJ9LnBvcHVwW2RhdGEtdi1mMzA3NzFlMl17cG9zaXRpb246Zml4ZWQ7dG9wOmNhbGMoNTB2aCArIDdyZW0pO3RyYW5zZm9ybTp0cmFuc2xhdGUzZCgwLC01MCUsMCk7Ym94LXNoYWRvdzoycHggMnB4IDdweCByZ2JhKDAsMCwwLC4zKTtiYWNrZ3JvdW5kOm5vbmU7Ym9yZGVyLXJhZGl1czouMjg1NzE0cmVtO3dpZHRoOmNhbGMoMTAwJSAtIDFyZW0pfS5wb3B1cFtkYXRhLXYtZjMwNzcxZTJdOmFmdGVye2NvbnRlbnQ6XFxcIlxcXCI7d2lkdGg6MjBweDtoZWlnaHQ6MjBweDt0cmFuc2Zvcm06cm90YXRlKC00NWRlZyk7YmFja2dyb3VuZDojZmZmO3Bvc2l0aW9uOmFic29sdXRlO2JveC1zaGFkb3c6MXB4IDRweCA4cHggcmdiYSgwLDAsMCwuNSk7ei1pbmRleDotMTt0b3A6LTEwcHg7bGVmdDpjYWxjKDUwJSAtIDEwcHgpfS5pbm5lcltkYXRhLXYtZjMwNzcxZTJde3BhZGRpbmc6MzBweCAxcmVtO2JhY2tncm91bmQ6I2ZmZjtib3JkZXItcmFkaXVzOi4yODU3MTRyZW07bWFyZ2luOjAhaW1wb3J0YW50O21heC1oZWlnaHQ6MzB2aDtoZWlnaHQ6MzB2aDtvdmVyZmxvdy15OmF1dG87b3ZlcmZsb3cteDpoaWRkZW59LmlubmVyIC5yb3cgLmNvbHVtbltkYXRhLXYtZjMwNzcxZTJde21hcmdpbi1sZWZ0OjFyZW07bWFyZ2luLXJpZ2h0OjFyZW19LndhaXQtcHJhY3RpY2VbZGF0YS12LWYzMDc3MWUyXXtjdXJzb3I6d2FpdDt1c2VyLXNlbGVjdDpub25lfS5wb3B1cC5wb3NpdGl2ZSAuaW5uZXJbZGF0YS12LWYzMDc3MWUyXSwucG9wdXAucG9zaXRpdmVbZGF0YS12LWYzMDc3MWUyXTphZnRlcntiYWNrZ3JvdW5kLWNvbG9yOiNmY2ZmZjUhaW1wb3J0YW50fVwiLCBcIlwiLHtcInZlcnNpb25cIjozLFwic291cmNlc1wiOltcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPWYzMDc3MWUyJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIixcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwubGVzc1wiXSxcIm5hbWVzXCI6W10sXCJtYXBwaW5nc1wiOlwiQUFBQSxnQ0FDRSxjQUFBLENBRUEsbUJBQUEsQ0FDQSxvQkFBQSxDQUNBLGdCQUFBLENBQ0EsaUJBQUEsQ0FDQSxhQ0FGLENERUUsMkNBQ0UsV0FBQSxDQUNBLHFCQUFBLENBQ0EsVUFBQSxDQUVBLGdCQ0RKLENES0EsMEJBR0Usa0JBQUEsQ0FDQSxpQkFBQSxDQUNBLGdCQUFBLENBQ0EsaUJBQUEsQ0FDQSxpQkNMRixDRFFBLHdCQUNFLGNBQUEsQ0FFQSxxQkFBQSxDQUNBLCtCQUFBLENBQ0EscUNBQUEsQ0FDQSxlQUFBLENBQ0Esd0JBQUEsQ0FDQSx1QkNQRixDRGFBLDhCQUNFLFVBQUEsQ0FDQSxVQUFBLENBQ0EsV0FBQSxDQUNBLHdCQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUFBLENBQ0EscUNBQUEsQ0FDQSxVQUFBLENBQ0EsU0FBQSxDQUNBLHFCQ1hGLENEY0Esd0JBQ0UsaUJBQUEsQ0FDQSxlQUFBLENBQ0Esd0JBQUEsQ0FFQSxrQkFBQSxDQUVBLGVBQUEsQ0FDQSxXQUFBLENBQ0EsZUFBQSxDQUNBLGlCQ2RGLENESUEscUNBZU0sZ0JBQUEsQ0FDQSxpQkNoQk4sQ0R1QkEsZ0NBQ0UsV0FBQSxDQUNBLGdCQ3JCRixDRHlCRSwrRUFFRSxrQ0N2QkpcIixcImZpbGVcIjpcIlByYWN0aWNlU2VudGVuY2VQYW5lbC5sZXNzXCIsXCJzb3VyY2VzQ29udGVudFwiOltcIi5wcmFjdGljZS1oaW50IHtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG4gIFxcbiAgYm9yZGVyLXJhZGl1czogMC41cmVtO1xcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XFxuICBtYXJnaW4tcmlnaHQ6IGF1dG87XFxuICBwYWRkaW5nOiAwLjVyZW07XFxuICBcXG4gICYucHJhY3RpY2luZyB7XFxuICAgIGN1cnNvcjogd2FpdDtcXG4gICAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xcbiAgICBjb2xvcjogYmxhY2s7XFxuICAgIC8vcG9pbnRlci1ldmVudHM6IG5vbmU7XFxuICAgIHVzZXItc2VsZWN0OiBub25lO1xcbiAgfVxcbn1cXG5cXG4udHJpZ2dlciB7XFxuICAvL21hcmdpbjogMHB4IGF1dG8gMjBweDtcXG4gIC8vd2lkdGg6IDE1MHB4O1xcbiAgbWFyZ2luLXJpZ2h0OiAwLjVyZW07XFxuICBtYXJnaW4tbGVmdDogMC41cmVtO1xcbiAgbWFyZ2luLXRvcDogLTFyZW07XFxuICBwb3NpdGlvbjogcmVsYXRpdmU7XFxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XFxufVxcblxcbi5wb3B1cCB7XFxuICBwb3NpdGlvbjogZml4ZWQ7XFxuICAvL2xlZnQ6IDA7XFxuICB0b3A6IGNhbGMoNTB2aCArIDdyZW0pO1xcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAtNTAlLCAwKTtcXG4gIGJveC1zaGFkb3c6IDJweCAycHggN3B4IHJnYmEoMCwgMCwgMCwgMC4zKTtcXG4gIGJhY2tncm91bmQ6IG5vbmU7XFxuICBib3JkZXItcmFkaXVzOiAwLjI4NTcxNHJlbTtcXG4gIHdpZHRoOiBjYWxjKDEwMCUgLSAxcmVtKTtcXG4gIC8vbWFyZ2luLWxlZnQ6IGF1dG87XFxuICAvL21hcmdpbi1yaWdodDogYXV0bztcXG4gIFxcbn1cXG5cXG4ucG9wdXA6YWZ0ZXIge1xcbiAgY29udGVudDogXFxcIlxcXCI7XFxuICB3aWR0aDogMjBweDtcXG4gIGhlaWdodDogMjBweDtcXG4gIHRyYW5zZm9ybTogcm90YXRlKC00NWRlZyk7XFxuICBiYWNrZ3JvdW5kOiAjZmZmO1xcbiAgcG9zaXRpb246IGFic29sdXRlO1xcbiAgYm94LXNoYWRvdzogMXB4IDRweCA4cHggcmdiYSgwLCAwLCAwLCAwLjUpO1xcbiAgei1pbmRleDogLTE7XFxuICB0b3A6IC0xMHB4O1xcbiAgbGVmdDogY2FsYyg1MCUgLSAxMHB4KTtcXG59XFxuXFxuLmlubmVyIHtcXG4gIHBhZGRpbmc6IDMwcHggMXJlbTtcXG4gIGJhY2tncm91bmQ6ICNmZmY7XFxuICBib3JkZXItcmFkaXVzOiAwLjI4NTcxNHJlbTtcXG4gIC8vbWFyZ2luOiAxcmVtICFpbXBvcnRhbnQ7XFxuICBtYXJnaW46IDAgIWltcG9ydGFudDtcXG4gIFxcbiAgbWF4LWhlaWdodDogY2FsYygzMHZoKTtcXG4gIGhlaWdodDogY2FsYygzMHZoKTtcXG4gIG92ZXJmbG93LXk6IGF1dG87XFxuICBvdmVyZmxvdy14OiBoaWRkZW47XFxuICBcXG4gIC5yb3cge1xcbiAgICBcXG4gICAgLmNvbHVtbiB7XFxuICAgICAgbWFyZ2luLWxlZnQ6IDFyZW07XFxuICAgICAgbWFyZ2luLXJpZ2h0OiAxcmVtO1xcbiAgICB9XFxuICB9XFxuICBcXG4gICAgXFxufVxcblxcbi53YWl0LXByYWN0aWNlIHtcXG4gIGN1cnNvcjogd2FpdDtcXG4gIHVzZXItc2VsZWN0OiBub25lO1xcbn1cXG5cXG4ucG9wdXAucG9zaXRpdmUge1xcbiAgJjphZnRlcixcXG4gICAgLmlubmVyIHtcXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZjZmZmNSAhaW1wb3J0YW50O1xcbiAgfVxcbn1cIixcIi5wcmFjdGljZS1oaW50IHtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG4gIGJvcmRlci1yYWRpdXM6IDAuNXJlbTtcXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcXG4gIG1hcmdpbi1sZWZ0OiBhdXRvO1xcbiAgbWFyZ2luLXJpZ2h0OiBhdXRvO1xcbiAgcGFkZGluZzogMC41cmVtO1xcbn1cXG4ucHJhY3RpY2UtaGludC5wcmFjdGljaW5nIHtcXG4gIGN1cnNvcjogd2FpdDtcXG4gIGJhY2tncm91bmQtY29sb3I6IHllbGxvdztcXG4gIGNvbG9yOiBibGFjaztcXG4gIHVzZXItc2VsZWN0OiBub25lO1xcbn1cXG4udHJpZ2dlciB7XFxuICBtYXJnaW4tcmlnaHQ6IDAuNXJlbTtcXG4gIG1hcmdpbi1sZWZ0OiAwLjVyZW07XFxuICBtYXJnaW4tdG9wOiAtMXJlbTtcXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcXG59XFxuLnBvcHVwIHtcXG4gIHBvc2l0aW9uOiBmaXhlZDtcXG4gIHRvcDogY2FsYyg1MHZoICsgN3JlbSk7XFxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIC01MCUsIDApO1xcbiAgYm94LXNoYWRvdzogMnB4IDJweCA3cHggcmdiYSgwLCAwLCAwLCAwLjMpO1xcbiAgYmFja2dyb3VuZDogbm9uZTtcXG4gIGJvcmRlci1yYWRpdXM6IDAuMjg1NzE0cmVtO1xcbiAgd2lkdGg6IGNhbGMoMTAwJSAtIDFyZW0pO1xcbn1cXG4ucG9wdXA6YWZ0ZXIge1xcbiAgY29udGVudDogXFxcIlxcXCI7XFxuICB3aWR0aDogMjBweDtcXG4gIGhlaWdodDogMjBweDtcXG4gIHRyYW5zZm9ybTogcm90YXRlKC00NWRlZyk7XFxuICBiYWNrZ3JvdW5kOiAjZmZmO1xcbiAgcG9zaXRpb246IGFic29sdXRlO1xcbiAgYm94LXNoYWRvdzogMXB4IDRweCA4cHggcmdiYSgwLCAwLCAwLCAwLjUpO1xcbiAgei1pbmRleDogLTE7XFxuICB0b3A6IC0xMHB4O1xcbiAgbGVmdDogY2FsYyg1MCUgLSAxMHB4KTtcXG59XFxuLmlubmVyIHtcXG4gIHBhZGRpbmc6IDMwcHggMXJlbTtcXG4gIGJhY2tncm91bmQ6ICNmZmY7XFxuICBib3JkZXItcmFkaXVzOiAwLjI4NTcxNHJlbTtcXG4gIG1hcmdpbjogMCAhaW1wb3J0YW50O1xcbiAgbWF4LWhlaWdodDogY2FsYygzMHZoKTtcXG4gIGhlaWdodDogY2FsYygzMHZoKTtcXG4gIG92ZXJmbG93LXk6IGF1dG87XFxuICBvdmVyZmxvdy14OiBoaWRkZW47XFxufVxcbi5pbm5lciAucm93IC5jb2x1bW4ge1xcbiAgbWFyZ2luLWxlZnQ6IDFyZW07XFxuICBtYXJnaW4tcmlnaHQ6IDFyZW07XFxufVxcbi53YWl0LXByYWN0aWNlIHtcXG4gIGN1cnNvcjogd2FpdDtcXG4gIHVzZXItc2VsZWN0OiBub25lO1xcbn1cXG4ucG9wdXAucG9zaXRpdmU6YWZ0ZXIsXFxuLnBvcHVwLnBvc2l0aXZlIC5pbm5lciB7XFxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmNmZmY1ICFpbXBvcnRhbnQ7XFxufVxcblwiXX1dKTtcbi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0gZXhwb3J0cztcbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///128\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(65);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTI5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwvUHJhY3RpY2VTZW50ZW5jZVBhbmVsLnlhbWw/NDQ2YyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9Aa2F6dXBvbi92dWUtaTE4bi1sb2FkZXIvbGliL2luZGV4LmpzIS4vUHJhY3RpY2VTZW50ZW5jZVBhbmVsLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZTZW50ZW5jZVBhbmVsJTJGUHJhY3RpY2VTZW50ZW5jZVBhbmVsJTJGUHJhY3RpY2VTZW50ZW5jZVBhbmVsLnZ1ZSZsYW5nPXlhbWxcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL1ByYWN0aWNlU2VudGVuY2VQYW5lbC55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRlByYWN0aWNlU2VudGVuY2VQYW5lbCUyRlByYWN0aWNlU2VudGVuY2VQYW5lbC52dWUmbGFuZz15YW1sXCIiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///129\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(78);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTMwLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC5sZXNzPzFkNTgiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3N0eWxlLWxvYWRlci9kaXN0L2Nqcy5qcyEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cmVmLS0xLTEhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL2xvYWRlcnMvc3R5bGVQb3N0TG9hZGVyLmpzIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9wb3N0Y3NzLWxvYWRlci9zcmMvaW5kZXguanM/P3JlZi0tMS0yIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9sZXNzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cmVmLS0xLTMhLi9NYWluU2VudGVuY2VQYW5lbC5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9MGFjMTk2OTMmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///130\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".main-sentence-panel[data-v-0ac19693]{height:calc(100vh - 90px - 9.3rem)}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less"],"names":[],"mappings":"AACA,sCACE,kCCAF","file":"MainSentencePanel.less","sourcesContent":["\\n.main-sentence-panel {\\n  height: calc(100vh - 90px - 9.3rem);\\n}\\n",".main-sentence-panel {\\n  height: calc(100vh - 90px - 9.3rem);\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTMxLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC5sZXNzPzRmNjciXSwic291cmNlc0NvbnRlbnQiOlsiLy8gSW1wb3J0c1xudmFyIF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyA9IHJlcXVpcmUoXCIuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L3J1bnRpbWUvYXBpLmpzXCIpO1xuZXhwb3J0cyA9IF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyh0cnVlKTtcbi8vIE1vZHVsZVxuZXhwb3J0cy5wdXNoKFttb2R1bGUuaWQsIFwiLm1haW4tc2VudGVuY2UtcGFuZWxbZGF0YS12LTBhYzE5NjkzXXtoZWlnaHQ6Y2FsYygxMDB2aCAtIDkwcHggLSA5LjNyZW0pfVwiLCBcIlwiLHtcInZlcnNpb25cIjozLFwic291cmNlc1wiOltcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0wYWMxOTY5MyZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIsXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC5sZXNzXCJdLFwibmFtZXNcIjpbXSxcIm1hcHBpbmdzXCI6XCJBQUNBLHNDQUNFLGtDQ0FGXCIsXCJmaWxlXCI6XCJNYWluU2VudGVuY2VQYW5lbC5sZXNzXCIsXCJzb3VyY2VzQ29udGVudFwiOltcIlxcbi5tYWluLXNlbnRlbmNlLXBhbmVsIHtcXG4gIGhlaWdodDogY2FsYygxMDB2aCAtIDkwcHggLSA5LjNyZW0pO1xcbn1cXG5cIixcIi5tYWluLXNlbnRlbmNlLXBhbmVsIHtcXG4gIGhlaWdodDogY2FsYygxMDB2aCAtIDkwcHggLSA5LjNyZW0pO1xcbn1cXG5cIl19XSk7XG4vLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IGV4cG9ydHM7XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///131\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(79);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTMyLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbFByYWN0aWNlLmxlc3M/OTNiZCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvY2pzLmpzIS4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL01haW5TZW50ZW5jZVBhbmVsUHJhY3RpY2UubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0xJmlkPTBhYzE5NjkzJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///132\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".trigger[data-v-0ac19693]{margin-right:.5rem;margin-left:.5rem;margin-top:-1rem;text-align:center}.popup[data-v-0ac19693],.trigger[data-v-0ac19693]{position:relative}.popup[data-v-0ac19693]{left:0;top:6rem;transform:translate3d(0,-50%,0);box-shadow:2px 2px 7px rgba(0,0,0,.3);background:none;border-radius:.285714rem;width:100%}.popup[data-v-0ac19693]:after{content:\\"\\";width:20px;height:20px;transform:rotate(-45deg);background:#fff;position:absolute;box-shadow:1px 4px 8px rgba(0,0,0,.5);z-index:-1;top:-10px;left:calc(50% - 10px)}.inner[data-v-0ac19693]{padding:30px 1rem;background:#fff;border-radius:.285714rem;max-height:calc(30vh - 2rem);height:calc(30vh - 2rem);overflow-y:auto;overflow-x:hidden}.wait-practice[data-v-0ac19693]{cursor:wait;user-select:none}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less"],"names":[],"mappings":"AACA,0BAGE,kBAAA,CACA,iBAAA,CACA,gBAAA,CAEA,iBCFF,CDKA,kDAJE,iBCSF,CDLA,wBAEE,MAAA,CACA,QAAA,CACA,+BAAA,CACA,qCAAA,CACA,eAAA,CACA,wBAAA,CACA,UCHF,CDMA,8BACE,UAAA,CACA,UAAA,CACA,WAAA,CACA,wBAAA,CACA,eAAA,CACA,iBAAA,CACA,qCAAA,CACA,UAAA,CACA,SAAA,CACA,qBCJF,CDOA,wBACE,iBAAA,CACA,eAAA,CACA,wBAAA,CAEA,4BAAA,CACA,wBAAA,CACA,eAAA,CACA,iBCNF,CDSA,gCACE,WAAA,CACA,gBCPF","file":"MainSentencePanelPractice.less","sourcesContent":["\\n.trigger {\\n  //margin: 0px auto 20px;\\n  //width: 150px;\\n  margin-right: 0.5rem;\\n  margin-left: 0.5rem;\\n  margin-top: -1rem;\\n  position: relative;\\n  text-align: center;\\n}\\n\\n.popup {\\n  position: relative;\\n  left: 0;\\n  top: 6rem;\\n  transform: translate3d(0, -50%, 0);\\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\\n  background: none;\\n  border-radius: 0.285714rem;\\n  width: 100%;\\n}\\n\\n.popup:after {\\n  content: \\"\\";\\n  width: 20px;\\n  height: 20px;\\n  transform: rotate(-45deg);\\n  background: #fff;\\n  position: absolute;\\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\\n  z-index: -1;\\n  top: -10px;\\n  left: calc(50% - 10px);\\n}\\n\\n.inner {\\n  padding: 30px 1rem;\\n  background: #fff;\\n  border-radius: 0.285714rem;\\n  \\n  max-height: calc(30vh - 2rem);\\n  height: calc(30vh - 2rem);\\n  overflow-y: auto;\\n  overflow-x: hidden;\\n}\\n\\n.wait-practice {\\n  cursor: wait;\\n  user-select: none;\\n}\\n",".trigger {\\n  margin-right: 0.5rem;\\n  margin-left: 0.5rem;\\n  margin-top: -1rem;\\n  position: relative;\\n  text-align: center;\\n}\\n.popup {\\n  position: relative;\\n  left: 0;\\n  top: 6rem;\\n  transform: translate3d(0, -50%, 0);\\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\\n  background: none;\\n  border-radius: 0.285714rem;\\n  width: 100%;\\n}\\n.popup:after {\\n  content: \\"\\";\\n  width: 20px;\\n  height: 20px;\\n  transform: rotate(-45deg);\\n  background: #fff;\\n  position: absolute;\\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\\n  z-index: -1;\\n  top: -10px;\\n  left: calc(50% - 10px);\\n}\\n.inner {\\n  padding: 30px 1rem;\\n  background: #fff;\\n  border-radius: 0.285714rem;\\n  max-height: calc(30vh - 2rem);\\n  height: calc(30vh - 2rem);\\n  overflow-y: auto;\\n  overflow-x: hidden;\\n}\\n.wait-practice {\\n  cursor: wait;\\n  user-select: none;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTMzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbFByYWN0aWNlLmxlc3M/MjBhZCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIudHJpZ2dlcltkYXRhLXYtMGFjMTk2OTNde21hcmdpbi1yaWdodDouNXJlbTttYXJnaW4tbGVmdDouNXJlbTttYXJnaW4tdG9wOi0xcmVtO3RleHQtYWxpZ246Y2VudGVyfS5wb3B1cFtkYXRhLXYtMGFjMTk2OTNdLC50cmlnZ2VyW2RhdGEtdi0wYWMxOTY5M117cG9zaXRpb246cmVsYXRpdmV9LnBvcHVwW2RhdGEtdi0wYWMxOTY5M117bGVmdDowO3RvcDo2cmVtO3RyYW5zZm9ybTp0cmFuc2xhdGUzZCgwLC01MCUsMCk7Ym94LXNoYWRvdzoycHggMnB4IDdweCByZ2JhKDAsMCwwLC4zKTtiYWNrZ3JvdW5kOm5vbmU7Ym9yZGVyLXJhZGl1czouMjg1NzE0cmVtO3dpZHRoOjEwMCV9LnBvcHVwW2RhdGEtdi0wYWMxOTY5M106YWZ0ZXJ7Y29udGVudDpcXFwiXFxcIjt3aWR0aDoyMHB4O2hlaWdodDoyMHB4O3RyYW5zZm9ybTpyb3RhdGUoLTQ1ZGVnKTtiYWNrZ3JvdW5kOiNmZmY7cG9zaXRpb246YWJzb2x1dGU7Ym94LXNoYWRvdzoxcHggNHB4IDhweCByZ2JhKDAsMCwwLC41KTt6LWluZGV4Oi0xO3RvcDotMTBweDtsZWZ0OmNhbGMoNTAlIC0gMTBweCl9LmlubmVyW2RhdGEtdi0wYWMxOTY5M117cGFkZGluZzozMHB4IDFyZW07YmFja2dyb3VuZDojZmZmO2JvcmRlci1yYWRpdXM6LjI4NTcxNHJlbTttYXgtaGVpZ2h0OmNhbGMoMzB2aCAtIDJyZW0pO2hlaWdodDpjYWxjKDMwdmggLSAycmVtKTtvdmVyZmxvdy15OmF1dG87b3ZlcmZsb3cteDpoaWRkZW59LndhaXQtcHJhY3RpY2VbZGF0YS12LTBhYzE5NjkzXXtjdXJzb3I6d2FpdDt1c2VyLXNlbGVjdDpub25lfVwiLCBcIlwiLHtcInZlcnNpb25cIjozLFwic291cmNlc1wiOltcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsUHJhY3RpY2UubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0xJmlkPTBhYzE5NjkzJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIixcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsUHJhY3RpY2UubGVzc1wiXSxcIm5hbWVzXCI6W10sXCJtYXBwaW5nc1wiOlwiQUFDQSwwQkFHRSxrQkFBQSxDQUNBLGlCQUFBLENBQ0EsZ0JBQUEsQ0FFQSxpQkNGRixDREtBLGtEQUpFLGlCQ1NGLENETEEsd0JBRUUsTUFBQSxDQUNBLFFBQUEsQ0FDQSwrQkFBQSxDQUNBLHFDQUFBLENBQ0EsZUFBQSxDQUNBLHdCQUFBLENBQ0EsVUNIRixDRE1BLDhCQUNFLFVBQUEsQ0FDQSxVQUFBLENBQ0EsV0FBQSxDQUNBLHdCQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUFBLENBQ0EscUNBQUEsQ0FDQSxVQUFBLENBQ0EsU0FBQSxDQUNBLHFCQ0pGLENET0Esd0JBQ0UsaUJBQUEsQ0FDQSxlQUFBLENBQ0Esd0JBQUEsQ0FFQSw0QkFBQSxDQUNBLHdCQUFBLENBQ0EsZUFBQSxDQUNBLGlCQ05GLENEU0EsZ0NBQ0UsV0FBQSxDQUNBLGdCQ1BGXCIsXCJmaWxlXCI6XCJNYWluU2VudGVuY2VQYW5lbFByYWN0aWNlLmxlc3NcIixcInNvdXJjZXNDb250ZW50XCI6W1wiXFxuLnRyaWdnZXIge1xcbiAgLy9tYXJnaW46IDBweCBhdXRvIDIwcHg7XFxuICAvL3dpZHRoOiAxNTBweDtcXG4gIG1hcmdpbi1yaWdodDogMC41cmVtO1xcbiAgbWFyZ2luLWxlZnQ6IDAuNXJlbTtcXG4gIG1hcmdpbi10b3A6IC0xcmVtO1xcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xcbn1cXG5cXG4ucG9wdXAge1xcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xcbiAgbGVmdDogMDtcXG4gIHRvcDogNnJlbTtcXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgLTUwJSwgMCk7XFxuICBib3gtc2hhZG93OiAycHggMnB4IDdweCByZ2JhKDAsIDAsIDAsIDAuMyk7XFxuICBiYWNrZ3JvdW5kOiBub25lO1xcbiAgYm9yZGVyLXJhZGl1czogMC4yODU3MTRyZW07XFxuICB3aWR0aDogMTAwJTtcXG59XFxuXFxuLnBvcHVwOmFmdGVyIHtcXG4gIGNvbnRlbnQ6IFxcXCJcXFwiO1xcbiAgd2lkdGg6IDIwcHg7XFxuICBoZWlnaHQ6IDIwcHg7XFxuICB0cmFuc2Zvcm06IHJvdGF0ZSgtNDVkZWcpO1xcbiAgYmFja2dyb3VuZDogI2ZmZjtcXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcXG4gIGJveC1zaGFkb3c6IDFweCA0cHggOHB4IHJnYmEoMCwgMCwgMCwgMC41KTtcXG4gIHotaW5kZXg6IC0xO1xcbiAgdG9wOiAtMTBweDtcXG4gIGxlZnQ6IGNhbGMoNTAlIC0gMTBweCk7XFxufVxcblxcbi5pbm5lciB7XFxuICBwYWRkaW5nOiAzMHB4IDFyZW07XFxuICBiYWNrZ3JvdW5kOiAjZmZmO1xcbiAgYm9yZGVyLXJhZGl1czogMC4yODU3MTRyZW07XFxuICBcXG4gIG1heC1oZWlnaHQ6IGNhbGMoMzB2aCAtIDJyZW0pO1xcbiAgaGVpZ2h0OiBjYWxjKDMwdmggLSAycmVtKTtcXG4gIG92ZXJmbG93LXk6IGF1dG87XFxuICBvdmVyZmxvdy14OiBoaWRkZW47XFxufVxcblxcbi53YWl0LXByYWN0aWNlIHtcXG4gIGN1cnNvcjogd2FpdDtcXG4gIHVzZXItc2VsZWN0OiBub25lO1xcbn1cXG5cIixcIi50cmlnZ2VyIHtcXG4gIG1hcmdpbi1yaWdodDogMC41cmVtO1xcbiAgbWFyZ2luLWxlZnQ6IDAuNXJlbTtcXG4gIG1hcmdpbi10b3A6IC0xcmVtO1xcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xcbn1cXG4ucG9wdXAge1xcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xcbiAgbGVmdDogMDtcXG4gIHRvcDogNnJlbTtcXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgLTUwJSwgMCk7XFxuICBib3gtc2hhZG93OiAycHggMnB4IDdweCByZ2JhKDAsIDAsIDAsIDAuMyk7XFxuICBiYWNrZ3JvdW5kOiBub25lO1xcbiAgYm9yZGVyLXJhZGl1czogMC4yODU3MTRyZW07XFxuICB3aWR0aDogMTAwJTtcXG59XFxuLnBvcHVwOmFmdGVyIHtcXG4gIGNvbnRlbnQ6IFxcXCJcXFwiO1xcbiAgd2lkdGg6IDIwcHg7XFxuICBoZWlnaHQ6IDIwcHg7XFxuICB0cmFuc2Zvcm06IHJvdGF0ZSgtNDVkZWcpO1xcbiAgYmFja2dyb3VuZDogI2ZmZjtcXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcXG4gIGJveC1zaGFkb3c6IDFweCA0cHggOHB4IHJnYmEoMCwgMCwgMCwgMC41KTtcXG4gIHotaW5kZXg6IC0xO1xcbiAgdG9wOiAtMTBweDtcXG4gIGxlZnQ6IGNhbGMoNTAlIC0gMTBweCk7XFxufVxcbi5pbm5lciB7XFxuICBwYWRkaW5nOiAzMHB4IDFyZW07XFxuICBiYWNrZ3JvdW5kOiAjZmZmO1xcbiAgYm9yZGVyLXJhZGl1czogMC4yODU3MTRyZW07XFxuICBtYXgtaGVpZ2h0OiBjYWxjKDMwdmggLSAycmVtKTtcXG4gIGhlaWdodDogY2FsYygzMHZoIC0gMnJlbSk7XFxuICBvdmVyZmxvdy15OiBhdXRvO1xcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xcbn1cXG4ud2FpdC1wcmFjdGljZSB7XFxuICBjdXJzb3I6IHdhaXQ7XFxuICB1c2VyLXNlbGVjdDogbm9uZTtcXG59XFxuXCJdfV0pO1xuLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSBleHBvcnRzO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///133\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(66);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTM0LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC55YW1sP2FiZmUiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vZCBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvQGthenVwb24vdnVlLWkxOG4tbG9hZGVyL2xpYi9pbmRleC5qcyEuL01haW5TZW50ZW5jZVBhbmVsLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZTZW50ZW5jZVBhbmVsJTJGTWFpblNlbnRlbmNlUGFuZWwlMkZNYWluU2VudGVuY2VQYW5lbC52dWUmbGFuZz15YW1sXCI7IGV4cG9ydCBkZWZhdWx0IG1vZDsgZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL0BrYXp1cG9uL3Z1ZS1pMThuLWxvYWRlci9saWIvaW5kZXguanMhLi9NYWluU2VudGVuY2VQYW5lbC55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRk1haW5TZW50ZW5jZVBhbmVsJTJGTWFpblNlbnRlbmNlUGFuZWwudnVlJmxhbmc9eWFtbFwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///134\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(80);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTM1LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLmxlc3M/ODcxNCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvc3R5bGUtbG9hZGVyL2Rpc3QvY2pzLmpzIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvbG9hZGVycy9zdHlsZVBvc3RMb2FkZXIuanMhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MtbG9hZGVyL3NyYy9pbmRleC5qcz8/cmVmLS0xLTIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2xlc3MtbG9hZGVyL2Rpc3QvY2pzLmpzPz9yZWYtLTEtMyEuL1NlbnRlbmNlUGFuZWwubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPTM0ODZmNTkzJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///135\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".next-sentence[data-v-3486f593],.previous-sentence[data-v-3486f593]{height:1.5rem;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:block;width:100%;user-select:none}.next-sentence[data-v-3486f593]{width:calc(100% - 2rem)}.sentence-segment .step.forward.icon[data-v-3486f593]{float:right}.sentence-segment[data-v-3486f593]{margin:.5rem!important;cursor:pointer;color:grey}.sentence-segment.next[data-v-3486f593]{position:fixed!important;bottom:45px;width:calc(100vw - 1rem)}.next-sentence[data-v-3486f593]{text-align:right}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanel.less"],"names":[],"mappings":"AACA,oEAEE,aAAA,CACA,eAAA,CACA,kBAAA,CACA,sBAAA,CACA,aAAA,CACA,UAAA,CACA,gBCAF,CDGA,gCACE,uBCDF,CDIA,sDACE,WCFF,CDKA,mCACE,sBAAA,CACA,cAAA,CACA,UCHF,CDMA,wCACE,wBAAA,CACA,WAAA,CACA,wBCJF,CDOA,gCACE,gBCLF","file":"SentencePanel.less","sourcesContent":["\\n.previous-sentence,\\n.next-sentence {\\n  height: 1.5rem;\\n  overflow:hidden;\\n  white-space: nowrap;\\n  text-overflow: ellipsis;\\n  display: block;\\n  width: 100%;\\n  user-select: none;\\n}\\n\\n.next-sentence {\\n  width: calc(100% - 2rem);\\n}\\n\\n.sentence-segment .step.forward.icon {\\n  float: right;\\n}\\n\\n.sentence-segment {\\n  margin: 0.5rem !important;\\n  cursor: pointer;\\n  color: gray;\\n}\\n\\n.sentence-segment.next {\\n  position: fixed !important;\\n  bottom: 45px;\\n  width: calc(100vw - 1rem);\\n}\\n\\n.next-sentence {\\n  text-align: right;\\n}\\n",".previous-sentence,\\n.next-sentence {\\n  height: 1.5rem;\\n  overflow: hidden;\\n  white-space: nowrap;\\n  text-overflow: ellipsis;\\n  display: block;\\n  width: 100%;\\n  user-select: none;\\n}\\n.next-sentence {\\n  width: calc(100% - 2rem);\\n}\\n.sentence-segment .step.forward.icon {\\n  float: right;\\n}\\n.sentence-segment {\\n  margin: 0.5rem !important;\\n  cursor: pointer;\\n  color: gray;\\n}\\n.sentence-segment.next {\\n  position: fixed !important;\\n  bottom: 45px;\\n  width: calc(100vw - 1rem);\\n}\\n.next-sentence {\\n  text-align: right;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTM2LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLmxlc3M/MjFhNSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBJbXBvcnRzXG52YXIgX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fID0gcmVxdWlyZShcIi4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2Rpc3QvcnVudGltZS9hcGkuanNcIik7XG5leHBvcnRzID0gX19fQ1NTX0xPQURFUl9BUElfSU1QT1JUX19fKHRydWUpO1xuLy8gTW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCIubmV4dC1zZW50ZW5jZVtkYXRhLXYtMzQ4NmY1OTNdLC5wcmV2aW91cy1zZW50ZW5jZVtkYXRhLXYtMzQ4NmY1OTNde2hlaWdodDoxLjVyZW07b3ZlcmZsb3c6aGlkZGVuO3doaXRlLXNwYWNlOm5vd3JhcDt0ZXh0LW92ZXJmbG93OmVsbGlwc2lzO2Rpc3BsYXk6YmxvY2s7d2lkdGg6MTAwJTt1c2VyLXNlbGVjdDpub25lfS5uZXh0LXNlbnRlbmNlW2RhdGEtdi0zNDg2ZjU5M117d2lkdGg6Y2FsYygxMDAlIC0gMnJlbSl9LnNlbnRlbmNlLXNlZ21lbnQgLnN0ZXAuZm9yd2FyZC5pY29uW2RhdGEtdi0zNDg2ZjU5M117ZmxvYXQ6cmlnaHR9LnNlbnRlbmNlLXNlZ21lbnRbZGF0YS12LTM0ODZmNTkzXXttYXJnaW46LjVyZW0haW1wb3J0YW50O2N1cnNvcjpwb2ludGVyO2NvbG9yOmdyZXl9LnNlbnRlbmNlLXNlZ21lbnQubmV4dFtkYXRhLXYtMzQ4NmY1OTNde3Bvc2l0aW9uOmZpeGVkIWltcG9ydGFudDtib3R0b206NDVweDt3aWR0aDpjYWxjKDEwMHZ3IC0gMXJlbSl9Lm5leHQtc2VudGVuY2VbZGF0YS12LTM0ODZmNTkzXXt0ZXh0LWFsaWduOnJpZ2h0fVwiLCBcIlwiLHtcInZlcnNpb25cIjozLFwic291cmNlc1wiOltcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWwubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPTM0ODZmNTkzJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIixcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWwubGVzc1wiXSxcIm5hbWVzXCI6W10sXCJtYXBwaW5nc1wiOlwiQUFDQSxvRUFFRSxhQUFBLENBQ0EsZUFBQSxDQUNBLGtCQUFBLENBQ0Esc0JBQUEsQ0FDQSxhQUFBLENBQ0EsVUFBQSxDQUNBLGdCQ0FGLENER0EsZ0NBQ0UsdUJDREYsQ0RJQSxzREFDRSxXQ0ZGLENES0EsbUNBQ0Usc0JBQUEsQ0FDQSxjQUFBLENBQ0EsVUNIRixDRE1BLHdDQUNFLHdCQUFBLENBQ0EsV0FBQSxDQUNBLHdCQ0pGLENET0EsZ0NBQ0UsZ0JDTEZcIixcImZpbGVcIjpcIlNlbnRlbmNlUGFuZWwubGVzc1wiLFwic291cmNlc0NvbnRlbnRcIjpbXCJcXG4ucHJldmlvdXMtc2VudGVuY2UsXFxuLm5leHQtc2VudGVuY2Uge1xcbiAgaGVpZ2h0OiAxLjVyZW07XFxuICBvdmVyZmxvdzpoaWRkZW47XFxuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xcbiAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XFxuICBkaXNwbGF5OiBibG9jaztcXG4gIHdpZHRoOiAxMDAlO1xcbiAgdXNlci1zZWxlY3Q6IG5vbmU7XFxufVxcblxcbi5uZXh0LXNlbnRlbmNlIHtcXG4gIHdpZHRoOiBjYWxjKDEwMCUgLSAycmVtKTtcXG59XFxuXFxuLnNlbnRlbmNlLXNlZ21lbnQgLnN0ZXAuZm9yd2FyZC5pY29uIHtcXG4gIGZsb2F0OiByaWdodDtcXG59XFxuXFxuLnNlbnRlbmNlLXNlZ21lbnQge1xcbiAgbWFyZ2luOiAwLjVyZW0gIWltcG9ydGFudDtcXG4gIGN1cnNvcjogcG9pbnRlcjtcXG4gIGNvbG9yOiBncmF5O1xcbn1cXG5cXG4uc2VudGVuY2Utc2VnbWVudC5uZXh0IHtcXG4gIHBvc2l0aW9uOiBmaXhlZCAhaW1wb3J0YW50O1xcbiAgYm90dG9tOiA0NXB4O1xcbiAgd2lkdGg6IGNhbGMoMTAwdncgLSAxcmVtKTtcXG59XFxuXFxuLm5leHQtc2VudGVuY2Uge1xcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XFxufVxcblwiLFwiLnByZXZpb3VzLXNlbnRlbmNlLFxcbi5uZXh0LXNlbnRlbmNlIHtcXG4gIGhlaWdodDogMS41cmVtO1xcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcXG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XFxuICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcXG4gIGRpc3BsYXk6IGJsb2NrO1xcbiAgd2lkdGg6IDEwMCU7XFxuICB1c2VyLXNlbGVjdDogbm9uZTtcXG59XFxuLm5leHQtc2VudGVuY2Uge1xcbiAgd2lkdGg6IGNhbGMoMTAwJSAtIDJyZW0pO1xcbn1cXG4uc2VudGVuY2Utc2VnbWVudCAuc3RlcC5mb3J3YXJkLmljb24ge1xcbiAgZmxvYXQ6IHJpZ2h0O1xcbn1cXG4uc2VudGVuY2Utc2VnbWVudCB7XFxuICBtYXJnaW46IDAuNXJlbSAhaW1wb3J0YW50O1xcbiAgY3Vyc29yOiBwb2ludGVyO1xcbiAgY29sb3I6IGdyYXk7XFxufVxcbi5zZW50ZW5jZS1zZWdtZW50Lm5leHQge1xcbiAgcG9zaXRpb246IGZpeGVkICFpbXBvcnRhbnQ7XFxuICBib3R0b206IDQ1cHg7XFxuICB3aWR0aDogY2FsYygxMDB2dyAtIDFyZW0pO1xcbn1cXG4ubmV4dC1zZW50ZW5jZSB7XFxuICB0ZXh0LWFsaWduOiByaWdodDtcXG59XFxuXCJdfV0pO1xuLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSBleHBvcnRzO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///136\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval("/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81);\n/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_ref_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_1_2_node_modules_less_loader_dist_cjs_js_ref_1_3_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);\n/* unused harmony reexport * */\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTM3LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsVHJhbnNpdGlvbi5sZXNzPzQ1NWUiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3N0eWxlLWxvYWRlci9kaXN0L2Nqcy5qcyEuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cmVmLS0xLTEhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL2xvYWRlcnMvc3R5bGVQb3N0TG9hZGVyLmpzIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9wb3N0Y3NzLWxvYWRlci9zcmMvaW5kZXguanM/P3JlZi0tMS0yIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9sZXNzLWxvYWRlci9kaXN0L2Nqcy5qcz8/cmVmLS0xLTMhLi9TZW50ZW5jZVBhbmVsVHJhbnNpdGlvbi5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTEmaWQ9MzQ4NmY1OTMmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUE7Iiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///137\n")},function(module,exports,__webpack_require__){eval('// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(6);\nexports = ___CSS_LOADER_API_IMPORT___(true);\n// Module\nexports.push([module.i, ".page-container[data-v-3486f593],.page-container-transition[data-v-3486f593]{margin-top:1.5rem;position:fixed;width:100%}.page-container-transition[data-v-3486f593]{cursor:wait;user-select:none;pointer-events:none}.main-sentence-panel-container[data-v-3486f593]{position:fixed;width:100%}.slide-enter-active[data-v-3486f593],.slide-leave-active[data-v-3486f593]{transition:all .3s ease}.slide-enter[data-v-3486f593],.slide-leave-to[data-v-3486f593]{transform:translateX(-10vw)}.toRight .slide-enter[data-v-3486f593],.toRight .slide-leave-to[data-v-3486f593]{transform:translateX(10vw)}#demo p[data-v-3486f593]{position:fixed}", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&","/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less"],"names":[],"mappings":"AAEA,6EAGE,iBAAA,CACA,cAAA,CACA,UCFF,CDKA,4CACE,WAAA,CACA,gBAAA,CACA,mBCHF,CDQA,gDACE,cAAA,CACA,UCNF,CDeA,0EAEE,uBCTF,CDYA,+DAEE,2BCVF,CDcA,iFAEI,0BCZJ,CDiBA,yBACE,cCfF","file":"SentencePanelTransition.less","sourcesContent":["// https://cn.vuejs.org/v2/guide/transitions.html\\n\\n.page-container-transition,\\n.page-container {\\n  //background-color: red !important;\\n  margin-top: 1.5rem;\\n  position: fixed;\\n  width: 100%;\\n}\\n\\n.page-container-transition {\\n  cursor: wait;\\n  user-select: none;\\n  pointer-events: none;\\n}\\n\\n\\n\\n.main-sentence-panel-container {\\n  position: fixed;\\n  width: 100%;\\n  //top: 150px;\\n}\\n\\n/* 可以设置不同的进入和离开动画 */\\n/* 设置持续时间和动画函数 */\\n.slide-enter-active {\\n  transition: all 0.3s ease;\\n}\\n.slide-leave-active {\\n  //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\\n  transition: all 0.3s ease;\\n}\\n\\n.slide-enter, .slide-leave-to\\n/* .slide-fade-leave-active for below version 2.1.8 */ {\\n  transform: translateX(-10vw);\\n  //opacity: 0;\\n}\\n\\n.toRight {\\n  .slide-enter, .slide-leave-to {\\n    transform: translateX(10vw);\\n  }\\n}\\n\\n\\n#demo p {\\n  position: fixed;\\n}",".page-container-transition,\\n.page-container {\\n  margin-top: 1.5rem;\\n  position: fixed;\\n  width: 100%;\\n}\\n.page-container-transition {\\n  cursor: wait;\\n  user-select: none;\\n  pointer-events: none;\\n}\\n.main-sentence-panel-container {\\n  position: fixed;\\n  width: 100%;\\n}\\n/* 可以设置不同的进入和离开动画 */\\n/* 设置持续时间和动画函数 */\\n.slide-enter-active {\\n  transition: all 0.3s ease;\\n}\\n.slide-leave-active {\\n  transition: all 0.3s ease;\\n}\\n.slide-enter,\\n.slide-leave-to {\\n  transform: translateX(-10vw);\\n}\\n.toRight .slide-enter,\\n.toRight .slide-leave-to {\\n  transform: translateX(10vw);\\n}\\n#demo p {\\n  position: fixed;\\n}\\n"]}]);\n// Exports\nmodule.exports = exports;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTM4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsVHJhbnNpdGlvbi5sZXNzPzM1MzIiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gSW1wb3J0c1xudmFyIF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyA9IHJlcXVpcmUoXCIuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9kaXN0L3J1bnRpbWUvYXBpLmpzXCIpO1xuZXhwb3J0cyA9IF9fX0NTU19MT0FERVJfQVBJX0lNUE9SVF9fXyh0cnVlKTtcbi8vIE1vZHVsZVxuZXhwb3J0cy5wdXNoKFttb2R1bGUuaWQsIFwiLnBhZ2UtY29udGFpbmVyW2RhdGEtdi0zNDg2ZjU5M10sLnBhZ2UtY29udGFpbmVyLXRyYW5zaXRpb25bZGF0YS12LTM0ODZmNTkzXXttYXJnaW4tdG9wOjEuNXJlbTtwb3NpdGlvbjpmaXhlZDt3aWR0aDoxMDAlfS5wYWdlLWNvbnRhaW5lci10cmFuc2l0aW9uW2RhdGEtdi0zNDg2ZjU5M117Y3Vyc29yOndhaXQ7dXNlci1zZWxlY3Q6bm9uZTtwb2ludGVyLWV2ZW50czpub25lfS5tYWluLXNlbnRlbmNlLXBhbmVsLWNvbnRhaW5lcltkYXRhLXYtMzQ4NmY1OTNde3Bvc2l0aW9uOmZpeGVkO3dpZHRoOjEwMCV9LnNsaWRlLWVudGVyLWFjdGl2ZVtkYXRhLXYtMzQ4NmY1OTNdLC5zbGlkZS1sZWF2ZS1hY3RpdmVbZGF0YS12LTM0ODZmNTkzXXt0cmFuc2l0aW9uOmFsbCAuM3MgZWFzZX0uc2xpZGUtZW50ZXJbZGF0YS12LTM0ODZmNTkzXSwuc2xpZGUtbGVhdmUtdG9bZGF0YS12LTM0ODZmNTkzXXt0cmFuc2Zvcm06dHJhbnNsYXRlWCgtMTB2dyl9LnRvUmlnaHQgLnNsaWRlLWVudGVyW2RhdGEtdi0zNDg2ZjU5M10sLnRvUmlnaHQgLnNsaWRlLWxlYXZlLXRvW2RhdGEtdi0zNDg2ZjU5M117dHJhbnNmb3JtOnRyYW5zbGF0ZVgoMTB2dyl9I2RlbW8gcFtkYXRhLXYtMzQ4NmY1OTNde3Bvc2l0aW9uOmZpeGVkfVwiLCBcIlwiLHtcInZlcnNpb25cIjozLFwic291cmNlc1wiOltcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWxUcmFuc2l0aW9uLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MSZpZD0zNDg2ZjU5MyZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCIsXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsVHJhbnNpdGlvbi5sZXNzXCJdLFwibmFtZXNcIjpbXSxcIm1hcHBpbmdzXCI6XCJBQUVBLDZFQUdFLGlCQUFBLENBQ0EsY0FBQSxDQUNBLFVDRkYsQ0RLQSw0Q0FDRSxXQUFBLENBQ0EsZ0JBQUEsQ0FDQSxtQkNIRixDRFFBLGdEQUNFLGNBQUEsQ0FDQSxVQ05GLENEZUEsMEVBRUUsdUJDVEYsQ0RZQSwrREFFRSwyQkNWRixDRGNBLGlGQUVJLDBCQ1pKLENEaUJBLHlCQUNFLGNDZkZcIixcImZpbGVcIjpcIlNlbnRlbmNlUGFuZWxUcmFuc2l0aW9uLmxlc3NcIixcInNvdXJjZXNDb250ZW50XCI6W1wiLy8gaHR0cHM6Ly9jbi52dWVqcy5vcmcvdjIvZ3VpZGUvdHJhbnNpdGlvbnMuaHRtbFxcblxcbi5wYWdlLWNvbnRhaW5lci10cmFuc2l0aW9uLFxcbi5wYWdlLWNvbnRhaW5lciB7XFxuICAvL2JhY2tncm91bmQtY29sb3I6IHJlZCAhaW1wb3J0YW50O1xcbiAgbWFyZ2luLXRvcDogMS41cmVtO1xcbiAgcG9zaXRpb246IGZpeGVkO1xcbiAgd2lkdGg6IDEwMCU7XFxufVxcblxcbi5wYWdlLWNvbnRhaW5lci10cmFuc2l0aW9uIHtcXG4gIGN1cnNvcjogd2FpdDtcXG4gIHVzZXItc2VsZWN0OiBub25lO1xcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XFxufVxcblxcblxcblxcbi5tYWluLXNlbnRlbmNlLXBhbmVsLWNvbnRhaW5lciB7XFxuICBwb3NpdGlvbjogZml4ZWQ7XFxuICB3aWR0aDogMTAwJTtcXG4gIC8vdG9wOiAxNTBweDtcXG59XFxuXFxuLyog5Y+v5Lul6K6+572u5LiN5ZCM55qE6L+b5YWl5ZKM56a75byA5Yqo55S7ICovXFxuLyog6K6+572u5oyB57ut5pe26Ze05ZKM5Yqo55S75Ye95pWwICovXFxuLnNsaWRlLWVudGVyLWFjdGl2ZSB7XFxuICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlO1xcbn1cXG4uc2xpZGUtbGVhdmUtYWN0aXZlIHtcXG4gIC8vdHJhbnNpdGlvbjogYWxsIC44cyBjdWJpYy1iZXppZXIoMS4wLCAwLjUsIDAuOCwgMS4wKTtcXG4gIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2U7XFxufVxcblxcbi5zbGlkZS1lbnRlciwgLnNsaWRlLWxlYXZlLXRvXFxuLyogLnNsaWRlLWZhZGUtbGVhdmUtYWN0aXZlIGZvciBiZWxvdyB2ZXJzaW9uIDIuMS44ICovIHtcXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtMTB2dyk7XFxuICAvL29wYWNpdHk6IDA7XFxufVxcblxcbi50b1JpZ2h0IHtcXG4gIC5zbGlkZS1lbnRlciwgLnNsaWRlLWxlYXZlLXRvIHtcXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKDEwdncpO1xcbiAgfVxcbn1cXG5cXG5cXG4jZGVtbyBwIHtcXG4gIHBvc2l0aW9uOiBmaXhlZDtcXG59XCIsXCIucGFnZS1jb250YWluZXItdHJhbnNpdGlvbixcXG4ucGFnZS1jb250YWluZXIge1xcbiAgbWFyZ2luLXRvcDogMS41cmVtO1xcbiAgcG9zaXRpb246IGZpeGVkO1xcbiAgd2lkdGg6IDEwMCU7XFxufVxcbi5wYWdlLWNvbnRhaW5lci10cmFuc2l0aW9uIHtcXG4gIGN1cnNvcjogd2FpdDtcXG4gIHVzZXItc2VsZWN0OiBub25lO1xcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XFxufVxcbi5tYWluLXNlbnRlbmNlLXBhbmVsLWNvbnRhaW5lciB7XFxuICBwb3NpdGlvbjogZml4ZWQ7XFxuICB3aWR0aDogMTAwJTtcXG59XFxuLyog5Y+v5Lul6K6+572u5LiN5ZCM55qE6L+b5YWl5ZKM56a75byA5Yqo55S7ICovXFxuLyog6K6+572u5oyB57ut5pe26Ze05ZKM5Yqo55S75Ye95pWwICovXFxuLnNsaWRlLWVudGVyLWFjdGl2ZSB7XFxuICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlO1xcbn1cXG4uc2xpZGUtbGVhdmUtYWN0aXZlIHtcXG4gIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2U7XFxufVxcbi5zbGlkZS1lbnRlcixcXG4uc2xpZGUtbGVhdmUtdG8ge1xcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC0xMHZ3KTtcXG59XFxuLnRvUmlnaHQgLnNsaWRlLWVudGVyLFxcbi50b1JpZ2h0IC5zbGlkZS1sZWF2ZS10byB7XFxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoMTB2dyk7XFxufVxcbiNkZW1vIHAge1xcbiAgcG9zaXRpb246IGZpeGVkO1xcbn1cXG5cIl19XSk7XG4vLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IGV4cG9ydHM7XG4iXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOyIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///138\n')},function(module,__webpack_exports__,__webpack_require__){"use strict";eval('/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67);\n/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);\n /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTM5LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLnlhbWw/ZmU4OCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9Aa2F6dXBvbi92dWUtaTE4bi1sb2FkZXIvbGliL2luZGV4LmpzIS4vU2VudGVuY2VQYW5lbC55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRlNlbnRlbmNlUGFuZWwudnVlJmxhbmc9eWFtbFwiOyBleHBvcnQgZGVmYXVsdCBtb2Q7IGV4cG9ydCAqIGZyb20gXCItIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9Aa2F6dXBvbi92dWUtaTE4bi1sb2FkZXIvbGliL2luZGV4LmpzIS4vU2VudGVuY2VQYW5lbC55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRlNlbnRlbmNlUGFuZWwudnVlJmxhbmc9eWFtbFwiIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBO0FBQUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///139\n')},,,,,,,,function(module,__webpack_exports__,__webpack_require__){"use strict";eval('// ESM COMPAT FLAG\n__webpack_require__.r(__webpack_exports__);\n\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true&\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    "div",\n    { staticClass: "SentencePanel" },\n    [\n      _c(\n        "div",\n        {\n          staticClass: "ui segment sentence-segment",\n          on: { click: _vm.goToPreviousSentence }\n        },\n        [\n          _vm.localConfig.playingIndex > 0\n            ? _c("div", { staticClass: "previous-sentence" }, [\n                _c("i", { staticClass: "step backward icon" }),\n                _vm._v("\\n      " + _vm._s(_vm.previousSentence) + "\\n    ")\n              ])\n            : _vm._e(),\n          _vm._v(" "),\n          _vm.localConfig.playingIndex === 0\n            ? _c("div", { staticClass: "previous-sentence start" }, [\n                _c("i", { staticClass: "hand point right outline icon" }),\n                _vm._v("\\n      " + _vm._s(_vm.$t("Start")) + "\\n    ")\n              ])\n            : _vm._e()\n        ]\n      ),\n      _vm._v(" "),\n      _c(\n        "div",\n        { staticClass: "page-container" },\n        [\n          !_vm.pageTransition\n            ? _c("MainSentencePanel", {\n                attrs: {\n                  config: _vm.config,\n                  localConfig: _vm.localConfig,\n                  utils: _vm.utils,\n                  sentence: _vm.currentSentence\n                }\n              })\n            : _vm._e()\n        ],\n        1\n      ),\n      _vm._v(" "),\n      _c(\n        "div",\n        {\n          directives: [\n            {\n              name: "show",\n              rawName: "v-show",\n              value: _vm.pageTransition,\n              expression: "pageTransition"\n            }\n          ],\n          staticClass: "page-container-transition",\n          class: {\n            toRight: _vm.pageTransitionToNext,\n            toLeft: !_vm.pageTransitionToNext\n          }\n        },\n        [\n          _c("transition", { attrs: { name: "slide" } }, [\n            _vm.pageTransitionShow\n              ? _c(\n                  "div",\n                  { staticClass: "main-sentence-panel-container" },\n                  [\n                    _c("MainSentencePanel", {\n                      attrs: {\n                        config: _vm.config,\n                        localConfig: _vm.localConfig,\n                        utils: _vm.utils,\n                        sentence: _vm.pageTransitionAfterSentence\n                      }\n                    })\n                  ],\n                  1\n                )\n              : _vm._e()\n          ])\n        ],\n        1\n      ),\n      _vm._v(" "),\n      _c(\n        "div",\n        {\n          staticClass: "ui segment sentence-segment next",\n          on: { click: _vm.goToNextSentence }\n        },\n        [\n          _vm.localConfig.playingIndex < _vm.config.sentenceList.length - 1\n            ? [\n                _c("i", { staticClass: "step forward icon" }),\n                _vm._v(" "),\n                _c("div", { staticClass: "next-sentence" }, [\n                  _vm._v("\\n        " + _vm._s(_vm.nextSentence) + "\\n      ")\n                ])\n              ]\n            : _vm._e(),\n          _vm._v(" "),\n          _vm.localConfig.playingIndex === _vm.config.sentenceList.length - 1\n            ? _c("div", { staticClass: "next-sentence finish" }, [\n                _vm._v(\n                  "\\n      \\n      " + _vm._s(_vm.$t("Finish")) + "\\n      "\n                ),\n                _c("i", { staticClass: "flag checkered icon" })\n              ])\n            : _vm._e()\n        ],\n        2\n      ),\n      _vm._v(" "),\n      _c("WordModal", {\n        ref: "WordModal",\n        attrs: {\n          config: _vm.config,\n          localConfig: _vm.localConfig,\n          utils: _vm.utils\n        }\n      })\n    ],\n    1\n  )\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true&\n\n// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/asyncToGenerator.js\nvar asyncToGenerator = __webpack_require__(1);\nvar asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator);\n\n// EXTERNAL MODULE: ./node_modules/@babel/runtime/regenerator/index.js\nvar regenerator = __webpack_require__(0);\nvar regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator);\n\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true&\nvar WordModalvue_type_template_id_3b4f4609_scoped_true_render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    "div",\n    { ref: "Modal", staticClass: "ui modal ConfigurationModal" },\n    [\n      _c("i", { staticClass: "close icon" }),\n      _vm._v(" "),\n      _c("div", { staticClass: "header" }, [\n        _vm._v("\\n    " + _vm._s(_vm.$t("Word Practice")) + "\\n  ")\n      ]),\n      _vm._v(" "),\n      _c("div", { staticClass: "content ui form" }, [\n        _c(\n          "div",\n          {\n            staticClass: "ui segment word-segment",\n            class: { isSpeaking: _vm.isSpeaking },\n            on: { click: _vm.speakWord }\n          },\n          [\n            !_vm.wordTrans\n              ? _c(\n                  "h2",\n                  {\n                    staticClass: "ui center aligned header",\n                    class: _vm.computedWordMaskClassesWithoutTrans\n                  },\n                  [\n                    _c("span", [\n                      _vm._v(\n                        "\\n          " + _vm._s(_vm.currentWord) + "\\n        "\n                      )\n                    ])\n                  ]\n                )\n              : _vm._e(),\n            _vm._v(" "),\n            _vm.wordTrans && _vm.config.currentWordMask !== "translation"\n              ? _c(\n                  "div",\n                  { staticClass: "ui two column center aligned grid" },\n                  [\n                    _vm._m(0),\n                    _vm._v(" "),\n                    _c("div", { staticClass: "column" }, [\n                      _c(\n                        "h2",\n                        {\n                          staticClass: "ui center aligned header",\n                          class: _vm.computedWordMaskClassesWithTrans\n                        },\n                        [\n                          _c("span", [\n                            _vm._v(\n                              "\\n              " +\n                                _vm._s(_vm.currentWord) +\n                                "\\n            "\n                            )\n                          ])\n                        ]\n                      )\n                    ]),\n                    _vm._v(" "),\n                    _c(\n                      "div",\n                      {\n                        staticClass: "column",\n                        on: {\n                          click: function($event) {\n                            $event.stopPropagation()\n                            return _vm.openDictionary.apply(null, arguments)\n                          }\n                        }\n                      },\n                      [\n                        _c("h2", { staticClass: "ui center aligned header" }, [\n                          _vm._v(\n                            "\\n            " +\n                              _vm._s(_vm.wordTrans) +\n                              "\\n          "\n                          )\n                        ])\n                      ]\n                    )\n                  ]\n                )\n              : _vm._e(),\n            _vm._v(" "),\n            _vm.wordTrans && _vm.config.currentWordMask === "translation"\n              ? _c("h2", { staticClass: "ui center aligned header" }, [\n                  _vm._v("\\n          " + _vm._s(_vm.wordTrans) + "\\n      ")\n                ])\n              : _vm._e()\n          ]\n        ),\n        _vm._v(" "),\n        _c(\n          "h2",\n          {\n            staticClass: "ui center aligned header practice-hint",\n            class: _vm.computedPracticeWordClasses,\n            on: { click: _vm.practiceWord }\n          },\n          [\n            !_vm.config.practiceWord\n              ? [\n                  _c("i", { staticClass: "conversation icon" }),\n                  _vm._v(" "),\n                  !_vm.isPracticing\n                    ? [\n                        _vm._v(\n                          "\\n          " +\n                            _vm._s(_vm.$t("Let\'s Practice!")) +\n                            "\\n        "\n                        )\n                      ]\n                    : _vm._e(),\n                  _vm._v(" "),\n                  _vm.isPracticing\n                    ? [\n                        _vm._v(\n                          "\\n          " +\n                            _vm._s(_vm.$t("Keep going... Keep going...")) +\n                            "\\n        "\n                        )\n                      ]\n                    : _vm._e()\n                ]\n              : _vm._e(),\n            _vm._v(" "),\n            _vm.config.practiceWord\n              ? [\n                  _vm._v(\n                    "\\n        " +\n                      _vm._s(_vm.config.practiceWord) +\n                      "\\n        "\n                  ),\n                  _c(\n                    "h3",\n                    {\n                      staticClass: "practice-again-hint",\n                      class: {\n                        visible:\n                          !_vm.isPracticing &&\n                          _vm.config.practiceWordScore < 0.7\n                      }\n                    },\n                    [\n                      _c("i", { staticClass: "conversation icon" }),\n                      _vm._v(\n                        "\\n          " +\n                          _vm._s(_vm.$t("Practice again?")) +\n                          "\\n        "\n                      )\n                    ]\n                  )\n                ]\n              : _vm._e()\n          ],\n          2\n        )\n      ]),\n      _vm._v(" "),\n      _c("div", { staticClass: "actions" }, [\n        _c(\n          "div",\n          { staticClass: "ui button", on: { click: _vm.openDictionary } },\n          [_vm._v("\\n      " + _vm._s(_vm.$t("Dictionary")) + "\\n    ")]\n        ),\n        _vm._v(" "),\n        _c(\n          "div",\n          { staticClass: "ui icon button", on: { click: _vm.practiceWord } },\n          [_c("i", { staticClass: "comment outline icon" })]\n        ),\n        _vm._v(" "),\n        _c(\n          "div",\n          { staticClass: "ui icon button", on: { click: _vm.speakWord } },\n          [\n            _c("i", {\n              staticClass: "icon",\n              class: { play: !_vm.isSpeaking, pause: _vm.isSpeaking }\n            })\n          ]\n        ),\n        _vm._v(" "),\n        _c("div", { staticClass: "ui button", on: { click: _vm.close } }, [\n          _vm._v("\\n      " + _vm._s(_vm.$t("OK")) + "\\n    ")\n        ])\n      ])\n    ]\n  )\n}\nvar WordModalvue_type_template_id_3b4f4609_scoped_true_staticRenderFns = [\n  function() {\n    var _vm = this\n    var _h = _vm.$createElement\n    var _c = _vm._self._c || _h\n    return _c("div", { staticClass: "ui vertical divider" }, [\n      _c("i", { staticClass: "language icon" })\n    ])\n  }\n]\nWordModalvue_type_template_id_3b4f4609_scoped_true_render._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true&\n\n// EXTERNAL MODULE: ./node_modules/jquery/dist/jquery.js\nvar jquery = __webpack_require__(4);\nvar jquery_default = /*#__PURE__*/__webpack_require__.n(jquery);\n\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js&\n\n\n\nvar WordModal = {\n  props: [\'config\', \'localConfig\', \'utils\'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {\n      modal: null,\n      isOpened: false,\n      isSpeaking: false,\n      wordTrans: null,\n      currentWord: null,\n      isPracticing: false\n    };\n  },\n  watch: {\n    \'localConfig.locale\': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    },\n    \'config.currentWord\': function () {\n      var _configCurrentWord = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {\n        return regenerator_default.a.wrap(function _callee$(_context) {\n          while (1) {\n            switch (_context.prev = _context.next) {\n              case 0:\n                //console.log(this.config.practiceWord)\n                if (this.currentWord === null) {\n                  this.wordTrans = null;\n                }\n\n                if (!(this.config.currentWord && this.config.currentWord !== \'\')) {\n                  _context.next = 8;\n                  break;\n                }\n\n                this.currentWord = this.config.currentWord;\n                this.config.practiceWord = null;\n                this.config.practiceWordScore = null;\n                this.open();\n                _context.next = 11;\n                break;\n\n              case 8:\n                _context.next = 10;\n                return this.close();\n\n              case 10:\n                //await this.utils.AsyncUtils.sleep(1000)\n                this.currentWord = null;\n\n              case 11:\n              case "end":\n                return _context.stop();\n            }\n          }\n        }, _callee, this);\n      }));\n\n      function configCurrentWord() {\n        return _configCurrentWord.apply(this, arguments);\n      }\n\n      return configCurrentWord;\n    }(),\n    \'currentWord\': function () {\n      var _currentWord = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {\n        return regenerator_default.a.wrap(function _callee2$(_context2) {\n          while (1) {\n            switch (_context2.prev = _context2.next) {\n              case 0:\n                if (this.currentWord) {\n                  _context2.next = 2;\n                  break;\n                }\n\n                return _context2.abrupt("return", false);\n\n              case 2:\n                _context2.next = 4;\n                return this.utils.TransUtils.transZHTW(this.currentWord);\n\n              case 4:\n                this.wordTrans = _context2.sent;\n\n              case 5:\n              case "end":\n                return _context2.stop();\n            }\n          }\n        }, _callee2, this);\n      }));\n\n      function currentWord() {\n        return _currentWord.apply(this, arguments);\n      }\n\n      return currentWord;\n    }()\n  },\n  computed: {\n    computedWordMaskClassesWithoutTrans: function computedWordMaskClassesWithoutTrans() {\n      var classes = [];\n      var mask = this.config.currentWordMask;\n\n      if (mask === \'translation\' || mask === \'word-block\' || mask === \'sentence-block\') {\n        classes.push(\'masked\');\n      }\n\n      return classes;\n    },\n    computedWordMaskClassesWithTrans: function computedWordMaskClassesWithTrans() {\n      var classes = [];\n      var mask = this.config.currentWordMask;\n\n      if (mask === \'word-block\' || mask === \'sentence-block\') {\n        classes.push(\'masked\');\n      }\n\n      return classes;\n    },\n    computedPracticeWordClasses: function computedPracticeWordClasses() {\n      var classes = [];\n\n      if (!this.isPracticing && this.config.practiceWord === null) {\n        classes.push(\'icon\');\n      }\n\n      if (this.isPracticing) {\n        classes.push(\'isPracticing\');\n      }\n\n      if (this.isPracticing && this.config.practiceWord === null) {\n        //console.log(\'go\')\n        classes.push(\'keep-going\');\n      }\n\n      if (this.config.practiceWordScore && this.config.practiceWordScore > 0.7) {\n        classes.push(\'positive\');\n      }\n\n      return classes;\n    }\n  },\n  //  mounted() {\n  //    let result = this.utils.DiffUtils.diffChars(\'word\', \'weord\')\n  //    console.log(result)\n  //  },\n  methods: {\n    init: function init() {\n      var _this = this;\n\n      this.modal = jquery_default()(this.$refs.Modal);\n      this.modal.modal({\n        onShow: function onShow() {\n          //console.log(\'open\')\n          _this.isOpened = true;\n        },\n        onHidden: function onHidden() {\n          _this.isOpened = false;\n        }\n      });\n    },\n    open: function () {\n      var _open = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {\n        var _this2 = this;\n\n        return regenerator_default.a.wrap(function _callee3$(_context3) {\n          while (1) {\n            switch (_context3.prev = _context3.next) {\n              case 0:\n                if (!this.modal) {\n                  this.init();\n                }\n\n                return _context3.abrupt("return", new Promise(function (resolve) {\n                  _this2.modal.modal(\'show\', function () {\n                    resolve();\n\n                    _this2.speakWord();\n                  });\n                }));\n\n              case 2:\n              case "end":\n                return _context3.stop();\n            }\n          }\n        }, _callee3, this);\n      }));\n\n      function open() {\n        return _open.apply(this, arguments);\n      }\n\n      return open;\n    }(),\n    close: function close() {\n      var _this3 = this;\n\n      return new Promise(function (resolve) {\n        _this3.modal.modal(\'hide\', function () {\n          _this3.config.currentWord = null;\n          resolve();\n        });\n      });\n    },\n    speakWord: function () {\n      var _speakWord = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4() {\n        return regenerator_default.a.wrap(function _callee4$(_context4) {\n          while (1) {\n            switch (_context4.prev = _context4.next) {\n              case 0:\n                _context4.next = 2;\n                return this.utils.LearningInstructor;\n\n              case 2:\n                if (_context4.sent) {\n                  _context4.next = 7;\n                  break;\n                }\n\n                _context4.next = 5;\n                return this.utils.AsyncUtils.sleep();\n\n              case 5:\n                _context4.next = 0;\n                break;\n\n              case 7:\n                this.isSpeaking = true;\n                _context4.next = 10;\n                return this.utils.LearningInstructor.speakWord(this.config.currentWord);\n\n              case 10:\n                this.isSpeaking = false;\n                _context4.next = 13;\n                return this.practiceWord();\n\n              case 13:\n              case "end":\n                return _context4.stop();\n            }\n          }\n        }, _callee4, this);\n      }));\n\n      function speakWord() {\n        return _speakWord.apply(this, arguments);\n      }\n\n      return speakWord;\n    }(),\n    practiceWord: function () {\n      var _practiceWord = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee5() {\n        return regenerator_default.a.wrap(function _callee5$(_context5) {\n          while (1) {\n            switch (_context5.prev = _context5.next) {\n              case 0:\n                _context5.next = 2;\n                return this.utils.LearningInstructor;\n\n              case 2:\n                if (_context5.sent) {\n                  _context5.next = 7;\n                  break;\n                }\n\n                _context5.next = 5;\n                return this.utils.AsyncUtils.sleep();\n\n              case 5:\n                _context5.next = 0;\n                break;\n\n              case 7:\n                this.isPracticing = true;\n                _context5.next = 10;\n                return this.utils.LearningInstructor.practiceWord(this.config.currentWord);\n\n              case 10:\n                this.isPracticing = false;\n\n              case 11:\n              case "end":\n                return _context5.stop();\n            }\n          }\n        }, _callee5, this);\n      }));\n\n      function practiceWord() {\n        return _practiceWord.apply(this, arguments);\n      }\n\n      return practiceWord;\n    }(),\n    openDictionary: function openDictionary() {\n      this.utils.DictUtils.openDict(this.config.currentWord);\n    }\n  }\n};\n/* harmony default export */ var WordModalvue_type_script_lang_js_ = (WordModal);\n// CONCATENATED MODULE: ./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js&\n /* harmony default export */ var WordModal_WordModalvue_type_script_lang_js_ = (WordModalvue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&\nvar WordModalvue_type_style_index_0_id_3b4f4609_lang_less_scoped_true_ = __webpack_require__(118);\n\n// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js\nvar componentNormalizer = __webpack_require__(10);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml\nvar WordModalvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml = __webpack_require__(120);\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/WordModal/WordModal.vue\n\n\n\n\n\n\n/* normalize component */\n\nvar component = Object(componentNormalizer["a" /* default */])(\n  WordModal_WordModalvue_type_script_lang_js_,\n  WordModalvue_type_template_id_3b4f4609_scoped_true_render,\n  WordModalvue_type_template_id_3b4f4609_scoped_true_staticRenderFns,\n  false,\n  null,\n  "3b4f4609",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof WordModalvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml["default"] === \'function\') Object(WordModalvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml["default"])(component)\n\n/* hot reload */\nif (false) { var api; }\ncomponent.options.__file = "src/components/SentencePanel/WordModal/WordModal.vue"\n/* harmony default export */ var WordModal_WordModal = (component.exports);\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&\nvar MainSentencePanelvue_type_template_id_0ac19693_scoped_true_render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    "div",\n    { staticClass: "main-sentence-panel" },\n    [\n      _c("CurrentSentence", {\n        ref: "CurrentSentence",\n        attrs: {\n          config: _vm.config,\n          localConfig: _vm.localConfig,\n          utils: _vm.utils,\n          sentence: _vm.sentence\n        }\n      }),\n      _vm._v(" "),\n      _c("PracticeSentencePanel", {\n        ref: "PracticeSentencePanel",\n        attrs: {\n          config: _vm.config,\n          localConfig: _vm.localConfig,\n          utils: _vm.utils\n        }\n      })\n    ],\n    1\n  )\n}\nvar MainSentencePanelvue_type_template_id_0ac19693_scoped_true_staticRenderFns = []\nMainSentencePanelvue_type_template_id_0ac19693_scoped_true_render._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&\n\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true&\nvar CurrentSentencevue_type_template_id_0a8eff7b_scoped_true_render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    "div",\n    {\n      staticClass: "ui piled segments current-sentence-segments",\n      on: { click: _vm.speakCurrentSentence }\n    },\n    [\n      _c(\n        "div",\n        { staticClass: "ui segment", class: _vm.computeCurrentSentenceClasses },\n        [\n          _c(\n            "div",\n            { staticClass: "ui grid middle aligned current-sentence" },\n            [\n              _c("div", { staticClass: "row" }, [\n                _c("div", { staticClass: "column" }, [\n                  _c(\n                    "h2",\n                    { staticClass: "ui center aligned header" },\n                    [\n                      _vm.config.currentSentenceMask !== "translation"\n                        ? _vm._l(_vm.words, function(word, i) {\n                            return _c(\n                              "span",\n                              {\n                                staticClass: "word",\n                                class: _vm.computedWordClasses(word, i),\n                                on: {\n                                  click: function($event) {\n                                    $event.stopPropagation()\n                                    return _vm.startSpeakWord(word, i)\n                                  }\n                                }\n                              },\n                              [_vm._v(_vm._s(word))]\n                            )\n                          })\n                        : _vm._e(),\n                      _vm._v(" "),\n                      _vm.config.currentSentenceMask === "translation"\n                        ? [\n                            _vm._v(\n                              "\\n              " +\n                                _vm._s(_vm.translationMask) +\n                                "\\n            "\n                            )\n                          ]\n                        : _vm._e()\n                    ],\n                    2\n                  )\n                ])\n              ])\n            ]\n          )\n        ]\n      )\n    ]\n  )\n}\nvar CurrentSentencevue_type_template_id_0a8eff7b_scoped_true_staticRenderFns = []\nCurrentSentencevue_type_template_id_0a8eff7b_scoped_true_render._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true&\n\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js&\n\n\nvar CurrentSentence = {\n  props: [\'config\', \'localConfig\', \'utils\', \'sentence\'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {\n      isSpeaking: false,\n      speakingWordIndex: null,\n      translationMask: null\n    };\n  },\n  watch: {\n    \'localConfig.locale\': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    },\n    \'localConfig.practiceSentenceMask\': function localConfigPracticeSentenceMask() {\n      this.initTranslationMask();\n    },\n    sentence: function sentence() {\n      this.initTranslationMask();\n    }\n  },\n  computed: {\n    currentSentence: function currentSentence() {\n      return this.sentence;\n    },\n    words: function words() {\n      var parts = this.currentSentence.split(\' \');\n      var words = [];\n      parts.forEach(function (part, i) {\n        var otherPartString = \'\';\n        part = part.trim();\n        var otherPart = part.slice(-1); //console.log(otherPart)\n\n        while (!!otherPart.match(/^[.,:!?]$/)) {\n          otherPartString = otherPart + otherPartString;\n          part = part.slice(0, -1);\n          otherPart = part.slice(-1);\n        }\n\n        if (part.length > 0) {\n          words.push(part);\n        }\n\n        if (otherPartString.length > 0) {\n          words.push(otherPartString);\n        }\n\n        if (i < parts.length - 1) {\n          words.push(\' \');\n        } //console.log(words)\n\n      });\n      return words;\n    },\n    computeCurrentSentenceClasses: function computeCurrentSentenceClasses() {\n      // {isSpeaking: config.currentSentenceIsSpeaking}\n      var classes = [];\n\n      if (this.config.currentSentenceIsSpeaking) {\n        classes.push(\'isSpeaking\');\n      }\n\n      if (this.config.currentSentenceMask && this.config.currentSentenceMask !== \'none\') {\n        classes.push(this.config.currentSentenceMask);\n      }\n\n      return classes;\n    }\n  },\n  mounted: function () {\n    var _mounted = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {\n      return regenerator_default.a.wrap(function _callee$(_context) {\n        while (1) {\n          switch (_context.prev = _context.next) {\n            case 0:\n              this.initTranslationMask(); //    setTimeout(() => {\n              //      this.initTranslationMask()\n              //    }, 500)\n\n            case 1:\n            case "end":\n              return _context.stop();\n          }\n        }\n      }, _callee, this);\n    }));\n\n    function mounted() {\n      return _mounted.apply(this, arguments);\n    }\n\n    return mounted;\n  }(),\n  methods: {\n    initTranslationMask: function () {\n      var _initTranslationMask = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee2() {\n        return regenerator_default.a.wrap(function _callee2$(_context2) {\n          while (1) {\n            switch (_context2.prev = _context2.next) {\n              case 0:\n                if (!(this.localConfig.practiceSentenceMask !== \'translation\' || this.translationMask || !this.sentence)) {\n                  _context2.next = 2;\n                  break;\n                }\n\n                return _context2.abrupt("return", false);\n\n              case 2:\n                _context2.next = 4;\n                return this.utils.TransUtils.trans(this.sentence, \'zh-TW\');\n\n              case 4:\n                this.translationMask = _context2.sent;\n\n              case 5:\n              case "end":\n                return _context2.stop();\n            }\n          }\n        }, _callee2, this);\n      }));\n\n      function initTranslationMask() {\n        return _initTranslationMask.apply(this, arguments);\n      }\n\n      return initTranslationMask;\n    }(),\n    speakCurrentSentence: function () {\n      var _speakCurrentSentence = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee3() {\n        return regenerator_default.a.wrap(function _callee3$(_context3) {\n          while (1) {\n            switch (_context3.prev = _context3.next) {\n              case 0:\n                //      if (this.isSpeaking === true) {\n                //        this.utils.TextToSpeechUtil.stopSpeak()\n                //        return false\n                //      }\n                //      \n                //      this.isSpeaking = true\n                //      await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)\n                //      this.isSpeaking = false\n                this.utils.LearningInstructor.speakCurrentSentence();\n\n              case 1:\n              case "end":\n                return _context3.stop();\n            }\n          }\n        }, _callee3, this);\n      }));\n\n      function speakCurrentSentence() {\n        return _speakCurrentSentence.apply(this, arguments);\n      }\n\n      return speakCurrentSentence;\n    }(),\n    startSpeakWord: function () {\n      var _startSpeakWord = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee4(word, i) {\n        return regenerator_default.a.wrap(function _callee4$(_context4) {\n          while (1) {\n            switch (_context4.prev = _context4.next) {\n              case 0:\n                if (!(this.isSpeakable(word) === false)) {\n                  _context4.next = 2;\n                  break;\n                }\n\n                return _context4.abrupt("return", false);\n\n              case 2:\n                //      this.speakingWordIndex = i\n                //      await this.utils.TextToSpeechUtil.startSpeak(word)\n                //      this.speakingWordIndex = null\n                this.config.currentWord = this.utils.DictUtils.filterWord(word);\n\n              case 3:\n              case "end":\n                return _context4.stop();\n            }\n          }\n        }, _callee4, this);\n      }));\n\n      function startSpeakWord(_x, _x2) {\n        return _startSpeakWord.apply(this, arguments);\n      }\n\n      return startSpeakWord;\n    }(),\n    isSpeakable: function isSpeakable(word) {\n      //console.log(word)\n      if (!word || word.trim() === \'\') {\n        return false;\n      }\n\n      var lastChar = word.slice(-1);\n\n      if (!!lastChar.match(/^[.,:!?]$/)) {\n        return false;\n      }\n\n      return true;\n    },\n    computedWordClasses: function computedWordClasses(word, i) {\n      // {isSpeaking: (i === speakingWordIndex), speakable: isSpeakable(word)}\n      var classes = [];\n\n      if (i === this.speakingWordIndex) {\n        classes.push(\'isSpeaking\');\n      }\n\n      if (this.isSpeakable(word)) {\n        classes.push(\'speakable\');\n      }\n\n      return classes;\n    }\n  }\n};\n/* harmony default export */ var CurrentSentencevue_type_script_lang_js_ = (CurrentSentence);\n// CONCATENATED MODULE: ./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js&\n /* harmony default export */ var CurrentSentence_CurrentSentencevue_type_script_lang_js_ = (CurrentSentencevue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&\nvar CurrentSentencevue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true_ = __webpack_require__(121);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml\nvar CurrentSentencevue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml = __webpack_require__(123);\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/CurrentSentence/CurrentSentence.vue\n\n\n\n\n\n\n/* normalize component */\n\nvar CurrentSentence_component = Object(componentNormalizer["a" /* default */])(\n  CurrentSentence_CurrentSentencevue_type_script_lang_js_,\n  CurrentSentencevue_type_template_id_0a8eff7b_scoped_true_render,\n  CurrentSentencevue_type_template_id_0a8eff7b_scoped_true_staticRenderFns,\n  false,\n  null,\n  "0a8eff7b",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof CurrentSentencevue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml["default"] === \'function\') Object(CurrentSentencevue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml["default"])(CurrentSentence_component)\n\n/* hot reload */\nif (false) { var CurrentSentence_api; }\nCurrentSentence_component.options.__file = "src/components/SentencePanel/CurrentSentence/CurrentSentence.vue"\n/* harmony default export */ var CurrentSentence_CurrentSentence = (CurrentSentence_component.exports);\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&\nvar PracticeSentencePanelvue_type_template_id_f30771e2_scoped_true_render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _vm.localConfig.practiceMode === "speaking"\n    ? _c(\n        "div",\n        { staticClass: "PracticeSentencePanel" },\n        [\n          !_vm.config.practiceSentence\n            ? _c(\n                "h2",\n                {\n                  staticClass: "ui center aligned icon header practice-hint",\n                  on: { click: _vm.practice }\n                },\n                [\n                  _c("i", { staticClass: "conversation icon" }),\n                  _vm._v(\n                    "\\n      " + _vm._s(_vm.$t("Let\'s Practice!")) + "\\n    "\n                  )\n                ]\n              )\n            : _vm._e(),\n          _vm._v(" "),\n          _vm.config.practiceSentence\n            ? [\n                _c("div", { staticClass: "trigger" }, [\n                  _c(\n                    "div",\n                    {\n                      staticClass: "practice-hint",\n                      class: { practicing: _vm.isPracticing },\n                      on: { click: _vm.practice }\n                    },\n                    [\n                      _c("i", { staticClass: "conversation icon" }),\n                      _vm._v(" "),\n                      _vm.isPracticing\n                        ? [\n                            _vm._v(\n                              "\\n            " +\n                                _vm._s(_vm.$t("Keep going... Keep going... ")) +\n                                "\\n          "\n                            )\n                          ]\n                        : _vm._e(),\n                      _vm._v(" "),\n                      _vm.readEvaluationResult\n                        ? [\n                            _vm._v(\n                              "\\n            " +\n                                _vm._s(_vm.$t("Practice again?")) +\n                                "\\n          "\n                            )\n                          ]\n                        : _vm._e()\n                    ],\n                    2\n                  ),\n                  _vm._v(" "),\n                  _c(\n                    "div",\n                    {\n                      staticClass: "popup",\n                      class: {\n                        positive:\n                          _vm.config.practiceSentenceEvaluationScore >= 0.7\n                      }\n                    },\n                    [\n                      _c(\n                        "div",\n                        {\n                          staticClass:\n                            "inner ui grid middle aligned current-sentence"\n                        },\n                        [\n                          _c("div", { staticClass: "row" }, [\n                            _c("div", { staticClass: "column" }, [\n                              _vm.config.practiceSentenceEvaluationResult\n                                .length === 0\n                                ? _c(\n                                    "h2",\n                                    {\n                                      staticClass:\n                                        "ui center aligned header wait-practice"\n                                    },\n                                    [\n                                      _vm._v(\n                                        "\\n                  " +\n                                          _vm._s(_vm.config.practiceSentence) +\n                                          "\\n                "\n                                      )\n                                    ]\n                                  )\n                                : _c(\n                                    "h2",\n                                    [\n                                      _c("SentenceDifference", {\n                                        ref: "SentenceDifference",\n                                        attrs: {\n                                          config: _vm.config,\n                                          localConfig: _vm.localConfig,\n                                          utils: _vm.utils\n                                        }\n                                      })\n                                    ],\n                                    1\n                                  )\n                            ])\n                          ])\n                        ]\n                      )\n                    ]\n                  )\n                ])\n              ]\n            : _vm._e()\n        ],\n        2\n      )\n    : _vm._e()\n}\nvar PracticeSentencePanelvue_type_template_id_f30771e2_scoped_true_staticRenderFns = []\nPracticeSentencePanelvue_type_template_id_f30771e2_scoped_true_render._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&\n\n// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&\nvar SentenceDifferencevue_type_template_id_e323347e_scoped_true_render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\n    "div",\n    {\n      staticClass: "SentenceDifference",\n      class: { positive: _vm.config.practiceSentenceEvaluationScore >= 0.7 }\n    },\n    [\n      _vm._l(_vm.results, function(word, i) {\n        return [\n          !word.added\n            ? _c(\n                "span",\n                { class: { removed: word.removed } },\n                _vm._l(_vm.splitWord(word.value), function(w, j) {\n                  return _c(\n                    "span",\n                    {\n                      staticClass: "word",\n                      class: { space: w === " " },\n                      on: {\n                        click: function($event) {\n                          return _vm.practiceWord(w)\n                        }\n                      }\n                    },\n                    [_vm._v("\\n        " + _vm._s(w) + "\\n      ")]\n                  )\n                }),\n                0\n              )\n            : _vm._e(),\n          _vm._v(" "),\n          word.added\n            ? _c(\n                "span",\n                {\n                  staticClass: "added word",\n                  class: _vm.computedAddedWord(word.value),\n                  on: {\n                    click: function($event) {\n                      return _vm.practiceWord(word.value)\n                    }\n                  }\n                },\n                [_vm._v(_vm._s(word.value))]\n              )\n            : _vm._e()\n        ]\n      })\n    ],\n    2\n  )\n}\nvar SentenceDifferencevue_type_template_id_e323347e_scoped_true_staticRenderFns = []\nSentenceDifferencevue_type_template_id_e323347e_scoped_true_render._withStripped = true\n\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&\n\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&\n\n\nvar SentenceDifference = {\n  props: [\'config\', \'localConfig\', \'utils\'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {\n      currentPracticeWord: null,\n      redraw: false\n    };\n  },\n  watch: {\n    \'localConfig.locale\': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    },\n    \'config.practiceWordScore\': function () {\n      var _configPracticeWordScore = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee() {\n        var i, r;\n        return regenerator_default.a.wrap(function _callee$(_context) {\n          while (1) {\n            switch (_context.prev = _context.next) {\n              case 0:\n                //console.log(this.config.practiceWordScore)\n                if (this.currentPracticeWord && this.config.practiceWordScore >= 0.7) {\n                  /*\r\n                  await this.utils.AsyncUtils.sleep()\r\n                  this.redraw = true\r\n                  await this.utils.AsyncUtils.sleep(1)\r\n                  this.redraw = false\r\n                  */\n                  for (i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {\n                    r = this.config.practiceSentenceEvaluationResult[i];\n\n                    if (r.value.trim() === this.currentPracticeWord) {\n                      this.config.practiceSentenceEvaluationResult[i].added = false;\n                    }\n                  }\n\n                  this.currentPracticeWord = null;\n                }\n\n              case 1:\n              case "end":\n                return _context.stop();\n            }\n          }\n        }, _callee, this);\n      }));\n\n      function configPracticeWordScore() {\n        return _configPracticeWordScore.apply(this, arguments);\n      }\n\n      return configPracticeWordScore;\n    }()\n  },\n  computed: {\n    results: function results() {\n      var results = [];\n\n      if (this.redraw === true) {\n        //console.log(\'redrawing\')\n        return [];\n      } //console.log(this.config.practiceSentenceEvaluationResult)\n\n\n      for (var i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {\n        if (i > 0) {\n          results.push({\n            //value: \'&nbsp;\'\n            value: \' \'\n          });\n        }\n\n        var r = this.config.practiceSentenceEvaluationResult[i];\n        r.value = r.value.trim();\n        results.push(this.config.practiceSentenceEvaluationResult[i]);\n      }\n\n      return results;\n    }\n  },\n  //  mounted() {\n  //    \n  //  },\n  methods: {\n    practiceWord: function practiceWord(word) {\n      this.currentPracticeWord = word;\n      this.config.currentWord = word;\n    },\n    computedAddedWord: function computedAddedWord(word) {\n      var score = 0;\n\n      if (this.utils.LearningInstructor) {\n        score = this.utils.LearningInstructor.getWordToLearnScore(word); //console.log(word, score)\n      }\n\n      if (score > 5) {\n        return \'word-to-learn\';\n      } //let score = this.\n\n    },\n    splitWord: function splitWord(text) {\n      var parts = text.split(\' \');\n      var output = [];\n      parts.forEach(function (p, i) {\n        if (i > 0) {\n          output.push(\' \');\n        }\n\n        output.push(p);\n      });\n      return output;\n    }\n  }\n};\n/* harmony default export */ var SentenceDifferencevue_type_script_lang_js_ = (SentenceDifference);\n// CONCATENATED MODULE: ./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&\n /* harmony default export */ var SentenceDifference_SentenceDifferencevue_type_script_lang_js_ = (SentenceDifferencevue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&\nvar SentenceDifferencevue_type_style_index_0_id_e323347e_lang_less_scoped_true_ = __webpack_require__(124);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml\nvar SentenceDifferencevue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml = __webpack_require__(126);\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue\n\n\n\n\n\n\n/* normalize component */\n\nvar SentenceDifference_component = Object(componentNormalizer["a" /* default */])(\n  SentenceDifference_SentenceDifferencevue_type_script_lang_js_,\n  SentenceDifferencevue_type_template_id_e323347e_scoped_true_render,\n  SentenceDifferencevue_type_template_id_e323347e_scoped_true_staticRenderFns,\n  false,\n  null,\n  "e323347e",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof SentenceDifferencevue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml["default"] === \'function\') Object(SentenceDifferencevue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml["default"])(SentenceDifference_component)\n\n/* hot reload */\nif (false) { var SentenceDifference_api; }\nSentenceDifference_component.options.__file = "src/components/SentencePanel/SentenceDifference/SentenceDifference.vue"\n/* harmony default export */ var SentenceDifference_SentenceDifference = (SentenceDifference_component.exports);\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&\n\nvar PracticeSentencePanel = {\n  props: [\'config\', \'localConfig\', \'utils\'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {};\n  },\n  watch: {\n    \'localConfig.locale\': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    }\n  },\n  components: {\n    SentenceDifference: SentenceDifference_SentenceDifference\n  },\n  computed: {\n    isPracticing: function isPracticing() {\n      return this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0;\n    },\n    readEvaluationResult: function readEvaluationResult() {\n      return this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0;\n    }\n  },\n  //  mounted() {\n  //    setTimeout(() => {\n  //      this.practice()\n  //    }, 3000)\n  //  },\n  methods: {\n    practice: function practice() {\n      if (!this.utils.LearningInstructor) {\n        return false;\n      }\n\n      this.utils.LearningInstructor.practiceSentence();\n    }\n  }\n};\n/* harmony default export */ var PracticeSentencePanelvue_type_script_lang_js_ = (PracticeSentencePanel);\n// CONCATENATED MODULE: ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&\n /* harmony default export */ var PracticeSentencePanel_PracticeSentencePanelvue_type_script_lang_js_ = (PracticeSentencePanelvue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&\nvar PracticeSentencePanelvue_type_style_index_0_id_f30771e2_lang_less_scoped_true_ = __webpack_require__(127);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml\nvar PracticeSentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml = __webpack_require__(129);\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue\n\n\n\n\n\n\n/* normalize component */\n\nvar PracticeSentencePanel_component = Object(componentNormalizer["a" /* default */])(\n  PracticeSentencePanel_PracticeSentencePanelvue_type_script_lang_js_,\n  PracticeSentencePanelvue_type_template_id_f30771e2_scoped_true_render,\n  PracticeSentencePanelvue_type_template_id_f30771e2_scoped_true_staticRenderFns,\n  false,\n  null,\n  "f30771e2",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof PracticeSentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml["default"] === \'function\') Object(PracticeSentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml["default"])(PracticeSentencePanel_component)\n\n/* hot reload */\nif (false) { var PracticeSentencePanel_api; }\nPracticeSentencePanel_component.options.__file = "src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue"\n/* harmony default export */ var PracticeSentencePanel_PracticeSentencePanel = (PracticeSentencePanel_component.exports);\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&\n\n\nvar MainSentencePanel = {\n  props: [\'config\', \'localConfig\', \'utils\', \'sentence\'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {};\n  },\n  watch: {\n    \'localConfig.locale\': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    }\n  },\n  components: {\n    CurrentSentence: CurrentSentence_CurrentSentence,\n    PracticeSentencePanel: PracticeSentencePanel_PracticeSentencePanel\n  } //  computed: {\n  //\n  //  },\n  //  mounted() {\n  //    \n  //  },\n  //  methods: {\n  //\n  //  }\n\n};\n/* harmony default export */ var MainSentencePanelvue_type_script_lang_js_ = (MainSentencePanel);\n// CONCATENATED MODULE: ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&\n /* harmony default export */ var MainSentencePanel_MainSentencePanelvue_type_script_lang_js_ = (MainSentencePanelvue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&\nvar MainSentencePanelvue_type_style_index_0_id_0ac19693_lang_less_scoped_true_ = __webpack_require__(130);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&\nvar MainSentencePanelPracticevue_type_style_index_1_id_0ac19693_lang_less_scoped_true_ = __webpack_require__(132);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml\nvar MainSentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml = __webpack_require__(134);\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.vue\n\n\n\n\n\n\n\n/* normalize component */\n\nvar MainSentencePanel_component = Object(componentNormalizer["a" /* default */])(\n  MainSentencePanel_MainSentencePanelvue_type_script_lang_js_,\n  MainSentencePanelvue_type_template_id_0ac19693_scoped_true_render,\n  MainSentencePanelvue_type_template_id_0ac19693_scoped_true_staticRenderFns,\n  false,\n  null,\n  "0ac19693",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof MainSentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml["default"] === \'function\') Object(MainSentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml["default"])(MainSentencePanel_component)\n\n/* hot reload */\nif (false) { var MainSentencePanel_api; }\nMainSentencePanel_component.options.__file = "src/components/SentencePanel/MainSentencePanel/MainSentencePanel.vue"\n/* harmony default export */ var MainSentencePanel_MainSentencePanel = (MainSentencePanel_component.exports);\n// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--6!./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js&\n\n\n\n\nvar SentencePanel = {\n  props: [\'config\', \'localConfig\', \'utils\'],\n  data: function data() {\n    this.$i18n.locale = this.localConfig.locale;\n    return {\n      //show: false,\n      pageTransition: false,\n      pageTransitionShow: false,\n      pageTransitionToNext: true,\n      pageTransitionBeforeSentence: \'\',\n      pageTransitionAfterSentence: \'\'\n    };\n  },\n  watch: {\n    \'localConfig.locale\': function localConfigLocale() {\n      this.$i18n.locale = this.localConfig.locale;\n    },\n    \'localConfig.playingIndex\': function () {\n      var _localConfigPlayingIndex = asyncToGenerator_default()( /*#__PURE__*/regenerator_default.a.mark(function _callee(newIndex, oldIndex) {\n        return regenerator_default.a.wrap(function _callee$(_context) {\n          while (1) {\n            switch (_context.prev = _context.next) {\n              case 0:\n                //console.log(newIndex, oldIndex)\n                this.pageTransitionToNext = newIndex > oldIndex;\n                this.pageTransitionAfterSentence = this.currentSentence + \'\';\n                this.pageTransitionBeforeSentence = this.config.sentenceList[oldIndex] + \'\';\n                this.pageTransition = true;\n                this.pageTransitionShow = true; //console.log(\'before\', this.pageTransitionBeforeSentence)\n                //console.log(\'after\', this.pageTransitionAfterSentence)\n                //this.pageTransitionNextSentence\n\n                _context.next = 7;\n                return this.utils.AsyncUtils.sleep(500);\n\n              case 7:\n                this.pageTransition = false;\n                this.pageTransitionShow = false; //console.log(this.pageTransition)\n\n              case 9:\n              case "end":\n                return _context.stop();\n            }\n          }\n        }, _callee, this);\n      }));\n\n      function localConfigPlayingIndex(_x, _x2) {\n        return _localConfigPlayingIndex.apply(this, arguments);\n      }\n\n      return localConfigPlayingIndex;\n    }()\n  },\n  computed: {\n    currentSentence: function currentSentence() {\n      //console.log(this.utils.LearningInstructor)\n      if (this.config.inited === true) {\n        //console.log(this.utils.LearningInstructor.currentSentence)\n        return this.utils.LearningInstructor.currentSentence;\n      } else {\n        return \'\';\n      }\n    },\n    previousSentence: function previousSentence() {\n      //console.log(this.localConfig.playingIndex)\n      if (this.localConfig.playingIndex === 0) {\n        return \'\';\n      }\n\n      return this.config.sentenceList[this.localConfig.playingIndex - 1];\n    },\n    nextSentence: function nextSentence() {\n      //console.log(this.localConfig.playingIndex)\n      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {\n        return \'\';\n      }\n\n      return this.config.sentenceList[this.localConfig.playingIndex + 1];\n    }\n  },\n  components: {\n    //    CurrentSentence,\n    MainSentencePanel: MainSentencePanel_MainSentencePanel,\n    WordModal: WordModal_WordModal\n  },\n  //  mounted() {\n  //    \n  //  },\n  methods: {\n    goToPreviousSentence: function goToPreviousSentence() {\n      this.utils.LearningInstructor.goToPreviousSentence();\n    },\n    goToNextSentence: function goToNextSentence() {\n      this.utils.LearningInstructor.goToNextSentence();\n    } //    speakCurrentSentence: async function () {\n    //      await this.$refs.CurrentSentence.speakCurrentSentence()\n    //    }\n\n  }\n};\n/* harmony default export */ var SentencePanelvue_type_script_lang_js_ = (SentencePanel);\n// CONCATENATED MODULE: ./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js&\n /* harmony default export */ var SentencePanel_SentencePanelvue_type_script_lang_js_ = (SentencePanelvue_type_script_lang_js_); \n// EXTERNAL MODULE: ./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&\nvar SentencePanelvue_type_style_index_0_id_3486f593_lang_less_scoped_true_ = __webpack_require__(135);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&\nvar SentencePanelTransitionvue_type_style_index_1_id_3486f593_lang_less_scoped_true_ = __webpack_require__(137);\n\n// EXTERNAL MODULE: ./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml\nvar SentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml = __webpack_require__(139);\n\n// CONCATENATED MODULE: ./src/components/SentencePanel/SentencePanel.vue\n\n\n\n\n\n\n\n/* normalize component */\n\nvar SentencePanel_component = Object(componentNormalizer["a" /* default */])(\n  SentencePanel_SentencePanelvue_type_script_lang_js_,\n  render,\n  staticRenderFns,\n  false,\n  null,\n  "3486f593",\n  null\n  \n)\n\n/* custom blocks */\n\nif (typeof SentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml["default"] === \'function\') Object(SentencePanelvue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml["default"])(SentencePanel_component)\n\n/* hot reload */\nif (false) { var SentencePanel_api; }\nSentencePanel_component.options.__file = "src/components/SentencePanel/SentencePanel.vue"\n/* harmony default export */ var SentencePanel_SentencePanel = __webpack_exports__["default"] = (SentencePanel_component.exports);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMTQ3LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLmh0bWw/M2U5YSIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1dvcmRNb2RhbC9Xb3JkTW9kYWwuaHRtbD9kNmE1Iiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvV29yZE1vZGFsL1dvcmRNb2RhbC5qcz83N2I2Iiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvV29yZE1vZGFsL1dvcmRNb2RhbC5qcz8xNjlmIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvV29yZE1vZGFsL1dvcmRNb2RhbC52dWU/ZjA0OSIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsLmh0bWw/ODJhZCIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL0N1cnJlbnRTZW50ZW5jZS9DdXJyZW50U2VudGVuY2UuaHRtbD82M2JiIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvQ3VycmVudFNlbnRlbmNlL0N1cnJlbnRTZW50ZW5jZS5qcz8xNzgxIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvQ3VycmVudFNlbnRlbmNlL0N1cnJlbnRTZW50ZW5jZS5qcz8zN2VkIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvQ3VycmVudFNlbnRlbmNlL0N1cnJlbnRTZW50ZW5jZS52dWU/NWM1MSIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwuaHRtbD84NDkyIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvU2VudGVuY2VEaWZmZXJlbmNlL1NlbnRlbmNlRGlmZmVyZW5jZS5odG1sP2RlY2EiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLmpzPzBiNWMiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLmpzP2U4NWUiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZURpZmZlcmVuY2UvU2VudGVuY2VEaWZmZXJlbmNlLnZ1ZT9lNmExIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvUHJhY3RpY2VTZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC5qcz9kMDU3Iiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvUHJhY3RpY2VTZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC5qcz9iMmZiIiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvUHJhY3RpY2VTZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC52dWU/MWY2MSIsIndlYnBhY2s6Ly8vLi9zcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsL01haW5TZW50ZW5jZVBhbmVsLmpzPzE2MTciLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC9NYWluU2VudGVuY2VQYW5lbC5qcz9kZWI5Iiwid2VicGFjazovLy8uL3NyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvTWFpblNlbnRlbmNlUGFuZWwvTWFpblNlbnRlbmNlUGFuZWwudnVlP2UxNWQiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLmpzPzQxMTciLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLmpzPzhkNTEiLCJ3ZWJwYWNrOi8vLy4vc3JjL2NvbXBvbmVudHMvU2VudGVuY2VQYW5lbC9TZW50ZW5jZVBhbmVsLnZ1ZT8zNzA3Il0sInNvdXJjZXNDb250ZW50IjpbInZhciByZW5kZXIgPSBmdW5jdGlvbigpIHtcbiAgdmFyIF92bSA9IHRoaXNcbiAgdmFyIF9oID0gX3ZtLiRjcmVhdGVFbGVtZW50XG4gIHZhciBfYyA9IF92bS5fc2VsZi5fYyB8fCBfaFxuICByZXR1cm4gX2MoXG4gICAgXCJkaXZcIixcbiAgICB7IHN0YXRpY0NsYXNzOiBcIlNlbnRlbmNlUGFuZWxcIiB9LFxuICAgIFtcbiAgICAgIF9jKFxuICAgICAgICBcImRpdlwiLFxuICAgICAgICB7XG4gICAgICAgICAgc3RhdGljQ2xhc3M6IFwidWkgc2VnbWVudCBzZW50ZW5jZS1zZWdtZW50XCIsXG4gICAgICAgICAgb246IHsgY2xpY2s6IF92bS5nb1RvUHJldmlvdXNTZW50ZW5jZSB9XG4gICAgICAgIH0sXG4gICAgICAgIFtcbiAgICAgICAgICBfdm0ubG9jYWxDb25maWcucGxheWluZ0luZGV4ID4gMFxuICAgICAgICAgICAgPyBfYyhcImRpdlwiLCB7IHN0YXRpY0NsYXNzOiBcInByZXZpb3VzLXNlbnRlbmNlXCIgfSwgW1xuICAgICAgICAgICAgICAgIF9jKFwiaVwiLCB7IHN0YXRpY0NsYXNzOiBcInN0ZXAgYmFja3dhcmQgaWNvblwiIH0pLFxuICAgICAgICAgICAgICAgIF92bS5fdihcIlxcbiAgICAgIFwiICsgX3ZtLl9zKF92bS5wcmV2aW91c1NlbnRlbmNlKSArIFwiXFxuICAgIFwiKVxuICAgICAgICAgICAgICBdKVxuICAgICAgICAgICAgOiBfdm0uX2UoKSxcbiAgICAgICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgICAgIF92bS5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXggPT09IDBcbiAgICAgICAgICAgID8gX2MoXCJkaXZcIiwgeyBzdGF0aWNDbGFzczogXCJwcmV2aW91cy1zZW50ZW5jZSBzdGFydFwiIH0sIFtcbiAgICAgICAgICAgICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJoYW5kIHBvaW50IHJpZ2h0IG91dGxpbmUgaWNvblwiIH0pLFxuICAgICAgICAgICAgICAgIF92bS5fdihcIlxcbiAgICAgIFwiICsgX3ZtLl9zKF92bS4kdChcIlN0YXJ0XCIpKSArIFwiXFxuICAgIFwiKVxuICAgICAgICAgICAgICBdKVxuICAgICAgICAgICAgOiBfdm0uX2UoKVxuICAgICAgICBdXG4gICAgICApLFxuICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgIF9jKFxuICAgICAgICBcImRpdlwiLFxuICAgICAgICB7IHN0YXRpY0NsYXNzOiBcInBhZ2UtY29udGFpbmVyXCIgfSxcbiAgICAgICAgW1xuICAgICAgICAgICFfdm0ucGFnZVRyYW5zaXRpb25cbiAgICAgICAgICAgID8gX2MoXCJNYWluU2VudGVuY2VQYW5lbFwiLCB7XG4gICAgICAgICAgICAgICAgYXR0cnM6IHtcbiAgICAgICAgICAgICAgICAgIGNvbmZpZzogX3ZtLmNvbmZpZyxcbiAgICAgICAgICAgICAgICAgIGxvY2FsQ29uZmlnOiBfdm0ubG9jYWxDb25maWcsXG4gICAgICAgICAgICAgICAgICB1dGlsczogX3ZtLnV0aWxzLFxuICAgICAgICAgICAgICAgICAgc2VudGVuY2U6IF92bS5jdXJyZW50U2VudGVuY2VcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIH0pXG4gICAgICAgICAgICA6IF92bS5fZSgpXG4gICAgICAgIF0sXG4gICAgICAgIDFcbiAgICAgICksXG4gICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgX2MoXG4gICAgICAgIFwiZGl2XCIsXG4gICAgICAgIHtcbiAgICAgICAgICBkaXJlY3RpdmVzOiBbXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgIG5hbWU6IFwic2hvd1wiLFxuICAgICAgICAgICAgICByYXdOYW1lOiBcInYtc2hvd1wiLFxuICAgICAgICAgICAgICB2YWx1ZTogX3ZtLnBhZ2VUcmFuc2l0aW9uLFxuICAgICAgICAgICAgICBleHByZXNzaW9uOiBcInBhZ2VUcmFuc2l0aW9uXCJcbiAgICAgICAgICAgIH1cbiAgICAgICAgICBdLFxuICAgICAgICAgIHN0YXRpY0NsYXNzOiBcInBhZ2UtY29udGFpbmVyLXRyYW5zaXRpb25cIixcbiAgICAgICAgICBjbGFzczoge1xuICAgICAgICAgICAgdG9SaWdodDogX3ZtLnBhZ2VUcmFuc2l0aW9uVG9OZXh0LFxuICAgICAgICAgICAgdG9MZWZ0OiAhX3ZtLnBhZ2VUcmFuc2l0aW9uVG9OZXh0XG4gICAgICAgICAgfVxuICAgICAgICB9LFxuICAgICAgICBbXG4gICAgICAgICAgX2MoXCJ0cmFuc2l0aW9uXCIsIHsgYXR0cnM6IHsgbmFtZTogXCJzbGlkZVwiIH0gfSwgW1xuICAgICAgICAgICAgX3ZtLnBhZ2VUcmFuc2l0aW9uU2hvd1xuICAgICAgICAgICAgICA/IF9jKFxuICAgICAgICAgICAgICAgICAgXCJkaXZcIixcbiAgICAgICAgICAgICAgICAgIHsgc3RhdGljQ2xhc3M6IFwibWFpbi1zZW50ZW5jZS1wYW5lbC1jb250YWluZXJcIiB9LFxuICAgICAgICAgICAgICAgICAgW1xuICAgICAgICAgICAgICAgICAgICBfYyhcIk1haW5TZW50ZW5jZVBhbmVsXCIsIHtcbiAgICAgICAgICAgICAgICAgICAgICBhdHRyczoge1xuICAgICAgICAgICAgICAgICAgICAgICAgY29uZmlnOiBfdm0uY29uZmlnLFxuICAgICAgICAgICAgICAgICAgICAgICAgbG9jYWxDb25maWc6IF92bS5sb2NhbENvbmZpZyxcbiAgICAgICAgICAgICAgICAgICAgICAgIHV0aWxzOiBfdm0udXRpbHMsXG4gICAgICAgICAgICAgICAgICAgICAgICBzZW50ZW5jZTogX3ZtLnBhZ2VUcmFuc2l0aW9uQWZ0ZXJTZW50ZW5jZVxuICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgfSlcbiAgICAgICAgICAgICAgICAgIF0sXG4gICAgICAgICAgICAgICAgICAxXG4gICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICA6IF92bS5fZSgpXG4gICAgICAgICAgXSlcbiAgICAgICAgXSxcbiAgICAgICAgMVxuICAgICAgKSxcbiAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICBfYyhcbiAgICAgICAgXCJkaXZcIixcbiAgICAgICAge1xuICAgICAgICAgIHN0YXRpY0NsYXNzOiBcInVpIHNlZ21lbnQgc2VudGVuY2Utc2VnbWVudCBuZXh0XCIsXG4gICAgICAgICAgb246IHsgY2xpY2s6IF92bS5nb1RvTmV4dFNlbnRlbmNlIH1cbiAgICAgICAgfSxcbiAgICAgICAgW1xuICAgICAgICAgIF92bS5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXggPCBfdm0uY29uZmlnLnNlbnRlbmNlTGlzdC5sZW5ndGggLSAxXG4gICAgICAgICAgICA/IFtcbiAgICAgICAgICAgICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJzdGVwIGZvcndhcmQgaWNvblwiIH0pLFxuICAgICAgICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgICAgICAgX2MoXCJkaXZcIiwgeyBzdGF0aWNDbGFzczogXCJuZXh0LXNlbnRlbmNlXCIgfSwgW1xuICAgICAgICAgICAgICAgICAgX3ZtLl92KFwiXFxuICAgICAgICBcIiArIF92bS5fcyhfdm0ubmV4dFNlbnRlbmNlKSArIFwiXFxuICAgICAgXCIpXG4gICAgICAgICAgICAgICAgXSlcbiAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgOiBfdm0uX2UoKSxcbiAgICAgICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgICAgIF92bS5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXggPT09IF92bS5jb25maWcuc2VudGVuY2VMaXN0Lmxlbmd0aCAtIDFcbiAgICAgICAgICAgID8gX2MoXCJkaXZcIiwgeyBzdGF0aWNDbGFzczogXCJuZXh0LXNlbnRlbmNlIGZpbmlzaFwiIH0sIFtcbiAgICAgICAgICAgICAgICBfdm0uX3YoXG4gICAgICAgICAgICAgICAgICBcIlxcbiAgICAgIFxcbiAgICAgIFwiICsgX3ZtLl9zKF92bS4kdChcIkZpbmlzaFwiKSkgKyBcIlxcbiAgICAgIFwiXG4gICAgICAgICAgICAgICAgKSxcbiAgICAgICAgICAgICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJmbGFnIGNoZWNrZXJlZCBpY29uXCIgfSlcbiAgICAgICAgICAgICAgXSlcbiAgICAgICAgICAgIDogX3ZtLl9lKClcbiAgICAgICAgXSxcbiAgICAgICAgMlxuICAgICAgKSxcbiAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICBfYyhcIldvcmRNb2RhbFwiLCB7XG4gICAgICAgIHJlZjogXCJXb3JkTW9kYWxcIixcbiAgICAgICAgYXR0cnM6IHtcbiAgICAgICAgICBjb25maWc6IF92bS5jb25maWcsXG4gICAgICAgICAgbG9jYWxDb25maWc6IF92bS5sb2NhbENvbmZpZyxcbiAgICAgICAgICB1dGlsczogX3ZtLnV0aWxzXG4gICAgICAgIH1cbiAgICAgIH0pXG4gICAgXSxcbiAgICAxXG4gIClcbn1cbnZhciBzdGF0aWNSZW5kZXJGbnMgPSBbXVxucmVuZGVyLl93aXRoU3RyaXBwZWQgPSB0cnVlXG5cbmV4cG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zIH0iLCJ2YXIgcmVuZGVyID0gZnVuY3Rpb24oKSB7XG4gIHZhciBfdm0gPSB0aGlzXG4gIHZhciBfaCA9IF92bS4kY3JlYXRlRWxlbWVudFxuICB2YXIgX2MgPSBfdm0uX3NlbGYuX2MgfHwgX2hcbiAgcmV0dXJuIF9jKFxuICAgIFwiZGl2XCIsXG4gICAgeyByZWY6IFwiTW9kYWxcIiwgc3RhdGljQ2xhc3M6IFwidWkgbW9kYWwgQ29uZmlndXJhdGlvbk1vZGFsXCIgfSxcbiAgICBbXG4gICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJjbG9zZSBpY29uXCIgfSksXG4gICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgX2MoXCJkaXZcIiwgeyBzdGF0aWNDbGFzczogXCJoZWFkZXJcIiB9LCBbXG4gICAgICAgIF92bS5fdihcIlxcbiAgICBcIiArIF92bS5fcyhfdm0uJHQoXCJXb3JkIFByYWN0aWNlXCIpKSArIFwiXFxuICBcIilcbiAgICAgIF0pLFxuICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiY29udGVudCB1aSBmb3JtXCIgfSwgW1xuICAgICAgICBfYyhcbiAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgIHtcbiAgICAgICAgICAgIHN0YXRpY0NsYXNzOiBcInVpIHNlZ21lbnQgd29yZC1zZWdtZW50XCIsXG4gICAgICAgICAgICBjbGFzczogeyBpc1NwZWFraW5nOiBfdm0uaXNTcGVha2luZyB9LFxuICAgICAgICAgICAgb246IHsgY2xpY2s6IF92bS5zcGVha1dvcmQgfVxuICAgICAgICAgIH0sXG4gICAgICAgICAgW1xuICAgICAgICAgICAgIV92bS53b3JkVHJhbnNcbiAgICAgICAgICAgICAgPyBfYyhcbiAgICAgICAgICAgICAgICAgIFwiaDJcIixcbiAgICAgICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwidWkgY2VudGVyIGFsaWduZWQgaGVhZGVyXCIsXG4gICAgICAgICAgICAgICAgICAgIGNsYXNzOiBfdm0uY29tcHV0ZWRXb3JkTWFza0NsYXNzZXNXaXRob3V0VHJhbnNcbiAgICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgICBbXG4gICAgICAgICAgICAgICAgICAgIF9jKFwic3BhblwiLCBbXG4gICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgICAgXCIgKyBfdm0uX3MoX3ZtLmN1cnJlbnRXb3JkKSArIFwiXFxuICAgICAgICBcIlxuICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgXSlcbiAgICAgICAgICAgICAgICAgIF1cbiAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgIDogX3ZtLl9lKCksXG4gICAgICAgICAgICBfdm0uX3YoXCIgXCIpLFxuICAgICAgICAgICAgX3ZtLndvcmRUcmFucyAmJiBfdm0uY29uZmlnLmN1cnJlbnRXb3JkTWFzayAhPT0gXCJ0cmFuc2xhdGlvblwiXG4gICAgICAgICAgICAgID8gX2MoXG4gICAgICAgICAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ1aSB0d28gY29sdW1uIGNlbnRlciBhbGlnbmVkIGdyaWRcIiB9LFxuICAgICAgICAgICAgICAgICAgW1xuICAgICAgICAgICAgICAgICAgICBfdm0uX20oMCksXG4gICAgICAgICAgICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgICAgICAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiY29sdW1uXCIgfSwgW1xuICAgICAgICAgICAgICAgICAgICAgIF9jKFxuICAgICAgICAgICAgICAgICAgICAgICAgXCJoMlwiLFxuICAgICAgICAgICAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgICAgICAgICAgICBzdGF0aWNDbGFzczogXCJ1aSBjZW50ZXIgYWxpZ25lZCBoZWFkZXJcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3M6IF92bS5jb21wdXRlZFdvcmRNYXNrQ2xhc3Nlc1dpdGhUcmFuc1xuICAgICAgICAgICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICAgICAgICAgIFtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgX2MoXCJzcGFuXCIsIFtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBfdm0uX3YoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgICAgICAgXCIgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBfdm0uX3MoX3ZtLmN1cnJlbnRXb3JkKSArXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICAgICAgXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgICAgICAgICAgIF0pXG4gICAgICAgICAgICAgICAgICAgICAgICBdXG4gICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICBdKSxcbiAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgICAgICAgICAgX2MoXG4gICAgICAgICAgICAgICAgICAgICAgXCJkaXZcIixcbiAgICAgICAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICAgICAgICBzdGF0aWNDbGFzczogXCJjb2x1bW5cIixcbiAgICAgICAgICAgICAgICAgICAgICAgIG9uOiB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgIGNsaWNrOiBmdW5jdGlvbigkZXZlbnQpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAkZXZlbnQuc3RvcFByb3BhZ2F0aW9uKClcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gX3ZtLm9wZW5EaWN0aW9uYXJ5LmFwcGx5KG51bGwsIGFyZ3VtZW50cylcbiAgICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgICAgICAgW1xuICAgICAgICAgICAgICAgICAgICAgICAgX2MoXCJoMlwiLCB7IHN0YXRpY0NsYXNzOiBcInVpIGNlbnRlciBhbGlnbmVkIGhlYWRlclwiIH0sIFtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICAgICAgXCIgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl9zKF92bS53b3JkVHJhbnMpICtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICAgIFwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgIF0pXG4gICAgICAgICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgICBdXG4gICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICA6IF92bS5fZSgpLFxuICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgIF92bS53b3JkVHJhbnMgJiYgX3ZtLmNvbmZpZy5jdXJyZW50V29yZE1hc2sgPT09IFwidHJhbnNsYXRpb25cIlxuICAgICAgICAgICAgICA/IF9jKFwiaDJcIiwgeyBzdGF0aWNDbGFzczogXCJ1aSBjZW50ZXIgYWxpZ25lZCBoZWFkZXJcIiB9LCBbXG4gICAgICAgICAgICAgICAgICBfdm0uX3YoXCJcXG4gICAgICAgICAgXCIgKyBfdm0uX3MoX3ZtLndvcmRUcmFucykgKyBcIlxcbiAgICAgIFwiKVxuICAgICAgICAgICAgICAgIF0pXG4gICAgICAgICAgICAgIDogX3ZtLl9lKClcbiAgICAgICAgICBdXG4gICAgICAgICksXG4gICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgIF9jKFxuICAgICAgICAgIFwiaDJcIixcbiAgICAgICAgICB7XG4gICAgICAgICAgICBzdGF0aWNDbGFzczogXCJ1aSBjZW50ZXIgYWxpZ25lZCBoZWFkZXIgcHJhY3RpY2UtaGludFwiLFxuICAgICAgICAgICAgY2xhc3M6IF92bS5jb21wdXRlZFByYWN0aWNlV29yZENsYXNzZXMsXG4gICAgICAgICAgICBvbjogeyBjbGljazogX3ZtLnByYWN0aWNlV29yZCB9XG4gICAgICAgICAgfSxcbiAgICAgICAgICBbXG4gICAgICAgICAgICAhX3ZtLmNvbmZpZy5wcmFjdGljZVdvcmRcbiAgICAgICAgICAgICAgPyBbXG4gICAgICAgICAgICAgICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJjb252ZXJzYXRpb24gaWNvblwiIH0pLFxuICAgICAgICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgICAgICAgICFfdm0uaXNQcmFjdGljaW5nXG4gICAgICAgICAgICAgICAgICAgID8gW1xuICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgICBcIiArXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl9zKF92bS4kdChcIkxldCdzIFByYWN0aWNlIVwiKSkgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICAgIF1cbiAgICAgICAgICAgICAgICAgICAgOiBfdm0uX2UoKSxcbiAgICAgICAgICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgICAgICAgICBfdm0uaXNQcmFjdGljaW5nXG4gICAgICAgICAgICAgICAgICAgID8gW1xuICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgICBcIiArXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl9zKF92bS4kdChcIktlZXAgZ29pbmcuLi4gS2VlcCBnb2luZy4uLlwiKSkgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICAgIF1cbiAgICAgICAgICAgICAgICAgICAgOiBfdm0uX2UoKVxuICAgICAgICAgICAgICAgIF1cbiAgICAgICAgICAgICAgOiBfdm0uX2UoKSxcbiAgICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgICBfdm0uY29uZmlnLnByYWN0aWNlV29yZFxuICAgICAgICAgICAgICA/IFtcbiAgICAgICAgICAgICAgICAgIF92bS5fdihcbiAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgIFwiICtcbiAgICAgICAgICAgICAgICAgICAgICBfdm0uX3MoX3ZtLmNvbmZpZy5wcmFjdGljZVdvcmQpICtcbiAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgXCJcbiAgICAgICAgICAgICAgICAgICksXG4gICAgICAgICAgICAgICAgICBfYyhcbiAgICAgICAgICAgICAgICAgICAgXCJoM1wiLFxuICAgICAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwicHJhY3RpY2UtYWdhaW4taGludFwiLFxuICAgICAgICAgICAgICAgICAgICAgIGNsYXNzOiB7XG4gICAgICAgICAgICAgICAgICAgICAgICB2aXNpYmxlOlxuICAgICAgICAgICAgICAgICAgICAgICAgICAhX3ZtLmlzUHJhY3RpY2luZyAmJlxuICAgICAgICAgICAgICAgICAgICAgICAgICBfdm0uY29uZmlnLnByYWN0aWNlV29yZFNjb3JlIDwgMC43XG4gICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgICAgICBbXG4gICAgICAgICAgICAgICAgICAgICAgX2MoXCJpXCIsIHsgc3RhdGljQ2xhc3M6IFwiY29udmVyc2F0aW9uIGljb25cIiB9KSxcbiAgICAgICAgICAgICAgICAgICAgICBfdm0uX3YoXG4gICAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgICBcIiArXG4gICAgICAgICAgICAgICAgICAgICAgICAgIF92bS5fcyhfdm0uJHQoXCJQcmFjdGljZSBhZ2Fpbj9cIikpICtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgIFwiXG4gICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICBdXG4gICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICA6IF92bS5fZSgpXG4gICAgICAgICAgXSxcbiAgICAgICAgICAyXG4gICAgICAgIClcbiAgICAgIF0pLFxuICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiYWN0aW9uc1wiIH0sIFtcbiAgICAgICAgX2MoXG4gICAgICAgICAgXCJkaXZcIixcbiAgICAgICAgICB7IHN0YXRpY0NsYXNzOiBcInVpIGJ1dHRvblwiLCBvbjogeyBjbGljazogX3ZtLm9wZW5EaWN0aW9uYXJ5IH0gfSxcbiAgICAgICAgICBbX3ZtLl92KFwiXFxuICAgICAgXCIgKyBfdm0uX3MoX3ZtLiR0KFwiRGljdGlvbmFyeVwiKSkgKyBcIlxcbiAgICBcIildXG4gICAgICAgICksXG4gICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgIF9jKFxuICAgICAgICAgIFwiZGl2XCIsXG4gICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ1aSBpY29uIGJ1dHRvblwiLCBvbjogeyBjbGljazogX3ZtLnByYWN0aWNlV29yZCB9IH0sXG4gICAgICAgICAgW19jKFwiaVwiLCB7IHN0YXRpY0NsYXNzOiBcImNvbW1lbnQgb3V0bGluZSBpY29uXCIgfSldXG4gICAgICAgICksXG4gICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgIF9jKFxuICAgICAgICAgIFwiZGl2XCIsXG4gICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ1aSBpY29uIGJ1dHRvblwiLCBvbjogeyBjbGljazogX3ZtLnNwZWFrV29yZCB9IH0sXG4gICAgICAgICAgW1xuICAgICAgICAgICAgX2MoXCJpXCIsIHtcbiAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwiaWNvblwiLFxuICAgICAgICAgICAgICBjbGFzczogeyBwbGF5OiAhX3ZtLmlzU3BlYWtpbmcsIHBhdXNlOiBfdm0uaXNTcGVha2luZyB9XG4gICAgICAgICAgICB9KVxuICAgICAgICAgIF1cbiAgICAgICAgKSxcbiAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgX2MoXCJkaXZcIiwgeyBzdGF0aWNDbGFzczogXCJ1aSBidXR0b25cIiwgb246IHsgY2xpY2s6IF92bS5jbG9zZSB9IH0sIFtcbiAgICAgICAgICBfdm0uX3YoXCJcXG4gICAgICBcIiArIF92bS5fcyhfdm0uJHQoXCJPS1wiKSkgKyBcIlxcbiAgICBcIilcbiAgICAgICAgXSlcbiAgICAgIF0pXG4gICAgXVxuICApXG59XG52YXIgc3RhdGljUmVuZGVyRm5zID0gW1xuICBmdW5jdGlvbigpIHtcbiAgICB2YXIgX3ZtID0gdGhpc1xuICAgIHZhciBfaCA9IF92bS4kY3JlYXRlRWxlbWVudFxuICAgIHZhciBfYyA9IF92bS5fc2VsZi5fYyB8fCBfaFxuICAgIHJldHVybiBfYyhcImRpdlwiLCB7IHN0YXRpY0NsYXNzOiBcInVpIHZlcnRpY2FsIGRpdmlkZXJcIiB9LCBbXG4gICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJsYW5ndWFnZSBpY29uXCIgfSlcbiAgICBdKVxuICB9XG5dXG5yZW5kZXIuX3dpdGhTdHJpcHBlZCA9IHRydWVcblxuZXhwb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSIsImltcG9ydCAkIGZyb20gJ2pxdWVyeSdcclxuXHJcbmxldCBXb3JkTW9kYWwgPSB7XHJcbiAgcHJvcHM6IFsnY29uZmlnJywgJ2xvY2FsQ29uZmlnJywgJ3V0aWxzJ10sXHJcbiAgZGF0YSAoKSB7ICAgIFxyXG4gICAgdGhpcy4kaTE4bi5sb2NhbGUgPSB0aGlzLmxvY2FsQ29uZmlnLmxvY2FsZVxyXG4gICAgcmV0dXJuIHtcclxuICAgICAgbW9kYWw6IG51bGwsXHJcbiAgICAgIGlzT3BlbmVkOiBmYWxzZSxcclxuICAgICAgaXNTcGVha2luZzogZmFsc2UsXHJcbiAgICAgIHdvcmRUcmFuczogbnVsbCxcclxuICAgICAgY3VycmVudFdvcmQ6IG51bGwsXHJcbiAgICAgIGlzUHJhY3RpY2luZzogZmFsc2VcclxuICAgIH1cclxuICB9LFxyXG4gIHdhdGNoOiB7XHJcbiAgICAnbG9jYWxDb25maWcubG9jYWxlJygpIHtcclxuICAgICAgdGhpcy4kaTE4bi5sb2NhbGUgPSB0aGlzLmxvY2FsQ29uZmlnLmxvY2FsZTtcclxuICAgIH0sXHJcbiAgICAnY29uZmlnLmN1cnJlbnRXb3JkJzogYXN5bmMgZnVuY3Rpb24gKCkge1xyXG4gICAgICAvL2NvbnNvbGUubG9nKHRoaXMuY29uZmlnLnByYWN0aWNlV29yZClcclxuICAgICAgXHJcbiAgICAgIGlmICh0aGlzLmN1cnJlbnRXb3JkID09PSBudWxsKSB7XHJcbiAgICAgICAgdGhpcy53b3JkVHJhbnMgPSBudWxsXHJcbiAgICAgIH1cclxuICAgICAgaWYgKHRoaXMuY29uZmlnLmN1cnJlbnRXb3JkIFxyXG4gICAgICAgICAgICAgICYmIHRoaXMuY29uZmlnLmN1cnJlbnRXb3JkICE9PSAnJykge1xyXG4gICAgICAgIHRoaXMuY3VycmVudFdvcmQgPSB0aGlzLmNvbmZpZy5jdXJyZW50V29yZFxyXG4gICAgICAgIHRoaXMuY29uZmlnLnByYWN0aWNlV29yZCA9IG51bGxcclxuICAgICAgICB0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmRTY29yZSA9IG51bGxcclxuICAgICAgICB0aGlzLm9wZW4oKVxyXG4gICAgICAgIFxyXG4gICAgICB9XHJcbiAgICAgIGVsc2Uge1xyXG4gICAgICAgIGF3YWl0IHRoaXMuY2xvc2UoKVxyXG4gICAgICAgIC8vYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKDEwMDApXHJcbiAgICAgICAgdGhpcy5jdXJyZW50V29yZCA9IG51bGxcclxuICAgICAgfVxyXG4gICAgfSxcclxuICAgICdjdXJyZW50V29yZCc6IGFzeW5jIGZ1bmN0aW9uICgpIHtcclxuICAgICAgaWYgKCF0aGlzLmN1cnJlbnRXb3JkKSB7XHJcbiAgICAgICAgcmV0dXJuIGZhbHNlXHJcbiAgICAgIH1cclxuICAgICAgLy9jb25zb2xlLmxvZyh0aGlzLmN1cnJlbnRXb3JkKVxyXG4gICAgICB0aGlzLndvcmRUcmFucyA9IGF3YWl0IHRoaXMudXRpbHMuVHJhbnNVdGlscy50cmFuc1pIVFcodGhpcy5jdXJyZW50V29yZClcclxuICAgIH1cclxuICB9LFxyXG4gIGNvbXB1dGVkOiB7XHJcbiAgICBjb21wdXRlZFdvcmRNYXNrQ2xhc3Nlc1dpdGhvdXRUcmFucyAoKSB7XHJcbiAgICAgIGxldCBjbGFzc2VzID0gW11cclxuICAgICAgXHJcbiAgICAgIGxldCBtYXNrID0gdGhpcy5jb25maWcuY3VycmVudFdvcmRNYXNrXHJcbiAgICAgIGlmIChtYXNrID09PSAndHJhbnNsYXRpb24nIFxyXG4gICAgICAgICAgICAgIHx8IG1hc2sgPT09ICd3b3JkLWJsb2NrJyBcclxuICAgICAgICAgICAgICB8fCBtYXNrID09PSAnc2VudGVuY2UtYmxvY2snICkge1xyXG4gICAgICAgIGNsYXNzZXMucHVzaCgnbWFza2VkJylcclxuICAgICAgfVxyXG4gICAgICByZXR1cm4gY2xhc3Nlc1xyXG4gICAgfSxcclxuICAgIGNvbXB1dGVkV29yZE1hc2tDbGFzc2VzV2l0aFRyYW5zICgpIHtcclxuICAgICAgbGV0IGNsYXNzZXMgPSBbXVxyXG4gICAgICBcclxuICAgICAgbGV0IG1hc2sgPSB0aGlzLmNvbmZpZy5jdXJyZW50V29yZE1hc2tcclxuICAgICAgaWYgKG1hc2sgPT09ICd3b3JkLWJsb2NrJyBcclxuICAgICAgICAgICAgICB8fCBtYXNrID09PSAnc2VudGVuY2UtYmxvY2snICkge1xyXG4gICAgICAgIGNsYXNzZXMucHVzaCgnbWFza2VkJylcclxuICAgICAgfVxyXG4gICAgICByZXR1cm4gY2xhc3Nlc1xyXG4gICAgfSxcclxuICAgIGNvbXB1dGVkUHJhY3RpY2VXb3JkQ2xhc3NlcyAoKSB7XHJcbiAgICAgIGxldCBjbGFzc2VzID0gW11cclxuICAgICAgXHJcbiAgICAgIGlmICghdGhpcy5pc1ByYWN0aWNpbmcgXHJcbiAgICAgICAgICAgICAgJiYgdGhpcy5jb25maWcucHJhY3RpY2VXb3JkID09PSBudWxsKSB7XHJcbiAgICAgICAgY2xhc3Nlcy5wdXNoKCdpY29uJylcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgaWYgKHRoaXMuaXNQcmFjdGljaW5nKSB7XHJcbiAgICAgICAgY2xhc3Nlcy5wdXNoKCdpc1ByYWN0aWNpbmcnKVxyXG4gICAgICB9XHJcbiAgICAgIGlmICh0aGlzLmlzUHJhY3RpY2luZyAmJiB0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmQgPT09IG51bGwpIHtcclxuICAgICAgICAvL2NvbnNvbGUubG9nKCdnbycpXHJcbiAgICAgICAgY2xhc3Nlcy5wdXNoKCdrZWVwLWdvaW5nJylcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgaWYgKHRoaXMuY29uZmlnLnByYWN0aWNlV29yZFNjb3JlXHJcbiAgICAgICAgICAgICAgJiYgdGhpcy5jb25maWcucHJhY3RpY2VXb3JkU2NvcmUgPiAwLjcpIHtcclxuICAgICAgICBjbGFzc2VzLnB1c2goJ3Bvc2l0aXZlJylcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgcmV0dXJuIGNsYXNzZXNcclxuICAgIH1cclxuICB9LFxyXG4vLyAgbW91bnRlZCgpIHtcclxuLy8gICAgbGV0IHJlc3VsdCA9IHRoaXMudXRpbHMuRGlmZlV0aWxzLmRpZmZDaGFycygnd29yZCcsICd3ZW9yZCcpXHJcbi8vICAgIGNvbnNvbGUubG9nKHJlc3VsdClcclxuLy8gIH0sXHJcbiAgbWV0aG9kczoge1xyXG4gICAgaW5pdDogZnVuY3Rpb24gKCkge1xyXG4gICAgICB0aGlzLm1vZGFsID0gJCh0aGlzLiRyZWZzLk1vZGFsKVxyXG4gICAgICBcclxuICAgICAgdGhpcy5tb2RhbC5tb2RhbCh7XHJcbiAgICAgICAgb25TaG93OiAoKSA9PiB7XHJcbiAgICAgICAgICAvL2NvbnNvbGUubG9nKCdvcGVuJylcclxuICAgICAgICAgIHRoaXMuaXNPcGVuZWQgPSB0cnVlXHJcbiAgICAgICAgfSxcclxuICAgICAgICBvbkhpZGRlbjogKCkgPT4ge1xyXG4gICAgICAgICAgdGhpcy5pc09wZW5lZCA9IGZhbHNlXHJcbiAgICAgICAgfVxyXG4gICAgICB9KVxyXG4gICAgfSxcclxuICAgIG9wZW46IGFzeW5jIGZ1bmN0aW9uICgpIHtcclxuICAgICAgaWYgKCF0aGlzLm1vZGFsKSB7XHJcbiAgICAgICAgdGhpcy5pbml0KClcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiB7XHJcbiAgICAgICAgdGhpcy5tb2RhbC5tb2RhbCgnc2hvdycsICgpID0+IHtcclxuICAgICAgICAgIHJlc29sdmUoKVxyXG4gICAgICAgICAgdGhpcy5zcGVha1dvcmQoKVxyXG4gICAgICAgIH0pXHJcbiAgICAgIH0pXHJcbiAgICB9LFxyXG4gICAgY2xvc2UgKCkge1xyXG4gICAgICByZXR1cm4gbmV3IFByb21pc2UoKHJlc29sdmUpID0+IHtcclxuICAgICAgICB0aGlzLm1vZGFsLm1vZGFsKCdoaWRlJywgKCkgPT4ge1xyXG4gICAgICAgICAgdGhpcy5jb25maWcuY3VycmVudFdvcmQgPSBudWxsXHJcbiAgICAgICAgICByZXNvbHZlKClcclxuICAgICAgICB9KVxyXG4gICAgICB9KVxyXG4gICAgfSxcclxuICAgIFxyXG4gICAgc3BlYWtXb3JkOiBhc3luYyBmdW5jdGlvbiAoKSB7XHJcbiAgICAgIHdoaWxlICghYXdhaXQgdGhpcy51dGlscy5MZWFybmluZ0luc3RydWN0b3IpIHtcclxuICAgICAgICBhd2FpdCB0aGlzLnV0aWxzLkFzeW5jVXRpbHMuc2xlZXAoKVxyXG4gICAgICB9XHJcbiAgICAgIFxyXG4gICAgICB0aGlzLmlzU3BlYWtpbmcgPSB0cnVlXHJcbiAgICAgIGF3YWl0IHRoaXMudXRpbHMuTGVhcm5pbmdJbnN0cnVjdG9yLnNwZWFrV29yZCh0aGlzLmNvbmZpZy5jdXJyZW50V29yZClcclxuICAgICAgdGhpcy5pc1NwZWFraW5nID0gZmFsc2VcclxuICAgICAgXHJcbiAgICAgIGF3YWl0IHRoaXMucHJhY3RpY2VXb3JkKClcclxuICAgIH0sXHJcbiAgICBcclxuICAgIHByYWN0aWNlV29yZDogYXN5bmMgZnVuY3Rpb24gKCkge1xyXG4gICAgICB3aGlsZSAoIWF3YWl0IHRoaXMudXRpbHMuTGVhcm5pbmdJbnN0cnVjdG9yKSB7XHJcbiAgICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKClcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgdGhpcy5pc1ByYWN0aWNpbmcgPSB0cnVlXHJcbiAgICAgIGF3YWl0IHRoaXMudXRpbHMuTGVhcm5pbmdJbnN0cnVjdG9yLnByYWN0aWNlV29yZCh0aGlzLmNvbmZpZy5jdXJyZW50V29yZClcclxuICAgICAgdGhpcy5pc1ByYWN0aWNpbmcgPSBmYWxzZVxyXG4gICAgfSxcclxuICAgIFxyXG4gICAgb3BlbkRpY3Rpb25hcnkgKCkge1xyXG4gICAgICB0aGlzLnV0aWxzLkRpY3RVdGlscy5vcGVuRGljdCh0aGlzLmNvbmZpZy5jdXJyZW50V29yZClcclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFdvcmRNb2RhbCIsImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNiEuL1dvcmRNb2RhbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvYmFiZWwtbG9hZGVyL2xpYi9pbmRleC5qcz8/cmVmLS02IS4vV29yZE1vZGFsLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIiwiaW1wb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSBmcm9tIFwiLi9Xb3JkTW9kYWwuaHRtbD92dWUmdHlwZT10ZW1wbGF0ZSZpZD0zYjRmNDYwOSZzY29wZWQ9dHJ1ZSZcIlxuaW1wb3J0IHNjcmlwdCBmcm9tIFwiLi9Xb3JkTW9kYWwuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCJcbmV4cG9ydCAqIGZyb20gXCIuL1dvcmRNb2RhbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuaW1wb3J0IHN0eWxlMCBmcm9tIFwiLi9Xb3JkTW9kYWwubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPTNiNGY0NjA5Jmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIlxuXG5cbi8qIG5vcm1hbGl6ZSBjb21wb25lbnQgKi9cbmltcG9ydCBub3JtYWxpemVyIGZyb20gXCIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3J1bnRpbWUvY29tcG9uZW50Tm9ybWFsaXplci5qc1wiXG52YXIgY29tcG9uZW50ID0gbm9ybWFsaXplcihcbiAgc2NyaXB0LFxuICByZW5kZXIsXG4gIHN0YXRpY1JlbmRlckZucyxcbiAgZmFsc2UsXG4gIG51bGwsXG4gIFwiM2I0ZjQ2MDlcIixcbiAgbnVsbFxuICBcbilcblxuLyogY3VzdG9tIGJsb2NrcyAqL1xuaW1wb3J0IGJsb2NrMCBmcm9tIFwiLi9Xb3JkTW9kYWwueWFtbD92dWUmdHlwZT1jdXN0b20maW5kZXg9MCZibG9ja1R5cGU9aTE4biZpc3N1ZXJQYXRoPSUyRnZhciUyRmhvc3QlMkZtZWRpYSUyRnJlbW92YWJsZSUyRk1pY3JvU0QlMkZOZXRCZWFuc1Byb2plY3RzJTJGJTVCaHRtbCU1RCUyRlBXQS1FbmdsaXNoLVNwZWFraW5nLVByYWN0aWNlJTJGc3JjJTJGY29tcG9uZW50cyUyRlNlbnRlbmNlUGFuZWwlMkZXb3JkTW9kYWwlMkZXb3JkTW9kYWwudnVlJmxhbmc9eWFtbFwiXG5pZiAodHlwZW9mIGJsb2NrMCA9PT0gJ2Z1bmN0aW9uJykgYmxvY2swKGNvbXBvbmVudClcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnM2I0ZjQ2MDknKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnM2I0ZjQ2MDknLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnM2I0ZjQ2MDknLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL1dvcmRNb2RhbC5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTNiNGY0NjA5JnNjb3BlZD10cnVlJlwiLCBmdW5jdGlvbiAoKSB7XG4gICAgICBhcGkucmVyZW5kZXIoJzNiNGY0NjA5Jywge1xuICAgICAgICByZW5kZXI6IHJlbmRlcixcbiAgICAgICAgc3RhdGljUmVuZGVyRm5zOiBzdGF0aWNSZW5kZXJGbnNcbiAgICAgIH0pXG4gICAgfSlcbiAgfVxufVxuY29tcG9uZW50Lm9wdGlvbnMuX19maWxlID0gXCJzcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1dvcmRNb2RhbC9Xb3JkTW9kYWwudnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIiwidmFyIHJlbmRlciA9IGZ1bmN0aW9uKCkge1xuICB2YXIgX3ZtID0gdGhpc1xuICB2YXIgX2ggPSBfdm0uJGNyZWF0ZUVsZW1lbnRcbiAgdmFyIF9jID0gX3ZtLl9zZWxmLl9jIHx8IF9oXG4gIHJldHVybiBfYyhcbiAgICBcImRpdlwiLFxuICAgIHsgc3RhdGljQ2xhc3M6IFwibWFpbi1zZW50ZW5jZS1wYW5lbFwiIH0sXG4gICAgW1xuICAgICAgX2MoXCJDdXJyZW50U2VudGVuY2VcIiwge1xuICAgICAgICByZWY6IFwiQ3VycmVudFNlbnRlbmNlXCIsXG4gICAgICAgIGF0dHJzOiB7XG4gICAgICAgICAgY29uZmlnOiBfdm0uY29uZmlnLFxuICAgICAgICAgIGxvY2FsQ29uZmlnOiBfdm0ubG9jYWxDb25maWcsXG4gICAgICAgICAgdXRpbHM6IF92bS51dGlscyxcbiAgICAgICAgICBzZW50ZW5jZTogX3ZtLnNlbnRlbmNlXG4gICAgICAgIH1cbiAgICAgIH0pLFxuICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgIF9jKFwiUHJhY3RpY2VTZW50ZW5jZVBhbmVsXCIsIHtcbiAgICAgICAgcmVmOiBcIlByYWN0aWNlU2VudGVuY2VQYW5lbFwiLFxuICAgICAgICBhdHRyczoge1xuICAgICAgICAgIGNvbmZpZzogX3ZtLmNvbmZpZyxcbiAgICAgICAgICBsb2NhbENvbmZpZzogX3ZtLmxvY2FsQ29uZmlnLFxuICAgICAgICAgIHV0aWxzOiBfdm0udXRpbHNcbiAgICAgICAgfVxuICAgICAgfSlcbiAgICBdLFxuICAgIDFcbiAgKVxufVxudmFyIHN0YXRpY1JlbmRlckZucyA9IFtdXG5yZW5kZXIuX3dpdGhTdHJpcHBlZCA9IHRydWVcblxuZXhwb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSIsInZhciByZW5kZXIgPSBmdW5jdGlvbigpIHtcbiAgdmFyIF92bSA9IHRoaXNcbiAgdmFyIF9oID0gX3ZtLiRjcmVhdGVFbGVtZW50XG4gIHZhciBfYyA9IF92bS5fc2VsZi5fYyB8fCBfaFxuICByZXR1cm4gX2MoXG4gICAgXCJkaXZcIixcbiAgICB7XG4gICAgICBzdGF0aWNDbGFzczogXCJ1aSBwaWxlZCBzZWdtZW50cyBjdXJyZW50LXNlbnRlbmNlLXNlZ21lbnRzXCIsXG4gICAgICBvbjogeyBjbGljazogX3ZtLnNwZWFrQ3VycmVudFNlbnRlbmNlIH1cbiAgICB9LFxuICAgIFtcbiAgICAgIF9jKFxuICAgICAgICBcImRpdlwiLFxuICAgICAgICB7IHN0YXRpY0NsYXNzOiBcInVpIHNlZ21lbnRcIiwgY2xhc3M6IF92bS5jb21wdXRlQ3VycmVudFNlbnRlbmNlQ2xhc3NlcyB9LFxuICAgICAgICBbXG4gICAgICAgICAgX2MoXG4gICAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgICAgeyBzdGF0aWNDbGFzczogXCJ1aSBncmlkIG1pZGRsZSBhbGlnbmVkIGN1cnJlbnQtc2VudGVuY2VcIiB9LFxuICAgICAgICAgICAgW1xuICAgICAgICAgICAgICBfYyhcImRpdlwiLCB7IHN0YXRpY0NsYXNzOiBcInJvd1wiIH0sIFtcbiAgICAgICAgICAgICAgICBfYyhcImRpdlwiLCB7IHN0YXRpY0NsYXNzOiBcImNvbHVtblwiIH0sIFtcbiAgICAgICAgICAgICAgICAgIF9jKFxuICAgICAgICAgICAgICAgICAgICBcImgyXCIsXG4gICAgICAgICAgICAgICAgICAgIHsgc3RhdGljQ2xhc3M6IFwidWkgY2VudGVyIGFsaWduZWQgaGVhZGVyXCIgfSxcbiAgICAgICAgICAgICAgICAgICAgW1xuICAgICAgICAgICAgICAgICAgICAgIF92bS5jb25maWcuY3VycmVudFNlbnRlbmNlTWFzayAhPT0gXCJ0cmFuc2xhdGlvblwiXG4gICAgICAgICAgICAgICAgICAgICAgICA/IF92bS5fbChfdm0ud29yZHMsIGZ1bmN0aW9uKHdvcmQsIGkpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gX2MoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcInNwYW5cIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwid29yZFwiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzczogX3ZtLmNvbXB1dGVkV29yZENsYXNzZXMod29yZCwgaSksXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uOiB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xpY2s6IGZ1bmN0aW9uKCRldmVudCkge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJGV2ZW50LnN0b3BQcm9wYWdhdGlvbigpXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gX3ZtLnN0YXJ0U3BlYWtXb3JkKHdvcmQsIGkpXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgW192bS5fdihfdm0uX3Mod29yZCkpXVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgICAgfSlcbiAgICAgICAgICAgICAgICAgICAgICAgIDogX3ZtLl9lKCksXG4gICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgICAgICAgICAgICBfdm0uY29uZmlnLmN1cnJlbnRTZW50ZW5jZU1hc2sgPT09IFwidHJhbnNsYXRpb25cIlxuICAgICAgICAgICAgICAgICAgICAgICAgPyBbXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgICAgICAgIFwiICtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl9zKF92bS50cmFuc2xhdGlvbk1hc2spICtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgICAgICBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICAgICAgICAgICAgOiBfdm0uX2UoKVxuICAgICAgICAgICAgICAgICAgICBdLFxuICAgICAgICAgICAgICAgICAgICAyXG4gICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgXSlcbiAgICAgICAgICAgICAgXSlcbiAgICAgICAgICAgIF1cbiAgICAgICAgICApXG4gICAgICAgIF1cbiAgICAgIClcbiAgICBdXG4gIClcbn1cbnZhciBzdGF0aWNSZW5kZXJGbnMgPSBbXVxucmVuZGVyLl93aXRoU3RyaXBwZWQgPSB0cnVlXG5cbmV4cG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zIH0iLCJsZXQgQ3VycmVudFNlbnRlbmNlID0ge1xyXG4gIHByb3BzOiBbJ2NvbmZpZycsICdsb2NhbENvbmZpZycsICd1dGlscycsICdzZW50ZW5jZSddLFxyXG4gIGRhdGEgKCkgeyAgICBcclxuICAgIHRoaXMuJGkxOG4ubG9jYWxlID0gdGhpcy5sb2NhbENvbmZpZy5sb2NhbGVcclxuICAgIHJldHVybiB7XHJcbiAgICAgIGlzU3BlYWtpbmc6IGZhbHNlLFxyXG4gICAgICBzcGVha2luZ1dvcmRJbmRleDogbnVsbCxcclxuICAgICAgdHJhbnNsYXRpb25NYXNrOiBudWxsXHJcbiAgICB9XHJcbiAgfSxcclxuICB3YXRjaDoge1xyXG4gICAgJ2xvY2FsQ29uZmlnLmxvY2FsZScoKSB7XHJcbiAgICAgIHRoaXMuJGkxOG4ubG9jYWxlID0gdGhpcy5sb2NhbENvbmZpZy5sb2NhbGU7XHJcbiAgICB9LFxyXG4gICAgJ2xvY2FsQ29uZmlnLnByYWN0aWNlU2VudGVuY2VNYXNrJyAoKSB7XHJcbiAgICAgIHRoaXMuaW5pdFRyYW5zbGF0aW9uTWFzaygpXHJcbiAgICB9LFxyXG4gICAgc2VudGVuY2UgKCkge1xyXG4gICAgICB0aGlzLmluaXRUcmFuc2xhdGlvbk1hc2soKVxyXG4gICAgfVxyXG4gIH0sXHJcbiAgY29tcHV0ZWQ6IHtcclxuICAgIGN1cnJlbnRTZW50ZW5jZSAoKSB7XHJcbiAgICAgIHJldHVybiB0aGlzLnNlbnRlbmNlXHJcbiAgICB9LFxyXG4gICAgd29yZHMgKCkge1xyXG4gICAgICBsZXQgcGFydHMgPSB0aGlzLmN1cnJlbnRTZW50ZW5jZS5zcGxpdCgnICcpXHJcbiAgICAgIGxldCB3b3JkcyA9IFtdXHJcbiAgICAgIFxyXG4gICAgICBwYXJ0cy5mb3JFYWNoKChwYXJ0LCBpKSA9PiB7XHJcbiAgICAgICAgbGV0IG90aGVyUGFydFN0cmluZyA9ICcnXHJcbiAgICAgICAgcGFydCA9IHBhcnQudHJpbSgpXHJcbiAgICAgICAgbGV0IG90aGVyUGFydCA9IHBhcnQuc2xpY2UoLTEpXHJcbiAgICAgICAgLy9jb25zb2xlLmxvZyhvdGhlclBhcnQpXHJcbiAgICAgICAgd2hpbGUgKCEhb3RoZXJQYXJ0Lm1hdGNoKC9eWy4sOiE/XSQvKSkge1xyXG4gICAgICAgICAgb3RoZXJQYXJ0U3RyaW5nID0gb3RoZXJQYXJ0ICsgb3RoZXJQYXJ0U3RyaW5nXHJcbiAgICAgICAgICBwYXJ0ID0gcGFydC5zbGljZSgwLCAtMSlcclxuICAgICAgICAgIG90aGVyUGFydCA9IHBhcnQuc2xpY2UoLTEpXHJcbiAgICAgICAgfVxyXG4gICAgICAgIFxyXG4gICAgICAgIGlmIChwYXJ0Lmxlbmd0aCA+IDApIHtcclxuICAgICAgICAgIHdvcmRzLnB1c2gocGFydClcclxuICAgICAgICB9XHJcbiAgICAgICAgaWYgKG90aGVyUGFydFN0cmluZy5sZW5ndGggPiAwKSB7XHJcbiAgICAgICAgICB3b3Jkcy5wdXNoKG90aGVyUGFydFN0cmluZylcclxuICAgICAgICB9XHJcbiAgICAgICAgXHJcbiAgICAgICAgaWYgKGkgPCBwYXJ0cy5sZW5ndGggLSAxKSB7XHJcbiAgICAgICAgICB3b3Jkcy5wdXNoKCcgJylcclxuICAgICAgICB9XHJcbiAgICAgICAgXHJcbiAgICAgICAgLy9jb25zb2xlLmxvZyh3b3JkcylcclxuICAgICAgfSlcclxuICAgICAgXHJcbiAgICAgIHJldHVybiB3b3Jkc1xyXG4gICAgfSxcclxuICAgIGNvbXB1dGVDdXJyZW50U2VudGVuY2VDbGFzc2VzICgpIHtcclxuICAgICAgLy8ge2lzU3BlYWtpbmc6IGNvbmZpZy5jdXJyZW50U2VudGVuY2VJc1NwZWFraW5nfVxyXG4gICAgICBcclxuICAgICAgbGV0IGNsYXNzZXMgPSBbXVxyXG4gICAgICBcclxuICAgICAgaWYgKHRoaXMuY29uZmlnLmN1cnJlbnRTZW50ZW5jZUlzU3BlYWtpbmcpIHtcclxuICAgICAgICBjbGFzc2VzLnB1c2goJ2lzU3BlYWtpbmcnKVxyXG4gICAgICB9XHJcbiAgICAgIFxyXG4gICAgICBpZiAodGhpcy5jb25maWcuY3VycmVudFNlbnRlbmNlTWFzayBcclxuICAgICAgICAgICAgICAmJiB0aGlzLmNvbmZpZy5jdXJyZW50U2VudGVuY2VNYXNrICE9PSAnbm9uZScpIHtcclxuICAgICAgICBjbGFzc2VzLnB1c2godGhpcy5jb25maWcuY3VycmVudFNlbnRlbmNlTWFzaylcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgcmV0dXJuIGNsYXNzZXNcclxuICAgIH1cclxuICB9LFxyXG4gIG1vdW50ZWQ6IGFzeW5jIGZ1bmN0aW9uICgpIHtcclxuICAgIHRoaXMuaW5pdFRyYW5zbGF0aW9uTWFzaygpXHJcbiAgICBcclxuLy8gICAgc2V0VGltZW91dCgoKSA9PiB7XHJcbi8vICAgICAgdGhpcy5pbml0VHJhbnNsYXRpb25NYXNrKClcclxuLy8gICAgfSwgNTAwKVxyXG4gIH0sXHJcbiAgbWV0aG9kczoge1xyXG4gICAgaW5pdFRyYW5zbGF0aW9uTWFzazogYXN5bmMgZnVuY3Rpb24gKCkge1xyXG4gICAgICBpZiAodGhpcy5sb2NhbENvbmZpZy5wcmFjdGljZVNlbnRlbmNlTWFzayAhPT0gJ3RyYW5zbGF0aW9uJ1xyXG4gICAgICAgICAgICAgIHx8IHRoaXMudHJhbnNsYXRpb25NYXNrXHJcbiAgICAgICAgICAgICAgfHwgIXRoaXMuc2VudGVuY2UpIHtcclxuICAgICAgICByZXR1cm4gZmFsc2VcclxuICAgICAgfVxyXG4gICAgICB0aGlzLnRyYW5zbGF0aW9uTWFzayA9IGF3YWl0IHRoaXMudXRpbHMuVHJhbnNVdGlscy50cmFucyh0aGlzLnNlbnRlbmNlLCAnemgtVFcnKVxyXG4gICAgICAvL2NvbnNvbGUubG9nKHRoaXMudHJhbnNsYXRpb25NYXNrKVxyXG4gICAgfSxcclxuICAgIHNwZWFrQ3VycmVudFNlbnRlbmNlOiBhc3luYyBmdW5jdGlvbiAoKSB7XHJcbi8vICAgICAgaWYgKHRoaXMuaXNTcGVha2luZyA9PT0gdHJ1ZSkge1xyXG4vLyAgICAgICAgdGhpcy51dGlscy5UZXh0VG9TcGVlY2hVdGlsLnN0b3BTcGVhaygpXHJcbi8vICAgICAgICByZXR1cm4gZmFsc2VcclxuLy8gICAgICB9XHJcbi8vICAgICAgXHJcbi8vICAgICAgdGhpcy5pc1NwZWFraW5nID0gdHJ1ZVxyXG4vLyAgICAgIGF3YWl0IHRoaXMudXRpbHMuVGV4dFRvU3BlZWNoVXRpbC5zdGFydFNwZWFrKHRoaXMuY3VycmVudFNlbnRlbmNlKVxyXG4vLyAgICAgIHRoaXMuaXNTcGVha2luZyA9IGZhbHNlXHJcbiAgICAgIHRoaXMudXRpbHMuTGVhcm5pbmdJbnN0cnVjdG9yLnNwZWFrQ3VycmVudFNlbnRlbmNlKClcclxuICAgICAgXHJcbiAgICB9LFxyXG4gICAgc3RhcnRTcGVha1dvcmQ6IGFzeW5jIGZ1bmN0aW9uICh3b3JkLCBpKSB7XHJcbiAgICAgIGlmICh0aGlzLmlzU3BlYWthYmxlKHdvcmQpID09PSBmYWxzZSkge1xyXG4gICAgICAgIHJldHVybiBmYWxzZVxyXG4gICAgICB9XHJcbiAgICAgIFxyXG4vLyAgICAgIHRoaXMuc3BlYWtpbmdXb3JkSW5kZXggPSBpXHJcbi8vICAgICAgYXdhaXQgdGhpcy51dGlscy5UZXh0VG9TcGVlY2hVdGlsLnN0YXJ0U3BlYWsod29yZClcclxuLy8gICAgICB0aGlzLnNwZWFraW5nV29yZEluZGV4ID0gbnVsbFxyXG4gICAgICB0aGlzLmNvbmZpZy5jdXJyZW50V29yZCA9IHRoaXMudXRpbHMuRGljdFV0aWxzLmZpbHRlcldvcmQod29yZClcclxuICAgIH0sXHJcbiAgICBcclxuICAgIGlzU3BlYWthYmxlICh3b3JkKSB7XHJcbiAgICAgIC8vY29uc29sZS5sb2cod29yZClcclxuICAgICAgaWYgKCF3b3JkIHx8IHdvcmQudHJpbSgpID09PSAnJykge1xyXG4gICAgICAgIHJldHVybiBmYWxzZVxyXG4gICAgICB9XHJcbiAgICAgIFxyXG4gICAgICBcclxuICAgICAgbGV0IGxhc3RDaGFyID0gd29yZC5zbGljZSgtMSlcclxuICAgICAgaWYgKCEhbGFzdENoYXIubWF0Y2goL15bLiw6IT9dJC8pKSB7XHJcbiAgICAgICAgcmV0dXJuIGZhbHNlXHJcbiAgICAgIH1cclxuICAgICAgXHJcbiAgICAgIHJldHVybiB0cnVlXHJcbiAgICB9LFxyXG4gICAgY29tcHV0ZWRXb3JkQ2xhc3NlcyAod29yZCwgaSkge1xyXG4gICAgICAvLyB7aXNTcGVha2luZzogKGkgPT09IHNwZWFraW5nV29yZEluZGV4KSwgc3BlYWthYmxlOiBpc1NwZWFrYWJsZSh3b3JkKX1cclxuICAgICAgXHJcbiAgICAgIGxldCBjbGFzc2VzID0gW11cclxuICAgICAgXHJcbiAgICAgIGlmIChpID09PSB0aGlzLnNwZWFraW5nV29yZEluZGV4KSB7XHJcbiAgICAgICAgY2xhc3Nlcy5wdXNoKCdpc1NwZWFraW5nJylcclxuICAgICAgfVxyXG4gICAgICBpZiAodGhpcy5pc1NwZWFrYWJsZSh3b3JkKSkge1xyXG4gICAgICAgIGNsYXNzZXMucHVzaCgnc3BlYWthYmxlJylcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgcmV0dXJuIGNsYXNzZXNcclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IEN1cnJlbnRTZW50ZW5jZSIsImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNiEuL0N1cnJlbnRTZW50ZW5jZS5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvYmFiZWwtbG9hZGVyL2xpYi9pbmRleC5qcz8/cmVmLS02IS4vQ3VycmVudFNlbnRlbmNlLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIiwiaW1wb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSBmcm9tIFwiLi9DdXJyZW50U2VudGVuY2UuaHRtbD92dWUmdHlwZT10ZW1wbGF0ZSZpZD0wYThlZmY3YiZzY29wZWQ9dHJ1ZSZcIlxuaW1wb3J0IHNjcmlwdCBmcm9tIFwiLi9DdXJyZW50U2VudGVuY2UuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCJcbmV4cG9ydCAqIGZyb20gXCIuL0N1cnJlbnRTZW50ZW5jZS5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuaW1wb3J0IHN0eWxlMCBmcm9tIFwiLi9DdXJyZW50U2VudGVuY2UubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPTBhOGVmZjdiJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIlxuXG5cbi8qIG5vcm1hbGl6ZSBjb21wb25lbnQgKi9cbmltcG9ydCBub3JtYWxpemVyIGZyb20gXCIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3J1bnRpbWUvY29tcG9uZW50Tm9ybWFsaXplci5qc1wiXG52YXIgY29tcG9uZW50ID0gbm9ybWFsaXplcihcbiAgc2NyaXB0LFxuICByZW5kZXIsXG4gIHN0YXRpY1JlbmRlckZucyxcbiAgZmFsc2UsXG4gIG51bGwsXG4gIFwiMGE4ZWZmN2JcIixcbiAgbnVsbFxuICBcbilcblxuLyogY3VzdG9tIGJsb2NrcyAqL1xuaW1wb3J0IGJsb2NrMCBmcm9tIFwiLi9DdXJyZW50U2VudGVuY2UueWFtbD92dWUmdHlwZT1jdXN0b20maW5kZXg9MCZibG9ja1R5cGU9aTE4biZpc3N1ZXJQYXRoPSUyRnZhciUyRmhvc3QlMkZtZWRpYSUyRnJlbW92YWJsZSUyRk1pY3JvU0QlMkZOZXRCZWFuc1Byb2plY3RzJTJGJTVCaHRtbCU1RCUyRlBXQS1FbmdsaXNoLVNwZWFraW5nLVByYWN0aWNlJTJGc3JjJTJGY29tcG9uZW50cyUyRlNlbnRlbmNlUGFuZWwlMkZDdXJyZW50U2VudGVuY2UlMkZDdXJyZW50U2VudGVuY2UudnVlJmxhbmc9eWFtbFwiXG5pZiAodHlwZW9mIGJsb2NrMCA9PT0gJ2Z1bmN0aW9uJykgYmxvY2swKGNvbXBvbmVudClcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnMGE4ZWZmN2InKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnMGE4ZWZmN2InLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnMGE4ZWZmN2InLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL0N1cnJlbnRTZW50ZW5jZS5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTBhOGVmZjdiJnNjb3BlZD10cnVlJlwiLCBmdW5jdGlvbiAoKSB7XG4gICAgICBhcGkucmVyZW5kZXIoJzBhOGVmZjdiJywge1xuICAgICAgICByZW5kZXI6IHJlbmRlcixcbiAgICAgICAgc3RhdGljUmVuZGVyRm5zOiBzdGF0aWNSZW5kZXJGbnNcbiAgICAgIH0pXG4gICAgfSlcbiAgfVxufVxuY29tcG9uZW50Lm9wdGlvbnMuX19maWxlID0gXCJzcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL0N1cnJlbnRTZW50ZW5jZS9DdXJyZW50U2VudGVuY2UudnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIiwidmFyIHJlbmRlciA9IGZ1bmN0aW9uKCkge1xuICB2YXIgX3ZtID0gdGhpc1xuICB2YXIgX2ggPSBfdm0uJGNyZWF0ZUVsZW1lbnRcbiAgdmFyIF9jID0gX3ZtLl9zZWxmLl9jIHx8IF9oXG4gIHJldHVybiBfdm0ubG9jYWxDb25maWcucHJhY3RpY2VNb2RlID09PSBcInNwZWFraW5nXCJcbiAgICA/IF9jKFxuICAgICAgICBcImRpdlwiLFxuICAgICAgICB7IHN0YXRpY0NsYXNzOiBcIlByYWN0aWNlU2VudGVuY2VQYW5lbFwiIH0sXG4gICAgICAgIFtcbiAgICAgICAgICAhX3ZtLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlXG4gICAgICAgICAgICA/IF9jKFxuICAgICAgICAgICAgICAgIFwiaDJcIixcbiAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICBzdGF0aWNDbGFzczogXCJ1aSBjZW50ZXIgYWxpZ25lZCBpY29uIGhlYWRlciBwcmFjdGljZS1oaW50XCIsXG4gICAgICAgICAgICAgICAgICBvbjogeyBjbGljazogX3ZtLnByYWN0aWNlIH1cbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIFtcbiAgICAgICAgICAgICAgICAgIF9jKFwiaVwiLCB7IHN0YXRpY0NsYXNzOiBcImNvbnZlcnNhdGlvbiBpY29uXCIgfSksXG4gICAgICAgICAgICAgICAgICBfdm0uX3YoXG4gICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgXCIgKyBfdm0uX3MoX3ZtLiR0KFwiTGV0J3MgUHJhY3RpY2UhXCIpKSArIFwiXFxuICAgIFwiXG4gICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICApXG4gICAgICAgICAgICA6IF92bS5fZSgpLFxuICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgX3ZtLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlXG4gICAgICAgICAgICA/IFtcbiAgICAgICAgICAgICAgICBfYyhcImRpdlwiLCB7IHN0YXRpY0NsYXNzOiBcInRyaWdnZXJcIiB9LCBbXG4gICAgICAgICAgICAgICAgICBfYyhcbiAgICAgICAgICAgICAgICAgICAgXCJkaXZcIixcbiAgICAgICAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgICAgICAgIHN0YXRpY0NsYXNzOiBcInByYWN0aWNlLWhpbnRcIixcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzczogeyBwcmFjdGljaW5nOiBfdm0uaXNQcmFjdGljaW5nIH0sXG4gICAgICAgICAgICAgICAgICAgICAgb246IHsgY2xpY2s6IF92bS5wcmFjdGljZSB9XG4gICAgICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgICAgIFtcbiAgICAgICAgICAgICAgICAgICAgICBfYyhcImlcIiwgeyBzdGF0aWNDbGFzczogXCJjb252ZXJzYXRpb24gaWNvblwiIH0pLFxuICAgICAgICAgICAgICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgICAgICAgICAgICAgX3ZtLmlzUHJhY3RpY2luZ1xuICAgICAgICAgICAgICAgICAgICAgICAgPyBbXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgICAgICBcIiArXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF92bS5fcyhfdm0uJHQoXCJLZWVwIGdvaW5nLi4uIEtlZXAgZ29pbmcuLi4gXCIpKSArXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICAgIFwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICAgICAgICBdXG4gICAgICAgICAgICAgICAgICAgICAgICA6IF92bS5fZSgpLFxuICAgICAgICAgICAgICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgICAgICAgICAgICAgX3ZtLnJlYWRFdmFsdWF0aW9uUmVzdWx0XG4gICAgICAgICAgICAgICAgICAgICAgICA/IFtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBfdm0uX3YoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgICAgIFwiICtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl9zKF92bS4kdChcIlByYWN0aWNlIGFnYWluP1wiKSkgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIlxcbiAgICAgICAgICBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICAgICAgICAgICAgOiBfdm0uX2UoKVxuICAgICAgICAgICAgICAgICAgICBdLFxuICAgICAgICAgICAgICAgICAgICAyXG4gICAgICAgICAgICAgICAgICApLFxuICAgICAgICAgICAgICAgICAgX3ZtLl92KFwiIFwiKSxcbiAgICAgICAgICAgICAgICAgIF9jKFxuICAgICAgICAgICAgICAgICAgICBcImRpdlwiLFxuICAgICAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICAgICAgc3RhdGljQ2xhc3M6IFwicG9wdXBcIixcbiAgICAgICAgICAgICAgICAgICAgICBjbGFzczoge1xuICAgICAgICAgICAgICAgICAgICAgICAgcG9zaXRpdmU6XG4gICAgICAgICAgICAgICAgICAgICAgICAgIF92bS5jb25maWcucHJhY3RpY2VTZW50ZW5jZUV2YWx1YXRpb25TY29yZSA+PSAwLjdcbiAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgICAgIFtcbiAgICAgICAgICAgICAgICAgICAgICBfYyhcbiAgICAgICAgICAgICAgICAgICAgICAgIFwiZGl2XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgIHN0YXRpY0NsYXNzOlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiaW5uZXIgdWkgZ3JpZCBtaWRkbGUgYWxpZ25lZCBjdXJyZW50LXNlbnRlbmNlXCJcbiAgICAgICAgICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgICAgICAgICBbXG4gICAgICAgICAgICAgICAgICAgICAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwicm93XCIgfSwgW1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIF9jKFwiZGl2XCIsIHsgc3RhdGljQ2xhc3M6IFwiY29sdW1uXCIgfSwgW1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAubGVuZ3RoID09PSAwXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID8gX2MoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcImgyXCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0YXRpY0NsYXNzOlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwidWkgY2VudGVyIGFsaWduZWQgaGVhZGVyIHdhaXQtcHJhY3RpY2VcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl92KFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiXFxuICAgICAgICAgICAgICAgICAgXCIgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX3ZtLl9zKF92bS5jb25maWcucHJhY3RpY2VTZW50ZW5jZSkgK1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJcXG4gICAgICAgICAgICAgICAgXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgOiBfYyhcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiaDJcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgX2MoXCJTZW50ZW5jZURpZmZlcmVuY2VcIiwge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJlZjogXCJTZW50ZW5jZURpZmZlcmVuY2VcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhdHRyczoge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29uZmlnOiBfdm0uY29uZmlnLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9jYWxDb25maWc6IF92bS5sb2NhbENvbmZpZyxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHV0aWxzOiBfdm0udXRpbHNcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0pXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBdLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBdKVxuICAgICAgICAgICAgICAgICAgICAgICAgICBdKVxuICAgICAgICAgICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICAgICAgICAgIClcbiAgICAgICAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgICAgIF0pXG4gICAgICAgICAgICAgIF1cbiAgICAgICAgICAgIDogX3ZtLl9lKClcbiAgICAgICAgXSxcbiAgICAgICAgMlxuICAgICAgKVxuICAgIDogX3ZtLl9lKClcbn1cbnZhciBzdGF0aWNSZW5kZXJGbnMgPSBbXVxucmVuZGVyLl93aXRoU3RyaXBwZWQgPSB0cnVlXG5cbmV4cG9ydCB7IHJlbmRlciwgc3RhdGljUmVuZGVyRm5zIH0iLCJ2YXIgcmVuZGVyID0gZnVuY3Rpb24oKSB7XG4gIHZhciBfdm0gPSB0aGlzXG4gIHZhciBfaCA9IF92bS4kY3JlYXRlRWxlbWVudFxuICB2YXIgX2MgPSBfdm0uX3NlbGYuX2MgfHwgX2hcbiAgcmV0dXJuIF9jKFxuICAgIFwiZGl2XCIsXG4gICAge1xuICAgICAgc3RhdGljQ2xhc3M6IFwiU2VudGVuY2VEaWZmZXJlbmNlXCIsXG4gICAgICBjbGFzczogeyBwb3NpdGl2ZTogX3ZtLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblNjb3JlID49IDAuNyB9XG4gICAgfSxcbiAgICBbXG4gICAgICBfdm0uX2woX3ZtLnJlc3VsdHMsIGZ1bmN0aW9uKHdvcmQsIGkpIHtcbiAgICAgICAgcmV0dXJuIFtcbiAgICAgICAgICAhd29yZC5hZGRlZFxuICAgICAgICAgICAgPyBfYyhcbiAgICAgICAgICAgICAgICBcInNwYW5cIixcbiAgICAgICAgICAgICAgICB7IGNsYXNzOiB7IHJlbW92ZWQ6IHdvcmQucmVtb3ZlZCB9IH0sXG4gICAgICAgICAgICAgICAgX3ZtLl9sKF92bS5zcGxpdFdvcmQod29yZC52YWx1ZSksIGZ1bmN0aW9uKHcsIGopIHtcbiAgICAgICAgICAgICAgICAgIHJldHVybiBfYyhcbiAgICAgICAgICAgICAgICAgICAgXCJzcGFuXCIsXG4gICAgICAgICAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICAgICAgICBzdGF0aWNDbGFzczogXCJ3b3JkXCIsXG4gICAgICAgICAgICAgICAgICAgICAgY2xhc3M6IHsgc3BhY2U6IHcgPT09IFwiIFwiIH0sXG4gICAgICAgICAgICAgICAgICAgICAgb246IHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGNsaWNrOiBmdW5jdGlvbigkZXZlbnQpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgcmV0dXJuIF92bS5wcmFjdGljZVdvcmQodylcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAgICAgIFtfdm0uX3YoXCJcXG4gICAgICAgIFwiICsgX3ZtLl9zKHcpICsgXCJcXG4gICAgICBcIildXG4gICAgICAgICAgICAgICAgICApXG4gICAgICAgICAgICAgICAgfSksXG4gICAgICAgICAgICAgICAgMFxuICAgICAgICAgICAgICApXG4gICAgICAgICAgICA6IF92bS5fZSgpLFxuICAgICAgICAgIF92bS5fdihcIiBcIiksXG4gICAgICAgICAgd29yZC5hZGRlZFxuICAgICAgICAgICAgPyBfYyhcbiAgICAgICAgICAgICAgICBcInNwYW5cIixcbiAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICBzdGF0aWNDbGFzczogXCJhZGRlZCB3b3JkXCIsXG4gICAgICAgICAgICAgICAgICBjbGFzczogX3ZtLmNvbXB1dGVkQWRkZWRXb3JkKHdvcmQudmFsdWUpLFxuICAgICAgICAgICAgICAgICAgb246IHtcbiAgICAgICAgICAgICAgICAgICAgY2xpY2s6IGZ1bmN0aW9uKCRldmVudCkge1xuICAgICAgICAgICAgICAgICAgICAgIHJldHVybiBfdm0ucHJhY3RpY2VXb3JkKHdvcmQudmFsdWUpXG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB9LFxuICAgICAgICAgICAgICAgIFtfdm0uX3YoX3ZtLl9zKHdvcmQudmFsdWUpKV1cbiAgICAgICAgICAgICAgKVxuICAgICAgICAgICAgOiBfdm0uX2UoKVxuICAgICAgICBdXG4gICAgICB9KVxuICAgIF0sXG4gICAgMlxuICApXG59XG52YXIgc3RhdGljUmVuZGVyRm5zID0gW11cbnJlbmRlci5fd2l0aFN0cmlwcGVkID0gdHJ1ZVxuXG5leHBvcnQgeyByZW5kZXIsIHN0YXRpY1JlbmRlckZucyB9IiwibGV0IFNlbnRlbmNlRGlmZmVyZW5jZSA9IHtcclxuICBwcm9wczogWydjb25maWcnLCAnbG9jYWxDb25maWcnLCAndXRpbHMnXSxcclxuICBkYXRhICgpIHsgICAgXHJcbiAgICB0aGlzLiRpMThuLmxvY2FsZSA9IHRoaXMubG9jYWxDb25maWcubG9jYWxlXHJcbiAgICByZXR1cm4ge1xyXG4gICAgICBjdXJyZW50UHJhY3RpY2VXb3JkOiBudWxsLFxyXG4gICAgICByZWRyYXc6IGZhbHNlXHJcbiAgICB9XHJcbiAgfSxcclxuICB3YXRjaDoge1xyXG4gICAgJ2xvY2FsQ29uZmlnLmxvY2FsZScoKSB7XHJcbiAgICAgIHRoaXMuJGkxOG4ubG9jYWxlID0gdGhpcy5sb2NhbENvbmZpZy5sb2NhbGU7XHJcbiAgICB9LFxyXG4gICAgJ2NvbmZpZy5wcmFjdGljZVdvcmRTY29yZSc6IGFzeW5jIGZ1bmN0aW9uICgpIHtcclxuICAgICAgLy9jb25zb2xlLmxvZyh0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmRTY29yZSlcclxuICAgICAgaWYgKHRoaXMuY3VycmVudFByYWN0aWNlV29yZCAmJiB0aGlzLmNvbmZpZy5wcmFjdGljZVdvcmRTY29yZSA+PSAwLjcpIHtcclxuICAgICAgICAvKlxyXG4gICAgICAgIGF3YWl0IHRoaXMudXRpbHMuQXN5bmNVdGlscy5zbGVlcCgpXHJcbiAgICAgICAgdGhpcy5yZWRyYXcgPSB0cnVlXHJcbiAgICAgICAgYXdhaXQgdGhpcy51dGlscy5Bc3luY1V0aWxzLnNsZWVwKDEpXHJcbiAgICAgICAgdGhpcy5yZWRyYXcgPSBmYWxzZVxyXG4gICAgICAgICovXHJcbiAgICAgICAgZm9yIChsZXQgaSA9IDA7IGkgPCB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdC5sZW5ndGg7IGkrKykge1xyXG4gICAgICAgICAgbGV0IHIgPSB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdFtpXVxyXG4gICAgICAgICAgaWYgKHIudmFsdWUudHJpbSgpID09PSB0aGlzLmN1cnJlbnRQcmFjdGljZVdvcmQpIHtcclxuICAgICAgICAgICAgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZUV2YWx1YXRpb25SZXN1bHRbaV0uYWRkZWQgPSBmYWxzZVxyXG4gICAgICAgICAgfSBcclxuICAgICAgICB9XHJcbiAgICAgICAgdGhpcy5jdXJyZW50UHJhY3RpY2VXb3JkID0gbnVsbFxyXG4gICAgICB9XHJcbiAgICB9XHJcbiAgfSxcclxuICBjb21wdXRlZDoge1xyXG4gICAgcmVzdWx0cyAoKSB7XHJcbiAgICAgIGxldCByZXN1bHRzID0gW11cclxuICAgICAgaWYgKHRoaXMucmVkcmF3ID09PSB0cnVlKSB7XHJcbiAgICAgICAgLy9jb25zb2xlLmxvZygncmVkcmF3aW5nJylcclxuICAgICAgICByZXR1cm4gW11cclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgLy9jb25zb2xlLmxvZyh0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdClcclxuICAgICAgZm9yIChsZXQgaSA9IDA7IGkgPCB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdC5sZW5ndGg7IGkrKykge1xyXG4gICAgICAgIGlmIChpID4gMCkge1xyXG4gICAgICAgICAgcmVzdWx0cy5wdXNoKHtcclxuICAgICAgICAgICAgLy92YWx1ZTogJyZuYnNwOydcclxuICAgICAgICAgICAgdmFsdWU6ICcgJ1xyXG4gICAgICAgICAgfSlcclxuICAgICAgICB9XHJcbiAgICAgICAgXHJcbiAgICAgICAgbGV0IHIgPSB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdFtpXVxyXG4gICAgICAgIHIudmFsdWUgPSByLnZhbHVlLnRyaW0oKVxyXG4gICAgICAgIHJlc3VsdHMucHVzaCh0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdFtpXSlcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgcmV0dXJuIHJlc3VsdHNcclxuICAgIH0gXHJcbiAgfSxcclxuLy8gIG1vdW50ZWQoKSB7XHJcbi8vICAgIFxyXG4vLyAgfSxcclxuICBtZXRob2RzOiB7XHJcbiAgICBwcmFjdGljZVdvcmQ6IGZ1bmN0aW9uICh3b3JkKSB7XHJcbiAgICAgIHRoaXMuY3VycmVudFByYWN0aWNlV29yZCA9IHdvcmRcclxuICAgICAgdGhpcy5jb25maWcuY3VycmVudFdvcmQgPSB3b3JkXHJcbiAgICB9LFxyXG4gICAgY29tcHV0ZWRBZGRlZFdvcmQ6IGZ1bmN0aW9uICh3b3JkKSB7XHJcbiAgICAgIGxldCBzY29yZSA9IDBcclxuICAgICAgaWYgKHRoaXMudXRpbHMuTGVhcm5pbmdJbnN0cnVjdG9yKSB7XHJcbiAgICAgICAgc2NvcmUgPSB0aGlzLnV0aWxzLkxlYXJuaW5nSW5zdHJ1Y3Rvci5nZXRXb3JkVG9MZWFyblNjb3JlKHdvcmQpXHJcbiAgICAgICAgLy9jb25zb2xlLmxvZyh3b3JkLCBzY29yZSlcclxuICAgICAgfVxyXG4gICAgICBcclxuICAgICAgaWYgKHNjb3JlID4gNSkge1xyXG4gICAgICAgIHJldHVybiAnd29yZC10by1sZWFybidcclxuICAgICAgfVxyXG4gICAgICAvL2xldCBzY29yZSA9IHRoaXMuXHJcbiAgICB9LFxyXG4gICAgc3BsaXRXb3JkICh0ZXh0KSB7XHJcbiAgICAgIGxldCBwYXJ0cyA9IHRleHQuc3BsaXQoJyAnKVxyXG4gICAgICBsZXQgb3V0cHV0ID0gW11cclxuICAgICAgXHJcbiAgICAgIHBhcnRzLmZvckVhY2goKHAsIGkpID0+IHtcclxuICAgICAgICBpZiAoaSA+IDApIHtcclxuICAgICAgICAgIG91dHB1dC5wdXNoKCcgJylcclxuICAgICAgICB9XHJcbiAgICAgICAgb3V0cHV0LnB1c2gocClcclxuICAgICAgfSlcclxuICAgICAgXHJcbiAgICAgIHJldHVybiBvdXRwdXRcclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFNlbnRlbmNlRGlmZmVyZW5jZSIsImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNiEuL1NlbnRlbmNlRGlmZmVyZW5jZS5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvYmFiZWwtbG9hZGVyL2xpYi9pbmRleC5qcz8/cmVmLS02IS4vU2VudGVuY2VEaWZmZXJlbmNlLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIiwiaW1wb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSBmcm9tIFwiLi9TZW50ZW5jZURpZmZlcmVuY2UuaHRtbD92dWUmdHlwZT10ZW1wbGF0ZSZpZD1lMzIzMzQ3ZSZzY29wZWQ9dHJ1ZSZcIlxuaW1wb3J0IHNjcmlwdCBmcm9tIFwiLi9TZW50ZW5jZURpZmZlcmVuY2UuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCJcbmV4cG9ydCAqIGZyb20gXCIuL1NlbnRlbmNlRGlmZmVyZW5jZS5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuaW1wb3J0IHN0eWxlMCBmcm9tIFwiLi9TZW50ZW5jZURpZmZlcmVuY2UubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPWUzMjMzNDdlJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIlxuXG5cbi8qIG5vcm1hbGl6ZSBjb21wb25lbnQgKi9cbmltcG9ydCBub3JtYWxpemVyIGZyb20gXCIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3J1bnRpbWUvY29tcG9uZW50Tm9ybWFsaXplci5qc1wiXG52YXIgY29tcG9uZW50ID0gbm9ybWFsaXplcihcbiAgc2NyaXB0LFxuICByZW5kZXIsXG4gIHN0YXRpY1JlbmRlckZucyxcbiAgZmFsc2UsXG4gIG51bGwsXG4gIFwiZTMyMzM0N2VcIixcbiAgbnVsbFxuICBcbilcblxuLyogY3VzdG9tIGJsb2NrcyAqL1xuaW1wb3J0IGJsb2NrMCBmcm9tIFwiLi9TZW50ZW5jZURpZmZlcmVuY2UueWFtbD92dWUmdHlwZT1jdXN0b20maW5kZXg9MCZibG9ja1R5cGU9aTE4biZpc3N1ZXJQYXRoPSUyRnZhciUyRmhvc3QlMkZtZWRpYSUyRnJlbW92YWJsZSUyRk1pY3JvU0QlMkZOZXRCZWFuc1Byb2plY3RzJTJGJTVCaHRtbCU1RCUyRlBXQS1FbmdsaXNoLVNwZWFraW5nLVByYWN0aWNlJTJGc3JjJTJGY29tcG9uZW50cyUyRlNlbnRlbmNlUGFuZWwlMkZTZW50ZW5jZURpZmZlcmVuY2UlMkZTZW50ZW5jZURpZmZlcmVuY2UudnVlJmxhbmc9eWFtbFwiXG5pZiAodHlwZW9mIGJsb2NrMCA9PT0gJ2Z1bmN0aW9uJykgYmxvY2swKGNvbXBvbmVudClcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnZTMyMzM0N2UnKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnZTMyMzM0N2UnLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnZTMyMzM0N2UnLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL1NlbnRlbmNlRGlmZmVyZW5jZS5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPWUzMjMzNDdlJnNjb3BlZD10cnVlJlwiLCBmdW5jdGlvbiAoKSB7XG4gICAgICBhcGkucmVyZW5kZXIoJ2UzMjMzNDdlJywge1xuICAgICAgICByZW5kZXI6IHJlbmRlcixcbiAgICAgICAgc3RhdGljUmVuZGVyRm5zOiBzdGF0aWNSZW5kZXJGbnNcbiAgICAgIH0pXG4gICAgfSlcbiAgfVxufVxuY29tcG9uZW50Lm9wdGlvbnMuX19maWxlID0gXCJzcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlRGlmZmVyZW5jZS9TZW50ZW5jZURpZmZlcmVuY2UudnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIiwiaW1wb3J0IFNlbnRlbmNlRGlmZmVyZW5jZSBmcm9tICcuLy4uL1NlbnRlbmNlRGlmZmVyZW5jZS9TZW50ZW5jZURpZmZlcmVuY2UudnVlJ1xyXG5cclxubGV0IFByYWN0aWNlU2VudGVuY2VQYW5lbCA9IHtcclxuICBwcm9wczogWydjb25maWcnLCAnbG9jYWxDb25maWcnLCAndXRpbHMnXSxcclxuICBkYXRhICgpIHsgICAgXHJcbiAgICB0aGlzLiRpMThuLmxvY2FsZSA9IHRoaXMubG9jYWxDb25maWcubG9jYWxlXHJcbiAgICByZXR1cm4ge1xyXG4gICAgfVxyXG4gIH0sXHJcbiAgd2F0Y2g6IHtcclxuICAgICdsb2NhbENvbmZpZy5sb2NhbGUnKCkge1xyXG4gICAgICB0aGlzLiRpMThuLmxvY2FsZSA9IHRoaXMubG9jYWxDb25maWcubG9jYWxlO1xyXG4gICAgfSxcclxuICB9LFxyXG4gIGNvbXBvbmVudHM6IHtcclxuICAgIFNlbnRlbmNlRGlmZmVyZW5jZVxyXG4gIH0sXHJcbiAgY29tcHV0ZWQ6IHtcclxuICAgIGlzUHJhY3RpY2luZyAoKSB7XHJcbiAgICAgIHJldHVybiAodGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZSAmJiB0aGlzLmNvbmZpZy5wcmFjdGljZVNlbnRlbmNlRXZhbHVhdGlvblJlc3VsdC5sZW5ndGggPT09IDApXHJcbiAgICB9LFxyXG4gICAgcmVhZEV2YWx1YXRpb25SZXN1bHQgKCkge1xyXG4gICAgICByZXR1cm4gKHRoaXMuY29uZmlnLnByYWN0aWNlU2VudGVuY2UgJiYgdGhpcy5jb25maWcucHJhY3RpY2VTZW50ZW5jZUV2YWx1YXRpb25SZXN1bHQubGVuZ3RoID4gMClcclxuICAgIH0gICAgXHJcbiAgfSxcclxuLy8gIG1vdW50ZWQoKSB7XHJcbi8vICAgIHNldFRpbWVvdXQoKCkgPT4ge1xyXG4vLyAgICAgIHRoaXMucHJhY3RpY2UoKVxyXG4vLyAgICB9LCAzMDAwKVxyXG4vLyAgfSxcclxuICBtZXRob2RzOiB7XHJcbiAgICBwcmFjdGljZSAoKSB7XHJcbiAgICAgIGlmICghdGhpcy51dGlscy5MZWFybmluZ0luc3RydWN0b3IpIHtcclxuICAgICAgICByZXR1cm4gZmFsc2VcclxuICAgICAgfVxyXG4gICAgICB0aGlzLnV0aWxzLkxlYXJuaW5nSW5zdHJ1Y3Rvci5wcmFjdGljZVNlbnRlbmNlKClcclxuICAgIH1cclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFByYWN0aWNlU2VudGVuY2VQYW5lbCIsImltcG9ydCBtb2QgZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNiEuL1ByYWN0aWNlU2VudGVuY2VQYW5lbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIjsgZXhwb3J0IGRlZmF1bHQgbW9kOyBleHBvcnQgKiBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvYmFiZWwtbG9hZGVyL2xpYi9pbmRleC5qcz8/cmVmLS02IS4vUHJhY3RpY2VTZW50ZW5jZVBhbmVsLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIiwiaW1wb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSBmcm9tIFwiLi9QcmFjdGljZVNlbnRlbmNlUGFuZWwuaHRtbD92dWUmdHlwZT10ZW1wbGF0ZSZpZD1mMzA3NzFlMiZzY29wZWQ9dHJ1ZSZcIlxuaW1wb3J0IHNjcmlwdCBmcm9tIFwiLi9QcmFjdGljZVNlbnRlbmNlUGFuZWwuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCJcbmV4cG9ydCAqIGZyb20gXCIuL1ByYWN0aWNlU2VudGVuY2VQYW5lbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuaW1wb3J0IHN0eWxlMCBmcm9tIFwiLi9QcmFjdGljZVNlbnRlbmNlUGFuZWwubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0wJmlkPWYzMDc3MWUyJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIlxuXG5cbi8qIG5vcm1hbGl6ZSBjb21wb25lbnQgKi9cbmltcG9ydCBub3JtYWxpemVyIGZyb20gXCIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3J1bnRpbWUvY29tcG9uZW50Tm9ybWFsaXplci5qc1wiXG52YXIgY29tcG9uZW50ID0gbm9ybWFsaXplcihcbiAgc2NyaXB0LFxuICByZW5kZXIsXG4gIHN0YXRpY1JlbmRlckZucyxcbiAgZmFsc2UsXG4gIG51bGwsXG4gIFwiZjMwNzcxZTJcIixcbiAgbnVsbFxuICBcbilcblxuLyogY3VzdG9tIGJsb2NrcyAqL1xuaW1wb3J0IGJsb2NrMCBmcm9tIFwiLi9QcmFjdGljZVNlbnRlbmNlUGFuZWwueWFtbD92dWUmdHlwZT1jdXN0b20maW5kZXg9MCZibG9ja1R5cGU9aTE4biZpc3N1ZXJQYXRoPSUyRnZhciUyRmhvc3QlMkZtZWRpYSUyRnJlbW92YWJsZSUyRk1pY3JvU0QlMkZOZXRCZWFuc1Byb2plY3RzJTJGJTVCaHRtbCU1RCUyRlBXQS1FbmdsaXNoLVNwZWFraW5nLVByYWN0aWNlJTJGc3JjJTJGY29tcG9uZW50cyUyRlNlbnRlbmNlUGFuZWwlMkZQcmFjdGljZVNlbnRlbmNlUGFuZWwlMkZQcmFjdGljZVNlbnRlbmNlUGFuZWwudnVlJmxhbmc9eWFtbFwiXG5pZiAodHlwZW9mIGJsb2NrMCA9PT0gJ2Z1bmN0aW9uJykgYmxvY2swKGNvbXBvbmVudClcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnZjMwNzcxZTInKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnZjMwNzcxZTInLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnZjMwNzcxZTInLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL1ByYWN0aWNlU2VudGVuY2VQYW5lbC5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPWYzMDc3MWUyJnNjb3BlZD10cnVlJlwiLCBmdW5jdGlvbiAoKSB7XG4gICAgICBhcGkucmVyZW5kZXIoJ2YzMDc3MWUyJywge1xuICAgICAgICByZW5kZXI6IHJlbmRlcixcbiAgICAgICAgc3RhdGljUmVuZGVyRm5zOiBzdGF0aWNSZW5kZXJGbnNcbiAgICAgIH0pXG4gICAgfSlcbiAgfVxufVxuY29tcG9uZW50Lm9wdGlvbnMuX19maWxlID0gXCJzcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC9QcmFjdGljZVNlbnRlbmNlUGFuZWwudnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIiwiaW1wb3J0IEN1cnJlbnRTZW50ZW5jZSBmcm9tICcuLy4uL0N1cnJlbnRTZW50ZW5jZS9DdXJyZW50U2VudGVuY2UudnVlJ1xyXG5pbXBvcnQgUHJhY3RpY2VTZW50ZW5jZVBhbmVsIGZyb20gJy4vLi4vUHJhY3RpY2VTZW50ZW5jZVBhbmVsL1ByYWN0aWNlU2VudGVuY2VQYW5lbC52dWUnXHJcblxyXG5sZXQgTWFpblNlbnRlbmNlUGFuZWwgPSB7XHJcbiAgcHJvcHM6IFsnY29uZmlnJywgJ2xvY2FsQ29uZmlnJywgJ3V0aWxzJywgJ3NlbnRlbmNlJ10sXHJcbiAgZGF0YSAoKSB7ICAgIFxyXG4gICAgdGhpcy4kaTE4bi5sb2NhbGUgPSB0aGlzLmxvY2FsQ29uZmlnLmxvY2FsZVxyXG4gICAgcmV0dXJuIHtcclxuICAgIH1cclxuICB9LFxyXG4gIHdhdGNoOiB7XHJcbiAgICAnbG9jYWxDb25maWcubG9jYWxlJygpIHtcclxuICAgICAgdGhpcy4kaTE4bi5sb2NhbGUgPSB0aGlzLmxvY2FsQ29uZmlnLmxvY2FsZTtcclxuICAgIH0sXHJcbiAgfSxcclxuICBjb21wb25lbnRzOiB7XHJcbiAgICBDdXJyZW50U2VudGVuY2UsXHJcbiAgICBQcmFjdGljZVNlbnRlbmNlUGFuZWxcclxuICB9LFxyXG4vLyAgY29tcHV0ZWQ6IHtcclxuLy9cclxuLy8gIH0sXHJcbi8vICBtb3VudGVkKCkge1xyXG4vLyAgICBcclxuLy8gIH0sXHJcbi8vICBtZXRob2RzOiB7XHJcbi8vXHJcbi8vICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IE1haW5TZW50ZW5jZVBhbmVsIiwiaW1wb3J0IG1vZCBmcm9tIFwiLSEuLi8uLi8uLi8uLi9ub2RlX21vZHVsZXMvYmFiZWwtbG9hZGVyL2xpYi9pbmRleC5qcz8/cmVmLS02IS4vTWFpblNlbnRlbmNlUGFuZWwuanM/dnVlJnR5cGU9c2NyaXB0Jmxhbmc9anMmXCI7IGV4cG9ydCBkZWZhdWx0IG1vZDsgZXhwb3J0ICogZnJvbSBcIi0hLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2JhYmVsLWxvYWRlci9saWIvaW5kZXguanM/P3JlZi0tNiEuL01haW5TZW50ZW5jZVBhbmVsLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIiwiaW1wb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSBmcm9tIFwiLi9NYWluU2VudGVuY2VQYW5lbC5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTBhYzE5NjkzJnNjb3BlZD10cnVlJlwiXG5pbXBvcnQgc2NyaXB0IGZyb20gXCIuL01haW5TZW50ZW5jZVBhbmVsLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiXG5leHBvcnQgKiBmcm9tIFwiLi9NYWluU2VudGVuY2VQYW5lbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuaW1wb3J0IHN0eWxlMCBmcm9tIFwiLi9NYWluU2VudGVuY2VQYW5lbC5sZXNzP3Z1ZSZ0eXBlPXN0eWxlJmluZGV4PTAmaWQ9MGFjMTk2OTMmbGFuZz1sZXNzJnNjb3BlZD10cnVlJlwiXG5pbXBvcnQgc3R5bGUxIGZyb20gXCIuL01haW5TZW50ZW5jZVBhbmVsUHJhY3RpY2UubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0xJmlkPTBhYzE5NjkzJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIlxuXG5cbi8qIG5vcm1hbGl6ZSBjb21wb25lbnQgKi9cbmltcG9ydCBub3JtYWxpemVyIGZyb20gXCIhLi4vLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3J1bnRpbWUvY29tcG9uZW50Tm9ybWFsaXplci5qc1wiXG52YXIgY29tcG9uZW50ID0gbm9ybWFsaXplcihcbiAgc2NyaXB0LFxuICByZW5kZXIsXG4gIHN0YXRpY1JlbmRlckZucyxcbiAgZmFsc2UsXG4gIG51bGwsXG4gIFwiMGFjMTk2OTNcIixcbiAgbnVsbFxuICBcbilcblxuLyogY3VzdG9tIGJsb2NrcyAqL1xuaW1wb3J0IGJsb2NrMCBmcm9tIFwiLi9NYWluU2VudGVuY2VQYW5lbC55YW1sP3Z1ZSZ0eXBlPWN1c3RvbSZpbmRleD0wJmJsb2NrVHlwZT1pMThuJmlzc3VlclBhdGg9JTJGdmFyJTJGaG9zdCUyRm1lZGlhJTJGcmVtb3ZhYmxlJTJGTWljcm9TRCUyRk5ldEJlYW5zUHJvamVjdHMlMkYlNUJodG1sJTVEJTJGUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2UlMkZzcmMlMkZjb21wb25lbnRzJTJGU2VudGVuY2VQYW5lbCUyRk1haW5TZW50ZW5jZVBhbmVsJTJGTWFpblNlbnRlbmNlUGFuZWwudnVlJmxhbmc9eWFtbFwiXG5pZiAodHlwZW9mIGJsb2NrMCA9PT0gJ2Z1bmN0aW9uJykgYmxvY2swKGNvbXBvbmVudClcblxuLyogaG90IHJlbG9hZCAqL1xuaWYgKG1vZHVsZS5ob3QpIHtcbiAgdmFyIGFwaSA9IHJlcXVpcmUoXCIvdmFyL2hvc3QvbWVkaWEvcmVtb3ZhYmxlL01pY3JvU0QvTmV0QmVhbnNQcm9qZWN0cy9baHRtbF0vUFdBLUVuZ2xpc2gtU3BlYWtpbmctUHJhY3RpY2Uvbm9kZV9tb2R1bGVzL3Z1ZS1ob3QtcmVsb2FkLWFwaS9kaXN0L2luZGV4LmpzXCIpXG4gIGFwaS5pbnN0YWxsKHJlcXVpcmUoJ3Z1ZScpKVxuICBpZiAoYXBpLmNvbXBhdGlibGUpIHtcbiAgICBtb2R1bGUuaG90LmFjY2VwdCgpXG4gICAgaWYgKCFhcGkuaXNSZWNvcmRlZCgnMGFjMTk2OTMnKSkge1xuICAgICAgYXBpLmNyZWF0ZVJlY29yZCgnMGFjMTk2OTMnLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9IGVsc2Uge1xuICAgICAgYXBpLnJlbG9hZCgnMGFjMTk2OTMnLCBjb21wb25lbnQub3B0aW9ucylcbiAgICB9XG4gICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIuL01haW5TZW50ZW5jZVBhbmVsLmh0bWw/dnVlJnR5cGU9dGVtcGxhdGUmaWQ9MGFjMTk2OTMmc2NvcGVkPXRydWUmXCIsIGZ1bmN0aW9uICgpIHtcbiAgICAgIGFwaS5yZXJlbmRlcignMGFjMTk2OTMnLCB7XG4gICAgICAgIHJlbmRlcjogcmVuZGVyLFxuICAgICAgICBzdGF0aWNSZW5kZXJGbnM6IHN0YXRpY1JlbmRlckZuc1xuICAgICAgfSlcbiAgICB9KVxuICB9XG59XG5jb21wb25lbnQub3B0aW9ucy5fX2ZpbGUgPSBcInNyYy9jb21wb25lbnRzL1NlbnRlbmNlUGFuZWwvTWFpblNlbnRlbmNlUGFuZWwvTWFpblNlbnRlbmNlUGFuZWwudnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIiwiXHJcbmltcG9ydCBXb3JkTW9kYWwgZnJvbSAnLi9Xb3JkTW9kYWwvV29yZE1vZGFsLnZ1ZSdcclxuaW1wb3J0IE1haW5TZW50ZW5jZVBhbmVsIGZyb20gJy4vTWFpblNlbnRlbmNlUGFuZWwvTWFpblNlbnRlbmNlUGFuZWwudnVlJ1xyXG5cclxubGV0IFNlbnRlbmNlUGFuZWwgPSB7XHJcbiAgcHJvcHM6IFsnY29uZmlnJywgJ2xvY2FsQ29uZmlnJywgJ3V0aWxzJ10sXHJcbiAgZGF0YSAoKSB7ICAgIFxyXG4gICAgdGhpcy4kaTE4bi5sb2NhbGUgPSB0aGlzLmxvY2FsQ29uZmlnLmxvY2FsZVxyXG4gICAgcmV0dXJuIHtcclxuICAgICAgLy9zaG93OiBmYWxzZSxcclxuICAgICAgcGFnZVRyYW5zaXRpb246IGZhbHNlLFxyXG4gICAgICBwYWdlVHJhbnNpdGlvblNob3c6IGZhbHNlLFxyXG4gICAgICBwYWdlVHJhbnNpdGlvblRvTmV4dDogdHJ1ZSxcclxuICAgICAgcGFnZVRyYW5zaXRpb25CZWZvcmVTZW50ZW5jZTogJycsXHJcbiAgICAgIHBhZ2VUcmFuc2l0aW9uQWZ0ZXJTZW50ZW5jZTogJycsXHJcbiAgICB9XHJcbiAgfSxcclxuICB3YXRjaDoge1xyXG4gICAgJ2xvY2FsQ29uZmlnLmxvY2FsZScoKSB7XHJcbiAgICAgIHRoaXMuJGkxOG4ubG9jYWxlID0gdGhpcy5sb2NhbENvbmZpZy5sb2NhbGU7XHJcbiAgICB9LFxyXG4gICAgJ2xvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCc6IGFzeW5jIGZ1bmN0aW9uIChuZXdJbmRleCwgb2xkSW5kZXgpIHtcclxuICAgICAgLy9jb25zb2xlLmxvZyhuZXdJbmRleCwgb2xkSW5kZXgpXHJcbiAgICAgIHRoaXMucGFnZVRyYW5zaXRpb25Ub05leHQgPSAobmV3SW5kZXggPiBvbGRJbmRleClcclxuICAgICAgXHJcbiAgICAgIHRoaXMucGFnZVRyYW5zaXRpb25BZnRlclNlbnRlbmNlID0gdGhpcy5jdXJyZW50U2VudGVuY2UgKyAnJ1xyXG4gICAgICB0aGlzLnBhZ2VUcmFuc2l0aW9uQmVmb3JlU2VudGVuY2UgPSB0aGlzLmNvbmZpZy5zZW50ZW5jZUxpc3Rbb2xkSW5kZXhdICsgJydcclxuICAgICAgXHJcbiAgICAgIHRoaXMucGFnZVRyYW5zaXRpb24gPSB0cnVlXHJcbiAgICAgIHRoaXMucGFnZVRyYW5zaXRpb25TaG93ID0gdHJ1ZVxyXG4gICAgICAvL2NvbnNvbGUubG9nKCdiZWZvcmUnLCB0aGlzLnBhZ2VUcmFuc2l0aW9uQmVmb3JlU2VudGVuY2UpXHJcbiAgICAgIC8vY29uc29sZS5sb2coJ2FmdGVyJywgdGhpcy5wYWdlVHJhbnNpdGlvbkFmdGVyU2VudGVuY2UpXHJcbiAgICAgIC8vdGhpcy5wYWdlVHJhbnNpdGlvbk5leHRTZW50ZW5jZVxyXG4gICAgICBhd2FpdCB0aGlzLnV0aWxzLkFzeW5jVXRpbHMuc2xlZXAoNTAwKVxyXG4gICAgICB0aGlzLnBhZ2VUcmFuc2l0aW9uID0gZmFsc2VcclxuICAgICAgdGhpcy5wYWdlVHJhbnNpdGlvblNob3cgPSBmYWxzZVxyXG4gICAgICAvL2NvbnNvbGUubG9nKHRoaXMucGFnZVRyYW5zaXRpb24pXHJcbiAgICB9XHJcbiAgfSxcclxuICBjb21wdXRlZDoge1xyXG4gICAgY3VycmVudFNlbnRlbmNlICgpIHtcclxuICAgICAgLy9jb25zb2xlLmxvZyh0aGlzLnV0aWxzLkxlYXJuaW5nSW5zdHJ1Y3RvcilcclxuICAgICAgaWYgKHRoaXMuY29uZmlnLmluaXRlZCA9PT0gdHJ1ZSkge1xyXG4gICAgICAgIC8vY29uc29sZS5sb2codGhpcy51dGlscy5MZWFybmluZ0luc3RydWN0b3IuY3VycmVudFNlbnRlbmNlKVxyXG4gICAgICAgIHJldHVybiB0aGlzLnV0aWxzLkxlYXJuaW5nSW5zdHJ1Y3Rvci5jdXJyZW50U2VudGVuY2VcclxuICAgICAgfVxyXG4gICAgICBlbHNlIHtcclxuICAgICAgICByZXR1cm4gJydcclxuICAgICAgfVxyXG4gICAgfSxcclxuICAgIHByZXZpb3VzU2VudGVuY2UgKCkge1xyXG4gICAgICAvL2NvbnNvbGUubG9nKHRoaXMubG9jYWxDb25maWcucGxheWluZ0luZGV4KVxyXG4gICAgICBpZiAodGhpcy5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXggPT09IDApIHtcclxuICAgICAgICByZXR1cm4gJydcclxuICAgICAgfVxyXG4gICAgICByZXR1cm4gdGhpcy5jb25maWcuc2VudGVuY2VMaXN0Wyh0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCAtIDEpXVxyXG4gICAgfSxcclxuICAgIG5leHRTZW50ZW5jZSAoKSB7XHJcbiAgICAgIC8vY29uc29sZS5sb2codGhpcy5sb2NhbENvbmZpZy5wbGF5aW5nSW5kZXgpXHJcbiAgICAgIGlmICh0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCA9PT0gdGhpcy5jb25maWcuc2VudGVuY2VMaXN0Lmxlbmd0aCAtIDEpIHtcclxuICAgICAgICByZXR1cm4gJydcclxuICAgICAgfVxyXG4gICAgICByZXR1cm4gdGhpcy5jb25maWcuc2VudGVuY2VMaXN0Wyh0aGlzLmxvY2FsQ29uZmlnLnBsYXlpbmdJbmRleCArIDEpXVxyXG4gICAgfVxyXG4gIH0sXHJcbiAgY29tcG9uZW50czoge1xyXG4vLyAgICBDdXJyZW50U2VudGVuY2UsXHJcbiAgICBNYWluU2VudGVuY2VQYW5lbCxcclxuICAgIFdvcmRNb2RhbFxyXG4gIH0sXHJcbi8vICBtb3VudGVkKCkge1xyXG4vLyAgICBcclxuLy8gIH0sXHJcbiAgbWV0aG9kczoge1xyXG4gICAgZ29Ub1ByZXZpb3VzU2VudGVuY2UgKCkge1xyXG4gICAgICB0aGlzLnV0aWxzLkxlYXJuaW5nSW5zdHJ1Y3Rvci5nb1RvUHJldmlvdXNTZW50ZW5jZSgpXHJcbiAgICB9LFxyXG4gICAgZ29Ub05leHRTZW50ZW5jZSAoKSB7XHJcbiAgICAgIHRoaXMudXRpbHMuTGVhcm5pbmdJbnN0cnVjdG9yLmdvVG9OZXh0U2VudGVuY2UoKVxyXG4gICAgfSxcclxuLy8gICAgc3BlYWtDdXJyZW50U2VudGVuY2U6IGFzeW5jIGZ1bmN0aW9uICgpIHtcclxuLy8gICAgICBhd2FpdCB0aGlzLiRyZWZzLkN1cnJlbnRTZW50ZW5jZS5zcGVha0N1cnJlbnRTZW50ZW5jZSgpXHJcbi8vICAgIH1cclxuICB9XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IFNlbnRlbmNlUGFuZWwiLCJpbXBvcnQgbW9kIGZyb20gXCItIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9iYWJlbC1sb2FkZXIvbGliL2luZGV4LmpzPz9yZWYtLTYhLi9TZW50ZW5jZVBhbmVsLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiOyBleHBvcnQgZGVmYXVsdCBtb2Q7IGV4cG9ydCAqIGZyb20gXCItIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9iYWJlbC1sb2FkZXIvbGliL2luZGV4LmpzPz9yZWYtLTYhLi9TZW50ZW5jZVBhbmVsLmpzP3Z1ZSZ0eXBlPXNjcmlwdCZsYW5nPWpzJlwiIiwiaW1wb3J0IHsgcmVuZGVyLCBzdGF0aWNSZW5kZXJGbnMgfSBmcm9tIFwiLi9TZW50ZW5jZVBhbmVsLmh0bWw/dnVlJnR5cGU9dGVtcGxhdGUmaWQ9MzQ4NmY1OTMmc2NvcGVkPXRydWUmXCJcbmltcG9ydCBzY3JpcHQgZnJvbSBcIi4vU2VudGVuY2VQYW5lbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuZXhwb3J0ICogZnJvbSBcIi4vU2VudGVuY2VQYW5lbC5qcz92dWUmdHlwZT1zY3JpcHQmbGFuZz1qcyZcIlxuaW1wb3J0IHN0eWxlMCBmcm9tIFwiLi9TZW50ZW5jZVBhbmVsLmxlc3M/dnVlJnR5cGU9c3R5bGUmaW5kZXg9MCZpZD0zNDg2ZjU5MyZsYW5nPWxlc3Mmc2NvcGVkPXRydWUmXCJcbmltcG9ydCBzdHlsZTEgZnJvbSBcIi4vU2VudGVuY2VQYW5lbFRyYW5zaXRpb24ubGVzcz92dWUmdHlwZT1zdHlsZSZpbmRleD0xJmlkPTM0ODZmNTkzJmxhbmc9bGVzcyZzY29wZWQ9dHJ1ZSZcIlxuXG5cbi8qIG5vcm1hbGl6ZSBjb21wb25lbnQgKi9cbmltcG9ydCBub3JtYWxpemVyIGZyb20gXCIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3J1bnRpbWUvY29tcG9uZW50Tm9ybWFsaXplci5qc1wiXG52YXIgY29tcG9uZW50ID0gbm9ybWFsaXplcihcbiAgc2NyaXB0LFxuICByZW5kZXIsXG4gIHN0YXRpY1JlbmRlckZucyxcbiAgZmFsc2UsXG4gIG51bGwsXG4gIFwiMzQ4NmY1OTNcIixcbiAgbnVsbFxuICBcbilcblxuLyogY3VzdG9tIGJsb2NrcyAqL1xuaW1wb3J0IGJsb2NrMCBmcm9tIFwiLi9TZW50ZW5jZVBhbmVsLnlhbWw/dnVlJnR5cGU9Y3VzdG9tJmluZGV4PTAmYmxvY2tUeXBlPWkxOG4maXNzdWVyUGF0aD0lMkZ2YXIlMkZob3N0JTJGbWVkaWElMkZyZW1vdmFibGUlMkZNaWNyb1NEJTJGTmV0QmVhbnNQcm9qZWN0cyUyRiU1Qmh0bWwlNUQlMkZQV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZSUyRnNyYyUyRmNvbXBvbmVudHMlMkZTZW50ZW5jZVBhbmVsJTJGU2VudGVuY2VQYW5lbC52dWUmbGFuZz15YW1sXCJcbmlmICh0eXBlb2YgYmxvY2swID09PSAnZnVuY3Rpb24nKSBibG9jazAoY29tcG9uZW50KVxuXG4vKiBob3QgcmVsb2FkICovXG5pZiAobW9kdWxlLmhvdCkge1xuICB2YXIgYXBpID0gcmVxdWlyZShcIi92YXIvaG9zdC9tZWRpYS9yZW1vdmFibGUvTWljcm9TRC9OZXRCZWFuc1Byb2plY3RzL1todG1sXS9QV0EtRW5nbGlzaC1TcGVha2luZy1QcmFjdGljZS9ub2RlX21vZHVsZXMvdnVlLWhvdC1yZWxvYWQtYXBpL2Rpc3QvaW5kZXguanNcIilcbiAgYXBpLmluc3RhbGwocmVxdWlyZSgndnVlJykpXG4gIGlmIChhcGkuY29tcGF0aWJsZSkge1xuICAgIG1vZHVsZS5ob3QuYWNjZXB0KClcbiAgICBpZiAoIWFwaS5pc1JlY29yZGVkKCczNDg2ZjU5MycpKSB7XG4gICAgICBhcGkuY3JlYXRlUmVjb3JkKCczNDg2ZjU5MycsIGNvbXBvbmVudC5vcHRpb25zKVxuICAgIH0gZWxzZSB7XG4gICAgICBhcGkucmVsb2FkKCczNDg2ZjU5MycsIGNvbXBvbmVudC5vcHRpb25zKVxuICAgIH1cbiAgICBtb2R1bGUuaG90LmFjY2VwdChcIi4vU2VudGVuY2VQYW5lbC5odG1sP3Z1ZSZ0eXBlPXRlbXBsYXRlJmlkPTM0ODZmNTkzJnNjb3BlZD10cnVlJlwiLCBmdW5jdGlvbiAoKSB7XG4gICAgICBhcGkucmVyZW5kZXIoJzM0ODZmNTkzJywge1xuICAgICAgICByZW5kZXI6IHJlbmRlcixcbiAgICAgICAgc3RhdGljUmVuZGVyRm5zOiBzdGF0aWNSZW5kZXJGbnNcbiAgICAgIH0pXG4gICAgfSlcbiAgfVxufVxuY29tcG9uZW50Lm9wdGlvbnMuX19maWxlID0gXCJzcmMvY29tcG9uZW50cy9TZW50ZW5jZVBhbmVsL1NlbnRlbmNlUGFuZWwudnVlXCJcbmV4cG9ydCBkZWZhdWx0IGNvbXBvbmVudC5leHBvcnRzIl0sIm1hcHBpbmdzIjoiOzs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Ozs7Ozs7Ozs7OztBQ3JJQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOzs7Ozs7Ozs7OztBQ2hOQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFOQTtBQVFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBTkE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQU9BO0FBQ0E7QUFDQTtBQUNBO0FBWEE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQWdCQTtBQUNBO0FBQ0E7QUFsQkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQW9CQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFLQTtBQUNBO0FBTkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQXhCQTtBQWdDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQUE7QUFHQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFBQTtBQUVBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQTVDQTtBQThDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBUEE7QUFTQTtBQUNBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUpBO0FBTUE7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFYQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBWUE7QUFBQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBS0E7QUFMQTtBQUFBO0FBQ0E7QUFEQTtBQU9BO0FBUEE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQVlBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFLQTtBQUxBO0FBQUE7QUFDQTtBQURBO0FBT0E7QUFDQTtBQVJBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFVQTtBQUNBO0FBQ0E7QUEzREE7QUEvRkE7QUE4SkE7O0FDaEtBOzs7Ozs7Ozs7OztBQ0FBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHVCQWlCQTtBQUNBO0FBQ0E7O0FDM0NBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Ozs7QUNoQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Ozs7OztBQ25FQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBSEE7QUFLQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBVEE7QUFXQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBbERBO0FBb0RBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBR0E7QUFDQTtBQUNBO0FBTkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQU9BO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBTUE7QUFDQTtBQVBBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFTQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQVZBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFZQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFDQTtBQURBO0FBS0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQVRBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFXQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQTVEQTtBQWhGQTtBQWdKQTs7QUNoSkE7Ozs7Ozs7O0FDQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsdUNBaUJBO0FBQ0E7QUFDQTs7QUMzQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Ozs7O0FDOUhBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7Ozs7OztBQzNEQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUZBO0FBSUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFqQkE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFBQTtBQUNBO0FBREE7QUFBQTtBQUpBO0FBdUJBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUZBO0FBSUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBdkJBO0FBeUJBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUVBO0FBQ0E7QUE3QkE7QUE1REE7QUE2RkE7O0FDN0ZBOzs7Ozs7OztBQ0FBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLDBDQWlCQTtBQUNBO0FBQ0E7O0FDM0NBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFIQTtBQUtBO0FBQ0E7QUFEQTtBQUdBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBTkE7QUFRQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQU5BO0FBNUJBO0FBc0NBOztBQ3hDQTs7Ozs7Ozs7QUNBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSw2Q0FpQkE7QUFDQTtBQUNBOztBQzNDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFIQTtBQUtBO0FBQ0E7QUFDQTtBQUZBO0FBS0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBekJBO0FBMkJBOztBQzlCQTs7Ozs7Ozs7Ozs7QUNBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHlDQWlCQTtBQUNBO0FBQ0E7Ozs7QUMzQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFOQTtBQVFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUVBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFaQTtBQUFBO0FBQ0E7QUFEQTtBQWFBO0FBQ0E7QUFDQTtBQWZBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ0E7QUFEQTtBQUFBO0FBQUE7QUFDQTtBQURBO0FBQUE7QUFKQTtBQXNCQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBeEJBO0FBMEJBO0FBQ0E7QUFDQTtBQUNBO0FBSEE7QUFLQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQVZBO0FBckVBO0FBa0ZBOztBQ3RGQTs7Ozs7Ozs7Ozs7QUNBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFDQWlCQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///147\n')}])]);
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/SentencePanel"],{
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function (Component) {
+  Component.options.__i18n = Component.options.__i18n || []
+  Component.options.__i18n.push('{"en":{"TEST_MESSAGE":"Test Message"},"zh-TW":{"TEST_MESSAGE":"測試訊息"}}')
+  delete Component.options._Ctor
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".current-sentence-segments[data-v-0a8eff7b] {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n.current-sentence-segments .current-sentence[data-v-0a8eff7b] {\n  max-height: calc(25vh - 2rem);\n  height: calc(25vh - 2rem);\n  /*    background-color: green;*/\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.current-sentence-segments .current-sentence.isSpeaking[data-v-0a8eff7b] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.word.speakable[data-v-0a8eff7b] {\n  cursor: pointer;\n}\n.word.speakable.isSpeaking[data-v-0a8eff7b] {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.target[data-v-0a8eff7b] {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking[data-v-0a8eff7b],\n.target .isSpeaking[data-v-0a8eff7b] {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing[data-v-0a8eff7b] {\n  background-color: yellow;\n  color: black;\n}\n.word-block .word.speakable[data-v-0a8eff7b] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.sentence-block[data-v-0a8eff7b] {\n  text-align: center;\n}\n.sentence-block h2[data-v-0a8eff7b] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n}\n.sentence-block h2 .word[data-v-0a8eff7b] {\n  visibility: hidden;\n}\n.sentence-block > h2[data-v-0a8eff7b] {\n  transition: 0.5s;\n}\n.sentence-block > h2 .word[data-v-0a8eff7b] {\n  transition: 0.5s;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&","CurrentSentence.less"],"names":[],"mappings":"AACA;EACE,8BAAA;EACA,+BAAA;ACAF;ADFA;EAKI,6BAAA;EACA,yBAAA;ECAF,+BAA+B;EDG7B,kBAAA;EACA,gBAAA;ACDJ;ADGI;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACDN;ADOA;EACE,eAAA;ACLF;ADOE;EACE,mBAAA;EACA,wBAAA;EACA,YAAA;ACLJ;ADSA;EACE,WAAA;EACA,sBAAA;EACA,WAAA;ACPF;ADSE;;EAEE,wBAAA;EACA,YAAA;ACPJ;ADUE;EACE,wBAAA;EACA,YAAA;ACRJ;ADYA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACVF;ADaA;EACE,kBAAA;ACXF;ADUA;EAII,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;EAEA,qBAAA;EACA,iBAAA;EACA,kBAAA;ACZJ;ADCA;EAeM,kBAAA;ACbN;ADkBA;EACE,gBAAA;AChBF;ADeA;EAII,gBAAA;AChBJ","file":"CurrentSentence.less","sourcesContent":["\n.current-sentence-segments {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n  \n  .current-sentence {\n    max-height: calc(25vh - 2rem);\n    height: calc(25vh - 2rem);\n/*    background-color: green;*/\n    \n    overflow-x: hidden;\n    overflow-y: auto;\n    \n    &.isSpeaking {\n      cursor: not-allowed;\n      background-color: yellow;\n      color: black;\n    }\n  }\n}\n\n\n.word.speakable {\n  cursor: pointer;\n\n  &.isSpeaking {\n    cursor: not-allowed;\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n  \n  &.isSpeaking,\n  .isSpeaking {\n    background-color: yellow;\n    color: black;\n  }\n  \n  &.isPracticing {\n    background-color: yellow;\n    color: black;\n  }\n}\n\n.word-block .word.speakable {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.sentence-block {\n  text-align: center;\n  \n  h2 {\n    color: gray;\n    background-color: gray;\n    border-radius: 1rem;\n    -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n\n    display: inline-block;\n    margin-left: auto;\n    margin-right: auto;\n\n\n    .word {\n      visibility: hidden;\n    }\n  }\n}\n\n.sentence-block > h2 {\n  transition: .5s;\n  \n  .word {\n    transition: .5s;\n  }\n}",".current-sentence-segments {\n  margin-left: 0.5rem !important;\n  margin-right: 0.5rem !important;\n}\n.current-sentence-segments .current-sentence {\n  max-height: calc(25vh - 2rem);\n  height: calc(25vh - 2rem);\n  /*    background-color: green;*/\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.current-sentence-segments .current-sentence.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.word.speakable {\n  cursor: pointer;\n}\n.word.speakable.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow;\n  color: black;\n}\n.target {\n  color: gray;\n  padding-bottom: 0.5rem;\n  width: 100%;\n}\n.target.isSpeaking,\n.target .isSpeaking {\n  background-color: yellow;\n  color: black;\n}\n.target.isPracticing {\n  background-color: yellow;\n  color: black;\n}\n.word-block .word.speakable {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.sentence-block {\n  text-align: center;\n}\n.sentence-block h2 {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n}\n.sentence-block h2 .word {\n  visibility: hidden;\n}\n.sentence-block > h2 {\n  transition: 0.5s;\n}\n.sentence-block > h2 .word {\n  transition: 0.5s;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".main-sentence-panel[data-v-0ac19693] {\n  height: calc(100vh - 90px - 9.3rem);\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&","MainSentencePanel.less"],"names":[],"mappings":"AACA;EACE,mCAAA;ACAF","file":"MainSentencePanel.less","sourcesContent":["\n.main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n",".main-sentence-panel {\n  height: calc(100vh - 90px - 9.3rem);\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".trigger[data-v-0ac19693] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-0ac19693] {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n.popup[data-v-0ac19693]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-0ac19693] {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.wait-practice[data-v-0ac19693] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&","MainSentencePanelPractice.less"],"names":[],"mappings":"AACA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACFF;ADKA;EACE,kBAAA;EACA,OAAA;EACA,SAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,0BAAA;EACA,WAAA;ACHF;ADMA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACJF;ADOA;EACE,kBAAA;EACA,gBAAA;EACA,0BAAA;EAEA,6BAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;ACNF;ADSA;EACE,YAAA;EACA,iBAAA;ACPF","file":"MainSentencePanelPractice.less","sourcesContent":["\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  \n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n",".trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: relative;\n  left: 0;\n  top: 6rem;\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: 100%;\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  max-height: calc(30vh - 2rem);\n  height: calc(30vh - 2rem);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".practice-hint[data-v-f30771e2] {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing[data-v-f30771e2] {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger[data-v-f30771e2] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-f30771e2] {\n  position: fixed;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n}\n.popup[data-v-f30771e2]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-f30771e2] {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.inner .row .column[data-v-f30771e2] {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice[data-v-f30771e2] {\n  cursor: wait;\n  user-select: none;\n}\n.popup.positive[data-v-f30771e2]:after,\n.popup.positive .inner[data-v-f30771e2] {\n  background-color: #fcfff5 !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&","PracticeSentencePanel.less"],"names":[],"mappings":"AAAA;EACE,eAAA;EAEA,qBAAA;EACA,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,eAAA;ACAF;ADEE;EACE,YAAA;EACA,wBAAA;EACA,YAAA;EAEA,iBAAA;ACDJ;ADKA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACLF;ADQA;EACE,eAAA;EAEA,sBAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,0BAAA;EACA,wBAAA;ACPF;ADaA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACXF;ADcA;EACE,kBAAA;EACA,gBAAA;EACA,0BAAA;EAEA,oBAAA;EAEA,sBAAA;EACA,kBAAA;EACA,gBAAA;EACA,kBAAA;ACdF;ADIA;EAeM,iBAAA;EACA,kBAAA;AChBN;ADuBA;EACE,YAAA;EACA,iBAAA;ACrBF;ADyBE;;EAEE,oCAAA;ACvBJ","file":"PracticeSentencePanel.less","sourcesContent":[".practice-hint {\n  cursor: pointer;\n  \n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n  \n  &.practicing {\n    cursor: wait;\n    background-color: yellow;\n    color: black;\n    //pointer-events: none;\n    user-select: none;\n  }\n}\n\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: fixed;\n  //left: 0;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n  //margin-left: auto;\n  //margin-right: auto;\n  \n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  //margin: 1rem !important;\n  margin: 0 !important;\n  \n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n  \n  .row {\n    \n    .column {\n      margin-left: 1rem;\n      margin-right: 1rem;\n    }\n  }\n  \n    \n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n\n.popup.positive {\n  &:after,\n    .inner {\n    background-color: #fcfff5 !important;\n  }\n}",".practice-hint {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: fixed;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.inner .row .column {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n.popup.positive:after,\n.popup.positive .inner {\n  background-color: #fcfff5 !important;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n.word[data-v-e323347e] {\n  cursor: pointer;\n}\n.space[data-v-e323347e] {\n  pointer-events: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF;ADIA;EAEI,yBAAA;ACHJ;ADOA;EACE,eAAA;ACLF;ADQA;EACE,oBAAA;ACNF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n\n.SentenceDifference.positive {\n  .word:not(.removed):not(.added) {\n    color: #2c662d !important\n  }\n}\n\n.word {\n  cursor: pointer;\n}\n\n.space {\n  pointer-events: none;\n}",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n.word {\n  cursor: pointer;\n}\n.space {\n  pointer-events: none;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".previous-sentence[data-v-3486f593],\n.next-sentence[data-v-3486f593] {\n  height: 1.5rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n.next-sentence[data-v-3486f593] {\n  width: calc(100% - 2rem);\n}\n.sentence-segment .step.forward.icon[data-v-3486f593] {\n  float: right;\n}\n.sentence-segment[data-v-3486f593] {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n.sentence-segment.next[data-v-3486f593] {\n  position: fixed !important;\n  bottom: 45px;\n  width: calc(100vw - 1rem);\n}\n.next-sentence[data-v-3486f593] {\n  text-align: right;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&","SentencePanel.less"],"names":[],"mappings":"AACA;;EAEE,cAAA;EACA,gBAAA;EACA,mBAAA;EACA,uBAAA;EACA,cAAA;EACA,WAAA;EACA,iBAAA;ACAF;ADGA;EACE,wBAAA;ACDF;ADIA;EACE,YAAA;ACFF;ADKA;EACE,yBAAA;EACA,eAAA;EACA,WAAA;ACHF;ADMA;EACE,0BAAA;EACA,YAAA;EACA,yBAAA;ACJF;ADOA;EACE,iBAAA;ACLF","file":"SentencePanel.less","sourcesContent":["\n.previous-sentence,\n.next-sentence {\n  height: 1.5rem;\n  overflow:hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n\n.next-sentence {\n  width: calc(100% - 2rem);\n}\n\n.sentence-segment .step.forward.icon {\n  float: right;\n}\n\n.sentence-segment {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n\n.sentence-segment.next {\n  position: fixed !important;\n  bottom: 45px;\n  width: calc(100vw - 1rem);\n}\n\n.next-sentence {\n  text-align: right;\n}\n",".previous-sentence,\n.next-sentence {\n  height: 1.5rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  display: block;\n  width: 100%;\n  user-select: none;\n}\n.next-sentence {\n  width: calc(100% - 2rem);\n}\n.sentence-segment .step.forward.icon {\n  float: right;\n}\n.sentence-segment {\n  margin: 0.5rem !important;\n  cursor: pointer;\n  color: gray;\n}\n.sentence-segment.next {\n  position: fixed !important;\n  bottom: 45px;\n  width: calc(100vw - 1rem);\n}\n.next-sentence {\n  text-align: right;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".page-container-transition[data-v-3486f593],\n.page-container[data-v-3486f593] {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n}\n.page-container-transition[data-v-3486f593] {\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container[data-v-3486f593] {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-leave-active[data-v-3486f593] {\n  transition: all 0.3s ease;\n}\n.slide-enter[data-v-3486f593],\n.slide-leave-to[data-v-3486f593] {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter[data-v-3486f593],\n.toRight .slide-leave-to[data-v-3486f593] {\n  transform: translateX(10vw);\n}\n#demo p[data-v-3486f593] {\n  position: fixed;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&","SentencePanelTransition.less"],"names":[],"mappings":"AAEA;;EAGE,kBAAA;EACA,eAAA;EACA,WAAA;ACFF;ADKA;EACE,YAAA;EACA,iBAAA;EACA,oBAAA;ACHF;ADQA;EACE,eAAA;EACA,WAAA;ACNF;AACA,mBAAmB;AACnB,gBAAgB;ADUhB;EACE,yBAAA;ACRF;ADUA;EAEE,yBAAA;ACTF;ADYA;;EAEE,4BAAA;ACVF;ADcA;;EAEI,2BAAA;ACZJ;ADiBA;EACE,eAAA;ACfF","file":"SentencePanelTransition.less","sourcesContent":["// https://cn.vuejs.org/v2/guide/transitions.html\n\n.page-container-transition,\n.page-container {\n  //background-color: red !important;\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n}\n\n.page-container-transition {\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n\n\n\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n  //top: 150px;\n}\n\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  //transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);\n  transition: all 0.3s ease;\n}\n\n.slide-enter, .slide-leave-to\n/* .slide-fade-leave-active for below version 2.1.8 */ {\n  transform: translateX(-10vw);\n  //opacity: 0;\n}\n\n.toRight {\n  .slide-enter, .slide-leave-to {\n    transform: translateX(10vw);\n  }\n}\n\n\n#demo p {\n  position: fixed;\n}",".page-container-transition,\n.page-container {\n  margin-top: 1.5rem;\n  position: fixed;\n  width: 100%;\n}\n.page-container-transition {\n  cursor: wait;\n  user-select: none;\n  pointer-events: none;\n}\n.main-sentence-panel-container {\n  position: fixed;\n  width: 100%;\n}\n/* 可以设置不同的进入和离开动画 */\n/* 设置持续时间和动画函数 */\n.slide-enter-active {\n  transition: all 0.3s ease;\n}\n.slide-leave-active {\n  transition: all 0.3s ease;\n}\n.slide-enter,\n.slide-leave-to {\n  transform: translateX(-10vw);\n}\n.toRight .slide-enter,\n.toRight .slide-leave-to {\n  transform: translateX(10vw);\n}\n#demo p {\n  position: fixed;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(true);
+// Module
+exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.masked span[data-v-3b4f4609] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing[data-v-3b4f4609] {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive[data-v-3b4f4609] {\n  color: #21ba45 !important;\n}\n.practice-hint[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.practice-again-hint[data-v-3b4f4609] {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible[data-v-3b4f4609] {\n  visibility: visible;\n}\n.keep-going[data-v-3b4f4609] {\n  color: gray !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF;ADGA;EACE,eAAA;ACDF;ADIA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACFF;ADKA;EACE,uBAAA;EACA,oBAAA;ACHF;ADMA;EACE,yBAAA;ACJF;ADOA;EACE,eAAA;ACLF;ADQA;EAEE,2BAAA;EACA,8BAAA;EACA,WAAA;EACA,kBAAA;ACPF;ADSE;EACE,mBAAA;ACPJ;ADWA;EACE,sBAAA;ACTF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n\n.word-segment {\n  cursor: pointer;\n}\n\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n\n.positive {\n  color: #21ba45 !important;\n}\n\n.practice-hint {\n  cursor: pointer;\n}\n\n.practice-again-hint {\n  \n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n  \n  &.visible {\n    visibility: visible;\n  }\n}\n\n.keep-going {\n  color: gray !important;\n}",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment {\n  cursor: pointer;\n}\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive {\n  color: #21ba45 !important;\n}\n.practice-hint {\n  cursor: pointer;\n}\n.practice-again-hint {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible {\n  visibility: visible;\n}\n.keep-going {\n  color: gray !important;\n}\n"]}]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "ui piled segments current-sentence-segments",
+      on: { click: _vm.speakCurrentSentence }
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "ui segment", class: _vm.computeCurrentSentenceClasses },
+        [
+          _c(
+            "div",
+            { staticClass: "ui grid middle aligned current-sentence" },
+            [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "column" }, [
+                  _c(
+                    "h2",
+                    { staticClass: "ui center aligned header" },
+                    [
+                      _vm.config.currentSentenceMask !== "translation"
+                        ? _vm._l(_vm.words, function(word, i) {
+                            return _c(
+                              "span",
+                              {
+                                staticClass: "word",
+                                class: _vm.computedWordClasses(word, i),
+                                on: {
+                                  click: function($event) {
+                                    $event.stopPropagation()
+                                    return _vm.startSpeakWord(word, i)
+                                  }
+                                }
+                              },
+                              [_vm._v(_vm._s(word))]
+                            )
+                          })
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.config.currentSentenceMask === "translation"
+                        ? [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(_vm.translationMask) +
+                                "\n            "
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "main-sentence-panel" },
+    [
+      _c("CurrentSentence", {
+        ref: "CurrentSentence",
+        attrs: {
+          config: _vm.config,
+          localConfig: _vm.localConfig,
+          utils: _vm.utils,
+          sentence: _vm.sentence
+        }
+      }),
+      _vm._v(" "),
+      _c("PracticeSentencePanel", {
+        ref: "PracticeSentencePanel",
+        attrs: {
+          config: _vm.config,
+          localConfig: _vm.localConfig,
+          utils: _vm.utils
+        }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm.localConfig.practiceMode === "speaking"
+    ? _c(
+        "div",
+        { staticClass: "PracticeSentencePanel" },
+        [
+          !_vm.config.practiceSentence
+            ? _c(
+                "h2",
+                {
+                  staticClass: "ui center aligned icon header practice-hint",
+                  on: { click: _vm.practice }
+                },
+                [
+                  _c("i", { staticClass: "conversation icon" }),
+                  _vm._v(
+                    "\n      " + _vm._s(_vm.$t("Let's Practice!")) + "\n    "
+                  )
+                ]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.config.practiceSentence
+            ? [
+                _c("div", { staticClass: "trigger" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "practice-hint",
+                      class: { practicing: _vm.isPracticing },
+                      on: { click: _vm.practice }
+                    },
+                    [
+                      _c("i", { staticClass: "conversation icon" }),
+                      _vm._v(" "),
+                      _vm.isPracticing
+                        ? [
+                            _vm._v(
+                              "\n            " +
+                                _vm._s(_vm.$t("Keep going... Keep going... ")) +
+                                "\n          "
+                            )
+                          ]
+                        : _vm._e(),
+                      _vm._v(" "),
+                      _vm.readEvaluationResult
+                        ? [
+                            _vm._v(
+                              "\n            " +
+                                _vm._s(_vm.$t("Practice again?")) +
+                                "\n          "
+                            )
+                          ]
+                        : _vm._e()
+                    ],
+                    2
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "popup",
+                      class: {
+                        positive:
+                          _vm.config.practiceSentenceEvaluationScore >= 0.7
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "inner ui grid middle aligned current-sentence"
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "column" }, [
+                              _vm.config.practiceSentenceEvaluationResult
+                                .length === 0
+                                ? _c(
+                                    "h2",
+                                    {
+                                      staticClass:
+                                        "ui center aligned header wait-practice"
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                  " +
+                                          _vm._s(_vm.config.practiceSentence) +
+                                          "\n                "
+                                      )
+                                    ]
+                                  )
+                                : _c(
+                                    "h2",
+                                    [
+                                      _c("SentenceDifference", {
+                                        ref: "SentenceDifference",
+                                        attrs: {
+                                          config: _vm.config,
+                                          localConfig: _vm.localConfig,
+                                          utils: _vm.utils
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  )
+                            ])
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ]
+            : _vm._e()
+        ],
+        2
+      )
+    : _vm._e()
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "SentenceDifference",
+      class: { positive: _vm.config.practiceSentenceEvaluationScore >= 0.7 }
+    },
+    [
+      _vm._l(_vm.results, function(word, i) {
+        return [
+          !word.added
+            ? _c(
+                "span",
+                { class: { removed: word.removed } },
+                _vm._l(_vm.splitWord(word.value), function(w, j) {
+                  return _c(
+                    "span",
+                    {
+                      staticClass: "word",
+                      class: { space: w === " " },
+                      on: {
+                        click: function($event) {
+                          return _vm.practiceWord(w)
+                        }
+                      }
+                    },
+                    [_vm._v("\n        " + _vm._s(w) + "\n      ")]
+                  )
+                }),
+                0
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          word.added
+            ? _c(
+                "span",
+                {
+                  staticClass: "added word",
+                  class: _vm.computedAddedWord(word.value),
+                  on: {
+                    click: function($event) {
+                      return _vm.practiceWord(word.value)
+                    }
+                  }
+                },
+                [_vm._v(_vm._s(word.value))]
+              )
+            : _vm._e()
+        ]
+      })
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "SentencePanel" },
+    [
+      _c(
+        "div",
+        {
+          staticClass: "ui segment sentence-segment",
+          on: { click: _vm.goToPreviousSentence }
+        },
+        [
+          _vm.localConfig.playingIndex > 0
+            ? _c("div", { staticClass: "previous-sentence" }, [
+                _c("i", { staticClass: "step backward icon" }),
+                _vm._v("\n      " + _vm._s(_vm.previousSentence) + "\n    ")
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.localConfig.playingIndex === 0
+            ? _c("div", { staticClass: "previous-sentence start" }, [
+                _c("i", { staticClass: "hand point right outline icon" }),
+                _vm._v("\n      " + _vm._s(_vm.$t("Start")) + "\n    ")
+              ])
+            : _vm._e()
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "page-container" },
+        [
+          !_vm.pageTransition
+            ? _c("MainSentencePanel", {
+                attrs: {
+                  config: _vm.config,
+                  localConfig: _vm.localConfig,
+                  utils: _vm.utils,
+                  sentence: _vm.currentSentence
+                }
+              })
+            : _vm._e()
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.pageTransition,
+              expression: "pageTransition"
+            }
+          ],
+          staticClass: "page-container-transition",
+          class: {
+            toRight: _vm.pageTransitionToNext,
+            toLeft: !_vm.pageTransitionToNext
+          }
+        },
+        [
+          _c("transition", { attrs: { name: "slide" } }, [
+            _vm.pageTransitionShow
+              ? _c(
+                  "div",
+                  { staticClass: "main-sentence-panel-container" },
+                  [
+                    _c("MainSentencePanel", {
+                      attrs: {
+                        config: _vm.config,
+                        localConfig: _vm.localConfig,
+                        utils: _vm.utils,
+                        sentence: _vm.pageTransitionAfterSentence
+                      }
+                    })
+                  ],
+                  1
+                )
+              : _vm._e()
+          ])
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "ui segment sentence-segment next",
+          on: { click: _vm.goToNextSentence }
+        },
+        [
+          _vm.localConfig.playingIndex < _vm.config.sentenceList.length - 1
+            ? [
+                _c("i", { staticClass: "step forward icon" }),
+                _vm._v(" "),
+                _c("div", { staticClass: "next-sentence" }, [
+                  _vm._v("\n        " + _vm._s(_vm.nextSentence) + "\n      ")
+                ])
+              ]
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.localConfig.playingIndex === _vm.config.sentenceList.length - 1
+            ? _c("div", { staticClass: "next-sentence finish" }, [
+                _vm._v(
+                  "\n      \n      " + _vm._s(_vm.$t("Finish")) + "\n      "
+                ),
+                _c("i", { staticClass: "flag checkered icon" })
+              ])
+            : _vm._e()
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c("WordModal", {
+        ref: "WordModal",
+        attrs: {
+          config: _vm.config,
+          localConfig: _vm.localConfig,
+          utils: _vm.utils
+        }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true&":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { ref: "Modal", staticClass: "ui modal ConfigurationModal" },
+    [
+      _c("i", { staticClass: "close icon" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "header" }, [
+        _vm._v("\n    " + _vm._s(_vm.$t("Word Practice")) + "\n  ")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "content ui form" }, [
+        _c(
+          "div",
+          {
+            staticClass: "ui segment word-segment",
+            class: { isSpeaking: _vm.isSpeaking },
+            on: { click: _vm.speakWord }
+          },
+          [
+            !_vm.wordTrans
+              ? _c(
+                  "h2",
+                  {
+                    staticClass: "ui center aligned header",
+                    class: _vm.computedWordMaskClassesWithoutTrans
+                  },
+                  [
+                    _c("span", [
+                      _vm._v(
+                        "\n          " + _vm._s(_vm.currentWord) + "\n        "
+                      )
+                    ])
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.wordTrans && _vm.config.currentWordMask !== "translation"
+              ? _c(
+                  "div",
+                  { staticClass: "ui two column center aligned grid" },
+                  [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "column" }, [
+                      _c(
+                        "h2",
+                        {
+                          staticClass: "ui center aligned header",
+                          class: _vm.computedWordMaskClassesWithTrans
+                        },
+                        [
+                          _c("span", [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(_vm.currentWord) +
+                                "\n            "
+                            )
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "column",
+                        on: {
+                          click: function($event) {
+                            $event.stopPropagation()
+                            return _vm.openDictionary.apply(null, arguments)
+                          }
+                        }
+                      },
+                      [
+                        _c("h2", { staticClass: "ui center aligned header" }, [
+                          _vm._v(
+                            "\n            " +
+                              _vm._s(_vm.wordTrans) +
+                              "\n          "
+                          )
+                        ])
+                      ]
+                    )
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.wordTrans && _vm.config.currentWordMask === "translation"
+              ? _c("h2", { staticClass: "ui center aligned header" }, [
+                  _vm._v("\n          " + _vm._s(_vm.wordTrans) + "\n      ")
+                ])
+              : _vm._e()
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "h2",
+          {
+            staticClass: "ui center aligned header practice-hint",
+            class: _vm.computedPracticeWordClasses,
+            on: { click: _vm.practiceWord }
+          },
+          [
+            !_vm.config.practiceWord
+              ? [
+                  _c("i", { staticClass: "conversation icon" }),
+                  _vm._v(" "),
+                  !_vm.isPracticing
+                    ? [
+                        _vm._v(
+                          "\n          " +
+                            _vm._s(_vm.$t("Let's Practice!")) +
+                            "\n        "
+                        )
+                      ]
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.isPracticing
+                    ? [
+                        _vm._v(
+                          "\n          " +
+                            _vm._s(_vm.$t("Keep going... Keep going...")) +
+                            "\n        "
+                        )
+                      ]
+                    : _vm._e()
+                ]
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.config.practiceWord
+              ? [
+                  _vm._v(
+                    "\n        " +
+                      _vm._s(_vm.config.practiceWord) +
+                      "\n        "
+                  ),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "practice-again-hint",
+                      class: {
+                        visible:
+                          !_vm.isPracticing &&
+                          _vm.config.practiceWordScore < 0.7
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "conversation icon" }),
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.$t("Practice again?")) +
+                          "\n        "
+                      )
+                    ]
+                  )
+                ]
+              : _vm._e()
+          ],
+          2
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "actions" }, [
+        _c(
+          "div",
+          { staticClass: "ui button", on: { click: _vm.openDictionary } },
+          [_vm._v("\n      " + _vm._s(_vm.$t("Dictionary")) + "\n    ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "ui icon button", on: { click: _vm.practiceWord } },
+          [_c("i", { staticClass: "comment outline icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "ui icon button", on: { click: _vm.speakWord } },
+          [
+            _c("i", {
+              staticClass: "icon",
+              class: { play: !_vm.isSpeaking, pause: _vm.isSpeaking }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "ui button", on: { click: _vm.close } }, [
+          _vm._v("\n      " + _vm._s(_vm.$t("OK")) + "\n    ")
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ui vertical divider" }, [
+      _c("i", { staticClass: "language icon" })
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("0ed8f9d8", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("d816eaf2", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("ac85fea0", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("22467630", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("06b7c8ab", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("5793493f", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("b6802818", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-style-loader!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js??ref--1-2!./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true& */ "./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&");
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__(/*! ../../../../node_modules/vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
+var update = add("8bca45c0", content, false, {});
+// Hot Module Replacement
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true&":
+/*!**********************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true& ***!
+  \**********************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_CurrentSentence_html_vue_type_template_id_0a8eff7b_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_CurrentSentence_html_vue_type_template_id_0a8eff7b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_CurrentSentence_html_vue_type_template_id_0a8eff7b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js&?6fd3":
+/*!**************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CurrentSentence_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./CurrentSentence.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js&?b8ac");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_CurrentSentence_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js&?b8ac":
+/*!**************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let CurrentSentence = {
+  props: ['config', 'localConfig', 'utils', 'sentence'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+      isSpeaking: false,
+      speakingWordIndex: null,
+      translationMask: null
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+    'localConfig.practiceSentenceMask' () {
+      this.initTranslationMask()
+    },
+    sentence () {
+      this.initTranslationMask()
+    }
+  },
+  computed: {
+    currentSentence () {
+      return this.sentence
+    },
+    words () {
+      let parts = this.currentSentence.split(' ')
+      let words = []
+      
+      parts.forEach((part, i) => {
+        let otherPartString = ''
+        part = part.trim()
+        let otherPart = part.slice(-1)
+        //console.log(otherPart)
+        while (!!otherPart.match(/^[.,:!?]$/)) {
+          otherPartString = otherPart + otherPartString
+          part = part.slice(0, -1)
+          otherPart = part.slice(-1)
+        }
+        
+        if (part.length > 0) {
+          words.push(part)
+        }
+        if (otherPartString.length > 0) {
+          words.push(otherPartString)
+        }
+        
+        if (i < parts.length - 1) {
+          words.push(' ')
+        }
+        
+        //console.log(words)
+      })
+      
+      return words
+    },
+    computeCurrentSentenceClasses () {
+      // {isSpeaking: config.currentSentenceIsSpeaking}
+      
+      let classes = []
+      
+      if (this.config.currentSentenceIsSpeaking) {
+        classes.push('isSpeaking')
+      }
+      
+      if (this.config.currentSentenceMask 
+              && this.config.currentSentenceMask !== 'none') {
+        classes.push(this.config.currentSentenceMask)
+      }
+      
+      return classes
+    }
+  },
+  mounted: async function () {
+    this.initTranslationMask()
+    
+//    setTimeout(() => {
+//      this.initTranslationMask()
+//    }, 500)
+  },
+  methods: {
+    initTranslationMask: async function () {
+      if (this.localConfig.practiceSentenceMask !== 'translation'
+              || this.translationMask
+              || !this.sentence) {
+        return false
+      }
+      this.translationMask = await this.utils.TransUtils.trans(this.sentence, 'zh-TW')
+      //console.log(this.translationMask)
+    },
+    speakCurrentSentence: async function () {
+//      if (this.isSpeaking === true) {
+//        this.utils.TextToSpeechUtil.stopSpeak()
+//        return false
+//      }
+//      
+//      this.isSpeaking = true
+//      await this.utils.TextToSpeechUtil.startSpeak(this.currentSentence)
+//      this.isSpeaking = false
+      this.utils.LearningInstructor.speakCurrentSentence()
+      
+    },
+    startSpeakWord: async function (word, i) {
+      if (this.isSpeakable(word) === false) {
+        return false
+      }
+      
+//      this.speakingWordIndex = i
+//      await this.utils.TextToSpeechUtil.startSpeak(word)
+//      this.speakingWordIndex = null
+      this.config.currentWord = this.utils.DictUtils.filterWord(word)
+    },
+    
+    isSpeakable (word) {
+      //console.log(word)
+      if (!word || word.trim() === '') {
+        return false
+      }
+      
+      
+      let lastChar = word.slice(-1)
+      if (!!lastChar.match(/^[.,:!?]$/)) {
+        return false
+      }
+      
+      return true
+    },
+    computedWordClasses (word, i) {
+      // {isSpeaking: (i === speakingWordIndex), speakable: isSpeakable(word)}
+      
+      let classes = []
+      
+      if (i === this.speakingWordIndex) {
+        classes.push('isSpeaking')
+      }
+      if (this.isSpeakable(word)) {
+        classes.push('speakable')
+      }
+      
+      return classes
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (CurrentSentence);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.vue":
+/*!**************************************************************************!*\
+  !*** ./src/components/SentencePanel/CurrentSentence/CurrentSentence.vue ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CurrentSentence_html_vue_type_template_id_0a8eff7b_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true& */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.html?vue&type=template&id=0a8eff7b&scoped=true&");
+/* harmony import */ var _CurrentSentence_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CurrentSentence.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.js?vue&type=script&lang=js&?6fd3");
+/* empty/unused harmony star reexport *//* harmony import */ var _CurrentSentence_less_vue_type_style_index_0_id_0a8eff7b_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true& */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.less?vue&type=style&index=0&id=0a8eff7b&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CurrentSentence_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CurrentSentence_html_vue_type_template_id_0a8eff7b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CurrentSentence_html_vue_type_template_id_0a8eff7b_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "0a8eff7b",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/CurrentSentence/CurrentSentence.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/CurrentSentence/CurrentSentence.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FCurrentSentence%2FCurrentSentence.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_CurrentSentence_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FCurrentSentence_2FCurrentSentence_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&":
+/*!**************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true& ***!
+  \**************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&?20c6":
+/*!******************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js& ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MainSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./MainSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&?9274");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_MainSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&?9274":
+/*!******************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js& ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../CurrentSentence/CurrentSentence.vue */ "./src/components/SentencePanel/CurrentSentence/CurrentSentence.vue");
+/* harmony import */ var _PracticeSentencePanel_PracticeSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../PracticeSentencePanel/PracticeSentencePanel.vue */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue");
+
+
+
+let MainSentencePanel = {
+  props: ['config', 'localConfig', 'utils', 'sentence'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+  },
+  components: {
+    CurrentSentence: _CurrentSentence_CurrentSentence_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    PracticeSentencePanel: _PracticeSentencePanel_PracticeSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+//  computed: {
+//
+//  },
+//  mounted() {
+//    
+//  },
+//  methods: {
+//
+//  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (MainSentencePanel);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.vue":
+/*!******************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.vue ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.html?vue&type=template&id=0ac19693&scoped=true&");
+/* harmony import */ var _MainSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.js?vue&type=script&lang=js&?20c6");
+/* empty/unused harmony star reexport *//* harmony import */ var _MainSentencePanel_less_vue_type_style_index_0_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.less?vue&type=style&index=0&id=0ac19693&lang=less&scoped=true&");
+/* harmony import */ var _MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml");
+
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
+  _MainSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _MainSentencePanel_html_vue_type_template_id_0ac19693_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "0ac19693",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__["default"] === 'function') Object(_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/MainSentencePanel/MainSentencePanel.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FMainSentencePanel%2FMainSentencePanel.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_MainSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FMainSentencePanel_2FMainSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/MainSentencePanel/MainSentencePanelPractice.less?vue&type=style&index=1&id=0ac19693&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_MainSentencePanelPractice_less_vue_type_style_index_1_id_0ac19693_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&":
+/*!**********************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& ***!
+  \**********************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?4da5":
+/*!**************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../SentenceDifference/SentenceDifference.vue */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue");
+
+
+let PracticeSentencePanel = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+  },
+  components: {
+    SentenceDifference: _SentenceDifference_SentenceDifference_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  computed: {
+    isPracticing () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length === 0)
+    },
+    readEvaluationResult () {
+      return (this.config.practiceSentence && this.config.practiceSentenceEvaluationResult.length > 0)
+    }    
+  },
+//  mounted() {
+//    setTimeout(() => {
+//      this.practice()
+//    }, 3000)
+//  },
+  methods: {
+    practice () {
+      if (!this.utils.LearningInstructor) {
+        return false
+      }
+      this.utils.LearningInstructor.practiceSentence()
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (PracticeSentencePanel);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?7b99":
+/*!**************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./PracticeSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?4da5");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue":
+/*!**************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.html?vue&type=template&id=f30771e2&scoped=true&");
+/* harmony import */ var _PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PracticeSentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.js?vue&type=script&lang=js&?7b99");
+/* empty/unused harmony star reexport *//* harmony import */ var _PracticeSentencePanel_less_vue_type_style_index_0_id_f30771e2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true& */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml */ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _PracticeSentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PracticeSentencePanel_html_vue_type_template_id_f30771e2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "f30771e2",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FPracticeSentencePanel%2FPracticeSentencePanel.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_PracticeSentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FPracticeSentencePanel_2FPracticeSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&":
+/*!****************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& ***!
+  \****************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?3df7":
+/*!********************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js& ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./SentenceDifference.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?9564");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?9564":
+/*!********************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js& ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+let SentenceDifference = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+      currentPracticeWord: null,
+      redraw: false
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+    'config.practiceWordScore': async function () {
+      //console.log(this.config.practiceWordScore)
+      if (this.currentPracticeWord && this.config.practiceWordScore >= 0.7) {
+        /*
+        await this.utils.AsyncUtils.sleep()
+        this.redraw = true
+        await this.utils.AsyncUtils.sleep(1)
+        this.redraw = false
+        */
+        for (let i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {
+          let r = this.config.practiceSentenceEvaluationResult[i]
+          if (r.value.trim() === this.currentPracticeWord) {
+            this.config.practiceSentenceEvaluationResult[i].added = false
+          } 
+        }
+        this.currentPracticeWord = null
+      }
+    }
+  },
+  computed: {
+    results () {
+      let results = []
+      if (this.redraw === true) {
+        //console.log('redrawing')
+        return []
+      }
+      
+      //console.log(this.config.practiceSentenceEvaluationResult)
+      for (let i = 0; i < this.config.practiceSentenceEvaluationResult.length; i++) {
+        if (i > 0) {
+          results.push({
+            //value: '&nbsp;'
+            value: ' '
+          })
+        }
+        
+        let r = this.config.practiceSentenceEvaluationResult[i]
+        r.value = r.value.trim()
+        results.push(this.config.practiceSentenceEvaluationResult[i])
+      }
+      
+      return results
+    } 
+  },
+//  mounted() {
+//    
+//  },
+  methods: {
+    practiceWord: function (word) {
+      this.currentPracticeWord = word
+      this.config.currentWord = word
+    },
+    computedAddedWord: function (word) {
+      let score = 0
+      if (this.utils.LearningInstructor) {
+        score = this.utils.LearningInstructor.getWordToLearnScore(word)
+        //console.log(word, score)
+      }
+      
+      if (score > 5) {
+        return 'word-to-learn'
+      }
+      //let score = this.
+    },
+    splitWord (text) {
+      let parts = text.split(' ')
+      let output = []
+      
+      parts.forEach((p, i) => {
+        if (i > 0) {
+          output.push(' ')
+        }
+        output.push(p)
+      })
+      
+      return output
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SentenceDifference);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&":
+/*!*******************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue":
+/*!********************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.vue ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SentenceDifference.html?vue&type=template&id=e323347e&scoped=true& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.html?vue&type=template&id=e323347e&scoped=true&");
+/* harmony import */ var _SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SentenceDifference.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.js?vue&type=script&lang=js&?3df7");
+/* empty/unused harmony star reexport *//* harmony import */ var _SentenceDifference_less_vue_type_style_index_0_id_e323347e_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true& */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml */ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _SentenceDifference_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SentenceDifference_html_vue_type_template_id_e323347e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "e323347e",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/SentenceDifference/SentenceDifference.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentenceDifference/SentenceDifference.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentenceDifference%2FSentenceDifference.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentenceDifference_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentenceDifference_2FSentenceDifference_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true&":
+/*!****************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true& ***!
+  \****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentencePanel_html_vue_type_template_id_3486f593_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./SentencePanel.html?vue&type=template&id=3486f593&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentencePanel_html_vue_type_template_id_3486f593_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_SentencePanel_html_vue_type_template_id_3486f593_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js&?522e":
+/*!********************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./SentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js&?d4f3");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_SentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js&?d4f3":
+/*!********************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WordModal_WordModal_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WordModal/WordModal.vue */ "./src/components/SentencePanel/WordModal/WordModal.vue");
+/* harmony import */ var _MainSentencePanel_MainSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MainSentencePanel/MainSentencePanel.vue */ "./src/components/SentencePanel/MainSentencePanel/MainSentencePanel.vue");
+
+
+
+
+let SentencePanel = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+      //show: false,
+      pageTransition: false,
+      pageTransitionShow: false,
+      pageTransitionToNext: true,
+      pageTransitionBeforeSentence: '',
+      pageTransitionAfterSentence: '',
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+    'localConfig.playingIndex': async function (newIndex, oldIndex) {
+      //console.log(newIndex, oldIndex)
+      this.pageTransitionToNext = (newIndex > oldIndex)
+      
+      this.pageTransitionAfterSentence = this.currentSentence + ''
+      this.pageTransitionBeforeSentence = this.config.sentenceList[oldIndex] + ''
+      
+      this.pageTransition = true
+      this.pageTransitionShow = true
+      //console.log('before', this.pageTransitionBeforeSentence)
+      //console.log('after', this.pageTransitionAfterSentence)
+      //this.pageTransitionNextSentence
+      await this.utils.AsyncUtils.sleep(500)
+      this.pageTransition = false
+      this.pageTransitionShow = false
+      //console.log(this.pageTransition)
+    }
+  },
+  computed: {
+    currentSentence () {
+      //console.log(this.utils.LearningInstructor)
+      if (this.config.inited === true) {
+        //console.log(this.utils.LearningInstructor.currentSentence)
+        return this.utils.LearningInstructor.currentSentence
+      }
+      else {
+        return ''
+      }
+    },
+    previousSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === 0) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex - 1)]
+    },
+    nextSentence () {
+      //console.log(this.localConfig.playingIndex)
+      if (this.localConfig.playingIndex === this.config.sentenceList.length - 1) {
+        return ''
+      }
+      return this.config.sentenceList[(this.localConfig.playingIndex + 1)]
+    }
+  },
+  components: {
+//    CurrentSentence,
+    MainSentencePanel: _MainSentencePanel_MainSentencePanel_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
+    WordModal: _WordModal_WordModal_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+//  mounted() {
+//    
+//  },
+  methods: {
+    goToPreviousSentence () {
+      this.utils.LearningInstructor.goToPreviousSentence()
+    },
+    goToNextSentence () {
+      this.utils.LearningInstructor.goToNextSentence()
+    },
+//    speakCurrentSentence: async function () {
+//      await this.$refs.CurrentSentence.speakCurrentSentence()
+//    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SentencePanel);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&":
+/*!*******************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true& ***!
+  \*******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanel.vue":
+/*!********************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanel.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SentencePanel_html_vue_type_template_id_3486f593_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SentencePanel.html?vue&type=template&id=3486f593&scoped=true& */ "./src/components/SentencePanel/SentencePanel.html?vue&type=template&id=3486f593&scoped=true&");
+/* harmony import */ var _SentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SentencePanel.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/SentencePanel.js?vue&type=script&lang=js&?522e");
+/* empty/unused harmony star reexport *//* harmony import */ var _SentencePanel_less_vue_type_style_index_0_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true& */ "./src/components/SentencePanel/SentencePanel.less?vue&type=style&index=0&id=3486f593&lang=less&scoped=true&");
+/* harmony import */ var _SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true& */ "./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml */ "./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml");
+
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_4__["default"])(
+  _SentencePanel_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SentencePanel_html_vue_type_template_id_3486f593_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SentencePanel_html_vue_type_template_id_3486f593_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "3486f593",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__["default"] === 'function') Object(_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_5__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/SentencePanel.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/SentencePanel.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FSentencePanel.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_SentencePanel_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FSentencePanel_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&":
+/*!*****************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true& ***!
+  \*****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-style-loader!../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/SentencePanelTransition.less?vue&type=style&index=1&id=3486f593&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_SentencePanelTransition_less_vue_type_style_index_1_id_3486f593_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true&":
+/*!**********************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true& ***!
+  \**********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_WordModal_html_vue_type_template_id_3b4f4609_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./WordModal.html?vue&type=template&id=3b4f4609&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_WordModal_html_vue_type_template_id_3b4f4609_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_WordModal_html_vue_type_template_id_3b4f4609_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js&?d090":
+/*!**************************************************************************************!*\
+  !*** ./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+
+let WordModal = {
+  props: ['config', 'localConfig', 'utils'],
+  data () {    
+    this.$i18n.locale = this.localConfig.locale
+    return {
+      modal: null,
+      isOpened: false,
+      isSpeaking: false,
+      wordTrans: null,
+      currentWord: null,
+      isPracticing: false
+    }
+  },
+  watch: {
+    'localConfig.locale'() {
+      this.$i18n.locale = this.localConfig.locale;
+    },
+    'config.currentWord': async function () {
+      //console.log(this.config.practiceWord)
+      
+      if (this.currentWord === null) {
+        this.wordTrans = null
+      }
+      if (this.config.currentWord 
+              && this.config.currentWord !== '') {
+        this.currentWord = this.config.currentWord
+        this.config.practiceWord = null
+        this.config.practiceWordScore = null
+        this.open()
+        
+      }
+      else {
+        await this.close()
+        //await this.utils.AsyncUtils.sleep(1000)
+        this.currentWord = null
+      }
+    },
+    'currentWord': async function () {
+      if (!this.currentWord) {
+        return false
+      }
+      //console.log(this.currentWord)
+      this.wordTrans = await this.utils.TransUtils.transZHTW(this.currentWord)
+    }
+  },
+  computed: {
+    computedWordMaskClassesWithoutTrans () {
+      let classes = []
+      
+      let mask = this.config.currentWordMask
+      if (mask === 'translation' 
+              || mask === 'word-block' 
+              || mask === 'sentence-block' ) {
+        classes.push('masked')
+      }
+      return classes
+    },
+    computedWordMaskClassesWithTrans () {
+      let classes = []
+      
+      let mask = this.config.currentWordMask
+      if (mask === 'word-block' 
+              || mask === 'sentence-block' ) {
+        classes.push('masked')
+      }
+      return classes
+    },
+    computedPracticeWordClasses () {
+      let classes = []
+      
+      if (!this.isPracticing 
+              && this.config.practiceWord === null) {
+        classes.push('icon')
+      }
+      
+      if (this.isPracticing) {
+        classes.push('isPracticing')
+      }
+      if (this.isPracticing && this.config.practiceWord === null) {
+        //console.log('go')
+        classes.push('keep-going')
+      }
+      
+      if (this.config.practiceWordScore
+              && this.config.practiceWordScore > 0.7) {
+        classes.push('positive')
+      }
+      
+      return classes
+    }
+  },
+//  mounted() {
+//    let result = this.utils.DiffUtils.diffChars('word', 'weord')
+//    console.log(result)
+//  },
+  methods: {
+    init: function () {
+      this.modal = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.$refs.Modal)
+      
+      this.modal.modal({
+        onShow: () => {
+          //console.log('open')
+          this.isOpened = true
+        },
+        onHidden: () => {
+          this.isOpened = false
+        }
+      })
+    },
+    open: async function () {
+      if (!this.modal) {
+        this.init()
+      }
+      
+      return new Promise((resolve) => {
+        this.modal.modal('show', () => {
+          resolve()
+          this.speakWord()
+        })
+      })
+    },
+    close () {
+      return new Promise((resolve) => {
+        this.modal.modal('hide', () => {
+          this.config.currentWord = null
+          resolve()
+        })
+      })
+    },
+    
+    speakWord: async function () {
+      while (!await this.utils.LearningInstructor) {
+        await this.utils.AsyncUtils.sleep()
+      }
+      
+      this.isSpeaking = true
+      await this.utils.LearningInstructor.speakWord(this.config.currentWord)
+      this.isSpeaking = false
+      
+      await this.practiceWord()
+    },
+    
+    practiceWord: async function () {
+      while (!await this.utils.LearningInstructor) {
+        await this.utils.AsyncUtils.sleep()
+      }
+      
+      this.isPracticing = true
+      await this.utils.LearningInstructor.practiceWord(this.config.currentWord)
+      this.isPracticing = false
+    },
+    
+    openDictionary () {
+      this.utils.DictUtils.openDict(this.config.currentWord)
+    }
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (WordModal);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js&?ff17":
+/*!**************************************************************************************!*\
+  !*** ./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WordModal_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!./WordModal.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js&?d090");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_WordModal_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&":
+/*!*************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true& ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-style-loader!../../../../node_modules/css-loader/dist/cjs.js?sourceMap!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/less-loader/dist/cjs.js??ref--1-2!./WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true& */ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/dist/cjs.js?sourceMap!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/less-loader/dist/cjs.js?!./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_node_modules_css_loader_dist_cjs_js_sourceMap_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_less_loader_dist_cjs_js_ref_1_2_WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/WordModal/WordModal.vue":
+/*!**************************************************************!*\
+  !*** ./src/components/SentencePanel/WordModal/WordModal.vue ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WordModal_html_vue_type_template_id_3b4f4609_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WordModal.html?vue&type=template&id=3b4f4609&scoped=true& */ "./src/components/SentencePanel/WordModal/WordModal.html?vue&type=template&id=3b4f4609&scoped=true&");
+/* harmony import */ var _WordModal_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WordModal.js?vue&type=script&lang=js& */ "./src/components/SentencePanel/WordModal/WordModal.js?vue&type=script&lang=js&?ff17");
+/* empty/unused harmony star reexport *//* harmony import */ var _WordModal_less_vue_type_style_index_0_id_3b4f4609_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true& */ "./src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml */ "./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _WordModal_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _WordModal_html_vue_type_template_id_3b4f4609_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _WordModal_html_vue_type_template_id_3b4f4609_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "3b4f4609",
+  null
+  
+)
+
+/* custom blocks */
+
+if (typeof _WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/SentencePanel/WordModal/WordModal.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/@kazupon/vue-i18n-loader/lib!./WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/SentencePanel/WordModal/WordModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FSentencePanel%2FWordModal%2FWordModal.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_WordModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FSentencePanel_2FWordModal_2FWordModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ })
+
+}]);
+//# sourceMappingURL=SentencePanel.js.map

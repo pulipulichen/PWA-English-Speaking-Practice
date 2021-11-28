@@ -4,6 +4,7 @@ let preferName = [
   'Google UK English Female',
   'Google UK English Male',
   'Chrome OS US English 1',
+  '英文 英國',
   '英文 美國'
 ]
 
