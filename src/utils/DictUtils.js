@@ -46,7 +46,8 @@ export default {
     if (typeof(word) !== 'string') {
       return word
     }
-    return word.replace(/[^\w\s]|_/g, "")
+    return word.replace(/\-/g, " ")
+            .replace(/[^\w\s]|_/g, "")
             .replace(/\s+/g, " ")
             .toLowerCase()
             .trim()

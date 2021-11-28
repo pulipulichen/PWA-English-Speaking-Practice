@@ -6,9 +6,7 @@
       <span v-for="(w, j) in splitWord(word.value)"
             class="word"
             v-bind:class="{space: (w === ' ')}"
-            v-on:click="practiceWord(w)">
-        {{ w }}
-      </span>
+            v-on:click="practiceWord(w)">{{ w }}</span>
     </span>
     <span v-if="word.added"
           class="added word"

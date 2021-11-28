@@ -19,7 +19,13 @@ export default function (ArticleModal) {
         this.localConfig.fieldArticle = output.join('\n')
       }
       else {
-        this.localConfig.fieldArticle = output.join(' ')
+        output = output.join('\n')
+        output = output.split('\n').filter(line => {
+          return (line.trim() !== '')
+        })
+        //console.log(output)
+        
+        this.localConfig.fieldArticle = output.join('\n')
       }
       
       this.localConfig.playingIndex = 0

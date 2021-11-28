@@ -627,12 +627,14 @@ __webpack_require__.r(__webpack_exports__);
       let url = 'https://script.google.com/macros/s/AKfycbxR-XE9EXDekhvIWUAmAZkxgXkxR4Zmw45ZvsFYhtwAaLc8s97M-7dqE2UWHw9klz9F/exec'
       if (this.localConfig.articleResource === 'english-bbc-world-news') {
         // donothing
-        this.setenceTokenizerStrategy = 'english-default'
+        //this.setenceTokenizerStrategy = 'english-default'
+        this.setenceTokenizerStrategy = 'lines'
       }
       
       if (this.localConfig.articleResource === 'english-cnn-world-news') {
         url = url + '?feed=' + encodeURIComponent('http://rss.cnn.com/rss/edition_world.rss')
-        this.setenceTokenizerStrategy = 'english-default'
+        //this.setenceTokenizerStrategy = 'english-default'
+        this.setenceTokenizerStrategy = 'lines'
       }
       if (this.localConfig.articleResource === 'english-taiwan-today') {
         url = url + '?feed=' + encodeURIComponent('http://api.taiwantoday.tw/en/rss.php?unit=2,6,10,15,18')
@@ -681,7 +683,13 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
         this.localConfig.fieldArticle = output.join('\n')
       }
       else {
-        this.localConfig.fieldArticle = output.join(' ')
+        output = output.join('\n')
+        output = output.split('\n').filter(line => {
+          return (line.trim() !== '')
+        })
+        //console.log(output)
+        
+        this.localConfig.fieldArticle = output.join('\n')
       }
       
       this.localConfig.playingIndex = 0

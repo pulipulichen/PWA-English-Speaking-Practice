@@ -55,13 +55,17 @@ export default {
     recognition.grammars = speechRecognitionList;
   },
   startListen: async function (grammarsString, processingCallback, debug = 'false') {
+    if (!grammarsString) {
+      return false
+    }
+    
     if (debug === 'auto') {
       return this.mockupAuto(grammarsString)
     }
     if (debug === 'perfect') {
       return grammarsString
     }
-    
+    //console.log(grammarsString)
     this.init()
     
     if (isStarted === true) {
@@ -103,7 +107,12 @@ export default {
         resolve(result)
       }
       
-      recognition.start()
+      try {
+        recognition.start()
+      }
+      catch (e) {
+        // do nothing
+      }
     })
   },
   stopListen () {

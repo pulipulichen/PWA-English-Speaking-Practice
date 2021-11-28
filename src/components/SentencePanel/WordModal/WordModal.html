@@ -5,41 +5,42 @@
   </div>
   <div class="content ui form">
     
-    
-    <div class="ui segment word-segment"
-         v-bind:class="{isSpeaking: isSpeaking}"
-         v-on:click="speakWord">
-      <h2 class="ui center aligned header"
-          v-if="!wordTrans"
-          v-bind:class="computedWordMaskClassesWithoutTrans">
-        <span>
-          {{ currentWord }}
-        </span>
-      </h2>
-      <div v-if="wordTrans && config.currentWordMask !== 'translation'"
-           class="ui two column center aligned grid">
-        <div class="ui vertical divider">
-          <i class="language icon"></i>
+    <div class="word-segment-container">
+      <div class="ui segment word-segment"
+           v-bind:class="{isSpeaking: isSpeaking}"
+           v-on:click="speakWord">
+        <h2 class="ui center aligned header"
+            v-if="!wordTrans"
+            v-bind:class="computedWordMaskClassesWithoutTrans">
+          <span class="word">
+            {{ currentWord }}
+          </span>
+        </h2>
+        <div v-if="wordTrans && config.currentWordMask !== 'translation'"
+             class="ui two column center aligned grid">
+          <div class="ui vertical divider">
+            <i class="language icon"></i>
+          </div>
+          <div class="column">
+            <h2 class="ui center aligned header"
+              v-bind:class="computedWordMaskClassesWithTrans">
+              <span class="word">
+                {{ currentWord }}
+              </span>
+            </h2>
+          </div>
+          <div class="column"
+               v-on:click.stop="openDictionary">
+            <h2 class="ui center aligned header word">
+              {{ wordTrans }}
+            </h2>
+          </div>
         </div>
-        <div class="column">
-          <h2 class="ui center aligned header"
-            v-bind:class="computedWordMaskClassesWithTrans">
-            <span>
-              {{ currentWord }}
-            </span>
-          </h2>
-        </div>
-        <div class="column"
-             v-on:click.stop="openDictionary">
-          <h2 class="ui center aligned header">
+        <h2 class="ui center aligned header word"
+            v-if="wordTrans && config.currentWordMask === 'translation'">
             {{ wordTrans }}
-          </h2>
-        </div>
+        </h2>
       </div>
-      <h2 class="ui center aligned header"
-          v-if="wordTrans && config.currentWordMask === 'translation'">
-          {{ wordTrans }}
-      </h2>
     </div>
     
     <h2 class="ui center aligned header practice-hint"

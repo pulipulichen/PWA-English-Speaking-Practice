@@ -179,7 +179,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n.SentenceDifference.positive .remove .word[data-v-e323347e] {\n  color: gray !important;\n  text-decoration: line-through;\n}\n.word[data-v-e323347e] {\n  cursor: pointer;\n}\n.space[data-v-e323347e] {\n  pointer-events: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF;ADIA;EAEI,yBAAA;ACHJ;ADCA;EAMI,sBAAA;EACA,6BAAA;ACJJ;ADQA;EACE,eAAA;ACNF;ADSA;EACE,oBAAA;ACPF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n\n.SentenceDifference.positive {\n  .word:not(.removed):not(.added) {\n    color: #2c662d !important\n  }\n  \n  .remove .word {\n    color: gray !important;\n    text-decoration: line-through;\n  }\n}\n\n.word {\n  cursor: pointer;\n}\n\n.space {\n  pointer-events: none;\n}",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n.SentenceDifference.positive .remove .word {\n  color: gray !important;\n  text-decoration: line-through;\n}\n.word {\n  cursor: pointer;\n}\n.space {\n  pointer-events: none;\n}\n"]}]);
+exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added) {\n  color: #2c662d;\n}\n.SentenceDifference.positive > .removed > .word[data-v-e323347e] {\n  color: gray !important;\n  text-decoration: line-through;\n}\n.word[data-v-e323347e] {\n  cursor: pointer;\n}\n.space[data-v-e323347e] {\n  pointer-events: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF;ADIA;EAEI,cAAA;ACHJ;ADME;EACE,sBAAA;EACA,6BAAA;ACJJ;ADQA;EACE,eAAA;ACNF;ADSA;EACE,oBAAA;ACPF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n\n.SentenceDifference.positive {\n  .word:not(.removed):not(.added) {\n    color: #2c662d;\n  }\n  \n  &> .removed > .word {\n    color: gray !important;\n    text-decoration: line-through;\n  }\n}\n\n.word {\n  cursor: pointer;\n}\n\n.space {\n  pointer-events: none;\n}",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word:not(.removed):not(.added) {\n  color: #2c662d;\n}\n.SentenceDifference.positive > .removed > .word {\n  color: gray !important;\n  text-decoration: line-through;\n}\n.word {\n  cursor: pointer;\n}\n.space {\n  pointer-events: none;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -233,7 +233,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.masked span[data-v-3b4f4609] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing[data-v-3b4f4609] {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive[data-v-3b4f4609] {\n  color: #21ba45 !important;\n}\n.practice-hint[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.practice-again-hint[data-v-3b4f4609] {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible[data-v-3b4f4609] {\n  visibility: visible;\n}\n.keep-going[data-v-3b4f4609] {\n  color: gray !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF;ADGA;EACE,eAAA;ACDF;ADIA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACFF;ADKA;EACE,uBAAA;EACA,oBAAA;ACHF;ADMA;EACE,yBAAA;ACJF;ADOA;EACE,eAAA;ACLF;ADQA;EAEE,2BAAA;EACA,8BAAA;EACA,WAAA;EACA,kBAAA;ACPF;ADSE;EACE,mBAAA;ACPJ;ADWA;EACE,sBAAA;ACTF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n\n.word-segment {\n  cursor: pointer;\n}\n\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n\n.positive {\n  color: #21ba45 !important;\n}\n\n.practice-hint {\n  cursor: pointer;\n}\n\n.practice-again-hint {\n  \n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n  \n  &.visible {\n    visibility: visible;\n  }\n}\n\n.keep-going {\n  color: gray !important;\n}",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment {\n  cursor: pointer;\n}\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive {\n  color: #21ba45 !important;\n}\n.practice-hint {\n  cursor: pointer;\n}\n.practice-again-hint {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible {\n  visibility: visible;\n}\n.keep-going {\n  color: gray !important;\n}\n"]}]);
+exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.word-segment-container[data-v-3b4f4609] {\n  min-height: 5rem;\n}\n.content.ui.form[data-v-3b4f4609] {\n  height: 20rem;\n}\n.masked span[data-v-3b4f4609] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing[data-v-3b4f4609] {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive[data-v-3b4f4609] {\n  color: #21ba45 !important;\n}\n.practice-hint[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.practice-again-hint[data-v-3b4f4609] {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible[data-v-3b4f4609] {\n  visibility: visible;\n}\n.keep-going[data-v-3b4f4609] {\n  color: gray !important;\n}\n.word[data-v-3b4f4609] {\n  word-break: break-all;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF;ADGA;EACE,eAAA;ACDF;ADIA;EACE,gBAAA;ACFF;ADKA;EACE,aAAA;ACHF;ADMA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACJF;ADOA;EACE,uBAAA;EACA,oBAAA;ACLF;ADQA;EACE,yBAAA;ACNF;ADSA;EACE,eAAA;ACPF;ADYA;EAEE,2BAAA;EACA,8BAAA;EACA,WAAA;EACA,kBAAA;ACXF;ADaE;EACE,mBAAA;ACXJ;ADeA;EACE,sBAAA;ACbF;ADgBA;EACE,qBAAA;ACdF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n\n.word-segment {\n  cursor: pointer;\n}\n\n.word-segment-container {\n  min-height: 5rem;\n}\n\n.content.ui.form {\n  height: 20rem;\n}\n\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n\n.positive {\n  color: #21ba45 !important;\n}\n\n.practice-hint {\n  cursor: pointer;\n  //min-height: 30vh;\n  //height: 0vh;\n}\n\n.practice-again-hint {\n  \n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n  \n  &.visible {\n    visibility: visible;\n  }\n}\n\n.keep-going {\n  color: gray !important;\n}\n\n.word {\n  word-break: break-all;\n}",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment {\n  cursor: pointer;\n}\n.word-segment-container {\n  min-height: 5rem;\n}\n.content.ui.form {\n  height: 20rem;\n}\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive {\n  color: #21ba45 !important;\n}\n.practice-hint {\n  cursor: pointer;\n}\n.practice-again-hint {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible {\n  visibility: visible;\n}\n.keep-going {\n  color: gray !important;\n}\n.word {\n  word-break: break-all;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -553,7 +553,7 @@ var render = function() {
                         }
                       }
                     },
-                    [_vm._v("\n        " + _vm._s(w) + "\n      ")]
+                    [_vm._v(_vm._s(w))]
                   )
                 }),
                 0
@@ -763,89 +763,99 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "content ui form" }, [
-        _c(
-          "div",
-          {
-            staticClass: "ui segment word-segment",
-            class: { isSpeaking: _vm.isSpeaking },
-            on: { click: _vm.speakWord }
-          },
-          [
-            !_vm.wordTrans
-              ? _c(
-                  "h2",
-                  {
-                    staticClass: "ui center aligned header",
-                    class: _vm.computedWordMaskClassesWithoutTrans
-                  },
-                  [
-                    _c("span", [
-                      _vm._v(
-                        "\n          " + _vm._s(_vm.currentWord) + "\n        "
-                      )
-                    ])
-                  ]
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.wordTrans && _vm.config.currentWordMask !== "translation"
-              ? _c(
-                  "div",
-                  { staticClass: "ui two column center aligned grid" },
-                  [
-                    _vm._m(0),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "word-segment-container" }, [
+          _c(
+            "div",
+            {
+              staticClass: "ui segment word-segment",
+              class: { isSpeaking: _vm.isSpeaking },
+              on: { click: _vm.speakWord }
+            },
+            [
+              !_vm.wordTrans
+                ? _c(
+                    "h2",
+                    {
+                      staticClass: "ui center aligned header",
+                      class: _vm.computedWordMaskClassesWithoutTrans
+                    },
+                    [
+                      _c("span", { staticClass: "word" }, [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(_vm.currentWord) +
+                            "\n          "
+                        )
+                      ])
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.wordTrans && _vm.config.currentWordMask !== "translation"
+                ? _c(
+                    "div",
+                    { staticClass: "ui two column center aligned grid" },
+                    [
+                      _vm._m(0),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "column" }, [
+                        _c(
+                          "h2",
+                          {
+                            staticClass: "ui center aligned header",
+                            class: _vm.computedWordMaskClassesWithTrans
+                          },
+                          [
+                            _c("span", { staticClass: "word" }, [
+                              _vm._v(
+                                "\n                " +
+                                  _vm._s(_vm.currentWord) +
+                                  "\n              "
+                              )
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
                       _c(
-                        "h2",
+                        "div",
                         {
-                          staticClass: "ui center aligned header",
-                          class: _vm.computedWordMaskClassesWithTrans
+                          staticClass: "column",
+                          on: {
+                            click: function($event) {
+                              $event.stopPropagation()
+                              return _vm.openDictionary.apply(null, arguments)
+                            }
+                          }
                         },
                         [
-                          _c("span", [
-                            _vm._v(
-                              "\n              " +
-                                _vm._s(_vm.currentWord) +
-                                "\n            "
-                            )
-                          ])
+                          _c(
+                            "h2",
+                            { staticClass: "ui center aligned header word" },
+                            [
+                              _vm._v(
+                                "\n              " +
+                                  _vm._s(_vm.wordTrans) +
+                                  "\n            "
+                              )
+                            ]
+                          )
                         ]
                       )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "column",
-                        on: {
-                          click: function($event) {
-                            $event.stopPropagation()
-                            return _vm.openDictionary.apply(null, arguments)
-                          }
-                        }
-                      },
-                      [
-                        _c("h2", { staticClass: "ui center aligned header" }, [
-                          _vm._v(
-                            "\n            " +
-                              _vm._s(_vm.wordTrans) +
-                              "\n          "
-                          )
-                        ])
-                      ]
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.wordTrans && _vm.config.currentWordMask === "translation"
+                ? _c("h2", { staticClass: "ui center aligned header word" }, [
+                    _vm._v(
+                      "\n            " + _vm._s(_vm.wordTrans) + "\n        "
                     )
-                  ]
-                )
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.wordTrans && _vm.config.currentWordMask === "translation"
-              ? _c("h2", { staticClass: "ui center aligned header" }, [
-                  _vm._v("\n          " + _vm._s(_vm.wordTrans) + "\n      ")
-                ])
-              : _vm._e()
-          ]
-        ),
+                  ])
+                : _vm._e()
+            ]
+          )
+        ]),
         _vm._v(" "),
         _c(
           "h2",
@@ -2232,6 +2242,7 @@ let WordModal = {
       }
       if (this.config.currentWord 
               && this.config.currentWord !== '') {
+        this.wordTrans = false
         this.currentWord = this.config.currentWord
         this.config.practiceWord = null
         this.config.practiceWordScore = null
@@ -2242,6 +2253,7 @@ let WordModal = {
         await this.close()
         //await this.utils.AsyncUtils.sleep(1000)
         this.currentWord = null
+        this.config.currentWord = null
       }
     },
     'currentWord': async function () {
@@ -2313,6 +2325,7 @@ let WordModal = {
         },
         onHidden: () => {
           this.isOpened = false
+          this.config.currentWord = null
         }
       })
     },

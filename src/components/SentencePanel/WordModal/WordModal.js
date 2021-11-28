@@ -25,6 +25,7 @@ let WordModal = {
       }
       if (this.config.currentWord 
               && this.config.currentWord !== '') {
+        this.wordTrans = false
         this.currentWord = this.config.currentWord
         this.config.practiceWord = null
         this.config.practiceWordScore = null
@@ -35,6 +36,7 @@ let WordModal = {
         await this.close()
         //await this.utils.AsyncUtils.sleep(1000)
         this.currentWord = null
+        this.config.currentWord = null
       }
     },
     'currentWord': async function () {
@@ -106,6 +108,7 @@ let WordModal = {
         },
         onHidden: () => {
           this.isOpened = false
+          this.config.currentWord = null
         }
       })
     },

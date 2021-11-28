@@ -32075,7 +32075,7 @@ let localConfig = {
   setenceTokenizerStrategy: 'english-default', // english-default english-basic english-clause chinese-default chinese-comma
   
   debugSpeechToTextUtilsMockup: 'false',  // perfect false auto
-  articleResource: 'english-bbc-world-news',  // english-bbc-world-news english-cnn-world-news englis-taiwan-today chinese-pts-news
+  articleResource: 'english-cnn-world-news',  // english-bbc-world-news english-cnn-world-news englis-taiwan-today chinese-pts-news
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);
@@ -32361,7 +32361,8 @@ const md = new MobileDetect(window.navigator.userAgent)
     if (typeof(word) !== 'string') {
       return word
     }
-    return word.replace(/[^\w\s]|_/g, "")
+    return word.replace(/\-/g, " ")
+            .replace(/[^\w\s]|_/g, "")
             .replace(/\s+/g, " ")
             .toLowerCase()
             .trim()
@@ -32759,13 +32760,17 @@ const md = new MobileDetect(window.navigator.userAgent)
     recognition.grammars = speechRecognitionList;
   },
   startListen: async function (grammarsString, processingCallback, debug = 'false') {
+    if (!grammarsString) {
+      return false
+    }
+    
     if (debug === 'auto') {
       return this.mockupAuto(grammarsString)
     }
     if (debug === 'perfect') {
       return grammarsString
     }
-    
+    //console.log(grammarsString)
     this.init()
     
     if (isStarted === true) {
@@ -32807,7 +32812,12 @@ const md = new MobileDetect(window.navigator.userAgent)
         resolve(result)
       }
       
-      recognition.start()
+      try {
+        recognition.start()
+      }
+      catch (e) {
+        // do nothing
+      }
     })
   },
   stopListen () {

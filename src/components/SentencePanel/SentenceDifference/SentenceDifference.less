@@ -14,10 +14,10 @@
 
 .SentenceDifference.positive {
   .word:not(.removed):not(.added) {
-    color: #2c662d !important
+    color: #2c662d;
   }
   
-  .remove .word {
+  &> .removed > .word {
     color: gray !important;
     text-decoration: line-through;
   }

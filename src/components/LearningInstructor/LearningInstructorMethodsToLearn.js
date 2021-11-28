@@ -1,3 +1,27 @@
+let stopwords = [
+  'a',
+  'the',
+  'to',
+  'in',
+  'are',
+  'there',
+  'at',
+  'on',
+  'as',
+  'for',
+  'from',
+  'dont',
+  'have',
+  'has',
+  'than',
+  'this',
+  'that',
+  'once',
+  'was',
+  'make',
+  'made',
+  'its',
+]
 
 export default function (LearningInstructor) {
   
@@ -13,6 +37,11 @@ export default function (LearningInstructor) {
   }
   
   LearningInstructor.methods.recordWordsToLearn = function (word) {
+    word = this.utils.DictUtils.filterWord(word)
+    if (stopwords.indexOf(word) > -1) {
+      return false
+    }
+    
     let value = this.getWordToLearnScore(word)
     
     value++

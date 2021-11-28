@@ -13,7 +13,7 @@ let localConfig = {
   setenceTokenizerStrategy: 'english-default', // english-default english-basic english-clause chinese-default chinese-comma
   
   debugSpeechToTextUtilsMockup: 'false',  // perfect false auto
-  articleResource: 'english-bbc-world-news',  // english-bbc-world-news english-cnn-world-news englis-taiwan-today chinese-pts-news
+  articleResource: 'english-cnn-world-news',  // english-bbc-world-news english-cnn-world-news englis-taiwan-today chinese-pts-news
 }
 
 export default localConfig
