@@ -9,7 +9,7 @@ let isStarted = false
 import AsyncUtils from './AsyncUtils.js'
 import DictUtils from './DictUtils.js'
 
-import config from './../config.js'
+//import config from './../config.js'
 
 
 export default {
@@ -53,11 +53,11 @@ export default {
     speechRecognitionList.addFromString(grammar, 1);
     recognition.grammars = speechRecognitionList;
   },
-  startListen: async function (grammarsString, processingCallback) {
-    if (config.debug.SpeechToTextUtils.mockup === 'auto') {
+  startListen: async function (grammarsString, processingCallback, debug = 'false') {
+    if (debug === 'auto') {
       return this.mockupAuto(grammarsString)
     }
-    if (config.debug.SpeechToTextUtils.mockup === true) {
+    if (debug === 'perfect') {
       return grammarsString
     }
     

@@ -110,6 +110,24 @@
       </select>
     </div>
     
+    <div class="field"
+         v-if="localConfig.practiceMode === 'speaking'">
+      <label>
+        {{ $t('Speech to Text mockup') }}
+      </label>
+      <select v-model="localConfig.debugSpeechToTextUtilsMockup">
+        <option value="false">
+          {{ $t('None') }}
+        </option>
+        <option value="auto">
+          {{ $t('Auto') }}
+        </option>
+        <option value="perfect">
+          {{ $t('Perfect') }}
+        </option>
+      </select>
+    </div>
+    
   </div>
   <div class="actions">
     <div class="ui button"

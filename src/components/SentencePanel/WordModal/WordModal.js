@@ -20,18 +20,28 @@ let WordModal = {
     'config.currentWord': async function () {
       //console.log(this.config.practiceWord)
       
-      this.wordTrans = null
+      if (this.currentWord === null) {
+        this.wordTrans = null
+      }
       if (this.config.currentWord 
               && this.config.currentWord !== '') {
-        this.open()
         this.currentWord = this.config.currentWord
+        this.config.practiceWord = null
+        this.config.practiceWordScore = null
+        this.open()
+        
       }
       else {
         await this.close()
+        //await this.utils.AsyncUtils.sleep(1000)
         this.currentWord = null
       }
     },
     'currentWord': async function () {
+      if (!this.currentWord) {
+        return false
+      }
+      //console.log(this.currentWord)
       this.wordTrans = await this.utils.TransUtils.transZHTW(this.currentWord)
     }
   },

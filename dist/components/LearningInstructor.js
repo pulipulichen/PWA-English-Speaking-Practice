@@ -479,7 +479,7 @@ __webpack_require__.r(__webpack_exports__);
       while (!hasReceivcePracticeSentence) {
         this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
           this.config.practiceSentence = processing
-        })
+        }, this.localConfig.debugSpeechToTextUtilsMockup)
         
         if (muteCancel === true) {
           return false
@@ -695,12 +695,17 @@ __webpack_require__.r(__webpack_exports__);
       
         this.config.practiceWord = await this.utils.SpeechToTextUtils.startListen(word, (processing) => {
           this.config.practiceWord = processing
-        })
+        }, this.localConfig.debugSpeechToTextUtilsMockup)
       
+        if (!this.config.practiceWord) {
+          await this.utils.AsyncUtils.sleep()
+          continue
+        }
+        
         let practiceWords = this.tokenizeSentenceToWords(this.config.practiceWord)
         if (practiceWords.length >= thresholdWordsCount) {
           hasReceivcePracticeSentence = true
-          await this.utils.AsyncUtils.sleep()
+          //await this.utils.AsyncUtils.sleep()
         }
         else {
           await this.utils.AsyncUtils.sleep()
@@ -723,7 +728,7 @@ __webpack_require__.r(__webpack_exports__);
       
       //return false
       if (this.config.practiceWordScore >= 0.7) {
-        await this.utils.AsyncUtils.sleep()
+        //await this.utils.AsyncUtils.sleep()
         this.clearWordToLearn(word)
         this.config.currentWord = null
       }

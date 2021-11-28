@@ -11,6 +11,8 @@ let localConfig = {
   practiceMode: 'speaking',  // speaking writing
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
   setenceTokenizerStrategy: 'default', // default basic clause 
+  
+  debugSpeechToTextUtilsMockup: 'perfect'  // perfect false auto
 }
 
 export default localConfig

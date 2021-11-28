@@ -345,6 +345,70 @@ var render = function() {
                 ]
               )
             ])
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.localConfig.practiceMode === "speaking"
+          ? _c("div", { staticClass: "field" }, [
+              _c("label", [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.$t("Speech to Text mockup")) +
+                    "\n      "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.localConfig.debugSpeechToTextUtilsMockup,
+                      expression: "localConfig.debugSpeechToTextUtilsMockup"
+                    }
+                  ],
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.$set(
+                        _vm.localConfig,
+                        "debugSpeechToTextUtilsMockup",
+                        $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      )
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "false" } }, [
+                    _vm._v(
+                      "\n          " + _vm._s(_vm.$t("None")) + "\n        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "auto" } }, [
+                    _vm._v(
+                      "\n          " + _vm._s(_vm.$t("Auto")) + "\n        "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "perfect" } }, [
+                    _vm._v(
+                      "\n          " + _vm._s(_vm.$t("Perfect")) + "\n        "
+                    )
+                  ])
+                ]
+              )
+            ])
           : _vm._e()
       ]),
       _vm._v(" "),

@@ -74,7 +74,7 @@ export default function (LearningInstructor) {
       while (!hasReceivcePracticeSentence) {
         this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
           this.config.practiceSentence = processing
-        })
+        }, this.localConfig.debugSpeechToTextUtilsMockup)
         
         if (muteCancel === true) {
           return false

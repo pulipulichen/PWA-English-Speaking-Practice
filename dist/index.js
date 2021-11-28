@@ -31571,9 +31571,9 @@ let config = {
   appName: 'PWA-English-Speaking-Practice',
   debug: {
     enableRestore: true,
-    SpeechToTextUtils: {
-      mockup: true  // true false auto
-    }
+//    SpeechToTextUtils: {
+//      mockup: true  // true false auto
+//    }
   },
   viewportSize: {
   },
@@ -32072,6 +32072,8 @@ let localConfig = {
   practiceMode: 'speaking',  // speaking writing
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
   setenceTokenizerStrategy: 'default', // default basic clause 
+  
+  debugSpeechToTextUtilsMockup: 'perfect'  // perfect false auto
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);
@@ -32469,7 +32471,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AsyncUtils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AsyncUtils.js */ "./src/utils/AsyncUtils.js");
 /* harmony import */ var _DictUtils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DictUtils.js */ "./src/utils/DictUtils.js");
-/* harmony import */ var _config_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../config.js */ "./src/config.js");
 /* global webkitSpeechRecognition, webkitSpeechGrammarList, webkitSpeechRecognitionEvent */
 
 let inited = false
@@ -32481,7 +32482,7 @@ let isStarted = false
 
 
 
-
+//import config from './../config.js'
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -32525,11 +32526,11 @@ let isStarted = false
     speechRecognitionList.addFromString(grammar, 1);
     recognition.grammars = speechRecognitionList;
   },
-  startListen: async function (grammarsString, processingCallback) {
-    if (_config_js__WEBPACK_IMPORTED_MODULE_2__["default"].debug.SpeechToTextUtils.mockup === 'auto') {
+  startListen: async function (grammarsString, processingCallback, debug = 'false') {
+    if (debug === 'auto') {
       return this.mockupAuto(grammarsString)
     }
-    if (_config_js__WEBPACK_IMPORTED_MODULE_2__["default"].debug.SpeechToTextUtils.mockup === true) {
+    if (debug === 'perfect') {
       return grammarsString
     }
     
@@ -32752,6 +32753,10 @@ if (location.href.startsWith('http://localhost:8383/')) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  cache: {},
+  generateKey (text,lang) {
+    return lang + ':' + text
+  },
   /**
    * 
    * @param {type} text
@@ -32759,6 +32764,15 @@ if (location.href.startsWith('http://localhost:8383/')) {
    * @returns {result}
    */
   trans: async function (text, lang = 'en') {
+    if (!text || typeof(text) !== 'string' || text.trim() === '') {
+      return false
+    }
+    text = text.trim()
+    let key = this.generateKey(text, lang)
+    if (this.cache[key]) {
+      return this.cache[key]
+    }
+    
     this.initTrans()
     
     //console.log(data)
@@ -32767,8 +32781,10 @@ if (location.href.startsWith('http://localhost:8383/')) {
       lang
     }
     
-    console.log(data)
+    //console.log(data)
     let result = await api.send(url, data, {debug: false})
+    
+    this.cache[key] = result
     //console.log(result)
     return result
   },

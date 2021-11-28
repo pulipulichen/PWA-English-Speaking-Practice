@@ -9,6 +9,10 @@ if (location.href.startsWith('http://localhost:8383/')) {
 }
 
 export default {
+  cache: {},
+  generateKey (text,lang) {
+    return lang + ':' + text
+  },
   /**
    * 
    * @param {type} text
@@ -16,6 +20,15 @@ export default {
    * @returns {result}
    */
   trans: async function (text, lang = 'en') {
+    if (!text || typeof(text) !== 'string' || text.trim() === '') {
+      return false
+    }
+    text = text.trim()
+    let key = this.generateKey(text, lang)
+    if (this.cache[key]) {
+      return this.cache[key]
+    }
+    
     this.initTrans()
     
     //console.log(data)
@@ -24,8 +37,10 @@ export default {
       lang
     }
     
-    console.log(data)
+    //console.log(data)
     let result = await api.send(url, data, {debug: false})
+    
+    this.cache[key] = result
     //console.log(result)
     return result
   },

@@ -2,9 +2,9 @@ let config = {
   appName: 'PWA-English-Speaking-Practice',
   debug: {
     enableRestore: true,
-    SpeechToTextUtils: {
-      mockup: true  // true false auto
-    }
+//    SpeechToTextUtils: {
+//      mockup: true  // true false auto
+//    }
   },
   viewportSize: {
   },

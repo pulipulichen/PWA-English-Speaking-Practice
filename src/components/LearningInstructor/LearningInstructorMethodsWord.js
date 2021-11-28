@@ -37,12 +37,17 @@ export default function (LearningInstructor) {
       
         this.config.practiceWord = await this.utils.SpeechToTextUtils.startListen(word, (processing) => {
           this.config.practiceWord = processing
-        })
+        }, this.localConfig.debugSpeechToTextUtilsMockup)
       
+        if (!this.config.practiceWord) {
+          await this.utils.AsyncUtils.sleep()
+          continue
+        }
+        
         let practiceWords = this.tokenizeSentenceToWords(this.config.practiceWord)
         if (practiceWords.length >= thresholdWordsCount) {
           hasReceivcePracticeSentence = true
-          await this.utils.AsyncUtils.sleep()
+          //await this.utils.AsyncUtils.sleep()
         }
         else {
           await this.utils.AsyncUtils.sleep()
@@ -65,7 +70,7 @@ export default function (LearningInstructor) {
       
       //return false
       if (this.config.practiceWordScore >= 0.7) {
-        await this.utils.AsyncUtils.sleep()
+        //await this.utils.AsyncUtils.sleep()
         this.clearWordToLearn(word)
         this.config.currentWord = null
       }
