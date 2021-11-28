@@ -42,6 +42,8 @@ let config = {
   practiceSentenceEvaluationResult: [],
   
   practiceWord: null,
+  currentWordMask: false,
+  
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,
   //currentSentenceMask: 'translation',

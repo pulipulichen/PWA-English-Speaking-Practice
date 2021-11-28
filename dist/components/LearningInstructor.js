@@ -111,9 +111,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LearningInstructorMethods_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructorMethods.js */ "./src/components/LearningInstructor/LearningInstructorMethods.js");
 /* harmony import */ var _LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructorMethodsNavigation.js */ "./src/components/LearningInstructor/LearningInstructorMethodsNavigation.js");
 /* harmony import */ var _LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LearningInstructorMethodsSentence.js */ "./src/components/LearningInstructor/LearningInstructorMethodsSentence.js");
-/* harmony import */ var _LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructorMethodsToLearn.js */ "./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js");
-/* harmony import */ var _LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LearningInstructorMounted.js */ "./src/components/LearningInstructor/LearningInstructorMounted.js");
-/* harmony import */ var _LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LearningInstructorWatch.js */ "./src/components/LearningInstructor/LearningInstructorWatch.js");
+/* harmony import */ var _LearningInstructorMethodsWord_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructorMethodsWord.js */ "./src/components/LearningInstructor/LearningInstructorMethodsWord.js");
+/* harmony import */ var _LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LearningInstructorMethodsToLearn.js */ "./src/components/LearningInstructor/LearningInstructorMethodsToLearn.js");
+/* harmony import */ var _LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./LearningInstructorMounted.js */ "./src/components/LearningInstructor/LearningInstructorMounted.js");
+/* harmony import */ var _LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./LearningInstructorWatch.js */ "./src/components/LearningInstructor/LearningInstructorWatch.js");
 
 let LearningInstructor = {
   props: ['config', 'localConfig', 'utils'],
@@ -143,13 +144,16 @@ Object(_LearningInstructorMethodsNavigation_js__WEBPACK_IMPORTED_MODULE_2__["def
 Object(_LearningInstructorMethodsSentence_js__WEBPACK_IMPORTED_MODULE_3__["default"])(LearningInstructor)
 
 
-Object(_LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_4__["default"])(LearningInstructor)
+Object(_LearningInstructorMethodsWord_js__WEBPACK_IMPORTED_MODULE_4__["default"])(LearningInstructor)
 
 
-Object(_LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_5__["default"])(LearningInstructor)
+Object(_LearningInstructorMethodsToLearn_js__WEBPACK_IMPORTED_MODULE_5__["default"])(LearningInstructor)
 
 
-Object(_LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_6__["default"])(LearningInstructor)
+Object(_LearningInstructorMounted_js__WEBPACK_IMPORTED_MODULE_6__["default"])(LearningInstructor)
+
+
+Object(_LearningInstructorWatch_js__WEBPACK_IMPORTED_MODULE_7__["default"])(LearningInstructor)
 
 /* harmony default export */ __webpack_exports__["default"] = (LearningInstructor);
 
@@ -586,6 +590,15 @@ __webpack_require__.r(__webpack_exports__);
     localStorage.setItem(key, value)
   }
   
+  LearningInstructor.methods.reduceWordsToLearn = function (word) {
+    let value = this.getWordToLearnScore(word)
+    
+    value--
+        
+    let key = this.generateKeyName(word)
+    localStorage.setItem(key, value)
+  }
+  
   LearningInstructor.methods.getWordToLearnScore = function (word) {
     let key = this.generateKeyName(word)
     
@@ -604,6 +617,38 @@ __webpack_require__.r(__webpack_exports__);
     let key = this.generateKeyName(word)
     localStorage.removeItem(key)
   }
+});
+
+/***/ }),
+
+/***/ "./src/components/LearningInstructor/LearningInstructorMethodsWord.js":
+/*!****************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructorMethodsWord.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+/* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
+    LearningInstructor.methods.speakWord = async function (word) {
+      await this.utils.TextToSpeechUtils.startSpeak(word)
+      
+      await this.practiceWord(word)
+      
+    }
+    
+    LearningInstructor.methods.practiceWord = async function (word) {
+      
+      this.config.practiceSentence = null
+      
+      this.config.currentWordMask = this.localConfig.practiceSentenceMask
+      
+      
+      this.config.currentWordMask = false
+      console.log(word)
+    }
 });
 
 /***/ }),

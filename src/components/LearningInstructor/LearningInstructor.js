@@ -26,6 +26,9 @@ LearningInstructorMethodsNavigation(LearningInstructor)
 import LearningInstructorMethodsSentence from './LearningInstructorMethodsSentence.js'
 LearningInstructorMethodsSentence(LearningInstructor)
 
+import LearningInstructorMethodsWord from './LearningInstructorMethodsWord.js'
+LearningInstructorMethodsWord(LearningInstructor)
+
 import LearningInstructorMethodsToLearn from './LearningInstructorMethodsToLearn.js'
 LearningInstructorMethodsToLearn(LearningInstructor)
 

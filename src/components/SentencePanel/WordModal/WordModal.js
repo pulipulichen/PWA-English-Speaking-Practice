@@ -26,11 +26,32 @@ let WordModal = {
       }
     }
   },
-//  computed: {
-//  },
-  mounted() {
-    
+  computed: {
+    computedWordMaskClassesWithoutTrans () {
+      let classes = []
+      
+      let mask = this.config.currentWordMask
+      if (mask === 'translation' 
+              || mask === 'word-block' 
+              || mask === 'sentence-block' ) {
+        classes.push('masked')
+      }
+      return classes
+    },
+    computedWordMaskClassesWithTrans () {
+      let classes = []
+      
+      let mask = this.config.currentWordMask
+      if (mask === 'word-block' 
+              || mask === 'sentence-block' ) {
+        classes.push('masked')
+      }
+      return classes
+    }
   },
+//  mounted() {
+//    
+//  },
   methods: {
     init: function () {
       this.modal = $(this.$refs.Modal)
@@ -61,14 +82,23 @@ let WordModal = {
     },
     
     speakWord: async function () {
-      if (this.isSpeaking === true) {
-        this.utils.TextToSpeechUtils.stopSpeak()
-        return false
+      while (!await this.utils.LearningInstructor) {
+        await this.utils.AsyncUtils.sleep()
       }
       
       this.isSpeaking = true
-      await this.utils.TextToSpeechUtils.startSpeak(this.config.practiceWord)
+      await this.utils.LearningInstructor.speakWord(this.config.practiceWord)
       this.isSpeaking = false
+    },
+    
+    practiceWord: async function () {
+      while (!await this.utils.LearningInstructor) {
+        await this.utils.AsyncUtils.sleep()
+      }
+      
+      this.isPracting = true
+      await this.utils.LearningInstructor.practiceWord(this.config.practiceWord)
+      this.isPracting = false
     },
     
     openDictionary () {

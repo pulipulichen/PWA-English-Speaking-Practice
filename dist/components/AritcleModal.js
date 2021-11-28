@@ -360,6 +360,7 @@ let AritcleModal = {
       */
       this.localConfig.fieldArticle = output.join(' ')
       this.localConfig.playingIndex = 0
+      this.localConfig.setenceTokenizerStrategy = 'default'
     },
 
     loadDemo: async function () {
@@ -378,6 +379,9 @@ let AritcleModal = {
       }
 
       this.localConfig.fieldArticle = article
+      
+      this.localConfig.playingIndex = 0
+      this.localConfig.setenceTokenizerStrategy = 'clause'
     }
   }
 }

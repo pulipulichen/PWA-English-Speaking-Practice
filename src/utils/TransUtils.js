@@ -1,8 +1,12 @@
 import PuliPostMessageAPI from './puli-post-message-api/puli-post-message-api.js'
 let inited = false
 let api
-//let url = 'http://localhost:8383/HTML-API-Transtration/index.html'
+
 let url = 'https://pulipulichen.github.io/HTML-API-Transtration/index.html'
+
+if (location.href.startsWith('http://localhost:8383/')) {
+  url = 'http://localhost:8383/HTML-API-Transtration/index.html'
+}
 
 export default {
   /**

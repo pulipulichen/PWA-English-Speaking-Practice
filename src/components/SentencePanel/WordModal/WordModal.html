@@ -5,21 +5,28 @@
   </div>
   <div class="content ui form">
     
+    
     <div class="ui segment word-segment"
          v-bind:class="{isSpeaking: isSpeaking}"
          v-on:click="speakWord">
       <h2 class="ui center aligned header"
-          v-if="!wordTrans">
-        {{ config.practiceWord }}
+          v-if="!wordTrans"
+          v-bind:class="computedWordMaskClassesWithoutTrans">
+        <span>
+          {{ config.practiceWord }}
+        </span>
       </h2>
-      <div v-if="wordTrans"
+      <div v-if="wordTrans && config.currentWordMask !== 'translation'"
            class="ui two column center aligned grid">
         <div class="ui vertical divider">
           <i class="language icon"></i>
         </div>
         <div class="column">
-          <h2 class="ui center aligned header">
-            {{ config.practiceWord }}
+          <h2 class="ui center aligned header"
+            v-bind:class="computedWordMaskClassesWithTrans">
+            <span>
+              {{ config.practiceWord }}
+            </span>
           </h2>
         </div>
         <div class="column"
@@ -29,9 +36,14 @@
           </h2>
         </div>
       </div>
+      <h2 class="ui center aligned header"
+          v-if="wordTrans && config.currentWordMask === 'translation'">
+          {{ wordTrans }}
+      </h2>
     </div>
     
-    <h2 class="ui center aligned icon header">
+    <h2 class="ui center aligned icon header"
+        v-on:click="practiceWord">
       <i class="conversation icon"></i>
       {{ $t(`Let's Practice!`) }}
     </h2>

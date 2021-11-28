@@ -25,6 +25,15 @@ export default function (LearningInstructor) {
     localStorage.setItem(key, value)
   }
   
+  LearningInstructor.methods.reduceWordsToLearn = function (word) {
+    let value = this.getWordToLearnScore(word)
+    
+    value--
+        
+    let key = this.generateKeyName(word)
+    localStorage.setItem(key, value)
+  }
+  
   LearningInstructor.methods.getWordToLearnScore = function (word) {
     let key = this.generateKeyName(word)
     
