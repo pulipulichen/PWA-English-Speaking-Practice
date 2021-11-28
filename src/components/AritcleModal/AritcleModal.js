@@ -17,9 +17,12 @@ let AritcleModal = {
       await this.utils.AsyncUtils.sleep()
       this.buildSentenceList()
     },
+    "localConfig.setenceTokenizerStrategy": async function () {
+      await this.utils.AsyncUtils.sleep()
+      this.buildSentenceList()
+    },
   },
-//  computed: {
-//  },
+  //computed: {}, // AritcleModalComputed.js
   mounted() {
     //this.loadRSS()
     //console.log(this.localConfig.fieldArticle)
@@ -116,5 +119,8 @@ let AritcleModal = {
 
 import AritcleModalMethodsSentence from './AritcleModalMethodsSentence.js'
 AritcleModalMethodsSentence(AritcleModal)
+
+import AritcleModalComputed from './AritcleModalComputed.js'
+AritcleModalComputed(AritcleModal)
 
 export default AritcleModal

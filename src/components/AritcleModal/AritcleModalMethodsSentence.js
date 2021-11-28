@@ -1,82 +1,6 @@
-
 const Tokenizer = require('sentence-tokenizer');
 
-
 export default function (AritcleModal) {
-    let chunkSentenceOptions = [
-      {
-        needle: ', ',
-        minBefore: 5,
-        minAfter: 5,
-        chunkAfter: true
-      },
-      {
-        needle: '. ',
-        minBefore: 5,
-        minAfter: 5,
-        chunkAfter: true
-      },
-      {
-        needle: '." ',
-        minBefore: 5,
-        minAfter: 5,
-        chunkAfter: true
-      },
-      {
-        needle: '," ',
-        minBefore: 5,
-        minAfter: 5,
-        chunkAfter: true
-      },
-      {
-        needle: '," ',
-        minBefore: 5,
-        minAfter: 5,
-        chunkAfter: true
-      },
-      {
-        needle: ' from ',
-        minBefore: 5,
-        minAfter: 3,
-        chunkAfter: false
-      },
-      {
-        needle: ' for ',
-        minBefore: 7,
-        minAfter: 5,
-        chunkAfter: false
-      },
-      {
-        needle: ' and ',
-        minBefore: 7,
-        minAfter: 5,
-        chunkAfter: false
-      },
-      {
-        needle: ' following ',
-        minBefore: 5,
-        minAfter: 3,
-        chunkAfter: false
-      },
-      {
-        needle: ' while ',
-        minBefore: 5,
-        minAfter: 3,
-        chunkAfter: false
-      },
-      {
-        needle: ' to ',
-        minBefore: 5,
-        minAfter: 5,
-        chunkAfter: false
-      },
-      {
-        needle: ' so ',
-        minBefore: 5,
-        minAfter: 3,
-        chunkAfter: false
-      },
-    ]
     
     AritcleModal.methods.chunkSentence = function (sentence) {
       let output = []
@@ -88,8 +12,8 @@ export default function (AritcleModal) {
           break
         }
         
-        for (let i = 0; i < chunkSentenceOptions.length; i++) {
-          let {needle, minBefore = 5, minAfter = 3, chunkAfter = false} = chunkSentenceOptions[i]
+        for (let i = 0; i < this.chunkSentenceOptions.length; i++) {
+          let {needle, minBefore = 5, minAfter = 3, chunkAfter = false} = this.chunkSentenceOptions[i]
           
           if (!needle || sentence.indexOf(needle) === -1) {
             continue

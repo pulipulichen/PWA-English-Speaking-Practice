@@ -62,17 +62,21 @@ var render = function() {
       _c("div", { staticClass: "content ui form" }, [
         _c("div", { staticClass: "field" }, [
           _c("div", { staticClass: "ui fluid buttons" }, [
+            _c(
+              "a",
+              { staticClass: "ui positive button", on: { click: _vm.loadRSS } },
+              [
+                _vm._v(
+                  "\n          " +
+                    _vm._s(_vm.$t("Load BBC World NEWS")) +
+                    "\n        "
+                )
+              ]
+            ),
+            _vm._v(" "),
             _c("a", { staticClass: "ui button", on: { click: _vm.loadDemo } }, [
               _vm._v(
                 "\n          " + _vm._s(_vm.$t("Load Demo")) + "\n        "
-              )
-            ]),
-            _vm._v(" "),
-            _c("a", { staticClass: "ui button", on: { click: _vm.loadRSS } }, [
-              _vm._v(
-                "\n          " +
-                  _vm._s(_vm.$t("Load BBC World NEWS")) +
-                  "\n        "
               )
             ])
           ]),
@@ -98,6 +102,7 @@ var render = function() {
                       expression: "localConfig.setenceTokenizerStrategy"
                     }
                   ],
+                  attrs: { id: "setenceTokenizerStrategy" },
                   on: {
                     change: function($event) {
                       var $$selectedVal = Array.prototype.filter
@@ -144,11 +149,11 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "input" }, [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.config.sentenceList.length) +
-                    "\n          "
-                )
+                _c("input", {
+                  staticClass: "ui input disabled",
+                  attrs: { type: "number", disabled: "disabled" },
+                  domProps: { value: _vm.config.sentenceList.length }
+                })
               ])
             ])
           ]),
@@ -257,6 +262,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AritcleModalMethodsSentence_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AritcleModalMethodsSentence.js */ "./src/components/AritcleModal/AritcleModalMethodsSentence.js");
+/* harmony import */ var _AritcleModalComputed_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./AritcleModalComputed.js */ "./src/components/AritcleModal/AritcleModalComputed.js");
 
 
 let AritcleModal = {
@@ -276,9 +282,12 @@ let AritcleModal = {
       await this.utils.AsyncUtils.sleep()
       this.buildSentenceList()
     },
+    "localConfig.setenceTokenizerStrategy": async function () {
+      await this.utils.AsyncUtils.sleep()
+      this.buildSentenceList()
+    },
   },
-//  computed: {
-//  },
+  //computed: {}, // AritcleModalComputed.js
   mounted() {
     //this.loadRSS()
     //console.log(this.localConfig.fieldArticle)
@@ -376,6 +385,9 @@ let AritcleModal = {
 
 Object(_AritcleModalMethodsSentence_js__WEBPACK_IMPORTED_MODULE_1__["default"])(AritcleModal)
 
+
+Object(_AritcleModalComputed_js__WEBPACK_IMPORTED_MODULE_2__["default"])(AritcleModal)
+
 /* harmony default export */ __webpack_exports__["default"] = (AritcleModal);
 
 /***/ }),
@@ -456,21 +468,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/components/AritcleModal/AritcleModalMethodsSentence.js":
-/*!********************************************************************!*\
-  !*** ./src/components/AritcleModal/AritcleModalMethodsSentence.js ***!
-  \********************************************************************/
+/***/ "./src/components/AritcleModal/AritcleModalComputed.js":
+/*!*************************************************************!*\
+  !*** ./src/components/AritcleModal/AritcleModalComputed.js ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-
-const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
-
-
 /* harmony default export */ __webpack_exports__["default"] = (function (AritcleModal) {
-    let chunkSentenceOptions = [
+    let chunkSentenceOptionsBasic = [
       {
         needle: ', ',
         minBefore: 5,
@@ -501,6 +509,8 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
         minAfter: 5,
         chunkAfter: true
       },
+    ]
+    let chunkSentenceOptionsClause = [
       {
         needle: ' from ',
         minBefore: 5,
@@ -545,6 +555,38 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
       },
     ]
     
+    if (!AritcleModal.computed) {
+      AritcleModal.computed = {}
+    }
+    
+    AritcleModal.computed.chunkSentenceOptions = function () {
+      if (this.localConfig.setenceTokenizerStrategy === 'default') {
+        return []
+      }
+      if (this.localConfig.setenceTokenizerStrategy === 'basic') {
+        return chunkSentenceOptionsBasic
+      }
+      if (this.localConfig.setenceTokenizerStrategy === 'clause') {
+        return chunkSentenceOptionsBasic.concat(chunkSentenceOptionsClause)
+      }
+    }
+});
+
+/***/ }),
+
+/***/ "./src/components/AritcleModal/AritcleModalMethodsSentence.js":
+/*!********************************************************************!*\
+  !*** ./src/components/AritcleModal/AritcleModalMethodsSentence.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/sentence-tokenizer/lib/tokenizer.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function (AritcleModal) {
+    
     AritcleModal.methods.chunkSentence = function (sentence) {
       let output = []
       
@@ -555,8 +597,8 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
           break
         }
         
-        for (let i = 0; i < chunkSentenceOptions.length; i++) {
-          let {needle, minBefore = 5, minAfter = 3, chunkAfter = false} = chunkSentenceOptions[i]
+        for (let i = 0; i < this.chunkSentenceOptions.length; i++) {
+          let {needle, minBefore = 5, minAfter = 3, chunkAfter = false} = this.chunkSentenceOptions[i]
           
           if (!needle || sentence.indexOf(needle) === -1) {
             continue

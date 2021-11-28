@@ -7,13 +7,13 @@
     
     <div class="field">
       <div class="ui fluid buttons">
+        <a class="ui positive button"
+           v-on:click="loadRSS">
+          {{ $t('Load BBC World NEWS') }}
+        </a>
         <a class="ui button"
            v-on:click="loadDemo">
           {{ $t('Load Demo') }}
-        </a>
-        <a class="ui button"
-           v-on:click="loadRSS">
-          {{ $t('Load BBC World NEWS') }}
         </a>
       </div>
       
@@ -22,7 +22,7 @@
           <label for="setenceTokenizerStrategy">
             {{ $t('Sentence Tokenizer Strategy') }}
           </label>
-          <select v-model="localConfig.setenceTokenizerStrategy">
+          <select id="setenceTokenizerStrategy" v-model="localConfig.setenceTokenizerStrategy">
             <option value="default">{{ $t('Default') }}</option>
             <option value="basic">{{ $t('Basic') }}</option>
             <option value="clause">{{ $t('Clause') }}</option>
@@ -33,7 +33,10 @@
             {{ $t('Setence Count') }}
           </label>
           <div class="input">
-            {{ config.sentenceList.length }}
+            <input type="number" 
+                   v-bind:value="config.sentenceList.length" 
+                   class="ui input disabled"
+                   disabled="disabled" />
           </div>
         </div>
       </div>
