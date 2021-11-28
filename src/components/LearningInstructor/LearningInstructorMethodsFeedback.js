@@ -21,7 +21,7 @@ export default function (LearningInstructor) {
     await this.utils.AsyncUtils.sleep()
     if (score === 1) {
       let option = {
-        pitch: Math.ceil(Math.random() * 5)/10 + 1
+        pitch: Math.ceil(Math.random() * 3)/10 + 1
       } 
       await this.utils.TextToSpeechUtils.startSpeak(this.$t(feedbackWonderful.sampleUnduplicated()), option)
     }

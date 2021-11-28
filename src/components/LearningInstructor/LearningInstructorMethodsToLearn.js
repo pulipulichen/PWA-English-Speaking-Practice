@@ -51,5 +51,6 @@ export default function (LearningInstructor) {
   LearningInstructor.methods.clearWordToLearn = function (word) {
     let key = this.generateKeyName(word)
     localStorage.removeItem(key)
+    //console.log('clear', this.getWordToLearnScore(word))
   }
 }
