@@ -20,6 +20,30 @@
 }
 
 .isPracticing {
-  cursor: wait;
+  cursor: wait !important;
   pointer-events: none;
+}
+
+.positive {
+  color: #21ba45 !important;
+}
+
+.practice-hint {
+  cursor: pointer;
+}
+
+.practice-again-hint {
+  
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  color: gray;
+  visibility: hidden;
+  
+  &.visible {
+    visibility: visible;
+  }
+}
+
+.keep-going {
+  color: gray !important;
 }

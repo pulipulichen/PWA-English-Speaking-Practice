@@ -3,7 +3,7 @@ let config = {
   debug: {
     enableRestore: true,
     SpeechToTextUtils: {
-      mockup: true
+      mockup: true  // true false auto
     }
   },
   viewportSize: {

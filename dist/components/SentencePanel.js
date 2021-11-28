@@ -233,7 +233,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.masked span[data-v-3b4f4609] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing[data-v-3b4f4609] {\n  cursor: wait;\n  pointer-events: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF;ADGA;EACE,eAAA;ACDF;ADIA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACFF;ADKA;EACE,YAAA;EACA,oBAAA;ACHF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n\n.word-segment {\n  cursor: pointer;\n}\n\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.isPracticing {\n  cursor: wait;\n  pointer-events: none;\n}\n",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment {\n  cursor: pointer;\n}\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing {\n  cursor: wait;\n  pointer-events: none;\n}\n"]}]);
+exports.push([module.i, ".ConfigurationModal[data-v-3b4f4609] {\n  display: none;\n}\n.isSpeaking[data-v-3b4f4609] {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.masked span[data-v-3b4f4609] {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing[data-v-3b4f4609] {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive[data-v-3b4f4609] {\n  color: #21ba45 !important;\n}\n.practice-hint[data-v-3b4f4609] {\n  cursor: pointer;\n}\n.practice-again-hint[data-v-3b4f4609] {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible[data-v-3b4f4609] {\n  visibility: visible;\n}\n.keep-going[data-v-3b4f4609] {\n  color: gray !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/WordModal/WordModal.less?vue&type=style&index=0&id=3b4f4609&lang=less&scoped=true&","WordModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;ADEA;EACE,mBAAA;EACA,mCAAA;EACA,YAAA;ACAF;ADGA;EACE,eAAA;ACDF;ADIA;EACE,WAAA;EACA,sBAAA;EACA,mBAAA;EACA,kDAAA;ACFF;ADKA;EACE,uBAAA;EACA,oBAAA;ACHF;ADMA;EACE,yBAAA;ACJF;ADOA;EACE,eAAA;ACLF;ADQA;EAEE,2BAAA;EACA,8BAAA;EACA,WAAA;EACA,kBAAA;ACPF;ADSE;EACE,mBAAA;ACPJ;ADWA;EACE,sBAAA;ACTF","file":"WordModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n\n.word-segment {\n  cursor: pointer;\n}\n\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n\n.positive {\n  color: #21ba45 !important;\n}\n\n.practice-hint {\n  cursor: pointer;\n}\n\n.practice-again-hint {\n  \n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n  \n  &.visible {\n    visibility: visible;\n  }\n}\n\n.keep-going {\n  color: gray !important;\n}",".ConfigurationModal {\n  display: none;\n}\n.isSpeaking {\n  cursor: not-allowed;\n  background-color: yellow !important;\n  color: black;\n}\n.word-segment {\n  cursor: pointer;\n}\n.masked span {\n  color: gray;\n  background-color: gray;\n  border-radius: 1rem;\n  -webkit-filter: blur(2px) grayscale(1) invert(0.1);\n}\n.isPracticing {\n  cursor: wait !important;\n  pointer-events: none;\n}\n.positive {\n  color: #21ba45 !important;\n}\n.practice-hint {\n  cursor: pointer;\n}\n.practice-again-hint {\n  margin-top: 1rem !important;\n  margin-bottom: 1rem !important;\n  color: gray;\n  visibility: hidden;\n}\n.practice-again-hint.visible {\n  visibility: visible;\n}\n.keep-going {\n  color: gray !important;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -820,7 +820,7 @@ var render = function() {
         _c(
           "h2",
           {
-            staticClass: "ui center aligned icon header",
+            staticClass: "ui center aligned header practice-hint",
             class: _vm.computedPracticeWordClasses,
             on: { click: _vm.practiceWord }
           },
@@ -828,18 +828,54 @@ var render = function() {
             !_vm.config.practiceWord
               ? [
                   _c("i", { staticClass: "conversation icon" }),
-                  _vm._v(
-                    "\n        " +
-                      _vm._s(_vm.$t("Let's Practice!")) +
-                      "\n      "
-                  )
+                  _vm._v(" "),
+                  !_vm.isPracticing
+                    ? [
+                        _vm._v(
+                          "\n          " +
+                            _vm._s(_vm.$t("Let's Practice!")) +
+                            "\n        "
+                        )
+                      ]
+                    : _vm._e(),
+                  _vm._v(" "),
+                  _vm.isPracticing
+                    ? [
+                        _vm._v(
+                          "\n          " +
+                            _vm._s(_vm.$t("Keep going... Keep going...")) +
+                            "\n        "
+                        )
+                      ]
+                    : _vm._e()
                 ]
               : _vm._e(),
             _vm._v(" "),
             _vm.config.practiceWord
               ? [
                   _vm._v(
-                    "\n        " + _vm._s(_vm.config.practiceWord) + "\n      "
+                    "\n        " +
+                      _vm._s(_vm.config.practiceWord) +
+                      "\n        "
+                  ),
+                  _c(
+                    "h3",
+                    {
+                      staticClass: "practice-again-hint",
+                      class: {
+                        visible:
+                          !_vm.isPracticing &&
+                          _vm.config.practiceWordScore < 0.7
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "conversation icon" }),
+                      _vm._v(
+                        "\n          " +
+                          _vm._s(_vm.$t("Practice again?")) +
+                          "\n        "
+                      )
+                    ]
                   )
                 ]
               : _vm._e()
@@ -2109,12 +2145,14 @@ let WordModal = {
               && this.config.currentWord !== '') {
         this.open()
         this.currentWord = this.config.currentWord
-        this.wordTrans = await this.utils.TransUtils.transZHTW(this.config.currentWord)
       }
       else {
         await this.close()
         this.currentWord = null
       }
+    },
+    'currentWord': async function () {
+      this.wordTrans = await this.utils.TransUtils.transZHTW(this.currentWord)
     }
   },
   computed: {
@@ -2142,9 +2180,19 @@ let WordModal = {
     computedPracticeWordClasses () {
       let classes = []
       
+      if (!this.isPracticing 
+              && this.config.practiceWord === null) {
+        classes.push('icon')
+      }
+      
       if (this.isPracticing) {
         classes.push('isPracticing')
       }
+      if (this.isPracticing && this.config.practiceWord === null) {
+        //console.log('go')
+        classes.push('keep-going')
+      }
+      
       if (this.config.practiceWordScore
               && this.config.practiceWordScore > 0.7) {
         classes.push('positive')
@@ -2200,6 +2248,8 @@ let WordModal = {
       this.isSpeaking = true
       await this.utils.LearningInstructor.speakWord(this.config.currentWord)
       this.isSpeaking = false
+      
+      await this.practiceWord()
     },
     
     practiceWord: async function () {

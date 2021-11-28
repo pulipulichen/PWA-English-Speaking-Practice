@@ -63,7 +63,8 @@ export default function (LearningInstructor) {
       // --------------------------
       
       await this.utils.AsyncUtils.sleep()
-      this.beep.play()
+      await this.beep.play()
+      await this.utils.AsyncUtils.sleep()
       
       // --------------------------
       

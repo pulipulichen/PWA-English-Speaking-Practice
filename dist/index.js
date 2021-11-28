@@ -31572,7 +31572,7 @@ let config = {
   debug: {
     enableRestore: true,
     SpeechToTextUtils: {
-      mockup: true
+      mockup: true  // true false auto
     }
   },
   viewportSize: {
@@ -32526,8 +32526,11 @@ let isStarted = false
     recognition.grammars = speechRecognitionList;
   },
   startListen: async function (grammarsString, processingCallback) {
-    if (_config_js__WEBPACK_IMPORTED_MODULE_2__["default"].debug.SpeechToTextUtils.mockup) {
-      return this.mockup(grammarsString)
+    if (_config_js__WEBPACK_IMPORTED_MODULE_2__["default"].debug.SpeechToTextUtils.mockup === 'auto') {
+      return this.mockupAuto(grammarsString)
+    }
+    if (_config_js__WEBPACK_IMPORTED_MODULE_2__["default"].debug.SpeechToTextUtils.mockup === true) {
+      return grammarsString
     }
     
     this.init()
@@ -32571,7 +32574,8 @@ let isStarted = false
       }
       return newArr
   },
-  mockup (grammarsString) {
+  mockupAuto (grammarsString) {
+    
     // 前面兩字一樣，後面兩字不一樣
     let words = grammarsString.split(' ')
     

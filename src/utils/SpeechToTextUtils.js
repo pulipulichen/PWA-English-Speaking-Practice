@@ -54,8 +54,11 @@ export default {
     recognition.grammars = speechRecognitionList;
   },
   startListen: async function (grammarsString, processingCallback) {
-    if (config.debug.SpeechToTextUtils.mockup) {
-      return this.mockup(grammarsString)
+    if (config.debug.SpeechToTextUtils.mockup === 'auto') {
+      return this.mockupAuto(grammarsString)
+    }
+    if (config.debug.SpeechToTextUtils.mockup === true) {
+      return grammarsString
     }
     
     this.init()
@@ -99,7 +102,8 @@ export default {
       }
       return newArr
   },
-  mockup (grammarsString) {
+  mockupAuto (grammarsString) {
+    
     // 前面兩字一樣，後面兩字不一樣
     let words = grammarsString.split(' ')
     

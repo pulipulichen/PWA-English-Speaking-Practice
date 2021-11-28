@@ -25,12 +25,14 @@ let WordModal = {
               && this.config.currentWord !== '') {
         this.open()
         this.currentWord = this.config.currentWord
-        this.wordTrans = await this.utils.TransUtils.transZHTW(this.config.currentWord)
       }
       else {
         await this.close()
         this.currentWord = null
       }
+    },
+    'currentWord': async function () {
+      this.wordTrans = await this.utils.TransUtils.transZHTW(this.currentWord)
     }
   },
   computed: {
@@ -58,9 +60,19 @@ let WordModal = {
     computedPracticeWordClasses () {
       let classes = []
       
+      if (!this.isPracticing 
+              && this.config.practiceWord === null) {
+        classes.push('icon')
+      }
+      
       if (this.isPracticing) {
         classes.push('isPracticing')
       }
+      if (this.isPracticing && this.config.practiceWord === null) {
+        //console.log('go')
+        classes.push('keep-going')
+      }
+      
       if (this.config.practiceWordScore
               && this.config.practiceWordScore > 0.7) {
         classes.push('positive')
@@ -116,6 +128,8 @@ let WordModal = {
       this.isSpeaking = true
       await this.utils.LearningInstructor.speakWord(this.config.currentWord)
       this.isSpeaking = false
+      
+      await this.practiceWord()
     },
     
     practiceWord: async function () {

@@ -4,8 +4,6 @@ export default function (LearningInstructor) {
     LearningInstructor.methods.speakWord = async function (word) {
       await this.utils.TextToSpeechUtils.startSpeak(word)
       
-      await this.practiceWord(word)
-      
     }
     
     LearningInstructor.methods.practiceWord = async function (word) {
@@ -27,7 +25,8 @@ export default function (LearningInstructor) {
       // --------------------------
       
       await this.utils.AsyncUtils.sleep()
-      this.beep.play()
+      await this.beep.play()
+      await this.utils.AsyncUtils.sleep()
       
       // --------------------------
       
@@ -64,9 +63,14 @@ export default function (LearningInstructor) {
       this.config.practiceWordScore = this.evaluateWordPractice(this.config.practiceWord, word)
       await this.speakPracticeFeedback(this.config.practiceWordScore)
       
+      //return false
       if (this.config.practiceWordScore >= 0.7) {
         await this.utils.AsyncUtils.sleep()
-        this.config.practiceWord = null
+        this.clearWordToLearn(word)
+        this.config.currentWord = null
+      }
+      else {
+        this.reduceWordsToLearn(word)
       }
     }
     
@@ -77,7 +81,7 @@ export default function (LearningInstructor) {
       target = this.utils.DictUtils.filterWord(target)
     
       let result = this.utils.DiffUtils.diffChars(source, target)
-      
+      //console.log(result)
       let addedCharCount = 0
       result.forEach(r => {
         if (r.added === true) {
@@ -85,18 +89,21 @@ export default function (LearningInstructor) {
         }
       })
       
-      let percent = addedCharCount / target.length
+      //console.log(addedCharCount, target.length)
+      
+      let percent = (target.length - addedCharCount) / target.length
+      
       if (percent >= 0.8) {
         score = 1
       }
       else if (percent >= 0.7) {
-        source = 0.7
+        score = 0.7
       }
       else if (percent >= 0.3) {
-        source = 0.5
+        score = 0.5
       }
       else {
-        source = 0
+        score = 0
       }
       
       return score

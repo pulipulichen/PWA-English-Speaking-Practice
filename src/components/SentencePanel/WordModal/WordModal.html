@@ -42,15 +42,25 @@
       </h2>
     </div>
     
-    <h2 class="ui center aligned icon header"
+    <h2 class="ui center aligned header practice-hint"
         v-on:click="practiceWord"
         v-bind:class="computedPracticeWordClasses">
       <template v-if="!config.practiceWord">
         <i class="conversation icon"></i>
-        {{ $t(`Let's Practice!`) }}
+        <template v-if="!isPracticing">
+          {{ $t(`Let's Practice!`) }}
+        </template>
+        <template v-if="isPracticing">
+          {{ $t(`Keep going... Keep going...`) }}
+        </template>
       </template>
       <template v-if="config.practiceWord">
         {{ config.practiceWord }}
+        <h3 class="practice-again-hint"
+          v-bind:class="{visible: (!isPracticing && config.practiceWordScore < 0.7)}">
+          <i class="conversation icon"></i>
+          {{ $t(`Practice again?`) }}
+        </h3>
       </template>
     </h2>
     
