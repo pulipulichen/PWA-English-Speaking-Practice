@@ -23,9 +23,11 @@
             {{ $t('Sentence Tokenizer Strategy') }}
           </label>
           <select id="setenceTokenizerStrategy" v-model="localConfig.setenceTokenizerStrategy">
-            <option value="default">{{ $t('Default') }}</option>
-            <option value="basic">{{ $t('Basic') }}</option>
-            <option value="clause">{{ $t('Clause') }}</option>
+            <option value="english-default">{{ $t('English: Default') }}</option>
+            <option value="english-basic">{{ $t('English: Basic') }}</option>
+            <option value="english-clause">{{ $t('English: Clause') }}</option>
+            <option value="chinese-default">{{ $t('Chinese: Default') }}</option>
+            <option value="chinese-comma">{{ $t('Chinese: Comma') }}</option>
           </select>
         </div>
         <div class="four wide field">

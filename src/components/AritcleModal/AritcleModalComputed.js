@@ -81,13 +81,13 @@ export default function (AritcleModal) {
     }
     
     AritcleModal.computed.chunkSentenceOptions = function () {
-      if (this.localConfig.setenceTokenizerStrategy === 'default') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-default') {
         return []
       }
-      if (this.localConfig.setenceTokenizerStrategy === 'basic') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-basic') {
         return chunkSentenceOptionsBasic
       }
-      if (this.localConfig.setenceTokenizerStrategy === 'clause') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-clause') {
         return chunkSentenceOptionsBasic.concat(chunkSentenceOptionsClause)
       }
     }

@@ -124,16 +124,24 @@ var render = function() {
                   }
                 },
                 [
-                  _c("option", { attrs: { value: "default" } }, [
-                    _vm._v(_vm._s(_vm.$t("Default")))
+                  _c("option", { attrs: { value: "english-default" } }, [
+                    _vm._v(_vm._s(_vm.$t("English: Default")))
                   ]),
                   _vm._v(" "),
-                  _c("option", { attrs: { value: "basic" } }, [
-                    _vm._v(_vm._s(_vm.$t("Basic")))
+                  _c("option", { attrs: { value: "english-basic" } }, [
+                    _vm._v(_vm._s(_vm.$t("English: Basic")))
                   ]),
                   _vm._v(" "),
-                  _c("option", { attrs: { value: "clause" } }, [
-                    _vm._v(_vm._s(_vm.$t("Clause")))
+                  _c("option", { attrs: { value: "english-clause" } }, [
+                    _vm._v(_vm._s(_vm.$t("English: Clause")))
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "chinese-default" } }, [
+                    _vm._v(_vm._s(_vm.$t("Chinese: Default")))
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "chinese-comma" } }, [
+                    _vm._v(_vm._s(_vm.$t("Chinese: Comma")))
                   ])
                 ]
               )
@@ -542,13 +550,13 @@ __webpack_require__.r(__webpack_exports__);
     }
     
     AritcleModal.computed.chunkSentenceOptions = function () {
-      if (this.localConfig.setenceTokenizerStrategy === 'default') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-default') {
         return []
       }
-      if (this.localConfig.setenceTokenizerStrategy === 'basic') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-basic') {
         return chunkSentenceOptionsBasic
       }
-      if (this.localConfig.setenceTokenizerStrategy === 'clause') {
+      if (this.localConfig.setenceTokenizerStrategy === 'english-clause') {
         return chunkSentenceOptionsBasic.concat(chunkSentenceOptionsClause)
       }
     }

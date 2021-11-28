@@ -32072,7 +32072,7 @@ let localConfig = {
   practiceSentenceMask: 'none', // none translation word-block sentence-block
   practiceMode: 'speaking',  // speaking writing
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
-  setenceTokenizerStrategy: 'default', // default basic clause 
+  setenceTokenizerStrategy: 'english-default', // english-default english-basic english-clause chinese-default chinese-comma
   
   debugSpeechToTextUtilsMockup: 'perfect'  // perfect false auto
 }
