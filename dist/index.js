@@ -32067,6 +32067,7 @@ let localConfig = {
   practiceSentenceMask: 'none', // none translation word-block sentence-block
   practiceMode: 'speaking',  // speaking writing
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
+  setenceTokenizerStrategy: 'default', // default basic clause 
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (localConfig);

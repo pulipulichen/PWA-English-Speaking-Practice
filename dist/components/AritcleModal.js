@@ -61,11 +61,97 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "content ui form" }, [
         _c("div", { staticClass: "field" }, [
-          _c(
-            "a",
-            { staticClass: "ui fluid button", on: { click: _vm.loadDemo } },
-            [_vm._v("\n        " + _vm._s(_vm.$t("Load Demo")) + "\n      ")]
-          ),
+          _c("div", { staticClass: "ui fluid buttons" }, [
+            _c("a", { staticClass: "ui button", on: { click: _vm.loadDemo } }, [
+              _vm._v(
+                "\n          " + _vm._s(_vm.$t("Load Demo")) + "\n        "
+              )
+            ]),
+            _vm._v(" "),
+            _c("a", { staticClass: "ui button", on: { click: _vm.loadRSS } }, [
+              _vm._v(
+                "\n          " +
+                  _vm._s(_vm.$t("Load BBC World NEWS")) +
+                  "\n        "
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "two fields" }, [
+            _c("div", { staticClass: "fourteen wide field" }, [
+              _c("label", { attrs: { for: "setenceTokenizerStrategy" } }, [
+                _vm._v(
+                  "\n            " +
+                    _vm._s(_vm.$t("Sentence Tokenizer Strategy")) +
+                    "\n          "
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.localConfig.setenceTokenizerStrategy,
+                      expression: "localConfig.setenceTokenizerStrategy"
+                    }
+                  ],
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.$set(
+                        _vm.localConfig,
+                        "setenceTokenizerStrategy",
+                        $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      )
+                    }
+                  }
+                },
+                [
+                  _c("option", { attrs: { value: "default" } }, [
+                    _vm._v(_vm._s(_vm.$t("Default")))
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "basic" } }, [
+                    _vm._v(_vm._s(_vm.$t("Basic")))
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "clause" } }, [
+                    _vm._v(_vm._s(_vm.$t("Clause")))
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "four wide field" }, [
+              _c("label", [
+                _vm._v(
+                  "\n            " +
+                    _vm._s(_vm.$t("Setence Count")) +
+                    "\n          "
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "input" }, [
+                _vm._v(
+                  "\n            " +
+                    _vm._s(_vm.config.sentenceList.length) +
+                    "\n          "
+                )
+              ])
+            ])
+          ]),
           _vm._v(" "),
           _c("textarea", {
             directives: [
@@ -194,10 +280,12 @@ let AritcleModal = {
 //  computed: {
 //  },
   mounted() {
+    //this.loadRSS()
     //console.log(this.localConfig.fieldArticle)
     if (!this.localConfig.fieldArticle
             || this.localConfig.fieldArticle === '') {
-      this.loadDemo()
+      //this.loadDemo()
+      this.loadRSS()
     }
     else {
       this.buildSentenceList()
@@ -228,7 +316,46 @@ let AritcleModal = {
       this.modal.modal('hide')
     },
 
+    cleanValue (text) {
+      while (text.startsWith('<![CDATA[')
+        && text.endsWith(']]>')) {
+          text = text.slice(9, -3)
+      }
+
+      text = text.replace(/<[^>]*>?/gm, '');
+
+      return text.trim()
+    },
+    
+    loadRSS: async function () {
+      let url = 'https://script.google.com/macros/s/AKfycbxHI0GSxoQHeZDD9SgO0A_oystwMss4A79Pi3SWZy8HdLF0beIT0iDWQrUCuov6s7Qu/exec'
+      let {output} = await this.utils.AxiosUtils.get(url)
+      //console.log(result)
+      /*
+      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
+      //console.log(result)
+      
+      let items = result.split('<item>').splice(1)
+      items.forEach(item => {
+        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
+        title = this.cleanValue(title)
+        if (!title.endsWith('.')) {
+          title = title + '.'
+        }
+        
+        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
+        description = this.cleanValue(description)
+        console.log(title)
+        console.log(description)
+      })
+      */
+      this.localConfig.fieldArticle = output.join(' ')
+      this.localConfig.playingIndex = 0
+    },
+
     loadDemo: async function () {
+      //let rss = await this.utils.AxiosUtils.get('http://rss.cnn.com/rss/edition.rss')
+      //console.log(rss)
       let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
 
       //console.log(article)

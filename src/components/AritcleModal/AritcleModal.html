@@ -6,10 +6,38 @@
   <div class="content ui form">
     
     <div class="field">
-      <a class="ui fluid button"
-         v-on:click="loadDemo">
-        {{ $t('Load Demo') }}
-      </a>
+      <div class="ui fluid buttons">
+        <a class="ui button"
+           v-on:click="loadDemo">
+          {{ $t('Load Demo') }}
+        </a>
+        <a class="ui button"
+           v-on:click="loadRSS">
+          {{ $t('Load BBC World NEWS') }}
+        </a>
+      </div>
+      
+      <div class="two fields">
+        <div class="fourteen wide field">
+          <label for="setenceTokenizerStrategy">
+            {{ $t('Sentence Tokenizer Strategy') }}
+          </label>
+          <select v-model="localConfig.setenceTokenizerStrategy">
+            <option value="default">{{ $t('Default') }}</option>
+            <option value="basic">{{ $t('Basic') }}</option>
+            <option value="clause">{{ $t('Clause') }}</option>
+          </select>
+        </div>
+        <div class="four wide field">
+          <label>
+            {{ $t('Setence Count') }}
+          </label>
+          <div class="input">
+            {{ config.sentenceList.length }}
+          </div>
+        </div>
+      </div>
+      
       <textarea v-model="localConfig.fieldArticle"
                 id="fieldArticle"></textarea>
     </div>

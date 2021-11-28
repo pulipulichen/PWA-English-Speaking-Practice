@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="/shared/bsp/xsl/rss/nolsol.xsl"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News - World]]></title>
+        <description><![CDATA[BBC News - World]]></description>
+        <link>https://www.bbc.co.uk/news/</link>
+        <image>
+            <url>https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News - World</title>
+            <link>https://www.bbc.co.uk/news/</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sun, 28 Nov 2021 04:55:27 GMT</lastBuildDate>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see http://news.bbc.co.uk/2/hi/help/rss/4498287.stm for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Covid: Israel to impose travel ban for foreigners over new variant]]></title>
+            <description><![CDATA[Travellers from all countries will be banned from entering Israel for 14 days, local media report.]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-59448547?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-middle-east-59448547</guid>
+            <pubDate>Sun, 28 Nov 2021 03:24:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Covid: Netherlands enters partial lockdown amid surging infections]]></title>
+            <description><![CDATA[The government says the three-week curbs are critical to protect hospitals from becoming overwhelmed.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59448525?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59448525</guid>
+            <pubDate>Sun, 28 Nov 2021 04:32:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The migrants returned to Iraqi camps from Belarus]]></title>
+            <description><![CDATA[Three specially chartered planes have now returned 1,000 migrants from Belarus to Iraq.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59438028?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59438028</guid>
+            <pubDate>Sun, 28 Nov 2021 00:01:13 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hondurans vote to replace controversial leader]]></title>
+            <description><![CDATA[A former first lady and a man convicted of corruption vie to succeed an unpopular president.]]></description>
+            <link>https://www.bbc.co.uk/news/world-latin-america-59446944?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-latin-america-59446944</guid>
+            <pubDate>Sun, 28 Nov 2021 00:11:55 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA['Why do you like Shah Rukh Khan?']]></title>
+            <description><![CDATA[The Bollywood superstar's female fandom rests not on love but on economics, according to a new book.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-india-59344606?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-asia-india-59344606</guid>
+            <pubDate>Sun, 28 Nov 2021 00:14:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Peng Shuai: WTA concerned over 'censorship or coercion']]></title>
+            <description><![CDATA[The head of women's tennis says he is not certain Peng Shuai is free of Chinese censorship or coercion.]]></description>
+            <link>https://www.bbc.co.uk/news/world-asia-china-59443519?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-asia-china-59443519</guid>
+            <pubDate>Sat, 27 Nov 2021 10:44:08 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Burkina Faso: Tear gas fired at protesters decrying Islamist attacks]]></title>
+            <description><![CDATA[The protest comes amid fear of an Islamist encroachment following a number of recent attacks.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-59443521?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-africa-59443521</guid>
+            <pubDate>Sat, 27 Nov 2021 22:05:29 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Pre-Inca mummy found in Peru]]></title>
+            <description><![CDATA[Archaeologists think the mummy, found near Lima, could be up to 1,200 years old.]]></description>
+            <link>https://www.bbc.co.uk/news/world-latin-america-59446488?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-latin-america-59446488</guid>
+            <pubDate>Sat, 27 Nov 2021 16:36:43 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Covid: Swiss vote on ending restrictions while cases surge]]></title>
+            <description><![CDATA[Sunday's referendum is held in a country with one of the lowest vaccination rates in Western Europe.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59380745?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59380745</guid>
+            <pubDate>Sat, 27 Nov 2021 00:28:03 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Musical theatre icon Stephen Sondheim dies at 91]]></title>
+            <description><![CDATA[The US composer and lyricist reshaped America's musical theatre in a career spanning over 60 years.]]></description>
+            <link>https://www.bbc.co.uk/news/entertainment-arts-59440642?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/entertainment-arts-59440642</guid>
+            <pubDate>Sat, 27 Nov 2021 01:50:26 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Covid: South Africa 'punished' for detecting new Omicron variant]]></title>
+            <description><![CDATA[South Africa should be praised for discovering Omicron, not hit with travel bans, its officials say.]]></description>
+            <link>https://www.bbc.co.uk/news/world-59442129?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-59442129</guid>
+            <pubDate>Sun, 28 Nov 2021 00:34:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ukraine-Russia conflict: Zelensky alleges coup plan involving Russians]]></title>
+            <description><![CDATA[He says an alleged plan to overthrow his government comes amid threats of a Russian invasion.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59428712?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59428712</guid>
+            <pubDate>Fri, 26 Nov 2021 16:13:25 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Egypt: Grand opening for Luxor's 'Avenue of the Sphinxes']]></title>
+            <description><![CDATA[The ancient walkway, connecting two of the Egyptian city's greatest temples, took decades to excavate.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-59424084?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-africa-59424084</guid>
+            <pubDate>Thu, 25 Nov 2021 23:12:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Dramatic rescue of 300 from migrant boat in Italy]]></title>
+            <description><![CDATA[Some people were already in the water when the Italian coastguard reached them off Lampedusa Island.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59421913?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59421913</guid>
+            <pubDate>Thu, 25 Nov 2021 23:46:38 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[‘I’m blind but technology helps me animate’]]></title>
+            <description><![CDATA[Elodie Bateson, 11, from Limavady who is blind has become an expert at making short animated movies.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-northern-ireland-59429216?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-northern-ireland-59429216</guid>
+            <pubDate>Sun, 28 Nov 2021 00:04:49 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Yemen: The woman saving a crumbling heritage]]></title>
+            <description><![CDATA[Its famous architecture has been wrecked by war - now a female engineer is rebuilding amid the conflict.]]></description>
+            <link>https://www.bbc.co.uk/news/world-middle-east-59262086?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-middle-east-59262086</guid>
+            <pubDate>Sun, 28 Nov 2021 00:10:06 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Your pictures on the theme of 'home comforts']]></title>
+            <description><![CDATA[A selection of striking images from our readers around the world.]]></description>
+            <link>https://www.bbc.co.uk/news/in-pictures-59407041?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/in-pictures-59407041</guid>
+            <pubDate>Sun, 28 Nov 2021 00:05:48 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Nigerian celebrities Simi and Chigul expose sexism in music and Nollywood]]></title>
+            <description><![CDATA[Singer Simi and Nollywood's Chigul tell the BBC about the cultural hurdles female stars face.]]></description>
+            <link>https://www.bbc.co.uk/news/world-africa-59134040?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-africa-59134040</guid>
+            <pubDate>Sun, 28 Nov 2021 00:20:14 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Covid vaccine: Can US troops be punished for refusing the jabs?]]></title>
+            <description><![CDATA[The US military has said that America's 2.1 million soldiers and sailors must all get the vaccine.]]></description>
+            <link>https://www.bbc.co.uk/news/world-us-canada-59409447?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-us-canada-59409447</guid>
+            <pubDate>Sun, 28 Nov 2021 00:24:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The gangs enticing migrants to cross the English Channel]]></title>
+            <description><![CDATA[The BBC has uncovered evidence showing that smugglers are still telling migrants it is safe to cross.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59442534?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59442534</guid>
+            <pubDate>Sat, 27 Nov 2021 07:58:27 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[ICYMI: Smells like Christmas, confirms US First Lady]]></title>
+            <description><![CDATA[Jill Biden's clearly feeling festive but here’s some other tree-mendous moments you may have missed this week.]]></description>
+            <link>https://www.bbc.co.uk/news/world-59421912?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-59421912</guid>
+            <pubDate>Sun, 28 Nov 2021 00:02:59 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Ros Atkins on... Migrants crossing English Channel to UK]]></title>
+            <description><![CDATA[This week at least 27 migrants died while trying to make the journey, the deadliest crossing on record.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59434553?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59434553</guid>
+            <pubDate>Sat, 27 Nov 2021 00:29:18 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Covid variant: Reaction to new rules on travel from southern Africa]]></title>
+            <description><![CDATA[Travellers at Cape Town airport respond to new UK quarantine measures over Covid variant.]]></description>
+            <link>https://www.bbc.co.uk/news/uk-59428504?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/uk-59428504</guid>
+            <pubDate>Fri, 26 Nov 2021 11:04:28 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Inside Dunkirk's new migrant camp]]></title>
+            <description><![CDATA[Last week French police officers evicted up to 1,500 people from a camp in Dunkirk.]]></description>
+            <link>https://www.bbc.co.uk/news/world-europe-59410982?at_medium=RSS&amp;at_campaign=KARANGA</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/world-europe-59410982</guid>
+            <pubDate>Wed, 24 Nov 2021 21:28:40 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

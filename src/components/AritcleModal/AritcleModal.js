@@ -21,10 +21,12 @@ let AritcleModal = {
 //  computed: {
 //  },
   mounted() {
+    //this.loadRSS()
     //console.log(this.localConfig.fieldArticle)
     if (!this.localConfig.fieldArticle
             || this.localConfig.fieldArticle === '') {
-      this.loadDemo()
+      //this.loadDemo()
+      this.loadRSS()
     }
     else {
       this.buildSentenceList()
@@ -55,7 +57,46 @@ let AritcleModal = {
       this.modal.modal('hide')
     },
 
+    cleanValue (text) {
+      while (text.startsWith('<![CDATA[')
+        && text.endsWith(']]>')) {
+          text = text.slice(9, -3)
+      }
+
+      text = text.replace(/<[^>]*>?/gm, '');
+
+      return text.trim()
+    },
+    
+    loadRSS: async function () {
+      let url = 'https://script.google.com/macros/s/AKfycbxHI0GSxoQHeZDD9SgO0A_oystwMss4A79Pi3SWZy8HdLF0beIT0iDWQrUCuov6s7Qu/exec'
+      let {output} = await this.utils.AxiosUtils.get(url)
+      //console.log(result)
+      /*
+      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
+      //console.log(result)
+      
+      let items = result.split('<item>').splice(1)
+      items.forEach(item => {
+        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
+        title = this.cleanValue(title)
+        if (!title.endsWith('.')) {
+          title = title + '.'
+        }
+        
+        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
+        description = this.cleanValue(description)
+        console.log(title)
+        console.log(description)
+      })
+      */
+      this.localConfig.fieldArticle = output.join(' ')
+      this.localConfig.playingIndex = 0
+    },
+
     loadDemo: async function () {
+      //let rss = await this.utils.AxiosUtils.get('http://rss.cnn.com/rss/edition.rss')
+      //console.log(rss)
       let article = await this.utils.AxiosUtils.get('./demo/article1.txt')
 
       //console.log(article)
