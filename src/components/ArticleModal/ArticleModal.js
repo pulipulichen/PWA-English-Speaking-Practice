@@ -30,7 +30,7 @@ let ArticleModal = {
     if (!this.localConfig.fieldArticle
             || this.localConfig.fieldArticle === '') {
       //this.loadDemo()
-      this.loadRSS()
+      this.downloadResource()
     }
     else {
       this.buildSentenceList()
