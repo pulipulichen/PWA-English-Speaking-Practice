@@ -5,6 +5,18 @@ export default function (ArticleModal) {
     ArticleModal.methods.chunkSentence = function (sentence) {
       let output = []
       
+      if (this.localConfig.setenceTokenizerStrategy === 'lines') {
+        let lines = sentence.split('\n')
+        let output = []
+        lines.forEach(line => {
+          line = line.trim()
+          if (line !== '') {
+            output.push(line)
+          }
+        })
+        return output
+      }
+      
       //output.push(sentence)
       let checking = true
       while (checking) {
@@ -51,6 +63,8 @@ export default function (ArticleModal) {
       if (sentence !== '') {
         output.push(sentence)
       }
+      
+      console.log(sentence)
       
       return output
     }

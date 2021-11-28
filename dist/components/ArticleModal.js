@@ -190,6 +190,12 @@ var render = function() {
                   _c("option", { attrs: { value: "chinese-comma" } }, [
                     _vm._v(_vm._s(_vm.$t("Chinese: Comma")))
                   ])
+                ]),
+                _vm._v(" "),
+                _c("optgroup", { attrs: { label: _vm.$t("Basic") } }, [
+                  _c("option", { attrs: { value: "lines" } }, [
+                    _vm._v(_vm._s(_vm.$t("Lines")))
+                  ])
                 ])
               ]
             )
@@ -611,7 +617,7 @@ __webpack_require__.r(__webpack_exports__);
     }
     
     ArticleModal.computed.rssSourceURL = function () {
-      let url = 'https://script.google.com/macros/s/AKfycbz_JO169VpYt_BQImAWLf2WCnenfy5BNCT7jOKSGTnaB1CSpE__vwo-o-LFb0n9yhj8/exec'
+      let url = 'https://script.google.com/macros/s/AKfycbwsTFG28loQDTZiA-_hGfgAMW8UFCE9tH_ajXvCzuiLQAYVfeI7IltI5NNHZ42nJFR_/exec'
       if (this.localConfig.articleResource === 'english-bbc-world-news') {
         // donothing
         this.setenceTokenizerStrategy = 'english-default'
@@ -623,7 +629,7 @@ __webpack_require__.r(__webpack_exports__);
       }
       if (this.localConfig.articleResource === 'english-taiwan-today') {
         url = url + '?feed=' + encodeURIComponent('http://api.taiwantoday.tw/en/rss.php?unit=2,6,10,15,18')
-        this.setenceTokenizerStrategy = 'english-default'
+        this.setenceTokenizerStrategy = 'lines'
       }
       
       if (this.localConfig.articleResource === 'chinese-pts-news') {
@@ -652,47 +658,57 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
 /* harmony default export */ __webpack_exports__["default"] = (function (ArticleModal) {
     
     ArticleModal.methods.downloadResource = async function () {
-      console.log(this.rssSourceURL)
+      //console.log(this.rssSourceURL)
       let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
-      console.log(output)
+      //console.log(output)
       
-      if (this.localConfig.articleResource === 'englis-taiwan-today') {
-        output = output.splice(0, 2)
+      if (this.localConfig.articleResource === 'english-taiwan-today') {
+        output = output.splice(0, 4)
+        output = output.join('\n')
+        output = output.split('\n').filter(line => {
+          return (line.trim() !== '' 
+                  && (line !== 'Write to Taiwan Today at ttonline@mofa.gov.tw'))
+        })
+        //console.log(output)
+        
+        this.localConfig.fieldArticle = output.join('\n')
+      }
+      else {
+        this.localConfig.fieldArticle = output.join(' ')
       }
       
-      this.localConfig.fieldArticle = output.join(' ')
       this.localConfig.playingIndex = 0
       
       this.localConfig.setenceTokenizerStrategy = this.setenceTokenizerStrategy
     }
     
-    ArticleModal.methods.loadRSS = async function () {
-      
-      let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
-      console.log(output)
-      //console.log(result)
-      /*
-      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
-      //console.log(result)
-      
-      let items = result.split('<item>').splice(1)
-      items.forEach(item => {
-        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
-        title = this.cleanValue(title)
-        if (!title.endsWith('.')) {
-          title = title + '.'
-        }
-        
-        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
-        description = this.cleanValue(description)
-        console.log(title)
-        console.log(description)
-      })
-      */
-      this.localConfig.fieldArticle = output.join(' ')
-      this.localConfig.playingIndex = 0
-      this.localConfig.setenceTokenizerStrategy = 'default'
-    }
+//    ArticleModal.methods.loadRSS = async function () {
+//      
+//      let {output} = await this.utils.AxiosUtils.get(this.rssSourceURL)
+//      console.log(output)
+//      //console.log(result)
+//      /*
+//      let result = await this.utils.AxiosUtils.get('./demo/rss1.xml')
+//      //console.log(result)
+//      
+//      let items = result.split('<item>').splice(1)
+//      items.forEach(item => {
+//        let title = item.slice(item.indexOf('<title>') + 7, item.indexOf('</title>'))
+//        title = this.cleanValue(title)
+//        if (!title.endsWith('.')) {
+//          title = title + '.'
+//        }
+//        
+//        let description = item.slice(item.indexOf('<description>') + 13, item.indexOf('</description>'))
+//        description = this.cleanValue(description)
+//        console.log(title)
+//        console.log(description)
+//      })
+//      */
+//      this.localConfig.fieldArticle = output.join(' ')
+//      this.localConfig.playingIndex = 0
+//      this.localConfig.setenceTokenizerStrategy = 'default'
+//    }
 });
 
 /***/ }),
@@ -712,6 +728,18 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
     
     ArticleModal.methods.chunkSentence = function (sentence) {
       let output = []
+      
+      if (this.localConfig.setenceTokenizerStrategy === 'lines') {
+        let lines = sentence.split('\n')
+        let output = []
+        lines.forEach(line => {
+          line = line.trim()
+          if (line !== '') {
+            output.push(line)
+          }
+        })
+        return output
+      }
       
       //output.push(sentence)
       let checking = true
@@ -759,6 +787,8 @@ const Tokenizer = __webpack_require__(/*! sentence-tokenizer */ "./node_modules/
       if (sentence !== '') {
         output.push(sentence)
       }
+      
+      console.log(sentence)
       
       return output
     }

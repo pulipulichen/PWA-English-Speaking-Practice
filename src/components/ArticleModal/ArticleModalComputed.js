@@ -94,7 +94,7 @@ export default function (ArticleModal) {
     }
     
     ArticleModal.computed.rssSourceURL = function () {
-      let url = 'https://script.google.com/macros/s/AKfycbz_JO169VpYt_BQImAWLf2WCnenfy5BNCT7jOKSGTnaB1CSpE__vwo-o-LFb0n9yhj8/exec'
+      let url = 'https://script.google.com/macros/s/AKfycbwsTFG28loQDTZiA-_hGfgAMW8UFCE9tH_ajXvCzuiLQAYVfeI7IltI5NNHZ42nJFR_/exec'
       if (this.localConfig.articleResource === 'english-bbc-world-news') {
         // donothing
         this.setenceTokenizerStrategy = 'english-default'
@@ -106,7 +106,7 @@ export default function (ArticleModal) {
       }
       if (this.localConfig.articleResource === 'english-taiwan-today') {
         url = url + '?feed=' + encodeURIComponent('http://api.taiwantoday.tw/en/rss.php?unit=2,6,10,15,18')
-        this.setenceTokenizerStrategy = 'english-default'
+        this.setenceTokenizerStrategy = 'lines'
       }
       
       if (this.localConfig.articleResource === 'chinese-pts-news') {
