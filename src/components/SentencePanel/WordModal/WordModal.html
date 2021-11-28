@@ -13,7 +13,7 @@
           v-if="!wordTrans"
           v-bind:class="computedWordMaskClassesWithoutTrans">
         <span>
-          {{ config.practiceWord }}
+          {{ currentWord }}
         </span>
       </h2>
       <div v-if="wordTrans && config.currentWordMask !== 'translation'"
@@ -25,7 +25,7 @@
           <h2 class="ui center aligned header"
             v-bind:class="computedWordMaskClassesWithTrans">
             <span>
-              {{ config.practiceWord }}
+              {{ currentWord }}
             </span>
           </h2>
         </div>
@@ -43,10 +43,17 @@
     </div>
     
     <h2 class="ui center aligned icon header"
-        v-on:click="practiceWord">
-      <i class="conversation icon"></i>
-      {{ $t(`Let's Practice!`) }}
+        v-on:click="practiceWord"
+        v-bind:class="computedPracticeWordClasses">
+      <template v-if="!config.practiceWord">
+        <i class="conversation icon"></i>
+        {{ $t(`Let's Practice!`) }}
+      </template>
+      <template v-if="config.practiceWord">
+        {{ config.practiceWord }}
+      </template>
     </h2>
+    
   </div>
   <div class="actions">
     <div class="ui button"

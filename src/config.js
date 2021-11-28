@@ -3,7 +3,7 @@ let config = {
   debug: {
     enableRestore: true,
     SpeechToTextUtils: {
-      mockup: false
+      mockup: true
     }
   },
   viewportSize: {
@@ -41,8 +41,10 @@ let config = {
   practiceSentence: null,
   practiceSentenceEvaluationResult: [],
   
+  currentWord: null,
   practiceWord: null,
   currentWordMask: false,
+  practiceWordScore: null,
   
   currentSentenceIsSpeaking: false,
   currentSentenceIsPractice: false,

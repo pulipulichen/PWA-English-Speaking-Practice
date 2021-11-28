@@ -35,7 +35,7 @@ let SentenceDifference = {
 //  },
   methods: {
     practiceWord: function (word) {
-      this.config.practiceWord = word
+      this.config.currentWord = word
     },
     computedAddedWord: function (word) {
       let score = 0

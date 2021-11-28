@@ -108,7 +108,7 @@ let CurrentSentence = {
 //      this.speakingWordIndex = i
 //      await this.utils.TextToSpeechUtil.startSpeak(word)
 //      this.speakingWordIndex = null
-      this.config.practiceWord = this.utils.DictUtils.filterWord(word)
+      this.config.currentWord = this.utils.DictUtils.filterWord(word)
     },
     
     isSpeakable (word) {
