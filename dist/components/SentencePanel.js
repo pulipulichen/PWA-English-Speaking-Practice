@@ -161,7 +161,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".practice-hint[data-v-f30771e2] {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing[data-v-f30771e2] {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger[data-v-f30771e2] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-f30771e2] {\n  position: fixed;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n}\n.popup[data-v-f30771e2]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-f30771e2] {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.inner .row .column[data-v-f30771e2] {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice[data-v-f30771e2] {\n  cursor: wait;\n  user-select: none;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&","PracticeSentencePanel.less"],"names":[],"mappings":"AAAA;EACE,eAAA;EAEA,qBAAA;EACA,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,eAAA;ACAF;ADEE;EACE,YAAA;EACA,wBAAA;EACA,YAAA;EAEA,iBAAA;ACDJ;ADKA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACLF;ADQA;EACE,eAAA;EAEA,sBAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,0BAAA;EACA,wBAAA;ACPF;ADaA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACXF;ADcA;EACE,kBAAA;EACA,gBAAA;EACA,0BAAA;EAEA,oBAAA;EAEA,sBAAA;EACA,kBAAA;EACA,gBAAA;EACA,kBAAA;ACdF;ADIA;EAeM,iBAAA;EACA,kBAAA;AChBN;ADuBA;EACE,YAAA;EACA,iBAAA;ACrBF","file":"PracticeSentencePanel.less","sourcesContent":[".practice-hint {\n  cursor: pointer;\n  \n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n  \n  &.practicing {\n    cursor: wait;\n    background-color: yellow;\n    color: black;\n    //pointer-events: none;\n    user-select: none;\n  }\n}\n\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: fixed;\n  //left: 0;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n  //margin-left: auto;\n  //margin-right: auto;\n  \n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  //margin: 1rem !important;\n  margin: 0 !important;\n  \n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n  \n  .row {\n    \n    .column {\n      margin-left: 1rem;\n      margin-right: 1rem;\n    }\n  }\n  \n    \n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n",".practice-hint {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: fixed;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.inner .row .column {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n"]}]);
+exports.push([module.i, ".practice-hint[data-v-f30771e2] {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing[data-v-f30771e2] {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger[data-v-f30771e2] {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup[data-v-f30771e2] {\n  position: fixed;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n}\n.popup[data-v-f30771e2]:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner[data-v-f30771e2] {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.inner .row .column[data-v-f30771e2] {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice[data-v-f30771e2] {\n  cursor: wait;\n  user-select: none;\n}\n.popup.positive[data-v-f30771e2]:after,\n.popup.positive .inner[data-v-f30771e2] {\n  background-color: #fcfff5 !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/PracticeSentencePanel/PracticeSentencePanel.less?vue&type=style&index=0&id=f30771e2&lang=less&scoped=true&","PracticeSentencePanel.less"],"names":[],"mappings":"AAAA;EACE,eAAA;EAEA,qBAAA;EACA,qBAAA;EACA,iBAAA;EACA,kBAAA;EACA,eAAA;ACAF;ADEE;EACE,YAAA;EACA,wBAAA;EACA,YAAA;EAEA,iBAAA;ACDJ;ADKA;EAGE,oBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;ACLF;ADQA;EACE,eAAA;EAEA,sBAAA;EACA,kCAAA;EACA,0CAAA;EACA,gBAAA;EACA,0BAAA;EACA,wBAAA;ACPF;ADaA;EACE,WAAA;EACA,WAAA;EACA,YAAA;EACA,yBAAA;EACA,gBAAA;EACA,kBAAA;EACA,0CAAA;EACA,WAAA;EACA,UAAA;EACA,sBAAA;ACXF;ADcA;EACE,kBAAA;EACA,gBAAA;EACA,0BAAA;EAEA,oBAAA;EAEA,sBAAA;EACA,kBAAA;EACA,gBAAA;EACA,kBAAA;ACdF;ADIA;EAeM,iBAAA;EACA,kBAAA;AChBN;ADuBA;EACE,YAAA;EACA,iBAAA;ACrBF;ADyBE;;EAEE,oCAAA;ACvBJ","file":"PracticeSentencePanel.less","sourcesContent":[".practice-hint {\n  cursor: pointer;\n  \n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n  \n  &.practicing {\n    cursor: wait;\n    background-color: yellow;\n    color: black;\n    //pointer-events: none;\n    user-select: none;\n  }\n}\n\n.trigger {\n  //margin: 0px auto 20px;\n  //width: 150px;\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n\n.popup {\n  position: fixed;\n  //left: 0;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n  //margin-left: auto;\n  //margin-right: auto;\n  \n}\n\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  //margin: 1rem !important;\n  margin: 0 !important;\n  \n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n  \n  .row {\n    \n    .column {\n      margin-left: 1rem;\n      margin-right: 1rem;\n    }\n  }\n  \n    \n}\n\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n\n.popup.positive {\n  &:after,\n    .inner {\n    background-color: #fcfff5 !important;\n  }\n}",".practice-hint {\n  cursor: pointer;\n  border-radius: 0.5rem;\n  display: inline-block;\n  margin-left: auto;\n  margin-right: auto;\n  padding: 0.5rem;\n}\n.practice-hint.practicing {\n  cursor: wait;\n  background-color: yellow;\n  color: black;\n  user-select: none;\n}\n.trigger {\n  margin-right: 0.5rem;\n  margin-left: 0.5rem;\n  margin-top: -1rem;\n  position: relative;\n  text-align: center;\n}\n.popup {\n  position: fixed;\n  top: calc(50vh + 7rem);\n  transform: translate3d(0, -50%, 0);\n  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);\n  background: none;\n  border-radius: 0.285714rem;\n  width: calc(100% - 1rem);\n}\n.popup:after {\n  content: \"\";\n  width: 20px;\n  height: 20px;\n  transform: rotate(-45deg);\n  background: #fff;\n  position: absolute;\n  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);\n  z-index: -1;\n  top: -10px;\n  left: calc(50% - 10px);\n}\n.inner {\n  padding: 30px 1rem;\n  background: #fff;\n  border-radius: 0.285714rem;\n  margin: 0 !important;\n  max-height: calc(30vh);\n  height: calc(30vh);\n  overflow-y: auto;\n  overflow-x: hidden;\n}\n.inner .row .column {\n  margin-left: 1rem;\n  margin-right: 1rem;\n}\n.wait-practice {\n  cursor: wait;\n  user-select: none;\n}\n.popup.positive:after,\n.popup.positive .inner {\n  background-color: #fcfff5 !important;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -179,7 +179,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n"]}]);
+exports.push([module.i, ".added[data-v-e323347e] {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn[data-v-e323347e] {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed[data-v-e323347e] {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word[data-v-e323347e]:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/SentencePanel/SentenceDifference/SentenceDifference.less?vue&type=style&index=0&id=e323347e&lang=less&scoped=true&","SentenceDifference.less"],"names":[],"mappings":"AAAA;EACE,UAAA;EACA,eAAA;ACCF;ADCE;EACE,6CAAA;ACCJ;ADGA;EACE,WAAA;EACA,6BAAA;ACDF;ADIA;EAEI,yBAAA;ACHJ","file":"SentenceDifference.less","sourcesContent":[".added {\n  color: red;\n  cursor: pointer;\n  \n  &.word-to-learn {\n    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n  }\n}\n\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n\n.SentenceDifference.positive {\n  .word:not(.removed):not(.added) {\n    color: #2c662d !important\n  }\n}",".added {\n  color: red;\n  cursor: pointer;\n}\n.added.word-to-learn {\n  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);\n}\n.removed {\n  color: gray;\n  text-decoration: line-through;\n}\n.SentenceDifference.positive .word:not(.removed):not(.added) {\n  color: #2c662d !important;\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -443,51 +443,61 @@ var render = function() {
                     2
                   ),
                   _vm._v(" "),
-                  _c("div", { staticClass: "popup" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "inner ui grid middle aligned current-sentence"
-                      },
-                      [
-                        _c("div", { staticClass: "row" }, [
-                          _c("div", { staticClass: "column" }, [
-                            _vm.config.practiceSentenceEvaluationResult
-                              .length === 0
-                              ? _c(
-                                  "h2",
-                                  {
-                                    staticClass:
-                                      "ui center aligned header wait-practice"
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                  " +
-                                        _vm._s(_vm.config.practiceSentence) +
-                                        "\n                "
-                                    )
-                                  ]
-                                )
-                              : _c(
-                                  "h2",
-                                  [
-                                    _c("SentenceDifference", {
-                                      ref: "SentenceDifference",
-                                      attrs: {
-                                        config: _vm.config,
-                                        localConfig: _vm.localConfig,
-                                        utils: _vm.utils
-                                      }
-                                    })
-                                  ],
-                                  1
-                                )
+                  _c(
+                    "div",
+                    {
+                      staticClass: "popup",
+                      class: {
+                        positive:
+                          _vm.config.practiceSentenceEvaluationScore >= 0.7
+                      }
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "inner ui grid middle aligned current-sentence"
+                        },
+                        [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "column" }, [
+                              _vm.config.practiceSentenceEvaluationResult
+                                .length === 0
+                                ? _c(
+                                    "h2",
+                                    {
+                                      staticClass:
+                                        "ui center aligned header wait-practice"
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                  " +
+                                          _vm._s(_vm.config.practiceSentence) +
+                                          "\n                "
+                                      )
+                                    ]
+                                  )
+                                : _c(
+                                    "h2",
+                                    [
+                                      _c("SentenceDifference", {
+                                        ref: "SentenceDifference",
+                                        attrs: {
+                                          config: _vm.config,
+                                          localConfig: _vm.localConfig,
+                                          utils: _vm.utils
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  )
+                            ])
                           ])
-                        ])
-                      ]
-                    )
-                  ])
+                        ]
+                      )
+                    ]
+                  )
                 ])
               ]
             : _vm._e()
@@ -520,21 +530,26 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "SentenceDifference" },
+    {
+      staticClass: "SentenceDifference",
+      class: { positive: _vm.config.practiceSentenceEvaluationScore >= 0.7 }
+    },
     [
       _vm._l(_vm.results, function(word, i) {
         return [
           !word.added
-            ? _c("span", { class: { removed: word.removed } }, [
-                _vm._v(_vm._s(word.value))
-              ])
+            ? _c(
+                "span",
+                { staticClass: "word", class: { removed: word.removed } },
+                [_vm._v(_vm._s(word.value))]
+              )
             : _vm._e(),
           _vm._v(" "),
           word.added
             ? _c(
                 "span",
                 {
-                  staticClass: "added",
+                  staticClass: "added word",
                   class: _vm.computedAddedWord(word.value),
                   on: {
                     click: function($event) {

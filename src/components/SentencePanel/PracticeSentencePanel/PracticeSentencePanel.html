@@ -19,7 +19,8 @@
             {{ $t(`Practice again?`) }}
           </template>
         </div>
-        <div class="popup">
+        <div class="popup"
+             v-bind:class="{positive: (config.practiceSentenceEvaluationScore >= 0.7)}">
           <div class="inner ui grid middle aligned current-sentence">
             <div class="row">
               <div class="column">

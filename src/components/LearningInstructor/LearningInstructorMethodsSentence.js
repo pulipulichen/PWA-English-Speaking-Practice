@@ -46,6 +46,7 @@ export default function (LearningInstructor) {
 
     this.config.practiceSentence = null
     this.config.practiceSentenceEvaluationResult = []
+    this.config.practiceSentenceEvaluationScore = null
     this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
     //console.log(time)
     time = time + 1000
@@ -112,8 +113,8 @@ export default function (LearningInstructor) {
     //this.config.practiceSentence = 'ok'
 
     this.config.practiceSentenceEvaluationResult = this.evaluateSentencePractice(this.config.practiceSentence, this.currentSentence)
-    let score = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
-    await this.speakPracticeFeedback(score)
+    this.config.practiceSentenceEvaluationScore = LearningInstructor.methods.scoreEvaluate(this.config.practiceSentenceEvaluationResult)
+    await this.speakPracticeFeedback(this.config.practiceSentenceEvaluationScore)
     
     await this.utils.AsyncUtils.sleep(2000)
   }

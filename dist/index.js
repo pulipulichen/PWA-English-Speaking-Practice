@@ -31609,6 +31609,7 @@ let config = {
   
   practiceSentence: null,
   practiceSentenceEvaluationResult: [],
+  practiceSentenceEvaluationScore: null,
   
   currentWord: null,
   practiceWord: null,

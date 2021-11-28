@@ -1,9 +1,11 @@
-<div class="SentenceDifference">
+<div class="SentenceDifference"
+     v-bind:class="{positive: (config.practiceSentenceEvaluationScore >= 0.7)}">
   <template v-for="(word, i) in results">
     <span v-if="!word.added"
+          class="word"
           v-bind:class="{removed: word.removed}">{{ word.value }}</span>
     <span v-if="word.added"
-          class="added"
+          class="added word"
           v-bind:class="computedAddedWord(word.value)"
           v-on:click="practiceWord(word.value)">{{ word.value }}</span>
   </template>
