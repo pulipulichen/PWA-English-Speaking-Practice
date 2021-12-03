@@ -2747,7 +2747,6 @@ let WordModal = {
         
         let input = this.$refs.TypingPracticeInput
         input.focus()
-        input.click()
       }
     },
     

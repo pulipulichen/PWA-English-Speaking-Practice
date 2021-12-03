@@ -738,6 +738,8 @@ __webpack_require__.r(__webpack_exports__);
 
   LearningInstructor.methods.practiceWord = async function (word) {
 
+    //console.log(word)
+
     if (this.localConfig.practiceMode === 'writing') {
       this.config.practiceWord = ''
     } else if (this.localConfig.practiceMode === 'speaking') {

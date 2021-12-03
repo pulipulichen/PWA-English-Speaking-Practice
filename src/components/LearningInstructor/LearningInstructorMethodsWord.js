@@ -8,6 +8,8 @@ export default function (LearningInstructor) {
 
   LearningInstructor.methods.practiceWord = async function (word) {
 
+    //console.log(word)
+
     if (this.localConfig.practiceMode === 'writing') {
       this.config.practiceWord = ''
     } else if (this.localConfig.practiceMode === 'speaking') {
