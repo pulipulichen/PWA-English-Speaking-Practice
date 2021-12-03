@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/ControllerMenuBottomBar"],{
 
-/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -27,7 +27,7 @@ module.exports = function (Component) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".menu input[type=\"range\"][data-v-4a04fb2a] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-4a04fb2a] {\n  margin-right: 1rem;\n}\n.ui.icon.item[data-v-4a04fb2a] {\n  cursor: pointer;\n}\n.center.menu[data-v-4a04fb2a] {\n  margin-left: auto !important;\n}\n.center.menu .item[data-v-4a04fb2a]:before {\n  background: transparent !important;\n}\n.ui.toggle.item[data-v-4a04fb2a]:before {\n  background: transparent !important;\n}\n.ui.toggle.item[data-v-4a04fb2a] {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n.isSpeaking[data-v-4a04fb2a] {\n  background-color: yellow !important;\n  color: black !important;\n}\n", "",{"version":3,"sources":["/media/pudding/DATA/pudding/Code-Porjects/html/PWA-English-Speaking-Practice/src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&","ControllerMenuBottomBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ;ADMA;EACE,eAAA;ACJF;ADOA;EACE,4BAAA;ACLF;ADIA;EAMI,kCAAA;ACPJ;ADWA;EACE,kCAAA;ACTF;ADYA;EAEE,2BAAA;EACA,6BAAA;ACXF;ADcA;EAEE,mCAAA;EACA,uBAAA;ACbF","file":"ControllerMenuBottomBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}\n\n.ui.icon.item {\n  cursor: pointer;\n}\n\n.center.menu {\n  margin-left: auto !important;\n  //border-left: 1px solid gray;\n  \n  .item:before {\n    //border-color: transparent !important;\n    background: transparent !important;\n  }\n}\n\n.ui.toggle.item:before {\n  background: transparent !important;\n}\n\n.ui.toggle.item {\n  //display: none !important;\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n\n.isSpeaking {\n  //cursor: not-allowed !important;\n  background-color: yellow !important;\n  color: black !important;\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n.ui.icon.item {\n  cursor: pointer;\n}\n.center.menu {\n  margin-left: auto !important;\n}\n.center.menu .item:before {\n  background: transparent !important;\n}\n.ui.toggle.item:before {\n  background: transparent !important;\n}\n.ui.toggle.item {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n.isSpeaking {\n  background-color: yellow !important;\n  color: black !important;\n}\n"]}]);
+exports.push([module.i, ".menu input[type=\"range\"][data-v-4a04fb2a] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"][data-v-4a04fb2a] {\n  margin-right: 1rem;\n}\n.ui.icon.item[data-v-4a04fb2a] {\n  cursor: pointer;\n}\n.center.menu[data-v-4a04fb2a] {\n  margin-left: auto !important;\n}\n.center.menu .item[data-v-4a04fb2a]:before {\n  background: transparent !important;\n}\n.ui.toggle.item[data-v-4a04fb2a]:before {\n  background: transparent !important;\n}\n.ui.toggle.item[data-v-4a04fb2a] {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n.isSpeaking[data-v-4a04fb2a] {\n  background-color: yellow !important;\n  color: black !important;\n}\n@media screen and (max-height: 450px) {\n.ControllerMenuBottomBar[data-v-4a04fb2a] {\n    display: none !important;\n}\n}\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&","ControllerMenuBottomBar.less"],"names":[],"mappings":"AACA;EAEI,iBAAA;ACDJ;ADDA;EAMI,kBAAA;ACFJ;ADMA;EACE,eAAA;ACJF;ADOA;EACE,4BAAA;ACLF;ADIA;EAMI,kCAAA;ACPJ;ADWA;EACE,kCAAA;ACTF;ADYA;EAEE,2BAAA;EACA,6BAAA;ACXF;ADcA;EAEE,mCAAA;EACA,uBAAA;ACbF;ADiBA;AACE;IACE,wBAAA;ACfF;AACF","file":"ControllerMenuBottomBar.less","sourcesContent":["\n.menu {\n  input[type=\"range\"] {\n    margin-left: 1rem;\n  }\n  \n  input[type=\"checkbox\"] {\n    margin-right: 1rem;\n  }\n}\n\n.ui.icon.item {\n  cursor: pointer;\n}\n\n.center.menu {\n  margin-left: auto !important;\n  //border-left: 1px solid gray;\n  \n  .item:before {\n    //border-color: transparent !important;\n    background: transparent !important;\n  }\n}\n\n.ui.toggle.item:before {\n  background: transparent !important;\n}\n\n.ui.toggle.item {\n  //display: none !important;\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n\n.isSpeaking {\n  //cursor: not-allowed !important;\n  background-color: yellow !important;\n  color: black !important;\n}\n\n\n@media screen and (max-height: 450px) {\n  .ControllerMenuBottomBar {\n    display: none !important;\n  }\n}",".menu input[type=\"range\"] {\n  margin-left: 1rem;\n}\n.menu input[type=\"checkbox\"] {\n  margin-right: 1rem;\n}\n.ui.icon.item {\n  cursor: pointer;\n}\n.center.menu {\n  margin-left: auto !important;\n}\n.center.menu .item:before {\n  background: transparent !important;\n}\n.ui.toggle.item:before {\n  background: transparent !important;\n}\n.ui.toggle.item {\n  max-height: 46px !important;\n  overflow-y: hidden !important;\n}\n.isSpeaking {\n  background-color: yellow !important;\n  color: black !important;\n}\n@media screen and (max-height: 450px) {\n  .ControllerMenuBottomBar {\n    display: none !important;\n  }\n}\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -49,112 +49,116 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "ui bottom fixed menu" }, [
-    _c("div", { staticClass: "ui toggle item" }, [
-      _c("div", { staticClass: "ui compact" }, [
-        _c("div", { staticClass: "ui toggle checkbox" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.localConfig.autoPlay,
-                expression: "localConfig.autoPlay"
-              }
-            ],
-            attrs: { type: "checkbox" },
-            domProps: {
-              checked: Array.isArray(_vm.localConfig.autoPlay)
-                ? _vm._i(_vm.localConfig.autoPlay, null) > -1
-                : _vm.localConfig.autoPlay
-            },
-            on: {
-              change: function($event) {
-                var $$a = _vm.localConfig.autoPlay,
-                  $$el = $event.target,
-                  $$c = $$el.checked ? true : false
-                if (Array.isArray($$a)) {
-                  var $$v = null,
-                    $$i = _vm._i($$a, $$v)
-                  if ($$el.checked) {
-                    $$i < 0 &&
-                      _vm.$set(_vm.localConfig, "autoPlay", $$a.concat([$$v]))
+  return _c(
+    "div",
+    { staticClass: "ui bottom fixed menu ControllerMenuBottomBar" },
+    [
+      _c("div", { staticClass: "ui toggle item" }, [
+        _c("div", { staticClass: "ui compact" }, [
+          _c("div", { staticClass: "ui toggle checkbox" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.localConfig.autoPlay,
+                  expression: "localConfig.autoPlay"
+                }
+              ],
+              attrs: { type: "checkbox" },
+              domProps: {
+                checked: Array.isArray(_vm.localConfig.autoPlay)
+                  ? _vm._i(_vm.localConfig.autoPlay, null) > -1
+                  : _vm.localConfig.autoPlay
+              },
+              on: {
+                change: function($event) {
+                  var $$a = _vm.localConfig.autoPlay,
+                    $$el = $event.target,
+                    $$c = $$el.checked ? true : false
+                  if (Array.isArray($$a)) {
+                    var $$v = null,
+                      $$i = _vm._i($$a, $$v)
+                    if ($$el.checked) {
+                      $$i < 0 &&
+                        _vm.$set(_vm.localConfig, "autoPlay", $$a.concat([$$v]))
+                    } else {
+                      $$i > -1 &&
+                        _vm.$set(
+                          _vm.localConfig,
+                          "autoPlay",
+                          $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                        )
+                    }
                   } else {
-                    $$i > -1 &&
-                      _vm.$set(
-                        _vm.localConfig,
-                        "autoPlay",
-                        $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                      )
+                    _vm.$set(_vm.localConfig, "autoPlay", $$c)
                   }
-                } else {
-                  _vm.$set(_vm.localConfig, "autoPlay", $$c)
                 }
               }
-            }
-          }),
-          _vm._v(" "),
-          _c("label", [_vm._v(_vm._s(_vm.$t("Auto")))])
+            }),
+            _vm._v(" "),
+            _c("label", [_vm._v(_vm._s(_vm.$t("Auto")))])
+          ])
         ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "right menu" }, [
-      _c(
-        "a",
-        {
-          staticClass: "ui icon item",
-          class: { disabled: _vm.localConfig.playingIndex === 0 },
-          on: { click: _vm.goToPreviousSentence }
-        },
-        [_c("i", { staticClass: "step backward icon" })]
-      ),
+      ]),
       _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "ui icon item",
-          class: {
-            disabled:
-              _vm.localConfig.playingIndex ===
-              _vm.config.sentenceList.length - 1
+      _c("div", { staticClass: "right menu" }, [
+        _c(
+          "a",
+          {
+            staticClass: "ui icon item",
+            class: { disabled: _vm.localConfig.playingIndex === 0 },
+            on: { click: _vm.goToPreviousSentence }
           },
-          on: { click: _vm.goToNextSentence }
-        },
-        [_c("i", { staticClass: "step forward icon" })]
-      ),
-      _vm._v(" "),
-      _vm.localConfig.practiceMode === "speaking"
-        ? _c(
-            "a",
-            { staticClass: "ui icon item", on: { click: _vm.practice } },
-            [_c("i", { staticClass: "comment outline icon" })]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "ui icon item",
-          class: { isSpeaking: _vm.config.currentSentenceIsSpeaking },
-          on: {
-            click: function($event) {
-              return _vm.speakCurrentSentence()
-            }
-          }
-        },
-        [
-          _c("i", {
-            staticClass: "icon",
+          [_c("i", { staticClass: "step backward icon" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "ui icon item",
             class: {
-              play: !_vm.config.currentSentenceIsSpeaking,
-              pause: _vm.config.currentSentenceIsSpeaking
+              disabled:
+                _vm.localConfig.playingIndex ===
+                _vm.config.sentenceList.length - 1
+            },
+            on: { click: _vm.goToNextSentence }
+          },
+          [_c("i", { staticClass: "step forward icon" })]
+        ),
+        _vm._v(" "),
+        _vm.localConfig.practiceMode === "speaking"
+          ? _c(
+              "a",
+              { staticClass: "ui icon item", on: { click: _vm.practice } },
+              [_c("i", { staticClass: "comment outline icon" })]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "ui icon item",
+            class: { isSpeaking: _vm.config.currentSentenceIsSpeaking },
+            on: {
+              click: function($event) {
+                return _vm.speakCurrentSentence()
+              }
             }
-          })
-        ]
-      )
-    ])
-  ])
+          },
+          [
+            _c("i", {
+              staticClass: "icon",
+              class: {
+                play: !_vm.config.currentSentenceIsSpeaking,
+                pause: _vm.config.currentSentenceIsSpeaking
+              }
+            })
+          ]
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -308,7 +312,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ControllerMenuBottomBar_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ControllerMenuBottomBar.js?vue&type=script&lang=js& */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.js?vue&type=script&lang=js&?dac5");
 /* empty/unused harmony star reexport *//* harmony import */ var _ControllerMenuBottomBar_less_vue_type_style_index_0_id_4a04fb2a_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true& */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.less?vue&type=style&index=0&id=4a04fb2a&lang=less&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml");
+/* harmony import */ var _ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml */ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml");
 
 
 
@@ -330,7 +334,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* custom blocks */
 
-if (typeof _ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+if (typeof _ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
 
 /* hot reload */
 if (false) { var api; }
@@ -339,19 +343,19 @@ component.options.__file = "src/components/ControllerMenuBottomBar/ControllerMen
 
 /***/ }),
 
-/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml");
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ControllerMenuBottomBar/ControllerMenuBottomBar.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FControllerMenuBottomBar%2FControllerMenuBottomBar.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ControllerMenuBottomBar_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FControllerMenuBottomBar_2FControllerMenuBottomBar_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ })
 

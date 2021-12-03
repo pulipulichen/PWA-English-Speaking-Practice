@@ -23,9 +23,15 @@ export default function (LearningInstructor) {
 
       if (this.config.firstSpeakHint) {
         await this.utils.AsyncUtils.sleep()
-        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please repeat.`))
+        if (this.localConfig.practiceMode === 'speaking') {
+          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please repeat.`))
+        }
+        if (this.localConfig.practiceMode === 'writing') {
+          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please transrcibe.`))
+        }
         this.config.firstSpeakHint = false
       }
+      
       await this.practiceSentence(time)
     }
 
@@ -52,17 +58,21 @@ export default function (LearningInstructor) {
     this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
 
     // --------------------------
+    if (this.localConfig.practiceMode === 'speaking') {
+      await this.playBeep()
+      await this.practiceSentenceSpeaking()
+      await this.practiceSentenceSubmitSubmit()
+    }
+  }
+  
+  LearningInstructor.methods.playBeep = async function () {
+    
+    // --------------------------
 
     if (!this.md.mobile()) {
       await this.utils.AsyncUtils.sleep()
       await this.beep.play()
       await this.utils.AsyncUtils.sleep()
-    }
-
-    // --------------------------
-    if (this.localConfig.practiceMode === 'speaking') {
-      await this.practiceSentenceSpeaking()
-      await this.practiceSentenceSubmitSubmit()
     }
   }
   

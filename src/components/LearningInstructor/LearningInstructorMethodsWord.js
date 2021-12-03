@@ -3,7 +3,6 @@
 export default function (LearningInstructor) {
   LearningInstructor.methods.speakWord = async function (word) {
     await this.utils.TextToSpeechUtils.startSpeak(word)
-
   }
 
   LearningInstructor.methods.practiceWord = async function (word) {
@@ -22,15 +21,8 @@ export default function (LearningInstructor) {
 
     // --------------------------
 
-    if (!this.md.mobile()) {
-      await this.utils.AsyncUtils.sleep()
-      await this.beep.play()
-      await this.utils.AsyncUtils.sleep()
-    }
-
-    // --------------------------
-
     if (this.localConfig.practiceMode === 'speaking') {
+      await this.playBeep()
       await this.practiceWordSpeak(word)
       await this.practiceWordSubmit(word)
     }

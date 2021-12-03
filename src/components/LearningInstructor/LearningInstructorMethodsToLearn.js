@@ -21,6 +21,9 @@ let stopwords = [
   'make',
   'made',
   'its',
+  'and',
+  'or',
+  'not'
 ]
 
 export default function (LearningInstructor) {
