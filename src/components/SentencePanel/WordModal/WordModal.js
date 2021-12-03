@@ -189,7 +189,10 @@ let WordModal = {
       else if (this.localConfig.practiceMode === 'writing') {
         await this.utils.LearningInstructor.practiceWord(this.config.currentWord)
         await this.utils.AsyncUtils.sleep(10)
-        this.$refs.TypingPracticeInput.focus()
+        
+        let input = this.$refs.TypingPracticeInput
+        input.focus()
+        input.click()
       }
     },
     

@@ -62,7 +62,10 @@ let PracticeSentencePanel = {
       this.utils.LearningInstructor.practiceSentence()
       if (this.localConfig.practiceMode === 'writing') {
         await this.utils.AsyncUtils.sleep(100)
-        this.$refs.TypingPracticeTextarea.focus()
+        
+        let input = this.$refs.TypingPracticeTextarea
+        input.focus()
+        input.click()
       }
     },
     practiceSubmit: async function () {

@@ -1963,7 +1963,10 @@ let PracticeSentencePanel = {
       this.utils.LearningInstructor.practiceSentence()
       if (this.localConfig.practiceMode === 'writing') {
         await this.utils.AsyncUtils.sleep(100)
-        this.$refs.TypingPracticeTextarea.focus()
+        
+        let input = this.$refs.TypingPracticeTextarea
+        input.focus()
+        input.click()
       }
     },
     practiceSubmit: async function () {
@@ -2741,7 +2744,10 @@ let WordModal = {
       else if (this.localConfig.practiceMode === 'writing') {
         await this.utils.LearningInstructor.practiceWord(this.config.currentWord)
         await this.utils.AsyncUtils.sleep(10)
-        this.$refs.TypingPracticeInput.focus()
+        
+        let input = this.$refs.TypingPracticeInput
+        input.focus()
+        input.click()
       }
     },
     
