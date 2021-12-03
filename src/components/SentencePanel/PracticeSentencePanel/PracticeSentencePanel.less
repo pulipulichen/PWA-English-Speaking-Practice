@@ -14,6 +14,14 @@
     //pointer-events: none;
     user-select: none;
   }
+  
+  &.ready-to-submit {
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    //pointer-events: none;
+    user-select: none;
+  }
 }
 
 .trigger {
@@ -87,3 +95,19 @@
     background-color: #fcfff5 !important;
   }
 }
+
+.typeing-practice {
+  .current-sentence {
+    .typing-practice-textarea {
+      min-height: auto !important;
+      height: calc(30vh - 2rem) !important;
+      border-style: none; 
+      padding: 0;
+    }
+    
+    .column {
+      padding: 0 !important;
+    }
+  } 
+} 
+

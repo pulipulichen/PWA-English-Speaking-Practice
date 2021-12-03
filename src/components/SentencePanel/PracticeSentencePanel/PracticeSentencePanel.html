@@ -1,5 +1,5 @@
-
-  <div class="PracticeSentencePanel" v-if="localConfig.practiceMode === 'speaking'">
+<div class="PracticeSentencePanel">
+  <template v-if="localConfig.practiceMode === 'speaking'">
     <h2 class="ui center aligned icon header practice-hint"
         v-if="!config.practiceSentence"
         v-on:click="practice">
@@ -42,4 +42,61 @@
         </div>
       </div>
     </template>
-  </div>
+  </template>
+  <template v-if="localConfig.practiceMode === 'writing'">
+    <h2 class="ui center aligned icon header practice-hint"
+        v-if="!config.practiceSentence && config.practiceSentence !== ''"
+        v-on:click="practice">
+      <i class="keyboard outline icon"></i>
+      {{ $t(`Let's Practice!`) }}
+    </h2>
+    <template v-if="config.practiceSentence || config.practiceSentence === ''">
+      <div class="trigger typeing-practice">
+        <div class="practice-hint"
+             v-if="isPracticing && !practiceStarted">
+          <i class="keyboard outline icon"></i>
+          {{ $t(`Please typing.`) }}
+        </div>
+        <div class="practice-hint practicing ready-to-submit"
+             v-on:click="practiceSubmit"
+             v-if="isPracticing && practiceStarted">
+          <i class="keyboard outline icon"></i>
+          {{ $t(`Press "Enter" or click here to submit.`) }}
+          {{ keyCode }}
+        </div>
+        <div class="practice-hint"
+             v-on:click="practice"
+             v-if="readEvaluationResult">
+          <i class="keyboard outline icon"></i>
+          {{ $t(`Practice again?`) }}
+        </div>
+        <div class="popup"
+             v-bind:class="{positive: (config.practiceSentenceEvaluationScore >= 0.7)}">
+          <div class="inner ui grid middle aligned current-sentence">
+            <div class="row">
+              <div class="column">
+                <h2 class="ui center aligned header"
+                    v-if="config.practiceSentenceEvaluationResult.length === 0">
+                  <textarea 
+                    v-model="config.practiceSentence"
+                    class="typing-practice-textarea"
+                    ref="TypingPracticeTextarea"
+                    v-on:keypress.enter="practiceSubmit"
+                    v-on:keyup.enter="practiceSubmit"></textarea>
+                </h2>
+                <h2 v-else>
+                  <SentenceDifference 
+                    ref="SentenceDifference"
+                    v-bind:config="config"
+                    v-bind:localConfig="localConfig"
+                    v-bind:utils="utils">
+                  </SentenceDifference>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+  </template>
+</div>

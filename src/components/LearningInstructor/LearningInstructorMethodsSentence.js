@@ -39,77 +39,84 @@ export default function (LearningInstructor) {
   }
   
   LearningInstructor.methods.practiceSentence = async function (time) {
+
+    if (this.localConfig.practiceMode === 'writing') {
+      this.config.practiceSentence = ''
+    }
+    else if (this.localConfig.practiceMode === 'speaking') {
+      this.config.practiceSentence = null
+    }
+    
+    this.config.practiceSentenceEvaluationResult = []
+    this.config.practiceSentenceEvaluationScore = null
+    this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
+
+    // --------------------------
+
+    if (!this.md.mobile()) {
+      await this.utils.AsyncUtils.sleep()
+      await this.beep.play()
+      await this.utils.AsyncUtils.sleep()
+    }
+
+    // --------------------------
+    if (this.localConfig.practiceMode === 'speaking') {
+      await this.practiceSentenceSpeaking()
+      await this.practiceSentenceSubmitSubmit()
+    }
+  }
+  
+  LearningInstructor.methods.practiceSentenceSpeaking = async function (time) {
     if (!time) {
       time = this.currentSentence.length * 100
       //console.log(time)
     }
-
-    this.config.practiceSentence = null
-    this.config.practiceSentenceEvaluationResult = []
-    this.config.practiceSentenceEvaluationScore = null
-    this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
-    //console.log(time)
     time = time + 1000
 
 //    if (debugPractice === false) {
-      let muteCancel = false
-      setTimeout(() => {
-        if (this.config.practiceSentence && this.config.practiceSentence !== '') {
-          return true
-        }
-        this.utils.SpeechToTextUtils.stopListen()
-        muteCancel = true
-      }, 5000)
-      
-      // --------------------------
-      
-      if (!this.md.mobile()) {
-        await this.utils.AsyncUtils.sleep()
-        await this.beep.play()
-        await this.utils.AsyncUtils.sleep()
+    let muteCancel = false
+    setTimeout(() => {
+      if (this.config.practiceSentence && this.config.practiceSentence !== '') {
+        return true
       }
-      
-      // --------------------------
-      
-      let hasReceivcePracticeSentence = false
-      let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
-      
-      while (!hasReceivcePracticeSentence) {
-        this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
-          this.config.practiceSentence = processing
-        }, this.localConfig.debugSpeechToTextUtilsMockup)
-        
-        if (muteCancel === true) {
-          return false
-        }
-        
-        // 如果字數太短，那也要重新聽取
-        //if (this.config.practiceSentence.split(' ').length < )
-        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
-        if (practiceWords.length >= thresholdWordsCount) {
-          hasReceivcePracticeSentence = true
-          await this.utils.AsyncUtils.sleep()
-        }
-        else {
-          await this.utils.AsyncUtils.sleep()
-          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
-          await this.utils.AsyncUtils.sleep()
-          this.beep.play()
-        }
-        
-        if (muteCancel === true) {
-          return false
-        }
-      } // while (!hasReceivcePracticeSentence) {
-      
-//    }
-//    else {
-//      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
-//      for (let i = 0; i < 3; i++) {
-//        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
-//      }
-//      await this.utils.AsyncUtils.sleep(100)
-//    }
+      this.utils.SpeechToTextUtils.stopListen()
+      muteCancel = true
+    }, 5000)
+
+    // --------------------------
+
+    let hasReceivcePracticeSentence = false
+    let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
+
+    while (!hasReceivcePracticeSentence) {
+      this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+        this.config.practiceSentence = processing
+      }, this.localConfig.debugSpeechToTextUtilsMockup)
+
+      if (muteCancel === true) {
+        return false
+      }
+
+      // 如果字數太短，那也要重新聽取
+      //if (this.config.practiceSentence.split(' ').length < )
+      let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
+      if (practiceWords.length >= thresholdWordsCount) {
+        hasReceivcePracticeSentence = true
+        await this.utils.AsyncUtils.sleep()
+      } else {
+        await this.utils.AsyncUtils.sleep()
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+        await this.utils.AsyncUtils.sleep()
+        this.beep.play()
+      }
+
+      if (muteCancel === true) {
+        return false
+      }
+    } // while (!hasReceivcePracticeSentence) {
+  }
+    
+  LearningInstructor.methods.practiceSentenceSubmit = async function () {
     
     this.config.currentSentenceMask = false
     //this.config.practiceSentence = 'ok'

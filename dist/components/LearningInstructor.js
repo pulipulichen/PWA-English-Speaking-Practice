@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/LearningInstructor"],{
 
-/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -209,7 +209,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LearningInstructor_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LearningInstructor.js?vue&type=script&lang=js& */ "./src/components/LearningInstructor/LearningInstructor.js?vue&type=script&lang=js&?cdcd");
 /* empty/unused harmony star reexport *//* harmony import */ var _LearningInstructor_less_vue_type_style_index_0_id_117601a2_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true& */ "./src/components/LearningInstructor/LearningInstructor.less?vue&type=style&index=0&id=117601a2&lang=less&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
+/* harmony import */ var _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
 
 
 
@@ -231,7 +231,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* custom blocks */
 
-if (typeof _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+if (typeof _LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
 
 /* hot reload */
 if (false) { var api; }
@@ -240,19 +240,19 @@ component.options.__file = "src/components/LearningInstructor/LearningInstructor
 
 /***/ }),
 
-/***/ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/LearningInstructor/LearningInstructor.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fmedia%2Fpudding%2FDATA%2Fpudding%2FCode-Porjects%2Fhtml%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FLearningInstructor%2FLearningInstructor.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_LearningInstructor_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fmedia_2Fpudding_2FDATA_2Fpudding_2FCode_Porjects_2Fhtml_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FLearningInstructor_2FLearningInstructor_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -472,77 +472,84 @@ __webpack_require__.r(__webpack_exports__);
   }
   
   LearningInstructor.methods.practiceSentence = async function (time) {
+
+    if (this.localConfig.practiceMode === 'writing') {
+      this.config.practiceSentence = ''
+    }
+    else if (this.localConfig.practiceMode === 'speaking') {
+      this.config.practiceSentence = null
+    }
+    
+    this.config.practiceSentenceEvaluationResult = []
+    this.config.practiceSentenceEvaluationScore = null
+    this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
+
+    // --------------------------
+
+    if (!this.md.mobile()) {
+      await this.utils.AsyncUtils.sleep()
+      await this.beep.play()
+      await this.utils.AsyncUtils.sleep()
+    }
+
+    // --------------------------
+    if (this.localConfig.practiceMode === 'speaking') {
+      await this.practiceSentenceSpeaking()
+      await this.practiceSentenceSubmitSubmit()
+    }
+  }
+  
+  LearningInstructor.methods.practiceSentenceSpeaking = async function (time) {
     if (!time) {
       time = this.currentSentence.length * 100
       //console.log(time)
     }
-
-    this.config.practiceSentence = null
-    this.config.practiceSentenceEvaluationResult = []
-    this.config.practiceSentenceEvaluationScore = null
-    this.config.currentSentenceMask = this.localConfig.practiceSentenceMask
-    //console.log(time)
     time = time + 1000
 
 //    if (debugPractice === false) {
-      let muteCancel = false
-      setTimeout(() => {
-        if (this.config.practiceSentence && this.config.practiceSentence !== '') {
-          return true
-        }
-        this.utils.SpeechToTextUtils.stopListen()
-        muteCancel = true
-      }, 5000)
-      
-      // --------------------------
-      
-      if (!this.md.mobile()) {
-        await this.utils.AsyncUtils.sleep()
-        await this.beep.play()
-        await this.utils.AsyncUtils.sleep()
+    let muteCancel = false
+    setTimeout(() => {
+      if (this.config.practiceSentence && this.config.practiceSentence !== '') {
+        return true
       }
-      
-      // --------------------------
-      
-      let hasReceivcePracticeSentence = false
-      let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
-      
-      while (!hasReceivcePracticeSentence) {
-        this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
-          this.config.practiceSentence = processing
-        }, this.localConfig.debugSpeechToTextUtilsMockup)
-        
-        if (muteCancel === true) {
-          return false
-        }
-        
-        // 如果字數太短，那也要重新聽取
-        //if (this.config.practiceSentence.split(' ').length < )
-        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
-        if (practiceWords.length >= thresholdWordsCount) {
-          hasReceivcePracticeSentence = true
-          await this.utils.AsyncUtils.sleep()
-        }
-        else {
-          await this.utils.AsyncUtils.sleep()
-          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
-          await this.utils.AsyncUtils.sleep()
-          this.beep.play()
-        }
-        
-        if (muteCancel === true) {
-          return false
-        }
-      } // while (!hasReceivcePracticeSentence) {
-      
-//    }
-//    else {
-//      this.config.practiceSentence = 'ok ok not ok ok ok not okok ok not okok ok not okok ok not okok ok not okok ok not okok ok not ok'
-//      for (let i = 0; i < 3; i++) {
-//        this.config.practiceSentence = this.config.practiceSentence + this.config.practiceSentence
-//      }
-//      await this.utils.AsyncUtils.sleep(100)
-//    }
+      this.utils.SpeechToTextUtils.stopListen()
+      muteCancel = true
+    }, 5000)
+
+    // --------------------------
+
+    let hasReceivcePracticeSentence = false
+    let thresholdWordsCount = Math.round(this.currentSentenceWords.length / 2)
+
+    while (!hasReceivcePracticeSentence) {
+      this.config.practiceSentence = await this.utils.SpeechToTextUtils.startListen(this.currentSentence, (processing) => {
+        this.config.practiceSentence = processing
+      }, this.localConfig.debugSpeechToTextUtilsMockup)
+
+      if (muteCancel === true) {
+        return false
+      }
+
+      // 如果字數太短，那也要重新聽取
+      //if (this.config.practiceSentence.split(' ').length < )
+      let practiceWords = this.tokenizeSentenceToWords(this.config.practiceSentence)
+      if (practiceWords.length >= thresholdWordsCount) {
+        hasReceivcePracticeSentence = true
+        await this.utils.AsyncUtils.sleep()
+      } else {
+        await this.utils.AsyncUtils.sleep()
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+        await this.utils.AsyncUtils.sleep()
+        this.beep.play()
+      }
+
+      if (muteCancel === true) {
+        return false
+      }
+    } // while (!hasReceivcePracticeSentence) {
+  }
+    
+  LearningInstructor.methods.practiceSentenceSubmit = async function () {
     
     this.config.currentSentenceMask = false
     //this.config.practiceSentence = 'ok'
@@ -724,121 +731,132 @@ __webpack_require__.r(__webpack_exports__);
 /* global LearningInstructor */
 
 /* harmony default export */ __webpack_exports__["default"] = (function (LearningInstructor) {
-    LearningInstructor.methods.speakWord = async function (word) {
-      await this.utils.TextToSpeechUtils.startSpeak(word)
-      
-    }
-    
-    LearningInstructor.methods.practiceWord = async function (word) {
-      
+  LearningInstructor.methods.speakWord = async function (word) {
+    await this.utils.TextToSpeechUtils.startSpeak(word)
+
+  }
+
+  LearningInstructor.methods.practiceWord = async function (word) {
+
+    if (this.localConfig.practiceMode === 'writing') {
+      this.config.practiceWord = ''
+    } else if (this.localConfig.practiceMode === 'speaking') {
       this.config.practiceWord = null
-      this.config.practiceWordScore = null
-      
-      this.config.currentWordMask = this.localConfig.practiceSentenceMask
-      
-      let muteCancel = false
-      setTimeout(() => {
-        if (this.config.practiceWord && this.config.practiceWord !== '') {
-          return true
-        }
-        this.utils.SpeechToTextUtils.stopListen()
-        muteCancel = true
-      }, 3000)
-      
-      // --------------------------
-      
-      if (!this.md.mobile()) {
-        await this.utils.AsyncUtils.sleep()
-        await this.beep.play()
-        await this.utils.AsyncUtils.sleep()
+    }
+
+    this.config.practiceWordScore = null
+
+    this.config.currentWordMask = this.localConfig.practiceSentenceMask
+
+    // --------------------------
+
+    if (!this.md.mobile()) {
+      await this.utils.AsyncUtils.sleep()
+      await this.beep.play()
+      await this.utils.AsyncUtils.sleep()
+    }
+
+    // --------------------------
+
+    if (this.localConfig.practiceMode === 'speaking') {
+      await this.practiceWordSpeak(word)
+      await this.practiceWordSubmit(word)
+    }
+  }
+
+  LearningInstructor.methods.practiceWordSpeak = async function (word) {
+
+    let muteCancel = false
+    setTimeout(() => {
+      if (this.config.practiceWord && this.config.practiceWord !== '') {
+        return true
       }
-      
-      // --------------------------
-      
-      let hasReceivcePracticeSentence = false
-      let thresholdWordsCount = 1
-      
-      while (!hasReceivcePracticeSentence) {
-      
-        this.config.practiceWord = await this.utils.SpeechToTextUtils.startListen(word, (processing) => {
-          this.config.practiceWord = processing
-        }, this.localConfig.debugSpeechToTextUtilsMockup)
-      
-        if (!this.config.practiceWord) {
-          await this.utils.AsyncUtils.sleep()
-          continue
-        }
-        
-        let practiceWords = this.tokenizeSentenceToWords(this.config.practiceWord)
-        if (practiceWords.length >= thresholdWordsCount) {
-          hasReceivcePracticeSentence = true
-          //await this.utils.AsyncUtils.sleep()
-        }
-        else {
-          await this.utils.AsyncUtils.sleep()
-          await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
-          await this.utils.AsyncUtils.sleep()
-          this.beep.play()
-        }
-        
-        if (muteCancel === true) {
-          return false
-        }
-      } // while (!hasReceivcePracticeSentence) {
-      
-      this.config.currentWordMask = false
-      
-      //console.log(word)
-      
-      this.config.practiceWordScore = this.evaluateWordPractice(this.config.practiceWord, word)
-      await this.speakPracticeFeedback(this.config.practiceWordScore)
-      
-      //return false
-      if (this.config.practiceWordScore >= 0.7) {
+      this.utils.SpeechToTextUtils.stopListen()
+      muteCancel = true
+    }, 3000)
+
+    let hasReceivcePracticeSentence = false
+    let thresholdWordsCount = 1
+
+    while (!hasReceivcePracticeSentence) {
+
+      this.config.practiceWord = await this.utils.SpeechToTextUtils.startListen(word, (processing) => {
+        this.config.practiceWord = processing
+      }, this.localConfig.debugSpeechToTextUtilsMockup)
+
+      if (!this.config.practiceWord) {
+        await this.utils.AsyncUtils.sleep()
+        continue
+      }
+
+      let practiceWords = this.tokenizeSentenceToWords(this.config.practiceWord)
+      if (practiceWords.length >= thresholdWordsCount) {
+        hasReceivcePracticeSentence = true
         //await this.utils.AsyncUtils.sleep()
-        this.clearWordToLearn(word)
-        this.config.currentWord = null
+      } else {
+        await this.utils.AsyncUtils.sleep()
+        await this.utils.TextToSpeechUtils.startSpeak(this.$t(`Please speak again.`))
+        await this.utils.AsyncUtils.sleep()
+        this.beep.play()
       }
-      else {
-        this.reduceWordsToLearn(word)
+
+      if (muteCancel === true) {
+        return false
       }
+    } // while (!hasReceivcePracticeSentence) {
+  }
+
+  LearningInstructor.methods.practiceWordSubmit = async function (word) {
+
+    this.config.currentWordMask = false
+
+    //console.log(word)
+
+    this.config.practiceWordScore = this.evaluateWordPractice(this.config.practiceWord, word)
+    await this.speakPracticeFeedback(this.config.practiceWordScore)
+
+    //return false
+    if (this.config.practiceWordScore >= 0.7) {
+      //await this.utils.AsyncUtils.sleep()
+      this.clearWordToLearn(word)
+      this.config.currentWord = null
+    } else {
+      this.reduceWordsToLearn(word)
     }
-    
-    LearningInstructor.methods.evaluateWordPractice = function (source, target) {
-      let score = 1
-      
-      source = this.utils.DictUtils.filterWord(source)
-      target = this.utils.DictUtils.filterWord(target)
-    
-      let result = this.utils.DiffUtils.diffChars(source, target)
-      //console.log(result)
-      let addedCharCount = 0
-      result.forEach(r => {
-        if (r.added === true) {
-          addedCharCount = addedCharCount + r.count
-        }
-      })
-      
-      //console.log(addedCharCount, target.length)
-      
-      let percent = (target.length - addedCharCount) / target.length
-      
-      if (percent >= 0.8) {
-        score = 1
+  }
+
+  LearningInstructor.methods.evaluateWordPractice = function (source, target) {
+    let score = 1
+
+    source = this.utils.DictUtils.filterWord(source)
+    target = this.utils.DictUtils.filterWord(target)
+
+    let result = this.utils.DiffUtils.diffChars(source, target)
+    //console.log(result)
+    let addedCharCount = 0
+    result.forEach(r => {
+      if (r.added === true) {
+        addedCharCount = addedCharCount + r.count
       }
-      else if (percent >= 0.7) {
-        score = 0.7
-      }
-      else if (percent >= 0.3) {
-        score = 0.5
-      }
-      else {
-        score = 0
-      }
-      
-      return score
+    })
+
+    //console.log(addedCharCount, target.length)
+
+    let percent = (target.length - addedCharCount) / target.length
+
+    if (percent >= 0.8) {
+      score = 1
+    } else if (percent >= 0.7) {
+      score = 0.7
+    } else if (percent >= 0.3) {
+      score = 0.5
+    } else {
+      score = 0
     }
-        
+
+    return score
+  }
+
 });
 
 /***/ }),

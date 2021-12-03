@@ -8,7 +8,7 @@ let localConfig = {
   repeatPractice: true,
   autoPlay: false,
   practiceSentenceMask: 'none', // none translation word-block sentence-block
-  practiceMode: 'speaking',  // speaking writing
+  practiceMode: 'writing',  // speaking writing
   speakingInstructionStrategy: 'sentence', // none sentence words-by-words word-by-word
   setenceTokenizerStrategy: 'english-default', // english-default english-basic english-clause chinese-default chinese-comma
   

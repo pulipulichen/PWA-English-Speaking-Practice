@@ -45,7 +45,8 @@
     
     <h2 class="ui center aligned header practice-hint"
         v-on:click="practiceWord"
-        v-bind:class="computedPracticeWordClasses">
+        v-bind:class="computedPracticeWordClasses"
+        v-if="localConfig.practiceMode === 'speaking'">
       <template v-if="!config.practiceWord">
         <i class="conversation icon"></i>
         <template v-if="!isPracticing">
@@ -63,6 +64,34 @@
           {{ $t(`Practice again?`) }}
         </h3>
       </template>
+    </h2>
+    
+    <h2 class="ui center aligned header practice-hint"
+        v-on:click="practiceWord"
+        v-bind:class="computedPracticeWordClasses"
+        v-if="localConfig.practiceMode === 'writing'">
+      <div class="field"
+           v-bind:class="computedWritingPracticeHintFieldClasses">
+          <i class="keyboard outline icon"></i>
+          <template v-if="!isPracticing && !isPerfect">
+            {{ $t(`Let's Practice!`) }}
+          </template>
+          <template v-if="isPracticing">
+            {{ $t(`Keep going... Keep going...`) }}
+          </template>
+          <template v-if="isPerfect">
+            {{ $t(`Perfect!`) }}
+          </template>
+          
+          
+      </div>
+      <div class="field">
+        <input 
+          v-model="config.practiceWord"
+          class="typing-practice-input"
+          ref="TypingPracticeInput"
+          v-if="config.practiceWord || config.practiceWord === ''">
+      </div>
     </h2>
     
   </div>

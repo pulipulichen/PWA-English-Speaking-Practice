@@ -10,7 +10,9 @@ let WordModal = {
       isSpeaking: false,
       wordTrans: null,
       currentWord: null,
-      isPracticing: false
+      isPracticing: false,
+      checkSubmitTimer: null,
+      isPerfect: false
     }
   },
   watch: {
@@ -29,6 +31,7 @@ let WordModal = {
         this.currentWord = this.config.currentWord
         this.config.practiceWord = null
         this.config.practiceWordScore = null
+        this.isPerfect = false
         this.open()
         
       }
@@ -45,6 +48,23 @@ let WordModal = {
       }
       //console.log(this.currentWord)
       this.wordTrans = await this.utils.TransUtils.transZHTW(this.currentWord)
+    },
+    'config.practiceWord' () {
+      if (this.localConfig.practiceMode === 'writing') {
+        if (this.checkSubmitTimer) {
+          clearTimeout(this.checkSubmitTimer)
+        }
+        
+        this.checkSubmitTimer = setTimeout(() => {
+          let source = this.utils.DictUtils.filterWord(this.config.practiceWord)
+          let target = this.utils.DictUtils.filterWord(this.currentWord)
+
+          if (source === target) {
+            this.isPerfect = true
+            this.practiceWordSubmit()
+          }
+        }, 500)
+      }
     }
   },
   computed: {
@@ -77,7 +97,7 @@ let WordModal = {
         classes.push('icon')
       }
       
-      if (this.isPracticing) {
+      if (this.isPracticing && this.localConfig.practiceMode === 'speaking') {
         classes.push('isPracticing')
       }
       if (this.isPracticing && this.config.practiceWord === null) {
@@ -91,6 +111,16 @@ let WordModal = {
       }
       
       return classes
+    },
+    computedWritingPracticeHintFieldClasses () {
+      //let classes = []
+      
+      if (this.isPerfect) {
+        return 'perfect'
+      }
+      if (this.isPracticing) {
+        return 'practicing'
+      }
     }
   },
 //  mounted() {
@@ -151,8 +181,21 @@ let WordModal = {
       }
       
       this.isPracticing = true
-      await this.utils.LearningInstructor.practiceWord(this.config.currentWord)
+      
+      if (this.localConfig.practiceMode === 'speaking') {
+        await this.utils.LearningInstructor.practiceWord(this.config.currentWord)
+        this.isPracticing = false
+      }
+      else if (this.localConfig.practiceMode === 'writing') {
+        await this.utils.LearningInstructor.practiceWord(this.config.currentWord)
+        await this.utils.AsyncUtils.sleep(10)
+        this.$refs.TypingPracticeInput.focus()
+      }
+    },
+    
+    practiceWordSubmit: async function () {
       this.isPracticing = false
+      await this.utils.LearningInstructor.practiceWordSubmit(this.currentWord)
     },
     
     openDictionary () {

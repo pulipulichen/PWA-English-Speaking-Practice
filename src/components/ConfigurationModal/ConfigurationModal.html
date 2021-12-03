@@ -43,6 +43,26 @@
     </div>
     
     <div class="field">
+      <label>
+        {{ $t('Practice Mode') }}
+      </label>
+      <div class="ui fluid buttons">
+        <button type="button"
+                class="ui button"
+                v-on:click="localConfig.practiceMode = 'speaking'"
+                v-bind:class="{'positive disabled': (localConfig.practiceMode === 'speaking')}">
+          {{ $t('Speaking') }}
+        </button>
+        <button type="button"
+                class="ui button"
+                v-on:click="localConfig.practiceMode = 'writing'"
+                v-bind:class="{'positive disabled': (localConfig.practiceMode === 'writing')}">
+          {{ $t('Writing') }}
+        </button>
+      </div>
+    </div>
+    
+    <div class="field">
       <label for="practiceSentenceMask">
         {{ $t('Practice Mask') }}
       </label>
@@ -62,26 +82,6 @@
           {{ $t('Sentence Block') }}
         </option>
       </select>
-    </div>
-    
-    <div class="field">
-      <label>
-        {{ $t('Practice Mode') }}
-      </label>
-      <div class="ui fluid buttons">
-        <button type="button"
-                class="ui button"
-                v-on:click="localConfig.practiceMode = 'speaking'"
-                v-bind:class="{'positive disabled': (localConfig.practiceMode === 'speaking')}">
-          {{ $t('Speaking') }}
-        </button>
-        <button type="button"
-                class="ui button"
-                v-on:click="localConfig.practiceMode = 'writing'"
-                v-bind:class="{'positive disabled': (localConfig.practiceMode === 'writing')}">
-          {{ $t('Writing') }}
-        </button>
-      </div>
     </div>
     
     <div class="field"
