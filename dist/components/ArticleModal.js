@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["components/ArticleModal"],{
 
-/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@kazupon/vue-i18n-loader/lib!./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -27,7 +27,7 @@ module.exports = function (Component) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".ConfigurationModal[data-v-4a2c63af] {\n  display: none;\n}\n/*.config-modal-content {\n  padding-left: 10.5rem !important;\n}*/\n", "",{"version":3,"sources":["/var/host/media/removable/MicroSD/NetBeansProjects/[html]/PWA-English-Speaking-Practice/src/components/ArticleModal/ArticleModal.less?vue&type=style&index=0&id=4a2c63af&lang=less&scoped=true&","ArticleModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;AACA;;EAEE","file":"ArticleModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n/*.config-modal-content {\n  padding-left: 10.5rem !important;\n}*/",".ConfigurationModal {\n  display: none;\n}\n/*.config-modal-content {\n  padding-left: 10.5rem !important;\n}*/\n"]}]);
+exports.push([module.i, ".ConfigurationModal[data-v-4a2c63af] {\n  display: none;\n}\n/*.config-modal-content {\n  padding-left: 10.5rem !important;\n}*/\n", "",{"version":3,"sources":["E:/pudding/Code-Porjects-Windows/pwa/PWA-English-Speaking-Practice/src/components/ArticleModal/ArticleModal.less?vue&type=style&index=0&id=4a2c63af&lang=less&scoped=true&","ArticleModal.less"],"names":[],"mappings":"AAAA;EACE,aAAA;ACCF;AACA;;EAEE","file":"ArticleModal.less","sourcesContent":[".ConfigurationModal {\n  display: none;\n}\n\n/*.config-modal-content {\n  padding-left: 10.5rem !important;\n}*/",".ConfigurationModal {\n  display: none;\n}\n/*.config-modal-content {\n  padding-left: 10.5rem !important;\n}*/\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -56,7 +56,7 @@ var render = function() {
       _c("i", { staticClass: "close icon" }),
       _vm._v(" "),
       _c("div", { staticClass: "header" }, [
-        _vm._v("\n    " + _vm._s(_vm.$t("Article")) + "\n  ")
+        _vm._v("\r\n    " + _vm._s(_vm.$t("Article")) + "\r\n  ")
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "content ui form" }, [
@@ -122,7 +122,7 @@ var render = function() {
                 staticClass: "ui fluid button",
                 on: { click: _vm.downloadResource }
               },
-              [_vm._v("\n          Download\n        ")]
+              [_vm._v("\r\n          Download\r\n        ")]
             )
           ])
         ]),
@@ -131,9 +131,9 @@ var render = function() {
           _c("div", { staticClass: "fourteen wide field" }, [
             _c("label", { attrs: { for: "setenceTokenizerStrategy" } }, [
               _vm._v(
-                "\n          " +
+                "\r\n          " +
                   _vm._s(_vm.$t("Sentence Tokenizer Strategy")) +
-                  "\n        "
+                  "\r\n        "
               )
             ]),
             _vm._v(" "),
@@ -204,7 +204,9 @@ var render = function() {
           _c("div", { staticClass: "four wide field" }, [
             _c("label", [
               _vm._v(
-                "\n          " + _vm._s(_vm.$t("Setence Count")) + "\n        "
+                "\r\n          " +
+                  _vm._s(_vm.$t("Setence Count")) +
+                  "\r\n        "
               )
             ]),
             _vm._v(" "),
@@ -244,7 +246,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "actions" }, [
         _c("div", { staticClass: "ui button", on: { click: _vm.close } }, [
-          _vm._v("\n      " + _vm._s(_vm.$t("OK")) + "\n    ")
+          _vm._v("\r\n      " + _vm._s(_vm.$t("OK")) + "\r\n    ")
         ])
       ])
     ]
@@ -465,7 +467,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ArticleModal_js_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ArticleModal.js?vue&type=script&lang=js& */ "./src/components/ArticleModal/ArticleModal.js?vue&type=script&lang=js&?95a6");
 /* empty/unused harmony star reexport *//* harmony import */ var _ArticleModal_less_vue_type_style_index_0_id_4a2c63af_lang_less_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ArticleModal.less?vue&type=style&index=0&id=4a2c63af&lang=less&scoped=true& */ "./src/components/ArticleModal/ArticleModal.less?vue&type=style&index=0&id=4a2c63af&lang=less&scoped=true&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-/* harmony import */ var _ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml */ "./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml");
+/* harmony import */ var _ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml */ "./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml");
 
 
 
@@ -487,7 +489,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* custom blocks */
 
-if (typeof _ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
+if (typeof _ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"] === 'function') Object(_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_4__["default"])(component)
 
 /* hot reload */
 if (false) { var api; }
@@ -496,19 +498,19 @@ component.options.__file = "src/components/ArticleModal/ArticleModal.vue"
 
 /***/ }),
 
-/***/ "./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml":
-/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml":
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=%2Fvar%2Fhost%2Fmedia%2Fremovable%2FMicroSD%2FNetBeansProjects%2F%5Bhtml%5D%2FPWA-English-Speaking-Practice%2Fsrc%2Fcomponents%2FArticleModal%2FArticleModal.vue&lang=yaml");
-/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_2Fvar_2Fhost_2Fmedia_2Fremovable_2FMicroSD_2FNetBeansProjects_2F_5Bhtml_5D_2FPWA_English_Speaking_Practice_2Fsrc_2Fcomponents_2FArticleModal_2FArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/@kazupon/vue-i18n-loader/lib!./ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml */ "./node_modules/@kazupon/vue-i18n-loader/lib/index.js!./src/components/ArticleModal/ArticleModal.yaml?vue&type=custom&index=0&blockType=i18n&issuerPath=E%3A%5Cpudding%5CCode-Porjects-Windows%5Cpwa%5CPWA-English-Speaking-Practice%5Csrc%5Ccomponents%5CArticleModal%5CArticleModal.vue&lang=yaml");
+/* harmony import */ var _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_kazupon_vue_i18n_loader_lib_index_js_ArticleModal_yaml_vue_type_custom_index_0_blockType_i18n_issuerPath_E_3A_5Cpudding_5CCode_Porjects_Windows_5Cpwa_5CPWA_English_Speaking_Practice_5Csrc_5Ccomponents_5CArticleModal_5CArticleModal_vue_lang_yaml__WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 

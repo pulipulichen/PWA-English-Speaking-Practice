@@ -1,11 +1,11 @@
 {
-  "name": "PWA-English-Speaking-Practice",
-  "short_name": "PWA-English-Speaking-Practice",
+  "name": "English Speaking Practice",
+  "short_name": "Speak Eng",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#FFF8DB",
-  "theme_color": "#FBBD08",
-  "description": "Modify the &lt;head&lg; to custom a shortcut.",
+  "background_color": "#FFF",
+  "theme_color": "#DFF0FF",
+  "description": "Let's practice speaking English!",
   "icons": [{
    "src": "img/favicon/generator/android-icon-36x36.png",
    "sizes": "36x36",

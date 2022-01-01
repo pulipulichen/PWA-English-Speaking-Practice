@@ -17,7 +17,7 @@
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
 const RUNTIME = 'runtime';
-const PRECACHE = 'precache-v2021-0615-181411'
+const PRECACHE = 'precache-v2022-0102-014857'
       
 /**
  * How to build cache list?
@@ -37,6 +37,7 @@ const PRECACHE_URLS = [
   'dist/asset/brand-icons.ttf',
   'dist/asset/brand-icons.woff',
   'dist/asset/brand-icons.woff2',
+  'dist/asset/censor-beep-01.mp3',
   'dist/asset/flags.png',
   'dist/asset/icons.eot',
   'dist/asset/icons.svg',
@@ -48,7 +49,18 @@ const PRECACHE_URLS = [
   'dist/asset/outline-icons.ttf',
   'dist/asset/outline-icons.woff',
   'dist/asset/outline-icons.woff2',
-  'dist/vendors/semantic-ui-niwsf.js'
+  'dist/components/ArticleModal.js',
+  'dist/components/ConfigurationModal.js',
+  'dist/components/ControllerMenuBottomBar.js',
+  'dist/components/ControllerMenuTopBar.js',
+  'dist/components/LearningInstructor.js',
+  'dist/components/SentencePanel.js',
+  'dist/vendors/semantic-ui-niwsf.js',
+  'dist/vendors~components/AritcleModal.js',
+  'dist/vendors~components/ArticleModal.js',
+  'dist/vendors~components/LearningInstructor.js',
+  'dist/vendors~components/SentencePanel.js',
+  'dist/vendors~components/AritcleModal~components/SentencePanel.js'
 ];
 
 // The install handler takes care of precaching the resources we always need.
